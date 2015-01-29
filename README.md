@@ -2,12 +2,18 @@ ABOUT Visual-Studio-gtkmm:
 Visual Studio 2013 projects configured to build gtk+ and gtkmm dependencies from scrach up to gtkmm.
 
 REQUIRED DIRECTORY TREE ON LOCAL HOST:
-D:\ (partition)
-    gtkmm (ROOT DIR)
-        projects (project files)
-        settings (setup instructions)
-    	properties (Visual Studio properties)
-    	build (directory with extracted packages redy to build)
+
+    D:\ (partition)
+
+        gtkmm (ROOT DIR)
+    
+            projects (project files)
+        
+            settings (setup instructions)
+        
+        	properties (Visual Studio properties)
+    	
+        	build (directory with extracted packages redy to build)
 
 HOW-TO:
 VS Projects and properties are not "movable"!
