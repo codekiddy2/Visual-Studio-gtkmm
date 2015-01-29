@@ -8,6 +8,9 @@
     <INTERMEDIATE_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\$(ProjectName)\</INTERMEDIATE_DIR>
     <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
     <SYMBOLS_DIR>$(ROOT_DIR)symbols\</SYMBOLS_DIR>
+    <CHROOT_DBG>D:\gtkmm\output\Debug\$(Platform)\</CHROOT_DBG>
+    <CHROOT_REL>D:\gtkmm\output\Release\$(Platform)\</CHROOT_REL>
+    <SET_INTERMEDIATE>intermediate\$(SolutionName)\$(ProjectName)\</SET_INTERMEDIATE>
   </PropertyGroup>
   <PropertyGroup>
     <LinkIncremental>false</LinkIncremental>
@@ -35,6 +38,7 @@
       <BrowseInformation>false</BrowseInformation>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -51,11 +55,13 @@
       <ImportLibrary>$(LIB_DIR)$(TargetName).dll.lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <ErrorReporting>PromptImmediately</ErrorReporting>
       <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
     </Lib>
     <Midl>
       <WarningLevel>4</WarningLevel>
@@ -79,6 +85,15 @@
     </BuildMacro>
     <BuildMacro Include="SYMBOLS_DIR">
       <Value>$(SYMBOLS_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CHROOT_DBG">
+      <Value>$(CHROOT_DBG)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CHROOT_REL">
+      <Value>$(CHROOT_REL)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SET_INTERMEDIATE">
+      <Value>$(SET_INTERMEDIATE)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
