@@ -18,6 +18,27 @@ REQUIRED DIRECTORY TREE ON LOCAL HOST:
         	output (install dir for finished build)
         	
         	patch (modified source/header files for msvc compilation)
+        	
+        	packages (official package sources)
+        	
+        	extraction (extracted packages)
+        	
+        	install (the place where tools are installed)
+        	
+        	    visualstudio (msvc)
+        	    
+        	    Cmake (build tools)
+        	    
+        	    nasm (assembler)
+        	    
+        	    7-Zip (to extract the packages)
+        	    
+        	    mozilla-build (to configure unfriendly sources)
+        	    
+        	    Symbols (MS Symbols for debugging)
+        	    
+        	    
+        	    
 
 HOW-TO:
 VS Projects and properties are not "movable"!
