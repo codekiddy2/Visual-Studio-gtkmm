@@ -14,6 +14,8 @@ REQUIRED DIRECTORY TREE ON LOCAL HOST:
         	properties (Visual Studio properties)
     	
         	build (directory with extracted packages redy to build)
+        	
+        	output (install dir for finished build)
 
 HOW-TO:
 VS Projects and properties are not "movable"!
