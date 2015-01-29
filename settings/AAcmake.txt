@@ -1,0 +1,19 @@
+
+ENVIRONMENT IN MICROSOFT SHELL
+
+set PATH=D:\gtkmm\output\Debug\x64\bin;%PATH%;
+set LIB=D:\gtkmm\output\Debug\x64\lib;%LIB%
+set INCLUDE=D:\gtkmm\output\Debug\x64\include;%INCLUDE%
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+ENVIRONMENT IN UNIX SHELL
+
+export PATH=/d/gtkmm/output/Debug/x64/bin:$PATH
+export LDFLAGS=D:/gtkmm/output/Debug/x64/lib:LDFLAGS
+
+export CFLAGS=/d/gtkmm/output/Debug/x64/include:$CFLAGS
+export CPPFLAGS=/d/gtkmm/output/Debug/x64/include:$CPPFLAGS
+export CXXFLAGS=/d/gtkmm/output/Debug/x64/include:$CXXFLAGS

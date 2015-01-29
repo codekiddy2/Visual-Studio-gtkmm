@@ -1,0 +1,14 @@
+open VS2013 x64 Native Tools
+cd D:\gtkmm\build\libjpeg-turbo-1.4.0
+mkdir codekiddy
+cd codekiddy
+cmake -G "Visual Studio 12 Win64" ../
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+open visual studio solution: libjpeg-turbo.sln
+select desired configuration
+property manager: project INSTALL > Configuration properties > General > Output Directory: D:\gtkmm\output\Debug\x64\
+BUILD > build INSTALL

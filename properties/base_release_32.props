@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <ROOT_DIR>D:\gtkmm\output\$(Configuration)\$(Platform)\</ROOT_DIR>
+    <BIN_DIR>$(ROOT_DIR)bin\</BIN_DIR>
+    <INCLUDE_DIR>$(ROOT_DIR)include\</INCLUDE_DIR>
+    <INTERMEDIATE_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\$(ProjectName)\</INTERMEDIATE_DIR>
+    <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
+    <SYMBOLS_DIR>$(ROOT_DIR)symbols\</SYMBOLS_DIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ROOT_DIR)failed</OutDir>
+    <IntDir>$(INTERMEDIATE_DIR)</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <ExtensionsToDeleteOnClean>*.dll;*.ilk;*.pdb;*.exe;*.lib;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MinimalRebuild>false</MinimalRebuild>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAs>Default</CompileAs>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <StringPooling>true</StringPooling>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BrowseInformation>false</BrowseInformation>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <ShowProgress>LinkVerboseSAFESEH</ShowProgress>
+      <OptimizeReferences>true</OptimizeReferences>
+      <MapExports>false</MapExports>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ImportLibrary>$(LIB_DIR)$(TargetName).dll.lib</ImportLibrary>
+      <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ErrorReporting>PromptImmediately</ErrorReporting>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+    </Lib>
+    <Midl>
+      <WarningLevel>4</WarningLevel>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="ROOT_DIR">
+      <Value>$(ROOT_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BIN_DIR">
+      <Value>$(BIN_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="INCLUDE_DIR">
+      <Value>$(INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="INTERMEDIATE_DIR">
+      <Value>$(INTERMEDIATE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIB_DIR">
+      <Value>$(LIB_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SYMBOLS_DIR">
+      <Value>$(SYMBOLS_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
