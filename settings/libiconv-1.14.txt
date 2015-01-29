@@ -17,3 +17,35 @@ cd ..
 xcopy D:\gtkmm\patch\libiconv-1.14\* /EF
 
 
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+#copy headers:
+cd D:\gtkmm\output\Debug\Win32\include
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\include\iconv.h
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\libiconv\localcharset.h
+mkdir iconv
+cd iconv
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\include\*.h
+
+cd D:\gtkmm\output\Debug\x64\include
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\include\iconv.h
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\libiconv\localcharset.h
+mkdir iconv
+cd iconv
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\include\*.h
+
+cd D:\gtkmm\output\Release\x64\include
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\include\iconv.h
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\libiconv\localcharset.h
+mkdir iconv
+cd iconv
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\include\*.h
+
+cd D:\gtkmm\output\Release\Win32\include
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\include\iconv.h
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\libiconv\localcharset.h
+mkdir iconv
+cd iconv
+copy D:\gtkmm\build\libiconv-1.14\msvc-120\include\*.h

@@ -20,3 +20,39 @@ VERSION		1.28
 #run manualy (sometimes assembly does not get compiled):
 cd D:\gtkmm\build\zlib-1.2.8\contrib\masmx64
 .\bld_ml64.bat
+
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+#copy zlib.h zconf.h > include
+#copy all .*h > include\zlib
+
+cd D:\gtkmm\output\Debug\x64\include
+copy D:\gtkmm\build\zlib-1.2.8\zconf.h
+copy D:\gtkmm\build\zlib-1.2.8\zlib.h
+mkdir zlib
+cd zlib
+copy D:\gtkmm\build\zlib-1.2.8\*.h
+
+cd D:\gtkmm\output\Debug\win32\include
+copy D:\gtkmm\build\zlib-1.2.8\zconf.h
+copy D:\gtkmm\build\zlib-1.2.8\zlib.h
+mkdir zlib
+cd zlib
+copy D:\gtkmm\build\zlib-1.2.8\*.h
+
+cd D:\gtkmm\output\Release\x64\include
+copy D:\gtkmm\build\zlib-1.2.8\zconf.h
+copy D:\gtkmm\build\zlib-1.2.8\zlib.h
+mkdir zlib
+cd zlib
+copy D:\gtkmm\build\zlib-1.2.8\*.h
+
+cd D:\gtkmm\output\Release\win32\include
+copy D:\gtkmm\build\zlib-1.2.8\zconf.h
+copy D:\gtkmm\build\zlib-1.2.8\zlib.h
+mkdir zlib
+cd zlib
+copy D:\gtkmm\build\zlib-1.2.8\*.h
