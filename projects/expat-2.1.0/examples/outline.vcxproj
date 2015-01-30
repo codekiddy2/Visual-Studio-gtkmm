@@ -88,7 +88,6 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
-    <Import Project="..\..\..\properties\stack.props" />
     <Import Project="..\..\..\properties\base_debug_64.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -122,6 +121,7 @@
     </Bscmake>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -142,6 +142,7 @@
     </Bscmake>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -162,6 +163,7 @@
     </Bscmake>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -182,6 +184,7 @@
     </Bscmake>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

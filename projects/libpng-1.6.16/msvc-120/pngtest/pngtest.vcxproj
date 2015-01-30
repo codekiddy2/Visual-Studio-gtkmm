@@ -158,8 +158,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>libpng.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ROOT_DIR)..\..\Debug\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <CustomBuildStep>
@@ -178,8 +177,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>libpng.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ROOT_DIR)..\..\Debug\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <CustomBuildStep>
@@ -198,7 +196,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>zlib.dll.lib</AdditionalDependencies>
+      <AdditionalDependencies>libpng.dll.lib;zlib.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(CHROOT_DBG)lib</AdditionalLibraryDirectories>
       <ImportLibrary />
     </Link>
@@ -217,7 +215,7 @@
       </DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>zlib.dll.lib</AdditionalDependencies>
+      <AdditionalDependencies>libpng.dll.lib;zlib.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(CHROOT_DBG)lib</AdditionalLibraryDirectories>
       <ImportLibrary>
       </ImportLibrary>
@@ -238,8 +236,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>libpng.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Message>Executing PNG test program</Message>
@@ -257,8 +254,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>libpng.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Message>Executing PNG test program</Message>
@@ -276,7 +272,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>zlib.dll.lib</AdditionalDependencies>
+      <AdditionalDependencies>libpng.dll.lib;zlib.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(CHROOT_REL)lib</AdditionalLibraryDirectories>
       <ImportLibrary />
     </Link>
@@ -297,7 +293,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>zlib.dll.lib</AdditionalDependencies>
+      <AdditionalDependencies>libpng.dll.lib;zlib.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(CHROOT_REL)lib</AdditionalLibraryDirectories>
       <ImportLibrary />
     </Link>
@@ -315,6 +311,11 @@
   <ItemGroup>
     <ProjectReference Include="..\libpng\libpng.vcxproj">
       <Project>{d6973076-9317-4ef2-a0b8-b7a18ac0713e}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

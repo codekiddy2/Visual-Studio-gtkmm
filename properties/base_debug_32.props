@@ -29,7 +29,7 @@
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAs>Default</CompileAs>
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
-      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <StringPooling>false</StringPooling>
@@ -38,6 +38,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <BrowseInformation>false</BrowseInformation>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -54,6 +55,7 @@
       <ImportLibrary>$(LIB_DIR)$(TargetName).dll.lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
     </Link>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
@@ -63,6 +65,9 @@
     <Midl>
       <WarningLevel>4</WarningLevel>
     </Midl>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">

@@ -28,7 +28,7 @@
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAs>Default</CompileAs>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <StringPooling>true</StringPooling>
       <SDLCheck>false</SDLCheck>
@@ -39,6 +39,8 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <WholeProgramOptimization>true</WholeProgramOptimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <TreatSpecificWarningsAsErrors>4098</TreatSpecificWarningsAsErrors>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -56,6 +58,8 @@
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <LinkStatus>false</LinkStatus>
+      <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
     </Link>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
@@ -66,6 +70,9 @@
     <Midl>
       <WarningLevel>4</WarningLevel>
     </Midl>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">

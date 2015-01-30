@@ -5,9 +5,15 @@ solution dir =gettext-master\msvc-120
 **************************************************************************************************************************************************************************
 
 #Run mozilla-shell:
+cd /d/gtkmm/build/gettext/source
 
-cd /d/gtkmm/build/gettext-master/source
+#x64 bit users:
 ./configure LD=cl.exe CPP='cl -nologo -EP' CFLAGS='-D_DEBUG -D_UNICODE -MDd -Od -EHsc' --build=x86_64-w64-mingw32
+
+#x86 bit users:
+./configure LD=cl.exe CPP='cl -nologo -EP' CFLAGS='-D_DEBUG -D_UNICODE -MDd -Od -EHsc' --build=i686-pc-mingw32
+
+#all users:
 make (fail -> OK)
 
 apply patch
@@ -22,32 +28,32 @@ Run Visual Studio and build
 
 d:
 cd D:\gtkmm\output\Debug\x64\include
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\localcharset.h
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\libgnuintl.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\localcharset.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\libgnuintl.h
 mkdir libintl
 cd libintl
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\*.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\*.h
 
 cd D:\gtkmm\output\Debug\win32\include
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\localcharset.h
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\libgnuintl.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\localcharset.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\libgnuintl.h
 mkdir libintl
 cd libintl
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\*.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\*.h
 
 cd D:\gtkmm\output\Release\x64\include
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\localcharset.h
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\libgnuintl.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\localcharset.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\libgnuintl.h
 mkdir libintl
 cd libintl
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\*.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\*.h
 
 cd D:\gtkmm\output\Release\win32\include
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\localcharset.h
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\libgnuintl.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\localcharset.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\libgnuintl.h
 mkdir libintl
 cd libintl
-copy /Y D:\gtkmm\build\gettext-master\source\gettext-runtime\intl\*.h
+copy /Y D:\gtkmm\build\gettext\source\gettext-runtime\intl\*.h
 
 
 **************************************************************************************************************************************************************************
