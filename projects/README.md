@@ -17,15 +17,15 @@ higher level properties.
 
 Here is list of testings (yes mean tested, no means not tested):
 
-project  | version | Debug x64	| Debug Win32	| Release x64   | Release Win32
+project | version | Debug x64	| Debug Win32| Release x64   | Release Win32
 --------------------------------------------------------------------------------
-zlib 	 | 1.2.8   | yes 	| yes 		| yes		| yes
+zlib 	   | 1.2.8   | yes 	      | yes 		| yes	   	| yes
 --------------------------------------------------------------------------------
-libpng   | 1.6.16  | yes 	| yes		| yes		| yes
+libpng   | 1.6.16  | yes      	| yes	   	| yes		| yes
 --------------------------------------------------------------------------------
-libiconv | 1.14    | yes 	| yes		| yes 		| yes
+libiconv | 1.14    | yes      	| yes		   | yes 		| yes
 --------------------------------------------------------------------------------
-gettext  | NA      | yes 	| yes 		| yes 		| yes
+gettext  | NA      | yes      	| yes 		| yes 		| yes
 --------------------------------------------------------------------------------
-expat    | 2.1.0   | yes 	| yes 		| yes 		| yes
+expat    | 2.1.0   | yes      	| yes 		| yes 		| yes
 --------------------------------------------------------------------------------
