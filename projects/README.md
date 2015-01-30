@@ -15,7 +15,7 @@ and many other naming shemas and stuf such as same warning level.
 some projects override these global settings for specific needs while other import
 higher level properties.
 
-Here is list of testings (yes mean tested, no means not tested):
+**Here is list of testings (yes mean test success, no means not tested):**
 
 project | version | Debug x64 | Debug x86 | Release x64 | Release x86 |
 :--------|:---------:|:-----------:|:-----------:|:-------------:|:-------------:|
