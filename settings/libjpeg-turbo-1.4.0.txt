@@ -1,25 +1,30 @@
 #x64 users do this
 #open VS2013 x64 Native Tools:
+#replace "Debug" with "Release" for release builds
 
 d:
 cd D:\gtkmm\build\libjpeg-turbo-1.4.0
 mkdir msvc-120
 cd msvc-120
-cmake -G "Visual Studio 12 Win64" ../
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../
+xcopy D:\gtkmm\projects\libjpeg-turbo-1.4.0\x64\msvc-120\* /EFY
 
 #x86 users do this
 #open VS2013 x86 Native Tools:
+#replace "Debug" with "Release" for release builds
 
 d:
 cd D:\gtkmm\build\libjpeg-turbo-1.4.0
 mkdir msvc-120
 cd msvc-120
-cmake -G "Visual Studio 12 Win32" ../
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12" ../
+xcopy D:\gtkmm\projects\libjpeg-turbo-1.4.0\x86\msvc-120\* /EFY
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 
 open visual studio solution: libjpeg-turbo.sln
-property manager: project INSTALL > Configuration properties > General > Output Directory: D:\gtkmm\output\Debug\x64\
-select desired configuration and build
+select configuration that was used by cmake command! and build
+
+#do not build multiple configurations without deleting entry msvc-120 and repeating the proces!

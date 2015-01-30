@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jpegtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\cdjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\rdswitch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\transupp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F0F92760-4A99-456B-A5B4-E66B89F783C5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C8F77EDC-ACEC-4985-B35E-A7481562BB9E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>turbojpeg-static</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\properties\base_debug_64.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\properties\base_release_64.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">turbojpeg-static.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">turbojpeg-static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">turbojpeg-static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">turbojpeg-static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(LIB_DIR)</OutDir>
+    <TargetName>turbojpeg</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(LIB_DIR)</OutDir>
+    <TargetName>turbojpeg</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WITH_SIMD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WITH_SIMD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_SIMD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_SIMD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_SIMD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_SIMD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_SIMD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_SIMD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gtkmm/build/libjpeg-turbo-1.4.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/libjpeg-turbo-1.4.0 -BD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120 --check-stamp-file D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gtkmm/build/libjpeg-turbo-1.4.0/CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystem.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeClDeps.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\build\libjpeg-turbo-1.4.0\win\jconfig.h.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\win\jconfigint.h.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\release\libjpeg-turbo.nsi.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gtkmm/build/libjpeg-turbo-1.4.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/libjpeg-turbo-1.4.0 -BD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120 --check-stamp-file D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gtkmm/build/libjpeg-turbo-1.4.0/CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystem.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeClDeps.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\build\libjpeg-turbo-1.4.0\win\jconfig.h.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\win\jconfigint.h.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\release\libjpeg-turbo.nsi.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/gtkmm/build/libjpeg-turbo-1.4.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/libjpeg-turbo-1.4.0 -BD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120 --check-stamp-file D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gtkmm/build/libjpeg-turbo-1.4.0/CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystem.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeClDeps.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\build\libjpeg-turbo-1.4.0\win\jconfig.h.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\win\jconfigint.h.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\release\libjpeg-turbo.nsi.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/gtkmm/build/libjpeg-turbo-1.4.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/libjpeg-turbo-1.4.0 -BD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120 --check-stamp-file D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gtkmm/build/libjpeg-turbo-1.4.0/CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystem.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeClDeps.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\build\libjpeg-turbo-1.4.0\win\jconfig.h.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\win\jconfigint.h.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\release\libjpeg-turbo.nsi.in;D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcapimin.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcapistd.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jccoefct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jccolor.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcdctmgr.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jchuff.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcinit.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcmainct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcmarker.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcmaster.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcomapi.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcparam.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcphuff.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcprepct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcsample.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jctrans.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdapimin.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdapistd.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdatadst.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdatasrc.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdcoefct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdcolor.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jddctmgr.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdhuff.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdinput.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdmainct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdmarker.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdmaster.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdmerge.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdphuff.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdpostct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdsample.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdtrans.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jerror.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jfdctflt.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jfdctfst.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jfdctint.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jidctflt.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jidctfst.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jidctint.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jidctred.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jquant1.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jquant2.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jutils.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jmemmgr.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jmemnobs.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jaricom.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcarith.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdarith.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimd_x86_64.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\turbojpeg.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\transupp.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdatadst-tj.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdatasrc-tj.c" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jfdctflt-sse-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jccolor-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jcgray-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jcsample-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jdcolor-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jdmerge-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jdsample-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jfdctfst-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jfdctint-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jidctflt-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jidctfst-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jidctint-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jidctred-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jquantf-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\simd\$(Configuration)\jquanti-sse2-64.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/ZERO_CHECK.vcxproj">
+      <Project>8CC65A4A-DFD9-472A-ABA2-A74DD6560666</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/simd/simd.vcxproj">
+      <Project>C844F4CC-EF9D-4C41-8F32-C0899AAB6982</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
