@@ -17,7 +17,7 @@ higher level properties.
 
 Here is list of testings (yes mean tested, no means not tested):
 
-project | version | Debug x64	| Debug Win32| Release x64| Release Win32
+project|version|Debug x64|Debug x86|Release x64|Release x86
 --------------------------------------------------------------------------------
 zlib 	   | 1.2.8   | yes 	      | yes 		| yes	   	| yes
 --------------------------------------------------------------------------------
