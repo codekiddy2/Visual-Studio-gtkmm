@@ -23,5 +23,5 @@ zlib 	   | 1.2.8   | yes 	      | yes 		| yes	   	| yes
 libpng   | 1.6.16  | yes      	| yes	   	| yes		   | yes
 libiconv | 1.14    | yes      	| yes		   | yes 		| yes
 gettext  | NA      | yes      	| yes 		| yes 		| yes
-expat    | 2.1.0   | yes      	| yes 		| yes 		| yes
+expat    | 2.1.0   | yes      	| yes 		| no 		| no
 
