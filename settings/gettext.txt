@@ -16,6 +16,7 @@ cd /d/gtkmm/build/gettext/source
 #all users:
 make (fail -> OK)
 
+copy project files
 apply patch
 Run Visual Studio and build
 
