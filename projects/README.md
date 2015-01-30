@@ -18,7 +18,7 @@ higher level properties.
 Here is list of testings (yes mean tested, no means not tested):
 
 project | version | Debug x64 | Debug x86 | Release x64 | Release x86 |
-:-------:|:---------:|:-----------:|:-----------:|:-------------:|:-------------:|
+:--------|:---------:|:-----------:|:-----------:|:-------------:|:-------------:|
 zlib 	   | 1.2.8   | yes 	      | yes 		| yes	   	| yes
 libpng   | 1.6.16  | yes      	| yes	   	| yes		   | yes
 libiconv | 1.14    | yes      	| yes		   | yes 		| yes
