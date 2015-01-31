@@ -1,0 +1,61 @@
+project dir= freeglut-3.0.0-rc2\msvc-120\
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+OPTION 1: copy project files...
+
+OPTION 2: (generate with CMake)
+#x64 users do this
+#open VS2013 x64 Native Tools:
+#replace "Debug" with "Release" for release builds
+
+d:
+cd D:\gtkmm\build\freeglut-3.0.0-rc2
+mkdir msvc-120
+cd msvc-120
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../
+xcopy D:\gtkmm\projects\freeglut-3.0.0-rc2\msvc-120\x64\* /EFY
+
+#x86 users do this
+#open VS2013 x86 Native Tools:
+#replace "Debug" with "Release" for release builds
+
+d:
+cd D:\gtkmm\build\freeglut-3.0.0-rc2
+mkdir msvc-120
+cd msvc-120
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12" ../
+xcopy D:\gtkmm\projects\freeglut-3.0.0-rc2\msvc-120\x64\* /EFY
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+open visual studio solution: freeglut.sln
+select configuration that was used by cmake command! and build
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+#do not build multiple configurations without deleting entry msvc-120 and repeating the proces!
+
+#copy headers
+cd D:\gtkmm\output\Debug\x64\include
+xcopy D:\gtkmm\build\freeglut-3.0.0-rc2\include\* /EFY
+
+cd D:\gtkmm\output\Release\x64\include
+xcopy D:\gtkmm\build\freeglut-3.0.0-rc2\include\* /EFY
+
+cd D:\gtkmm\output\Debug\Win32\include
+xcopy D:\gtkmm\build\freeglut-3.0.0-rc2\include\* /EFY
+
+cd D:\gtkmm\output\Release\Win32\include
+xcopy D:\gtkmm\build\freeglut-3.0.0-rc2\include\* /EFY
+
+
+#note:
+#to use static library define: FREEGLUT_STATIC
+#override default libs by undefing them "their names are in freeglut_std.h"
