@@ -29,4 +29,4 @@ freeglut    | 3.0.0   | yes         | no        | yes       | no
 jasper      | 1.900.1 | yes         | yes       | yes       | yes
 libffi      | 3.1     | yes         | no        | no        | no
 jpeg-turbo  | 1.4.0   | yes         | yes       | no        | no
-
+libtiff     | 4.0.2   | yes         | no        | no        | no
