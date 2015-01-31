@@ -1,0 +1,10 @@
+project outputs go into this dirrectory.
+
+TREE:
+Debug
+   Win32
+   x64
+Release
+   Win32
+   x64   
+Failed   (failed outputs (made by bad projects) go here)

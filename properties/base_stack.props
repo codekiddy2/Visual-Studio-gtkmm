@@ -4,12 +4,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
   <ItemDefinitionGroup>
-    <Link>
-      <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
-    </Link>
+    <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(INCLUDE_DIR)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <IgnoreSpecificDefaultLibraries>freeglut.lib;freeglutd.lib;freeglut_static.lib;freeglut_staticd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
