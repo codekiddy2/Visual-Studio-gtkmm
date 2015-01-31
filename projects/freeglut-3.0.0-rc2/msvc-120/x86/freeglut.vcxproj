@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{53046CE5-B4A2-4CE1-A5EA-FEA20AA877B2}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>freeglut</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_stack.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_stack.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(BIN_DIR)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(BIN_DIR)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0500;WINVER=0x0500;HAVE_CONFIG_H;CMAKE_INTDIR="Release";freeglut_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0500;WINVER=0x0500;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";freeglut_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86;D:\gtkmm\build\freeglut-3.0.0-rc2\include;D:\gtkmm\build\freeglut-3.0.0-rc2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <ModuleDefinitionFile>.\freeglutdll.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0500;WINVER=0x0500;HAVE_CONFIG_H;CMAKE_INTDIR="Release";freeglut_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_EXPORTS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0500;WINVER=0x0500;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";freeglut_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86;D:\gtkmm\build\freeglut-3.0.0-rc2\include;D:\gtkmm\build\freeglut-3.0.0-rc2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <ModuleDefinitionFile>.\freeglutdll.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\freeglut-3.0.0-rc2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/gtkmm/build/freeglut-3.0.0-rc2/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/gtkmm/build/freeglut-3.0.0-rc2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/freeglut-3.0.0-rc2 -BD:/gtkmm/build/freeglut-3.0.0-rc2/msvc-120/x86 --check-stamp-file D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/freeglut-3.0.0-rc2 -BD:/gtkmm/build/freeglut-3.0.0-rc2/msvc-120/x86 --check-stamp-file D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/freeglut-3.0.0-rc2/CMakeLists.txt;D:\gtkmm\build\freeglut-3.0.0-rc2\CMakeLists.txt;D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\3.1.1\CMakeSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\3.1.1\CMakeCXXCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\3.1.1\CMakeRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_version.h.in;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\FindOpenGL.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckFunctionExists.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckTypeSize.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckIncludeFileCXX.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\config.h.in;D:\gtkmm\build\freeglut-3.0.0-rc2\freeglut.rc.in;D:\gtkmm\build\freeglut-3.0.0-rc2\src\freeglutdll.def.in;D:\gtkmm\build\freeglut-3.0.0-rc2\freeglut.pc.in;D:\gtkmm\build\freeglut-3.0.0-rc2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/freeglut-3.0.0-rc2/CMakeLists.txt;D:\gtkmm\build\freeglut-3.0.0-rc2\CMakeLists.txt;D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\3.1.1\CMakeSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\3.1.1\CMakeCCompiler.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\3.1.1\CMakeCXXCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\3.1.1\CMakeRCCompiler.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_version.h.in;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\FindOpenGL.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckFunctionExists.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckTypeSize.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckIncludeFile.cmake;D:\gtkmm\install\CMake\share\cmake-3.1\Modules\CheckIncludeFileCXX.cmake;D:\gtkmm\build\freeglut-3.0.0-rc2\config.h.in;D:\gtkmm\build\freeglut-3.0.0-rc2\freeglut.rc.in;D:\gtkmm\build\freeglut-3.0.0-rc2\src\freeglutdll.def.in;D:\gtkmm\build\freeglut-3.0.0-rc2\freeglut.pc.in;D:\gtkmm\build\freeglut-3.0.0-rc2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\include\GL\freeglut.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\include\GL\freeglut_ext.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\include\GL\freeglut_std.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\include\GL\glut.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_gl2.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_init.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_internal.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_teapot_data.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_internal_mswin.h" />
+    <ClInclude Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\util\xparsegeometry_repl.h" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_callbacks.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_cursor.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_display.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_ext.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_font_data.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_gamemode.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_geometry.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_gl2.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_init.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_input_devices.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_joystick.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_main.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_misc.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_overlay.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_spaceball.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_state.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_stroke_mono_roman.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_stroke_roman.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_structure.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_teapot.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_videoresize.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_window.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_font.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\fg_menu.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_cursor_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_display_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_ext_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_gamemode_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_init_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_input_devices_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_joystick_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_main_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_menu_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_spaceball_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_state_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_structure_mswin.c" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\mswin\fg_window_mswin.c" />
+    <ResourceCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120\x86\freeglut.rc" />
+    <ClCompile Include="D:\gtkmm\build\freeglut-3.0.0-rc2\src\util\xparsegeometry_repl.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

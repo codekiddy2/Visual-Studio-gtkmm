@@ -1,33 +1,35 @@
-project dir= freeglut-3.0.0-rc2\msvc-120\
+project dir= freeglut-3.0.0-rc2\msvc-120\x86
+project dir= freeglut-3.0.0-rc2\msvc-120\x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 
-OPTION 1: copy project files...
+#x86 users:
+#open VS2013 x86 Native Tools:
+#replace "Debug" with "Release" for release builds
+d:
+cd D:\gtkmm\build\freeglut-3.0.0-rc2\
+mkdir msvc-120
+cd msvc-120
+mkdir x86
+cd x86
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12" ../../
+xcopy D:\gtkmm\projects\freeglut-3.0.0-rc2\msvc-120\x86\* /EFY
 
-OPTION 2: (generate with CMake)
+
 #x64 users do this
 #open VS2013 x64 Native Tools:
 #replace "Debug" with "Release" for release builds
-
 d:
 cd D:\gtkmm\build\freeglut-3.0.0-rc2
 mkdir msvc-120
 cd msvc-120
-cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../
+mkdir x64
+cd x64
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../../
 xcopy D:\gtkmm\projects\freeglut-3.0.0-rc2\msvc-120\x64\* /EFY
 
-#x86 users do this
-#open VS2013 x86 Native Tools:
-#replace "Debug" with "Release" for release builds
-
-d:
-cd D:\gtkmm\build\freeglut-3.0.0-rc2
-mkdir msvc-120
-cd msvc-120
-cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12" ../
-xcopy D:\gtkmm\projects\freeglut-3.0.0-rc2\msvc-120\x64\* /EFY
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -35,12 +37,11 @@ xcopy D:\gtkmm\projects\freeglut-3.0.0-rc2\msvc-120\x64\* /EFY
 
 open visual studio solution: freeglut.sln
 select configuration that was used by cmake command! and build
+#do not build multiple configurations in same folder!
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
-
-#do not build multiple configurations without deleting entry msvc-120 and repeating the proces!
 
 #copy headers
 cd D:\gtkmm\output\Debug\x64\include
