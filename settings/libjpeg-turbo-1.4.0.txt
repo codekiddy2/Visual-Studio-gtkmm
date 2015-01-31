@@ -12,8 +12,10 @@ d:
 cd D:\gtkmm\build\libjpeg-turbo-1.4.0
 mkdir msvc-120
 cd msvc-120
-cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../
-xcopy D:\gtkmm\projects\libjpeg-turbo-1.4.0\x64\msvc-120\* /EFY
+mkdir x64
+cd x64
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../../
+xcopy D:\gtkmm\projects\libjpeg-turbo-1.4.0\msvc-120\x64\* /EFY
 
 #x86 users do this
 #open VS2013 x86 Native Tools:
@@ -23,8 +25,10 @@ d:
 cd D:\gtkmm\build\libjpeg-turbo-1.4.0
 mkdir msvc-120
 cd msvc-120
-cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12" ../
-xcopy D:\gtkmm\projects\libjpeg-turbo-1.4.0\x86\msvc-120\* /EFY
+mkdir x86
+cd x86
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12" ../../
+xcopy D:\gtkmm\projects\libjpeg-turbo-1.4.0\msvc-120\x86\* /EFY
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -33,7 +37,7 @@ xcopy D:\gtkmm\projects\libjpeg-turbo-1.4.0\x86\msvc-120\* /EFY
 open visual studio solution: libjpeg-turbo.sln
 select configuration that was used by cmake command! and build
 
-#do not build multiple configurations without deleting entry msvc-120 and repeating the proces!
+#do not build multiple configurations in same folder!
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D0FDD68E-612D-479C-808F-0BA5C6F384BE}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>simd</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/libjpeg-turbo-1.4.0 -BD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86 --check-stamp-file D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/libjpeg-turbo-1.4.0 -BD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86 --check-stamp-file D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jsimdcpu.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jsimdcpu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jsimdcpu.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jsimdcpu.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jsimdcpu.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdcpu.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jsimdcpu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jsimdcpu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jsimdcpu.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jsimdcpu.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jsimdcpu.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdcpu.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jsimdcpu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jfdctflt-3dn.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctflt-3dn.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctflt-3dn.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctflt-3dn.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctflt-3dn.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctflt-3dn.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctflt-3dn.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctflt-3dn.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctflt-3dn.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctflt-3dn.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctflt-3dn.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctflt-3dn.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctflt-3dn.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctflt-3dn.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jquant-3dn.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquant-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquant-3dn.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquant-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquant-3dn.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquant-3dn.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquant-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquant-3dn.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquant-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquant-3dn.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquant-3dn.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jccolor-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jccolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jccolor-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jccolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jccolor-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jccolor-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jccolext-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jccolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jccolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jccolor-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jccolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jccolor-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jccolor-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jccolext-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jccolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jcgray-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jcgray-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jcgray-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jcgray-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jcgray-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcgray-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcgryext-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcgray-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jcgray-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jcgray-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jcgray-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jcgray-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcgray-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcgryext-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcgray-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jcsample-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jcsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jcsample-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jcsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jcsample-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcsample-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jcsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jcsample-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jcsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jcsample-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcsample-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jdcolor-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdcolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdcolor-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdcolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdcolor-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdcolor-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdcolext-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdcolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdcolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdcolor-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdcolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdcolor-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdcolor-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdcolext-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdcolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jdmerge-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdmerge-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdmerge-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdmerge-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdmerge-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdmerge-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdmrgext-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdmerge-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdmerge-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdmerge-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdmerge-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdmerge-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdmerge-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdmrgext-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdmerge-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jdsample-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdsample-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdsample-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdsample-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdsample-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdsample-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdsample-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jfdctfst-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctfst-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctfst-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctfst-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctfst-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctfst-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctfst-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jfdctint-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctint-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctint-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctint-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctint-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctint-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctint-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctfst-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctfst-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctfst-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctfst-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctfst-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctfst-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctfst-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctint-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctint-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctint-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctint-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctint-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctint-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctint-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctred-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctred-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctred-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctred-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctred-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctred-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctred-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctred-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctred-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctred-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctred-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctred-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctred-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jquant-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquant-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquant-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquant-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquant-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquant-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquant-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquant-mmx.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquant-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquant-mmx.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquant-mmx.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jfdctflt-sse.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctflt-sse.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctflt-sse.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctflt-sse.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctflt-sse.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctflt-sse.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctflt-sse.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctflt-sse.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctflt-sse.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctflt-sse.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctflt-sse.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctflt-sse.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctflt-sse.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctflt-sse.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jquant-sse.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquant-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquant-sse.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquant-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquant-sse.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquant-sse.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquant-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquant-sse.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquant-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquant-sse.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquant-sse.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jccolor-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jccolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jccolor-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jccolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jccolor-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jccolor-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jccolext-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jccolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jccolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jccolor-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jccolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jccolor-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jccolor-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jccolext-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jccolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jcgray-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jcgray-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jcgray-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jcgray-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jcgray-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcgray-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcgryext-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcgray-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jcgray-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jcgray-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jcgray-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jcgray-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcgray-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcgryext-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcgray-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jcsample-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jcsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jcsample-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jcsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jcsample-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcsample-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jcsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jcsample-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jcsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jcsample-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcsample-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jdcolor-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdcolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdcolor-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdcolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdcolor-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdcolor-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdcolext-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdcolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdcolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdcolor-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdcolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdcolor-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdcolor-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdcolext-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdcolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jdmerge-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdmerge-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdmerge-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdmerge-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdmerge-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdmerge-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdmrgext-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdmerge-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdmerge-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdmerge-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdmerge-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdmerge-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdmerge-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdmrgext-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdmerge-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jdsample-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdsample-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdsample-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdsample-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jdsample-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jdsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jdsample-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdsample-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jfdctfst-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctfst-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctfst-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctfst-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctfst-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctfst-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctfst-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jfdctint-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctint-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctint-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctint-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jfdctint-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jfdctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jfdctint-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jfdctint-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctflt-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctflt-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctflt-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctflt-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctflt-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctflt-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctflt-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctflt-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctflt-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctflt-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctflt-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctfst-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctfst-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctfst-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctfst-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctfst-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctfst-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctfst-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctint-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctint-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctint-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctint-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctint-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctint-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctint-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jidctred-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctred-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctred-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctred-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctred-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctred-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctred-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctred-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jidctred-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jidctred-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jidctred-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jidctred-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctred-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jquantf-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquantf-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquantf-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquantf-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquantf-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquantf-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquantf-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquantf-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquantf-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquantf-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquantf-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquantf-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquantf-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\f042ebc7094d100a8f54e5bc6dc1ff08\jquanti-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquanti-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquanti-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquanti-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquanti-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquanti-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquanti-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquanti-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -ID:/gtkmm/build/libjpeg-turbo-1.4.0/win/ -ID:/gtkmm/build/libjpeg-turbo-1.4.0/simd/ -g D:/gtkmm/build/libjpeg-turbo-1.4.0/simd/jquanti-sse2.asm -oD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/simd/$(Configuration)/jquanti-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/f042ebc7094d100a8f54e5bc6dc1ff08/jquanti-sse2.obj.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jquanti-sse2.asm;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jcolsamp.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jdct.inc;D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquanti-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\CMakeFiles\cc63449f4e4039d089fcafc7fe9dad88\simd.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/cc63449f4e4039d089fcafc7fe9dad88/simd.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jsimdcpu.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctflt-3dn.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-3dn.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-3dn.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jccolor-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcgray-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcsample-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdcolor-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdmerge-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdsample-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctfst-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctint-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctfst-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctint-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctred-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctflt-sse.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-sse.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-sse.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jccolor-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcgray-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcsample-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdcolor-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdmerge-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdsample-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctfst-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctint-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctfst-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctint-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctred-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquantf-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquanti-sse2.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/CMakeFiles/cc63449f4e4039d089fcafc7fe9dad88/simd.rule;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jsimdcpu.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctflt-3dn.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-3dn.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-3dn.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jccolor-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcgray-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcsample-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdcolor-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdmerge-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdsample-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctfst-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctint-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctfst-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctint-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctred-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-mmx.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctflt-sse.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-sse.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquant-sse.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jccolor-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcgray-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jcsample-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdcolor-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdmerge-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jdsample-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctfst-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jfdctint-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctflt-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctfst-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctint-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jidctred-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquantf-sse2.obj;D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\$(Configuration)\jquanti-sse2.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x86\simd\CMakeFiles\simd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x86/ZERO_CHECK.vcxproj">
+      <Project>80EC7084-C343-492E-B068-37A0D1B72F1E</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

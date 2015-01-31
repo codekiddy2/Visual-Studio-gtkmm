@@ -34,7 +34,7 @@
       <StringPooling>true</StringPooling>
       <SDLCheck>false</SDLCheck>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
-      <DebugInformationFormat>None</DebugInformationFormat>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <BrowseInformation>false</BrowseInformation>
       <FunctionLevelLinking>false</FunctionLevelLinking>
@@ -59,6 +59,7 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <LinkStatus>false</LinkStatus>
       <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/machine:X86</AdditionalOptions>
     </Link>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>

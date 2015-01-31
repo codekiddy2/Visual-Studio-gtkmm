@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\tjunittest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\tjutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{56EF762B-F22A-460D-9106-99D745A43FD1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

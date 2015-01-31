@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1307D66C-F139-43CA-9208-5A34CA014E45}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>jpeg</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\..\..\properties\base_release_64.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(BIN_DIR)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(BIN_DIR)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\;..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WITH_SIMD;CMAKE_INTDIR="Debug";jpeg_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WITH_SIMD;CMAKE_INTDIR=\"Debug\";jpeg_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile>..\..\..\win\jpeg62-memsrcdst.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\;..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_SIMD;CMAKE_INTDIR="Release";jpeg_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_SIMD;CMAKE_INTDIR=\"Release\";jpeg_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64;D:\gtkmm\build\libjpeg-turbo-1.4.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>..\..\..\win\jpeg62-memsrcdst.def</ModuleDefinitionFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\sharedlib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gtkmm/build/libjpeg-turbo-1.4.0/sharedlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/libjpeg-turbo-1.4.0 -BD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x64 --check-stamp-file D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\sharedlib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gtkmm/build/libjpeg-turbo-1.4.0/sharedlib/CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\sharedlib\CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\sharedlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\sharedlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gtkmm/build/libjpeg-turbo-1.4.0/sharedlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\gtkmm\install\CMake\bin\cmake.exe -HD:/gtkmm/build/libjpeg-turbo-1.4.0 -BD:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x64 --check-stamp-file D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\sharedlib\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gtkmm/build/libjpeg-turbo-1.4.0/sharedlib/CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\sharedlib\CMakeLists.txt;D:\gtkmm\build\libjpeg-turbo-1.4.0\sharedlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\sharedlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcapimin.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcapistd.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jccoefct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jccolor.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcdctmgr.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jchuff.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcinit.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcmainct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcmarker.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcmaster.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcomapi.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcparam.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcphuff.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcprepct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcsample.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jctrans.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdapimin.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdapistd.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdatadst.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdatasrc.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdcoefct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdcolor.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jddctmgr.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdhuff.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdinput.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdmainct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdmarker.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdmaster.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdmerge.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdphuff.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdpostct.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdsample.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdtrans.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jerror.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jfdctflt.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jfdctfst.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jfdctint.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jidctflt.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jidctfst.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jidctint.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jidctred.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jquant1.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jquant2.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jutils.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jmemmgr.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jmemnobs.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jaricom.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jcarith.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\jdarith.c" />
+    <ClCompile Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\simd\jsimd_x86_64.c" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jfdctflt-sse-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jccolor-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jcgray-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jcsample-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jdcolor-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jdmerge-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jdsample-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jfdctfst-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jfdctint-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jidctflt-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jidctfst-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jidctint-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jidctred-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jquantf-sse2-64.obj" />
+    <Object Include="D:\gtkmm\build\libjpeg-turbo-1.4.0\msvc-120\x64\simd\$(Configuration)\jquanti-sse2-64.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x64/ZERO_CHECK.vcxproj">
+      <Project>B36DE49D-7C28-4F47-9479-948FCDDDFE1F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/gtkmm/build/libjpeg-turbo-1.4.0/msvc-120/x64/simd/simd.vcxproj">
+      <Project>8AAACF48-4FF7-4140-9C1E-ABC0E410BB89</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

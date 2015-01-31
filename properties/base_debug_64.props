@@ -57,6 +57,7 @@
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
       <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/machine:x64 /debug</AdditionalOptions>
     </Link>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
