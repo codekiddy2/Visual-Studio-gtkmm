@@ -20,9 +20,13 @@ higher level properties.
 
 project | version | Debug x64 | Debug x86 | Release x64 | Release x86 |
 :--------|:---------:|:-----------:|:-----------:|:-------------:|:-------------:|
-zlib 	   | 1.2.8   | yes 	      | yes 		| yes	   	| yes
-libpng   | 1.6.16  | yes      	| yes	   	| yes		   | yes
-libiconv | 1.14    | yes      	| yes		   | yes 		| yes
-gettext  | NA      | yes      	| yes 		| yes 		| yes
-expat    | 2.1.0   | yes      	| yes 		| no 		| no
+zlib 	      | 1.2.8   | yes 	      | yes 		| yes	   	| yes
+libpng      | 1.6.16  | yes      	| yes	   	| yes		   | yes
+libiconv    | 1.14    | yes      	| yes		   | yes 		| yes
+gettext     | NA      | yes      	| yes 		| yes 		| yes
+expat       | 2.1.0   | yes      	| yes 		| no 		   | no
+freeglut    | 3.0.0   | yes         | no        | yes       | no
+jasper      | 1.900.1 | yes         | yes       | yes       | yes
+libffi      | 3.1     | yes         | no        | no        | no
+jpeg-turbo  | 1.4.0   | yes         | yes       | no        | no
 
