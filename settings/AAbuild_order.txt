@@ -30,6 +30,7 @@ libtiff (?)
 jasper(?)
 	-zlib
 	-libjpeg-turbo
+        -GL glut
 
 Freetype 2.4.11
 	-harfbuzz (circular dependency) freetype -> harfbuzz -> freetype ...

@@ -28,3 +28,14 @@ open visual studio solution: libjpeg-turbo.sln
 select configuration that was used by cmake command! and build
 
 #do not build multiple configurations without deleting entry msvc-120 and repeating the proces!
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+#copy headers:
+d:
+cd D:\gtkmm\output\Debug\x64\include
+mkdir jpeg-turbo
+cd jpeg-turbo
+xcopy /FY D:\gtkmm\build\libjpeg-turbo-1.4.0\*.h

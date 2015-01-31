@@ -95,3 +95,16 @@ LINK : warning LNK4044: unrecognized option '/link'; ignored
 
 #note:
 #testCaller needs to be inspected because of Runtime check #2 failure
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+#copy headers
+d:
+cd D:\gtkmm\output\Debug\x64\include
+copy /Y D:\gtkmm\build\libffi-3.1\x86_64-w64-mingw32\include\ffi.h
+copy /Y D:\gtkmm\build\libffi-3.1\x86_64-w64-mingw32\include\ffitarget.h
+copy /Y D:\gtkmm\build\libffi-3.1\x86_64-w64-mingw32\fficonfig.h
+copy /Y D:\gtkmm\build\libffi-3.1\include\ffi_common.h
+
