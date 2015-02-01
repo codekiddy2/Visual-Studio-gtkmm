@@ -30,3 +30,4 @@ jasper      | 1.900.1 | yes         | yes       | yes       | yes
 libffi      | 3.1     | yes         | no        | no        | no
 jpeg-turbo  | 1.4.0   | yes         | yes       | no        | no
 libtiff     | 4.0.2   | yes         | no        | no        | no
+pcre2       | 10.00   | yes         | no        | no        | no
