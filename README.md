@@ -13,7 +13,7 @@ according to settings file from /gtkmm/settings
 
 more information will be added in future as this is all fairly new and just recently started.
 
-**REQUIRED DIRECTORY TREE*:
+**REQUIRED DIRECTORY TREE:**
 ```
     D:\ (partition
         gtkmm (ROOT DIR)
