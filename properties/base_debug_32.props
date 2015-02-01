@@ -39,6 +39,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <BrowseInformation>false</BrowseInformation>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -57,6 +58,7 @@
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
       <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
       <AdditionalOptions>/machine:X86 /debug</AdditionalOptions>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>

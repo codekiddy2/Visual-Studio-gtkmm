@@ -41,6 +41,7 @@
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <TreatSpecificWarningsAsErrors>4098</TreatSpecificWarningsAsErrors>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -61,6 +62,7 @@
       <LinkStatus>false</LinkStatus>
       <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
       <AdditionalOptions>/machine:x64</AdditionalOptions>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>

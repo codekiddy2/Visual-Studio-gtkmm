@@ -1,0 +1,23 @@
+#copy contents into extracted pcre directory...
+#replace path and [debug|release] according to your desired setup
+
+#x64 users: 
+#open VS2013 x64 Native Tools command promt and type:
+D:\gtkmm\build\pcre2-10.00\debug-64.bat
+cd "D:\gtkmm\build\pcre2-10.00"
+./debug-64.sh
+
+
+#x86 users: 
+#open VS2013 x86 Native Tools command promt and type:
+D:\gtkmm\build\pcre2-10.00\debug-32.bat
+cd "D:\gtkmm\build\pcre2-10.00"
+./debug-32.sh
+
+
+#note
+above steps will configure, compile, link and finally install everything. no furter action needed.
+
+
+
+

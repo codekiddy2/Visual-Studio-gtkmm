@@ -1,0 +1,44 @@
+/Zi
+/W3
+/sdl-
+/nologo
+/WX-
+/Od
+/Ob0
+/Oy-
+-EHsc
+-we4098
+/D WIN32
+/D _WINDOWS
+/D _DEBUG
+/D WIN32
+/D _CRT_SECURE_NO_WARNINGS
+/D _SCL_SECURE_NO_WARNINGS
+/D _CRT_NONSTDC_NO_DEPRECATE
+/D NTDDI_WIN7=0x06010000
+/D _WIN32_WINNT_WIN7=0x0601
+/D _UNICODE
+/D UNICODE
+/GF-
+/Gm
+/RTC1
+/MDd
+/GS
+/Gy-
+/Qpar-
+/fp:precise
+/fp:except-
+/Zc:wchar_t
+/Zc:forScope
+/GR
+/Gd
+/analyze-
+/errorReport:prompt
+-I D:\gtkmm\output\Debug\x64\include
+-I D:\gtkmm\output\Debug\x64\include\jasper
+-I D:\gtkmm\output\Debug\x64\include\libpng
+-I D:\gtkmm\output\Debug\x64\include\zlib
+-I D:\gtkmm\output\Debug\x64\include\libintl
+-I D:\gtkmm\output\Debug\x64\include\iconv
+-I D:\gtkmm\output\Debug\x64\include\jpeg-turbo
+-link  /VERBOSE:SAFESEH /INCREMENTAL /MANIFEST:NO /DEBUG /OPT:NOREF /OPT:NOICF /WINMD:NO /DYNAMICBASE:NO /NXCOMPAT /SAFESEH /machine:X86

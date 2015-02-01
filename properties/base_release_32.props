@@ -41,6 +41,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -60,6 +61,7 @@
       <LinkStatus>false</LinkStatus>
       <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
       <AdditionalOptions>/machine:X86</AdditionalOptions>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>

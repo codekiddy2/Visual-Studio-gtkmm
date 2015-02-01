@@ -40,6 +40,7 @@
       <BrowseInformation>false</BrowseInformation>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <TreatSpecificWarningsAsErrors>4098</TreatSpecificWarningsAsErrors>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -58,6 +59,7 @@
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
       <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
       <AdditionalOptions>/machine:x64 /debug</AdditionalOptions>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
