@@ -1,0 +1,27 @@
+#open following file:
+
+D:\gtkmm\build\libepoxy-1.2\src\Makefile.vc
+
+#update following line:
+PYTHONDIR=c:\python27 (input your path to python)
+
+#change following:
+EPOXY_DLL_BASENAME = $(EPOXY_BASENAME)-vs$(VSVER)
+#with:
+EPOXY_DLL_BASENAME = $(EPOXY_BASENAME)
+
+#open VS2013 x64 Native Tools (x32 users open x32 console)
+cd D:\gtkmm\extraction\libepoxy-1.2\src
+nmake /f Makefile CFG=debug
+#or CFG=release (for release builds)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
+#copy epoxy.dll epoxy.dll.exp epoxy.dll.lib epoxy.ilk epoxy.pdb into installtation dir
+#also install headers:
+cd D:\gtkmm\output\Debug\x64\include
+mkdir epoxy
+cd epoxy
+xcopy D:\gtkmm\build\libepoxy-1.2\include\epoxy\*.h 

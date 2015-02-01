@@ -1,0 +1,20 @@
+example how to use mozilla-build with MS SDK
+#x64 configuration:
+#Open x64 Visual Studio command promt and run:
+
+set ROOT_DIR=D:\gtkmm\output\Debug\x64
+set CL=@debug-64.compiler
+set PATH=%ROOT_DIR%\bin;%PATH%
+set LIB=%ROOT_DIR%\lib;%LIB%
+
+set MOZBUILDDIR=D:\gtkmm\install\mozilla-build
+set MOZILLABUILD=%MOZBUILDDIR%
+set MOZ_TOOLS=%MOZBUILDDIR%moztools-x64
+start /d "%USERPROFILE%" "" "%MOZILLABUILD%"\msys\bin\bash --login -i
+
+
+cd D:/gtkmm/build/pcre2-10.00/msvc-120
+./configure CFLAGS='' CXXFLAGS='' CPPFLAGS='' CC=cl CXX=cl CPP='cl -nologo -EP' AR=lib LD=link --build=x86_64-w64-mingw32 --prefix=/d/output
+
+make
+make install
