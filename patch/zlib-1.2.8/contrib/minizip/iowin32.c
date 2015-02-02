@@ -26,11 +26,13 @@
 #endif
 
 
+// modified by codekiddy -- add your windows version
 #if defined(WINAPI_FAMILY_PARTITION) && (!(defined(IOWIN32_USING_WINRT_API)))
 #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_APP)
 #define _WIN32_WINNT 0x0601
 #endif
 #endif
+// end of modify
 
 voidpf  ZCALLBACK win32_open_file_func  OF((voidpf opaque, const char* filename, int mode));
 uLong   ZCALLBACK win32_read_file_func  OF((voidpf opaque, voidpf stream, void* buf, uLong size));
