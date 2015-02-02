@@ -6,15 +6,16 @@ Each folder here contains a README to explain how to use it's contents.
 **COPYRIGHT NOTICE:**
 
 I'm using serveral resoures from various sites and modify them with a goal to be compatible and easy to use.
-PACKAGES: all packages and source files are from official websites, some were modified in order to either remove bugs or to make them friendly with msvc.
+>PACKAGES: all packages and source files are from official websites, some were modified in order to either remove bugs or to make them friendly with msvc.
 
-Visual Studio Projects: I made some projects my self but some of them are copy pasted and modified with a goal to make them ready for new versions and do things such as update DLL exports or add missing source files..., here is a short list from where I got these:
+>Visual Studio Projects: I made some projects my self but some of them are copy pasted and modified with a goal to make them ready for new versions and do things such as update DLL exports or add missing source files..., here is a short list from where I got these:
+```
 https://wiki.gnome.org
 http://hexchat.github.io/
 https://github.com/winlibs
 from official source packages
 and of course by using google...
-
+```
 **HOW-TO:**
 
 VS Projects and properties are not "movable"!
