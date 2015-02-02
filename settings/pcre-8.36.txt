@@ -5,6 +5,7 @@ solution dir =D:\gtkmm\build\pcre-8.36\msvc-120
 
 #copy contents into extracted pcre directory...
 #replace path and [debug|release] according to your desired setup
+#NOTE: this solution will not work to compile with glib2, it is used to create a dll...
 
 #x64 users: 
 #open VS2013 x64 Native Tools command promt and type:
