@@ -1,4 +1,4 @@
-#this list is incomplete and for referenceo only
+#this list is incomplete and for reference only
 STEP 0:
 croco 0.6.8
 rsvg 2.36.4
