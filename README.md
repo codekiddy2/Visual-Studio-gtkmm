@@ -19,7 +19,7 @@ more information will be added in future as this is all fairly new and just rece
         gtkmm (ROOT DIR)
             projects (project files)
             settings (setup instructions)
-        	properties (Visual Studio properties)
+        	properties (Visual Studio properties and compiler settings)
         	build (directory with extracted packages redy to build)
         	output (install dir for finished build)
         	patch (modified source/header files for msvc compilation)
