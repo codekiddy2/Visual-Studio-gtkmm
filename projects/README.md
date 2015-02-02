@@ -11,7 +11,7 @@ all libraries/dll's share common naming converntion and extension:
    <output name>*.dll.exp (export library)
    <output name>*.dll     (shared library)
 ```
-and many other naming shemas and stuf such as same warning level.
+and many other naming shemas and stuff such as same compiler settings.
 
 some projects override these global settings for specific needs while other import
 higher level properties.
