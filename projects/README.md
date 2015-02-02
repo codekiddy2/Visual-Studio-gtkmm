@@ -10,8 +10,9 @@ all libraries/dll's share common naming converntion and extension:
    <output name>*.dll.lib (import library)
    <output name>*.dll.exp (export library)
    <output name>*.dll     (shared library)
+all outputs share exactly the same compiler settings
+single setting modification has indirect impact on all the packages.
 ```
-and many other naming shemas and stuff such as same compiler settings.
 
 some projects override these global settings for specific needs while other import
 higher level properties.
