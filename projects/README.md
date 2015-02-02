@@ -33,3 +33,4 @@ libtiff     | 4.0.2   | yes         | no        | no        | no
 pcre2       | 10.00   | yes         | no        | no        | no
 libepoxy    | 1.2     | yes         | no        | no        | no
 pixman      | 0.32.6  | yes         | no        | yes       | no
+freetype    | 2.5.5   | yes         | yes       | yes       | yes
