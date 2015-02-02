@@ -1,9 +1,12 @@
 #example how to set up cmake
 ENVIRONMENT IN MICROSOFT SHELL
 
-set PATH=D:\gtkmm\output\Debug\x64\bin;%PATH%;
-set LIB=D:\gtkmm\output\Debug\x64\lib;%LIB%
-set INCLUDE=D:\gtkmm\output\Debug\x64\include;%INCLUDE%
+set ROOT_DIR=D:\gtkmm\output\Debug\x64
+set PATH=%ROOT_DIR%\bin;%PATH%
+set LIB=%ROOT_DIR%\lib;%LIB%
+set INCLUDE=%ROOT_DIR%\include;%ROOT_DIR%\include\jasper;%ROOT_DIR%\include\libpng;%ROOT_DIR%\include\zlib;%ROOT_DIR%\include\libintl;%ROOT_DIR%\include\iconv;%ROOT_DIR%\include\jpeg-turbo;%INCLUDE%
+
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../ 
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
