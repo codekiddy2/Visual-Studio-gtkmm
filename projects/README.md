@@ -20,7 +20,7 @@ higher level properties.
 **Here is a list of testings, origin and tools used (yes mean test success, no means not tested but supposed to work):**
 
 project | version | Debug x64 | Debug x86 | Release x64 | Release x86 | Sources | Build
-:--------|:---------:|:-----------:|:-----------:|:-------------:|:-------------:|:-------------:|
+:--------|:---------:|:-----------:|:-----------:|:-------------:|:-------------:|:-------------:|:-------------:|
 zlib 	      | 1.2.8   | yes 	      | yes 		| yes	   	| yes     |  official   | msvc
 libpng      | 1.6.16  | yes      	| yes	   	| yes		   | yes     |  official   | msvc
 libiconv    | 1.14    | yes      	| yes		   | yes 		| yes     |  official   | msvc
