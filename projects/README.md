@@ -17,7 +17,7 @@ single setting modification has indirect impact on all the packages.
 some projects override these global settings for specific needs while other import
 higher level properties.
 
-**Here is a list of testings (yes mean test success, no means not tested):**
+**Here is a list of testings (yes mean test success, no means not tested but supposed to work):**
 
 project | version | Debug x64 | Debug x86 | Release x64 | Release x86 |
 :--------|:---------:|:-----------:|:-----------:|:-------------:|:-------------:|
