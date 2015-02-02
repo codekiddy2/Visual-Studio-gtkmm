@@ -29,7 +29,7 @@
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAs>Default</CompileAs>
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <StringPooling>false</StringPooling>
@@ -41,6 +41,9 @@
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <TreatSpecificWarningsAsErrors>4098</TreatSpecificWarningsAsErrors>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
+      <OpenMPSupport>false</OpenMPSupport>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -58,20 +61,45 @@
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
       <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
-      <AdditionalOptions>/machine:x64 /debug</AdditionalOptions>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <ManifestFile>$(IntDir)$(TargetName)$(TargetExt).manifest</ManifestFile>
     </Link>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <ErrorReporting>PromptImmediately</ErrorReporting>
       <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <Verbose>false</Verbose>
     </Lib>
     <Midl>
       <WarningLevel>4</WarningLevel>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </Midl>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
+    <Manifest>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Manifest>
+    <ResourceCompile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </ResourceCompile>
+    <Xdcmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Xdcmake>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+    <Xsd>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Xsd>
+    <FxCompile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </FxCompile>
+    <FxCompile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">

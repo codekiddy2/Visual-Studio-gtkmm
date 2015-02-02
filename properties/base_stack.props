@@ -6,7 +6,7 @@
   <ItemDefinitionGroup>
     <Link />
     <ClCompile>
-      <AdditionalIncludeDirectories>$(INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <IgnoreSpecificDefaultLibraries>freeglut.lib;freeglutd.lib;freeglut_static.lib;freeglut_staticd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>

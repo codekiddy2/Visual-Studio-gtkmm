@@ -28,7 +28,7 @@
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAs>Default</CompileAs>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NTDDI_WIN7=0x06010000;_WIN32_WINNT_WIN7=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <StringPooling>true</StringPooling>
       <SDLCheck>false</SDLCheck>
@@ -42,6 +42,10 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <TreatSpecificWarningsAsErrors>4098</TreatSpecificWarningsAsErrors>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -61,21 +65,40 @@
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <LinkStatus>false</LinkStatus>
       <AdditionalLibraryDirectories>$(LIB_DIR)</AdditionalLibraryDirectories>
-      <AdditionalOptions>/machine:x64</AdditionalOptions>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <ManifestFile>$(IntDir)$(TargetName)$(TargetExt).manifest</ManifestFile>
     </Link>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <ErrorReporting>PromptImmediately</ErrorReporting>
       <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
       <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <Verbose>false</Verbose>
     </Lib>
     <Midl>
       <WarningLevel>4</WarningLevel>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
     </Midl>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
+    <Manifest>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Manifest>
+    <ResourceCompile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </ResourceCompile>
+    <Xdcmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Xdcmake>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+    <Xsd>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Xsd>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">
