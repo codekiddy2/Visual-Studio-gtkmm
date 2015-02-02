@@ -49,7 +49,7 @@ more information will be added in future as this is all fairly new and just rece
         	    mozilla-build (to configure unfriendly sources)
         	    Symbols (MS Symbols for debugging)
         	    Python3 (Latest version of python)
-        	    Vim (usefull to read files in "formated" way)
+        	    GVim (usefull to read files in "civilized" way)
 ```   
 
 **ADDITIOINAL INFO:**
