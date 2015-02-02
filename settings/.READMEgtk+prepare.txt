@@ -1,3 +1,5 @@
+#this file is incomplete and for reference only
+
 ADD TO PATH:
 \mingw64\bin	#D:\GnuWin32\bin;D:\msys64\mingw64\bin
 
