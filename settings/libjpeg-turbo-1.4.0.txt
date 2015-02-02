@@ -49,3 +49,10 @@ cd D:\gtkmm\output\Debug\x64\include
 mkdir jpeg-turbo
 cd jpeg-turbo
 xcopy /FY D:\gtkmm\build\libjpeg-turbo-1.4.0\*.h
+move jconfig.h ..\
+move jpeglib.h ..\
+move jerror.h ..\
+move jmorecfg.h ..\
+
+
+

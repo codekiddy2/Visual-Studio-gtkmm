@@ -1,16 +1,29 @@
-#example how to set up cmake
-ENVIRONMENT IN MICROSOFT SHELL
+
+EXAMPLE FOR /X64 /DEBUG ENVIRONMENT AND PROJECT SETUP IN MICROSOFT SHELL
 
 set ROOT_DIR=D:\gtkmm\output\Debug\x64
 set PATH=%ROOT_DIR%\bin;%PATH%
 set LIB=%ROOT_DIR%\lib;%LIB%
-set INCLUDE=%ROOT_DIR%\include;%ROOT_DIR%\include\jasper;%ROOT_DIR%\include\libpng;%ROOT_DIR%\include\zlib;%ROOT_DIR%\include\libintl;%ROOT_DIR%\include\iconv;%ROOT_DIR%\include\jpeg-turbo;%INCLUDE%
+set INCLUDE=%ROOT_DIR%\include;%INCLUDE%
 
-cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../ 
+mkdir msvc-120
+cd msvc-120
+cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../
+
+OR
+
+cmake-gui (even better)
+
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 
+SETUP IN UNIX SHELL
 
+export PATH=/d/gtkmm/output/Debug/x64/bin:$PATH
+export LDFLAGS=-LD:/gtkmm/output/Debug/x64/lib:$LDFLAGS
 
+export CFLAGS=-I/d/gtkmm/output/Debug/x64/include:$CFLAGS
+export CPPFLAGS=-I/d/gtkmm/output/Debug/x64/include:$CPPFLAGS
+export CXXFLAGS=-I/d/gtkmm/output/Debug/x64/include:$CXXFLAGS

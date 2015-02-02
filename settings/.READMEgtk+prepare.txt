@@ -1,7 +1,4 @@
-#this file is incomplete and for reference only
-
-ADD TO PATH:
-\mingw64\bin	#D:\GnuWin32\bin;D:\msys64\mingw64\bin
+#this file is for reference only, taken out from MSYS2 environment
 
 FLAGS:
 pkg-config --cflags --libs gtkmm-3.0

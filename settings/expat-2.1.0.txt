@@ -17,23 +17,3 @@ mkdir expat
 cd expat
 xcopy D:\gtkmm\build\expat-2.1.0\lib\*.h /EF
 
-d:
-cd D:\gtkmm\output\Debug\Win32\include
-mkdir expat
-cd expat
-xcopy D:\gtkmm\build\expat-2.1.0\lib\*.h /EF
-
-d:
-cd D:\gtkmm\output\Release\x64\include
-mkdir expat
-cd expat
-xcopy D:\gtkmm\build\expat-2.1.0\lib\*.h /EF
-
-d:
-cd D:\gtkmm\output\Release\Win32\include
-mkdir expat
-cd expat
-xcopy D:\gtkmm\build\expat-2.1.0\lib\*.h /EF
-
-
-

@@ -68,13 +68,6 @@ $(Platform)/$(Configuration)/win32.obj
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 
-#troubleshooting:
-#environment variables:
-export PATH=/d/gtkmm/install/visualstudio/Common7/IDE:$PATH
-export PATH=/d/gtkmm/install/visualstudio/VC/bin/amd64:$PATH
-export LIB=/d/gtkmm/install/visualstudio/vc/lib:$LIB
-export INCLUDE=/d/gtkmm/install/visualstudio/vc/include:$INCLUDE
-
 #building dll probably fails under:
 libtool: link: /d/gtkmm/build/libffi-3.1/msvcc.sh -m64 -o .libs/ffi.dll.lib
   src/.libs/prep_cif.obj src/.libs/types.obj src/.libs/raw_api.obj src/.libs/java_raw_api.obj
