@@ -6,7 +6,7 @@ solution dir=libiconv-1.14\msvc-120
 d:
 cd D:\gtkmm\build\libiconv*
 xcopy /EF D:\gtkmm\projects\libiconv-1.14
-cd codekiddy\libiconv
+cd msvc-120\libiconv
 copy ..\..\lib\relocatable.h
 copy ..\..\lib\relocatable.c
 cd ..\include
