@@ -4,7 +4,7 @@ solution dir =D:\gtkmm\build\gettext-0.19.4\msvc-120
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 
-#copy paste appropriate *.compiler file, *.bat file and *.sh file from /gtkmm/properties folder
+#copy paste appropriate *.compiler file, *.bat file and *.sh file from configuration folder (see README there)
 #run Visual Studio x64 or x86
 cd D:\gtkmm\build\gettext-0.19.4
 
