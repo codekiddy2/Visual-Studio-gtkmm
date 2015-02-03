@@ -4,7 +4,7 @@ solution dir =D:\gtkmm\build\gettext-0.19.4\msvc-120
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 
-#copy paste project contents into root source directory
+#copy paste appropriate *.compiler file, *.bat file and *.sh file from /gtkmm/properties folder
 #run Visual Studio x64 or x86
 cd D:\gtkmm\build\gettext-0.19.4
 
@@ -13,7 +13,7 @@ cd D:\gtkmm\build\gettext-0.19.4
 #after configure is done type
 make (make will fail -> OK)
 
-Run Visual Studio, modify header file like in patch folder and build
+Run Visual Studio solution and build
 
 
 **************************************************************************************************************************************************************************

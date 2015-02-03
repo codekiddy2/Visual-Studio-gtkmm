@@ -49,7 +49,7 @@ libintl_printf
 libintl_sprintf
 ;libintl_relocate
 ;libintl_set_relocation_prefix
-;libintl_setlocale //codekiddy
+libintl_setlocale
 libintl_textdomain
 libintl_version
 locale_charset

@@ -87,7 +87,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
       <SDLCheck>false</SDLCheck>
@@ -102,7 +102,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
       <SDLCheck>false</SDLCheck>
@@ -120,7 +120,7 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
       <SDLCheck>false</SDLCheck>
@@ -138,7 +138,7 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
       <SDLCheck>false</SDLCheck>
@@ -179,10 +179,12 @@
     <ClCompile Include="..\..\gettext-runtime\intl\relocatable.c" />
     <ClCompile Include="..\..\gettext-runtime\intl\textdomain.c" />
     <ClCompile Include="..\..\gettext-runtime\intl\version.c" />
+    <ClCompile Include="..\codekiddy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gettext-runtime\config.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\libgnuintl.h" />
+    <ClInclude Include="..\libintl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
