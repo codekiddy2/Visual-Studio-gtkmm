@@ -117,3 +117,7 @@ packages/
 
 #folders
 output
+packages
+extraction
+downloads
+setup

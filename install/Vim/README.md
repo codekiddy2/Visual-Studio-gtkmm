@@ -1,1 +1,0 @@
-GVim is isntalled gere

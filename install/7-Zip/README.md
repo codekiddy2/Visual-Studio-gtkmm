@@ -1,1 +1,0 @@
-7-Zip is the only tool used to extract packages.

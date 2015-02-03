@@ -1,1 +1,0 @@
-Pyhon must be presented in %PATH% to build some packages.

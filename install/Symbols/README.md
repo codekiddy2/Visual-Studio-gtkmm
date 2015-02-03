@@ -1,1 +1,0 @@
-MS symbols... not actually realy needed.

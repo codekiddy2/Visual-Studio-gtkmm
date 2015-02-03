@@ -1,6 +1,0 @@
-FOLLOWING:
-
-D:\gtkmm\install\nasm;
-D:\gtkmm\install\CMake\bin;
-D:\gtkmm\output\Debug\x64\bin;
-D:\gtkmm\install\Python3;
