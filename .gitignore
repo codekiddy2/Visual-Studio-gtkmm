@@ -42,7 +42,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#From http://stackoverflow.com/questions/2143956/
+#Visual Studio
 #OS junk files
 [Tt]humbs.db
 *.DS_Store
