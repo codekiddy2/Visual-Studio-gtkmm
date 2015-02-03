@@ -7,7 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pixman", "pixman.vcxproj", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testpixman", "testpixman.vcxproj", "{C3E734B7-A89C-4011-B5D1-B3748F11D5BF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install.vcxproj", "{2093D218-190E-4194-9421-3BA7CBF33B10}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{D7686172-D5FF-45A2-B458-8ADF8A5C45B6}"
+	ProjectSection(SolutionItems) = preProject
+		Readme\pixman-0.32.6.txt = Readme\pixman-0.32.6.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +36,6 @@ Global
 		{C3E734B7-A89C-4011-B5D1-B3748F11D5BF}.Release|Win32.Build.0 = Release|Win32
 		{C3E734B7-A89C-4011-B5D1-B3748F11D5BF}.Release|x64.ActiveCfg = Release|x64
 		{C3E734B7-A89C-4011-B5D1-B3748F11D5BF}.Release|x64.Build.0 = Release|x64
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|Win32.ActiveCfg = Debug|Win32
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x64.ActiveCfg = Debug|x64
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|Win32.ActiveCfg = Release|Win32
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

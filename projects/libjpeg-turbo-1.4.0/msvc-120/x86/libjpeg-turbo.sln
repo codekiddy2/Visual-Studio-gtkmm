@@ -57,6 +57,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "turbojpeg-static", "turbojp
 		{D0FDD68E-612D-479C-808F-0BA5C6F384BE} = {D0FDD68E-612D-479C-808F-0BA5C6F384BE}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{BF80124E-B9CF-49E8-B8C7-36AD15BE4528}"
+	ProjectSection(SolutionItems) = preProject
+		Readme\libjpeg-turbo-1.4.0.txt = Readme\libjpeg-turbo-1.4.0.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32

@@ -9,6 +9,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testdll", "testdll\testdll.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testCaller", "testCaller\testCaller.vcxproj", "{33390110-D2EC-423F-AC76-314185C4C86B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{DA984880-D2AB-4865-9141-E7F69B071A38}"
+	ProjectSection(SolutionItems) = preProject
+		Readme\libffi-3.1.txt = Readme\libffi-3.1.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms

@@ -1,0 +1,31 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+solution created by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.0.1
+solution directory = D:\gtkmm\build\freeglut-3.0.0-rc2\msvc-120
+properties directory = D:\gtkmm\properties
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTION:
+start cmake-gui from appropriate VS command promt,
+then select source and click on configure (do not click on generate)
+then select Visual Studio generator with which you will compile.
+when cmake is done close it and open solution, select configuration and build.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+COPY HEADERS:
+cd D:\gtkmm\output\Debug\x64\include
+xcopy D:\gtkmm\build\freeglut-3.0.0-rc2\include\* /EFY
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+to use static library define: FREEGLUT_STATIC
+override default libs by "undefing" them, their original names are in freeglut_std.h

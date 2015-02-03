@@ -1,8 +1,15 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libintl_static", "libintl_static\libintl_static.vcxproj", "{A84D3840-B684-4129-A466-87C0DE24B6BB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libintl_dll", "libintl_dll\libintl_dll.vcxproj", "{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{512493DD-7941-477F-92C9-E3A0F6B2E14B}"
+	ProjectSection(SolutionItems) = preProject
+		Readme\gettext-0.19.4.txt = Readme\gettext-0.19.4.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
