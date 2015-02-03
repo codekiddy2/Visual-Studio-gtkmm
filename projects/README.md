@@ -1,6 +1,6 @@
 Here you will find Visual Studio 2013 projects for individual packages.
 All of the projects share exactly the same "common settings" via common Visual Studio
-properties found in /gtkmm/properties.
+properties found in properties folder.
 
 Benefits:
 ```
