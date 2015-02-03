@@ -68,7 +68,7 @@ Temporary Items
 *.sbr
 *.sdf
 *.opensdf
-*.unsuccessfulbuild
+#*.unsuccessfulbuild
 ipch/
 [Oo]bj/
 [Bb]in
@@ -112,7 +112,8 @@ packages/
 #Test files
 *.testsettings
 
-
+#assembler listing
+*.lst
 
 #folders
 output
