@@ -14,6 +14,7 @@ ffi
 libjpeg-turbo
 expat
 pcre	(included in glib, build extra for dll and use build with glib)
+	(optional libs = libreadline, libeditline and libbz2)
 glut
 
 gettext
