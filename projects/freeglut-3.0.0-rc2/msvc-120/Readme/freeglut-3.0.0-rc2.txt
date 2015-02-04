@@ -43,3 +43,4 @@ override default libs by "undefing" them, their original names are in freeglut_s
 TESTINGS:
 1.0.2
 	Debug x64
+	Release x86
