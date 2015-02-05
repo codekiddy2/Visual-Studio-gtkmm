@@ -23,7 +23,7 @@ Open Visual Studio solution and build.
 **************************************************************************************************************************************************************************
 COPY HEADERS:
 set src=D:\GitHub\Visual-Studio-gtkmm\projects\zlib-1.2.8
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\xWin32\
 d:
 cd %dest%
 mkdir include
@@ -58,4 +58,6 @@ List of tests:
 1.0.3
 	Debug x86
 	Debug x64
+	Release x86
+	Release x64
 
