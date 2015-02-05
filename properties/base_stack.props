@@ -36,14 +36,20 @@
       <CompileAs>Default</CompileAs>
       <TreatSpecificWarningsAsErrors>4098;4002;4003;4013;4020;4021;4027;4029;4033;4035;4045;4047;4049;4053;4071;4150;4819</TreatSpecificWarningsAsErrors>
       <DisableSpecificWarnings>4101;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
       <ProgramDataBaseFileName>$(INTERMEDIATE_DIR)$(TargetName).pdb</ProgramDataBaseFileName>
+      <AssemblerListingLocation>$(INTERMEDIATE_DIR)</AssemblerListingLocation>
+      <ObjectFileName>$(INTERMEDIATE_DIR)</ObjectFileName>
+      <BrowseInformationFile>$(INTERMEDIATE_DIR)</BrowseInformationFile>
+      <UseFullPaths>true</UseFullPaths>
+      <PrecompiledHeaderFile>$(TargetName).h</PrecompiledHeaderFile>
+      <XMLDocumentationFileName>$(INTERMEDIATE_DIR)$(TargetName).xml</XMLDocumentationFileName>
     </ClCompile>
     <Link>
       <ShowProgress>LinkVerboseSAFESEH</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
-      <ManifestFile>$(IntDir)$(TargetName)$(TargetExt).manifest</ManifestFile>
-      <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
+      <ManifestFile>$(INTERMEDIATE_DIR)$(TargetName)$(TargetExt).manifest</ManifestFile>
       <MapFileName>$(INTERMEDIATE_DIR)$(TargetName).map</MapFileName>
       <SubSystem>NotSet</SubSystem>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
@@ -51,9 +57,11 @@
       <FixedBaseAddress>false</FixedBaseAddress>
       <ImportLibrary>$(LIB_DIR)$(TargetName).dll.lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
     <Manifest>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <GenerateCategoryTags>true</GenerateCategoryTags>
     </Manifest>
     <Lib>
       <SuppressStartupBanner>false</SuppressStartupBanner>
@@ -62,21 +70,29 @@
       <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
       <ErrorReporting>PromptImmediately</ErrorReporting>
       <Verbose>false</Verbose>
+      <OutputFile>$(LIB_DIR)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
     </Lib>
     <ResourceCompile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <ResourceOutputFileName>$(INTERMEDIATE_DIR)%(Filename).res</ResourceOutputFileName>
     </ResourceCompile>
     <Midl>
       <WarningLevel>4</WarningLevel>
     </Midl>
     <Midl>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <TypeLibraryName>$(INTERMEDIATE_DIR)$(TargetName).tlb</TypeLibraryName>
+      <WarnAsError>true</WarnAsError>
     </Midl>
     <Xdcmake>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <OutputFile>$(INTERMEDIATE_DIR)$(TargetName).xml</OutputFile>
     </Xdcmake>
     <Bscmake>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <OutputFile>$(INTERMEDIATE_DIR)$(TargetName).bsc</OutputFile>
     </Bscmake>
     <Xsd>
       <SuppressStartupBanner>false</SuppressStartupBanner>
@@ -84,7 +100,12 @@
     <FxCompile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <TreatWarningAsError>true</TreatWarningAsError>
+      <EnableDebuggingInformation>true</EnableDebuggingInformation>
+      <AssemblerOutput>NoListing</AssemblerOutput>
     </FxCompile>
+    <BuildLog>
+      <Path>$(INTERMEDIATE_DIR)$(TargetName).log</Path>
+    </BuildLog>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">
