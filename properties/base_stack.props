@@ -11,6 +11,7 @@
     <CHROOT_DBG>D:\GitHub\Visual-Studio-gtkmm\output\Debug\$(Platform)\</CHROOT_DBG>
     <CHROOT_REL>D:\GitHub\Visual-Studio-gtkmm\output\Release\$(Platform)\</CHROOT_REL>
     <SET_INTERMEDIATE>intermediate\$(SolutionName)\$(ProjectName)\</SET_INTERMEDIATE>
+    <PYTHON_DIR>D:\gtkmm\install\Python3</PYTHON_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(ROOT_DIR)failed</OutDir>
@@ -134,6 +135,10 @@
     </BuildMacro>
     <BuildMacro Include="SET_INTERMEDIATE">
       <Value>$(SET_INTERMEDIATE)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PYTHON_DIR">
+      <Value>$(PYTHON_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>
