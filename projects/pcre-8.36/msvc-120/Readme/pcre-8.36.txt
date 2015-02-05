@@ -5,52 +5,55 @@ solution created by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
-INTRO:
-solution version = 1.0.2
+INFO:
+solution version = 1.0.3
 solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
+libz (optional)
+libz2 (optional)
+libeditline (optional)
+libreadline (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
-INSTRUCTION:
-#replace path and [debug|release] according to your desired setup
-#NOTE: this solution will not work to compile with glib2, it is used to create a dll...
+INSTRUCTIONS:
+replace path and [debug|release] according to your desired setup
+NOTE: this solution will not work to compile with glib2, it is used to create a dll...
+Before running following commands the msvc-120 folder with project files must not exist!
 
-#x64 users: 
-#open VS2013 x64 Native Tools command promt and type:
+x64 users: 
+open VS2013 x64 Native Tools command promt and type:
 set ROOT_DIR=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64
 set PATH=%ROOT_DIR%\bin;%PATH%
 set LIB=%ROOT_DIR%\lib;%LIB%
 set INCLUDE=%ROOT_DIR%\include;%INCLUDE%
-d:
-cd D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36
-mkdir msvc-120
-cd msvc-120
 cmake-gui
-#choose your settings for pcre 32 version (configure for dll and do *not* genereate)
-#where is source set to D:/GitHub/Visual-Studio-gtkmm/projects/pcre-8.36
-#where to build binaries set to D:/GitHub/Visual-Studio-gtkmm/projects/pcre-8.36/msvc-120
-#copy project files into msvc-120 directory...
-open solution and build.
 
-
-#x86 users: 
-#open VS2013 x86 Native Tools command promt and type:
+x86 users: 
+open VS2013 x86 Native Tools command promt and type:
 set ROOT_DIR=D:\gtkmm\output\Debug\x86
 set PATH=%ROOT_DIR%\bin;%PATH%
 set LIB=%ROOT_DIR%\lib;%LIB%
 set INCLUDE=%ROOT_DIR%\include;%INCLUDE%
-
-cd D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36
-mkdir msvc-120
-cd msvc-120
 cmake-gui
-#hoose your settings for pcre 32 version (configure for dll and do *not* genereate)
-#copy paste project files and replace, then open solution.
+
+All users:
+only following checkbox setting shall be true:
+BUILD_SHARED_LIBS
+PCRE_BUILD_PCRE32
+PCRE_BUILD_TEST
+PCRE_SUPPORT_LIBS
+
+choose your settings for pcre 32 version (configure for dll and do *not* genereate)
+where is source set to D:/GitHub/Visual-Studio-gtkmm/projects/pcre-8.36
+where to build binaries set to D:/GitHub/Visual-Studio-gtkmm/projects/pcre-8.36/msvc-120
+apply the above settings and reconfigure.
+open solution and build.
+
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -70,5 +73,12 @@ NOTES:
 TESTINGS:
 1.0.2
 	Debug x64
+	Debug x86
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+Create projects for 8 and 16 bit version, also dll/static versions.
+also project for C++
 	
 

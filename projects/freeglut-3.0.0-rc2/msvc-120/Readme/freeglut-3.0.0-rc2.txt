@@ -18,7 +18,7 @@ DEPENDENCIES:
 **************************************************************************************************************************************************************************
 INSTRUCTION:
 start cmake-gui from appropriate VS command promt (x86 or x64),
-then set the source and and destination to the rood directory of freeglut,
+then set the source and destination to the root directory of freeglut,
 click on configure, review settings and reconfigure if needed (do *not* click on generate)
 then select Visual Studio generator with which you will compile.
 when cmake is done close it and open solution, select configuration and build.
