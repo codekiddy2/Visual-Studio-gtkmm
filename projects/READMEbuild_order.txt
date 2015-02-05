@@ -2,12 +2,14 @@ PACKAGE
 	-DEPENDENCIES
 
 ****************************
+#undefined:
 
 croco
 rsvg
 bzip
 readline
 
+****************************
 iconv
 zlib
 ffi
@@ -19,6 +21,8 @@ glut
 
 gettext
 	-iconv (circular dependency)
+	-expat (optional, configure script will not check for it /??)
+	-libxml2 (optional, give also path for croco)
 
 png
 	-zlib
@@ -26,6 +30,7 @@ png
 libxml2 (or expat, no dependencies for expat)
 	-iconv
 	-zlib
+	-croco
 
 tiff
 	-zlib

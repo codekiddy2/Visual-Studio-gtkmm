@@ -1,0 +1,72 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+solution obtained from github.com/winlibs/gettext
+solution redesigned by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+libconv
+expat or libxml2 (optional)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INTRO:
+solution version = 1.0.2
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gettext-0.19.4\msvc-120
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+copy/paste appropriate *.compiler file, *.bat file and *.sh file from configuration folder
+into sources root directory and configure by using gnu autotools and mozilla-build system.
+bat file must be strted from apropriate VS command promt (x86 or x64)!
+make sure cl prints compiler settings before configuring, and if not modifiy the bat file,
+and probably other 2 files in case of "compiler can not create executables" and such.
+make sure mozilla-build path is correct too in the *.bat file.
+configuration is done by running the *.sh file (again, check for outputs)
+after configure is done you must "make" to generate libgnuintl.h
+make command will fail, but who cares we just want the header :)
+
+Open Visual Studio solution and build.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+COPY HEADERS:
+set src=D:\GitHub\Visual-Studio-gtkmm\projects\gettext-0.19.4\gettext-runtime\intl
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include
+d:
+cd %dest%
+mkdir libintl
+cd libintl
+copy %src%\*.h /Y
+copy libgnuintl.h ..\libintl.h
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+there are 2 versions of localcharset.h:
+one provided by gettext package and another modified by codekiddy (me) for purpose to
+compile libiconv, modified version is needed only to build libiconv because of dependency.
+the *.bat file is set to include modified version! so:
+io.h must be included by force in project settings to avoid unresolved functions:
+open(), close(), read() ... not tested yet, so you can modify the INCLUDE variable, in
+both *.bat file and *.compiler file.
+this project will link to DLL of libiconv, if you want static link
+define USING_STATIC_LIBICONV in preprocessor definitions to avoid unresolved stuff :)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.2
+	Debug x64
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+need to install locale files?
+when building libintl original locale_charset.h should be included, not the one
+from libiconv.
+need to test original libint_setlocale()
