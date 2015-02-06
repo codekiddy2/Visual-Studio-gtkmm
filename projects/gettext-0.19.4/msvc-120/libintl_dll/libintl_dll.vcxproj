@@ -103,7 +103,7 @@
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>.\..\codekiddy.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\..\codekiddy-intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>libiconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -120,7 +120,7 @@
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>.\..\codekiddy.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\..\codekiddy-intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>libiconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -164,7 +164,7 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>.\..\codekiddy.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\..\codekiddy-intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>libiconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

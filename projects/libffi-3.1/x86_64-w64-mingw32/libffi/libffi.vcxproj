@@ -22,6 +22,7 @@
     <ProjectGuid>{793F0ABE-66E5-48C0-9690-3060FF08AFF5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>libffi</RootNamespace>
+    <ProjectName>libffi_static</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -72,15 +73,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(LIB_DIR)</OutDir>
+    <TargetName>libffi</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(LIB_DIR)</OutDir>
+    <TargetName>libffi</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(LIB_DIR)</OutDir>
+    <TargetName>libffi</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(LIB_DIR)</OutDir>
+    <TargetName>libffi</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
