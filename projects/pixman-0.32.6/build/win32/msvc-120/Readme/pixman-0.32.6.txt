@@ -1,76 +1,48 @@
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
-solution obtained from official zlib package
+solution obtained from wiki.gnome.org/action/show/Projects/GTK+/Win32/MSVCCompilationOfGTKStack?action=show&redirect=GTK%2B%2FWin32%2FMSVCCompilationOfGTKStack
 solution redesigned by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.0.4
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\zlib-1.2.8\contrib\vstudio\msvc-120
+solution version = 1.0.3
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pixman-0.32.6\build\win32\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
+DEPENDENCIES:
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
 INSTRUCTIONS:
-copy/replace iowin32.c from project directory and paste it into zlib-1.2.8\contrib\minizip
-If you're not using Windows 7 then modify iowin32.c and replace _WIN32_WINNT value with
-value for your Windows on line 30
-Open Visual Studio solution and build.
-If you are trying to build only dll version make sure you build asm project first.
-If you want to build against multiple targets remember that "clean solution" will not remove
-assembler output files! to solve this go to zlib-1.2.8\contrib\masmx86 or masmx64 and 
-remove all the *.obj files before building!
+open solution, choose configuration and build
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 COPY HEADERS:
-set src=D:\GitHub\Visual-Studio-gtkmm\projects\zlib-1.2.8
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\xWin32\
+set src=
+set dest=
 d:
-cd %dest%
-mkdir include
-cd include
-mkdir zlib
-cd zlib
-copy /Y %src%\*.h
-move /Y zconf.h ..\
-move /Y zlib.h ..\
+cd D:\gtkmm\output\Debug\x64\include
+mkdir pixman-1
+cd pixman-1
+xcopy D:\gtkmm\build\pixman-0.32.6\pixman\*.h /EY
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-#zlib > iowin32.c line 28: (define your windows version)
-#define _WIN32_WINNT = 0x0601
-
-#file : zlibvc.def: line 4 (change version)
-VERSION		1.28 
-
-#x64:
-#run manualy (sometimes assembly does not get compiled):
-cd D:\gtkmm\build\zlib-1.2.8\contrib\masmx64
-.\bld_ml64.bat
-
-#x64
-if testzlib results in unresolved external, try to remove the project and add old one.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
-List of tests:
 1.0.3
-	Debug x86
 	Debug x64
 	Release x86
-	Release x64
-
-1.0.4
-	Debug x86
-	Debug x64
-	Release x86
-	Release x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
+
