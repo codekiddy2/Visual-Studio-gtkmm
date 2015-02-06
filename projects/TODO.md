@@ -8,4 +8,5 @@
 8. remove NDEBUG macro for release builds, also check other macros.
 9. dummy projects shall not create intermediates.
 10. debug x64 outputs pdb files into wrong location.
+11. sincrnyze compiler/linker flags for custom build cmd projects.
 
