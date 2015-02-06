@@ -42,7 +42,7 @@ set INCLUDE=%ROOT_DIR%\include;%INCLUDE%
 cmake-gui
 
 All users:
-only following checkbox setting shall be true:
+only following checkbox settings shall be true:
 BUILD_SHARED_LIBS
 PCRE_BUILD_PCRE32
 PCRE_BUILD_TEST
