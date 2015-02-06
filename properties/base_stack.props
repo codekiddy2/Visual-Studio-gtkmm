@@ -107,6 +107,9 @@
     <BuildLog>
       <Path>$(INTERMEDIATE_DIR)$(TargetName).log</Path>
     </BuildLog>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">
