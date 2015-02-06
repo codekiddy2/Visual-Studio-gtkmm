@@ -28,7 +28,7 @@ and probably other 2 files in case of "compiler can not create executables" and 
 make sure mozilla-build path is correct too in the *.bat file.
 configuration is done by running the *.sh file (again, check for outputs)
 after configure is done you must "make" to generate libgnuintl.h
-make command will fail, but who cares we just want the header :)
+The make command will fail, but who cares we just want the header :)
 
 Open Visual Studio solution and build.
 
