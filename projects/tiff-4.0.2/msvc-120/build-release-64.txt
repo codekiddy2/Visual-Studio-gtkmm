@@ -66,7 +66,7 @@ JPEG_LIB 	= $(JPEGDIR)/lib/jpeg.dll.lib
 ZIP_SUPPORT	= 1
 ZLIBDIR 	= D:/GitHub/Visual-Studio-gtkmm/output/Release/x64
 ZLIB_INCLUDE	= -I$(ZLIBDIR)/include/zlib/ -I$(ZLIBDIR)/include/
-ZLIB_LIB 	= $(ZLIBDIR)/lib/zlib.dll.lib
+ZLIB_LIB 	= $(ZLIBDIR)/lib/zlib.lib
 
 #
 # Uncomment and edit following lines to enable ISO JBIG support
