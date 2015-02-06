@@ -9,4 +9,5 @@
 9. dummy projects shall not create intermediates.
 10. debug x64 outputs pdb files into wrong location.
 11. sincrnyze compiler/linker flags for custom build cmd projects.
-
+12. minimize amount of build events in project to reduce the "cmd exit = blah"
+13. add version number to each lib/dll file.

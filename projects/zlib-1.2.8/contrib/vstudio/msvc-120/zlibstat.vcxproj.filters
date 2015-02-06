@@ -69,6 +69,9 @@
     <Filter Include="Definition Files">
       <UniqueIdentifier>{33fb3e3f-91a4-414f-b70b-f9105b078c6c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{e82353da-e64b-47a0-be18-676baa1c3a89}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="zlibvc.def">
@@ -79,5 +82,19 @@
     <ResourceCompile Include="zlib.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\..\masmx64\gvmat64.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="..\..\masmx86\inffas32.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="..\..\masmx64\inffasx64.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="..\..\masmx86\match686.obj">
+      <Filter>Object Files</Filter>
+    </Object>
   </ItemGroup>
 </Project>
