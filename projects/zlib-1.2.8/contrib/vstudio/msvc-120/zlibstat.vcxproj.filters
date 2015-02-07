@@ -84,16 +84,16 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Object Include="..\..\masmx64\gvmat64.obj">
+    <Object Include="asm\inffas32.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="..\..\masmx86\inffas32.obj">
+    <Object Include="asm\match686.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="..\..\masmx64\inffasx64.obj">
+    <Object Include="asm\inffasx64.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="..\..\masmx86\match686.obj">
+    <Object Include="asm\gvmat64.obj">
       <Filter>Object Files</Filter>
     </Object>
   </ItemGroup>

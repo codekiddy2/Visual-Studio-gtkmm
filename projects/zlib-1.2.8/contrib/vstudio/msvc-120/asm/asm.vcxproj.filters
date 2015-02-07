@@ -7,17 +7,17 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\masmx64\gvmat64.asm">
+    <CustomBuild Include="..\..\..\masmx64\gvmat64.asm">
       <Filter>Assembler Files</Filter>
-    </None>
-    <None Include="..\..\..\masmx64\inffasx64.asm">
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\masmx64\inffasx64.asm">
       <Filter>Assembler Files</Filter>
-    </None>
-    <None Include="..\..\..\masmx86\inffas32.asm">
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\masmx86\inffas32.asm">
       <Filter>Assembler Files</Filter>
-    </None>
-    <None Include="..\..\..\masmx86\match686.asm">
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\masmx86\match686.asm">
       <Filter>Assembler Files</Filter>
-    </None>
+    </CustomBuild>
   </ItemGroup>
 </Project>
