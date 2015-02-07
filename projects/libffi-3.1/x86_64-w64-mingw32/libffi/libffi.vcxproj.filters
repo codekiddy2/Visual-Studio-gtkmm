@@ -9,6 +9,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Assembler Files">
+      <UniqueIdentifier>{d1d577ff-8f96-4802-8c9a-01ef33065125}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\closures.c">
@@ -31,11 +34,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\src\x86\win64.S">
-      <Filter>Source Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="..\..\src\x86\win32.S">
-      <Filter>Source Files</Filter>
+      <Filter>Assembler Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\x86\win64.S">
+      <Filter>Assembler Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

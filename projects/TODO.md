@@ -18,3 +18,4 @@
 17. ran batch build for all projects and all configurations.
 18. CHECK if assembly modules require command line option about target and debug.
 19. libffi Debug x86 unresolved stuff.
+20. same intermediate root directory for asm and C/C++ projects

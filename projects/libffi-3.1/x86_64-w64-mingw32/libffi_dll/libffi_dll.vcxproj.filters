@@ -12,6 +12,9 @@
     <Filter Include="Definition Files">
       <UniqueIdentifier>{cb10dd21-1bf1-4b66-8d49-2269a98b3482}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assembler Files">
+      <UniqueIdentifier>{6f18047f-200f-46eb-8b58-2ffe6fa5a373}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\ffi.h">
@@ -46,10 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\src\x86\win32.S">
-      <Filter>Source Files</Filter>
+      <Filter>Assembler Files</Filter>
     </CustomBuild>
     <CustomBuild Include="..\..\src\x86\win64.S">
-      <Filter>Source Files</Filter>
+      <Filter>Assembler Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
