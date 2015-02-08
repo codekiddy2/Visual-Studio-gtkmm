@@ -260,7 +260,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HARFBUZZ_EXPORTS;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
@@ -269,7 +269,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>Rpcrt4.lib;usp10.lib</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
     </Lib>
     <Lib>
       <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
@@ -279,7 +279,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_LIB;HARFBUZZ_EXPORTS;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAs>CompileAsCpp</CompileAs>
       <SDLCheck>false</SDLCheck>
       <WarningLevel>Level2</WarningLevel>
@@ -294,7 +294,7 @@
       <ImportLibrary>$(SolutionDir)libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
     </Link>
     <Lib>
-      <AdditionalDependencies>Rpcrt4.lib;usp10.lib</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
       <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
     </Lib>
   </ItemDefinitionGroup>
@@ -302,7 +302,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HARFBUZZ_EXPORTS;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAs>CompileAsCpp</CompileAs>
       <SDLCheck>false</SDLCheck>
     </ClCompile>
@@ -316,7 +316,7 @@
       <ImportLibrary>$(SolutionDir)libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
     </Link>
     <Lib>
-      <AdditionalDependencies>Rpcrt4.lib;usp10.lib</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
       <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
     </Lib>
   </ItemDefinitionGroup>
