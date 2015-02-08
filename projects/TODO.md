@@ -1,3 +1,6 @@
+```
+Following TODO's apply to "Redesign" branch of project that exist in master
+```
 1. DEFINE PREPROCESSOR FOR CMAKE ON CMAKE PROJECTS
 2. build ffi DLL version
 3. link glib with external pcre DLL/lib version
@@ -19,3 +22,6 @@
 18. CHECK if assembly modules require command line option about target and debug.
 19. libffi Debug x86 unresolved stuff.
 20. same intermediate root directory for asm and C/C++ projects
+21. optimize warning levels for all project to reduce warning spamming.
+22. build pcre 16 and 8 versions, both lib and dll.
+23. link asm automatically to linker instead of object files.
