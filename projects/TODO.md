@@ -25,3 +25,4 @@ Following TODO's apply to "Redesign" branch of projects that exist in master
 21. optimize warning levels for all project to reduce warning spamming.
 22. build pcre 16 and 8 versions, both lib and dll.
 23. link asm automatically to linker instead of object files.
+24. define database of *.def files and their standard install location.
