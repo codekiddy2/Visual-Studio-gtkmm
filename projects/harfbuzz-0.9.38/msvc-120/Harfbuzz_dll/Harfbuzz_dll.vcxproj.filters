@@ -29,6 +29,15 @@
     <Filter Include="Header Files\Glib">
       <UniqueIdentifier>{db0a6d7c-58c4-4723-830e-00843aa035c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Test">
+      <UniqueIdentifier>{103810f8-6d9b-4cd6-843f-1890e4234854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Test">
+      <UniqueIdentifier>{ea20ee72-675b-4cee-a689-b5b049e3ae63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test_exclude">
+      <UniqueIdentifier>{b14244a3-79b1-41f6-81fa-de214470d1fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\hb-blob.cc">
@@ -41,9 +50,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\hb-common.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\hb-face.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\hb-fallback-shape.cc">
@@ -86,9 +92,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\hb-unicode.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\hb-uniscribe.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\hb-warning.cc">
@@ -136,11 +139,23 @@
     <ClCompile Include="..\..\src\hb-ucdn.cc">
       <Filter>Source Files\Excluded</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\hb-coretext.cc">
+      <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hb-ot-font.cc">
+      <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hb-face.cc">
+      <Filter>Source Files\Test_exclude</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\src\hb-glib.cc">
-      <Filter>Source Files\Glib</Filter>
+      <Filter>Source Files\Test_exclude</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\hb-gobject-structs.cc">
-      <Filter>Source Files\Glib</Filter>
+      <Filter>Source Files\Test_exclude</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hb-uniscribe.cc">
+      <Filter>Source Files\Test_exclude</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -325,6 +340,12 @@
     </ClInclude>
     <ClInclude Include="..\hb-gobject-enums.h">
       <Filter>Header Files\Glib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hb-coretext.h">
+      <Filter>Header Files\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hb-ucdn\ucdn.h">
+      <Filter>Header Files\Test</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -55,17 +55,16 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_WINDOWS;_USRDLL;HARFBUZZ_DLL_EXPORTS;HARFBUZZ_EXPORTS;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;HARFBUZZ_DLL_EXPORTS;HARFBUZZ_EXPORTS;HAVE_OT;HAVE_GLIB;HAVE_UNISCRIBE;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
       <CompileAs>CompileAsCpp</CompileAs>
       <WarningLevel>Level2</WarningLevel>
-      <AdditionalIncludeDirectories>.\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\harfbuzz-0.9.38\src;.\..\;..\..\src\;..\..\src\hb-ucdn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <ModuleDefinitionFile>
-      </ModuleDefinitionFile>
-      <AdditionalDependencies>glib.dll.lib;freetype.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>harfbuzz.def</ModuleDefinitionFile>
+      <AdditionalDependencies>glib.dll.lib;freetype.lib;gobject.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -88,6 +87,10 @@
     <ClCompile Include="..\..\src\hb-buffer-serialize.cc" />
     <ClCompile Include="..\..\src\hb-buffer.cc" />
     <ClCompile Include="..\..\src\hb-common.cc" />
+    <ClCompile Include="..\..\src\hb-coretext.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\src\hb-face.cc" />
     <ClCompile Include="..\..\src\hb-fallback-shape.cc" />
     <ClCompile Include="..\..\src\hb-font.cc" />
@@ -102,6 +105,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\src\hb-ot-font.cc" />
     <ClCompile Include="..\..\src\hb-ot-layout.cc" />
     <ClCompile Include="..\..\src\hb-ot-map.cc" />
     <ClCompile Include="..\..\src\hb-ot-shape-complex-arabic.cc" />
@@ -138,6 +142,10 @@
     <None Include="harfbuzz.def" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\hb-coretext.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="..\..\src\hb-glib.h" />
     <ClInclude Include="..\..\src\hb-gobject-structs.h" />
     <ClInclude Include="..\..\src\hb-gobject.h" />
@@ -149,6 +157,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="..\..\src\hb-ucdn\ucdn.h" />
     <ClInclude Include="..\hb-gobject-enums.h" />
     <None Include="..\..\src\hb-ot-shape-complex-private.hh" />
     <None Include="..\..\src\hb-ot-shape-complex-indic-table.hh" />
