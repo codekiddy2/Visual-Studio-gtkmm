@@ -44,6 +44,10 @@ fc-match
 fc-list
 fc-cat
 
+FIX: each project must use "Multibyte character set" because:
+fontconfig's code only uses the ANSI variants of the APIs
+lists.freedesktop.org/archives/fontconfig/2007-October/002685.html
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
