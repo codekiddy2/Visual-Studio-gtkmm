@@ -14,6 +14,7 @@
     <ProjectGuid>{A5D6E869-2DF1-40FD-87DA-9836C2518335}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>test</RootNamespace>
+    <ProjectName>test_fontfile</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -56,7 +57,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>glib.dll.lib;freetype.lib;gobject.dll.lib;harfbuzz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>harfbuzz.dll.lib;glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

@@ -95,6 +95,9 @@
     <ClInclude Include="hb-gobject-enums.h">
       <Filter>Header Files\Glib</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\hb-coretext.h">
+      <Filter>Header Files\Excluded</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\hb-blob.cc">
@@ -187,9 +190,6 @@
     <ClCompile Include="..\src\hb-icu.cc">
       <Filter>Source Files\Excluded</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\hb-tt-font.cc">
-      <Filter>Source Files\Excluded</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\hb-ucdn.cc">
       <Filter>Source Files\Excluded</Filter>
     </ClCompile>
@@ -208,12 +208,15 @@
     <ClCompile Include="..\src\hb-gobject-structs.cc">
       <Filter>Source Files\Glib</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\hb-coretext.cc">
+      <Filter>Source Files\Excluded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-font.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\hb-buffer-private.hh">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="..\src\hb-fallback-shape-private.hh">
       <Filter>Header Files</Filter>
     </None>
     <None Include="..\src\hb-font-private.hh">
@@ -309,13 +312,7 @@
     <None Include="..\src\hb-ot-shape-complex-arabic-table.hh">
       <Filter>Header Files\Complex</Filter>
     </None>
-    <None Include="..\src\hb-ot-shape-complex-indic-machine.hh">
-      <Filter>Header Files\Complex</Filter>
-    </None>
     <None Include="..\src\hb-ot-shape-complex-indic-private.hh">
-      <Filter>Header Files\Complex</Filter>
-    </None>
-    <None Include="..\src\hb-ot-shape-complex-indic-table.hh">
       <Filter>Header Files\Complex</Filter>
     </None>
     <None Include="..\src\hb-ot-shape-complex-private.hh">

@@ -59,7 +59,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>glib.dll.lib;freetype.lib;gobject.dll.lib;harfbuzz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>harfbuzz.dll.lib;glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

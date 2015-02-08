@@ -55,7 +55,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_WINDOWS;_USRDLL;HARFBUZZ_DLL_EXPORTS;HARFBUZZ_EXPORTS;HAVE_OT;HAVE_GLIB;HAVE_UNISCRIBE;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;HARFBUZZ_DLL_EXPORTS;HAVE_OT;HAVE_GLIB;HAVE_UNISCRIBE;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
       <CompileAs>CompileAsCpp</CompileAs>
       <WarningLevel>Level2</WarningLevel>
@@ -64,7 +64,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <ModuleDefinitionFile>harfbuzz.def</ModuleDefinitionFile>
-      <AdditionalDependencies>glib.dll.lib;freetype.lib;gobject.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -72,14 +72,15 @@
       <WarningLevel>Level2</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_WINDOWS;_USRDLL;HARFBUZZ_DLL_EXPORTS;HARFBUZZ_EXPORTS;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;HARFBUZZ_DLL_EXPORTS;HAVE_OT;HAVE_GLIB;HAVE_UNISCRIBE;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>glib.dll.lib;freetype.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;freetype.lib;gobject.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>harfbuzz.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -126,10 +127,6 @@
     <ClCompile Include="..\..\src\hb-shape-plan.cc" />
     <ClCompile Include="..\..\src\hb-shape.cc" />
     <ClCompile Include="..\..\src\hb-shaper.cc" />
-    <ClCompile Include="..\..\src\hb-tt-font.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="..\..\src\hb-ucdn.cc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -160,9 +157,7 @@
     <ClInclude Include="..\..\src\hb-ucdn\ucdn.h" />
     <ClInclude Include="..\hb-gobject-enums.h" />
     <None Include="..\..\src\hb-ot-shape-complex-private.hh" />
-    <None Include="..\..\src\hb-ot-shape-complex-indic-table.hh" />
     <None Include="..\..\src\hb-ot-shape-complex-indic-private.hh" />
-    <None Include="..\..\src\hb-ot-shape-complex-indic-machine.hh" />
     <None Include="..\..\src\hb-ot-shape-complex-arabic-table.hh" />
     <None Include="..\..\src\hb-ot-shape-complex-arabic-fallback.hh" />
     <None Include="..\..\src\hb-unicode-private.hh" />
@@ -192,7 +187,6 @@
     <None Include="..\..\src\hb-object-private.hh" />
     <None Include="..\..\src\hb-mutex-private.hh" />
     <None Include="..\..\src\hb-font-private.hh" />
-    <None Include="..\..\src\hb-fallback-shape-private.hh" />
     <None Include="..\..\src\hb-cache-private.hh" />
     <None Include="..\..\src\hb-buffer-private.hh" />
     <None Include="..\..\src\hb-atomic-private.hh" />
