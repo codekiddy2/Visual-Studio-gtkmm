@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\hb-blob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-ft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-ot-layout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-ot-tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-ot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-uniscribe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-unicode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-shape-plan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hb-face.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\hb-blob.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-fallback-shape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-font.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ft.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-layout.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-map.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-complex-arabic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-complex-indic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-normalize.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-tag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-shape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-tt-font.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-unicode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-uniscribe.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-warning.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-fallback.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-shape-plan.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-shaper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-complex-default.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-complex-thai.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-buffer-serialize.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-complex-indic-table.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-complex-myanmar.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-ot-shape-complex-sea.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hb-face.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\hb-buffer-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-fallback-shape-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-font-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-mutex-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-object-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-open-file-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-open-type-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-head-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-hhea-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-hmtx-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-layout-common-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-layout-gdef-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-layout-gpos-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-layout-gsub-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-layout-gsubgpos-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-layout-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-map-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-maxp-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-name-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-complex-arabic-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-complex-indic-machine.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-complex-indic-table.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-complex-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-unicode-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-atomic-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-cache-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-complex-arabic-fallback.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-complex-indic-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-fallback-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-ot-shape-normalize-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-set-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-shape-plan-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-shaper-impl-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-shaper-list.hh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\src\hb-shaper-private.hh">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
