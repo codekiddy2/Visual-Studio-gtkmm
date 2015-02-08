@@ -1,5 +1,5 @@
 ```
-Following TODO's apply to "Redesign" branch of project that exist in master
+Following TODO's apply to "Redesign" branch of projects that exist in master
 ```
 1. DEFINE PREPROCESSOR FOR CMAKE ON CMAKE PROJECTS
 2. build ffi DLL version
