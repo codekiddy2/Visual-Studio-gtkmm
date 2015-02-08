@@ -98,7 +98,7 @@
       <SDLCheck>false</SDLCheck>
       <CompileAs>CompileAsCpp</CompileAs>
       <WarningLevel>Level2</WarningLevel>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\harfbuzz-0.9.38\src;.\..\;..\..\src\;..\..\src\hb-ucdn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -114,7 +114,7 @@
       <SDLCheck>false</SDLCheck>
       <CompileAs>CompileAsCpp</CompileAs>
       <WarningLevel>Level2</WarningLevel>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\harfbuzz-0.9.38\src;.\..\;..\..\src\;..\..\src\hb-ucdn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

@@ -265,6 +265,7 @@
       <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
       <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -285,6 +286,7 @@
       <CompileAs>CompileAsCpp</CompileAs>
       <SDLCheck>false</SDLCheck>
       <WarningLevel>Level2</WarningLevel>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -307,6 +309,7 @@
       <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAs>CompileAsCpp</CompileAs>
       <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

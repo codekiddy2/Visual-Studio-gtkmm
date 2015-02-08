@@ -7,7 +7,7 @@ solution redesigned by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.0.2
+solution version = 1.0.3
 solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\harfbuzz-0.9.38\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
@@ -30,8 +30,17 @@ for Freetype to use futures of harfbuzz.
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 COPY HEADERS:
-set src=D:\GitHub\Visual-Studio-gtkmm\projects\harfbuzz-0.9.38\src
+
+#Debug x64:
 set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include
+Debug x86:
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\Win32\include
+Release x64:
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include
+Release x86:
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32\include
+
+set src=D:\GitHub\Visual-Studio-gtkmm\projects\harfbuzz-0.9.38\src
 d:
 cd %dest%
 mkdir harfbuzz
@@ -53,6 +62,9 @@ TESTINGS:
 
 1.0.2
 	Debug x64
+
+1.0.3
+	All 4 (no debug)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

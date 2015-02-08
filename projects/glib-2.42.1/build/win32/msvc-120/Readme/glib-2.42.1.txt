@@ -27,7 +27,15 @@ Open Solution and build.
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 COPY HEADERS:
+#Debug x64:
 set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64
+#Debug x86:
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\Win32
+#Release x64:
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\x64
+#Release x86:
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32
+
 set src=D:\GitHub\Visual-Studio-gtkmm\projects\glib-2.42.1
 d:
 cd %dest%\include
@@ -36,13 +44,13 @@ cd glib
 mkdir glib
 mkdir gio
 mkdir gobject
-mkdir gio-win32
-cd gio-win32
+mkdir ..\gio-win32
+cd ..\gio-win32
 mkdir gio
 cd gio
 copy %src%\gio\gwin32inputstream.h
 copy %src%\gio\gwin32outputstream.h
-cd ..\..\glib
+cd ..\..\glib\glib
 copy %src%\glib\*.h
 copy glib.h ..\
 copy glib-object.h ..\
@@ -64,6 +72,7 @@ mkdir include
 cd include
 copy .\..\..\..\include\glib\glib\glibconfig.h
 
+mkdir ..\..\..\share
 cd ..\..\..\share\
 mkdir glib
 cd glib
