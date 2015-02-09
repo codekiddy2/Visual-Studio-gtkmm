@@ -7,7 +7,7 @@ solution redesigned by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.0.0
+solution version = 1.0.1
 solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\fontconfig-2.11.1\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
@@ -22,24 +22,40 @@ libiconv
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Open Visual Studio solution and build.
+Do not Open Visual Studio solution and build.
+use 2.8.0 instead, this solution is here only for testing purposes of new
+fontconfig versions.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 COPY HEADERS:
-set src=
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include
+#debug 64
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64
+#release 64
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\x64
+#debug x86
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\Win32
+#release x86
+set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32
+
+#all
+set src=D:\GitHub\Visual-Studio-gtkmm\projects\fontconfig-2.8.0
 d:
-cd %dest%
+cd %dest%\include
 mkdir fontconfig
-cd fonconfig
-xcopy %src%\*.h /EFY
+cd fontconfig
+copy %src%\fontconfig\*.h /Y
+mkdir ..\..\etc\fonts\conf.d
+cd ..\..\etc\fonts\conf.d
+xcopy %src%\conf.d\*.conf /EFY
+cd ..
+copy %src%\msvc-120\fonts.conf
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
 fontconfig 2.11.1 chrases:
-fc-cache, post-build event disabled.
+fc-cache
 fc-match
 fc-list
 fc-cat
@@ -48,10 +64,16 @@ FIX: each project must use "Multibyte character set" because:
 fontconfig's code only uses the ANSI variants of the APIs
 lists.freedesktop.org/archives/fontconfig/2007-October/002685.html
 
+fc-cache, post-build event disabled due to bug.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
 1.0.0
+	Debug x64
+
+1.0.1
+	Debug x64
 
 
 
