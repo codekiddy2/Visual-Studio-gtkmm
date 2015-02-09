@@ -27,4 +27,6 @@ Following TODO's apply to "Redesign" branch of projects that exist in master
 23. link asm automatically to linker instead of object files.
 24. define database of *.def files and their standard install location.
 25. add download location for project sources into solution readme.
-26. check expat static, unresolved externals?? (all projects use dll link)
+26. solution for libgw32
+27. link fontconfig custom dirnet to dirnet project
+18. create ICU project to optionally link with harbuzz
