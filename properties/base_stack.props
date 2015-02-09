@@ -13,7 +13,7 @@
     <SET_INTERMEDIATE>intermediate\$(SolutionName)\$(ProjectName)\</SET_INTERMEDIATE>
     <PYTHON_DIR>D:\gtkmm\install\Python3</PYTHON_DIR>
     <PERL_DIR>D:\gtkmm\install\Perl64</PERL_DIR>
-    <SRC_DIR>$(SolutionDir)</SRC_DIR>
+    <REPO_DIR>D:\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(ROOT_DIR)failed</OutDir>
@@ -149,9 +149,8 @@
       <Value>$(PERL_DIR)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
-    <BuildMacro Include="SRC_DIR">
-      <Value>$(SRC_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
+    <BuildMacro Include="REPO_DIR">
+      <Value>$(REPO_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
