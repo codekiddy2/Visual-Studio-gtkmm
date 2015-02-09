@@ -133,18 +133,9 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">
-    <OutDir>$(CHROOT_DBG)bin\</OutDir>
-    <IntDir>$(CHROOT_DBG)$(SET_INTERMEDIATE)</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">
-    <OutDir>$(CHROOT_REL)bin\</OutDir>
-    <IntDir>$(CHROOT_REL)$(SET_INTERMEDIATE)</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">
-    <OutDir>$(CHROOT_DBG)bin\</OutDir>
-    <IntDir>$(CHROOT_DBG)$(SET_INTERMEDIATE)</IntDir>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">
     <OutDir>$(CHROOT_REL)bin\</OutDir>
     <IntDir>$(CHROOT_REL)$(SET_INTERMEDIATE)</IntDir>
@@ -171,6 +162,7 @@
     <Link>
       <AdditionalDependencies>Gdiplus.lib;libpng.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>$(INTERMEDIATE_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -183,6 +175,7 @@
     <Link>
       <AdditionalDependencies>Gdiplus.lib;libpng.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>$(INTERMEDIATE_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -195,6 +188,7 @@
     <Link>
       <AdditionalDependencies>Gdiplus.lib;libpng.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>$(INTERMEDIATE_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -207,6 +201,7 @@
     <Link>
       <AdditionalDependencies>Gdiplus.lib;libpng.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>$(INTERMEDIATE_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">
@@ -216,33 +211,17 @@
       </PrecompiledHeader>
       <ForcedIncludeFiles />
       <SDLCheck>false</SDLCheck>
-      <AssemblerListingLocation>$(CHROOT_DBG)$(SET_INTERMEDIATE)</AssemblerListingLocation>
-      <ObjectFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)</ObjectFileName>
-      <ProgramDataBaseFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).pdb</ProgramDataBaseFileName>
-      <XMLDocumentationFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).xml</XMLDocumentationFileName>
-      <BrowseInformationFile>$(CHROOT_DBG)$(SET_INTERMEDIATE)</BrowseInformationFile>
-      <PrecompiledHeaderOutputFile>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).pch</PrecompiledHeaderOutputFile>
       <WarningLevel>Level2</WarningLevel>
-      <AdditionalIncludeDirectories>$(CHROOT_DBG)include;$(CHROOT_DBG)include\glib;$(CHROOT_DBG)lib\glib\include;$(CHROOT_DBG)include\tiff;..\..\..\;..\..\..\gdk-pixbuf</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libpng.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;libtiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>$(CHROOT_DBG)$(SET_INTERMEDIATE)gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(INTERMEDIATE_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(CHROOT_DBG)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ManifestFile>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName)$(TargetExt).manifest</ManifestFile>
-      <ProgramDatabaseFile>$(CHROOT_DBG)symbols\$(TargetName).pdb</ProgramDatabaseFile>
-      <MapFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).map</MapFileName>
-      <ImportLibrary>$(CHROOT_DBG)lib\$(TargetName).dll.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
-    <BuildLog>
-      <Path>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).log</Path>
-    </BuildLog>
-    <ResourceCompile>
-      <ResourceOutputFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)%(Filename).res</ResourceOutputFileName>
-    </ResourceCompile>
+    <BuildLog />
+    <ResourceCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">
     <ClCompile>
@@ -252,33 +231,17 @@
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <SDLCheck>false</SDLCheck>
-      <AssemblerListingLocation>$(CHROOT_REL)$(SET_INTERMEDIATE)</AssemblerListingLocation>
-      <ObjectFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)</ObjectFileName>
-      <ProgramDataBaseFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).pdb</ProgramDataBaseFileName>
-      <XMLDocumentationFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).xml</XMLDocumentationFileName>
-      <BrowseInformationFile>$(CHROOT_REL)$(SET_INTERMEDIATE)</BrowseInformationFile>
-      <PrecompiledHeaderOutputFile>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).pch</PrecompiledHeaderOutputFile>
       <WarningLevel>Level2</WarningLevel>
-      <AdditionalIncludeDirectories>$(CHROOT_REL)include;$(CHROOT_REL)include\glib;$(CHROOT_REL)lib\glib\include;$(CHROOT_REL)include\tiff;..\..\..\;..\..\..\gdk-pixbuf</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libpng.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;libtiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>$(CHROOT_REL)$(SET_INTERMEDIATE)gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(INTERMEDIATE_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(CHROOT_REL)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ManifestFile>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName)$(TargetExt).manifest</ManifestFile>
-      <ProgramDatabaseFile>$(CHROOT_REL)symbols\$(TargetName).pdb</ProgramDatabaseFile>
-      <MapFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).map</MapFileName>
-      <ImportLibrary>$(CHROOT_REL)lib\$(TargetName).dll.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
-    <BuildLog>
-      <Path>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).log</Path>
-    </BuildLog>
-    <ResourceCompile>
-      <ResourceOutputFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)%(Filename).res</ResourceOutputFileName>
-    </ResourceCompile>
+    <BuildLog />
+    <ResourceCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">
     <ClCompile>
@@ -288,33 +251,17 @@
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <SDLCheck>false</SDLCheck>
-      <AssemblerListingLocation>$(CHROOT_DBG)$(SET_INTERMEDIATE)</AssemblerListingLocation>
-      <ObjectFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)</ObjectFileName>
-      <ProgramDataBaseFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).pdb</ProgramDataBaseFileName>
-      <XMLDocumentationFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).xml</XMLDocumentationFileName>
-      <BrowseInformationFile>$(CHROOT_DBG)$(SET_INTERMEDIATE)</BrowseInformationFile>
-      <PrecompiledHeaderOutputFile>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).pch</PrecompiledHeaderOutputFile>
       <WarningLevel>Level2</WarningLevel>
-      <AdditionalIncludeDirectories>$(CHROOT_DBG)include;$(CHROOT_DBG)include\glib;$(CHROOT_DBG)lib\glib\include;$(CHROOT_DBG)include\tiff;..\..\..\;..\..\..\gdk-pixbuf</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libpng.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;libtiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>$(CHROOT_DBG)$(SET_INTERMEDIATE)gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(INTERMEDIATE_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(CHROOT_DBG)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ManifestFile>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName)$(TargetExt).manifest</ManifestFile>
-      <ProgramDatabaseFile>$(CHROOT_DBG)symbols\$(TargetName).pdb</ProgramDatabaseFile>
-      <MapFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).map</MapFileName>
-      <ImportLibrary>$(CHROOT_DBG)lib\$(TargetName).dll.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
-    <BuildLog>
-      <Path>$(CHROOT_DBG)$(SET_INTERMEDIATE)$(TargetName).log</Path>
-    </BuildLog>
-    <ResourceCompile>
-      <ResourceOutputFileName>$(CHROOT_DBG)$(SET_INTERMEDIATE)%(Filename).res</ResourceOutputFileName>
-    </ResourceCompile>
+    <BuildLog />
+    <ResourceCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">
     <ClCompile>
@@ -336,21 +283,14 @@
     <Link>
       <AdditionalDependencies>libpng.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;libtiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>$(CHROOT_REL)$(SET_INTERMEDIATE)gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(INTERMEDIATE_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(CHROOT_REL)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ManifestFile>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName)$(TargetExt).manifest</ManifestFile>
-      <ProgramDatabaseFile>$(CHROOT_REL)symbols\$(TargetName).pdb</ProgramDatabaseFile>
-      <MapFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).map</MapFileName>
-      <ImportLibrary>$(CHROOT_REL)lib\$(TargetName).dll.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
     <BuildLog>
       <Path>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).log</Path>
     </BuildLog>
-    <ResourceCompile>
-      <ResourceOutputFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)%(Filename).res</ResourceOutputFileName>
-    </ResourceCompile>
+    <ResourceCompile />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\gdk-pixbuf\gdk-pixbuf.c" />

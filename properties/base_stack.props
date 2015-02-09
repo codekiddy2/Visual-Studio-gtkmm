@@ -2,21 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <ROOT_DIR>D:\GitHub\Visual-Studio-gtkmm\output\$(Configuration)\$(Platform)\</ROOT_DIR>
-    <BIN_DIR>$(ROOT_DIR)bin\</BIN_DIR>
-    <INCLUDE_DIR>$(ROOT_DIR)include\</INCLUDE_DIR>
-    <INTERMEDIATE_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\$(ProjectName)\</INTERMEDIATE_DIR>
-    <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
-    <SYMBOLS_DIR>$(ROOT_DIR)symbols\</SYMBOLS_DIR>
-    <CHROOT_DBG>D:\GitHub\Visual-Studio-gtkmm\output\Debug\$(Platform)\</CHROOT_DBG>
-    <CHROOT_REL>D:\GitHub\Visual-Studio-gtkmm\output\Release\$(Platform)\</CHROOT_REL>
-    <SET_INTERMEDIATE>intermediate\$(SolutionName)\$(ProjectName)\</SET_INTERMEDIATE>
     <PYTHON_DIR>D:\gtkmm\install\Python3</PYTHON_DIR>
     <PERL_DIR>D:\gtkmm\install\Perl64</PERL_DIR>
-    <REPO_DIR>D:\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
+    <BIN_DIR>$(ROOT_DIR)bin\</BIN_DIR>
+    <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
+    <INCLUDE_DIR>$(ROOT_DIR)include\</INCLUDE_DIR>
+    <INTERMEDIATE_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\$(ProjectName)\</INTERMEDIATE_DIR>
+    <SYMBOLS_DIR>$(ROOT_DIR)symbols\</SYMBOLS_DIR>
   </PropertyGroup>
   <PropertyGroup>
-    <OutDir>$(ROOT_DIR)failed</OutDir>
+    <OutDir>$(BIN_DIR)</OutDir>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
     <ExtensionsToDeleteOnClean>*.dll;*.ilk;*.pdb;*.exe;*.lib;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
     <GenerateManifest>false</GenerateManifest>
@@ -114,33 +109,6 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <BuildMacro Include="ROOT_DIR">
-      <Value>$(ROOT_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="BIN_DIR">
-      <Value>$(BIN_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="INCLUDE_DIR">
-      <Value>$(INCLUDE_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="INTERMEDIATE_DIR">
-      <Value>$(INTERMEDIATE_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="LIB_DIR">
-      <Value>$(LIB_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="SYMBOLS_DIR">
-      <Value>$(SYMBOLS_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="CHROOT_DBG">
-      <Value>$(CHROOT_DBG)</Value>
-    </BuildMacro>
-    <BuildMacro Include="CHROOT_REL">
-      <Value>$(CHROOT_REL)</Value>
-    </BuildMacro>
-    <BuildMacro Include="SET_INTERMEDIATE">
-      <Value>$(SET_INTERMEDIATE)</Value>
-    </BuildMacro>
     <BuildMacro Include="PYTHON_DIR">
       <Value>$(PYTHON_DIR)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
@@ -149,8 +117,20 @@
       <Value>$(PERL_DIR)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
-    <BuildMacro Include="REPO_DIR">
-      <Value>$(REPO_DIR)</Value>
+    <BuildMacro Include="BIN_DIR">
+      <Value>$(BIN_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIB_DIR">
+      <Value>$(LIB_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="INCLUDE_DIR">
+      <Value>$(INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="INTERMEDIATE_DIR">
+      <Value>$(INTERMEDIATE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SYMBOLS_DIR">
+      <Value>$(SYMBOLS_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

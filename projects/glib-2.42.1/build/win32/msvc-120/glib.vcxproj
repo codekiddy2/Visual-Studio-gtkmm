@@ -90,6 +90,8 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_ExtPCRE|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="glib-gen-srcs.props" />
+    <Import Project="..\..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -100,6 +102,8 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_ExtPCRE|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="glib-gen-srcs.props" />
+    <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -110,6 +114,8 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_ExtPCRE|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="glib-gen-srcs.props" />
+    <Import Project="..\..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -130,14 +136,8 @@
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_ExtPCRE|Win32'">$(CHROOT_DBG)bin\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_ExtPCRE|Win32'">$(CHROOT_REL)bin\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_ExtPCRE|x64'">$(CHROOT_REL)bin\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_ExtPCRE|x64'">
-    <OutDir>$(CHROOT_DBG)bin\</OutDir>
-  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_ExtPCRE|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(BIN_DIR)</OutDir>
   </PropertyGroup>
@@ -205,16 +205,13 @@
       </PrecompiledHeader>
       <SDLCheck>false</SDLCheck>
       <WarningLevel>Level1</WarningLevel>
-      <UndefinePreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..;..\..\..\glib;$(CHROOT_DBG)include;$(CHROOT_DBG)include\libintl</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..;..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>pcre.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>$(CHROOT_DBG)lib\$(TargetName).dll.lib</ImportLibrary>
-      <AdditionalLibraryDirectories>$(CHROOT_DBG)lib\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

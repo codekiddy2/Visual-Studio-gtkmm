@@ -18,7 +18,7 @@ DEPENDENCIES:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Project is set to depend on harfbuzz, if you dot have harfbuzz installed yes, then, before
+Project is set to depend on harfbuzz, if you dot have harfbuzz installed yet, then, before
 launching the build remove the FT_CONFIG_OPTION_USE_HARFBUZZ preprocessor macro berore building.
 
 open solution, select configuration and build

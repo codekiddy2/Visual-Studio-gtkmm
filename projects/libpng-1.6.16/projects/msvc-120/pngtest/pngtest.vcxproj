@@ -134,11 +134,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Library|Win32'">
     <CustomBuildAfterTargets />
-    <OutDir>$(CHROOT_DBG)bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Library|x64'">
     <CustomBuildAfterTargets />
-    <OutDir>$(CHROOT_DBG)bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <CustomBuildAfterTargets />
@@ -150,11 +148,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Library|Win32'">
     <CustomBuildAfterTargets />
-    <OutDir>$(CHROOT_REL)bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Library|x64'">
     <CustomBuildAfterTargets />
-    <OutDir>$(CHROOT_REL)bin\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -197,12 +193,10 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(CHROOT_DBG)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>libpng.dll.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(CHROOT_DBG)lib\</AdditionalLibraryDirectories>
       <ImportLibrary />
     </Link>
     <CustomBuildStep>
@@ -217,11 +211,9 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(CHROOT_DBG)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libpng.dll.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(CHROOT_DBG)lib\</AdditionalLibraryDirectories>
       <ImportLibrary>
       </ImportLibrary>
     </Link>
@@ -271,12 +263,10 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(CHROOT_REL)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>libpng.dll.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(CHROOT_REL)lib\</AdditionalLibraryDirectories>
       <ImportLibrary />
     </Link>
     <CustomBuildStep>
@@ -292,12 +282,10 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
-      <AdditionalIncludeDirectories>$(CHROOT_REL)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>libpng.dll.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(CHROOT_REL)lib\</AdditionalLibraryDirectories>
       <ImportLibrary />
     </Link>
     <CustomBuildStep>

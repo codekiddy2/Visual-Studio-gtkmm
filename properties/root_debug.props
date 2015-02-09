@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <REPO_DIR>D:\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
+    <ROOT_DIR>$(REPO_DIR)output\Debug\$(Platform)\</ROOT_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <BuildLog />
+    <ClCompile />
+    <Link />
+    <ResourceCompile />
+    <Lib />
+    <Lib />
+    <Midl />
+    <Midl />
+    <Xdcmake />
+    <Bscmake />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="REPO_DIR">
+      <Value>$(REPO_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ROOT_DIR">
+      <Value>$(ROOT_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
