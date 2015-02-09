@@ -13,7 +13,7 @@
     <SET_INTERMEDIATE>intermediate\$(SolutionName)\$(ProjectName)\</SET_INTERMEDIATE>
     <PYTHON_DIR>D:\gtkmm\install\Python3</PYTHON_DIR>
     <PERL_DIR>D:\gtkmm\install\Perl64</PERL_DIR>
-    <SRC_DIR>$(SolutionDir)..\</SRC_DIR>
+    <SRC_DIR>$(SolutionDir)</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(ROOT_DIR)failed</OutDir>
