@@ -62,6 +62,7 @@ cd ..\..\gio
 copy %src%\gio\*.h
 cd ..\gobject
 copy %src%\gobject\*.h
+copy %src%\gobject\gobjectnotifyqueue.c
 cd ..\
 copy %src%\gmodule\gmodule.h
 

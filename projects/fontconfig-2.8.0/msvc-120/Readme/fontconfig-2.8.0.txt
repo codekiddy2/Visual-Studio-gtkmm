@@ -25,6 +25,10 @@ INSTRUCTIONS:
 Open Visual Studio solution and build.
 fc-cache will fail to execute, so you need to install fontconfig by following the steps
 bellow and then re-run fc-cache.
+You will also need to open fontconfig.h (installed one!) and replace following:
+#include <unistd.h>
+with:
+#include <io.h>
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
