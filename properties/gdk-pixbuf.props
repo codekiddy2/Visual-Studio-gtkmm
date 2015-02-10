@@ -6,6 +6,7 @@
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h</GenConfigH>
     <GdkPixbufBinaryVersion>2.30.8</GdkPixbufBinaryVersion>
     <GdkPixbufDummyPrefix>/dummy</GdkPixbufDummyPrefix>
+    <SRC_DIR>D:\GitHub\Visual-Studio-gtkmm\projects\gdk-pixbuf-2.30.8\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -30,6 +31,9 @@
     </BuildMacro>
     <BuildMacro Include="GdkPixbufDummyPrefix">
       <Value>$(GdkPixbufDummyPrefix)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
