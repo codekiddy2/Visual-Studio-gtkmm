@@ -2,64 +2,12 @@
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
     <VSVer>10</VSVer>
-    <GlibEtcInstallRoot>$(ROOT_DIR)</GlibEtcInstallRoot>
     <GlibEtcInstallRootFromBuildWin32>..\..\..\vs$(VSVer)\$(Platform)</GlibEtcInstallRootFromBuildWin32>
     <CopyDir>$(GlibEtcInstallRoot)</CopyDir>
-    <PangoApiVersion>1.0</PangoApiVersion>
     <PangoBinaryVersion>1.34.1</PangoBinaryVersion>
     <PangoDummyPrefix>/dummy</PangoDummyPrefix>
     <PangoDefines>G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib"</PangoDefines>
     <NoFCDef>PANGO_VISUALC_NO_FC</NoFCDef>
-    <PangoDoInstall>
-echo on
-mkdir $(CopyDir)\bin
-copy $(Configuration)\$(Platform)\bin\*.dll $(CopyDir)\bin
-copy $(Configuration)\$(Platform)\bin\*.exe $(CopyDir)\bin
-mkdir $(CopyDir)\lib
-copy $(Configuration)\$(Platform)\bin\*-$(PangoApiVersion).lib $(CopyDir)\lib
-mkdir $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-attributes.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-bidi-type.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-break.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-context.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-coverage.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-engine.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-font.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-fontmap.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-fontset.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-glyph.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-glyph-item.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-gravity.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-item.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-language.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-layout.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-matrix.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-modules.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-renderer.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-script.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-tabs.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-types.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-utils.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pangocairo.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-features.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-enum-types.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pangowin32.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-if not exist $(CopyDir)\etc\pango mkdir $(CopyDir)\etc\pango
-if exist $(CopyDir)\etc\pango\pango.aliases goto END
-echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(CopyDir)\etc\pango\pango.aliases
-echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(CopyDir)\etc\pango\pango.aliases
-echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(CopyDir)\etc\pango\pango.aliases
-echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(CopyDir)\etc\pango\pango.aliases
-:END
-</PangoDoInstall>
-    <PangoInstallFCHeaders>
-copy ..\..\..\pango\pangofc-decoder.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pangofc-font.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pangofc-fontmap.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pango-ot.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-copy ..\..\..\pango\pangoft2.h $(CopyDir)\include\pango-$(PangoApiVersion)\pango
-</PangoInstallFCHeaders>
     <DoGenGir>
 set VSVER=$(VSVer)
 set CONF=$(Configuration)
@@ -69,12 +17,7 @@ cd ..
 call gengir_pango.bat
 cd vs$(VSVer)
 </DoGenGir>
-    <PangoLibtoolCompatibleDllPrefix>lib</PangoLibtoolCompatibleDllPrefix>
-    <PangoLibtoolCompatibleDllSuffix>-$(PangoApiVersion)-0</PangoLibtoolCompatibleDllSuffix>
-    <PangoSeparateVSDllPrefix />
-    <PangoSeparateVSDllSuffix>-1-vs$(VSVer)</PangoSeparateVSDllSuffix>
-    <PangoDllPrefix>$(PangoSeparateVSDllPrefix)</PangoDllPrefix>
-    <PangoDllSuffix>$(PangoSeparateVSDllSuffix)</PangoDllSuffix>
+    <SRC_DIR>D:\GitHub\Visual-Studio-gtkmm\projects\pango-1.34.1\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>pango</_PropertySheetDisplayName>
@@ -82,10 +25,11 @@ cd vs$(VSVer)
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..;..\..\..\pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;glib.dll.lib;libintl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
     </Link>
     <PreBuildEvent>
       <Command>
@@ -112,9 +56,6 @@ copy ..\..\..\pango\module-defs-win32.c.win32 ..\..\..\pango\DONE_MODULE_DEFS_WI
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <BuildMacro Include="PangoApiVersion">
-      <Value>$(PangoApiVersion)</Value>
-    </BuildMacro>
     <BuildMacro Include="PangoBinaryVersion">
       <Value>$(PangoBinaryVersion)</Value>
     </BuildMacro>
@@ -127,35 +68,11 @@ copy ..\..\..\pango\module-defs-win32.c.win32 ..\..\..\pango\DONE_MODULE_DEFS_WI
     <BuildMacro Include="NoFCDef">
       <Value>$(NoFCDef)</Value>
     </BuildMacro>
-    <BuildMacro Include="PangoDoInstall">
-      <Value>$(PangoDoInstall)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PangoInstallFCHeaders">
-      <Value>$(PangoInstallFCHeaders)</Value>
-    </BuildMacro>
     <BuildMacro Include="DoGenGir">
       <Value>$(DoGenGir)</Value>
     </BuildMacro>
-    <BuildMacro Include="PangoLibtoolCompatibleDllPrefix">
-      <Value>$(PangoLibtoolCompatibleDllPrefix)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PangoLibtoolCompatibleDllSuffix">
-      <Value>$(PangoLibtoolCompatibleDllSuffix)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PangoSeparateVSDllPrefix">
-      <Value>$(PangoSeparateVSDllPrefix)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PangoSeparateVSDllSuffix">
-      <Value>$(PangoSeparateVSDllSuffix)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PangoDllPrefix">
-      <Value>$(PangoDllPrefix)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PangoDllSuffix">
-      <Value>$(PangoDllSuffix)</Value>
-    </BuildMacro>
-    <BuildMacro Include="GlibEtcInstallRoot">
-      <Value>$(GlibEtcInstallRoot)</Value>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
