@@ -22,10 +22,8 @@ libiconv
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Open Visual Studio solution and build.
-fc-cache will fail to execute, so you need to install fontconfig by following the steps
-bellow and then re-run fc-cache.
-You will also need to open fontconfig.h (installed one!) and replace following:
+Once installatino is done you will also need to open fontconfig.h (the installed one!)
+and replace following:
 #include <unistd.h>
 with:
 #include <io.h>
@@ -33,27 +31,6 @@ with:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 COPY HEADERS:
-#debug 64
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64
-#release 64
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\x64
-#debug x86
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\Win32
-#release x86
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32
-
-#all
-set src=D:\GitHub\Visual-Studio-gtkmm\projects\fontconfig-2.8.0
-d:
-cd %dest%\include
-mkdir fontconfig
-cd fontconfig
-copy %src%\fontconfig\*.h /Y
-mkdir ..\..\etc\fonts\conf.d
-cd ..\..\etc\fonts\conf.d
-xcopy %src%\conf.d\*.conf /EFY
-cd ..
-copy %src%\msvc-120\fonts.conf
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
