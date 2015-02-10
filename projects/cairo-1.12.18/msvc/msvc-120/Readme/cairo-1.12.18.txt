@@ -7,62 +7,46 @@ solution redesigned by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.0.0
+solution version = 1.0.1
 solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\cairo-1.12.18\msvc\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-freetype
-fontconfig
+freetype (optional)
+fontconfig (optional)
 harfbuzz
 pixman
 libpng
 zlib
 gobject
 glib
+openGL (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
 Open Visual Studio solution and build.
+Build cairo-gobject before "Install" if you want gobject support
+Build Install to install headers.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 COPY HEADERS:
-#debug 64
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64
-#release 64
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\x64
-#debug x86
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\Win32
-#release x86
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32
-
-#all
-set src=D:\GitHub\Visual-Studio-gtkmm\projects\cairo-1.12.18
-d:
-cd %dest%\include
-mkdir cairo
-cd cairo
-copy %src%\src\*.h /Y
-copy %src%\util\cairo-gobject\*.h /Y
-copy %src%\util\cairo-gobject\*.h /Y
-copy %src%\msvc\msvc-120\cairo-features.h /Y
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-Tested and configured for Debug x64
-Other configuration need to inherit from properties like ie. "Debug_FC"
-cairo-gobject project needs to be build which will add a define into "cairo-features.h"
-that cairo is compiled with gobject support.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
 1.0.0
 	Debug x64
+
+1.0.1
+	Debug_FC x64
+
 
 

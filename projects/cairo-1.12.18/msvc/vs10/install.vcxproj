@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug_FC_GL|Win32">
       <Configuration>Debug_FC_GL</Configuration>
@@ -108,233 +108,208 @@
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
-    <CharacterSet>NotSet</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\cairo.props" />
+    <Import Project="cairo.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -354,7 +329,7 @@
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'">$(CairoEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">$(ROOT_DIR)</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">$(CairoEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'" />
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'">$(CairoEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'" />
@@ -389,650 +364,122 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
     <PreBuildEvent>
-      <Message>Installing cairo headers</Message>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|Win32'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|x64'">
     <PreBuildEvent>
-      <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
-
-
-
-
-d:
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+      <Command>$(CairoDoInstall)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
