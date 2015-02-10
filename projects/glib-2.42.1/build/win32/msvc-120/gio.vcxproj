@@ -50,27 +50,27 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="glib-gen-srcs.props" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\..\properties\glib.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="glib-gen-srcs.props" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\..\properties\glib.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="glib-gen-srcs.props" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\..\properties\glib.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="glib-gen-srcs.props" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\..\properties\glib.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -89,14 +89,13 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>../../../gio;../../../gmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;$(GioBuildDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <SDLCheck>false</SDLCheck>
       <WarningLevel>Level1</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>zlib.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;$(WindowsNetworkingLibs);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>zlib.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -106,14 +105,13 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>../../../gio;../../../gmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>$(GioBuildDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level1</WarningLevel>
-      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>zlib.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;$(WindowsNetworkingLibs);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>zlib.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -123,14 +121,13 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>../../../gio;../../../gmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;$(GioBuildDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level1</WarningLevel>
-      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>zlib.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;$(WindowsNetworkingLibs);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>zlib.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -139,14 +136,13 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>../../../gio;../../../gmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>$(GioBuildDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <SDLCheck>false</SDLCheck>
       <WarningLevel>Level1</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>zlib.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;$(WindowsNetworkingLibs);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>zlib.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
