@@ -109,6 +109,12 @@
     <ClCompile Include="..\..\gettext-runtime\intl\xsize.c">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\codekiddy-libintl_setlocale.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\codekiddy-setlocale.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gettext-runtime\config.h">

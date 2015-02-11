@@ -37,6 +37,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme\glib-2.42.1.txt = Readme\glib-2.42.1.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0EEBA45D-51BB-4DDB-A06F-54DB49C50CAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testglib", "testglib\testglib.vcxproj", "{4A108798-8563-4A11-9581-32A93FF77C14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_ExtPCRE|Win32 = Debug_ExtPCRE|Win32
@@ -289,8 +293,22 @@ Global
 		{95A1571F-61BE-4C51-BE53-2F2DAB280687}.Release|Win32.Build.0 = Release|Win32
 		{95A1571F-61BE-4C51-BE53-2F2DAB280687}.Release|x64.ActiveCfg = Release|x64
 		{95A1571F-61BE-4C51-BE53-2F2DAB280687}.Release|x64.Build.0 = Release|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Debug_ExtPCRE|Win32.ActiveCfg = Debug|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Debug_ExtPCRE|x64.ActiveCfg = Debug|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Debug_ExtPCRE|x64.Build.0 = Debug|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Debug|Win32.ActiveCfg = Debug|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Debug|x64.ActiveCfg = Debug|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Release_ExtPCRE|Win32.ActiveCfg = Release|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Release_ExtPCRE|x64.ActiveCfg = Release|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Release_ExtPCRE|x64.Build.0 = Release|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Release|Win32.ActiveCfg = Release|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Release|x64.ActiveCfg = Release|x64
+		{4A108798-8563-4A11-9581-32A93FF77C14}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A108798-8563-4A11-9581-32A93FF77C14} = {0EEBA45D-51BB-4DDB-A06F-54DB49C50CAD}
 	EndGlobalSection
 EndGlobal

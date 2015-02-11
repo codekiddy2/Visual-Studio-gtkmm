@@ -13,7 +13,7 @@ expat or libxml2 (optional)
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INTRO:
-solution version = 1.0.2
+solution version = 1.0.4
 solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gettext-0.19.4\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
@@ -55,7 +55,7 @@ set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32\include
 **************************************************************************************************************************************************************************
 NOTES:
 there are 2 versions of localcharset.h:
-one provided by gettext package and another modified by codekiddy (me) for purpose to
+one provided by gettext package and another modified for purpose to
 compile libiconv, modified version is needed only to build libiconv because of dependency.
 the *.bat file is set to include modified version! so:
 io.h must be included by force in project settings to avoid unresolved functions:
@@ -72,6 +72,9 @@ TESTINGS:
 1.0.3
 	Debug x64 x86
 	Release x64 x86
+
+1.0.4
+	Debug x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
