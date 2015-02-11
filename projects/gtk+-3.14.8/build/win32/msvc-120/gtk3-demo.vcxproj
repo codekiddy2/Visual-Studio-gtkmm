@@ -51,28 +51,24 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-build-defines.props" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-build-defines.props" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-build-defines.props" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-build-defines.props" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
@@ -90,12 +86,13 @@
       <SubSystem>Console</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
+      <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gdk;..\..\..\gtk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;$(GtkPrefixDefine);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GTK_PREFIX=\"$(GtkDummyPrefix)\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -103,6 +100,7 @@
       <SubSystem>Console</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
+      <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,6 +115,7 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
+      <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -131,6 +130,7 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
+      <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

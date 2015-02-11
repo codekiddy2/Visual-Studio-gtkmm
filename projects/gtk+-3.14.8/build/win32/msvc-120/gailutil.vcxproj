@@ -51,28 +51,24 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-build-defines.props" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-build-defines.props" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-build-defines.props" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-build-defines.props" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
@@ -82,12 +78,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gtk;..\..\..\gdk;..\..\..\gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;G_ENABLE_DEBUG;GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>atk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>..\..\..\libgail-util\gailutil.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
     </Link>
@@ -95,12 +91,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gtk;..\..\..\gdk;..\..\..\gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;G_ENABLE_DEBUG;GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>atk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>..\..\..\libgail-util\gailutil.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
     </Link>
@@ -108,12 +104,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gtk;..\..\..\gdk;..\..\..\gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>atk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>..\..\..\libgail-util\gailutil.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
     </Link>
@@ -121,12 +117,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gtk;..\..\..\gdk;..\..\..\gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>atk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>..\..\..\libgail-util\gailutil.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
     </Link>

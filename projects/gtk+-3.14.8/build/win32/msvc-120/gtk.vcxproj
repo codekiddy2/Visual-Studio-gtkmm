@@ -51,28 +51,24 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-gen-srcs.props" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-gen-srcs.props" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-gen-srcs.props" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="gtk-gen-srcs.props" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
     <Import Project="..\..\..\..\..\properties\gtk.props" />
@@ -82,7 +78,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gtk;..\..\..\gdk;..\..\..\gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;G_ENABLE_DEBUG;$(GtkDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="i686-pc-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)/share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;PANGO_ANALYSIS_FLAG_IS_ELLIPSIS=(1 &lt;&lt; 1);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -94,7 +90,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gtk;..\..\..\gdk;..\..\..\gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>$(GtkDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="i686-pc-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)/share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;PANGO_ANALYSIS_FLAG_IS_ELLIPSIS=(1 &lt;&lt; 1);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -106,19 +102,25 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gtk;..\..\..\gdk;..\..\..\gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;G_ENABLE_DEBUG;$(GtkDefines);PANGO_ANALYSIS_FLAG_IS_ELLIPSIS=(1 &lt;&lt; 1);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="x86_64-w64-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)/share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;PANGO_ANALYSIS_FLAG_IS_ELLIPSIS=(1 &lt;&lt; 1);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <DisableSpecificWarnings>4098;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk-inspector.lib;gdk.dll.lib;atk.dll.lib;pangowin32.dll.lib;imm32.lib;winspool.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
     </Link>
+    <PreBuildEvent>
+      <Command>cd ..\..\..\gtk
+$(PYTHON_DIR)\python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml
+cd $(SolutionDir)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\gtk;..\..\..\gdk;..\..\..\gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>$(GtkDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="x86_64-w64-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)/share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;PANGO_ANALYSIS_FLAG_IS_ELLIPSIS=(1 &lt;&lt; 1);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -141,6 +143,7 @@
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating GTK+ DBus Sources...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenerateGtkDbusBuiltSources)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\gtk\gtkdbusgenerated.c;..\..\..\gtk\gtkdbusgenerated.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </CustomBuild>
     <CustomBuild Include="..\..\..\gtk\gtk-win32.rc.in">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating GTK+ Win32 Version Resource...</Message>

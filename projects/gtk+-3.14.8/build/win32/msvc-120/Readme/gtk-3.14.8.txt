@@ -48,6 +48,8 @@ NOTES:
 PANGO_ANALYSIS_FLAG_IS_ELLIPSIS is defined in preprocessor as (1 << 1)
 for gdbusgenerated to work codegen python files need to be installed into share/glib-2.0/codegen (see gdbus.codegen in %BIN_DIR%)
 4098 warning disabled as error for all projects
+gdk-broadway, gdk, gailutil release has G_ENABLE_DEBUG preprocessor because all release projects produce debugging info,
+release builds do not declare this macro in original solution.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
