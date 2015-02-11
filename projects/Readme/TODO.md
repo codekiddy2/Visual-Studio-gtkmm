@@ -10,7 +10,7 @@ Following TODO's apply to "Redesign" branch of projects that exist in master
 7. test GL extensions with cairo.
 8. remove NDEBUG macro for release builds, also check other macros.
 9. set LTCG flag for release projects on general tab
-10. --done
+10. prefix for solution level properties (ie. solution_"solution-name".props)
 11. sincronyze compiler/linker flags for custom build cmd projects.
 12. minimize amount of build events in project to reduce the "cmd exit = blah"
 13. add version number to each lib/dll file.
