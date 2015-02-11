@@ -120,8 +120,8 @@ cd include
 copy .\..\..\..\include\glib\glib\glibconfig.h /Y
 mkdir ..\..\..\share
 cd ..\..\..\share\
-mkdir glib
-cd glib
+mkdir glib-2.0
+cd glib-2.0
 mkdir schemas
 cd schemas
 copy $(SRC_DIR)gio\gschema.dtd /Y
@@ -174,8 +174,8 @@ cd include
 copy .\..\..\..\include\glib\glib\glibconfig.h /Y
 mkdir ..\..\..\share
 cd ..\..\..\share\
-mkdir glib
-cd glib
+mkdir glib-2.0
+cd glib-2.0
 mkdir schemas
 cd schemas
 copy $(SRC_DIR)gio\gschema.dtd /Y
@@ -227,8 +227,8 @@ cd include
 copy .\..\..\..\include\glib\glib\glibconfig.h /Y
 mkdir ..\..\..\share
 cd ..\..\..\share\
-mkdir glib
-cd glib
+mkdir glib-2.0
+cd glib-2.0
 mkdir schemas
 cd schemas
 copy $(SRC_DIR)gio\gschema.dtd /Y
@@ -280,8 +280,8 @@ cd include
 copy .\..\..\..\include\glib\glib\glibconfig.h /Y
 mkdir ..\..\..\share
 cd ..\..\..\share\
-mkdir glib
-cd glib
+mkdir glib-2.0
+cd glib-2.0
 mkdir schemas
 cd schemas
 copy $(SRC_DIR)gio\gschema.dtd /Y
