@@ -1,0 +1,35 @@
+/W3
+/WX-
+/sdl-
+/O2
+/Ob2
+/Oi
+/GL 
+-D WIN32
+-D _WINDOWS
+-D _CRT_SECURE_NO_WARNINGS
+-D _SCL_SECURE_NO_WARNINGS
+-D _CRT_NONSTDC_NO_WARNINGS
+-D _CRT_NONSTDC_NO_DEPRECATE
+-D WINVER=0x0601
+-D _WIN32_WINNT=0x0601
+-D _UNICODE
+-D UNICODE
+/GF
+/Gm-
+/MD
+/GS
+/Gy-
+/Qpar
+/fp:precise
+/fp:except-
+/Zc:wchar_t
+/Zc:forScope
+/GR
+/Gd
+/errorReport:prompt
+/we4098
+-I D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include
+-I D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include\expat
+-I D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include\iconv
+-link /VERBOSE:SAFESEH /INCREMENTAL:NO /LTCG:NOSTATUS /MANIFEST:NO /DEBUG /OPT:REF /OPT:ICF /LTCG /WINMD:NO /DYNAMICBASE:NO /NXCOMPAT /MACHINE:X64 /SAFESEH:NO
