@@ -77,7 +77,6 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <FixedBaseAddress>false</FixedBaseAddress>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
-      <ImportLibrary>$(LIB_DIR)$(TargetName)$(TargetExt).lib</ImportLibrary>
       <RegisterOutput>false</RegisterOutput>
       <PerUserRedirection>false</PerUserRedirection>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
@@ -100,6 +99,7 @@
       <CLRImageType>Default</CLRImageType>
       <LinkErrorReporting>PromptImmediately</LinkErrorReporting>
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(LIB_DIR)$(TargetName)$(TargetExt).lib</ImportLibrary>
     </Link>
     <Manifest>
       <SuppressStartupBanner>false</SuppressStartupBanner>

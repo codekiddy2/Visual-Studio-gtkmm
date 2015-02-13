@@ -19,9 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DC5B8071-B42F-4F92-9333-0C72D14F98F8}</ProjectGuid>
-    <RootNamespace>testlibiconv_static</RootNamespace>
-    <ProjectName>test-iconv_static</ProjectName>
+    <ProjectGuid>{852EE642-C850-4D5C-9F2E-05506BA30ACD}</ProjectGuid>
+    <RootNamespace>testffi_dll</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -41,14 +40,12 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -57,75 +54,77 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\properties\solution_iconv.props" />
+    <Import Project="..\..\..\..\properties\solution_ffi.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\properties\solution_iconv.props" />
+    <Import Project="..\..\..\..\properties\solution_ffi.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\properties\solution_iconv.props" />
+    <Import Project="..\..\..\..\properties\solution_ffi.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\properties\solution_iconv.props" />
+    <Import Project="..\..\..\..\properties\solution_ffi.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile />
+    <Link />
+    <Link>
+      <AdditionalDependencies>ffi.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <PreprocessorDefinitions>USING_STATIC_LIBICONV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary />
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile />
+    <Link />
+    <Link>
+      <AdditionalDependencies>ffi.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <PreprocessorDefinitions>USING_STATIC_LIBICONV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary />
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile />
+    <Link />
+    <Link>
+      <AdditionalDependencies>ffi.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <PreprocessorDefinitions>USING_STATIC_LIBICONV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary />
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile />
+    <Link />
+    <Link>
+      <AdditionalDependencies>ffi.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <PreprocessorDefinitions>USING_STATIC_LIBICONV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary />
-    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\test-libiconv_dll\Sample.cpp" />
+    <ClCompile Include="unwindtest_ffi_call.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\libiconv_static\libiconv_static.vcxproj">
-      <Project>{9b2f0a36-007c-4a8f-bc70-c72f0f82234b}</Project>
+    <ClInclude Include="..\..\testsuite\libffi.call\ffitest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libffi_dll\libffi_dll.vcxproj">
+      <Project>{4aa8a495-3b3c-4752-8e90-0061fe39209a}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
