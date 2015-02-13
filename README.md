@@ -3,8 +3,10 @@ Visual Studio 2013 projects to build gtk+ and gtkmm and it's dependencies from s
 
 **HOW-TO:**
 ```
-Before anything go ahead and look on wiki (click icon on the right -> ) in order to see dependecy graph and see what is awaiting you!
-To build, clone this repo so that you end up with D:\GitHub\Visual-Studio-gtkmm\ this is important because many projects and settings depend on this fixed path!
+Before anything go ahead and look on wiki (click icon on the right -> )
+in order to see dependecy graph and see what is awaiting you!
+To build, clone this repo so that you end up with **D:\GitHub\Visual-Studio-gtkmm\** 
+this is important because many projects and settings depend on this fixed path!
 Once you do so download and extract packages into D:\GitHub\Visual-Studio-gtkmm\projects
 ie. Visual-Studio-gtkmm\projects\<extracted package>).
 Once you do so open up Visual Studio solution and follow instructions,
