@@ -19,9 +19,11 @@
       <AdditionalIncludeDirectories>..\..\..;..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
+      <WarningLevel>Level1</WarningLevel>
     </ClCompile>
+    <Link />
     <Link>
-      <AdditionalDependencies>libintl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

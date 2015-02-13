@@ -2,54 +2,42 @@ COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
 solution obtained from github.com/winlibs/gettext
-solution redesigned by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
+solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.0
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gettext-0.19.4\msvc-120
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: https://www.gnu.org/software/gettext/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-libconv
+libiconv
 expat or libxml2 (optional)
-
-**************************************************************************************************************************************************************************
-**************************************************************************************************************************************************************************
-INTRO:
-solution version = 1.0.4
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gettext-0.19.4\msvc-120
-properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
 copy/paste appropriate *.compiler file, *.bat file and *.sh file from configuration folder
-into sources root directory and configure by using gnu autotools and mozilla-build system.
-bat file must be strted from apropriate VS command promt (x86 or x64)!
+into sources root directory and configure by using gnu autotools and mozilla-build system like so:
+bat file must be strted from apropriate VS command promt (x86 or x64 depending on wheter you compile x86 or x64)!
 make sure cl prints compiler settings before configuring, and if not modifiy the bat file,
 and probably other 2 files in case of "compiler can not create executables" and such.
 make sure mozilla-build path is correct too in the *.bat file.
-configuration is done by running the *.sh file (again, check for outputs)
+configuration is done by running the *.sh file from mozilla shell (again, check for outputs)
 after configure is done you must "make" to generate libgnuintl.h
-The make command will fail, but who cares we just want the header :)
+The make command will probably fail soner or later, but who cares we just want the header :)
 
-Open Visual Studio solution and build.
-
-**************************************************************************************************************************************************************************
-**************************************************************************************************************************************************************************
-COPY HEADERS:
-set src=D:\GitHub\Visual-Studio-gtkmm\projects\gettext-0.19.4\gettext-runtime\intl
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include
-d:
-cd %dest%
-mkdir libintl
-cd libintl
-copy %src%\*.h /Y
-copy libgnuintl.h ..\libintl.h
-
-Debug x86:
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Debug\Win32\include
-Release x64:
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include
-Release x86:
-set dest=D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32\include
+Open Visual Studio solution and before building ensure paths in preprocessor corespond to your installation path in case you do not
+follow default settings, select configuration and build.
+Once done build the "Install" project to install headers.
+This solution will not install locale files, to install them download gettext-runtime-dev for your system (x64 or x86)
+package from GNOME website: http://ftp.acc.umu.se/pub/GNOME/binaries/
+Extract conents of share folder from the package into D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\share
+The path above is for Debug x64, so you may need to adjust that!
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -59,10 +47,10 @@ one provided by gettext package and another modified for purpose to
 compile libiconv, modified version is needed only to build libiconv because of dependency.
 the *.bat file is set to include modified version! so:
 io.h must be included by force in project settings to avoid unresolved functions:
-open(), close(), read() ... not tested yet, so you can modify the INCLUDE variable, in
-both *.bat file and *.compiler file.
-this project will link to DLL of libiconv, if you want static link
-define USING_STATIC_LIBICONV in preprocessor definitions to avoid unresolved stuff :)
+open(), close(), read() ... not tested yet and at the moment I have no idea if this is wrong or not,
+so you can modify the INCLUDE variable, in both *.bat file and *.compiler file.
+this project will link to DLL of libiconv as well as all the projects from my collection (only DLL's), if you want static link
+define USING_STATIC_LIBICONV in preprocessor definitions to avoid unresolved stuff.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -76,10 +64,12 @@ TESTINGS:
 1.0.4
 	Debug x64
 
+1.1.0
+	Debug x64
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
 need to install locale files?
-when building libintl original locale_charset.h should be included, not the one
-from libiconv.
-need to test original libint_setlocale()
+when building libintl original locale_charset.h should be included, not the one customized
+from libiconv, which means setting includes so that compiler look for intl headers before iconv headers.

@@ -11,9 +11,7 @@
     <SYMBOLS_DIR>$(ROOT_DIR)symbols\</SYMBOLS_DIR>
   </PropertyGroup>
   <PropertyGroup>
-    <OutDir>$(BIN_DIR)</OutDir>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
-    <ExtensionsToDeleteOnClean>*.dll;*.ilk;*.pdb;*.exe;*.lib;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup>
@@ -61,17 +59,8 @@
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <GenerateCategoryTags>true</GenerateCategoryTags>
     </Manifest>
-    <Lib>
-      <SuppressStartupBanner>false</SuppressStartupBanner>
-    </Lib>
-    <Lib>
-      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
-      <ErrorReporting>PromptImmediately</ErrorReporting>
-      <Verbose>false</Verbose>
-      <OutputFile>$(LIB_DIR)$(TargetName)$(TargetExt)</OutputFile>
-      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
-    </Lib>
+    <Lib />
+    <Lib />
     <ResourceCompile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <ResourceOutputFileName>$(INTERMEDIATE_DIR)%(Filename).res</ResourceOutputFileName>
@@ -104,9 +93,17 @@
     <BuildLog>
       <Path>$(INTERMEDIATE_DIR)$(TargetName).log</Path>
     </BuildLog>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
+    <ProjectReference />
+    <ProjectReference />
+    <Lib>
+      <ErrorReporting>PromptImmediately</ErrorReporting>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>$(LIB_DIR)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <Verbose>false</Verbose>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="PYTHON_DIR">

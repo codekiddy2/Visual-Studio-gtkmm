@@ -22,6 +22,7 @@
     <ProjectGuid>{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}</ProjectGuid>
     <RootNamespace>libintl_dll</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectName>intl_dll</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -52,76 +53,68 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_intl.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_intl.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_intl.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_intl.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(BIN_DIR)</OutDir>
-    <TargetName>libintl</TargetName>
+    <TargetName>intl</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(BIN_DIR)</OutDir>
-    <TargetName>libintl</TargetName>
+    <TargetName>intl</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(BIN_DIR)</OutDir>
-    <TargetName>libintl</TargetName>
+    <TargetName>intl</TargetName>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(BIN_DIR)</OutDir>
-    <TargetName>libintl</TargetName>
+    <TargetName>intl</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level1</WarningLevel>
       <ForcedIncludeFiles>io.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
       <ModuleDefinitionFile>.\..\codekiddy-intl.def</ModuleDefinitionFile>
-      <AdditionalDependencies>libiconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level1</WarningLevel>
       <ForcedIncludeFiles>io.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
       <ModuleDefinitionFile>.\..\codekiddy-intl.def</ModuleDefinitionFile>
-      <AdditionalDependencies>libiconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -129,17 +122,13 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level1</WarningLevel>
       <ForcedIncludeFiles>io.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention />
-      <AdditionalDependencies>libiconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\..\codekiddy-intl.def</ModuleDefinitionFile>
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
@@ -153,19 +142,15 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-lib;..\..\gettext-runtime\gnulib-m4;$(ROOT_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level1</WarningLevel>
       <ForcedIncludeFiles>io.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
       <ModuleDefinitionFile>.\..\codekiddy-intl.def</ModuleDefinitionFile>
-      <AdditionalDependencies>libiconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
