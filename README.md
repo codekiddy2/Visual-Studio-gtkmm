@@ -3,17 +3,19 @@ Visual Studio 2013 projects to build gtk+ and gtkmm and it's dependencies from s
 
 **HOW-TO:**
 ```
-To build, projects should be placed inside extracted source package
-ie. Visual-Studio-gtkmm\projects\<extracted package name>).
-There could also be some customized source files which need to be replaced with original.
+Before anything go ahead and look on wiki (click icon on the right -> ) in order to see dependecy graph and see what is awaiting you!
+To build, clone this repo so that you end up with D:\GitHub\Visual-Studio-gtkmm\ this is important because many projects and settings depend on this fixed path!
+Once you do so download and extract packages into D:\GitHub\Visual-Studio-gtkmm\projects
+ie. Visual-Studio-gtkmm\projects\<extracted package>).
 Once you do so open up Visual Studio solution and follow instructions,
 each solution has the "readme file" with information what to do..
 More information can be found in "projects" and "properties" folders.
 ```
 
 You will need following tools installed in path without spaces:
+ie. **C:\MyStuff**
 ```
-Visual Studio
+Visual Studio 2013
 CMake
 nasm assembler
 mozilla-build
