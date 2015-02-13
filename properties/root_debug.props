@@ -17,6 +17,51 @@
     <Midl />
     <Xdcmake />
     <Bscmake />
+    <ClCompile />
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <Link />
+    <Link />
+    <ProjectReference />
+    <ProjectReference />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Manifest />
+    <Manifest />
+    <Manifest />
+    <Manifest />
+    <Bscmake />
+    <Midl />
+    <Midl />
+    <Xdcmake />
+    <Xsd />
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="REPO_DIR">

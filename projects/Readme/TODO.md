@@ -30,3 +30,4 @@ Following TODO's apply to "Redesign" branch of projects that exist in master
 26. solution for libgw32
 27. link fontconfig custom dirnet to dirnet project
 28. create ICU project to optionally link with harbuzz
+29. RETURN "TEST CALLER APP" BACK TO FFI! test with older versions!

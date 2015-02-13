@@ -18,7 +18,7 @@
     </PreLinkEvent>
     <PostBuildEvent>
       <Message>Perfoming post-build event ...</Message>
-      <Command>echo post-build event started ...</Command>
+      <Command>echo all operations completed ...</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup />
