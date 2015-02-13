@@ -31,9 +31,34 @@ copy ..\..\..\gdk\gdkconfig.h.win32 ..\..\..\GDK_WIN32ONLY_BUILD
 echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)
 
 :DONE_GDKCONFIG_H</GenGdkConfigHWin32>
+    <GenGdkConfigHBroadway>if exist ..\..\..\MSVC_$(Configuration)_Broadway goto DONE_GDKCONFIG_H
+
+
+if exist ..\..\..\gdk\gdkconfig.h del ..\..\..\gdk\gdkconfig.h
+
+if exist ..\..\..\GDK_WIN32ONLY_BUILD del ..\..\..\GDK_WIN32ONLY_BUILD
+
+if exist ..\..\..\MSVC_Release del ..\..\..\MSVC_Release
+
+if exist ..\..\..\MSVC_Debug del ..\..\..\MSVC_Debug
+
+
+if "$(Configuration)" == "Release_Broadway" del ..\..\..\MSVC_Debug_Broadway
+
+if "$(Configuration)" == "Debug_Broadway" del ..\..\..\MSVC_Release_Broadway
+
+copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\gdk\gdkconfig.h
+
+copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\GDK_BROADWAY_BUILD
+
+echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)_Broadway
+
+:DONE_GDKCONFIG_H</GenGdkConfigHBroadway>
     <SRC_DIR>D:\GitHub\Visual-Studio-gtkmm\projects\gtk+-3.14.8\</SRC_DIR>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <_PropertySheetDisplayName>solution_gtk+</_PropertySheetDisplayName>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <SDLCheck>false</SDLCheck>
@@ -43,7 +68,7 @@ echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)
       <WarningLevel>Level1</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>cairo.dll.lib;cairo-gobject.dll.lib;pangocairo.dll.lib;pango.dll.lib;gdk-pixbuf.dll.lib;glib.dll.lib;gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;libintl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>cairo.dll.lib;cairo-gobject.dll.lib;pangocairo.dll.lib;pango.dll.lib;gdk-pixbuf.dll.lib;glib.dll.lib;gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -67,6 +92,9 @@ echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)
     </BuildMacro>
     <BuildMacro Include="GenGdkConfigHWin32">
       <Value>$(GenGdkConfigHWin32)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GenGdkConfigHBroadway">
+      <Value>$(GenGdkConfigHBroadway)</Value>
     </BuildMacro>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>

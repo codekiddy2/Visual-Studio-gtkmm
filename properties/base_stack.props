@@ -13,6 +13,9 @@
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
     <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <EmbedManifest>true</EmbedManifest>
+    <EnableManagedIncrementalBuild>false</EnableManagedIncrementalBuild>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link />
@@ -24,14 +27,13 @@
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WINVER=0x0601;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <PrecompiledHeaderOutputFile>$(INTERMEDIATE_DIR)$(TargetName).pch</PrecompiledHeaderOutputFile>
       <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
       <CompileAs>Default</CompileAs>
       <TreatSpecificWarningsAsErrors>4098;4002;4003;4013;4020;4021;4027;4029;4033;4035;4045;4047;4049;4053;4071;4150;4819;4530;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
-      <DisableSpecificWarnings>4101;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4101;4244;4305;8012;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
       <ProgramDataBaseFileName>$(INTERMEDIATE_DIR)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(INTERMEDIATE_DIR)</AssemblerListingLocation>
@@ -40,6 +42,29 @@
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderFile>$(TargetName).h</PrecompiledHeaderFile>
       <XMLDocumentationFileName>$(INTERMEDIATE_DIR)$(TargetName).xml</XMLDocumentationFileName>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <BrowseInformation>false</BrowseInformation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ShowIncludes>false</ShowIncludes>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <ErrorReporting>Prompt</ErrorReporting>
     </ClCompile>
     <Link>
       <ShowProgress>LinkVerboseSAFESEH</ShowProgress>
@@ -51,19 +76,46 @@
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <FixedBaseAddress>false</FixedBaseAddress>
-      <ImportLibrary>$(LIB_DIR)$(TargetName).dll.lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(LIB_DIR)$(TargetName)$(TargetExt).lib</ImportLibrary>
+      <RegisterOutput>false</RegisterOutput>
+      <PerUserRedirection>false</PerUserRedirection>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AllowIsolation>true</AllowIsolation>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapExports>false</MapExports>
+      <SwapRunFromCD>false</SwapRunFromCD>
+      <SwapRunFromNET>false</SwapRunFromNET>
+      <Driver>NotSet</Driver>
+      <ProfileGuidedDatabase>$(INTERMEDIATE_DIR)$(TargetName).pgd</ProfileGuidedDatabase>
+      <IgnoreEmbeddedIDL>false</IgnoreEmbeddedIDL>
+      <WindowsMetadataLinkDelaySign>false</WindowsMetadataLinkDelaySign>
+      <NoEntryPoint>false</NoEntryPoint>
+      <SetChecksum>false</SetChecksum>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <Profile>false</Profile>
+      <CLRImageType>Default</CLRImageType>
+      <LinkErrorReporting>PromptImmediately</LinkErrorReporting>
     </Link>
     <Manifest>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <GenerateCategoryTags>true</GenerateCategoryTags>
+      <GenerateCatalogFiles>false</GenerateCatalogFiles>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+      <VerboseOutput>true</VerboseOutput>
+      <UpdateFileHashes>false</UpdateFileHashes>
     </Manifest>
     <Lib />
     <Lib />
     <ResourceCompile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <ResourceOutputFileName>$(INTERMEDIATE_DIR)%(Filename).res</ResourceOutputFileName>
+      <ShowProgress>false</ShowProgress>
+      <Culture>0x0409</Culture>
     </ResourceCompile>
     <Midl>
       <WarningLevel>4</WarningLevel>
@@ -72,17 +124,29 @@
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <TypeLibraryName>$(INTERMEDIATE_DIR)$(TargetName).tlb</TypeLibraryName>
       <WarnAsError>true</WarnAsError>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <StructMemberAlignment>NotSet</StructMemberAlignment>
+      <DefaultCharType>Signed</DefaultCharType>
+      <ErrorCheckAllocations>false</ErrorCheckAllocations>
+      <ErrorCheckBounds>false</ErrorCheckBounds>
+      <ErrorCheckEnumRange>false</ErrorCheckEnumRange>
+      <ErrorCheckRefPointers>false</ErrorCheckRefPointers>
+      <ErrorCheckStubData>false</ErrorCheckStubData>
+      <GenerateTypeLibrary>true</GenerateTypeLibrary>
     </Midl>
     <Xdcmake>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <OutputFile>$(INTERMEDIATE_DIR)$(TargetName).xml</OutputFile>
+      <DocumentLibraryDependencies>true</DocumentLibraryDependencies>
     </Xdcmake>
     <Bscmake>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <OutputFile>$(INTERMEDIATE_DIR)$(TargetName).bsc</OutputFile>
+      <PreserveSbr>false</PreserveSbr>
     </Bscmake>
     <Xsd>
       <SuppressStartupBanner>false</SuppressStartupBanner>
+      <GenerateFromSchema>dataset</GenerateFromSchema>
     </Xsd>
     <FxCompile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
@@ -98,12 +162,15 @@
     <Lib>
       <ErrorReporting>PromptImmediately</ErrorReporting>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <OutputFile>$(LIB_DIR)$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
       <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
       <Verbose>false</Verbose>
     </Lib>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="PYTHON_DIR">

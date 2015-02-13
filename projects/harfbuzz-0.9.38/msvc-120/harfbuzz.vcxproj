@@ -253,10 +253,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <Lib>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -271,12 +268,8 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <Lib>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
-    </Lib>
-    <Lib>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -297,10 +290,7 @@
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
     </Link>
-    <Lib>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -320,10 +310,7 @@
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
     </Link>
-    <Lib>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

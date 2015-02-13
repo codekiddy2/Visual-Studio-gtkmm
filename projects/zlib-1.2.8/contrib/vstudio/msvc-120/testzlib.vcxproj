@@ -22,6 +22,7 @@
     <ProjectGuid>{AA6666AA-E09F-4135-9C0C-4FE50C3C654B}</ProjectGuid>
     <RootNamespace>testzlib</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectName>test-zlib</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

@@ -30,6 +30,9 @@ echo can't find configuration directory, did you configure?
     <PreBuildEvent>
       <Message>Preparing headers ...</Message>
     </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
