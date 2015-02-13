@@ -28,11 +28,13 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -51,39 +53,38 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_expat.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_expat.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_expat.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_expat.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>_DEBUG;COMPILED_FROM_DSP;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -102,14 +103,12 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <SubSystem>Console</SubSystem>
       <ModuleDefinitionFile>..\..\lib\libexpat.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>_DEBUG;COMPILED_FROM_DSP;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -127,15 +126,13 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <SubSystem>Console</SubSystem>
       <ModuleDefinitionFile>..\..\lib\libexpat.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <AdditionalIncludeDirectories>..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -154,16 +151,14 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <SubSystem>Console</SubSystem>
       <ModuleDefinitionFile>..\..\lib\libexpat.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>COMPILED_FROM_DSP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <AdditionalIncludeDirectories>..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -181,7 +176,6 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <SubSystem>Console</SubSystem>
       <ModuleDefinitionFile>..\..\lib\libexpat.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>

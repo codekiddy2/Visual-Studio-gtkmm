@@ -28,11 +28,13 @@
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -51,44 +53,37 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_expat.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_expat.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_expat.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_expat.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
     <Midl>
       <TypeLibraryName>.\..\win32\bin\Debug\outline.tlb</TypeLibraryName>
     </Midl>
@@ -101,15 +96,11 @@
       <OutputFile>.\..\win32\bin\Debug\outline.bsc</OutputFile>
     </Bscmake>
     <Link>
-      <SubSystem>Console</SubSystem>
       <AdditionalDependencies>expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
     <Midl>
       <TypeLibraryName>.\..\win32\bin\Debug\outline.tlb</TypeLibraryName>
     </Midl>
@@ -122,15 +113,11 @@
       <OutputFile>.\..\win32\bin\Debug\outline.bsc</OutputFile>
     </Bscmake>
     <Link>
-      <SubSystem>Console</SubSystem>
       <AdditionalDependencies>expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
     <Midl>
       <TypeLibraryName>.\..\win32\bin\Release\outline.tlb</TypeLibraryName>
     </Midl>
@@ -143,15 +130,11 @@
       <OutputFile>.\..\win32\bin\Release\outline.bsc</OutputFile>
     </Bscmake>
     <Link>
-      <SubSystem>Console</SubSystem>
       <AdditionalDependencies>expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
     <Midl>
       <TypeLibraryName>.\..\win32\bin\Release\outline.tlb</TypeLibraryName>
     </Midl>
@@ -164,7 +147,6 @@
       <OutputFile>.\..\win32\bin\Release\outline.bsc</OutputFile>
     </Bscmake>
     <Link>
-      <SubSystem>Console</SubSystem>
       <AdditionalDependencies>expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
