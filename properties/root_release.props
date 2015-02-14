@@ -2,10 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <REPO_DIR>D:\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
+    <DRIVE>D</DRIVE>
+    <REPO_DIR>$(DRIVE):\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
     <ROOT_DIR>$(REPO_DIR)output\Release\$(Platform)\</ROOT_DIR>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <BuildLog />
     <ClCompile />
@@ -17,8 +20,33 @@
     <Midl />
     <Xdcmake />
     <Bscmake />
+    <ClCompile>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <LinkStatus>false</LinkStatus>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <BuildMacro Include="DRIVE">
+      <Value>$(DRIVE)</Value>
+    </BuildMacro>
     <BuildMacro Include="REPO_DIR">
       <Value>$(REPO_DIR)</Value>
     </BuildMacro>

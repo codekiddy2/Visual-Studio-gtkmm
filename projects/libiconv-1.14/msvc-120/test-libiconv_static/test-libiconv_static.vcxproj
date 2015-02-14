@@ -87,7 +87,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -97,7 +96,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -107,7 +105,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,7 +114,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>iconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary />
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

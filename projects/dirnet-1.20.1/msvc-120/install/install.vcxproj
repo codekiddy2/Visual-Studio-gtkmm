@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{39539317-370A-4E74-9DCE-87AC5F65D8BE}</ProjectGuid>
+    <ProjectGuid>{572BBE98-8205-4C62-872C-9B1D6C6D1D88}</ProjectGuid>
     <RootNamespace>install</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -54,27 +54,27 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_zlib.props" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_dirnet.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_zlib.props" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_dirnet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_zlib.props" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_dirnet.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_zlib.props" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_dirnet.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -90,9 +90,9 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include/zlib mkdir include/zlib
-cd include/zlib
-xcopy $(SRC_DIR)*.h /Y
+if not exist include\dirnet mkdir include\dirnet
+cd include\dirnet
+xcopy $(SRC_DIR)include\*.h /Y
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -108,9 +108,9 @@ xcopy $(SRC_DIR)*.h /Y
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include/zlib mkdir include/zlib
-cd include/zlib
-xcopy $(SRC_DIR)*.h /Y
+if not exist include\dirnet mkdir include\dirnet
+cd include\dirnet
+xcopy $(SRC_DIR)include\*.h /Y
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -130,9 +130,9 @@ xcopy $(SRC_DIR)*.h /Y
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include/zlib mkdir include/zlib
-cd include/zlib
-xcopy $(SRC_DIR)*.h /Y
+if not exist include\dirnet mkdir include\dirnet
+cd include\dirnet
+xcopy $(SRC_DIR)include\*.h /Y
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -152,63 +152,47 @@ xcopy $(SRC_DIR)*.h /Y
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include/zlib mkdir include/zlib
-cd include/zlib
-xcopy $(SRC_DIR)*.h /Y
+if not exist include\dirnet mkdir include\dirnet
+cd include\dirnet
+xcopy $(SRC_DIR)include\*.h /Y
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\asm\asm.vcxproj">
-      <Project>{a204152b-9d27-47e1-bcea-1305b6653ffe}</Project>
+    <ProjectReference Include="..\find\find.vcxproj">
+      <Project>{23d2045e-a3d0-4457-b6b2-6206bd32ef8d}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
-    <ProjectReference Include="..\miniunz.vcxproj">
-      <Project>{c52f9e7b-498a-42be-8db4-85a15694382a}</Project>
+    <ProjectReference Include="..\locate\locate.vcxproj">
+      <Project>{0045c33b-59db-46d5-a55a-b5dd1c09f6e9}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
-    <ProjectReference Include="..\minizip.vcxproj">
-      <Project>{48cdd9dc-e09f-4135-9c0c-4fe50c3c654b}</Project>
+    <ProjectReference Include="..\ls\ls.vcxproj">
+      <Project>{1e147e3c-64e3-4df2-a86e-22a6f10d2da4}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
-    <ProjectReference Include="..\testzlib.vcxproj">
-      <Project>{aa6666aa-e09f-4135-9c0c-4fe50c3c654b}</Project>
+    <ProjectReference Include="..\t-dirent\t-dirent.vcxproj">
+      <Project>{b01afdf2-f1d1-4377-b9a4-a8ac26caff0c}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
-    <ProjectReference Include="..\testzlibdll.vcxproj">
-      <Project>{c52f9e7b-498a-42be-8db4-85a15694366a}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-    <ProjectReference Include="..\zlibstat.vcxproj">
-      <Project>{745dec58-ebb3-47a9-a9b8-4c6627c01bf8}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-    <ProjectReference Include="..\zlibvc.vcxproj">
-      <Project>{8fd826f8-3739-44e6-8cc8-997122e53b8d}</Project>
+    <ProjectReference Include="..\updatedb\updatedb.vcxproj">
+      <Project>{39364ae2-57cd-44a3-be08-5bddd7ee074a}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>

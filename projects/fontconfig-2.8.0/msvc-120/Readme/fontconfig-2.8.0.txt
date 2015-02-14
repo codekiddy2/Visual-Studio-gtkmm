@@ -18,11 +18,12 @@ expat
 freetype
 harfbuzz
 libiconv
+dirnet
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Once installatino is done you will also need to open fontconfig.h (the installed one!)
+Once installation is done you will also need to open fontconfig.h (the installed one!)
 and replace following:
 #include <unistd.h>
 with:

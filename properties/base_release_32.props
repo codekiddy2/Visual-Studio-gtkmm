@@ -5,30 +5,13 @@
     <Import Project="base_stack.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <Optimization>MaxSpeed</Optimization>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <MinimalRebuild>false</MinimalRebuild>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <StringPooling>true</StringPooling>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <FunctionLevelLinking>false</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <WholeProgramOptimization>true</WholeProgramOptimization>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <PreprocessorDefinitions>NDEBUG;_WIN32;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OptimizeReferences>true</OptimizeReferences>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <LinkStatus>false</LinkStatus>
+      <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
@@ -41,6 +24,9 @@
     <Xdcmake />
     <Bscmake />
     <Xsd />
+    <Midl>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

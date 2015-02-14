@@ -7,6 +7,7 @@
   <PropertyGroup>
     <OutDir>$(BIN_DIR)</OutDir>
     <ExtensionsToDeleteOnClean>*.exe;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+    <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>

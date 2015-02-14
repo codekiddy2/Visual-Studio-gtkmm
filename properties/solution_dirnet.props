@@ -2,11 +2,18 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\zlib-1.2.8\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\dirnet-1.20.1\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
-    <ClCompile />
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link />
+    <Bscmake />
+    <Bscmake />
+    <Bscmake />
+    <Bscmake />
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">

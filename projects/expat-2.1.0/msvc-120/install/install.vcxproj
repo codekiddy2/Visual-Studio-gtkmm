@@ -87,6 +87,16 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include mkdir include
+cd include
+mkdir expat
+cd expat
+xcopy $(SRC_DIR)lib\*.h /Y
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -98,7 +108,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)
 if not exist include mkdir include
 cd include
@@ -121,6 +131,16 @@ xcopy $(SRC_DIR)lib\*.h /Y
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include mkdir include
+cd include
+mkdir expat
+cd expat
+xcopy $(SRC_DIR)lib\*.h /Y
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -135,6 +155,16 @@ xcopy $(SRC_DIR)lib\*.h /Y
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include mkdir include
+cd include
+mkdir expat
+cd expat
+xcopy $(SRC_DIR)lib\*.h /Y
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectReference Include="..\examples\elements.vcxproj">

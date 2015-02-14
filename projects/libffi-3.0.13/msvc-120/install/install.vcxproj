@@ -86,12 +86,12 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
-cd $(ROOT_DIR)include
-mkdir ffi
-cd ffi
-xcopy /Y $(SRC_DIR)msvc-120\include\*.h
-copy /Y $(SRC_DIR)\include\ffi_common.h
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include\ffi mkdir include\ffi
+cd include\ffi
+xcopy $(SRC_DIR)msvc-120\include\*.h  /Y
+copy $(SRC_DIR)include\ffi_common.h /Y
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -105,12 +105,12 @@ copy /Y $(SRC_DIR)\include\ffi_common.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
-cd $(ROOT_DIR)include
-mkdir ffi
-cd ffi
-xcopy /Y $(SRC_DIR)msvc-120\include\*.h
-copy /Y $(SRC_DIR)\include\ffi_common.h
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include\ffi mkdir include\ffi
+cd include\ffi
+xcopy $(SRC_DIR)msvc-120\include\*.h  /Y
+copy $(SRC_DIR)include\ffi_common.h /Y
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -124,12 +124,12 @@ copy /Y $(SRC_DIR)\include\ffi_common.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
-cd $(ROOT_DIR)include
-mkdir ffi
-cd ffi
-xcopy /Y $(SRC_DIR)msvc-120\include\*.h
-copy /Y $(SRC_DIR)\include\ffi_common.h
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include\ffi mkdir include\ffi
+cd include\ffi
+xcopy $(SRC_DIR)msvc-120\include\*.h  /Y
+copy $(SRC_DIR)include\ffi_common.h /Y
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -143,12 +143,12 @@ copy /Y $(SRC_DIR)\include\ffi_common.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
-cd $(ROOT_DIR)include
-mkdir ffi
-cd ffi
-xcopy /Y $(SRC_DIR)msvc-120\include\*.h
-copy /Y $(SRC_DIR)\include\ffi_common.h
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include\ffi mkdir include\ffi
+cd include\ffi
+xcopy $(SRC_DIR)msvc-120\include\*.h  /Y
+copy $(SRC_DIR)include\ffi_common.h /Y
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>

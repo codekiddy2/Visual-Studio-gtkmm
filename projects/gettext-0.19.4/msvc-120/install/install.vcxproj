@@ -89,7 +89,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir intl
 cd intl
@@ -110,7 +110,7 @@ copy libgnuintl.h libintl.h</Command>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir intl
 cd intl
@@ -131,7 +131,7 @@ copy libgnuintl.h libintl.h</Command>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir intl
 cd intl
@@ -152,7 +152,7 @@ copy libgnuintl.h libintl.h</Command>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir intl
 cd intl
