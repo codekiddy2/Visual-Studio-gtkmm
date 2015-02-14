@@ -64,7 +64,7 @@
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
-      <MapExports>true</MapExports>
+      <MapExports>false</MapExports>
       <ProfileGuidedDatabase>$(SYMBOLS_DIR)pgd\$(TargetName).pgd</ProfileGuidedDatabase>
       <WindowsMetadataLinkDelaySign>false</WindowsMetadataLinkDelaySign>
       <DataExecutionPrevention>true</DataExecutionPrevention>

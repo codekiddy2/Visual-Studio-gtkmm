@@ -15,6 +15,7 @@
     </ClCompile>
     <Lib />
     <ProjectReference />
+    <Link />
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

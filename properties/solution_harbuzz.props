@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SRC_DIR>$(REPO_DIR)projects\harfbuzz-0.9.38\</SRC_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>HAVE_OT;HAVE_GLIB;HAVE_UNISCRIBE;HAVE_FREETYPE;HAVE_GOBJECT;HAVE_USP10_H;HAVE_WINDOWS_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>HAVE_CAIRO_FT;HAVE_ICU;HAVE_UNISTD_H;HAVE_UCDN;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

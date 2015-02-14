@@ -1,94 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="Atk" Bounds="418,345.885,50,25.96" Label="atk" />
-    <Node Id="Atkmm" Bounds="360.595,403.5325,56.81,25.96" Label="atkmm" />
-    <Node Id="Cairo" Bounds="432,288.2375,50,25.96" Label="cairo" />
-    <Node Id="Cairomm" Bounds="447.783333333333,403.5325,66.4333333333334,25.96" Label="cairomm" />
-    <Node Id="Dirnet" Category="Category2" Bounds="496.36,57.6475,51.28,25.96" Label="dirnet" />
-    <Node Id="Epoxy" Bounds="336.163333333333,345.885,51.6733333333334,25.96" Label="epoxy" />
-    <Node Id="Expat" Category="Category2" Bounds="656,0,50,25.96" Label="expat" />
-    <Node Id="Ffi" Category="Category2" Bounds="416,57.6475,50,25.96" Label="ffi" />
-    <Node Id="Fontconfig" Bounds="643.631666666667,230.59,74.7366666666667,25.96" Label="fontconfig" />
-    <Node Id="Freeglut" Bounds="243.343333333333,57.6475000000002,61.3133333333333,25.96" Label="freeglut" />
-    <Node Id="Freetype" Bounds="490.156666666667,115.295,63.6866666666666,25.96" Label="freetype" />
-    <Node Id="Glib" Category="Category2" Bounds="336,115.295,50,25.96" Label="glib" />
-    <Node Id="Glibmm" Bounds="149.696666666667,288.2375,60.6066666666667,25.96" Label="glibmm" />
-    <Node Id="Gtk" Bounds="280,403.5325,50,25.96" Label="gtk" />
-    <Node Id="Gtkmm" Bounds="308.115,461.18,57.77,25.96" Label="gtkmm" />
-    <Node Id="Harfbuzz" Bounds="488.238333333333,172.9425,65.5233333333333,25.96" Label="harfbuzz" />
-    <Node Id="Jasper" Bounds="248.195,115.295,51.6100000000001,25.96" Label="jasper" />
-    <Node Id="Jpeg" Bounds="16,57.6475000000002,50,25.96" Label="jpeg" />
-    <Node Id="Libiconv" Category="Category2" Bounds="698,115.295,50,25.96" Label="iconv" />
-    <Node Id="Libintl" Category="Category2" Bounds="698,57.6475,50,25.96" Label="intl" />
-    <Node Id="Libsigc++" Bounds="108.051666666667,403.5325,69.8966666666668,25.96" Label="libsigc++" />
-    <Node Id="Pango" Bounds="529.976666666667,345.885,54.0466666666666,25.96" Label="pango" />
-    <Node Id="Pangomm" Bounds="544.64,403.5325,74.72,25.96" Label="pangomm" />
-    <Node Id="Pcre" Bounds="335,57.6475,50,25.96" Label="pcre" />
-    <Node Id="Pixbuf" Bounds="150.466666666667,172.9425,53.0666666666666,25.96" Label="pixbuf" />
-    <Node Id="Pixman" Bounds="335.65,230.59,58.7,25.96" Label="pixman" />
-    <Node Id="Png" Bounds="168,115.295,50,25.96" Label="png" />
-    <Node Id="Tiff" Bounds="24,115.295,50,25.96" Label="tiff" />
-    <Node Id="Zlib" Category="Category2" Bounds="112,57.6475000000002,50,25.96" Label="zlib" />
+    <Node Id="Atk" Bounds="247.656666666667,403.5325,50,25.96" Label="atk" />
+    <Node Id="Atkmm" Bounds="330.251666666667,461.180000000001,56.8099999999999,25.96" Label="atkmm" />
+    <Node Id="Cairo" Bounds="571.656666666667,345.885,50,25.96" Label="cairo" />
+    <Node Id="Cairomm" Bounds="622.44,461.18,66.4333333333334,25.96" Label="cairomm" />
+    <Node Id="Dirnet" Category="Category2" Bounds="742.016666666667,230.59,51.28,25.96" Label="dirnet" />
+    <Node Id="Epoxy" Bounds="327.82,403.5325,51.6733333333334,25.96" Label="epoxy" />
+    <Node Id="Expat" Category="Category2" Bounds="863.656666666667,0,50,25.96" Label="expat" />
+    <Node Id="Ffi" Category="Category2" Bounds="676.656666666667,57.6475,50,25.96" Label="ffi" />
+    <Node Id="Fontconfig" Bounds="719.288333333334,288.2375,74.7366666666667,25.96" Label="fontconfig" />
+    <Node Id="Freeglut" Bounds="0,57.6475000000002,61.3133333333333,25.96" Label="freeglut" />
+    <Node Id="Freetype" Category="Category2" Bounds="570.813333333334,230.59,63.6866666666665,25.96" Label="freetype" />
+    <Node Id="Glib" Category="Category2" Bounds="531.656666666667,115.295,50,25.96" Label="glib" />
+    <Node Id="Glibmm" Bounds="983.353333333333,345.885,60.6066666666666,25.96" Label="glibmm" />
+    <Node Id="Gtk" Bounds="417.656666666667,461.180000000001,50,25.96" Label="gtk" />
+    <Node Id="Gtkmm" Bounds="727.771666666667,518.8275,57.77,25.96" Label="gtkmm" />
+    <Node Id="Harfbuzz" Bounds="577.895,172.9425,65.5233333333333,25.96" Label="harfbuzz" />
+    <Node Id="Jasper" Bounds="4.85166666666669,115.295,51.6100000000001,25.96" Label="jasper" />
+    <Node Id="Jpeg" Bounds="91.6566666666668,57.6475000000002,50,25.96" Label="jpeg" />
+    <Node Id="Libiconv" Category="Category2" Bounds="393.656666666667,115.295,50,25.9599999999999" Label="iconv" />
+    <Node Id="Libintl" Category="Category2" Bounds="467.656666666667,57.6475000000002,50,25.96" Label="intl" />
+    <Node Id="Libsigc++" Bounds="1015.70833333333,461.18,69.896666666667,25.96" Label="libsigc++" />
+    <Node Id="Pango" Bounds="729.633333333334,403.5325,54.0466666666666,25.96" Label="pango" />
+    <Node Id="Pangomm" Bounds="719.296666666667,461.18,74.72,25.96" Label="pangomm" />
+    <Node Id="Pcre" Bounds="595.656666666667,57.6475,50,25.96" Label="pcre" />
+    <Node Id="Pixbuf" Bounds="190.123333333333,172.9425,53.0666666666666,25.96" Label="pixbuf" />
+    <Node Id="Pixman" Bounds="567.306666666667,288.2375,58.7,25.96" Label="pixman" />
+    <Node Id="Png" Bounds="199.656666666667,115.295,50,25.96" Label="png" />
+    <Node Id="Tiff" Bounds="118.656666666667,115.295,50,25.96" Label="tiff" />
+    <Node Id="Zlib" Category="Category2" Bounds="255.656666666667,57.6475000000002,50,25.96" Label="zlib" />
   </Nodes>
   <Links>
-    <Link Source="Atk" Target="Atkmm" Bounds="399.746459960938,371.845001220703,25.2406311035156,23.8600158691406" />
-    <Link Source="Atk" Target="Gtk" Bounds="338.115661621094,368.873199462891,79.8844604492188,33.1769104003906" />
-    <Link Source="Atkmm" Target="Gtkmm" Bounds="354.736602783203,429.492492675781,22.5549926757813,25.0046081542969" />
-    <Link Source="Cairo" Target="Cairomm" Bounds="466.456787109375,314.197509765625,26.2432250976563,80.7440490722656" />
-    <Link Source="Cairo" Target="Gtk" Bounds="305,305.958251953125,127,88.5742492675781" />
-    <Link Source="Cairo" Target="Pango" Bounds="471.410339355469,314.197509765625,50.5968017578125,29.8331298828125" />
-    <Link Source="Cairomm" Target="Gtkmm" Bounds="373.873870849609,429.159271240234,75.5352783203125,30.239013671875" />
-    <Link Source="Dirnet" Target="Freetype" Bounds="522,83.6074981689453,0,22.6875" />
-    <Link Source="Epoxy" Target="Gtk" Bounds="326.056793212891,371.845001220703,24.6851196289063,25.6191711425781" />
-    <Link Source="Expat" Target="Fontconfig" Bounds="657,25.9599990844727,20.5316162109375,195.741096496582" />
-    <Link Source="Expat" Target="Libintl" Bounds="690.456787109375,25.9599990844727,17.7867431640625,24.4133529663086" />
-    <Link Source="Ffi" Target="Glib" Bounds="386.314666748047,83.6074981689453,36.6724243164063,26.4259033203125" />
-    <Link Source="Fontconfig" Target="Cairo" Bounds="490.780151367188,254.718597412109,153.088500976563,38.89208984375" />
-    <Link Source="Fontconfig" Target="Harfbuzz" Bounds="559.399291992188,202.412979125977,84.6231689453125,29.6964721679688" />
-    <Link Source="Fontconfig" Target="Pango" Bounds="592.789611816406,256.549987792969,88.2103881835938,93.9957275390625" />
-    <Link Source="Freeglut" Target="Jasper" Bounds="274,83.6074981689453,0,22.6875" />
-    <Link Source="Freetype" Target="Cairo" Bounds="457,141.255004882813,50.1393432617188,137.982482910156" />
-    <Link Source="Freetype" Target="Fontconfig" Bounds="553.843322753906,133.402618408203,147.156677246094,89.440673828125" />
-    <Link Source="Freetype" Target="Harfbuzz" Bounds="521.727966308594,141.255004882813,0.27203369140625,22.6917724609375" />
-    <Link Source="Freetype" Target="Pango" Bounds="550.370361328125,141.255004882813,24.9373168945313,195.715423583984" />
-    <Link Source="Glib" Target="Atk" Bounds="324.917541503906,141.255004882813,95.6395874023438,198.859619140625" />
-    <Link Source="Glib" Target="Cairo" Bounds="375.410339355469,141.255004882813,72.1727905273438,138.757080078125" />
-    <Link Source="Glib" Target="Glibmm" Bounds="192.227630615234,135.781188964844,143.772369384766,144.704193115234" />
-    <Link Source="Glib" Target="Gtk" Bounds="300.555572509766,139.42692565918,35.6828002929688,255.109848022461" />
-    <Link Source="Glib" Target="Harfbuzz" Bounds="386,135.781188964844,97.9571228027344,33.5013275146484" />
-    <Link Source="Glib" Target="Pango" Bounds="385.761627197266,139.42692565918,157.819366455078,198.926651000977" />
-    <Link Source="Glib" Target="Pixbuf" Bounds="212.022888183594,134.145950317383,123.977111816406,39.4503936767578" />
-    <Link Source="Glibmm" Target="Gtkmm" Bounds="193.059371948242,314.197509765625,108.124710083008,143.83203125" />
-    <Link Source="Gtk" Target="Gtkmm" Bounds="312.205169677734,429.492492675781,13.2216186523438,23.8185729980469" />
-    <Link Source="Harfbuzz" Target="Cairo" Bounds="464.927001953125,198.902496337891,41.6626586914063,80.8944396972656" />
-    <Link Source="Harfbuzz" Target="Fontconfig" Bounds="553.761657714844,192.803756713867,115.098266601563,30.5751953125" />
-    <Link Source="Harfbuzz" Target="Pango" Bounds="521,198.902496337891,30.5765380859375,138.250793457031" />
-    <Link Source="Jasper" Target="Pixbuf" Bounds="194.006118774414,138.461196899414,54.1959686279297,27.9559478759766" />
-    <Link Source="Jpeg" Target="Pixbuf" Bounds="10.4211807250977,83.6074981689453,131.374305725098,92.0425720214844" />
-    <Link Source="Jpeg" Target="Tiff" Bounds="41,83.6074981689453,2.22980117797852,22.9524307250977" />
-    <Link Source="Libiconv" Target="Fontconfig" Bounds="725.643615722656,141.255004882813,39.3563842773438,86.9665069580078" />
-    <Link Source="Libiconv" Target="Libintl" Bounds="693.75,89.3681488037109,11.6873779296875,25.9268493652344" />
-    <Link Source="Libiconv" Target="Pixbuf" Bounds="212.238784790039,138.23486328125,485.761215209961,38.4434814453125" />
-    <Link Source="Libintl" Target="Atk" Bounds="476.557556152344,80.3652496337891,320.442443847656,267.570327758789" />
-    <Link Source="Libintl" Target="Glib" Bounds="394.900268554688,75.2190551757813,303.099731445313,47.9667129516602" />
-    <Link Source="Libintl" Target="Gtk" Bounds="338.627746582031,75.8491973876953,522.372253417969,329.832656860352" />
-    <Link Source="Libintl" Target="Libiconv" Bounds="740.562622070313,83.6074981689453,11.6873779296875,25.9268569946289" />
-    <Link Source="Libintl" Target="Pango" Bounds="592.639709472656,77.4255523681641,236.360290527344,269.420852661133" />
-    <Link Source="Libsigc++" Target="Gtkmm" Bounds="158.310989379883,429.492492675781,140.946578979492,37.8682556152344" />
-    <Link Source="Pango" Target="Gtk" Bounds="338.66796875,365.249542236328,191.308715820313,41.7058715820313" />
-    <Link Source="Pango" Target="Pangomm" Bounds="562.629028320313,371.845001220703,10.1611328125,23.4305114746094" />
-    <Link Source="Pangomm" Target="Gtkmm" Bounds="374.645751953125,425.303161621094,169.994262695313,39.9989318847656" />
-    <Link Source="Pcre" Target="Glib" Bounds="360.450317382813,83.6074981689453,0.51519775390625,22.6875686645508" />
-    <Link Source="Pixbuf" Target="Gtk" Bounds="177,198.902496337891,114.944274902344,197.030303955078" />
-    <Link Source="Pixman" Target="Cairo" Bounds="377.609039306641,256.549987792969,46.4238891601563,29.8182373046875" />
-    <Link Source="Png" Target="Pixbuf" Bounds="172.001235961914,141.255004882813,10.1910095214844,22.7964477539063" />
-    <Link Source="Tiff" Target="Pixbuf" Bounds="59.8077545166016,141.255004882813,81.9858551025391,34.9099884033203" />
-    <Link Source="Zlib" Target="Cairo" Bounds="137.600433349609,83.6074981689453,285.549377441406,211.355575561523" />
-    <Link Source="Zlib" Target="Glib" Bounds="162,74.916748046875,167.046936035156,37.0380477905273" />
-    <Link Source="Zlib" Target="Pixbuf" Bounds="137,83.6074981689453,15.0608062744141,83.5881042480469" />
-    <Link Source="Zlib" Target="Png" Bounds="151.410339355469,83.6074981689453,24.9401092529297,24.8410873413086" />
-    <Link Source="Zlib" Target="Tiff" Bounds="65.9363708496094,81.7794189453125,46.302001953125,26.924674987793" />
+    <Link Source="Atk" Target="Atkmm" Bounds="291.570220947266,429.492492675781,39.7482299804688,26.7489624023438" />
+    <Link Source="Atk" Target="Gtk" Bounds="297.656677246094,426.250244140625,111.380126953125,37.8154907226563" />
+    <Link Source="Atkmm" Target="Gtkmm" Bounds="387.061676025391,483.673828125,331.766448974609,43.8763427734375" />
+    <Link Source="Cairo" Target="Cairomm" Bounds="609.265686035156,371.845001220703,38.700439453125,80.8629760742188" />
+    <Link Source="Cairo" Target="Gtk" Bounds="467.628845214844,371.845001220703,112.816162109375,84.0151977539063" />
+    <Link Source="Cairo" Target="Pango" Bounds="621.08837890625,370.601898193359,99.8970336914063,35.6288146972656" />
+    <Link Source="Cairomm" Target="Gtkmm" Bounds="678.398010253906,487.140014648438,47.700927734375,27.2261352539063" />
+    <Link Source="Dirnet" Target="Fontconfig" Bounds="761.161254882813,256.549987792969,4.2437744140625,22.8699035644531" />
+    <Link Source="Epoxy" Target="Gtk" Bounds="364.914733886719,429.492492675781,44.77490234375,29.8180847167969" />
+    <Link Source="Expat" Target="Fontconfig" Bounds="802.817810058594,25.9599990844727,85.8388671875,265.177665710449" />
+    <Link Source="Expat" Target="Libintl" Bounds="526.562805175781,16.6193618774414,337.093872070313,49.0722732543945" />
+    <Link Source="Ffi" Target="Glib" Bounds="590.276489257813,83.606803894043,89.3155517578125,34.5739212036133" />
+    <Link Source="Fontconfig" Target="Cairo" Bounds="630.419311523438,314.197509765625,109.575378417969,36.7555847167969" />
+    <Link Source="Fontconfig" Target="Harfbuzz" Bounds="650.663696289063,201.550201416016,79.8742065429688,86.6872863769531" />
+    <Link Source="Fontconfig" Target="Pango" Bounds="756.656677246094,314.197509765625,0,80.3349914550781" />
+    <Link Source="Freeglut" Target="Jasper" Bounds="30.656665802002,83.6074981689453,0,22.6875" />
+    <Link Source="Freetype" Target="Cairo" Bounds="614.815368652344,256.549987792969,27.6307983398438,83.0995483398438" />
+    <Link Source="Freetype" Target="Fontconfig" Bounds="631.477355957031,256.549987792969,79.837158203125,30.14599609375" />
+    <Link Source="Freetype" Target="Harfbuzz" Bounds="580.292358398438,204.613510131836,8.404296875,25.9764862060547" />
+    <Link Source="Freetype" Target="Pango" Bounds="617.067016601563,256.549987792969,122.786804199219,140.11328125" />
+    <Link Source="Glib" Target="Atk" Bounds="285.954925537109,134.487014770508,245.701751708984,261.491256713867" />
+    <Link Source="Glib" Target="Cairo" Bounds="521.267761230469,141.255004882813,47.0475463867188,199.851226806641" />
+    <Link Source="Glib" Target="Glibmm" Bounds="581.656677246094,130.963775634766,413.6884765625,208.352844238281" />
+    <Link Source="Glib" Target="Gtk" Bounds="444.732604980469,136.853500366211,86.924072265625,315.36653137207" />
+    <Link Source="Glib" Target="Harfbuzz" Bounds="568.815368652344,141.255004882813,23.52978515625,25.1191253662109" />
+    <Link Source="Glib" Target="Pango" Bounds="581.656677246094,131.328369140625,303.054748535156,267.028076171875" />
+    <Link Source="Glib" Target="Pixbuf" Bounds="252.088607788086,134.507583618164,279.568069458008,46.0508270263672" />
+    <Link Source="Glibmm" Target="Gtkmm" Bounds="784.799011230469,371.845001220703,215.798278808594,142.173736572266" />
+    <Link Source="Gtk" Target="Gtkmm" Bounds="467.656677246094,478.749755859375,251.262939453125,46.1295776367188" />
+    <Link Source="Harfbuzz" Target="Cairo" Bounds="536.656677246094,198.244995117188,42.3640747070313,144.901031494141" />
+    <Link Source="Harfbuzz" Target="Fontconfig" Bounds="643.418334960938,194.831130981445,103.455505371094,85.2379913330078" />
+    <Link Source="Harfbuzz" Target="Freetype" Bounds="628.21923828125,198.902496337891,10.7804565429688,26.6930694580078" />
+    <Link Source="Harfbuzz" Target="Pango" Bounds="643.418334960938,194.145965576172,170.358337402344,203.566650390625" />
+    <Link Source="Jasper" Target="Pixbuf" Bounds="41.9147453308105,141.255004882813,139.349445343018,38.3311920166016" />
+    <Link Source="Jpeg" Target="Pixbuf" Bounds="87.6566696166992,83.6074981689453,93.6832504272461,94.423828125" />
+    <Link Source="Jpeg" Target="Tiff" Bounds="122.736030578613,83.6074981689453,11.0239486694336,23.5371627807617" />
+    <Link Source="Libiconv" Target="Fontconfig" Bounds="443.656677246094,136.653991699219,379.057495117188,147.088623046875" />
+    <Link Source="Libiconv" Target="Libintl" Bounds="394.153381347656,79.2289047241211,64.7825317382813,36.0660934448242" />
+    <Link Source="Libiconv" Target="Pixbuf" Bounds="250.858154296875,133.496688842773,142.798522949219,37.0414123535156" />
+    <Link Source="Libintl" Target="Atk" Bounds="277.597259521484,75.4963760375977,190.059417724609,319.259574890137" />
+    <Link Source="Libintl" Target="Glib" Bounds="517.418273925781,81.7794189453125,37.1704711914063,24.7563781738281" />
+    <Link Source="Libintl" Target="Gtk" Bounds="445.579071044922,83.6074981689453,47.0776062011719,368.651565551758" />
+    <Link Source="Libintl" Target="Libiconv" Bounds="443.443878173828,83.6074981689453,33.4514770507813,26.3204574584961" />
+    <Link Source="Libintl" Target="Pango" Bounds="517.656677246094,78.1336822509766,371.299987792969,319.444198608398" />
+    <Link Source="Libsigc++" Target="Gtkmm" Bounds="794.486877441406,487.140014648438,240.858825683594,40.4736328125" />
+    <Link Source="Pango" Target="Gtk" Bounds="476.494964599609,421.261962890625,253.138397216797,46.3957214355469" />
+    <Link Source="Pango" Target="Pangomm" Bounds="756.656677246094,429.492492675781,0,22.6875" />
+    <Link Source="Pangomm" Target="Gtkmm" Bounds="756.656677246094,487.140014648438,0,22.6875" />
+    <Link Source="Pcre" Target="Glib" Bounds="589.623229980469,83.6074981689453,31.033447265625,29.8169937133789" />
+    <Link Source="Pixbuf" Target="Gtk" Bounds="216.656661987305,198.902496337891,192.494033813477,262.73681640625" />
+    <Link Source="Pixman" Target="Cairo" Bounds="596.656677246094,314.197509765625,0,22.6875" />
+    <Link Source="Png" Target="Pixbuf" Bounds="216.93212890625,141.255004882813,4.1219482421875,22.6917114257813" />
+    <Link Source="Tiff" Target="Pixbuf" Bounds="160.093460083008,141.255004882813,33.0632171630859,26.1097412109375" />
+    <Link Source="Zlib" Target="Cairo" Bounds="295.067016601563,83.6074981689453,280.734375,256.20768737793" />
+    <Link Source="Zlib" Target="Glib" Bounds="305.656677246094,73.5807495117188,229.183410644531,36.6007919311523" />
+    <Link Source="Zlib" Target="Pixbuf" Bounds="237.754180908203,83.6074981689453,42.9024963378906,83.3115844726563" />
+    <Link Source="Zlib" Target="Png" Bounds="241.306213378906,83.6074981689453,24.9401245117188,24.8410873413086" />
+    <Link Source="Zlib" Target="Tiff" Bounds="176.906692504883,81.1279754638672,78.7954711914063,33.1559295654297" />
   </Links>
   <Categories>
     <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
@@ -97,6 +98,7 @@
     <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
     <Property Id="Bounds" DataType="System.Windows.Rect" />
     <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
     <Property Id="GroupLabel" DataType="System.String" />
     <Property Id="IsEnabled" DataType="System.Boolean" />
     <Property Id="IsTag" DataType="System.Boolean" />
