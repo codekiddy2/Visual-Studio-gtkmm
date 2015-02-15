@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dirent.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\fcatomic.c">
       <Filter>Sources</Filter>
     </ClCompile>

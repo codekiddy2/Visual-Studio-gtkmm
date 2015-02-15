@@ -106,7 +106,7 @@
 /* #undef HAVE_GETUID */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
-/*#define HAVE_INTTYPES_H 1*/
+#define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `link' function. */
 /* #undef HAVE_LINK */
@@ -193,7 +193,7 @@
 
 /* Define to the sub-directory in which libtool stores uninstalled libraries.
    */
-#define LT_OBJDIR ".libs/"
+// #define LT_OBJDIR ".libs/"
 
 /* Name of package */
 #define PACKAGE "fontconfig"
@@ -220,7 +220,7 @@
 /*#define USE_ICONV 1*/
 
 /* Version number of package */
-#define VERSION "2.7.3"
+#define VERSION "2.8.0"
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */
