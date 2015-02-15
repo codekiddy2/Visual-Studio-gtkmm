@@ -86,7 +86,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 if not exist $(ROOT_DIR)include mkdir $(ROOT_DIR)include
 cd $(ROOT_DIR)include
 mkdir iconv
@@ -108,7 +108,7 @@ xcopy /Y $(SRC_DIR)lib\*.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 if not exist $(ROOT_DIR)include mkdir $(ROOT_DIR)include
 cd $(ROOT_DIR)include
 mkdir iconv
@@ -130,7 +130,7 @@ xcopy /Y $(SRC_DIR)lib\*.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 if not exist $(ROOT_DIR)include mkdir $(ROOT_DIR)include
 cd $(ROOT_DIR)include
 mkdir iconv
@@ -152,7 +152,7 @@ xcopy /Y $(SRC_DIR)lib\*.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 if not exist $(ROOT_DIR)include mkdir $(ROOT_DIR)include
 cd $(ROOT_DIR)include
 mkdir iconv

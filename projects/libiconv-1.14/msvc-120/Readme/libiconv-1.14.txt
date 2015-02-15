@@ -6,7 +6,7 @@ Solution created by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.0
+solution version = 1.1.1
 solution dir = D:\GitHub\Visual-Studio-gtkmm\projects\libiconv-1.14\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: https://www.gnu.org/software/libiconv/
@@ -37,7 +37,7 @@ TESTINGS:
 	Release x86
 	Release x64
 
-1.1.0
+1.1.0-1
 	Debug x64 + Debug
 
 **************************************************************************************************************************************************************************

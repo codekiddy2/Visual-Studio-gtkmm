@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SRC_DIR>$(REPO_DIR)projects\libffi-3.0.13\</SRC_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <PreBuildEvent>
+      <Command>cd $(SolutionDir)
+if not exist ./include mkdir include
+cd include
+if not exist ..\..\x86_64-w64-mingw32 goto x86
+copy ..\..\x86_64-w64-mingw32\fficonfig.h /Y
+xcopy ..\..\x86_64-w64-mingw32\include\*.h /Y
+exit
+:x86
+if not exist ..\..\i686-pc-mingw32 goto end
+copy ..\..\i686-pc-mingw32\fficonfig.h /Y
+xcopy ..\..\i686-pc-mingw32\include\*.h /Y
+exit
+:end
+echo can't find configuration directory, did you configure?
+
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <PreBuildEvent>
+      <Message>Preparing headers ...</Message>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

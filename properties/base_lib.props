@@ -7,23 +7,15 @@
   <PropertyGroup>
     <OutDir>$(LIB_DIR)</OutDir>
     <ExtensionsToDeleteOnClean>*.lib;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+    <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Lib>
-      <OutputFile>$(LIB_DIR)$(TargetName)$(TargetExt)</OutputFile>
-      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
-      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
-      <Verbose>false</Verbose>
-      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <SuppressStartupBanner>false</SuppressStartupBanner>
-      <ErrorReporting>PromptImmediately</ErrorReporting>
-    </Lib>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
+    <Lib />
+    <ProjectReference />
+    <Link />
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

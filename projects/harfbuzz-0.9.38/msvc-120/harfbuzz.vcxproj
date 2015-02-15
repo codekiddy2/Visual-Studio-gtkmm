@@ -193,99 +193,81 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\properties\solution_harbuzz.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\properties\solution_harbuzz.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\properties\solution_harbuzz.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\properties\solution_harbuzz.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(SolutionDir)\..\deps\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\..\deps\lib;$(LibraryPath)</LibraryPath>
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(LIB_DIR)</OutDir>
     <TargetName>harfbuzz</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(SolutionDir)\..\deps\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\..\deps\lib;$(LibraryPath)</LibraryPath>
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(LIB_DIR)</OutDir>
     <TargetName>harfbuzz</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)\..\deps\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\..\deps\lib;$(LibraryPath)</LibraryPath>
-    <OutDir>$(LIB_DIR)</OutDir>
     <TargetName>harfbuzz</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)\..\deps\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\..\deps\lib;$(LibraryPath)</LibraryPath>
-    <OutDir>$(LIB_DIR)</OutDir>
     <TargetName>harfbuzz</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <SDLCheck>false</SDLCheck>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <WarningLevel>Level2</WarningLevel>
       <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <Lib>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <SDLCheck>false</SDLCheck>
-      <CompileAs>CompileAsCpp</CompileAs>
       <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <Lib>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
-    </Lib>
-    <Lib>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level2</WarningLevel>
       <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -297,18 +279,12 @@
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
     </Link>
-    <Lib>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_LIB;HAVE_OT;HAVE_UNISCRIBE;HAVE_GLIB;HAVE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -320,10 +296,7 @@
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
     </Link>
-    <Lib>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.lib;usp10.lib;Rpcrt4.lib</AdditionalDependencies>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

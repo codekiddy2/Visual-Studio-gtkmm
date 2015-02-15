@@ -88,7 +88,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir glib
 cd glib
@@ -142,7 +142,7 @@ echo Installing done!</Command>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <CustomBuild />
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir glib
 cd glib
@@ -195,7 +195,7 @@ echo Installing done!</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir glib
 cd glib
@@ -248,7 +248,7 @@ echo Installing done!</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir glib
 cd glib

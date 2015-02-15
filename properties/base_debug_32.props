@@ -5,26 +5,13 @@
     <Import Project="base_stack.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <Optimization>Disabled</Optimization>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <MinimalRebuild>true</MinimalRebuild>
-      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
-      <FunctionLevelLinking>false</FunctionLevelLinking>
-      <StringPooling>false</StringPooling>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <PreprocessorDefinitions>_DEBUG;_WIN32;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OptimizeReferences>false</OptimizeReferences>
-      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
@@ -36,6 +23,9 @@
     <Xdcmake />
     <Bscmake />
     <Xsd />
+    <Midl>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

@@ -2,10 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <REPO_DIR>D:\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
+    <DRIVE>D</DRIVE>
+    <REPO_DIR>$(DRIVE):\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
     <ROOT_DIR>$(REPO_DIR)output\Debug\$(Platform)\</ROOT_DIR>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <BuildLog />
     <ClCompile />
@@ -17,13 +20,83 @@
     <Midl />
     <Xdcmake />
     <Bscmake />
+    <ClCompile />
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <Link />
+    <Link />
+    <ProjectReference />
+    <ProjectReference />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+    <Manifest />
+    <Manifest />
+    <Manifest />
+    <Manifest />
+    <Bscmake />
+    <Midl />
+    <Midl />
+    <Xdcmake />
+    <Xsd />
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OmitFramePointers>false</OmitFramePointers>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+    </Link>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <BuildMacro Include="DRIVE">
+      <Value>$(DRIVE)</Value>
+    </BuildMacro>
     <BuildMacro Include="REPO_DIR">
       <Value>$(REPO_DIR)</Value>
     </BuildMacro>
     <BuildMacro Include="ROOT_DIR">
       <Value>$(ROOT_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

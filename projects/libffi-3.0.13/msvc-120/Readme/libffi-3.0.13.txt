@@ -1,0 +1,59 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+solution obtained from https://github.com/winlibs/libffi
+solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.2
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\libffi-3.1\msvc-120
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: https://sourceware.org/libffi/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+copy files from "configuration" folder into libffi's root directory..
+Open apropriate VS command promt (x86 or x64 depending on which target you compile)
+execute the *.bat file, again cd into libffi root and configure by using the *.sh file.
+You may need to modify these files in case of errors or different build type.
+
+Please keep in mind that configure script will auto-create a folder with all
+the stuff you need, pre-build event will copy required stuff into solution directory.
+
+Open Visual Studio, select configuration and build.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+x64 configuration does not work with libffi-3.2 (bug in 64 assembly code)
+While running test projects you may see the "First time exception" output, which is OK since
+that's what these test projects do, look for output in console.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.2
+	Debug x64
+
+1.0.3
+	DLL: Debug/Release x64
+
+1.0.4
+	All 4
+
+1.1.0
+	Debug x64 + Debug
+
+1.1.1-2
+	Debug x64
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
