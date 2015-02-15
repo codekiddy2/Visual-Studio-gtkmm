@@ -55,18 +55,18 @@ LOGLUV_SUPPORT	= 1
 # Uncomment and edit following lines to enable JPEG support.
 #
 JPEG_SUPPORT	= 1
-JPEGDIR 	= D:/GitHub/Visual-Studio-gtkmm/output/Debug/Win32
-JPEG_INCLUDE	= -I$(JPEGDIR)/include/jpeg-turbo/
-JPEG_LIB 	= $(JPEGDIR)/lib/jpeg.dll.lib
+JPEGDIR 	= $(ROOT_DIR)
+JPEG_INCLUDE	= -I$(JPEGDIR)include/jpeg-turbo/
+JPEG_LIB 	= $(JPEGDIR)lib/jpeg.dll.lib
 
 #
 # Uncomment and edit following lines to enable ZIP support
 # (required for Deflate compression and Pixar log-format)
 #
 ZIP_SUPPORT	= 1
-ZLIBDIR 	= D:/GitHub/Visual-Studio-gtkmm/output/Debug/Win32
-ZLIB_INCLUDE	= -I$(ZLIBDIR)/include/zlib/ -I$(ZLIBDIR)/include/
-ZLIB_LIB 	= $(ZLIBDIR)/lib/zlib.lib
+ZLIBDIR 	= $(ROOT_DIR)
+ZLIB_INCLUDE	= -I$(ZLIBDIR)/include/zlib/
+ZLIB_LIB 	= $(ZLIBDIR)/lib/zlib.dll.lib
 
 #
 # Uncomment and edit following lines to enable ISO JBIG support
@@ -114,7 +114,8 @@ CHECK_JPEG_YCBCR_SUBSAMPLING = 1
 # with no debugging information.
 # NOTE: /EHsc option required if you want to build the C++ stream API
 #
-OPTFLAGS = /Zi /W2 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D NTDDI_WIN7=0x06010000 /D _WIN32_WINNT_WIN7=0x0601 /D _UNICODE /D UNICODE /GF- /Gm /RTC1 /MDd /GS /Gy- /Qpar- /fp:precise /fp:except- /Zc:wchar_t /Zc:forScope /GR /Gd /TC /analyze- /errorReport:prompt
+OPTFLAGS  = /nologo /EHsc /Zi /W2 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D NTDDI_WIN7=0x06010000 /D _WIN32_WINNT_WIN7=0x0601 /D _UNICODE /D UNICODE /GF- /Gm /RTC1 /MDd /GS /Gy- /Qpar- /fp:precise /fp:except- /Zc:wchar_t /Zc:forScope /GR
+
 #
 # Uncomment following line to enable using Windows Common RunTime Library
 # instead of Windows specific system calls. See notes on top of tif_unix.c
@@ -126,11 +127,11 @@ USE_WIN_CRT_LIB = 1
 # parameters in CFLAGS variable. Refer to your compiler documentation
 # for the option reference.
 #
-MAKE	=	nmake /nologo
-CC	=	cl /nologo
-CXX	=	cl /nologo
-AR	=	lib /nologo
-LD	=	link /nologo
+MAKE	=	nmake
+CC	=	cl
+CXX	=	cl
+AR	=	lib
+LD	=	link
 
 CFLAGS  =	$(OPTFLAGS) $(INCL) $(EXTRAFLAGS)
 CXXFLAGS =	$(OPTFLAGS) $(INCL) $(EXTRAFLAGS)
@@ -138,7 +139,7 @@ EXTRAFLAGS =
 LIBS	=
 
 # Name of the output shared library
-DLLNAME	= libtiff.dll
+DLLNAME	= tiff.dll
 
 #
 ########### There is nothing to edit below this line normally. ###########

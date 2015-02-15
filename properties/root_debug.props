@@ -96,6 +96,7 @@
     </BuildMacro>
     <BuildMacro Include="ROOT_DIR">
       <Value>$(ROOT_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

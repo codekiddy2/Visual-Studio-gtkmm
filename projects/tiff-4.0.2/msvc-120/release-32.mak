@@ -55,7 +55,7 @@ LOGLUV_SUPPORT	= 1
 # Uncomment and edit following lines to enable JPEG support.
 #
 JPEG_SUPPORT	= 1
-JPEGDIR 	= D:/GitHub/Visual-Studio-gtkmm/output/Release/Win32
+JPEGDIR 	= $(ROOT_DIR)
 JPEG_INCLUDE	= -I$(JPEGDIR)/include/jpeg-turbo/
 JPEG_LIB 	= $(JPEGDIR)/lib/jpeg.dll.lib
 
@@ -64,9 +64,9 @@ JPEG_LIB 	= $(JPEGDIR)/lib/jpeg.dll.lib
 # (required for Deflate compression and Pixar log-format)
 #
 ZIP_SUPPORT	= 1
-ZLIBDIR 	= D:/GitHub/Visual-Studio-gtkmm/output/Release/Win32
-ZLIB_INCLUDE	= -I$(ZLIBDIR)/include/zlib/ -I$(ZLIBDIR)/include/
-ZLIB_LIB 	= $(ZLIBDIR)/lib/zlib.lib
+ZLIBDIR 	= $(ROOT_DIR)
+ZLIB_INCLUDE	= -I$(ZLIBDIR)/include/zlib/
+ZLIB_LIB 	= $(ZLIBDIR)/lib/zlib.dll.lib
 
 #
 # Uncomment and edit following lines to enable ISO JBIG support
@@ -126,7 +126,7 @@ USE_WIN_CRT_LIB = 1
 # parameters in CFLAGS variable. Refer to your compiler documentation
 # for the option reference.
 #
-MAKE	=	nmake /nologo
+MAKE	=	nmake
 CC	=	cl /nologo
 CXX	=	cl /nologo
 AR	=	lib /nologo
@@ -138,7 +138,7 @@ EXTRAFLAGS =
 LIBS	=
 
 # Name of the output shared library
-DLLNAME	= libtiff.dll
+DLLNAME	= tiff.dll
 
 #
 ########### There is nothing to edit below this line normally. ###########
