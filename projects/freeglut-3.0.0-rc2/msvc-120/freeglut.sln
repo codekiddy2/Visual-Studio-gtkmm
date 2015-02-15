@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freeglut", "freeglut.vcxproj", "{FA997F1D-A470-4764-946C-6F12DFFA72D0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freeglut_dll", "freeglut.vcxproj", "{FA997F1D-A470-4764-946C-6F12DFFA72D0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freeglut_static", "freeglut_static.vcxproj", "{2D041D89-DE7B-44A1-8149-4016F9B77F00}"
 EndProject
@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{F4CED4
 	ProjectSection(SolutionItems) = preProject
 		Readme\freeglut-3.0.0-rc2.txt = Readme\freeglut-3.0.0-rc2.txt
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-freeglut", "test-freeglut\test-freeglut.vcxproj", "{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,18 @@ Global
 		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Release|Win32.Build.0 = Release|Win32
 		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Release|x64.ActiveCfg = Release|x64
 		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Release|x64.Build.0 = Release|x64
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Debug|x64.ActiveCfg = Debug|x64
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Release|Win32.ActiveCfg = Release|Win32
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Release|x64.ActiveCfg = Release|x64
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Debug|Win32.Build.0 = Debug|Win32
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Debug|x64.ActiveCfg = Debug|x64
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Debug|x64.Build.0 = Debug|x64
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Release|Win32.ActiveCfg = Release|Win32
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Release|Win32.Build.0 = Release|Win32
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Release|x64.ActiveCfg = Release|x64
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
