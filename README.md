@@ -32,6 +32,10 @@ Debugging Symbols
 GVim (You definitely do not want to read open source readme files with notepad)
 ```   
 
+You will find 2 branches here, the master is updated weekly or so, and does not fully work,
+if you want most recent stuff checkout Redesign branch on which I'm actively working.
+the easiest way to compare them is to look at dpendecy graph on wiki and check status colors.
+
 **REPORT FAILURES:**
 ```
 If you encounter a failure please let me know.
