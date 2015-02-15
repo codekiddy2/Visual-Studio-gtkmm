@@ -14,7 +14,7 @@
     <Node Id="Freetype" Category="Category2" Bounds="694.813333333334,230.59,63.6866666666665,25.96" Label="freetype" />
     <Node Id="Glib" Category="Category2" Bounds="651.656666666667,115.295,50,25.96" Label="glib" />
     <Node Id="Glibmm" Bounds="948.353333333333,345.885,60.6066666666666,25.96" Label="glibmm" />
-    <Node Id="Gtk" Category="Category4" Bounds="503.656666666667,461.18,50,25.96" Label="gtk" />
+    <Node Id="Gtk" Category="Category4" Bounds="503.656666666667,461.18,50,25.96" Label="gtk+" />
     <Node Id="Gtkmm" Bounds="720.771666666667,518.8275,57.77,25.96" Label="gtkmm" />
     <Node Id="Harfbuzz" Category="Category2" Bounds="643.895,172.9425,65.5233333333333,25.96" Label="harfbuzz" />
     <Node Id="Jasper" Category="Category4" Bounds="4.85166666666669,115.295,51.6100000000001,25.96" Label="jasper" />
@@ -28,7 +28,7 @@
     <Node Id="Pixbuf" Category="Category4" Bounds="198.123333333333,172.9425,53.0666666666666,25.96" Label="pixbuf" />
     <Node Id="Pixman" Category="Category2" Bounds="407.306666666667,288.2375,58.7,25.96" Label="pixman" />
     <Node Id="Png" Category="Category4" Bounds="199.656666666667,115.295,50,25.96" Label="png" />
-    <Node Id="Tiff" Category="Category4" Bounds="118.656666666667,115.295,50,25.96" Label="tiff" />
+    <Node Id="Tiff" Category="Category2" Bounds="118.656666666667,115.295,50,25.96" Label="tiff" />
     <Node Id="Zlib" Category="Category2" Bounds="255.656666666667,57.6475000000003,50,25.96" Label="zlib" />
   </Nodes>
   <Links>
