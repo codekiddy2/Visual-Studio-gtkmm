@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="Atk" Bounds="860.656666666667,403.5325,50,25.96" Label="atk" />
+    <Node Id="Atk" Category="Category4" Bounds="860.656666666667,403.5325,50,25.96" Label="atk" />
     <Node Id="Atkmm" Bounds="857.251666666667,461.18,56.8099999999999,25.96" Label="atkmm" />
-    <Node Id="Cairo" Bounds="503.656666666667,345.885,50,25.96" Label="cairo" />
+    <Node Id="Cairo" Category="Category4" Bounds="503.656666666667,345.885,50,25.96" Label="cairo" />
     <Node Id="Cairomm" Bounds="615.44,461.18,66.4333333333334,25.96" Label="cairomm" />
     <Node Id="Dirnet" Category="Category2" Bounds="536.016666666667,230.59,51.28,25.96" Label="dirnet" />
-    <Node Id="Epoxy" Bounds="229.82,403.5325,51.6733333333334,25.96" Label="epoxy" />
+    <Node Id="Epoxy" Category="Category4" Bounds="229.82,403.5325,51.6733333333334,25.96" Label="epoxy" />
     <Node Id="Expat" Category="Category2" Bounds="447.656666666667,0,50,25.96" Label="expat" />
     <Node Id="Ffi" Category="Category2" Bounds="642.656666666667,57.6475,50,25.96" Label="ffi" />
-    <Node Id="Fontconfig" Category="Category2" Bounds="559.288333333333,288.2375,74.7366666666667,25.96" Label="fontconfig" />
-    <Node Id="Freeglut" Bounds="0,57.6475000000003,61.3133333333333,25.96" Label="freeglut" />
+    <Node Id="Fontconfig" Category="Category6" Bounds="559.288333333333,288.2375,74.7366666666667,25.96" Label="fontconfig" />
+    <Node Id="Freeglut" Category="Category4" Bounds="0,57.6475000000003,61.3133333333333,25.96" Label="freeglut" />
     <Node Id="Freetype" Category="Category2" Bounds="694.813333333334,230.59,63.6866666666665,25.96" Label="freetype" />
     <Node Id="Glib" Category="Category2" Bounds="651.656666666667,115.295,50,25.96" Label="glib" />
     <Node Id="Glibmm" Bounds="948.353333333333,345.885,60.6066666666666,25.96" Label="glibmm" />
-    <Node Id="Gtk" Bounds="503.656666666667,461.18,50,25.96" Label="gtk" />
+    <Node Id="Gtk" Category="Category4" Bounds="503.656666666667,461.18,50,25.96" Label="gtk" />
     <Node Id="Gtkmm" Bounds="720.771666666667,518.8275,57.77,25.96" Label="gtkmm" />
     <Node Id="Harfbuzz" Category="Category2" Bounds="643.895,172.9425,65.5233333333333,25.96" Label="harfbuzz" />
-    <Node Id="Jasper" Bounds="4.85166666666669,115.295,51.6100000000001,25.96" Label="jasper" />
-    <Node Id="Jpeg" Bounds="91.6566666666668,57.6475000000003,50,25.96" Label="jpeg" />
+    <Node Id="Jasper" Category="Category4" Bounds="4.85166666666669,115.295,51.6100000000001,25.96" Label="jasper" />
+    <Node Id="Jpeg" Category="Category2" Bounds="91.6566666666668,57.6475000000003,50,25.96" Label="jpeg" />
     <Node Id="Libiconv" Category="Category2" Bounds="514.656666666667,115.295,50,25.9599999999999" Label="iconv" />
-    <Node Id="Libintl" Category="Category2" Bounds="553.656666666667,57.6475,50,25.96" Label="intl" />
+    <Node Id="Libintl" Category="Category6" Bounds="553.656666666667,57.6475,50,25.96" Label="intl" />
     <Node Id="Libsigc++" Bounds="403.708333333333,461.18,69.896666666667,25.96" Label="libsigc++" />
-    <Node Id="Pango" Bounds="722.633333333333,403.5325,54.0466666666666,25.96" Label="pango" />
+    <Node Id="Pango" Category="Category4" Bounds="722.633333333333,403.5325,54.0466666666666,25.96" Label="pango" />
     <Node Id="Pangomm" Bounds="712.296666666667,461.18,74.72,25.96" Label="pangomm" />
-    <Node Id="Pcre" Bounds="723.656666666667,57.6475,50,25.96" Label="pcre" />
-    <Node Id="Pixbuf" Bounds="198.123333333333,172.9425,53.0666666666666,25.96" Label="pixbuf" />
+    <Node Id="Pcre" Category="Category4" Bounds="723.656666666667,57.6475,50,25.96" Label="pcre" />
+    <Node Id="Pixbuf" Category="Category4" Bounds="198.123333333333,172.9425,53.0666666666666,25.96" Label="pixbuf" />
     <Node Id="Pixman" Category="Category2" Bounds="407.306666666667,288.2375,58.7,25.96" Label="pixman" />
-    <Node Id="Png" Bounds="199.656666666667,115.295,50,25.96" Label="png" />
-    <Node Id="Tiff" Bounds="118.656666666667,115.295,50,25.96" Label="tiff" />
+    <Node Id="Png" Category="Category4" Bounds="199.656666666667,115.295,50,25.96" Label="png" />
+    <Node Id="Tiff" Category="Category4" Bounds="118.656666666667,115.295,50,25.96" Label="tiff" />
     <Node Id="Zlib" Category="Category2" Bounds="255.656666666667,57.6475000000003,50,25.96" Label="zlib" />
   </Nodes>
   <Links>
@@ -93,6 +93,8 @@
   </Links>
   <Categories>
     <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category4" Label="Category 4" Background="#FF1BA1E2" IsTag="True" />
+    <Category Id="Category6" Label="Category 6" Background="#FFA1260D" IsTag="True" />
   </Categories>
   <Properties>
     <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
@@ -110,6 +112,14 @@
     <Property Id="ZoomLevel" DataType="System.String" />
   </Properties>
   <Styles>
+    <Style TargetType="Node" GroupLabel="Category 6" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category6')" />
+      <Setter Property="Background" Value="#FFA1260D" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 4" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category4')" />
+      <Setter Property="Background" Value="#FF1BA1E2" />
+    </Style>
     <Style TargetType="Node" GroupLabel="Category 2" ValueLabel="Has category">
       <Condition Expression="HasCategory('Category2')" />
       <Setter Property="Background" Value="#FF339933" />
