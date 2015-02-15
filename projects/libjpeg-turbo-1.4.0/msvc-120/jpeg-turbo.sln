@@ -46,8 +46,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "turbojpeg-static", "turbojp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{EE474DD0-E11D-4F1A-92B4-7E77BB40B47D}"
 	ProjectSection(SolutionItems) = preProject
-		Readme\libjpeg-turbo-1.4.0.txt = Readme\libjpeg-turbo-1.4.0.txt
+		Readme\jpeg-turbo-1.4.0.txt = Readme\jpeg-turbo-1.4.0.txt
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{F0DB18BA-EB0C-44E1-A202-BBE8A81623D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{4194EA4E-D199-4952-B568-8EE89B269AE5}.Release|Win32.Build.0 = Release|Win32
 		{4194EA4E-D199-4952-B568-8EE89B269AE5}.Release|x64.ActiveCfg = Release|x64
 		{4194EA4E-D199-4952-B568-8EE89B269AE5}.Release|x64.Build.0 = Release|x64
+		{F0DB18BA-EB0C-44E1-A202-BBE8A81623D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F0DB18BA-EB0C-44E1-A202-BBE8A81623D9}.Debug|x64.ActiveCfg = Debug|x64
+		{F0DB18BA-EB0C-44E1-A202-BBE8A81623D9}.Release|Win32.ActiveCfg = Release|Win32
+		{F0DB18BA-EB0C-44E1-A202-BBE8A81623D9}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

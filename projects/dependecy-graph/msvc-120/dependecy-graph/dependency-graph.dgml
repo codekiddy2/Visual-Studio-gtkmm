@@ -26,7 +26,7 @@
     <Node Id="Pangomm" Bounds="712.296666666667,461.18,74.72,25.96" Label="pangomm" />
     <Node Id="Pcre" Bounds="723.656666666667,57.6475,50,25.96" Label="pcre" />
     <Node Id="Pixbuf" Bounds="198.123333333333,172.9425,53.0666666666666,25.96" Label="pixbuf" />
-    <Node Id="Pixman" Bounds="407.306666666667,288.2375,58.7,25.96" Label="pixman" />
+    <Node Id="Pixman" Category="Category2" Bounds="407.306666666667,288.2375,58.7,25.96" Label="pixman" />
     <Node Id="Png" Bounds="199.656666666667,115.295,50,25.96" Label="png" />
     <Node Id="Tiff" Bounds="118.656666666667,115.295,50,25.96" Label="tiff" />
     <Node Id="Zlib" Category="Category2" Bounds="255.656666666667,57.6475000000003,50,25.96" Label="zlib" />
