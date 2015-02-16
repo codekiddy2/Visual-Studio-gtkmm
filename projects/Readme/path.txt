@@ -1,0 +1,9 @@
+Certain tools must be in path for certain solutions.
+
+Here is what I have in my path:
+D:\gtkmm\install\nasm;
+D:\gtkmm\install\CMake\bin;
+D:\gtkmm\install\Python3;
+D:\gtkmm\install\Python3\Scripts;
+D:\gtkmm\install\Perl64\bin;
+D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\bin;
