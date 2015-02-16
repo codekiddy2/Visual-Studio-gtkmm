@@ -86,258 +86,202 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\..\properties\pango.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_pango.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\..\properties\pango.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_pango.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\..\properties\pango.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_pango.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\..\properties\pango.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_pango.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\..\properties\pango.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_pango.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\..\properties\pango.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_pango.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\..\properties\pango.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_pango.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\..\properties\pango.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_pango.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">$(GlibEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir pango
 cd pango
 copy $(SRC_DIR)pango\*.h /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
-
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
-
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 :END
-echo Installation done!
 </Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir pango
 cd pango
 copy $(SRC_DIR)pango\*.h /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
-
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
-
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 :END
-echo Installation done!
 </Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir pango
 cd pango
 copy $(SRC_DIR)pango\*.h /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
-
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
-
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 :END
-echo Installation done!
 </Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir pango
 cd pango
 copy $(SRC_DIR)pango\*.h /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
-
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
-
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 :END
-echo Installation done!
 </Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir pango
 cd pango
 copy $(SRC_DIR)pango\*.h /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
-
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
-
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 :END
-echo Installation done!
 </Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir pango
 cd pango
 copy $(SRC_DIR)pango\*.h /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
-
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
-
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 :END
-echo Installation done!
 </Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir pango
 cd pango
 copy $(SRC_DIR)pango\*.h /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
-
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
-
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 :END
-echo Installation done!
 </Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir pango
 cd pango
 copy $(SRC_DIR)pango\*.h /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
-
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
-
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
-
 :END
-echo Installation done!
 </Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
