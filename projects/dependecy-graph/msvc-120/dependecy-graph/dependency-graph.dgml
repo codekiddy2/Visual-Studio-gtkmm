@@ -3,7 +3,7 @@
   <Nodes>
     <Node Id="Atk" Category="Category2" Bounds="0,403.5325,50,25.96" Label="atk" />
     <Node Id="Atkmm" Bounds="190.595,461.18,56.8099999999998,25.96" Label="atkmm" />
-    <Node Id="Cairo" Category="Category4" Bounds="526,345.885,50,25.96" Label="cairo" />
+    <Node Id="Cairo" Category="Category2" Bounds="526,345.885,50,25.96" Label="cairo" />
     <Node Id="Cairomm" Bounds="563.783333333333,461.18,66.4333333333334,25.96" Label="cairomm" />
     <Node Id="Dirnet" Category="Category2" Bounds="184.36,230.59,51.28,25.96" Label="dirnet" />
     <Node Id="Epoxy" Category="Category4" Bounds="377.163333333333,403.5325,51.6733333333334,25.96" Label="epoxy" />

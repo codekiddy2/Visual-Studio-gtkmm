@@ -134,21 +134,20 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)\cairo-feat
 echo #endif &gt;&gt; $(SolutionDir)\cairo-features.h
 
 </GenTmpFeaturesHeader>
+    <SRC_DIR>$(REPO_DIR)projects\cairo-1.12.18\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
-    <_PropertySheetDisplayName>cairo</_PropertySheetDisplayName>
+    <_PropertySheetDisplayName>solution_cairo</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>.;..\..;..\..\src;..\..\util\cairo-gobject;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level2</WarningLevel>
       <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>pixman.dll.lib;libpng.dll.lib;zlib.dll.lib;harfbuzz.dll.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>pixman.dll.lib;png.dll.lib;zlib.dll.lib;harfbuzz.dll.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -172,6 +171,9 @@ echo #endif &gt;&gt; $(SolutionDir)\cairo-features.h
     </BuildMacro>
     <BuildMacro Include="GenTmpFeaturesHeader">
       <Value>$(GenTmpFeaturesHeader)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
