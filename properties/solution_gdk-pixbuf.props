@@ -6,7 +6,7 @@
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h</GenConfigH>
     <GdkPixbufBinaryVersion>2.30.8</GdkPixbufBinaryVersion>
     <GdkPixbufDummyPrefix>/dummy</GdkPixbufDummyPrefix>
-    <SRC_DIR>D:\GitHub\Visual-Studio-gtkmm\projects\gdk-pixbuf-2.30.8\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\gdk-pixbuf-2.30.8\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -15,7 +15,7 @@
       <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_COMPILATION;GDK_PIXBUF_ENABLE_BACKEND;DLL_EXPORT;GDK_PIXBUF_PREFIX="$(GdkPixbufDummyPrefix)";GDK_PIXBUF_BINARY_VERSION="$(GdkPixbufBinaryVersion)";INCLUDE_ani;INCLUDE_pcx;INCLUDE_tga;INCLUDE_xbm;INCLUDE_png;INCLUDE_qtif;INCLUDE_pnm;INCLUDE_icns;INCLUDE_ras;INCLUDE_wbmp;INCLUDE_xpm;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;glib.dll.lib;gthread.dll.lib;libintl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;glib.dll.lib;gthread.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Xdcmake />
   </ItemDefinitionGroup>

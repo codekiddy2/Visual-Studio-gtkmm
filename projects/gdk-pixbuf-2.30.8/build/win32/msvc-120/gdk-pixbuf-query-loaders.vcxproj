@@ -38,11 +38,13 @@
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -50,26 +52,26 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
-    <Import Project="..\..\..\..\..\properties\gdk-pixbuf.props" />
+    <Import Project="..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
-    <Import Project="..\..\..\..\..\properties\gdk-pixbuf.props" />
+    <Import Project="..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
-    <Import Project="..\..\..\..\..\properties\gdk-pixbuf.props" />
+    <Import Project="..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
-    <Import Project="..\..\..\..\..\properties\gdk-pixbuf.props" />
+    <Import Project="..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -79,52 +81,44 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <MinimalRebuild>true</MinimalRebuild>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_CONSOLE;PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <MinimalRebuild>true</MinimalRebuild>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_CONSOLE;PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <MinimalRebuild>true</MinimalRebuild>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_CONSOLE;PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <MinimalRebuild>true</MinimalRebuild>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>_CONSOLE;PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
