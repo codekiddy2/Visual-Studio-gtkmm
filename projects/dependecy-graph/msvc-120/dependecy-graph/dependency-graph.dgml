@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" ZoomLevel="1.5" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
     <Node Id="Atk" Category="Category4" Bounds="0,403.5325,50,25.96" Label="atk" />
     <Node Id="Atkmm" Bounds="190.595,461.18,56.8099999999998,25.96" Label="atkmm" />
@@ -27,7 +27,7 @@
     <Node Id="Pcre" Category="Category4" Bounds="547,57.6475,50,25.9599999999999" Label="pcre" />
     <Node Id="Pixbuf" Category="Category4" Bounds="712.466666666667,172.9425,53.0666666666666,25.96" Label="pixbuf" />
     <Node Id="Pixman" Category="Category2" Bounds="521.65,288.2375,58.7,25.96" Label="pixman" />
-    <Node Id="Png" Category="Category4" Bounds="714,115.295,50,25.96" Label="png" />
+    <Node Id="Png" Category="Category2" Bounds="714,115.295,50,25.96" Label="png" />
     <Node Id="Tiff" Category="Category2" Bounds="795,115.295,50,25.96" Label="tiff" />
     <Node Id="Unistd" Bounds="79.6433333333332,0,52.7133333333334,25.96" Label="unistd" />
     <Node Id="Zlib" Category="Category2" Bounds="658,57.6475,50,25.96" Label="zlib" />
