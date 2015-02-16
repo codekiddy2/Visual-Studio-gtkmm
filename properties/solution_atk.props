@@ -2,27 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <GlibEtcInstallRoot>D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64</GlibEtcInstallRoot>
     <DefDir>$(INTERMEDIATE_DIR)</DefDir>
-    <AtkDefines>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="/dummy/share/locale"</AtkDefines>
     <GenConfigH>if exist ..\..\..\config.h goto DONE_CONFIG_H
 
 copy ..\..\..\config.h.win32 ..\..\..\config.h
 
 :DONE_CONFIG_H</GenConfigH>
-    <GenMarshalSrc>cd ..\..\..\atk
-
- $(GLibEtcInstallRoot)\bin\glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
-
-$(GLibEtcInstallRoot)\bin\glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c
-
-cd</GenMarshalSrc>
-    <SRC_DIR>D:\GitHub\Visual-Studio-gtkmm\projects\atk-2.14.0\</SRC_DIR>
+    <GenMarshalSrc>cd ..\..\..\atk$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</GenMarshalSrc>
+    <SRC_DIR>$(REPO_DIR)projects\atk-2.14.0\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;libintl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
       <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -31,14 +23,8 @@ cd</GenMarshalSrc>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <BuildMacro Include="GlibEtcInstallRoot">
-      <Value>$(GlibEtcInstallRoot)</Value>
-    </BuildMacro>
     <BuildMacro Include="DefDir">
       <Value>$(DefDir)</Value>
-    </BuildMacro>
-    <BuildMacro Include="AtkDefines">
-      <Value>$(AtkDefines)</Value>
     </BuildMacro>
     <BuildMacro Include="GenConfigH">
       <Value>$(GenConfigH)</Value>

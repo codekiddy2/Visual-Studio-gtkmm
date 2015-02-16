@@ -51,26 +51,26 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
-    <Import Project="..\..\..\..\..\properties\atk.props" />
+    <Import Project="..\..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
-    <Import Project="..\..\..\..\..\properties\atk.props" />
+    <Import Project="..\..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
-    <Import Project="..\..\..\..\..\properties\atk.props" />
+    <Import Project="..\..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\..\properties\gtk_stack.props" />
-    <Import Project="..\..\..\..\..\properties\atk.props" />
+    <Import Project="..\..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -78,17 +78,15 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>$(AtkDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(ROOT_DIR)share/locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>$(AtkDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(ROOT_DIR)share/locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -96,7 +94,6 @@
       <OutputFile>$(OutDir)$(AtkDllPrefix)$(ProjectName)$(AtkDllSuffix).dll</OutputFile>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <ImportLibrary>$(OutDir)$(ProjectName)-$(ApiVersion).lib</ImportLibrary>
@@ -105,23 +102,19 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>$(AtkDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(ROOT_DIR)share/locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>$(AtkDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(ROOT_DIR)share/locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\atk\atkaction.c" />
@@ -164,7 +157,9 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenConfigH)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying config.h from config.h.win32...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GenConfigH)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if exist ..\..\..\config.h goto DONE_CONFIG_H
+copy ..\..\..\config.h.win32 ..\..\..\config.h
+:DONE_CONFIG_H</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\config.h;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying config.h from config.h.win32...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenConfigH)</Command>
@@ -178,7 +173,9 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenMarshalSrc)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Marshalling Sources...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GenMarshalSrc)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd ..\..\..\atk
+$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
+$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Marshalling Sources...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenMarshalSrc)</Command>
