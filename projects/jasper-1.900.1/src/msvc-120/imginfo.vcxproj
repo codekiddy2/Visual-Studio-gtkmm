@@ -38,11 +38,13 @@
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -51,43 +53,38 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_jasper.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_jasper.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_jasper.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\properties\gtk_stack.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_jasper.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(BIN_DIR)</OutDir>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\libjasper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;WIN32;_CONSOLE;JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Midl>
       <TypeLibraryName>.\Win32_Release\imginfo.tlb</TypeLibraryName>
@@ -101,14 +98,12 @@
       <OutputFile>.\Win32_Release\imginfo.bsc</OutputFile>
     </Bscmake>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>jasper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>jasper.lib;jpeg.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\libjasper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;WIN32;_CONSOLE;JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Midl>
       <TypeLibraryName>.\Win32_Release\imginfo.tlb</TypeLibraryName>
@@ -122,14 +117,12 @@
       <OutputFile>.\Win32_Release\imginfo.bsc</OutputFile>
     </Bscmake>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>jasper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>jasper.lib;jpeg.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\libjasper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;WIN32;_CONSOLE;JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Midl>
       <TypeLibraryName>.\Win32_Debug\imginfo.tlb</TypeLibraryName>
@@ -143,14 +136,12 @@
       <OutputFile>.\Win32_Debug\imginfo.bsc</OutputFile>
     </Bscmake>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>jasper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>jasper.lib;jpeg.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\libjasper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;WIN32;_CONSOLE;JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Midl>
       <TypeLibraryName>.\Win32_Debug\imginfo.tlb</TypeLibraryName>
@@ -164,8 +155,7 @@
       <OutputFile>.\Win32_Debug\imginfo.bsc</OutputFile>
     </Bscmake>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>jasper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>jasper.lib;jpeg.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

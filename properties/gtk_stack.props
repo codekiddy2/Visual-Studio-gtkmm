@@ -5,7 +5,7 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(INCLUDE_DIR);$(INCLUDE_DIR)intl;$(INCLUDE_DIR)iconv;$(INCLUDE_DIR)glib;$(INCLUDE_DIR)dirnet;$(INCLUDE_DIR)harfbuzz;$(INCLUDE_DIR)expat;$(INCLUDE_DIR)zlib;$(INCLUDE_DIR)fontconfig;$(INCLUDE_DIR)freetype;$(INCLUDE_DIR)ffi;$(INCLUDE_DIR)tiff;$(INCLUDE_DIR)pixman;$(INCLUDE_DIR)cairo;$(INCLUDE_DIR)pango;$(INCLUDE_DIR)gtk;$(LIB_DIR)glib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(INCLUDE_DIR);$(INCLUDE_DIR)intl;$(INCLUDE_DIR)iconv;$(INCLUDE_DIR)glib;$(INCLUDE_DIR)dirnet;$(INCLUDE_DIR)harfbuzz;$(INCLUDE_DIR)expat;$(INCLUDE_DIR)zlib;$(INCLUDE_DIR)fontconfig;$(INCLUDE_DIR)jpeg-turbo;$(INCLUDE_DIR)freetype;$(INCLUDE_DIR)ffi;$(INCLUDE_DIR)tiff;$(INCLUDE_DIR)pixman;$(INCLUDE_DIR)cairo;$(INCLUDE_DIR)pango;$(INCLUDE_DIR)gtk;$(LIB_DIR)glib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>

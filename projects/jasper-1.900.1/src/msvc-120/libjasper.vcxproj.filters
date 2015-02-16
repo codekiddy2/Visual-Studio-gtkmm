@@ -164,6 +164,12 @@
     <ClCompile Include="..\libjasper\ras\ras_enc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\libjasper\jpg\jpg_enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjasper\jpg\jpg_dec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\libjasper\bmp\bmp_cod.h">
@@ -263,6 +269,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\libjasper\ras\ras_cod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjasper\jpg\jpg_enc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
