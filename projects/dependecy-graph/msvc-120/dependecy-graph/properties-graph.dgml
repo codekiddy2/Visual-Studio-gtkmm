@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+<DirectedGraph ZoomLevel="1.5" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
     <Node Id="Base_console" Category="Category4" Bounds="-365.946468200684,-220.490027972412,90.1800000000001,25.96" Label="base_console" UseManualLocation="True" />
     <Node Id="Base_debug" Category="Category1" Bounds="-713.467726236979,-403.732556866455,83.7633333333333,25.96" Label="base_debug" UseManualLocation="True" />
@@ -12,30 +12,30 @@
     <Node Id="Base_release_64" Category="Category1" Bounds="-416.542929992676,-328.450138549805,104.54,25.96" Label="base_release_64" UseManualLocation="True" />
     <Node Id="Base_stack" Category="Category1" Bounds="-546.066047363281,-453.833546142578,76.2833333333333,25.96" Label="base_stack" UseManualLocation="True" />
     <Node Id="Base_utility" Category="Category4" Bounds="-185.94645690918,-221.292053898525,78.96,25.96" Label="base_utility" UseManualLocation="True" />
-    <Node Id="Base_windows" Category="Category4" Bounds="-547.946465250651,-231.584186750793,95.7433333333333,25.96" Label="base_windows" UseManualLocation="True" />
+    <Node Id="Base_windows" Category="Category4" Bounds="-547.946465250651,-232.344530034764,95.7433333333333,25.96" Label="base_windows" UseManualLocation="True" />
     <Node Id="Gtk_stack" Category="Category4" Bounds="-538.392929992676,-289.615787963867,68.85,25.96" Label="gtk_stack" UseManualLocation="True" />
-    <Node Id="Gtkmm_stack" Bounds="-546.98865641276,-174.95741745402,89.5233333333333,25.96" Label="gtkmm_stack" UseManualLocation="True" />
-    <Node Id="Project" Category="Category2" Bounds="-533.227072143555,-63.0372174540202,57.05,25.96" Label="project" UseManualLocation="True" />
+    <Node Id="Gtkmm_stack" Category="Category2" Bounds="-546.98865641276,-176.384430034764,89.5233333333333,25.96" Label="gtkmm_stack" UseManualLocation="True" />
+    <Node Id="Project" Category="Category2" Bounds="-531.448873901367,-64.4642300347644,57.05,25.96" Label="project" UseManualLocation="True" />
     <Node Id="Root_debug" Category="Category1" Bounds="-690.944393671382,-512.124195811284,81.5333333333333,25.96" Label="root_debug" UseManualLocation="True" />
     <Node Id="Root_release" Category="Category1" Bounds="-416.381065673828,-509.793641056315,84.39,25.96" Label="root_release" UseManualLocation="True" />
-    <Node Id="Solution_name" Category="Category2" Bounds="-551.465317179362,-118.99731745402,97.1033333333335,25.96" Label="solution_name" UseManualLocation="True" />
+    <Node Id="Solution_name" Category="Category2" Bounds="-551.465317179362,-120.424330034764,97.1033333333335,25.96" Label="solution_name" UseManualLocation="True" />
   </Nodes>
   <Links>
-    <Link Source="Base_debug" Target="Base_debug_64" Bounds="-788.545181997888,-377.772548217773,91.8717073590039,47.5335843992061" />
-    <Link Source="Base_debug" Target="Base_release_32" Bounds="-664.131095041795,-377.772548217773,23.4475625120319,40.8250582872594" />
-    <Link Source="Base_release" Target="Base_debug_32" Bounds="-364.905549126572,-378.913447875977,119.747712399542,49.2386728964632" />
-    <Link Source="Base_release" Target="Base_release_64" Bounds="-391.003789076912,-378.913447875977,17.7674450759635,42.1694280075952" />
-    <Link Source="Base_stack" Target="Base_debug" Bounds="-622.369911089255,-429.311703645314,76.7425000902707,23.4928316453132" />
-    <Link Source="Base_stack" Target="Base_release" Bounds="-478.377000594231,-427.873546142578,44.1169294749144,19.3803221334738" />
-    <Link Source="Gtk_stack" Target="Base_console" Bounds="-470.893454024172,-264.149956409458,107.233453800121,40.4813181416961" />
-    <Link Source="Gtk_stack" Target="Base_dll" Bounds="-753.960162737626,-267.788363226465,215.567221453447,55.4020266568012" />
-    <Link Source="Gtk_stack" Target="Base_lib" Bounds="-606.710781195552,-263.655787963867,78.198306457143,41.3539747946937" />
-    <Link Source="Gtk_stack" Target="Base_utility" Bounds="-469.54294128418,-270.056669233075,274.756471942613,52.5099622647519" />
-    <Link Source="Gtk_stack" Target="Base_windows" Bounds="-503.097157242516,-263.655787963867,1.54914935431879,23.0917858584551" />
-    <Link Source="Gtkmm_stack" Target="Solution_name" Bounds="-502.643952308853,-148.99741745402,0.257690925458519,21.0007774714204" />
-    <Link Source="Root_debug" Target="Base_stack" Bounds="-618.501151740246,-486.16421081543,70.5722419213064,28.9181352262894" />
-    <Link Source="Root_release" Target="Base_stack" Bounds="-468.601140684839,-483.833629150391,63.3943247408602,26.5260616835614" />
-    <Link Source="Solution_name" Target="Project" Bounds="-503.999762929291,-93.0373174540202,0.671286267812377,21.0046926447402" />
+    <Link Source="Base_debug" Target="Base_debug_64" Bounds="-788.545178786046,-377.772556866455,91.8717078096638,47.5335915717848" />
+    <Link Source="Base_debug" Target="Base_release_32" Bounds="-664.131094706389,-377.772556866455,23.4475685842881,40.8250670230367" />
+    <Link Source="Base_release" Target="Base_debug_32" Bounds="-364.905543748119,-378.913447875977,119.747701437529,49.2386599996838" />
+    <Link Source="Base_release" Target="Base_release_64" Bounds="-391.0037909947,-378.913447875977,17.7674386607092,42.1694275691236" />
+    <Link Source="Base_stack" Target="Base_debug" Bounds="-622.369907379481,-429.311691155312,76.7424914369532,23.4928223085927" />
+    <Link Source="Base_stack" Target="Base_release" Bounds="-478.37700059423,-427.873546142578,44.1169294749136,19.3803221334732" />
+    <Link Source="Gtk_stack" Target="Base_console" Bounds="-470.893443790133,-264.149955713372,107.233454303808,40.4813218829529" />
+    <Link Source="Gtk_stack" Target="Base_dll" Bounds="-753.960157794707,-267.78836254469,215.567227802031,55.4020325576522" />
+    <Link Source="Gtk_stack" Target="Base_lib" Bounds="-606.71079717815,-263.655787963867,78.1983243376258,41.3539684236317" />
+    <Link Source="Gtk_stack" Target="Base_utility" Bounds="-469.542929992676,-270.056669492235,274.7564649113,52.5099588525296" />
+    <Link Source="Gtk_stack" Target="Base_windows" Bounds="-503.085587828176,-263.655787963867,1.51806222336359,22.331980100281" />
+    <Link Source="Gtkmm_stack" Target="Solution_name" Bounds="-502.643952308852,-150.424430034764,0.257690925458689,21.0007774714203" />
+    <Link Source="Root_debug" Target="Base_stack" Bounds="-618.501146874396,-486.164195811284,70.5722363993447,28.9181352499195" />
+    <Link Source="Root_release" Target="Base_stack" Bounds="-468.601158813791,-483.833641056315,63.3943571731693,26.5260874851119" />
+    <Link Source="Solution_name" Target="Project" Bounds="-502.919858360268,-94.4643300347644,0.00383652255777633,21.0001001501915" />
   </Links>
   <Categories>
     <Category Id="Category1" Label="Category 1" Background="#FFE51400" IsTag="True" />
@@ -54,6 +54,7 @@
     <Property Id="UseManualLocation" DataType="System.Boolean" />
     <Property Id="Value" DataType="System.String" />
     <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
   </Properties>
   <Styles>
     <Style TargetType="Node" GroupLabel="Category 2" ValueLabel="Has category">
