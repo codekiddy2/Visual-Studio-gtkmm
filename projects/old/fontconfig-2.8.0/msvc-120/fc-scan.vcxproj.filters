@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\fc-cache\fc-cache.c">
+    <ClCompile Include="..\fc-scan\fc-scan.c">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>

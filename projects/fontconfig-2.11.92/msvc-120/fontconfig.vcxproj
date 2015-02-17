@@ -177,12 +177,6 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\fcrange.c" />
-    <ClCompile Include="dirent.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="..\src\fcatomic.c" />
     <ClCompile Include="..\src\fcblanks.c" />
     <ClCompile Include="..\src\fccache.c" />
@@ -200,12 +194,6 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     <ClCompile Include="..\src\fcformat.c" />
     <ClCompile Include="..\src\fcfreetype.c" />
     <ClCompile Include="..\src\fcfs.c" />
-    <ClCompile Include="..\src\fchash.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="..\src\fcinit.c" />
     <ClCompile Include="..\src\fclang.c" />
     <ClCompile Include="..\src\fclist.c" />

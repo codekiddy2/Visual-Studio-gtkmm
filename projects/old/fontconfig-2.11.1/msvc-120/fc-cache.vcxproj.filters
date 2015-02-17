@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dirent.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
     <ClCompile Include="..\fc-cache\fc-cache.c">
       <Filter>Sources</Filter>
     </ClCompile>
