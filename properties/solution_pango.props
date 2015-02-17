@@ -27,6 +27,7 @@ cd vs$(VSVer)
       <AdditionalIncludeDirectories>..\..\..;..\..\..\pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level2</WarningLevel>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;glib.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
