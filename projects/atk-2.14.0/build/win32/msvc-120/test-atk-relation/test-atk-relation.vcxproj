@@ -125,6 +125,16 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\tests\testrelation.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\atk.vcxproj">
+      <Project>{86eacd59-f69f-4aad-854b-aa03d5447360}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

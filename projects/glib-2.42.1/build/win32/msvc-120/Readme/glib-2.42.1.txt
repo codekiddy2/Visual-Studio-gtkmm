@@ -7,7 +7,7 @@ solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtk
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.1
+solution version = 1.1.2
 solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\glib-2.42.1\build\win32\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: http://ftp.gnome.org/pub/GNOME/sources/
@@ -51,7 +51,7 @@ TESTINGS:
 	Added test projects...
 	Debug x64
 
-1.1.0-1
+1.1.0-2
 	Debug x64 + Debug
 
 **************************************************************************************************************************************************************************

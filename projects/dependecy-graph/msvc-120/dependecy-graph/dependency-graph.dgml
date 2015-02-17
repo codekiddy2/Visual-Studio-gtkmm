@@ -9,10 +9,10 @@
     <Node Id="Epoxy" Category="Category4" Bounds="392.163333333333,417.805,51.6733333333334,25.96" Label="epoxy" />
     <Node Id="Expat" Category="Category2" Bounds="809,0,50,25.96" Label="expat" />
     <Node Id="Ffi" Category="Category2" Bounds="449,57.6475000000003,50.0000000000001,25.96" Label="ffi" />
-    <Node Id="Fontconfig" Category="Category6" Bounds="801.631666666667,302.51,74.7366666666667,25.96" Label="fontconfig" />
+    <Node Id="Fontconfig" Category="Category1" Bounds="801.631666666667,302.51,74.7366666666667,25.96" Label="fontconfig" />
     <Node Id="Freeglut" Category="Category2" Bounds="32.3433333333334,57.6475000000003,61.3133333333333,25.96" Label="freeglut" />
     <Node Id="Freetype" Category="Category2" Bounds="707.156666666667,244.8625,63.6866666666665,25.9600000000002" Label="freetype" />
-    <Node Id="Glib" Category="Category2" Bounds="371,129.5675,50.0000000000001,25.96" Label="glib" />
+    <Node Id="Glib" Category="Category1" Bounds="371,129.5675,50.0000000000001,25.96" Label="glib" />
     <Node Id="Glibmm" Bounds="271.696666666667,360.1575,60.6066666666666,25.96" Label="glibmm" />
     <Node Id="Gtk" Category="Category4" Bounds="393,475.4525,50,25.96" Label="gtk+" />
     <Node Id="Gtkmm" Bounds="421.115,533.1,57.7699999999999,25.96" Label="gtkmm" />
@@ -20,7 +20,7 @@
     <Node Id="Jasper" Category="Category2" Bounds="32.1949999999999,129.5675,51.6100000000001,25.96" Label="jasper" />
     <Node Id="Jpeg" Category="Category2" Bounds="124,57.6475000000003,50,25.96" Label="jpeg" />
     <Node Id="Libiconv" Category="Category2" Bounds="530,0,50,25.9599999999999" Label="iconv" />
-    <Node Id="Libintl" Category="Category6" Bounds="530,57.6475000000002,50,25.96" Label="intl" />
+    <Node Id="Libintl" Category="Category1" Bounds="530,57.6475000000002,50,25.96" Label="intl" />
     <Node Id="Libsigc++" Bounds="196.051666666667,475.4525,69.896666666667,25.96" Label="libsigc++" />
     <Node Id="Pango" Category="Category2" Bounds="585.976666666667,417.805,54.0466666666666,25.96" Label="pango" />
     <Node Id="Pangomm" Bounds="560.64,475.4525,74.7200000000003,25.96" Label="pangomm" />
@@ -94,9 +94,9 @@
     <Link Source="Zlib" Target="Tiff" Bounds="202.677093505859,83.0735473632813,81.614501953125,42.8446350097656" />
   </Links>
   <Categories>
+    <Category Id="Category1" Label="Category 1" Background="#FFE51400" IsTag="True" />
     <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
     <Category Id="Category4" Label="Category 4" Background="#FF1BA1E2" IsTag="True" />
-    <Category Id="Category6" Label="Category 6" Background="#FFA1260D" IsTag="True" />
   </Categories>
   <Properties>
     <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />

@@ -35,5 +35,8 @@
     <ClCompile Include="..\..\..\pango\pangowin32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\pangowin32-fontmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

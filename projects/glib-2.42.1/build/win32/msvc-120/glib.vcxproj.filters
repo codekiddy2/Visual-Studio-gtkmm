@@ -276,9 +276,6 @@
     <ClCompile Include="..\..\..\glib\gthread-win32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\glib\gwin32.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\glib\libcharset\localcharset.c">
       <Filter>Source Files\libcharset</Filter>
     </ClCompile>
@@ -347,6 +344,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\glib\pcre\pcre_xclass.c">
       <Filter>Source Files\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gwin32.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
