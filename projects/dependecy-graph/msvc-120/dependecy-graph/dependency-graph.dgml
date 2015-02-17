@@ -14,7 +14,7 @@
     <Node Id="Freetype" Category="Category2" Bounds="707.156666666667,244.8625,63.6866666666665,25.9600000000002" Label="freetype" />
     <Node Id="Glib" Category="Category1" Bounds="371,129.5675,50.0000000000001,25.96" Label="glib" />
     <Node Id="Glibmm" Bounds="271.696666666667,360.1575,60.6066666666666,25.96" Label="glibmm" />
-    <Node Id="Gtk" Category="Category4" Bounds="393,475.4525,50,25.96" Label="gtk+" />
+    <Node Id="Gtk" Category="Category1" Bounds="393,475.4525,50,25.96" Label="gtk+" />
     <Node Id="Gtkmm" Bounds="421.115,533.1,57.7699999999999,25.96" Label="gtkmm" />
     <Node Id="Harfbuzz" Category="Category2" Bounds="656.238333333333,187.215,65.5233333333333,25.96" Label="harfbuzz" />
     <Node Id="Jasper" Category="Category2" Bounds="32.1949999999999,129.5675,51.6100000000001,25.96" Label="jasper" />
