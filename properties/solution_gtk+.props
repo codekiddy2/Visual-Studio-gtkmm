@@ -3,10 +3,10 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <GtkBinaryVersion>3.0.0</GtkBinaryVersion>
-    <GtkDummyPrefix>/dummy</GtkDummyPrefix>
+    <GtkDummyPrefix>$(ROOT_DIR)</GtkDummyPrefix>
     <GtkVersion>3.14.8</GtkVersion>
-    <GenerateGtkWin32RC>$(PYTHON_DIR)\python ..\process-in-win32.py --gtkwin32rc --gtk3manifest</GenerateGtkWin32RC>
-    <GenerateGtkDbusBuiltSources>cd ..\..\..\gtk $(PYTHON_DIR)\python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml cd $(SolutionDir)</GenerateGtkDbusBuiltSources>
+    <GenerateGtkWin32RC>$(PYTHON_DIR)python ..\process-in-win32.py --gtkwin32rc --gtk3manifest</GenerateGtkWin32RC>
+    <GenerateGtkDbusBuiltSources>cd ..\..\..\gtk $(PYTHON_DIR)python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml cd $(SolutionDir)</GenerateGtkDbusBuiltSources>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h</GenConfigH>
     <GenGdkConfigHWin32>if exist ..\..\..\MSVC_$(Configuration) goto DONE_GDKCONFIG_H
 
@@ -54,7 +54,7 @@ copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\GDK_BROADWAY_BUILD
 echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)_Broadway
 
 :DONE_GDKCONFIG_H</GenGdkConfigHBroadway>
-    <SRC_DIR>D:\GitHub\Visual-Studio-gtkmm\projects\gtk+-3.14.8\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\gtk+-3.14.8\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_gtk+</_PropertySheetDisplayName>

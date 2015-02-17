@@ -55,25 +55,25 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\..\properties\solution_gtk.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\..\properties\solution_gtk.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\..\properties\solution_gtk.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\..\properties\solution_gtk.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -112,7 +112,7 @@
     </Link>
     <PreBuildEvent>
       <Command>cd ..\..\..\gtk
-$(PYTHON_DIR)\python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml
+$(PYTHON_DIR)python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml
 cd $(SolutionDir)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -142,6 +142,9 @@ cd $(SolutionDir)</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenerateGtkDbusBuiltSources)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\gtk\gtkdbusgenerated.c;..\..\..\gtk\gtkdbusgenerated.h;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </CustomBuild>
     <CustomBuild Include="..\..\..\gtk\gtk-win32.rc.in">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating GTK+ Win32 Version Resource...</Message>
