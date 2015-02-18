@@ -6,10 +6,11 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <AdditionalIncludeDirectories>$(INCLUDE_DIR)sigc++;$(LIB_DIR)sigc++;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(INCLUDE_DIR)sigc++;$(INCLUDE_DIR)glibmm;$(LIB_DIR)sigc++;$(LIB_DIR)glibmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;gio.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;gio.dll.lib;atk.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
       <Command>if not exist $(SYMBOLS_DIR)def mkdir $(SYMBOLS_DIR)def</Command>

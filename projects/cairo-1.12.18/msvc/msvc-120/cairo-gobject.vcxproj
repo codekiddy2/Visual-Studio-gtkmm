@@ -553,9 +553,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
     <PreBuildEvent>

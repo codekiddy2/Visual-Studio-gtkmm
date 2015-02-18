@@ -94,6 +94,9 @@
     <Link>
       <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangocairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile />

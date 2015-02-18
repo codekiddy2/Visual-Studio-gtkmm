@@ -97,7 +97,11 @@ cd $(INCLUDE_DIR)
 if not exist glibmm mkdir glibmm
 cd glibmm
 xcopy $(SRC_DIR)glib\*.h /YS
-xcopy $(SRC_DIR)gio\*.h /YS</Command>
+xcopy $(SRC_DIR)gio\*.h /YS
+cd $(LIB_DIR)
+if not exist glibmm mkdir glibmm
+cd glibmm
+copy $(SolutionDir)glibmm\glibmmconfig.h /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

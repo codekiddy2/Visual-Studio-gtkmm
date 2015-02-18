@@ -4,17 +4,10 @@
     <Import Project="stack_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\atkmm-2.22.7\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\cairomm-1.11.2\msvc-120\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemDefinitionGroup>
-    <Link>
-      <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-    <ClCompile>
-      <SDLCheck>false</SDLCheck>
-    </ClCompile>
-  </ItemDefinitionGroup>
+  <ItemDefinitionGroup />
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>

@@ -537,6 +537,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link />
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
