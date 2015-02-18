@@ -8,6 +8,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <LinkIncremental>false</LinkIncremental>
+    <NMakePreprocessorDefinitions>NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <BuildLog />

@@ -6,7 +6,7 @@
     <Node Id="Cairo" Category="Category2" Bounds="497.303333333333,360.1575,50,25.96" Label="cairo" />
     <Node Id="Cairomm" Category="Category4" Bounds="218.086666666666,417.805000000001,66.4333333333334,25.96" Label="cairomm" />
     <Node Id="Dirnet" Category="Category2" Bounds="472.663333333333,244.8625,51.28,25.96" Label="dirnet" />
-    <Node Id="Epoxy" Category="Category4" Bounds="696.466666666666,417.805,51.6733333333334,25.96" Label="epoxy" />
+    <Node Id="Epoxy" Category="Category2" Bounds="696.466666666666,417.805,51.6733333333334,25.96" Label="epoxy" />
     <Node Id="Expat" Category="Category2" Bounds="594.303333333333,0,50,25.96" Label="expat" />
     <Node Id="Ffi" Category="Category2" Bounds="538.303333333333,57.6475000000002,50,25.96" Label="ffi" />
     <Node Id="Fontconfig" Category="Category1" Bounds="457.935,302.51,74.7366666666667,25.96" Label="fontconfig" />
@@ -30,7 +30,7 @@
     <Node Id="Pixman" Category="Category2" Bounds="625.953333333333,302.51,58.6999999999999,25.96" Label="pixman" />
     <Node Id="Png" Category="Category2" Bounds="810.303333333333,129.5675,50,25.96" Label="png" />
     <Node Id="Tiff" Category="Category2" Bounds="891.303333333333,129.5675,50,25.96" Label="tiff" />
-    <Node Id="Unistd" Bounds="216.946666666666,0,52.7133333333334,25.96" Label="unistd" />
+    <Node Id="Unistd" Category="Category2" Bounds="216.946666666666,0,52.7133333333334,25.96" Label="unistd" />
     <Node Id="Zlib" Category="Category2" Bounds="754.303333333333,57.6475,50,25.96" Label="zlib" />
   </Nodes>
   <Links>
