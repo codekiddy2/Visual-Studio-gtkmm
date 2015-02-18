@@ -4,8 +4,6 @@ PACKAGE
 ****************************
 #undefined:
 
-croco
-rsvg
 bzip
 ICU
 libreadline
@@ -13,50 +11,46 @@ libeditline
 libbz2
 
 ****************************
+dirnet
+unistd
 iconv
 zlib
+epoxy
 ffi
 libjpeg-turbo
 expat
 pcre	(included in glib, build extra for dll and use build with glib)
 	(optional libs = libreadline, libeditline and libbz2)
-glut
+freeglut
+pixman
+
+*****************************
 
 gettext
 	-iconv (circular dependency)
 	-expat (optional, configure script will not check for it /??)
 	-libxml2 (optional, give also path for croco)
 
+jasper
+	-libjpeg-turbo
+    -freeglut
+
 png
 	-zlib
-
-libxml2 (or expat, no dependencies for expat)
-	-iconv
-	-zlib
-	-croco
 
 tiff
 	-zlib
 	-libjpeg-turbo
-	-GL glut
 
-jasper
-	-zlib
-	-libjpeg-turbo
-    -GL glut
-
-pixman
-	-libpng
+Freetype
+	-harfbuzz (optional circular dependency, [freetype -> harfbuzz -> freetype])
 
 glib
 	-libffi
 	-zlib
 	-gettext
 	-pcre(optional)
-
-Freetype
-	-harfbuzz (optional circular dependency, [freetype -> harfbuzz -> freetype])
-
+	
 harfbuzz (rebuild freetype with harbuzz support)
 	-freetype
 	-libjpeg-turbo
@@ -69,6 +63,15 @@ Fontconfig
 
 gdk-pixbuf
 	-libpng
+	-zlib
+	-glib
+	-iconv
+	 (if using NoGDI then also..)
+	-jpeg
+	-jasper
+	-tiff
+
+atk
 	-glib
 
 cairo
@@ -88,10 +91,6 @@ Pango
 	-harfbuz
 	-cairo
 	-fontconfig (optional, cairo must be build with fontconfig too)
-
-atk
-	-glib
-
 
 gtk+
 	-pango

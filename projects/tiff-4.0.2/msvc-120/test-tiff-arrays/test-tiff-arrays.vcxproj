@@ -121,6 +121,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\install\install.vcxproj">
+      <Project>{f5abc816-7441-43a6-a4cf-fccf4e461367}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
     <ProjectReference Include="..\libtiff.vcxproj">
       <Project>{9d75d3c9-e293-4d34-a2da-0aa8e6fe993f}</Project>
       <Private>false</Private>

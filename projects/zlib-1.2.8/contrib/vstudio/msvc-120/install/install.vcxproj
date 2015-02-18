@@ -90,8 +90,8 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include/zlib mkdir include/zlib
-cd include/zlib
+if not exist include\zlib mkdir include\zlib
+cd include\zlib
 xcopy $(SRC_DIR)*.h /Y
 </Command>
     </PreBuildEvent>
@@ -108,8 +108,8 @@ xcopy $(SRC_DIR)*.h /Y
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include/zlib mkdir include/zlib
-cd include/zlib
+if not exist include\zlib mkdir include\zlib
+cd include\zlib
 xcopy $(SRC_DIR)*.h /Y
 </Command>
     </PreBuildEvent>
@@ -130,8 +130,8 @@ xcopy $(SRC_DIR)*.h /Y
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include/zlib mkdir include/zlib
-cd include/zlib
+if not exist include\zlib mkdir include\zlib
+cd include\zlib
 xcopy $(SRC_DIR)*.h /Y
 </Command>
     </PreBuildEvent>
@@ -152,8 +152,8 @@ xcopy $(SRC_DIR)*.h /Y
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include/zlib mkdir include/zlib
-cd include/zlib
+if not exist include\zlib mkdir include\zlib
+cd include\zlib
 xcopy $(SRC_DIR)*.h /Y
 </Command>
     </PreBuildEvent>

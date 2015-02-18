@@ -87,6 +87,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
     <Link>
@@ -97,6 +98,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
     <Link>
@@ -107,6 +109,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
     <Link>
@@ -117,6 +120,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
     <Link>
