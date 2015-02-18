@@ -114,10 +114,10 @@
     </ClCompile>
     <PreLinkEvent>
       <Message>Generate cairomm def file</Message>
-      <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
+      <Command>$(BIN_DIR)gendef $(SYMBOLS_DIR)def\$(TargetName).def $(TargetName) $(INTERMEDIATE_DIR)*.obj</Command>
     </PreLinkEvent>
     <Link>
-      <AdditionalDependencies>cairo.lib;sigc-vc100-d-2_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)cairomm-vc100-d-1_0.dll</OutputFile>
       <ModuleDefinitionFile>$(Platform)\$(Configuration)\$(ProjectName).def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -139,10 +139,10 @@
     </ClCompile>
     <PreLinkEvent>
       <Message>Generate cairomm def file</Message>
-      <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
+      <Command>$(BIN_DIR)gendef $(SYMBOLS_DIR)def\$(TargetName).def $(TargetName) $(INTERMEDIATE_DIR)*.obj</Command>
     </PreLinkEvent>
     <Link>
-      <AdditionalDependencies>cairo.lib;sigc-vc100-2_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)cairomm-vc100-1_0.dll</OutputFile>
       <ModuleDefinitionFile>$(Platform)\$(Configuration)\$(ProjectName).def</ModuleDefinitionFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -162,12 +162,13 @@
     </ClCompile>
     <PreLinkEvent>
       <Message>Generate cairomm def file</Message>
-      <Command>$(BIN_DIR)gendef $(SYMBOLS_DIR)def\$(TargetName).def $(TargeName) $(INTERMEDIATE_DIR)*.obj</Command>
+      <Command>$(BIN_DIR)gendef $(SYMBOLS_DIR)def\$(TargetName).def $(TargetName) $(INTERMEDIATE_DIR)*.obj</Command>
     </PreLinkEvent>
     <Link>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
+      <AdditionalDependencies>sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -186,10 +187,10 @@
     </ClCompile>
     <PreLinkEvent>
       <Message>Generate cairomm def file</Message>
-      <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
+      <Command>$(BIN_DIR)gendef $(SYMBOLS_DIR)def\$(TargetName).def $(TargetName) $(INTERMEDIATE_DIR)*.obj</Command>
     </PreLinkEvent>
     <Link>
-      <AdditionalDependencies>cairo.lib;sigc-vc100-2_0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)cairomm-vc100-1_0.dll</OutputFile>
       <ModuleDefinitionFile>$(Platform)\$(Configuration)\$(ProjectName).def</ModuleDefinitionFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -203,6 +204,7 @@
     <ClCompile Include="..\..\cairomm\context_surface_quartz.cc" />
     <ClCompile Include="..\..\cairomm\context_surface_win32.cc" />
     <ClCompile Include="..\..\cairomm\context_surface_xlib.cc" />
+    <ClCompile Include="..\..\cairomm\device.cc" />
     <ClCompile Include="..\..\cairomm\exception.cc" />
     <ClCompile Include="..\..\cairomm\fontface.cc" />
     <ClCompile Include="..\..\cairomm\fontoptions.cc" />

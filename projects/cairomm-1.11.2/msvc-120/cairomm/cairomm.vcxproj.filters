@@ -66,6 +66,9 @@
     <ClCompile Include="..\..\cairomm\xlib_surface.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\cairomm\device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\cairomm\cairomm.h">

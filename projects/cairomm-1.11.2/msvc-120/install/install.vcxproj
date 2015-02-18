@@ -127,19 +127,9 @@ xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include\atkmm mkdir include\atkmm
-cd include\atkmm
-xcopy $(SRC_DIR)atk\*.h /Y
-mkdir atkmm
-cd atkmm
-xcopy $(SRC_DIR)atk\atkmm\*.h /Y
-mkdir private
-cd private
-xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
-if not exist $(LIB_DIR)atkmm mkdir $(LIB_DIR)atkmm
-cd $(LIB_DIR)atkmm
-xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-</Command>
+if not exist include\cairomm mkdir include\cairomm
+cd include\cairomm
+xcopy $(SRC_DIR)cairomm\*.h /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
