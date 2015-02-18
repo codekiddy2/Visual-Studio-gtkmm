@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{D36FE6
 		Readme\pcre-8.36.txt = Readme\pcre-8.36.txt
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -38,6 +40,10 @@ Global
 		{D3BECA22-1745-4587-95B1-4842270DFF54}.Release|Win32.Build.0 = Release|Win32
 		{D3BECA22-1745-4587-95B1-4842270DFF54}.Release|x64.ActiveCfg = Release|x64
 		{D3BECA22-1745-4587-95B1-4842270DFF54}.Release|x64.Build.0 = Release|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug|x64.ActiveCfg = Debug|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release|Win32.ActiveCfg = Release|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

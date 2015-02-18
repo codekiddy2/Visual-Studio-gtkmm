@@ -1,14 +1,15 @@
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
-solution created by codekiddy (github.com/codekiddy2/Visual-Studio-gtkmm)
+solution created by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.0.3
+solution version = 1.1.0
 solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://www.pcre.org/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -23,23 +24,10 @@ libreadline (optional)
 INSTRUCTIONS:
 replace path and [debug|release] according to your desired setup
 NOTE: this solution will not work to compile with glib2, it is used to create a dll...
-Before running following commands the msvc-120 folder with project files must not exist!
+Before running following commands the msvc-120 folder with project files must not exist,
+move it somewhere else and copy/paste back when configuration is done.
 
-x64 users: 
-open VS2013 x64 Native Tools command promt and type:
-set ROOT_DIR=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64
-set PATH=%ROOT_DIR%\bin;%PATH%
-set LIB=%ROOT_DIR%\lib;%LIB%
-set INCLUDE=%ROOT_DIR%\include;%INCLUDE%
-cmake-gui
-
-x86 users: 
-open VS2013 x86 Native Tools command promt and type:
-set ROOT_DIR=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x86
-set PATH=%ROOT_DIR%\bin;%PATH%
-set LIB=%ROOT_DIR%\lib;%LIB%
-set INCLUDE=%ROOT_DIR%\include;%INCLUDE%
-cmake-gui
+open cmake-gui from VS command promt (x86 or x64 depending against which target you build)
 
 All users:
 only following checkbox settings shall be true:
@@ -74,6 +62,8 @@ TESTINGS:
 1.0.2
 	Debug x64
 	Debug x86
+
+1.1.0
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

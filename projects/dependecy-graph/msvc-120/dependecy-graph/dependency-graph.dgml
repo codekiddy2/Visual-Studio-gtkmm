@@ -11,7 +11,7 @@
     <Node Id="Ffi" Category="Category2" Bounds="538.303333333333,57.6475000000002,50,25.96" Label="ffi" />
     <Node Id="Fontconfig" Category="Category1" Bounds="457.935,302.51,74.7366666666667,25.96" Label="fontconfig" />
     <Node Id="Freeglut" Category="Category2" Bounds="1059.64666666667,57.6475,61.3133333333335,25.96" Label="freeglut" />
-    <Node Id="Freetype" Category="Category2" Bounds="346.46,244.8625,63.6866666666665,25.9600000000002" Label="freetype" />
+    <Node Id="Freetype" Category="Category1" Bounds="346.46,244.8625,63.6866666666665,25.9600000000002" Label="freetype" />
     <Node Id="Glib" Category="Category1" Bounds="491.303333333333,129.5675,50,25.96" Label="glib" />
     <Node Id="Glibmm" Category="Category4" Bounds="0,417.805000000001,60.6066666666666,25.96" Label="glibmm" />
     <Node Id="Gtk" Category="Category1" Bounds="529.303333333333,475.4525,50,25.96" Label="gtk+" />
@@ -21,11 +21,11 @@
     <Node Id="Jasper" Category="Category2" Bounds="1035.49833333333,129.5675,51.6100000000001,25.96" Label="jasper" />
     <Node Id="Jpeg" Category="Category2" Bounds="979.303333333333,57.6475,50.0000000000001,25.96" Label="jpeg" />
     <Node Id="Libiconv" Category="Category2" Bounds="690.303333333333,0,50,25.9599999999999" Label="iconv" />
-    <Node Id="Libintl" Category="Category1" Bounds="376.303333333333,57.6475000000002,50,25.9599999999999" Label="intl" />
+    <Node Id="Libintl" Category="Category2" Bounds="376.303333333333,57.6475000000002,50,25.9599999999999" Label="intl" />
     <Node Id="Libsigc++" Category="Category4" Bounds="122.355,360.1575,69.896666666667,25.96" Label="libsigc++" />
     <Node Id="Pango" Category="Category2" Bounds="346.28,417.805000000001,54.0466666666666,25.96" Label="pango" />
     <Node Id="Pangomm" Bounds="180.943333333333,475.452500000001,74.7200000000003,25.96" Label="pangomm" />
-    <Node Id="Pcre" Category="Category4" Bounds="457.303333333333,57.6475000000002,50,25.9599999999999" Label="pcre" />
+    <Node Id="Pcre" Category="Category2" Bounds="457.303333333333,57.6475000000002,50,25.9599999999999" Label="pcre" />
     <Node Id="Pixbuf" Category="Category2" Bounds="810.321666666666,187.215,77.9633333333331,25.96" Label="gdk-pixbuf" />
     <Node Id="Pixman" Category="Category2" Bounds="625.953333333333,302.51,58.6999999999999,25.96" Label="pixman" />
     <Node Id="Png" Category="Category2" Bounds="810.303333333333,129.5675,50,25.96" Label="png" />
