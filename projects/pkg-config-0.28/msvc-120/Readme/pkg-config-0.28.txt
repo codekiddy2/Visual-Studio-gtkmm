@@ -27,7 +27,7 @@ then again cd into package root dir and ran the *.sh file. to configure.
 finally open VS select configuration and build.
 you may need to change these files in case of errors or non-standard installation paths.
 
-Once done set the PKG_CONFIG_PATH into PATH
+Once done set the PKG_CONFIG_PATH environment variable
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
