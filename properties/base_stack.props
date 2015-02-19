@@ -14,7 +14,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
-    <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
   </PropertyGroup>
   <ItemDefinitionGroup>

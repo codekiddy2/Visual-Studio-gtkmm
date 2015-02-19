@@ -9,6 +9,7 @@
   <PropertyGroup>
     <LinkIncremental>true</LinkIncremental>
     <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <BuildLog />
