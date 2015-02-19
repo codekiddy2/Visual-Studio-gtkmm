@@ -10,7 +10,6 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level2</WarningLevel>
       <AdditionalIncludeDirectories>..\gio;..\glib;$(SolutionDir)giomm;$(SolutionDir)glibmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>

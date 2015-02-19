@@ -98,7 +98,7 @@
       <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
     </PreLinkEvent>
     <Link>
-      <ModuleDefinitionFile>$(Platform)\$(Configuration)\$(ProjectName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -116,7 +116,7 @@
       <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
     </PreLinkEvent>
     <Link>
-      <ModuleDefinitionFile>$(Platform)\$(Configuration)\$(ProjectName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -158,7 +158,7 @@
       <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
     </PreLinkEvent>
     <Link>
-      <ModuleDefinitionFile>$(Platform)\$(Configuration)\$(ProjectName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
