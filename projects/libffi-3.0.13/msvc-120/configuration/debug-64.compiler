@@ -31,7 +31,8 @@
 -D _WIN32_WINNT=0x0601
 -D _UNICODE
 -D UNICODE
--I D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include
+-I D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\intl
+-I D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib
 -I D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\expat
 -I D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\iconv
--link -VERBOSE:SAFESEH -INCREMENTAL -MANIFEST:NO -OPT:NOREF -OPT:NOICF -WINMD:NO -DYNAMICBASE:NO -NXCOMPAT -SAFESEH:NO -machine:x64 -debug libiconv.dll.lib expat.dll.lib
+-link -VERBOSE:SAFESEH -INCREMENTAL -MANIFEST:NO -OPT:NOREF -OPT:NOICF -WINMD:NO -DYNAMICBASE:NO -NXCOMPAT -SAFESEH:NO -machine:x64 -debug iconv.dll.lib expat.dll.lib intl.dll.lib zlib.dll.lib

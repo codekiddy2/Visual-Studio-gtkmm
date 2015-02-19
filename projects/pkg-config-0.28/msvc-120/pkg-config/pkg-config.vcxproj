@@ -87,6 +87,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="$(INCLUDE_DIR)";PKG_CONFIG_SYSTEM_LIBRARY_PATH="$(LIB_DIR)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

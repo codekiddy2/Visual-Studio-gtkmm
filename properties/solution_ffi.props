@@ -12,6 +12,7 @@
 if not exist ./include mkdir include
 cd include
 if not exist ..\..\x86_64-w64-mingw32 goto x86
+if exist ..\..\i686-pc-mingw32 goto fatal
 copy ..\..\x86_64-w64-mingw32\fficonfig.h /Y
 xcopy ..\..\x86_64-w64-mingw32\include\*.h /Y
 exit
@@ -21,7 +22,11 @@ copy ..\..\i686-pc-mingw32\fficonfig.h /Y
 xcopy ..\..\i686-pc-mingw32\include\*.h /Y
 exit
 :end
-echo can't find configuration directory, did you configure?
+echo ERROR: can't find configuration directory, did you configure?
+exit
+:fatal
+echo ERROR: multiple configurations found, skipping prebuild step...
+del .\..\include /Q
 
 </Command>
     </PreBuildEvent>
@@ -33,6 +38,9 @@ echo can't find configuration directory, did you configure?
     <ClCompile>
       <AdditionalIncludeDirectories>..\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
