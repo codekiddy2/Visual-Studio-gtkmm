@@ -3,8 +3,8 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <DRIVE>D</DRIVE>
-    <REPO_DIR>$(DRIVE):\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
-    <ROOT_DIR>$(REPO_DIR)output\Debug\$(Platform)\</ROOT_DIR>
+    <REPO_DIR>$(DRIVE):/GitHub/Visual-Studio-gtkmm/</REPO_DIR>
+    <ROOT_DIR>$(REPO_DIR)output/Debug/$(Platform)/</ROOT_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <LinkIncremental>true</LinkIncremental>
