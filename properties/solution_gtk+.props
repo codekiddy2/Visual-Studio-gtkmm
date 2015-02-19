@@ -66,6 +66,7 @@ echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)_Broadway
       <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;ATK_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_DISABLE_SINGLE_INCLUDES;GTK_DISABLE_SINGLE_INCLUDES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WarningLevel>Level1</WarningLevel>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
     <Link>
       <AdditionalDependencies>cairo.dll.lib;cairo-gobject.dll.lib;pangocairo.dll.lib;pango.dll.lib;gdk-pixbuf.dll.lib;glib.dll.lib;gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

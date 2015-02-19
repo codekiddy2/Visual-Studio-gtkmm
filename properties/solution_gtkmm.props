@@ -14,6 +14,7 @@
     <ClCompile>
       <AdditionalIncludeDirectories>..\;..\gdk;.\gdkmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4250;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

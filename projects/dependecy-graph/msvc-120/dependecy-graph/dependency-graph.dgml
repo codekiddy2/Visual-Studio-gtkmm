@@ -15,7 +15,7 @@
     <Node Id="Glib" Category="Category1" Bounds="594.5,129.5675,50,25.96" Label="glib" />
     <Node Id="Glibmm" Category="Category2" Bounds="725.196666666667,417.805,60.6066666666666,25.96" Label="glibmm" />
     <Node Id="Gtk" Category="Category1" Bounds="221.5,475.452500000001,50,25.96" Label="gtk+" />
-    <Node Id="Gtkmm" Category="Category4" Bounds="505.615,533.100000000001,57.77,25.96" Label="gtkmm" />
+    <Node Id="Gtkmm" Category="Category1" Bounds="505.615,533.100000000001,57.77,25.96" Label="gtkmm" />
     <Node Id="Harfbuzz" Category="Category2" Bounds="410.738333333334,187.215,65.5233333333333,25.96" Label="harfbuzz" />
     <Node Id="Icon-theme" Bounds="210.091666666667,417.805000000001,80.8166666666666,25.96" Label="icon-theme" />
     <Node Id="Jasper" Category="Category2" Bounds="1067.695,129.5675,51.6100000000001,25.96" Label="jasper" />
@@ -24,7 +24,7 @@
     <Node Id="Libintl" Category="Category2" Bounds="56.5,57.6475000000003,50,25.9599999999998" Label="intl" />
     <Node Id="Libsigc++" Category="Category2" Bounds="624.551666666667,360.1575,69.896666666667,25.96" Label="libsigc++" />
     <Node Id="Pango" Category="Category2" Bounds="321.476666666667,417.805000000001,54.0466666666666,25.96" Label="pango" />
-    <Node Id="Pangomm" Category="Category4" Bounds="625.14,475.452500000001,74.7200000000003,25.96" Label="pangomm" />
+    <Node Id="Pangomm" Category="Category2" Bounds="625.14,475.452500000001,74.7200000000003,25.96" Label="pangomm" />
     <Node Id="Pcre" Category="Category2" Bounds="585.5,57.6475,50,25.9599999999999" Label="pcre" />
     <Node Id="Pixbuf" Category="Category2" Bounds="841.518333333334,187.215,77.9633333333331,25.96" Label="gdk-pixbuf" />
     <Node Id="Pixman" Category="Category2" Bounds="530.15,302.51,58.6999999999998,25.96" Label="pixman" />
@@ -115,7 +115,6 @@
   <Categories>
     <Category Id="Category1" Label="Category 1" Background="#FFE51400" IsTag="True" />
     <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
-    <Category Id="Category4" Label="Category 4" Background="#FF1BA1E2" IsTag="True" />
   </Categories>
   <Properties>
     <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />

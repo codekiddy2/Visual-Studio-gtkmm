@@ -7,8 +7,8 @@ solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtk
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.0.0
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\cairomm-1.11.2\msvc-120
+solution version = 1.1.0
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gtkmm-3.14.0\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: http://ftp.gnome.org/pub/GNOME/sources/gtkmm/
 
@@ -43,7 +43,10 @@ TESTINGS:
 1.0.0
 	Debug x64
 
+1.1.0
+	Debug x64
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-inherit all configurations
+some settings are blank (not inherited)
