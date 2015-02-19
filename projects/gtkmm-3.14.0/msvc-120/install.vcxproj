@@ -43,7 +43,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -53,104 +53,171 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\properties\solution_glibmm.props" />
+    <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\properties\solution_glibmm.props" />
+    <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\properties\solution_glibmm.props" />
+    <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\properties\solution_glibmm.props" />
+    <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GlibEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GlibEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GlibEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist glibmm mkdir glibmm
-cd glibmm
-xcopy $(SRC_DIR)glib\*.h /YS
-xcopy $(SRC_DIR)gio\*.h /YS</Command>
+if not exist gtkmm mkdir gtkmm
+cd gtkmm
+xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /Y
+mkdir gdkmm
+cd gdkmm
+xcopy $(SRC_DIR)gdk\gdkmm\*.h /Y
+mkdir private
+cd private
+xcopy $(SRC_DIR)gdk\gdkmm\private\*.h /Y
+cd ..\..\
+mkdir gtkmm
+cd gtkmm
+xcopy $(SRC_DIR)gtk\gtkmm\*.h /Y
+mkdir private
+cd private
+xcopy $(SRC_DIR)gtk\gtkmm\private\*.h /Y
+cd $(ROOT_DIR)
+if not exist share\gtkmm\demo mkdir share\gtkmm\demo
+cd share\gtkmm\demo
+xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.jpg /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.png /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist glibmm mkdir glibmm
-cd glibmm
-xcopy $(SRC_DIR)glib\*.h /YS
-xcopy $(SRC_DIR)gio\*.h /YS
-cd $(LIB_DIR)
-if not exist glibmm mkdir glibmm
-cd glibmm
-copy $(SolutionDir)glibmm\glibmmconfig.h /Y
-cd ..
-if not exist giomm mkdir giomm
-cd giomm
-copy $(SolutionDir)giomm\giommconfig.h /Y</Command>
+if not exist gtkmm mkdir gtkmm
+cd gtkmm
+xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /Y
+mkdir gdkmm
+cd gdkmm
+xcopy $(SRC_DIR)gdk\gdkmm\*.h /Y
+mkdir private
+cd private
+xcopy $(SRC_DIR)gdk\gdkmm\private\*.h /Y
+cd ..\..\
+mkdir gtkmm
+cd gtkmm
+xcopy $(SRC_DIR)gtk\gtkmm\*.h /Y
+mkdir private
+cd private
+xcopy $(SRC_DIR)gtk\gtkmm\private\*.h /Y
+cd $(ROOT_DIR)
+if not exist share\gtkmm\demo mkdir share\gtkmm\demo
+cd share\gtkmm\demo
+xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.jpg /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.png /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist glibmm mkdir glibmm
-cd glibmm
-xcopy $(SRC_DIR)glib\*.h /YS
-xcopy $(SRC_DIR)gio\*.h /YS</Command>
+if not exist gtkmm mkdir gtkmm
+cd gtkmm
+xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /Y
+mkdir gdkmm
+cd gdkmm
+xcopy $(SRC_DIR)gdk\gdkmm\*.h /Y
+mkdir private
+cd private
+xcopy $(SRC_DIR)gdk\gdkmm\private\*.h /Y
+cd ..\..\
+mkdir gtkmm
+cd gtkmm
+xcopy $(SRC_DIR)gtk\gtkmm\*.h /Y
+mkdir private
+cd private
+xcopy $(SRC_DIR)gtk\gtkmm\private\*.h /Y
+cd $(ROOT_DIR)
+if not exist share\gtkmm\demo mkdir share\gtkmm\demo
+cd share\gtkmm\demo
+xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.jpg /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.png /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist glibmm mkdir glibmm
-cd glibmm
-xcopy $(SRC_DIR)glib\*.h /YS
-xcopy $(SRC_DIR)gio\*.h /YS</Command>
+if not exist gtkmm mkdir gtkmm
+cd gtkmm
+xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /Y
+mkdir gdkmm
+cd gdkmm
+xcopy $(SRC_DIR)gdk\gdkmm\*.h /Y
+mkdir private
+cd private
+xcopy $(SRC_DIR)gdk\gdkmm\private\*.h /Y
+cd ..\..\
+mkdir gtkmm
+cd gtkmm
+xcopy $(SRC_DIR)gtk\gtkmm\*.h /Y
+mkdir private
+cd private
+xcopy $(SRC_DIR)gtk\gtkmm\private\*.h /Y
+cd $(ROOT_DIR)
+if not exist share\gtkmm\demo mkdir share\gtkmm\demo
+cd share\gtkmm\demo
+xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.jpg /Y
+xcopy $(SRC_DIR)demos\gtk-demo\*.png /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\config.h.win32">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GLibmmDoInstall)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(InstalledDebugDlls);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GLibmmDoInstall)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(InstalledDebugDlls);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GLibmmDoInstall)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(InstalledReleaseDlls);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GLibmmDoInstall)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(InstalledReleaseDlls);%(Outputs)</Outputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="giomm.vcxproj">
-      <Project>{ee6c0430-c2c9-425c-8eba-963fac3e9832}</Project>
+    <ProjectReference Include="gdkmm.vcxproj">
+      <Project>{976c8f9c-1a1d-4e23-b79e-ec9091bbea0e}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="glibmm.vcxproj">
-      <Project>{58b2b53c-c4ff-47fd-817b-095e45b7f7d4}</Project>
+    <ProjectReference Include="gtkmm.vcxproj">
+      <Project>{907b8d15-7e12-4136-a7e6-b6ed5e055d39}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gtkmm3-demo.vcxproj">
+      <Project>{5a8bbe25-e8d8-487b-ad2d-690438f09fa1}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

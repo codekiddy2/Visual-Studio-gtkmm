@@ -6,7 +6,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <AdditionalIncludeDirectories>$(INCLUDE_DIR)sigc++;$(INCLUDE_DIR)glibmm;$(LIB_DIR)sigc++;$(LIB_DIR)glibmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(INCLUDE_DIR)sigc++;$(INCLUDE_DIR)glibmm;$(INCLUDE_DIR)pangomm;$(INCLUDE_DIR)atkmm;$(LIB_DIR)sigc++;$(LIB_DIR)glibmm;$(LIB_DIR)pangomm;$(LIB_DIR)giomm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>

@@ -100,19 +100,13 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include\atkmm mkdir include\atkmm
-cd include\atkmm
-xcopy $(SRC_DIR)atk\*.h /Y
-mkdir atkmm
-cd atkmm
-xcopy $(SRC_DIR)atk\atkmm\*.h /Y
-mkdir private
-cd private
-xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
-if not exist $(LIB_DIR)atkmm mkdir $(LIB_DIR)atkmm
-cd $(LIB_DIR)atkmm
-xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-</Command>
+if not exist include\cairomm mkdir include\cairomm
+cd include\cairomm
+xcopy $(SRC_DIR)cairomm\*.h /Y
+cd $(LIB_DIR)
+if not exist cairomm mkdir cairomm
+cd cairomm
+copy $(SolutionDir)cairomm\cairommconfig.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -129,7 +123,11 @@ xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
 cd $(ROOT_DIR)
 if not exist include\cairomm mkdir include\cairomm
 cd include\cairomm
-xcopy $(SRC_DIR)cairomm\*.h /Y</Command>
+xcopy $(SRC_DIR)cairomm\*.h /Y
+cd $(LIB_DIR)
+if not exist cairomm mkdir cairomm
+cd cairomm
+copy $(SolutionDir)cairomm\cairommconfig.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -148,19 +146,13 @@ xcopy $(SRC_DIR)cairomm\*.h /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include\atkmm mkdir include\atkmm
-cd include\atkmm
-xcopy $(SRC_DIR)atk\*.h /Y
-mkdir atkmm
-cd atkmm
-xcopy $(SRC_DIR)atk\atkmm\*.h /Y
-mkdir private
-cd private
-xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
-if not exist $(LIB_DIR)atkmm mkdir $(LIB_DIR)atkmm
-cd $(LIB_DIR)atkmm
-xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-</Command>
+if not exist include\cairomm mkdir include\cairomm
+cd include\cairomm
+xcopy $(SRC_DIR)cairomm\*.h /Y
+cd $(LIB_DIR)
+if not exist cairomm mkdir cairomm
+cd cairomm
+copy $(SolutionDir)cairomm\cairommconfig.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -179,19 +171,13 @@ xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include\atkmm mkdir include\atkmm
-cd include\atkmm
-xcopy $(SRC_DIR)atk\*.h /Y
-mkdir atkmm
-cd atkmm
-xcopy $(SRC_DIR)atk\atkmm\*.h /Y
-mkdir private
-cd private
-xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
-if not exist $(LIB_DIR)atkmm mkdir $(LIB_DIR)atkmm
-cd $(LIB_DIR)atkmm
-xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-</Command>
+if not exist include\cairomm mkdir include\cairomm
+cd include\cairomm
+xcopy $(SRC_DIR)cairomm\*.h /Y
+cd $(LIB_DIR)
+if not exist cairomm mkdir cairomm
+cd cairomm
+copy $(SolutionDir)cairomm\cairommconfig.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -108,7 +108,11 @@ cd pangomm
 xcopy $(SRC_DIR)pango\pangomm\*.h /Y
 mkdir private
 cd private
-xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y</Command>
+xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y
+cd $(LIB_DIR)
+if not exist pangomm mkdir pangomm
+cd pangomm
+copy $(SolutionDir)pangomm\pangommconfig.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -131,7 +135,11 @@ cd pangomm
 xcopy $(SRC_DIR)pango\pangomm\*.h /Y
 mkdir private
 cd private
-xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y</Command>
+xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y
+cd $(LIB_DIR)
+if not exist pangomm mkdir pangomm
+cd pangomm
+copy $(SolutionDir)pangomm\pangommconfig.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -158,7 +166,11 @@ cd pangomm
 xcopy $(SRC_DIR)pango\pangomm\*.h /Y
 mkdir private
 cd private
-xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y</Command>
+xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y
+cd $(LIB_DIR)
+if not exist pangomm mkdir pangomm
+cd pangomm
+copy $(SolutionDir)pangomm\pangommconfig.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -185,7 +197,11 @@ cd pangomm
 xcopy $(SRC_DIR)pango\pangomm\*.h /Y
 mkdir private
 cd private
-xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y</Command>
+xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y
+cd $(LIB_DIR)
+if not exist pangomm mkdir pangomm
+cd pangomm
+copy $(SolutionDir)pangomm\pangommconfig.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
