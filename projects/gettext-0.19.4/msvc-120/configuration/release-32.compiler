@@ -33,7 +33,9 @@
 /GR
 /Gd
 /analyze-
-/errorReport:prompt 
+/errorReport:prompt
+-I D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32\include\dirnet
+-I D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32\include\unistd
 -I D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32\include\expat
 -I D:\GitHub\Visual-Studio-gtkmm\output\Release\Win32\include\iconv
 -link /VERBOSE:SAFESEH /INCREMENTAL:NO /LTCG:NOSTATUS /MANIFEST:NO /DEBUG /OPT:REF /OPT:ICF /LTCG /WINMD:NO /DYNAMICBASE:NO /NXCOMPAT /MACHINE:X86 /SAFESEH iconv.dll.lib expat.dll.lib

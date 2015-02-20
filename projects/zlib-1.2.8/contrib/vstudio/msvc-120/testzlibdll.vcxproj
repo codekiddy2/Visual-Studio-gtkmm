@@ -98,6 +98,7 @@
       <AdditionalIncludeDirectories>..\..\..;..\..\minizip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <DataExecutionPrevention>
@@ -111,6 +112,7 @@
       <AdditionalIncludeDirectories>..\..\..;..\..\minizip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <DataExecutionPrevention>

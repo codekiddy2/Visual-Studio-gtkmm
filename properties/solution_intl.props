@@ -13,7 +13,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-m4;..\..\gettext-runtime\gnulib-lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\gettext-runtime;..\..\gettext-runtime\intl;..\..\gettext-runtime\gnulib-m4;..\..\gettext-runtime\gnulib-lib;$(INCLUDE_DIR)unistd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -33,6 +33,8 @@
 /Gd
 /errorReport:prompt
 /we4098
+-I D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include\dirnet
+-I D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include\unistd
 -I D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include\expat
 -I D:\GitHub\Visual-Studio-gtkmm\output\Release\x64\include\iconv
 -link /VERBOSE:SAFESEH /INCREMENTAL:NO /LTCG:NOSTATUS /MANIFEST:NO /DEBUG /OPT:REF /OPT:ICF /LTCG /WINMD:NO /DYNAMICBASE:NO /NXCOMPAT /MACHINE:X64 /SAFESEH:NO iconv.dll.lib expat.dll.lib

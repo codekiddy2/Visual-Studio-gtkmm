@@ -45,6 +45,8 @@ if testzlib results in unresolved external, try to remove the project and add ol
 
 #x86
 try to remove ZLIB_WINAPI in case of unresolved problems.
+-- UPDATE: ZLIB_WINAPI must be present when building the DLL, (not tested for *.lib)
+	also calling code must define ZLIB_WINAPI (tested with "test-zlib_dll")
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

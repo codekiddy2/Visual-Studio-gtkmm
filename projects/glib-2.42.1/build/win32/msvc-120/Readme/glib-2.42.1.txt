@@ -34,6 +34,8 @@ pcre unresolved externals if building glib with extern pcre.
 codegen python files need to be installed into glib-2.0/share/codegen, to avoid
 gdbus generated error.
 test-gio has runtime check reduced in debug mode due to runtime error.
+ZLIB_WINAPI must be defined for x86 builds, also zlib.dll x86 must define that macro
+on building.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

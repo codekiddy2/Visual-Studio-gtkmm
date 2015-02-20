@@ -94,18 +94,14 @@
     <ClCompile>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <ForcedIncludeFiles>io.h</ForcedIncludeFiles>
     </ClCompile>
     <Lib />
-    <Lib>
-      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <ForcedIncludeFiles>io.h</ForcedIncludeFiles>
     </ClCompile>
     <Lib />
     <Lib>
@@ -119,7 +115,6 @@
     <ClCompile>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <ForcedIncludeFiles>io.h</ForcedIncludeFiles>
     </ClCompile>
     <Lib />
     <Lib>
@@ -135,7 +130,6 @@
     <ClCompile>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <ForcedIncludeFiles>io.h</ForcedIncludeFiles>
     </ClCompile>
     <Lib />
     <Lib>
