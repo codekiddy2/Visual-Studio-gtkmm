@@ -114,7 +114,7 @@ CHECK_JPEG_YCBCR_SUBSAMPLING = 1
 # with no debugging information.
 # NOTE: /EHsc option required if you want to build the C++ stream API
 #
-OPTFLAGS  = /nologo /W2 /WX- /O2 /Ob2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D NTDDI_WIN7=0x06010000 /D _WIN32_WINNT_WIN7=0x0601 /D UNICODE /GF /Gm- /MD /GS /Gy- /Qpar /fp:precise /fp:except- /Zc:wchar_t /Zc:forScope /GR /Gd /TC /errorReport:prompt /we4098
+OPTFLAGS  = /nologo /W2 /WX- /O2 /Ob2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE -D WINVER=0x0601 -D _WIN32_WINNT=0x0601 /D UNICODE /GF /Gm- /MD /GS /Gy- /Qpar /fp:precise /fp:except- /Zc:wchar_t /Zc:forScope /GR /Gd /errorReport:prompt /we4098
 #
 # Uncomment following line to enable using Windows Common RunTime Library
 # instead of Windows specific system calls. See notes on top of tif_unix.c

@@ -86,17 +86,13 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="$(INCLUDE_DIR)";PKG_CONFIG_SYSTEM_LIBRARY_PATH="$(LIB_DIR)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\include";PKG_CONFIG_SYSTEM_LIBRARY_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PostBuildEvent>
-      <Command>$(DRIVE):
-cd $(LIB_DIR)
-if not exist pkg-config mkdir pkg-config</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -107,41 +103,29 @@ if not exist pkg-config mkdir pkg-config</Command>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PostBuildEvent>
-      <Command>$(DRIVE):
-cd $(LIB_DIR)
-if not exist pkg-config mkdir pkg-config</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="$(INCLUDE_DIR)";PKG_CONFIG_SYSTEM_LIBRARY_PATH="$(LIB_DIR)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\include";PKG_CONFIG_SYSTEM_LIBRARY_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PostBuildEvent>
-      <Command>$(DRIVE):
-cd $(LIB_DIR)
-if not exist pkg-config mkdir pkg-config</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="$(INCLUDE_DIR)";PKG_CONFIG_SYSTEM_LIBRARY_PATH="$(LIB_DIR)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\include";PKG_CONFIG_SYSTEM_LIBRARY_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PostBuildEvent>
-      <Command>$(DRIVE):
-cd $(LIB_DIR)
-if not exist pkg-config mkdir pkg-config</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\main.c" />

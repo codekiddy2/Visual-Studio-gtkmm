@@ -109,6 +109,7 @@ cd .\libtiff
 del .\*.exp
 del .\*.ilk
 del .\*.idb</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeBuildCommandLine>copy .\release-32.mak "..\nmake.opt" /Y
