@@ -392,6 +392,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
   </ItemDefinitionGroup>
@@ -402,6 +403,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
   </ItemDefinitionGroup>
@@ -412,6 +414,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -424,6 +427,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -436,6 +440,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>fontconfig.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -448,6 +453,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>fontconfig.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -460,6 +466,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -472,6 +479,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -484,6 +492,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -496,6 +505,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -508,6 +518,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;fontconfig.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -520,6 +531,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;fontconfig.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>

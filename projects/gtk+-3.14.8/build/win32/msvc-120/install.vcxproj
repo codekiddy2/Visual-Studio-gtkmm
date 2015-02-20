@@ -190,8 +190,7 @@ cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
- /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
@@ -244,8 +243,7 @@ cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
- /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
@@ -406,8 +404,7 @@ cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
- /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."

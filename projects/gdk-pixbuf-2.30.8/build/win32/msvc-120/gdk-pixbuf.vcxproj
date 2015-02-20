@@ -173,7 +173,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level2</WarningLevel>
@@ -186,7 +186,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level2</WarningLevel>
@@ -234,7 +234,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;INCLUDE_bmp;INCLUDE_gif;INCLUDE_ico;INCLUDE_jasper;INCLUDE_jpeg;INCLUDE_tiff;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;INCLUDE_bmp;INCLUDE_gif;INCLUDE_ico;INCLUDE_jasper;INCLUDE_jpeg;INCLUDE_tiff;PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <ForcedIncludeFiles>
@@ -252,7 +252,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;INCLUDE_bmp;INCLUDE_gif;INCLUDE_ico;INCLUDE_jasper;INCLUDE_jpeg;INCLUDE_tiff;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;INCLUDE_bmp;INCLUDE_gif;INCLUDE_ico;INCLUDE_jasper;INCLUDE_jpeg;INCLUDE_tiff;PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <ForcedIncludeFiles>

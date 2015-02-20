@@ -1,8 +1,4 @@
-set ROOT_DIR=D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64
-set CL=@D:\GitHub\Visual-Studio-gtkmm\projects\libffi-3.1\debug-64.compiler
-set PATH=%ROOT_DIR%\bin;%PATH%
-set LIB=%ROOT_DIR%\lib;%LIB%
-set INCLUDE=%ROOT_DIR%\include;%ROOT_DIR%\include\iconv;%ROOT_DIR%\include\expat;%INCLUDE%
+set CL=@D:\GitHub\Visual-Studio-gtkmm\projects\libffi-3.0.1\debug-64.compiler
 set MOZBUILDDIR=D:\gtkmm\install\mozilla-build
 set MOZILLABUILD=%MOZBUILDDIR%
 set MOZ_TOOLS=%MOZBUILDDIR%moztools-x64

@@ -154,7 +154,9 @@
   <ItemGroup>
     <CustomBuild Include="..\..\..\config.h.win32">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Copying config.h from config.h.win32...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenConfigH)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">if exist ..\..\..\config.h goto DONE_CONFIG_H
+copy ..\..\..\config.h.win32 ..\..\..\config.h
+:DONE_CONFIG_H</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying config.h from config.h.win32...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if exist ..\..\..\config.h goto DONE_CONFIG_H
@@ -162,15 +164,21 @@ copy ..\..\..\config.h.win32 ..\..\..\config.h
 :DONE_CONFIG_H</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\config.h;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying config.h from config.h.win32...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenConfigH)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">if exist ..\..\..\config.h goto DONE_CONFIG_H
+copy ..\..\..\config.h.win32 ..\..\..\config.h
+:DONE_CONFIG_H</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying config.h from config.h.win32...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenConfigH)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if exist ..\..\..\config.h goto DONE_CONFIG_H
+copy ..\..\..\config.h.win32 ..\..\..\config.h
+:DONE_CONFIG_H</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\config.h;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\..\atk\atkmarshal.list">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Marshalling Sources...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenMarshalSrc)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..\..\..\atk
+$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
+$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Marshalling Sources...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd ..\..\..\atk
@@ -178,10 +186,14 @@ $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atk
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Marshalling Sources...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenMarshalSrc)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd ..\..\..\atk
+$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
+$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Marshalling Sources...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenMarshalSrc)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd ..\..\..\atk
+$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
+$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
