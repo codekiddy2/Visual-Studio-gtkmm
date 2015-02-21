@@ -100,13 +100,13 @@ mkdir private
 cd private
 xcopy $(SRC_DIR)gtk\gtkmm\private\*.h /Y
 cd $(ROOT_DIR)
-if not exist share\gtkmm\demo mkdir share\gtkmm\demo
-cd share\gtkmm\demo
-xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.jpg /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.png /Y</Command>
+if not exist share\gtkmm\demo-3.0 mkdir share\gtkmm\demo-3.0
+cd share\gtkmm\demo-3.0
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.cc /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.h /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.gif /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.jpg /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.png /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -131,13 +131,13 @@ mkdir private
 cd private
 xcopy $(SRC_DIR)gtk\gtkmm\private\*.h /Y
 cd $(ROOT_DIR)
-if not exist share\gtkmm\demo mkdir share\gtkmm\demo
-cd share\gtkmm\demo
-xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.jpg /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.png /Y</Command>
+if not exist share\gtkmm\demo-3.0 mkdir share\gtkmm\demo-3.0
+cd share\gtkmm\demo-3.0
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.cc /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.h /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.gif /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.jpg /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.png /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -162,13 +162,13 @@ mkdir private
 cd private
 xcopy $(SRC_DIR)gtk\gtkmm\private\*.h /Y
 cd $(ROOT_DIR)
-if not exist share\gtkmm\demo mkdir share\gtkmm\demo
-cd share\gtkmm\demo
-xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.jpg /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.png /Y</Command>
+if not exist share\gtkmm\demo-3.0 mkdir share\gtkmm\demo-3.0
+cd share\gtkmm\demo-3.0
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.cc /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.h /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.gif /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.jpg /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.png /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -193,13 +193,13 @@ mkdir private
 cd private
 xcopy $(SRC_DIR)gtk\gtkmm\private\*.h /Y
 cd $(ROOT_DIR)
-if not exist share\gtkmm\demo mkdir share\gtkmm\demo
-cd share\gtkmm\demo
-xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.jpg /Y
-xcopy $(SRC_DIR)demos\gtk-demo\*.png /Y</Command>
+if not exist share\gtkmm\demo-3.0 mkdir share\gtkmm\demo-3.0
+cd share\gtkmm\demo-3.0
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.cc /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.h /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.gif /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.jpg /Y
+xcopy $(SRC_DIR)demos\gtk-demo-3.0\*.png /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -11,6 +11,7 @@
     <ClCompile>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\gio;..\glib;$(SolutionDir)giomm;$(SolutionDir)glibmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
