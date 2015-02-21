@@ -58,3 +58,4 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 Create a real world test project, the current one is a hello world that does nothing.
+add include for test project into solution directory because test project dependes on #include <cairo/...h>

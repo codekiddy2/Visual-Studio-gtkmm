@@ -336,6 +336,7 @@
     <ClCompile Include="..\..\..\glib\giowin32.c" />
     <ClCompile Include="..\..\..\glib\gspawn-win32.c" />
     <ClCompile Include="..\..\..\glib\gthread-win32.c" />
+    <ClCompile Include="..\..\..\glib\gwin32.c" />
     <ClCompile Include="..\..\..\glib\libcharset\localcharset.c">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_ExtPCRE|Win32'">$(LocalCharsetDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_ExtPCRE|x64'">$(LocalCharsetDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -589,7 +590,6 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GLibBundledPCREUndefs) %(AdditionalOptions)</AdditionalOptions>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_ExtPCRE|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="src\gwin32.c" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\config.h.win32">

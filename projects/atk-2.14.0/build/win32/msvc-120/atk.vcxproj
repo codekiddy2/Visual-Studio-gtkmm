@@ -107,6 +107,9 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link />
+    <Link />
+    <Link />
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>

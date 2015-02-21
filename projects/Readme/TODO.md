@@ -2,9 +2,9 @@
 Following TODO's apply to "Redesign" branch of projects that exist in master
 ```
 1. DEFINE PREPROCESSOR FOR CMAKE ON CMAKE PROJECTS
-2. --done
+2. add build log file to solution from inermediate directory
 3. link glib with external pcre DLL/lib version
-4. --done
+4. configure install projects to install documentation
 5. clean cmd line entries
 6. --done
 7. test GL extensions with cairo.
@@ -14,7 +14,7 @@ Following TODO's apply to "Redesign" branch of projects that exist in master
 11. sincronyze compiler/linker flags for custom build cmd projects.
 12. minimize amount of build events in project to reduce the "cmd exit = blah"
 13. add version number to each lib/dll file.
-14. project specific property sheet for purpose of relocatable solutions!
+14. --done
 15. add missing projects to existing solutions (test projects, different versions...)
 15. add general "shared" readme file into each solution.
 16. --done

@@ -72,6 +72,7 @@
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
       <ImportLibrary>$(LIB_DIR)$(TargetName)$(TargetExt).lib</ImportLibrary>
       <FixedBaseAddress>false</FixedBaseAddress>
+      <AdditionalOptions>/VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <Manifest>
       <SuppressStartupBanner>false</SuppressStartupBanner>

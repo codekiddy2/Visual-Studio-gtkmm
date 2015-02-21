@@ -107,6 +107,7 @@
       </DataExecutionPrevention>
       <AdditionalDependencies>glibmm.dll.lib;giomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>

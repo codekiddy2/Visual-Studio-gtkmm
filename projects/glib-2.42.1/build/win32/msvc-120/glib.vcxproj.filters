@@ -345,7 +345,7 @@
     <ClCompile Include="..\..\..\glib\pcre\pcre_xclass.c">
       <Filter>Source Files\pcre</Filter>
     </ClCompile>
-    <ClCompile Include="src\gwin32.c">
+    <ClCompile Include="..\..\..\glib\gwin32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
