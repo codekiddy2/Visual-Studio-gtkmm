@@ -28,7 +28,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -88,7 +88,7 @@
       <AdditionalIncludeDirectories>..\..\..\..\;..\..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;ffi.dll.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;ffi.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -99,7 +99,7 @@
       <AdditionalIncludeDirectories>..\..\..\..\;..\..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;ffi.dll.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;ffi.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -110,7 +110,7 @@
       <AdditionalIncludeDirectories>..\..\..\..\;..\..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;ffi.dll.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;ffi.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -121,7 +121,7 @@
       <AdditionalIncludeDirectories>..\..\..\..\;..\..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;ffi.dll.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;ffi.lib;gobject.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

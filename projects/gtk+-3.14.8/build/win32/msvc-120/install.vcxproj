@@ -151,21 +151,14 @@
       <Command>d:
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
-
 mkdir gtk\gdk\win32
-
 mkdir gtk\gdk\deprecated
-
 mkdir gtk\gdk\broadway
 mkdir gtk\gtk
-
 mkdir gtk\gtk\a11y
-
 mkdir gtk\gtk\deprecated
-
 mkdir libgail
 cd gtk\gdk\win32
-
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
@@ -194,7 +187,6 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
@@ -204,21 +196,14 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
       <Command>d:
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
-
 mkdir gtk\gdk\win32
-
 mkdir gtk\gdk\deprecated
-
 mkdir gtk\gdk\broadway
 mkdir gtk\gtk
-
 mkdir gtk\gtk\a11y
-
 mkdir gtk\gtk\deprecated
-
 mkdir libgail
 cd gtk\gdk\win32
-
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
@@ -247,7 +232,6 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
@@ -257,129 +241,14 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
       <Command>d:
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
-
 mkdir gtk\gdk\win32
-
 mkdir gtk\gdk\deprecated
-
 mkdir gtk\gdk\broadway
 mkdir gtk\gtk
-
 mkdir gtk\gtk\a11y
-
 mkdir gtk\gtk\deprecated
-
 mkdir libgail
 cd gtk\gdk\win32
-
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
-cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
-cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
-cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
-cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
-cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
-cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
-cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
-cd ..\..\..\
-mkdir share\glib-2.0\schemas
-cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
- /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
-
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
-      <Message>Installing GTK+ ...</Message>
-    </PreBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <PreBuildEvent>
-      <Command>d:
-cd $(ROOT_DIR)include
-mkdir gtk\gdk
-
-mkdir gtk\gdk\win32
-
-mkdir gtk\gdk\deprecated
-
-mkdir gtk\gdk\broadway
-mkdir gtk\gtk
-
-mkdir gtk\gtk\a11y
-
-mkdir gtk\gtk\deprecated
-
-mkdir libgail
-cd gtk\gdk\win32
-
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
-cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
-cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
-cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
-cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
-cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
-cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
-cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
-cd ..\..\..\
-mkdir share\glib-2.0\schemas
-cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
- /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
-
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
-      <Message>Installing GTK+ ...</Message>
-    </PreBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">
-    <PreBuildEvent>
-      <Command>d:
-cd $(ROOT_DIR)include
-mkdir gtk\gdk
-
-mkdir gtk\gdk\win32
-
-mkdir gtk\gdk\deprecated
-
-mkdir gtk\gdk\broadway
-mkdir gtk\gtk
-
-mkdir gtk\gtk\a11y
-
-mkdir gtk\gtk\deprecated
-
-mkdir libgail
-cd gtk\gdk\win32
-
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
@@ -408,7 +277,96 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+mkdir gtk\gdk\win32
+mkdir gtk\gdk\deprecated
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+mkdir gtk\gtk\a11y
+mkdir gtk\gtk\deprecated
+mkdir libgail
+cd gtk\gdk\win32
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+mkdir gtk\gdk\win32
+mkdir gtk\gdk\deprecated
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+mkdir gtk\gtk\a11y
+mkdir gtk\gtk\deprecated
+mkdir libgail
+cd gtk\gdk\win32
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
@@ -418,21 +376,14 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
       <Command>d:
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
-
 mkdir gtk\gdk\win32
-
 mkdir gtk\gdk\deprecated
-
 mkdir gtk\gdk\broadway
 mkdir gtk\gtk
-
 mkdir gtk\gtk\a11y
-
 mkdir gtk\gtk\deprecated
-
 mkdir libgail
 cd gtk\gdk\win32
-
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
@@ -457,12 +408,10 @@ cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
- /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -471,21 +420,14 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
       <Command>d:
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
-
 mkdir gtk\gdk\win32
-
 mkdir gtk\gdk\deprecated
-
 mkdir gtk\gdk\broadway
 mkdir gtk\gtk
-
 mkdir gtk\gtk\a11y
-
 mkdir gtk\gtk\deprecated
-
 mkdir libgail
 cd gtk\gdk\win32
-
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
@@ -510,12 +452,10 @@ cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
- /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
@@ -525,21 +465,14 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
       <Command>d:
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
-
 mkdir gtk\gdk\win32
-
 mkdir gtk\gdk\deprecated
-
 mkdir gtk\gdk\broadway
 mkdir gtk\gtk
-
 mkdir gtk\gtk\a11y
-
 mkdir gtk\gtk\deprecated
-
 mkdir libgail
 cd gtk\gdk\win32
-
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
@@ -564,12 +497,10 @@ cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
- /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>

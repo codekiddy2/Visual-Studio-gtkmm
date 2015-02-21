@@ -12,9 +12,9 @@
     <Node Id="Fontconfig" Category="Category1" Bounds="200.131666666667,302.510000000001,74.7366666666667,25.96" Label="fontconfig" />
     <Node Id="Freeglut" Category="Category2" Bounds="1068.84333333333,57.6475,61.3133333333335,25.9599999999999" Label="freeglut" />
     <Node Id="Freetype" Category="Category1" Bounds="400.656666666667,244.8625,63.6866666666665,25.9600000000003" Label="freetype" />
-    <Node Id="Glib" Category="Category1" Bounds="594.5,129.5675,50,25.96" Label="glib" />
+    <Node Id="Glib" Category="Category2" Bounds="594.5,129.5675,50,25.96" Label="glib" />
     <Node Id="Glibmm" Category="Category2" Bounds="725.196666666667,417.805,60.6066666666666,25.96" Label="glibmm" />
-    <Node Id="Gtk" Category="Category1" Bounds="221.5,475.452500000001,50,25.96" Label="gtk+" />
+    <Node Id="Gtk" Category="Category2" Bounds="221.5,475.452500000001,50,25.96" Label="gtk+" />
     <Node Id="Gtkmm" Category="Category1" Bounds="505.615,533.100000000001,57.77,25.96" Label="gtkmm" />
     <Node Id="Harfbuzz" Category="Category2" Bounds="410.738333333334,187.215,65.5233333333333,25.96" Label="harfbuzz" />
     <Node Id="Icon-theme" Category="Category2" Bounds="210.091666666667,417.805000000001,80.8166666666666,25.96" Label="icon-theme" />
@@ -58,7 +58,7 @@
     <Link Source="Freeglut" Target="Jasper" Bounds="1095.33110480948,83.6074999999999,3.08602533512203,36.9911570170126" Label="" LabelBounds="1100.87414152968,94.2893529427477,0.0999999999999091,15.96" />
     <Link Source="Freetype" Target="Cairo" Bounds="440.042911661391,270.8225,47.3922056211582,81.5534977177828" />
     <Link Source="Freetype" Target="Fontconfig" Bounds="283.322219401255,267.256287478633,117.334447265412,34.6873720447842" />
-    <Link Source="Freetype" Target="Harfbuzz" Bounds="432.215148925781,222.026031494141,4.43148803710938,22.8364715576172" />
+    <Link Source="Freetype" Target="Harfbuzz" Bounds="438.351531982422,222.031097412109,4.40695190429688,22.8314056396484" />
     <Link Source="Freetype" Target="Pango" Bounds="358.736634495841,270.8225,67.4588423244899,138.886914746466" />
     <Link Source="Glib" Target="Atk" Bounds="61.8744163513184,146.416046142578,532.625583648682,265.226348876953" />
     <Link Source="Glib" Target="Cairo" Bounds="504.826080322266,155.527496337891,107.154205322266,195.888946533203" />
@@ -76,7 +76,7 @@
     <Link Source="Gtk" Target="Gtkmm" Bounds="271.5,493.43662326389,225.290053934224,45.0951680006013" />
     <Link Source="Harfbuzz" Target="Cairo" Bounds="455.558532714844,213.175003051758,38.3460388183594,138.267684936523" />
     <Link Source="Harfbuzz" Target="Fontconfig" Bounds="268.545249185588,213.175,151.763111974914,84.9394562871254" />
-    <Link Source="Harfbuzz" Target="Freetype" Bounds="440.058776855469,213.175003051758,4.30267333984375,22.8509063720703" />
+    <Link Source="Harfbuzz" Target="Freetype" Bounds="433.987243652344,213.175003051758,4.29013061523438,22.8636779785156" />
     <Link Source="Harfbuzz" Target="Pango" Bounds="353.092651367188,213.175003051758,69.9403381347656,195.823532104492" />
     <Link Source="Icon-theme" Target="Gtk" Bounds="248.023633273247,443.765000000001,1.57572055822925,22.7090877201284" />
     <Link Source="Jasper" Target="Pixbuf" Bounds="928.117116112392,149.531508157277,139.577883887608,37.7761317437132" />

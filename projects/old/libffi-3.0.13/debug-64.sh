@@ -1,0 +1,1 @@
+./configure --enable-shared --enable-static CC="$(pwd)/msvcc.sh -m64" CXX=cl CPP='cl -nologo -EP' CXXCPP='cl -E' AR=lib LD=link CFLAGS='' CXXFLAGS='' CPPFLAGS='' LDFLAGS='' LIBS='' --build=x86_64-w64-mingw32 --prefix=/d/GitHub/Visual-Studio-gtkmm/output/Debug/x64

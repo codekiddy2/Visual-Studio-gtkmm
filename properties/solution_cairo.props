@@ -134,7 +134,7 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)\cairo-feat
 echo #endif &gt;&gt; $(SolutionDir)\cairo-features.h
 
 </GenTmpFeaturesHeader>
-    <SRC_DIR>$(REPO_DIR)projects\cairo-1.12.18\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\cairo-1.14.0\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_cairo</_PropertySheetDisplayName>
