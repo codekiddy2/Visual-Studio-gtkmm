@@ -77,7 +77,6 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PreLinkEventUseInBuild>
     <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PreLinkEventUseInBuild>
     <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PreLinkEventUseInBuild>
   </PropertyGroup>

@@ -84,6 +84,7 @@
       <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.dll.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -112,6 +113,7 @@
       <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.dll.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
