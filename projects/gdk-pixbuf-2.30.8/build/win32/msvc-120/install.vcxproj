@@ -73,13 +73,9 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ROOT_DIR)</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -90,6 +86,11 @@ cd $(ROOT_DIR)include
 mkdir gdk-pixbuf
 cd gdk-pixbuf
 copy $(SRC_DIR)gdk-pixbuf\*.h /Y
+cd $(LIB_DIR)
+if not exist gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion) mkdir gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)
+echo updating cache ..
+$(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+
 </Command>
       <Message>Installing gdk-pixbuf ...</Message>
     </PreBuildEvent>
@@ -102,6 +103,11 @@ cd $(ROOT_DIR)include
 mkdir gdk-pixbuf
 cd gdk-pixbuf
 copy $(SRC_DIR)gdk-pixbuf\*.h /Y
+cd $(LIB_DIR)
+if not exist gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion) mkdir gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)
+echo updating cache ..
+$(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+
 </Command>
       <Message>Installing gdk-pixbuf ...</Message>
     </PreBuildEvent>
@@ -114,6 +120,11 @@ cd $(ROOT_DIR)include
 mkdir gdk-pixbuf
 cd gdk-pixbuf
 copy $(SRC_DIR)gdk-pixbuf\*.h /Y
+cd $(LIB_DIR)
+if not exist gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion) mkdir gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)
+echo updating cache ..
+$(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+
 </Command>
       <Message>Installing gdk-pixbuf ...</Message>
     </PreBuildEvent>
@@ -126,6 +137,11 @@ cd $(ROOT_DIR)include
 mkdir gdk-pixbuf
 cd gdk-pixbuf
 copy $(SRC_DIR)gdk-pixbuf\*.h /Y
+cd $(LIB_DIR)
+if not exist gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion) mkdir gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)
+echo updating cache ..
+$(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+
 </Command>
       <Message>Installing gdk-pixbuf ...</Message>
     </PreBuildEvent>

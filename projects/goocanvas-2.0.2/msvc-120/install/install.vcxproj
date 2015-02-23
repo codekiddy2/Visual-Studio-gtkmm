@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6611649E-D6EB-4BC6-90F9-AF8337E8CCEE}</ProjectGuid>
+    <RootNamespace>install</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvas.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvas.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvas.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvas.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+if not exist goocanvas mkdir goocanvas
+cd goocanvas
+xcopy $(SRC_DIR)src\*.h /Y
+cd $(ROOT_DIR)share
+if not exist doc\goocanvas mkdir doc\goocanvas
+cd doc\goocanvas
+if not exist html mkdir html
+cd html
+xcopy $(SRC_DIR)docs\html\*.html /Y
+cd ..
+xcopy $(SRC_DIR)docs\*.xml /Y
+cd $(ROOT_DIR)share
+if not exist pkgconfig mkdir pkgconfig
+cd pkgconfig
+copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
+      <Message>installing goocanvas ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+if not exist goocanvas mkdir goocanvas
+cd goocanvas
+xcopy $(SRC_DIR)src\*.h /Y
+cd $(ROOT_DIR)share
+if not exist doc\goocanvas mkdir doc\goocanvas
+cd doc\goocanvas
+if not exist html mkdir html
+cd html
+xcopy $(SRC_DIR)docs\html\*.html /Y
+cd ..
+xcopy $(SRC_DIR)docs\*.xml /Y
+cd $(ROOT_DIR)share
+if not exist pkgconfig mkdir pkgconfig
+cd pkgconfig
+copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
+      <Message>installing goocanvas ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+if not exist goocanvas mkdir goocanvas
+cd goocanvas
+xcopy $(SRC_DIR)src\*.h /Y
+cd $(ROOT_DIR)share
+if not exist doc\goocanvas mkdir doc\goocanvas
+cd doc\goocanvas
+if not exist html mkdir html
+cd html
+xcopy $(SRC_DIR)docs\html\*.html /Y
+cd ..
+xcopy $(SRC_DIR)docs\*.xml /Y
+cd $(ROOT_DIR)share
+if not exist pkgconfig mkdir pkgconfig
+cd pkgconfig
+copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
+      <Message>installing goocanvas ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+if not exist goocanvas mkdir goocanvas
+cd goocanvas
+xcopy $(SRC_DIR)src\*.h /Y
+cd $(ROOT_DIR)share
+if not exist doc\goocanvas mkdir doc\goocanvas
+cd doc\goocanvas
+if not exist html mkdir html
+cd html
+xcopy $(SRC_DIR)docs\html\*.html /Y
+cd ..
+xcopy $(SRC_DIR)docs\*.xml /Y
+cd $(ROOT_DIR)share
+if not exist pkgconfig mkdir pkgconfig
+cd pkgconfig
+copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
+      <Message>installing goocanvas ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\goocanvas\goocanvas.vcxproj">
+      <Project>{bd10a7e5-43da-412b-9b78-7d6415f7bfea}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

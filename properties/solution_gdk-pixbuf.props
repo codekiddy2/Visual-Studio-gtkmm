@@ -5,7 +5,7 @@
     <GenerateGdkPixbufDef>echo EXPORTS &gt; $(INTERMEDIATE_DIR)gdk-pixbuf.def &amp;&amp; cl /EP -DG_OS_WIN32 -DINCLUDE_VARIABLES -DALL_FILES -DG_GNUC_CONST= -DG_GNUC_NULL_TERMINATED= ..\..\..\gdk-pixbuf\gdk-pixbuf.symbols &gt;&gt; $(INTERMEDIATE_DIR)gdk-pixbuf.def</GenerateGdkPixbufDef>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h</GenConfigH>
     <GdkPixbufBinaryVersion>2.30.8</GdkPixbufBinaryVersion>
-    <GdkPixbufDummyPrefix>D:\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32</GdkPixbufDummyPrefix>
+    <GdkPixbufDummyPrefix>D:\\GitHub\\Visual-Studio-gtkmm\\output\\$(Configuration)\\$(Platform)</GdkPixbufDummyPrefix>
     <SRC_DIR>$(REPO_DIR)projects\gdk-pixbuf-2.30.8\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />

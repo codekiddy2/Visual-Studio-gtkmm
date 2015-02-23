@@ -38,3 +38,4 @@ Following TODO's apply to "Redesign" branch
 34. create a new branch for most recent "unstable" builds, and get rid of "old" folder.
 35. create "user" properties for end use.
 36. remove VC-upgrade macros and properties, and then test projects.
+37. implement custom *.pc files for pkg-config

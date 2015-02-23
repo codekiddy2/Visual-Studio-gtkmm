@@ -148,12 +148,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
 mkdir gtk\gdk\win32
 mkdir gtk\gdk\deprecated
-mkdir gtk\gdk\broadway
 mkdir gtk\gtk
 mkdir gtk\gtk\a11y
 mkdir gtk\gtk\deprecated
@@ -162,13 +161,12 @@ cd gtk\gdk\win32
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
-cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
 cd ..
 xcopy $(SRC_DIR)gdk\*.h /Y
+copy gdk.h ..\
 cd ..\gtk
 xcopy $(SRC_DIR)gtk\*.h /Y
+copy gtk.h ..\
 cd deprecated
 xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
 cd ..\a11y
@@ -193,12 +191,11 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
 mkdir gtk\gdk\win32
 mkdir gtk\gdk\deprecated
-mkdir gtk\gdk\broadway
 mkdir gtk\gtk
 mkdir gtk\gtk\a11y
 mkdir gtk\gtk\deprecated
@@ -207,13 +204,12 @@ cd gtk\gdk\win32
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
-cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
 cd ..
 xcopy $(SRC_DIR)gdk\*.h /Y
+copy gdk.h ..\
 cd ..\gtk
 xcopy $(SRC_DIR)gtk\*.h /Y
+copy gtk.h ..\
 cd deprecated
 xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
 cd ..\a11y
@@ -238,12 +234,11 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
 mkdir gtk\gdk\win32
 mkdir gtk\gdk\deprecated
-mkdir gtk\gdk\broadway
 mkdir gtk\gtk
 mkdir gtk\gtk\a11y
 mkdir gtk\gtk\deprecated
@@ -252,13 +247,12 @@ cd gtk\gdk\win32
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
-cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
 cd ..
 xcopy $(SRC_DIR)gdk\*.h /Y
+copy gdk.h ..\
 cd ..\gtk
 xcopy $(SRC_DIR)gtk\*.h /Y
+copy gtk.h ..\
 cd deprecated
 xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
 cd ..\a11y
@@ -283,12 +277,11 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
 mkdir gtk\gdk\win32
 mkdir gtk\gdk\deprecated
-mkdir gtk\gdk\broadway
 mkdir gtk\gtk
 mkdir gtk\gtk\a11y
 mkdir gtk\gtk\deprecated
@@ -297,13 +290,12 @@ cd gtk\gdk\win32
 xcopy $(SRC_DIR)gdk\win32\*.h /Y
 cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
-cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
 cd ..
 xcopy $(SRC_DIR)gdk\*.h /Y
+copy gdk.h ..\
 cd ..\gtk
 xcopy $(SRC_DIR)gtk\*.h /Y
+copy gtk.h ..\
 cd deprecated
 xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
 cd ..\a11y
@@ -328,7 +320,7 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
 mkdir gtk\gdk\win32
@@ -344,11 +336,13 @@ cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
 cd ..\broadway
 xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
+copy gdkbroadway.h ..\
 cd ..
 xcopy $(SRC_DIR)gdk\*.h /Y
+copy gdk.h ..\
 cd ..\gtk
 xcopy $(SRC_DIR)gtk\*.h /Y
+copy gtk.h ..\
 cd deprecated
 xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
 cd ..\a11y
@@ -373,7 +367,7 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
 mkdir gtk\gdk\win32
@@ -389,11 +383,13 @@ cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
 cd ..\broadway
 xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
+copy gdkbroadway.h ..\
 cd ..
 xcopy $(SRC_DIR)gdk\*.h /Y
+copy gdk.h ..\
 cd ..\gtk
 xcopy $(SRC_DIR)gtk\*.h /Y
+copy gtk.h ..\
 cd deprecated
 xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
 cd ..\a11y
@@ -417,7 +413,7 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
 mkdir gtk\gdk\win32
@@ -433,11 +429,13 @@ cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
 cd ..\broadway
 xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
+copy gdkbroadway.h ..\
 cd ..
 xcopy $(SRC_DIR)gdk\*.h /Y
+copy gdk.h ..\
 cd ..\gtk
 xcopy $(SRC_DIR)gtk\*.h /Y
+copy gtk.h ..\
 cd deprecated
 xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
 cd ..\a11y
@@ -462,7 +460,7 @@ $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Comma
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">
     <PreBuildEvent>
-      <Command>d:
+      <Command>$(DRIVE):
 cd $(ROOT_DIR)include
 mkdir gtk\gdk
 mkdir gtk\gdk\win32
@@ -478,11 +476,13 @@ cd ..\deprecated
 xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
 cd ..\broadway
 xcopy $(SRC_DIR)gdk\broadway\*.h /Y
-move gdkbroadway.h ..\
+copy gdkbroadway.h ..\
 cd ..
 xcopy $(SRC_DIR)gdk\*.h /Y
+copy gdk.h ..\
 cd ..\gtk
 xcopy $(SRC_DIR)gtk\*.h /Y
+copy gtk.h ..\
 cd deprecated
 xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
 cd ..\a11y
