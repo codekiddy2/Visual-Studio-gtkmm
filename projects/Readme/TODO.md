@@ -31,3 +31,9 @@ Following TODO's apply to "Redesign" branch
 27. rename projects so that the name is the same as in solutions
 28. create ICU project to optionally link with harbuzz
 29. RETURN "TEST CALLER APP" BACK TO FFI! test with older versions!
+30. check for config header for consistency such as targeted widnows.
+31. rename gtk_stack.props into stack_gtk.props and update projects
+32. add "setup" solution and root property page for base path (REPO_DIR...)
+33. move readme folder into root of repository
+34. create a new branch for most recent "unstable" builds, and get rid of "old" folder.
+35. create "user" properties for end use.
