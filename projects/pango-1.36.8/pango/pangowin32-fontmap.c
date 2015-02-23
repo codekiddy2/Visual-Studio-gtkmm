@@ -244,51 +244,27 @@ synthesize_foreach (gpointer key,
     {
       PangoWin32Face *win32face = p->data;
 
-	  // codekiddy
-	  PangoWeight weight = pango_font_description_get_weight(win32face->description);
-	  PangoStyle style = pango_font_description_get_style(win32face->description);
-
       /* Don't synthesize anything unless it's a monospace, serif, or sans font */
- //     if (!((win32face->logfontw.lfPitchAndFamily & 0xF0) == FF_MODERN ||
-	//    (win32face->logfontw.lfPitchAndFamily & 0xF0) == FF_ROMAN ||
-	//    (win32face->logfontw.lfPitchAndFamily & 0xF0) == FF_SWISS))
-	//return;
+      if (!((win32face->logfontw.lfPitchAndFamily & 0xF0) == FF_MODERN ||
+	    (win32face->logfontw.lfPitchAndFamily & 0xF0) == FF_ROMAN ||
+	    (win32face->logfontw.lfPitchAndFamily & 0xF0) == FF_SWISS))
+	return;
 
- //     if (pango_font_description_get_weight (win32face->description) == PANGO_WEIGHT_NORMAL &&
-	//  pango_font_description_get_style (win32face->description) == PANGO_STYLE_NORMAL)
-	//variant[NORMAL] = win32face;
+      if (pango_font_description_get_weight (win32face->description) == PANGO_WEIGHT_NORMAL &&
+	  pango_font_description_get_style (win32face->description) == PANGO_STYLE_NORMAL)
+	variant[NORMAL] = win32face;
 
- //     if (pango_font_description_get_weight (win32face->description) > PANGO_WEIGHT_NORMAL &&
-	//  pango_font_description_get_style (win32face->description) == PANGO_STYLE_NORMAL)
-	//variant[BOLDER] = win32face;
+      if (pango_font_description_get_weight (win32face->description) > PANGO_WEIGHT_NORMAL &&
+	  pango_font_description_get_style (win32face->description) == PANGO_STYLE_NORMAL)
+	variant[BOLDER] = win32face;
 
- //     if (pango_font_description_get_weight (win32face->description) == PANGO_WEIGHT_NORMAL &&
-	//  pango_font_description_get_style (win32face->description) >= PANGO_STYLE_OBLIQUE)
-	//variant[SLANTED] = win32face;
+      if (pango_font_description_get_weight (win32face->description) == PANGO_WEIGHT_NORMAL &&
+	  pango_font_description_get_style (win32face->description) >= PANGO_STYLE_OBLIQUE)
+	variant[SLANTED] = win32face;
 
- //     if (pango_font_description_get_weight (win32face->description) > PANGO_WEIGHT_NORMAL &&
-	//  pango_font_description_get_style (win32face->description) >= PANGO_STYLE_OBLIQUE)
-	//variant[BOLDER+SLANTED] = win32face;
-
-	  gboolean weight_is_normal =
-		  weight > (PANGO_WEIGHT_LIGHT + PANGO_WEIGHT_NORMAL) / 2 &&
-		  weight <= (PANGO_WEIGHT_NORMAL + PANGO_WEIGHT_SEMIBOLD) / 2;
-	  
-		  gboolean weight_is_bolder =
-		  weight > (PANGO_WEIGHT_NORMAL + PANGO_WEIGHT_SEMIBOLD) / 2;
-	  
-		  if (weight_is_normal && style == PANGO_STYLE_NORMAL)
-		  variant[NORMAL] = win32face;
-	  
-		  else if (weight_is_bolder && style == PANGO_STYLE_NORMAL)
-		  variant[BOLDER] = win32face;
-	  
-		  else if (weight_is_normal && style >= PANGO_STYLE_OBLIQUE)
-		  variant[SLANTED] = win32face;
-	  
-		  else if (weight_is_bolder && style >= PANGO_STYLE_OBLIQUE)
-		  variant[BOLDER + SLANTED] = win32face;
-		  // end of patch codekiddy
+      if (pango_font_description_get_weight (win32face->description) > PANGO_WEIGHT_NORMAL &&
+	  pango_font_description_get_style (win32face->description) >= PANGO_STYLE_OBLIQUE)
+	variant[BOLDER+SLANTED] = win32face;
 
       p = p->next;
     }
@@ -344,8 +320,6 @@ struct PangoAlias
   gboolean visible; /* Do we want/need this? */
 };
 
-static GHashTable *pango_aliases_ht = NULL; /* MT-unsafe */
-
 static guint
 alias_hash (struct PangoAlias *alias)
 {
@@ -375,8 +349,9 @@ alias_free (struct PangoAlias *alias)
 }
 
 static void
-handle_alias_line (GString  *line_buffer,
-                   char    **errstring)
+handle_alias_line (GString    *line_buffer,
+                   char       **errstring,
+                   GHashTable *ht_aliases)
 {
   GString *tmp_buffer1;
   GString *tmp_buffer2;
@@ -428,14 +403,14 @@ handle_alias_line (GString  *line_buffer,
   alias_key.alias = g_ascii_strdown (tmp_buffer1->str, -1);
 
   /* Remove any existing values */
-  alias = g_hash_table_lookup (pango_aliases_ht, &alias_key);
+  alias = g_hash_table_lookup (ht_aliases, &alias_key);
 
   if (!alias)
     {
       alias = g_slice_new0 (struct PangoAlias);
       alias->alias = alias_key.alias;
 
-      g_hash_table_insert (pango_aliases_ht, alias, alias);
+      g_hash_table_insert (ht_aliases, alias, alias);
     }
   else
     g_free (alias_key.alias);
@@ -492,7 +467,7 @@ static const char * const builtin_aliases[] = {
 };
 
 static void
-read_builtin_aliases (void)
+read_builtin_aliases (GHashTable *ht_aliases)
 {
 
   GString *line_buffer;
@@ -504,7 +479,7 @@ read_builtin_aliases (void)
   for (line = 0; line < G_N_ELEMENTS (builtin_aliases) && errstring == NULL; line++)
     {
       g_string_assign (line_buffer, builtin_aliases[line]);
-      handle_alias_line (line_buffer, &errstring);
+      handle_alias_line (line_buffer, &errstring, ht_aliases);
     }
 
   if (errstring)
@@ -519,7 +494,7 @@ read_builtin_aliases (void)
 
 
 static void
-read_alias_file (const char *filename)
+read_alias_file (const char *filename, GHashTable *ht_aliases)
 {
   FILE *file;
 
@@ -537,7 +512,7 @@ read_alias_file (const char *filename)
          errstring == NULL)
     {
       line++;
-      handle_alias_line (line_buffer, &errstring);
+      handle_alias_line (line_buffer, &errstring, ht_aliases);
     }
 
   if (errstring == NULL && ferror (file))
@@ -554,25 +529,25 @@ read_alias_file (const char *filename)
   fclose (file);
 }
 
-static void
+static GHashTable *
 load_aliases (void)
 {
   char *filename;
   const char *home;
 
-  pango_aliases_ht = g_hash_table_new_full ((GHashFunc)alias_hash,
-                                            (GEqualFunc)alias_equal,
-                                            (GDestroyNotify)alias_free,
-                                            NULL);
+  GHashTable *ht_aliases = g_hash_table_new_full ((GHashFunc)alias_hash,
+                                                  (GEqualFunc)alias_equal,
+                                                  (GDestroyNotify)alias_free,
+                                                  NULL);
 
 #ifdef HAVE_CAIRO_WIN32
-  read_builtin_aliases ();
+  read_builtin_aliases (ht_aliases);
 #endif
 
   filename = g_strconcat (pango_get_sysconf_subdirectory (),
                           G_DIR_SEPARATOR_S "pango.aliases",
                           NULL);
-  read_alias_file (filename);
+  read_alias_file (filename, ht_aliases);
   g_free (filename);
 
   home = g_get_home_dir ();
@@ -581,9 +556,10 @@ load_aliases (void)
       filename = g_strconcat (home,
                               G_DIR_SEPARATOR_S ".pango.aliases",
                               NULL);
-      read_alias_file (filename);
+      read_alias_file (filename, ht_aliases);
       g_free (filename);
     }
+  return ht_aliases;
 }
 
 static void
@@ -591,14 +567,18 @@ lookup_aliases (const char   *fontname,
                 char       ***families,
                 int          *n_families)
 {
+  static GHashTable *aliases_ht = NULL; /* MT-safe */
+
   struct PangoAlias alias_key;
   struct PangoAlias *alias;
 
-  if (pango_aliases_ht == NULL)
-    load_aliases ();
+  if (g_once_init_enter (&aliases_ht))
+    {
+      g_once_init_leave (&aliases_ht, load_aliases ());
+    }
 
   alias_key.alias = g_ascii_strdown (fontname, -1);
-  alias = g_hash_table_lookup (pango_aliases_ht, &alias_key);
+  alias = g_hash_table_lookup (aliases_ht, &alias_key);
   g_free (alias_key.alias);
 
   if (alias)
@@ -760,7 +740,7 @@ _pango_win32_font_map_class_init (PangoWin32FontMapClass *class)
 /**
  * pango_win32_font_map_for_display:
  *
- * Returns a #PangoWin32FontMap. Font maps are cached and should
+ * Returns a <type>PangoWin32FontMap</type>. Font maps are cached and should
  * not be freed. If the font map is no longer needed, it can
  * be released with pango_win32_shutdown_display().
  *
@@ -1216,26 +1196,11 @@ pango_win32_font_description_from_logfont (const LOGFONT *lfp)
 
   variant = PANGO_VARIANT_NORMAL;
 
-  /* The PangoWeight values PANGO_WEIGHT_* map exactly do Windows FW_*
-   * values.  Is this on purpose? Quantize the weight to exact
-   * PANGO_WEIGHT_* values. Is this a good idea?
-   */
   if (lfp->lfWeight == FW_DONTCARE)
     weight = PANGO_WEIGHT_NORMAL;
-  else if (lfp->lfWeight <= (FW_ULTRALIGHT + FW_LIGHT) / 2)
-    weight = PANGO_WEIGHT_ULTRALIGHT;
-  else if (lfp->lfWeight <= (FW_LIGHT + FW_NORMAL) / 2)
-    weight = PANGO_WEIGHT_LIGHT;
-  else if (lfp->lfWeight <= (FW_NORMAL + FW_SEMIBOLD) / 2)
-    weight = PANGO_WEIGHT_NORMAL;
-  else if (lfp->lfWeight <= (FW_SEMIBOLD + FW_BOLD) / 2)
-    weight = PANGO_WEIGHT_SEMIBOLD;
-  else if (lfp->lfWeight <= (FW_BOLD + FW_ULTRABOLD) / 2)
-    weight = PANGO_WEIGHT_BOLD;
-  else if (lfp->lfWeight <= (FW_ULTRABOLD + FW_HEAVY) / 2)
-    weight = PANGO_WEIGHT_ULTRABOLD;
   else
-    weight = PANGO_WEIGHT_HEAVY;
+    /* The PangoWeight values PANGO_WEIGHT_* map exactly to Windows FW_*. */
+    weight = (PangoWeight) lfp->lfWeight;
 
   /* XXX No idea how to figure out the stretch */
   stretch = PANGO_STRETCH_NORMAL;
@@ -1416,26 +1381,11 @@ pango_win32_font_description_from_logfontw (const LOGFONTW *lfp)
 
   variant = PANGO_VARIANT_NORMAL;
 
-  /* The PangoWeight values PANGO_WEIGHT_* map exactly do Windows FW_*
-   * values.  Is this on purpose? Quantize the weight to exact
-   * PANGO_WEIGHT_* values. Is this a good idea?
-   */
   if (lfp->lfWeight == FW_DONTCARE)
     weight = PANGO_WEIGHT_NORMAL;
-  else if (lfp->lfWeight <= (FW_ULTRALIGHT + FW_LIGHT) / 2)
-    weight = PANGO_WEIGHT_ULTRALIGHT;
-  else if (lfp->lfWeight <= (FW_LIGHT + FW_NORMAL) / 2)
-    weight = PANGO_WEIGHT_LIGHT;
-  else if (lfp->lfWeight <= (FW_NORMAL + FW_SEMIBOLD) / 2)
-    weight = PANGO_WEIGHT_NORMAL;
-  else if (lfp->lfWeight <= (FW_SEMIBOLD + FW_BOLD) / 2)
-    weight = PANGO_WEIGHT_SEMIBOLD;
-  else if (lfp->lfWeight <= (FW_BOLD + FW_ULTRABOLD) / 2)
-    weight = PANGO_WEIGHT_BOLD;
-  else if (lfp->lfWeight <= (FW_ULTRABOLD + FW_HEAVY) / 2)
-    weight = PANGO_WEIGHT_ULTRABOLD;
   else
-    weight = PANGO_WEIGHT_HEAVY;
+    /* The PangoWeight values PANGO_WEIGHT_* map exactly to Windows FW_*. */
+    weight = (PangoWeight) lfp->lfWeight;
 
   /* XXX No idea how to figure out the stretch */
   stretch = PANGO_STRETCH_NORMAL;
@@ -1682,7 +1632,7 @@ pango_win32_face_list_sizes (PangoFontFace  *face,
 
 /**
  * pango_win32_font_map_get_font_cache:
- * @font_map: a #PangoWin32FontMap.
+ * @font_map: a <type>PangoWin32FontMap</type>.
  *
  * Obtains the font cache associated with the given font map.
  *

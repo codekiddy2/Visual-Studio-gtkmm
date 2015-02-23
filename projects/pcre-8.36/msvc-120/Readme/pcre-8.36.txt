@@ -62,5 +62,6 @@ TESTINGS:
 TODO:
 Create projects for 8 and 16 bit version, also dll/static versions.
 also project for C++
+clean not needed files in msvc-120 folder
 	
 
