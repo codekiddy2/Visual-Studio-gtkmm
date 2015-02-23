@@ -96,8 +96,8 @@ xcopy $(SRC_DIR)goocanvas\goocanvasmm\*.h /Y
 cd ..
 xcopy $(SRC_DIR)goocanvas\goocanvasmm.h /Y
 cd $(LIB_DIR)
-if not exist goocanvasmm\include mkdir goocanvasmm\include
-cd goocanvasmm\include
+if not exist goocanvasmm mkdir goocanvasmm
+cd goocanvasmm
 copy $(SRC_DIR)goocanvas\goocanvasmmconfig.h
 cd $(ROOT_DIR)share
 if not exist pkgconfig mkdir pkgconfig
@@ -132,8 +132,8 @@ xcopy $(SRC_DIR)goocanvas\goocanvasmm\*.h /Y
 cd ..
 xcopy $(SRC_DIR)goocanvas\goocanvasmm.h /Y
 cd $(LIB_DIR)
-if not exist goocanvasmm\include mkdir goocanvasmm\include
-cd goocanvasmm\include
+if not exist goocanvasmm mkdir goocanvasmm
+cd goocanvasmm
 copy $(SRC_DIR)goocanvas\goocanvasmmconfig.h
 cd $(ROOT_DIR)share
 if not exist pkgconfig mkdir pkgconfig
@@ -168,8 +168,8 @@ xcopy $(SRC_DIR)goocanvas\goocanvasmm\*.h /Y
 cd ..
 xcopy $(SRC_DIR)goocanvas\goocanvasmm.h /Y
 cd $(LIB_DIR)
-if not exist goocanvasmm\include mkdir goocanvasmm\include
-cd goocanvasmm\include
+if not exist goocanvasmm mkdir goocanvasmm
+cd goocanvasmm
 copy $(SRC_DIR)goocanvas\goocanvasmmconfig.h
 cd $(ROOT_DIR)share
 if not exist pkgconfig mkdir pkgconfig
@@ -204,8 +204,8 @@ xcopy $(SRC_DIR)goocanvas\goocanvasmm\*.h /Y
 cd ..
 xcopy $(SRC_DIR)goocanvas\goocanvasmm.h /Y
 cd $(LIB_DIR)
-if not exist goocanvasmm\include mkdir goocanvasmm\include
-cd goocanvasmm\include
+if not exist goocanvasmm mkdir goocanvasmm
+cd goocanvasmm
 copy $(SRC_DIR)goocanvas\goocanvasmmconfig.h
 cd $(ROOT_DIR)share
 if not exist pkgconfig mkdir pkgconfig

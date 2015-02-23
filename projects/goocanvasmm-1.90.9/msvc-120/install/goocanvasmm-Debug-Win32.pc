@@ -16,4 +16,4 @@ Version: 1.90.9
 URL: http://www.gtkmm.org/
 Requires: glibmm-2.4 >= 2.14.2 gtkmm-3.0 >= 2.91.3 goocanvas-2.0 >= 2.0.1
 Libs: -L${libdir} -lgoocanvasmm
-Cflags: -I${includedir}/goocanvasmm -I${libdir}/goocanvasmm/include
+Cflags: -I${includedir}/goocanvasmm -I${libdir}/goocanvasmm

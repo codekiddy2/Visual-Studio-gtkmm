@@ -206,6 +206,12 @@ copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.p
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="goocanvas-Debug-Win32.pc" />
+    <None Include="goocanvas-Debug-x64.pc" />
+    <None Include="goocanvas-Release-Win32.pc" />
+    <None Include="goocanvas-Release-x64.pc" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
