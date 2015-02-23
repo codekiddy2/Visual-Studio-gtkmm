@@ -1,4 +1,4 @@
-prefix=/d/GitHub/Visual-Studio-gtkmm/output/Debug/x64
+prefix=/d/GitHub/Visual-Studio-gtkmm/output/Release/Win32
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

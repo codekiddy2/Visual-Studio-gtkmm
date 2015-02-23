@@ -7,19 +7,19 @@ solution created by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 **************************************************************************************************************************************************************************
 INFO:
 solution version = 1.1.0
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\goocanvas-2.0.2\msvc-120
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\goocanvasmm-1.90.9\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://ftp.gnome.org/pub/GNOME/sources/goocanvas/
+official sources: http://ftp.gnome.org/pub/GNOME/sources/goocanvasmm/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-glib
+glibmm
 gdk-pixbuf
-cairo
-pango
-atk
-gtk
+cairomm
+pangomm
+gtkmm
+sigc++
 gobject-introspection (optinal)
 intl (optional)
 unistd (optional)
@@ -32,8 +32,6 @@ Open Visual Studio solution select configuration and build.
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-test project should not show any errors/warning in console output, if it does, make sure
-gdk-pixbuf-query-loaders did it's job in "Install" project during gdk-pixbuf compilation.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

@@ -39,3 +39,4 @@ Following TODO's apply to "Redesign" branch
 35. create "user" properties for end use.
 36. remove VC-upgrade macros and properties, and then test projects.
 37. implement custom *.pc files for pkg-config
+38. check linker library inputs because some properties added new linker inputs, no need to specify an input 2 times.
