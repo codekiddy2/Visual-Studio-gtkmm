@@ -187,6 +187,8 @@ xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
 echo installing documentation ...
+cd $(LIB_DIR)
+if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
@@ -241,6 +243,8 @@ xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
 echo installing documentation ...
+cd $(LIB_DIR)
+if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
@@ -295,6 +299,8 @@ xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
 echo installing documentation ...
+cd $(LIB_DIR)
+if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
@@ -349,6 +355,8 @@ xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
 echo installing documentation ...
+cd $(LIB_DIR)
+if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
@@ -406,6 +414,8 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+cd $(LIB_DIR)
+if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
@@ -464,6 +474,8 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+cd $(LIB_DIR)
+if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
@@ -521,6 +533,8 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+cd $(LIB_DIR)
+if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
@@ -579,6 +593,8 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+cd $(LIB_DIR)
+if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html

@@ -410,11 +410,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -430,11 +429,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -450,11 +448,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -470,11 +467,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -490,11 +486,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -510,11 +505,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -530,11 +524,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -550,11 +543,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -570,11 +562,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -590,11 +581,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -610,11 +600,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -630,11 +619,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -650,11 +638,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -670,11 +657,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -690,11 +676,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -710,11 +695,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -730,11 +714,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -750,11 +733,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -770,11 +752,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -790,11 +771,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -810,11 +790,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -830,11 +809,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -850,11 +828,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html
@@ -870,11 +847,10 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configura
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairo\cairo mkdir cairo\cairo
-cd cairo\cairo
+if not exist cairo mkdir cairo
+cd cairo
 echo installing headers ...
 xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
-xcopy cairo.h ..\ /Y
 cd $(REF_DIR)
 if not exist cairo\html mkdir cairo\html
 cd cairo\html

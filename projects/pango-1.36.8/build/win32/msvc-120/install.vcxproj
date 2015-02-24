@@ -152,6 +152,8 @@ echo installing headers ..
 xcopy $(SRC_DIR)pango\*.h /Y
 xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
+cd $(LIB_DIR)
+if not exist pango\1.8.0 mkdir pango\1.8.0
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -176,6 +178,8 @@ echo installing headers ..
 xcopy $(SRC_DIR)pango\*.h /Y
 xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
+cd $(LIB_DIR)
+if not exist pango\1.8.0 mkdir pango\1.8.0
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -200,6 +204,8 @@ echo installing headers ..
 xcopy $(SRC_DIR)pango\*.h /Y
 xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
+cd $(LIB_DIR)
+if not exist pango\1.8.0 mkdir pango\1.8.0
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -224,6 +230,8 @@ echo installing headers ..
 xcopy $(SRC_DIR)pango\*.h /Y
 xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
+cd $(LIB_DIR)
+if not exist pango\1.8.0 mkdir pango\1.8.0
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -248,6 +256,8 @@ echo installing headers ..
 xcopy $(SRC_DIR)pango\*.h /Y
 xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
+cd $(LIB_DIR)
+if not exist pango\1.8.0 mkdir pango\1.8.0
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -272,6 +282,8 @@ echo installing headers ..
 xcopy $(SRC_DIR)pango\*.h /Y
 xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
+cd $(LIB_DIR)
+if not exist pango\1.8.0 mkdir pango\1.8.0
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -295,6 +307,8 @@ echo installing headers ..
 xcopy $(SRC_DIR)pango\*.h /Y
 xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
+cd $(LIB_DIR)
+if not exist pango\1.8.0 mkdir pango\1.8.0
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -319,6 +333,8 @@ echo installing headers ..
 xcopy $(SRC_DIR)pango\*.h /Y
 xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
+cd $(LIB_DIR)
+if not exist pango\1.8.0 mkdir pango\1.8.0
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
