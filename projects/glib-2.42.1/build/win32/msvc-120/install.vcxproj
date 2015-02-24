@@ -89,7 +89,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
+cd $(INCLUDE_DIR)
 mkdir glib
 cd glib
 mkdir glib
@@ -99,6 +99,7 @@ mkdir ..\gio-win32
 cd ..\gio-win32
 mkdir gio
 cd gio
+echo installing headers ...
 copy $(SRC_DIR)gio\gwin32inputstream.h /Y
 copy $(SRC_DIR)gio\gwin32outputstream.h /Y
 cd ..\..\glib\glib
@@ -116,26 +117,34 @@ copy $(SRC_DIR)gobject\*.h /Y
 copy $(SRC_DIR)gobject\gobjectnotifyqueue.c /Y
 cd ..\
 copy $(SRC_DIR)gmodule\gmodule.h /Y
-cd ..\..\lib
-mkdir glib
-cd glib
-mkdir include
-cd include
+cd $(LIB_DIR)
+mkdir glib\include
+cd glib\include
 copy .\..\..\..\include\glib\glib\glibconfig.h /Y
-mkdir ..\..\..\share
 cd ..\..\..\share\
 mkdir glib-2.0
 cd glib-2.0
 mkdir schemas
 cd schemas
+echo installing schemas ...
 copy $(SRC_DIR)gio\gschema.dtd /Y
 mkdir ..\codegen
 cd ..\codegen
 copy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py /Y
-cd $(ROOT_DIR)bin
+cd $(BIN_DIR)
 copy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen /Y
 copy $(SRC_DIR)gobject\glib-mkenums /Y
-echo Installing done!</Command>
+cd $(REF_DIR)
+echo installing documentation ...
+if not exist glib\html mkdir glib\html
+if not exist gio\html mkdir gio\html
+if not exist gobject\html mkdir gobject\html
+cd glib\html
+xcopy $(SRC_DIR)docs\reference\glib\html /Y
+cd ..\..\gio\html
+xcopy $(SRC_DIR)docs\reference\gio\html /Y
+cd ..\..\gobject\html
+xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
       <Message>Installing Build Results ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -143,7 +152,7 @@ echo Installing done!</Command>
     <CustomBuild />
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
+cd $(INCLUDE_DIR)
 mkdir glib
 cd glib
 mkdir glib
@@ -153,6 +162,7 @@ mkdir ..\gio-win32
 cd ..\gio-win32
 mkdir gio
 cd gio
+echo installing headers ...
 copy $(SRC_DIR)gio\gwin32inputstream.h /Y
 copy $(SRC_DIR)gio\gwin32outputstream.h /Y
 cd ..\..\glib\glib
@@ -170,33 +180,41 @@ copy $(SRC_DIR)gobject\*.h /Y
 copy $(SRC_DIR)gobject\gobjectnotifyqueue.c /Y
 cd ..\
 copy $(SRC_DIR)gmodule\gmodule.h /Y
-cd ..\..\lib
-mkdir glib
-cd glib
-mkdir include
-cd include
+cd $(LIB_DIR)
+mkdir glib\include
+cd glib\include
 copy .\..\..\..\include\glib\glib\glibconfig.h /Y
-mkdir ..\..\..\share
 cd ..\..\..\share\
 mkdir glib-2.0
 cd glib-2.0
 mkdir schemas
 cd schemas
+echo installing schemas ...
 copy $(SRC_DIR)gio\gschema.dtd /Y
 mkdir ..\codegen
 cd ..\codegen
 copy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py /Y
-cd $(ROOT_DIR)bin
+cd $(BIN_DIR)
 copy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen /Y
 copy $(SRC_DIR)gobject\glib-mkenums /Y
-echo Installing done!</Command>
+cd $(REF_DIR)
+echo installing documentation ...
+if not exist glib\html mkdir glib\html
+if not exist gio\html mkdir gio\html
+if not exist gobject\html mkdir gobject\html
+cd glib\html
+xcopy $(SRC_DIR)docs\reference\glib\html /Y
+cd ..\..\gio\html
+xcopy $(SRC_DIR)docs\reference\gio\html /Y
+cd ..\..\gobject\html
+xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
       <Message>Installing Build Results ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
+cd $(INCLUDE_DIR)
 mkdir glib
 cd glib
 mkdir glib
@@ -206,6 +224,7 @@ mkdir ..\gio-win32
 cd ..\gio-win32
 mkdir gio
 cd gio
+echo installing headers ...
 copy $(SRC_DIR)gio\gwin32inputstream.h /Y
 copy $(SRC_DIR)gio\gwin32outputstream.h /Y
 cd ..\..\glib\glib
@@ -223,33 +242,41 @@ copy $(SRC_DIR)gobject\*.h /Y
 copy $(SRC_DIR)gobject\gobjectnotifyqueue.c /Y
 cd ..\
 copy $(SRC_DIR)gmodule\gmodule.h /Y
-cd ..\..\lib
-mkdir glib
-cd glib
-mkdir include
-cd include
+cd $(LIB_DIR)
+mkdir glib\include
+cd glib\include
 copy .\..\..\..\include\glib\glib\glibconfig.h /Y
-mkdir ..\..\..\share
 cd ..\..\..\share\
 mkdir glib-2.0
 cd glib-2.0
 mkdir schemas
 cd schemas
+echo installing schemas ...
 copy $(SRC_DIR)gio\gschema.dtd /Y
 mkdir ..\codegen
 cd ..\codegen
 copy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py /Y
-cd $(ROOT_DIR)bin
+cd $(BIN_DIR)
 copy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen /Y
 copy $(SRC_DIR)gobject\glib-mkenums /Y
-echo Installing done!</Command>
+cd $(REF_DIR)
+echo installing documentation ...
+if not exist glib\html mkdir glib\html
+if not exist gio\html mkdir gio\html
+if not exist gobject\html mkdir gobject\html
+cd glib\html
+xcopy $(SRC_DIR)docs\reference\glib\html /Y
+cd ..\..\gio\html
+xcopy $(SRC_DIR)docs\reference\gio\html /Y
+cd ..\..\gobject\html
+xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
       <Message>Installing Build Results ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
+cd $(INCLUDE_DIR)
 mkdir glib
 cd glib
 mkdir glib
@@ -259,6 +286,7 @@ mkdir ..\gio-win32
 cd ..\gio-win32
 mkdir gio
 cd gio
+echo installing headers ...
 copy $(SRC_DIR)gio\gwin32inputstream.h /Y
 copy $(SRC_DIR)gio\gwin32outputstream.h /Y
 cd ..\..\glib\glib
@@ -276,26 +304,34 @@ copy $(SRC_DIR)gobject\*.h /Y
 copy $(SRC_DIR)gobject\gobjectnotifyqueue.c /Y
 cd ..\
 copy $(SRC_DIR)gmodule\gmodule.h /Y
-cd ..\..\lib
-mkdir glib
-cd glib
-mkdir include
-cd include
+cd $(LIB_DIR)
+mkdir glib\include
+cd glib\include
 copy .\..\..\..\include\glib\glib\glibconfig.h /Y
-mkdir ..\..\..\share
 cd ..\..\..\share\
 mkdir glib-2.0
 cd glib-2.0
 mkdir schemas
 cd schemas
+echo installing schemas ...
 copy $(SRC_DIR)gio\gschema.dtd /Y
 mkdir ..\codegen
 cd ..\codegen
 copy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py /Y
-cd $(ROOT_DIR)bin
+cd $(BIN_DIR)
 copy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen /Y
 copy $(SRC_DIR)gobject\glib-mkenums /Y
-echo Installing done!</Command>
+cd $(REF_DIR)
+echo installing documentation ...
+if not exist glib\html mkdir glib\html
+if not exist gio\html mkdir gio\html
+if not exist gobject\html mkdir gobject\html
+cd glib\html
+xcopy $(SRC_DIR)docs\reference\glib\html /Y
+cd ..\..\gio\html
+xcopy $(SRC_DIR)docs\reference\gio\html /Y
+cd ..\..\gobject\html
+xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
       <Message>Installing Build Results ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>

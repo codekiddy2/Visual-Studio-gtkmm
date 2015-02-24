@@ -99,14 +99,21 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\cairomm mkdir include\cairomm
-cd include\cairomm
+cd $(INCLUDE_DIR)
+if not exist cairomm\cairomm mkdir cairomm\cairomm
+cd cairomm\cairomm
+echo installing headers ...
 xcopy $(SRC_DIR)cairomm\*.h /Y
+copy cairomm.h ..\
 cd $(LIB_DIR)
-if not exist cairomm mkdir cairomm
-cd cairomm
-copy $(SolutionDir)cairomm\cairommconfig.h</Command>
+if not exist cairomm\include mkdir cairomm\include
+cd cairomm\include
+copy $(SolutionDir)cairomm\cairommconfig.h /Y
+cd $(REF_DIR)
+if not exist cairomm\html mkdir cairomm\html
+cd cairomm\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -120,14 +127,21 @@ copy $(SolutionDir)cairomm\cairommconfig.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\cairomm mkdir include\cairomm
-cd include\cairomm
+cd $(INCLUDE_DIR)
+if not exist cairomm\cairomm mkdir cairomm\cairomm
+cd cairomm\cairomm
+echo installing headers ...
 xcopy $(SRC_DIR)cairomm\*.h /Y
+copy cairomm.h ..\
 cd $(LIB_DIR)
-if not exist cairomm mkdir cairomm
-cd cairomm
-copy $(SolutionDir)cairomm\cairommconfig.h</Command>
+if not exist cairomm\include mkdir cairomm\include
+cd cairomm\include
+copy $(SolutionDir)cairomm\cairommconfig.h /Y
+cd $(REF_DIR)
+if not exist cairomm\html mkdir cairomm\html
+cd cairomm\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -145,14 +159,21 @@ copy $(SolutionDir)cairomm\cairommconfig.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\cairomm mkdir include\cairomm
-cd include\cairomm
+cd $(INCLUDE_DIR)
+if not exist cairomm\cairomm mkdir cairomm\cairomm
+cd cairomm\cairomm
+echo installing headers ...
 xcopy $(SRC_DIR)cairomm\*.h /Y
+copy cairomm.h ..\
 cd $(LIB_DIR)
-if not exist cairomm mkdir cairomm
-cd cairomm
-copy $(SolutionDir)cairomm\cairommconfig.h</Command>
+if not exist cairomm\include mkdir cairomm\include
+cd cairomm\include
+copy $(SolutionDir)cairomm\cairommconfig.h /Y
+cd $(REF_DIR)
+if not exist cairomm\html mkdir cairomm\html
+cd cairomm\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -170,14 +191,21 @@ copy $(SolutionDir)cairomm\cairommconfig.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\cairomm mkdir include\cairomm
-cd include\cairomm
+cd $(INCLUDE_DIR)
+if not exist cairomm\cairomm mkdir cairomm\cairomm
+cd cairomm\cairomm
+echo installing headers ...
 xcopy $(SRC_DIR)cairomm\*.h /Y
+copy cairomm.h ..\
 cd $(LIB_DIR)
-if not exist cairomm mkdir cairomm
-cd cairomm
-copy $(SolutionDir)cairomm\cairommconfig.h</Command>
+if not exist cairomm\include mkdir cairomm\include
+cd cairomm\include
+copy $(SolutionDir)cairomm\cairommconfig.h /Y
+cd $(REF_DIR)
+if not exist cairomm\html mkdir cairomm\html
+cd cairomm\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

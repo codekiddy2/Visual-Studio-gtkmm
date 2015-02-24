@@ -145,10 +145,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir pango
-cd pango
-copy $(SRC_DIR)pango\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist pango\pango mkdir pango\pango
+cd pango\pango
+echo installing headers ..
+xcopy $(SRC_DIR)pango\*.h /Y
+xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -156,17 +158,23 @@ echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal"
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 :END
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pango\html mkdir pango\html
+cd pango\html
+xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir pango
-cd pango
-copy $(SRC_DIR)pango\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist pango\pango mkdir pango\pango
+cd pango\pango
+echo installing headers ..
+xcopy $(SRC_DIR)pango\*.h /Y
+xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -174,17 +182,23 @@ echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal"
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 :END
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pango\html mkdir pango\html
+cd pango\html
+xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir pango
-cd pango
-copy $(SRC_DIR)pango\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist pango\pango mkdir pango\pango
+cd pango\pango
+echo installing headers ..
+xcopy $(SRC_DIR)pango\*.h /Y
+xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -192,17 +206,23 @@ echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal"
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 :END
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pango\html mkdir pango\html
+cd pango\html
+xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir pango
-cd pango
-copy $(SRC_DIR)pango\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist pango\pango mkdir pango\pango
+cd pango\pango
+echo installing headers ..
+xcopy $(SRC_DIR)pango\*.h /Y
+xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -210,17 +230,23 @@ echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal"
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 :END
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pango\html mkdir pango\html
+cd pango\html
+xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir pango
-cd pango
-copy $(SRC_DIR)pango\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist pango\pango mkdir pango\pango
+cd pango\pango
+echo installing headers ..
+xcopy $(SRC_DIR)pango\*.h /Y
+xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -228,17 +254,23 @@ echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal"
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 :END
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pango\html mkdir pango\html
+cd pango\html
+xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir pango
-cd pango
-copy $(SRC_DIR)pango\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist pango\pango mkdir pango\pango
+cd pango\pango
+echo installing headers ..
+xcopy $(SRC_DIR)pango\*.h /Y
+xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -246,17 +278,22 @@ echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal"
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 :END
-</Command>
-      <Message>Installing pango ...</Message>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pango\html mkdir pango\html
+cd pango\html
+xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir pango
-cd pango
-copy $(SRC_DIR)pango\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist pango\pango mkdir pango\pango
+cd pango\pango
+echo installing headers ..
+xcopy $(SRC_DIR)pango\*.h /Y
+xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -264,17 +301,23 @@ echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal"
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 :END
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pango\html mkdir pango\html
+cd pango\html
+xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir pango
-cd pango
-copy $(SRC_DIR)pango\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist pango\pango mkdir pango\pango
+cd pango\pango
+echo installing headers ..
+xcopy $(SRC_DIR)pango\*.h /Y
+xcopy pango.h ..\ /Y
 if not exist $(ROOT_DIR)etc\pango mkdir $(ROOT_DIR)etc\pango
 if exist $(ROOT_DIR)etc\pango\pango.aliases goto END
 echo tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal" &gt; $(ROOT_DIR)etc\pango\pango.aliases
@@ -282,7 +325,11 @@ echo sans = "arial,browallia new,mingliu,simhei,gulimche,ms gothic,latha,mangal"
 echo serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 echo monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,latha,mangal" &gt;&gt; $(ROOT_DIR)etc\pango\pango.aliases
 :END
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pango\html mkdir pango\html
+cd pango\html
+xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
       <Message>Installing pango ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>

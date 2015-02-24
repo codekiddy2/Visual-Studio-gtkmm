@@ -409,11 +409,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|Win32'">
@@ -424,11 +429,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">
@@ -439,11 +449,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|Win32'">
@@ -454,11 +469,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|Win32'">
@@ -469,11 +489,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|Win32'">
@@ -484,11 +509,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -499,11 +529,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'">
@@ -514,26 +549,36 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
     <PreBuildEvent>
-      <Message>Installing cairo headers</Message>
       <Command>echo /* Generated by VS Project File  Do not edit. */ &gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'">
@@ -544,11 +589,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|x64'">
@@ -559,11 +609,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|x64'">
@@ -574,11 +629,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -589,11 +649,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|Win32'">
@@ -604,11 +669,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
@@ -619,11 +689,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|Win32'">
@@ -634,11 +709,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|Win32'">
@@ -649,11 +729,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|Win32'">
@@ -664,11 +749,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -679,11 +769,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'">
@@ -694,11 +789,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
@@ -709,11 +809,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|x64'">
@@ -724,11 +829,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|x64'">
@@ -739,11 +849,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|x64'">
@@ -754,11 +869,16 @@ echo #define CAIRO_FEATURES_H &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform
 type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 echo #endif &gt;&gt; $(SolutionDir)$(Configuration)\$(Platform)\include\cairo-features.h
 $(DRIVE):
-if not exist $(ROOT_DIR)\include\cairo mkdir $(ROOT_DIR)\include\cairo
-cd $(ROOT_DIR)include\cairo"
-copy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h
-echo Installation done!</Command>
-      <Message>Installing cairo headers</Message>
+cd $(INCLUDE_DIR)
+if not exist cairo\cairo mkdir cairo\cairo
+cd cairo\cairo
+echo installing headers ...
+xcopy $(SolutionDir)$(Configuration)\$(Platform)\include\*.h /Y
+xcopy cairo.h ..\ /Y
+cd $(REF_DIR)
+if not exist cairo\html mkdir cairo\html
+cd cairo\html
+xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

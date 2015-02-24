@@ -99,14 +99,23 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\sigc++ mkdir include\sigc++
-cd include\sigc++
+cd $(INCLUDE_DIR)
+if not exist sigc++\sigc++ mkdir sigc++\sigc++
+cd sigc++\sigc++
+echo installing headers ...
 xcopy $(SRC_DIR)sigc++\*.h /YS
-if not exist $(LIB_DIR)sigc++ mkdir $(LIB_DIR)sigc++
-cd $(LIB_DIR)sigc++
+cd
+xcopy sigc++.h ..\
+cd $(LIB_DIR)
+if not exist sigc++\include mkdir sigc++\include
+cd sigc++\include
 xcopy $(SolutionDir)sigc++config.h /Y
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist sigc++\html mkdir sigc++\html
+cd sigc++\html
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+      <Message>Installing sigc++</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -120,14 +129,23 @@ xcopy $(SolutionDir)sigc++config.h /Y
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\sigc++ mkdir include\sigc++
-cd include\sigc++
+cd $(INCLUDE_DIR)
+if not exist sigc++\sigc++ mkdir sigc++\sigc++
+cd sigc++\sigc++
+echo installing headers ...
 xcopy $(SRC_DIR)sigc++\*.h /YS
-if not exist $(LIB_DIR)sigc++ mkdir $(LIB_DIR)sigc++
-cd $(LIB_DIR)sigc++
+cd
+xcopy sigc++.h ..\
+cd $(LIB_DIR)
+if not exist sigc++\include mkdir sigc++\include
+cd sigc++\include
 xcopy $(SolutionDir)sigc++config.h /Y
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist sigc++\html mkdir sigc++\html
+cd sigc++\html
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+      <Message>Installing sigc++</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -145,14 +163,23 @@ xcopy $(SolutionDir)sigc++config.h /Y
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\sigc++ mkdir include\sigc++
-cd include\sigc++
+cd $(INCLUDE_DIR)
+if not exist sigc++\sigc++ mkdir sigc++\sigc++
+cd sigc++\sigc++
+echo installing headers ...
 xcopy $(SRC_DIR)sigc++\*.h /YS
-if not exist $(LIB_DIR)sigc++ mkdir $(LIB_DIR)sigc++
-cd $(LIB_DIR)sigc++
+cd
+xcopy sigc++.h ..\
+cd $(LIB_DIR)
+if not exist sigc++\include mkdir sigc++\include
+cd sigc++\include
 xcopy $(SolutionDir)sigc++config.h /Y
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist sigc++\html mkdir sigc++\html
+cd sigc++\html
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+      <Message>Installing sigc++</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -170,14 +197,23 @@ xcopy $(SolutionDir)sigc++config.h /Y
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\sigc++ mkdir include\sigc++
-cd include\sigc++
+cd $(INCLUDE_DIR)
+if not exist sigc++\sigc++ mkdir sigc++\sigc++
+cd sigc++\sigc++
+echo installing headers ...
 xcopy $(SRC_DIR)sigc++\*.h /YS
-if not exist $(LIB_DIR)sigc++ mkdir $(LIB_DIR)sigc++
-cd $(LIB_DIR)sigc++
+cd
+xcopy sigc++.h ..\
+cd $(LIB_DIR)
+if not exist sigc++\include mkdir sigc++\include
+cd sigc++\include
 xcopy $(SolutionDir)sigc++config.h /Y
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist sigc++\html mkdir sigc++\html
+cd sigc++\html
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+      <Message>Installing sigc++</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

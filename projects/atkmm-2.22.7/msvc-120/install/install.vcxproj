@@ -102,6 +102,7 @@
 cd $(ROOT_DIR)
 if not exist include\atkmm mkdir include\atkmm
 cd include\atkmm
+echo installing headers ...
 xcopy $(SRC_DIR)atk\*.h /Y
 mkdir atkmm
 cd atkmm
@@ -109,10 +110,15 @@ xcopy $(SRC_DIR)atk\atkmm\*.h /Y
 mkdir private
 cd private
 xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
-if not exist $(LIB_DIR)atkmm mkdir $(LIB_DIR)atkmm
-cd $(LIB_DIR)atkmm
+cd $(LIB_DIR)
+if not exist atkmm\include mkdir atkmm\include
+cd atkmm\include
 xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist atkmm\html mkdir atkmm\html
+cd atkmm\html
+xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -129,6 +135,7 @@ xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
 cd $(ROOT_DIR)
 if not exist include\atkmm mkdir include\atkmm
 cd include\atkmm
+echo installing headers ...
 xcopy $(SRC_DIR)atk\*.h /Y
 mkdir atkmm
 cd atkmm
@@ -136,10 +143,15 @@ xcopy $(SRC_DIR)atk\atkmm\*.h /Y
 mkdir private
 cd private
 xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
-if not exist $(LIB_DIR)atkmm mkdir $(LIB_DIR)atkmm
-cd $(LIB_DIR)atkmm
+cd $(LIB_DIR)
+if not exist atkmm\include mkdir atkmm\include
+cd atkmm\include
 xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist atkmm\html mkdir atkmm\html
+cd atkmm\html
+xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -160,6 +172,7 @@ xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
 cd $(ROOT_DIR)
 if not exist include\atkmm mkdir include\atkmm
 cd include\atkmm
+echo installing headers ...
 xcopy $(SRC_DIR)atk\*.h /Y
 mkdir atkmm
 cd atkmm
@@ -167,10 +180,15 @@ xcopy $(SRC_DIR)atk\atkmm\*.h /Y
 mkdir private
 cd private
 xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
-if not exist $(LIB_DIR)atkmm mkdir $(LIB_DIR)atkmm
-cd $(LIB_DIR)atkmm
+cd $(LIB_DIR)
+if not exist atkmm\include mkdir atkmm\include
+cd atkmm\include
 xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist atkmm\html mkdir atkmm\html
+cd atkmm\html
+xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -191,6 +209,7 @@ xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
 cd $(ROOT_DIR)
 if not exist include\atkmm mkdir include\atkmm
 cd include\atkmm
+echo installing headers ...
 xcopy $(SRC_DIR)atk\*.h /Y
 mkdir atkmm
 cd atkmm
@@ -198,10 +217,15 @@ xcopy $(SRC_DIR)atk\atkmm\*.h /Y
 mkdir private
 cd private
 xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
-if not exist $(LIB_DIR)atkmm mkdir $(LIB_DIR)atkmm
-cd $(LIB_DIR)atkmm
+cd $(LIB_DIR)
+if not exist atkmm\include mkdir atkmm\include
+cd atkmm\include
 xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-</Command>
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist atkmm\html mkdir atkmm\html
+cd atkmm\html
+xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

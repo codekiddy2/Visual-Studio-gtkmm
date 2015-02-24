@@ -6,20 +6,24 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <OutDir>$(ROOT_DIR)</OutDir>
+    <CustomBuildBeforeTargets>PreBuildEvent</CustomBuildBeforeTargets>
   </PropertyGroup>
   <ItemDefinitionGroup>
+    <PreBuildEvent />
+    <PreLinkEvent />
+    <PostBuildEvent />
+    <CustomBuildStep>
+      <Command>$(DRIVE):
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+if not exist $(REF_DIR) mkdir $(REF_DIR)
+if not exist $(PKG_CONFIG_PATH) mkdir $(PKG_CONFIG_PATH)</Command>
+      <Message>Checking existence of directories ...</Message>
+      <TreatOutputAsContent>false</TreatOutputAsContent>
+      <Outputs>$(ROOT_DIR);%(Outputs)</Outputs>
+    </CustomBuildStep>
     <PreBuildEvent>
-      <Message>Perfoming pre-build event ...</Message>
-      <Command>echo pre-build event started ...</Command>
+      <Message>Installing $(SolutionName) ...</Message>
     </PreBuildEvent>
-    <PreLinkEvent>
-      <Message>Perfoming pre-link event ...</Message>
-      <Command>echo pre-link event started ...</Command>
-    </PreLinkEvent>
-    <PostBuildEvent>
-      <Message>Perfoming post-build event ...</Message>
-      <Command>echo all operations completed ...</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

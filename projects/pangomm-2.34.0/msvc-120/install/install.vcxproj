@@ -97,9 +97,10 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\pangomm mkdir include\pangomm
-cd include\pangomm
+cd $(INCLUDE_DIR)
+if not exist pangomm mkdir pangomm
+cd pangomm
+echo installing headers ...
 xcopy $(SRC_DIR)pango\*.h /Y
 mkdir pangomm
 cd pangomm
@@ -108,9 +109,14 @@ mkdir private
 cd private
 xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y
 cd $(LIB_DIR)
-if not exist pangomm mkdir pangomm
-cd pangomm
-copy $(SolutionDir)pangomm\pangommconfig.h</Command>
+if not exist pangomm\include mkdir pangomm\include
+cd pangomm\include
+copy $(SolutionDir)pangomm\pangommconfig.h /Y
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pangomm\html mkdir pangomm\html
+cd pangomm\html
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,9 +130,10 @@ copy $(SolutionDir)pangomm\pangommconfig.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\pangomm mkdir include\pangomm
-cd include\pangomm
+cd $(INCLUDE_DIR)
+if not exist pangomm mkdir pangomm
+cd pangomm
+echo installing headers ...
 xcopy $(SRC_DIR)pango\*.h /Y
 mkdir pangomm
 cd pangomm
@@ -135,9 +142,15 @@ mkdir private
 cd private
 xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y
 cd $(LIB_DIR)
-if not exist pangomm mkdir pangomm
-cd pangomm
-copy $(SolutionDir)pangomm\pangommconfig.h</Command>
+if not exist pangomm\include mkdir pangomm\include
+cd pangomm\include
+copy $(SolutionDir)pangomm\pangommconfig.h /Y
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pangomm\html mkdir pangomm\html
+cd pangomm\html
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+      <Message>Installing pangomm ..</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -155,9 +168,10 @@ copy $(SolutionDir)pangomm\pangommconfig.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\pangomm mkdir include\pangomm
-cd include\pangomm
+cd $(INCLUDE_DIR)
+if not exist pangomm mkdir pangomm
+cd pangomm
+echo installing headers ...
 xcopy $(SRC_DIR)pango\*.h /Y
 mkdir pangomm
 cd pangomm
@@ -166,9 +180,14 @@ mkdir private
 cd private
 xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y
 cd $(LIB_DIR)
-if not exist pangomm mkdir pangomm
-cd pangomm
-copy $(SolutionDir)pangomm\pangommconfig.h</Command>
+if not exist pangomm\include mkdir pangomm\include
+cd pangomm\include
+copy $(SolutionDir)pangomm\pangommconfig.h /Y
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pangomm\html mkdir pangomm\html
+cd pangomm\html
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -186,9 +205,10 @@ copy $(SolutionDir)pangomm\pangommconfig.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\pangomm mkdir include\pangomm
-cd include\pangomm
+cd $(INCLUDE_DIR)
+if not exist pangomm mkdir pangomm
+cd pangomm
+echo installing headers ...
 xcopy $(SRC_DIR)pango\*.h /Y
 mkdir pangomm
 cd pangomm
@@ -197,9 +217,14 @@ mkdir private
 cd private
 xcopy $(SRC_DIR)pango\pangomm\private\*.h /Y
 cd $(LIB_DIR)
-if not exist pangomm mkdir pangomm
-cd pangomm
-copy $(SolutionDir)pangomm\pangommconfig.h</Command>
+if not exist pangomm\include mkdir pangomm\include
+cd pangomm\include
+copy $(SolutionDir)pangomm\pangommconfig.h /Y
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist pangomm\html mkdir pangomm\html
+cd pangomm\html
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

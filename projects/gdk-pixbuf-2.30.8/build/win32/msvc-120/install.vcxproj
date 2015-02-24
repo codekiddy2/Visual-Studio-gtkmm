@@ -82,68 +82,92 @@
     <PostBuildEvent />
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir gdk-pixbuf
-cd gdk-pixbuf
-copy $(SRC_DIR)gdk-pixbuf\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist gdk-pixbuf\gdk-pixbuf mkdir gdk-pixbuf\gdk-pixbuf
+cd gdk-pixbuf\gdk-pixbuf
+echo installing headers ...
+xcopy $(SRC_DIR)gdk-pixbuf\*.h /Y
+xcopy gdk-pixbuf.h ..\ /Y
 cd $(LIB_DIR)
 if not exist gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion) mkdir gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)
-echo updating cache ..
+echo updating cache ...
 $(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+cd $(REF_DIR)
+if not exist gdk-pixbuf\html mkdir gdk-pixbuf\html
+cd gdk-pixbuf\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y
 
 </Command>
-      <Message>Installing gdk-pixbuf ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PostBuildEvent />
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir gdk-pixbuf
-cd gdk-pixbuf
-copy $(SRC_DIR)gdk-pixbuf\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist gdk-pixbuf\gdk-pixbuf mkdir gdk-pixbuf\gdk-pixbuf
+cd gdk-pixbuf\gdk-pixbuf
+echo installing headers ...
+xcopy $(SRC_DIR)gdk-pixbuf\*.h /Y
+xcopy gdk-pixbuf.h ..\ /Y
 cd $(LIB_DIR)
 if not exist gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion) mkdir gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)
-echo updating cache ..
+echo updating cache ...
 $(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+cd $(REF_DIR)
+if not exist gdk-pixbuf\html mkdir gdk-pixbuf\html
+cd gdk-pixbuf\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y
 
 </Command>
-      <Message>Installing gdk-pixbuf ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PostBuildEvent />
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir gdk-pixbuf
-cd gdk-pixbuf
-copy $(SRC_DIR)gdk-pixbuf\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist gdk-pixbuf\gdk-pixbuf mkdir gdk-pixbuf\gdk-pixbuf
+cd gdk-pixbuf\gdk-pixbuf
+echo installing headers ...
+xcopy $(SRC_DIR)gdk-pixbuf\*.h /Y
+xcopy gdk-pixbuf.h ..\ /Y
 cd $(LIB_DIR)
 if not exist gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion) mkdir gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)
-echo updating cache ..
+echo updating cache ...
 $(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+cd $(REF_DIR)
+if not exist gdk-pixbuf\html mkdir gdk-pixbuf\html
+cd gdk-pixbuf\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y
 
 </Command>
-      <Message>Installing gdk-pixbuf ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PostBuildEvent />
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir gdk-pixbuf
-cd gdk-pixbuf
-copy $(SRC_DIR)gdk-pixbuf\*.h /Y
+cd $(INCLUDE_DIR)
+if not exist gdk-pixbuf\gdk-pixbuf mkdir gdk-pixbuf\gdk-pixbuf
+cd gdk-pixbuf\gdk-pixbuf
+echo installing headers ...
+xcopy $(SRC_DIR)gdk-pixbuf\*.h /Y
+xcopy gdk-pixbuf.h ..\ /Y
 cd $(LIB_DIR)
 if not exist gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion) mkdir gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)
-echo updating cache ..
+echo updating cache ...
 $(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+cd $(REF_DIR)
+if not exist gdk-pixbuf\html mkdir gdk-pixbuf\html
+cd gdk-pixbuf\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y
 
 </Command>
-      <Message>Installing gdk-pixbuf ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

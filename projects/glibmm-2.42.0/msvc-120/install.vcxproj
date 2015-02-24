@@ -84,8 +84,22 @@
 cd $(INCLUDE_DIR)
 if not exist glibmm mkdir glibmm
 cd glibmm
+echo installing headers ...
 xcopy $(SRC_DIR)glib\*.h /YS
-xcopy $(SRC_DIR)gio\*.h /YS</Command>
+xcopy $(SRC_DIR)gio\*.h /YS
+cd $(LIB_DIR)
+if not exist glibmm\include mkdir glibmm\include
+cd glibmm\include
+copy $(SolutionDir)glibmm\glibmmconfig.h /Y
+cd ..\..\
+if not exist giomm\include mkdir giomm\include
+cd giomm\include
+copy $(SolutionDir)giomm\giommconfig.h /Y
+cd $(REF_DIR)
+if not exist glibmm\html mkdir glibmm\html
+cd glibmm\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -94,16 +108,22 @@ xcopy $(SRC_DIR)gio\*.h /YS</Command>
 cd $(INCLUDE_DIR)
 if not exist glibmm mkdir glibmm
 cd glibmm
+echo installing headers ...
 xcopy $(SRC_DIR)glib\*.h /YS
 xcopy $(SRC_DIR)gio\*.h /YS
 cd $(LIB_DIR)
-if not exist glibmm mkdir glibmm
-cd glibmm
+if not exist glibmm\include mkdir glibmm\include
+cd glibmm\include
 copy $(SolutionDir)glibmm\glibmmconfig.h /Y
-cd ..
-if not exist giomm mkdir giomm
-cd giomm
-copy $(SolutionDir)giomm\giommconfig.h /Y</Command>
+cd ..\..\
+if not exist giomm\include mkdir giomm\include
+cd giomm\include
+copy $(SolutionDir)giomm\giommconfig.h /Y
+cd $(REF_DIR)
+if not exist glibmm\html mkdir glibmm\html
+cd glibmm\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -112,8 +132,22 @@ copy $(SolutionDir)giomm\giommconfig.h /Y</Command>
 cd $(INCLUDE_DIR)
 if not exist glibmm mkdir glibmm
 cd glibmm
+echo installing headers ...
 xcopy $(SRC_DIR)glib\*.h /YS
-xcopy $(SRC_DIR)gio\*.h /YS</Command>
+xcopy $(SRC_DIR)gio\*.h /YS
+cd $(LIB_DIR)
+if not exist glibmm\include mkdir glibmm\include
+cd glibmm\include
+copy $(SolutionDir)glibmm\glibmmconfig.h /Y
+cd ..\..\
+if not exist giomm\include mkdir giomm\include
+cd giomm\include
+copy $(SolutionDir)giomm\giommconfig.h /Y
+cd $(REF_DIR)
+if not exist glibmm\html mkdir glibmm\html
+cd glibmm\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -122,8 +156,22 @@ xcopy $(SRC_DIR)gio\*.h /YS</Command>
 cd $(INCLUDE_DIR)
 if not exist glibmm mkdir glibmm
 cd glibmm
+echo installing headers ...
 xcopy $(SRC_DIR)glib\*.h /YS
-xcopy $(SRC_DIR)gio\*.h /YS</Command>
+xcopy $(SRC_DIR)gio\*.h /YS
+cd $(LIB_DIR)
+if not exist glibmm\include mkdir glibmm\include
+cd glibmm\include
+copy $(SolutionDir)glibmm\glibmmconfig.h /Y
+cd ..\..\
+if not exist giomm\include mkdir giomm\include
+cd giomm\include
+copy $(SolutionDir)giomm\giommconfig.h /Y
+cd $(REF_DIR)
+if not exist glibmm\html mkdir glibmm\html
+cd glibmm\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

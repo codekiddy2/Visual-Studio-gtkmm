@@ -185,7 +185,18 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist gtk+\html mkdir gtk+\html
+if not exist gdk\html mkdir gdk\html
+if not exist gailutil\html mkdir gailutil\html
+cd gtk+\html
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+cd ..\..\gdk\html
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+cd ..\..\gailutil\html
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -228,7 +239,18 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist gtk+\html mkdir gtk+\html
+if not exist gdk\html mkdir gdk\html
+if not exist gailutil\html mkdir gailutil\html
+cd gtk+\html
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+cd ..\..\gdk\html
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+cd ..\..\gailutil\html
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -271,7 +293,18 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist gtk+\html mkdir gtk+\html
+if not exist gdk\html mkdir gdk\html
+if not exist gailutil\html mkdir gailutil\html
+cd gtk+\html
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+cd ..\..\gdk\html
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+cd ..\..\gailutil\html
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -314,7 +347,18 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist gtk+\html mkdir gtk+\html
+if not exist gdk\html mkdir gdk\html
+if not exist gailutil\html mkdir gailutil\html
+cd gtk+\html
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+cd ..\..\gdk\html
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+cd ..\..\gailutil\html
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -361,7 +405,18 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist gtk+\html mkdir gtk+\html
+if not exist gdk\html mkdir gdk\html
+if not exist gailutil\html mkdir gailutil\html
+cd gtk+\html
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+cd ..\..\gdk\html
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+cd ..\..\gailutil\html
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -408,7 +463,18 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist gtk+\html mkdir gtk+\html
+if not exist gdk\html mkdir gdk\html
+if not exist gailutil\html mkdir gailutil\html
+cd gtk+\html
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+cd ..\..\gdk\html
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+cd ..\..\gailutil\html
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">
@@ -454,7 +520,18 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist gtk+\html mkdir gtk+\html
+if not exist gdk\html mkdir gdk\html
+if not exist gailutil\html mkdir gailutil\html
+cd gtk+\html
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+cd ..\..\gdk\html
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+cd ..\..\gailutil\html
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -501,7 +578,18 @@ xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
 xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
 xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
 echo "Compiling gsettings XML Files..."
-$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
+echo installing documentation ...
+cd $(REF_DIR)
+if not exist gtk+\html mkdir gtk+\html
+if not exist gdk\html mkdir gdk\html
+if not exist gailutil\html mkdir gailutil\html
+cd gtk+\html
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+cd ..\..\gdk\html
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+cd ..\..\gailutil\html
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>

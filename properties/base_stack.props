@@ -2,15 +2,14 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <PYTHON_DIR>D:\gtkmm\install\Python3\</PYTHON_DIR>
-    <PERL_DIR>D:\gtkmm\install\Perl64\bin\</PERL_DIR>
-    <NASM_DIR>D:\gtkmm\install\nasm\</NASM_DIR>
-    <CMAKE_DIR>D:\gtkmm\install\CMake\bin\</CMAKE_DIR>
     <BIN_DIR>$(ROOT_DIR)bin\</BIN_DIR>
     <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
     <INCLUDE_DIR>$(ROOT_DIR)include\</INCLUDE_DIR>
     <INTERMEDIATE_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\$(ProjectName)\</INTERMEDIATE_DIR>
     <SYMBOLS_DIR>$(ROOT_DIR)symbols\</SYMBOLS_DIR>
+    <SHARE_DIR>$(ROOT_DIR)share\</SHARE_DIR>
+    <REF_DIR>$(SHARE_DIR)doc\reference\</REF_DIR>
+    <PKG_CONFIG_PATH>$(SHARE_DIR)pkgconfig\</PKG_CONFIG_PATH>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -130,20 +129,6 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <BuildMacro Include="PYTHON_DIR">
-      <Value>$(PYTHON_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
-    </BuildMacro>
-    <BuildMacro Include="PERL_DIR">
-      <Value>$(PERL_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
-    </BuildMacro>
-    <BuildMacro Include="NASM_DIR">
-      <Value>$(NASM_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="CMAKE_DIR">
-      <Value>$(CMAKE_DIR)</Value>
-    </BuildMacro>
     <BuildMacro Include="BIN_DIR">
       <Value>$(BIN_DIR)</Value>
     </BuildMacro>
@@ -158,6 +143,15 @@
     </BuildMacro>
     <BuildMacro Include="SYMBOLS_DIR">
       <Value>$(SYMBOLS_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SHARE_DIR">
+      <Value>$(SHARE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="REF_DIR">
+      <Value>$(REF_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PKG_CONFIG_PATH">
+      <Value>$(PKG_CONFIG_PATH)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

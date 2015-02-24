@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <DRIVE>D</DRIVE>
+    <REPO_DIR>D:\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
+    <PYTHON_DIR>D:\gtkmm\install\Python3\</PYTHON_DIR>
+    <PERL_DIR>D:\gtkmm\install\Perl64\bin\</PERL_DIR>
+    <NASM_DIR>D:\gtkmm\install\nasm\</NASM_DIR>
+    <CMAKE_DIR>D:\gtkmm\install\CMake\bin\</CMAKE_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="DRIVE">
+      <Value>$(DRIVE)</Value>
+    </BuildMacro>
+    <BuildMacro Include="REPO_DIR">
+      <Value>$(REPO_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PYTHON_DIR">
+      <Value>$(PYTHON_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="PERL_DIR">
+      <Value>$(PERL_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="NASM_DIR">
+      <Value>$(NASM_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CMAKE_DIR">
+      <Value>$(CMAKE_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

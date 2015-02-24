@@ -40,3 +40,5 @@ Following TODO's apply to "Redesign" branch
 36. remove VC-upgrade macros and properties, and then test projects.
 37. implement custom *.pc files for pkg-config
 38. check linker library inputs because some properties added new linker inputs, no need to specify an input 2 times.
+39. some configurations (different) should install different headers, chaeck install projects.
+

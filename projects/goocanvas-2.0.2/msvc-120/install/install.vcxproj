@@ -85,26 +85,26 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent />
+    <PostBuildEvent />
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist goocanvas mkdir goocanvas
-cd goocanvas
+if not exist goocanvas\goocanvas mkdir goocanvas\goocanvas
+cd goocanvas\goocanvas
+echo installing headers ...
 xcopy $(SRC_DIR)src\*.h /Y
-cd $(ROOT_DIR)share
-if not exist doc\goocanvas mkdir doc\goocanvas
-cd doc\goocanvas
-if not exist html mkdir html
-cd html
-xcopy $(SRC_DIR)docs\html\*.html /Y
-cd ..
-xcopy $(SRC_DIR)docs\*.xml /Y
-cd $(ROOT_DIR)share
-if not exist pkgconfig mkdir pkgconfig
-cd pkgconfig
-copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
-      <Message>installing goocanvas ...</Message>
+xcopy goocanvas.h ..\ /Y
+cd $(REF_DIR)
+if not exist goocanvas\html mkdir goocanvas\html
+cd goocanvas\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\html\*.* /Y
+echo installing pkg-config files ...
+cd $(PKG_CONFIG_PATH)
+copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
     </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -118,21 +118,19 @@ copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.p
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist goocanvas mkdir goocanvas
-cd goocanvas
+if not exist goocanvas\goocanvas mkdir goocanvas\goocanvas
+cd goocanvas\goocanvas
+echo installing headers ...
 xcopy $(SRC_DIR)src\*.h /Y
-cd $(ROOT_DIR)share
-if not exist doc\goocanvas mkdir doc\goocanvas
-cd doc\goocanvas
-if not exist html mkdir html
-cd html
-xcopy $(SRC_DIR)docs\html\*.html /Y
-cd ..
-xcopy $(SRC_DIR)docs\*.xml /Y
-cd $(ROOT_DIR)share
-if not exist pkgconfig mkdir pkgconfig
-cd pkgconfig
-copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
+xcopy goocanvas.h ..\ /Y
+cd $(REF_DIR)
+if not exist goocanvas\html mkdir goocanvas\html
+cd goocanvas\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\html\*.* /Y
+echo installing pkg-config files ...
+cd $(PKG_CONFIG_PATH)
+copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
       <Message>installing goocanvas ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -148,21 +146,19 @@ copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.p
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist goocanvas mkdir goocanvas
-cd goocanvas
+if not exist goocanvas\goocanvas mkdir goocanvas\goocanvas
+cd goocanvas\goocanvas
+echo installing headers ...
 xcopy $(SRC_DIR)src\*.h /Y
-cd $(ROOT_DIR)share
-if not exist doc\goocanvas mkdir doc\goocanvas
-cd doc\goocanvas
-if not exist html mkdir html
-cd html
-xcopy $(SRC_DIR)docs\html\*.html /Y
-cd ..
-xcopy $(SRC_DIR)docs\*.xml /Y
-cd $(ROOT_DIR)share
-if not exist pkgconfig mkdir pkgconfig
-cd pkgconfig
-copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
+xcopy goocanvas.h ..\ /Y
+cd $(REF_DIR)
+if not exist goocanvas\html mkdir goocanvas\html
+cd goocanvas\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\html\*.* /Y
+echo installing pkg-config files ...
+cd $(PKG_CONFIG_PATH)
+copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
       <Message>installing goocanvas ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -178,21 +174,19 @@ copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.p
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist goocanvas mkdir goocanvas
-cd goocanvas
+if not exist goocanvas\goocanvas mkdir goocanvas\goocanvas
+cd goocanvas\goocanvas
+echo installing headers ...
 xcopy $(SRC_DIR)src\*.h /Y
-cd $(ROOT_DIR)share
-if not exist doc\goocanvas mkdir doc\goocanvas
-cd doc\goocanvas
-if not exist html mkdir html
-cd html
-xcopy $(SRC_DIR)docs\html\*.html /Y
-cd ..
-xcopy $(SRC_DIR)docs\*.xml /Y
-cd $(ROOT_DIR)share
-if not exist pkgconfig mkdir pkgconfig
-cd pkgconfig
-copy $(SolutionDir)src\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
+xcopy goocanvas.h ..\ /Y
+cd $(REF_DIR)
+if not exist goocanvas\html mkdir goocanvas\html
+cd goocanvas\html
+echo installing documentation ...
+xcopy $(SRC_DIR)docs\html\*.* /Y
+echo installing pkg-config files ...
+cd $(PKG_CONFIG_PATH)
+copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
       <Message>installing goocanvas ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
