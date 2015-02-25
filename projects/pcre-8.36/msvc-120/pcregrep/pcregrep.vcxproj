@@ -35,10 +35,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{D3BECA22-1745-4587-95B1-4842270DFF54}</ProjectGUID>
+    <ProjectGUID>{4D905894-C15E-4ADD-BCF3-2F858C854DB5}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
-    <ProjectName>test-pcre</ProjectName>
+    <ProjectName>pcregrep</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" Label="Configuration">
@@ -47,16 +47,6 @@
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
@@ -72,6 +62,16 @@
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -92,57 +92,49 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
-    <Import Project="..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\properties\solution_pcre.props" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_pcre.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="PropertySheets">
-    <Import Project="..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\properties\solution_pcre.props" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_pcre.props" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="PropertySheets">
-    <Import Project="..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\properties\solution_pcre.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="PropertySheets">
-    <Import Project="..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\properties\solution_pcre.props" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
-    <Import Project="..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\properties\solution_pcre.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_pcre.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" Label="PropertySheets">
-    <Import Project="..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\properties\solution_pcre.props" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_pcre.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_pcre.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_pcre.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" Label="PropertySheets">
-    <Import Project="..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\properties\solution_pcre.props" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_pcre.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" Label="PropertySheets">
-    <Import Project="..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\properties\solution_pcre.props" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_pcre.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
     <ClCompile>
       <ExceptionHandling>
@@ -150,10 +142,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -161,9 +153,9 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
+      <AdditionalDependencies>zlib.dll.lib;bzip2.dll.lib;pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -175,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -186,9 +178,58 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
+      <AdditionalDependencies>zlib.lib;bzip2.lib;pcre8.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
-      <AdditionalDependencies>pcre8.lib;pcre16.lib;pcre32.lib;pcreposix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <ClCompile>
+      <ExceptionHandling>
+      </ExceptionHandling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.dll.lib;bzip2.dll.lib;pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
+    <ClCompile>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PreprocessorDefinitions>PCRE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>zlib.lib;bzip2.lib;pcre8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -199,10 +240,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -210,9 +251,9 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
+      <AdditionalDependencies>zlib.dll.lib;bzip2.dll.lib;pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -224,10 +265,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -235,60 +276,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <Version>
-      </Version>
-      <AdditionalDependencies>pcre8.lib;pcre16.lib;pcre32.lib;pcreposix.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-    <ProjectReference />
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
-    <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference />
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
-    <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-      <PreprocessorDefinitions>PCRE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>zlib.lib;bzip2.lib;pcre8.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
@@ -298,15 +286,13 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -314,7 +300,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>zlib.dll.lib;bzip2.dll.lib;pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
@@ -324,16 +310,14 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
       <PreprocessorDefinitions>PCRE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\gtkmm\output\Debug\x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\cmake-build;D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\bzip2;D:\GitHub\Visual-Studio-gtkmm\output\Debug\x64\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -341,41 +325,17 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>zlib.lib;bzip2.lib;pcre8.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\pcre16_printint.c" />
-    <ClCompile Include="..\pcre_printint.c" />
-    <ClCompile Include="D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\pcretest.c" />
-    <ClCompile Include="D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\pcre32_printint.c" />
+    <ClCompile Include="D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\pcregrep.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\pcre_internal.h" />
-    <ClInclude Include="src\config.h" />
-    <ClInclude Include="src\pcre.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="pcre16.vcxproj">
-      <Project>{85905263-5a97-472a-8add-66d035e6fcb1}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-    <ProjectReference Include="pcre32.vcxproj">
-      <Project>{72838198-48e5-494a-9eb7-4e94cbf962c1}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-    <ProjectReference Include="pcre8.vcxproj">
+    <ProjectReference Include="..\pcre8.vcxproj">
       <Project>{e0382755-982c-44f4-9d0d-1131dad2014d}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
@@ -383,7 +343,7 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
-    <ProjectReference Include="pcreposix\pcreposix.vcxproj">
+    <ProjectReference Include="..\pcreposix\pcreposix.vcxproj">
       <Project>{4bbba118-a13b-4c2f-910d-b51d2c2225fe}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

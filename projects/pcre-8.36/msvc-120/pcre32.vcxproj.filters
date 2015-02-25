@@ -69,10 +69,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120\config.h">
+    <ClInclude Include="src\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\msvc-120\pcre.h">
+    <ClInclude Include="src..\pcre.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

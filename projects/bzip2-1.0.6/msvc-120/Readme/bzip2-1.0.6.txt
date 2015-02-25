@@ -7,55 +7,36 @@ solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtk
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.4
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\glib-2.42.1\build\win32\msvc-120
+solution version = 1.1.1
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\bzip2-1.0.6\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://ftp.gnome.org/pub/GNOME/sources/
+official sources: http://cairographics.org/releases/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-intl
-zlib
-ffi
-pcre (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
+If you want to build static library open bzip2.c and set BZ_UNIX to 0 and BZ_LCCWIN32 to 1
 Open Solution select configuration and build
 Install by building the "Install" project
-Make sure all the test projects pass by running them!
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-glib (extern pcre) will link to pcre8.dll.lib
-codegen python files need to be installed into glib-2.0/share/codegen, to avoid
-gdbus generated error.
-test-gio has runtime check reduced in debug mode due to runtime error.
-ZLIB_WINAPI must be defined for x86 builds, also zlib.dll x86 must define that macro
-on building.
-libffi must be built by msvc wraper.
+warning c4047 disabled as error for test project
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
-1.0.0
-	Debug x64
 
-1.0.1
-	All 4 (NO debugging)
-
-1.0.2
-	Debug x64
-
-1.0.3
-	Added test projects...
-	Debug x64
-
-1.1.0-4
+1.1.0
 	Debug x64 + Debug
+
+1.1.1
+	Debug, Debug static x64 + Debug
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

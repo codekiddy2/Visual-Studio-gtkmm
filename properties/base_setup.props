@@ -8,6 +8,7 @@
     <PERL_DIR>D:\gtkmm\install\Perl64\bin\</PERL_DIR>
     <NASM_DIR>D:\gtkmm\install\nasm\</NASM_DIR>
     <CMAKE_DIR>D:\gtkmm\install\CMake\bin\</CMAKE_DIR>
+    <MSYS2_DIR>D:\gtkmm\install\msys64\</MSYS2_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
@@ -30,6 +31,10 @@
     </BuildMacro>
     <BuildMacro Include="CMAKE_DIR">
       <Value>$(CMAKE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MSYS2_DIR">
+      <Value>$(MSYS2_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

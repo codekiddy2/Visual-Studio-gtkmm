@@ -10,6 +10,7 @@
     <LinkIncremental>true</LinkIncremental>
     <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <GenerateManifest>false</GenerateManifest>
+    <_PropertySheetDisplayName>base_debug</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <BuildLog />

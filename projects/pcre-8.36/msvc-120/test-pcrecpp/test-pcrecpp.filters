@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\pcrecpp_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.36\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8DB81D25-A87B-4681-ADE5-F8E44278971C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

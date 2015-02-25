@@ -164,7 +164,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>pcre.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImportLibrary>$(CHROOT_DBG)lib\$(TargetName).dll.lib</ImportLibrary>
@@ -192,7 +192,7 @@
       <AdditionalIncludeDirectories>..\..\..;..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>pcre.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -217,7 +217,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>pcre.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImportLibrary>$(CHROOT_REL)lib\$(TargetName).dll.lib</ImportLibrary>
@@ -244,7 +244,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>pcre.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImportLibrary>$(CHROOT_REL)lib\$(TargetName).dll.lib</ImportLibrary>

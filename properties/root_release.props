@@ -9,6 +9,7 @@
   <PropertyGroup>
     <LinkIncremental>false</LinkIncremental>
     <NMakePreprocessorDefinitions>NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <_PropertySheetDisplayName>base_release</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <BuildLog />

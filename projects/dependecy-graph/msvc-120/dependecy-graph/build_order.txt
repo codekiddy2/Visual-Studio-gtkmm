@@ -6,11 +6,13 @@ PACKAGE
 
 bzip
 ICU
+
+
+****************************
+
 libreadline
 libeditline
 libbz2
-
-****************************
 dirnet
 unistd
 iconv
@@ -19,12 +21,15 @@ epoxy
 ffi
 libjpeg-turbo
 expat
-pcre	(included in glib, build extra for dll and use build with glib)
-	(optional libs = libreadline, libeditline and libbz2)
 freeglut
 pixman
 
 *****************************
+
+pcre
+	-bzip2 (optional)
+	-readline (optional)
+	-editline (optional)
 
 gettext
 	-iconv (circular dependency)
@@ -44,12 +49,13 @@ tiff
 
 Freetype
 	-harfbuzz (optional circular dependency, [freetype -> harfbuzz -> freetype])
+	-icu (optional)
 
 glib
 	-libffi
 	-zlib
 	-gettext
-	-pcre(optional)
+	-pcre (if building with extern pcre)
 	
 harfbuzz (rebuild freetype with harbuzz support)
 	-freetype
@@ -73,6 +79,7 @@ gdk-pixbuf
 
 atk
 	-glib
+	-intl
 
 cairo
 	-zlib
@@ -86,6 +93,8 @@ cairo
 	-fontconfig
 	-expat
 
+	opengl (if build with opengl extensions)
+
 Pango
 	-glib
 	-harfbuz
@@ -96,13 +105,25 @@ gtk+
 	-pango
 	-atk
 	-gdk-pixbuf
+	-epoxy (if building gtk+ 3.15.x)
+
+goocanvas
+	-gtk+
+	...
 
 libsigc++
 glibmm
+	...
 cairomm
+	...
 pangomm
+	...
 atkmm
+	...
 gtkmm
+	...
+goocanvasmm
+	...
 
 
 

@@ -18,34 +18,18 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\pcre8.vcxproj">
-      <Project>{e0382755-982c-44f4-9d0d-1131dad2014d}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}</ProjectGuid>
+    <ProjectGuid>{687E6B35-CD55-45D4-8B34-52FE394D1542}</ProjectGuid>
     <RootNamespace>install</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>NotSet</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>NotSet</CharacterSet>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
@@ -53,89 +37,47 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_bzip2.props" />
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_pcre.props" />
+    <Import Project="..\..\..\..\properties\solution_bzip2.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_bzip2.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_pcre.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_pcre.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_pcre.props" />
+    <Import Project="..\..\..\..\properties\solution_bzip2.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-    </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-if not exist pcre\pcre mkdir pcre\pcre
-cd pcre\pcre
-echo installing headers ...
-xcopy $(SRC_DIR)*.h /Y
-cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
-echo installing documentation ...
-cd $(REF_DIR)
-if not exist pcre\html mkdir pcre\html
-cd pcre\html
-xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
-    </PreBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-    </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-if not exist pcre\pcre mkdir pcre\pcre
-cd pcre\pcre
-echo installing headers ...
-xcopy $(SRC_DIR)*.h /Y
-cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
-echo installing documentation ...
-cd $(REF_DIR)
-if not exist pcre\html mkdir pcre\html
-cd pcre\html
-xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
-    </PreBuildEvent>
-  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -148,20 +90,16 @@ xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist pcre\pcre mkdir pcre\pcre
-cd pcre\pcre
-echo installing headers ...
+if not exist bzip2 mkdir bzip2
+cd bzip2
 xcopy $(SRC_DIR)*.h /Y
-cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
-echo installing documentation ...
 cd $(REF_DIR)
-if not exist pcre\html mkdir pcre\html
-cd pcre\html
-xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
+if not exist bzip2\html mkdir bzip2\html
+cd bzip2\html
+xcopy $(SRC_DIR)manual.html /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -173,19 +111,75 @@ xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist pcre\pcre mkdir pcre\pcre
-cd pcre\pcre
-echo installing headers ...
+if not exist bzip2 mkdir bzip2
+cd bzip2
 xcopy $(SRC_DIR)*.h /Y
-cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
-echo installing documentation ...
 cd $(REF_DIR)
-if not exist pcre\html mkdir pcre\html
-cd pcre\html
-xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
+if not exist bzip2\html mkdir bzip2\html
+cd bzip2\html
+xcopy $(SRC_DIR)manual.html /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+if not exist bzip2 mkdir bzip2
+cd bzip2
+xcopy $(SRC_DIR)*.h /Y
+cd $(REF_DIR)
+if not exist bzip2\html mkdir bzip2\html
+cd bzip2\html
+xcopy $(SRC_DIR)manual.html /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+if not exist bzip2 mkdir bzip2
+cd bzip2
+xcopy $(SRC_DIR)*.h /Y
+cd $(REF_DIR)
+if not exist bzip2\html mkdir bzip2\html
+cd bzip2\html
+xcopy $(SRC_DIR)manual.html /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bzip2\bzip2.vcxproj">
+      <Project>{071b645d-0458-47e5-bbb7-a87278a3a866}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
