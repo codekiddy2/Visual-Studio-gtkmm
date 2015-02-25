@@ -1,0 +1,19 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/gst
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4
+toolsdir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/tools
+pluginsdir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4
+girdir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/gst
+typelibdir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/gst
+
+Name: GStreamer Uninstalled
+Description: Streaming media framework, Not Installed
+Version: 1.4.4
+Requires: glib-2.0, gobject-2.0
+Requires.private: gmodule-no-export-2.0
+Libs: /d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/gst/libgstreamer-1.0.la
+# FIXME: the libs dir doesn't really belong here
+Cflags: -I/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4 -I/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/libs -I/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4 -I/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/libs

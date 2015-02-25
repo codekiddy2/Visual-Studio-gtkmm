@@ -3,7 +3,7 @@ Following TODO's apply to "Redesign" branch
 ```
 1. DEFINE PREPROCESSOR FOR CMAKE ON CMAKE PROJECTS
 2. add build log file to solution from inermediate directory
-3. --done
+3. build freetyp dll (see details on http://stackoverflow.com/questions/6207176/compiling-freetype-to-dll-as-opposed-to-static-library)
 4. configure remaining install projects to install documentation
 5. clean cmd line entries
 6. create master solution

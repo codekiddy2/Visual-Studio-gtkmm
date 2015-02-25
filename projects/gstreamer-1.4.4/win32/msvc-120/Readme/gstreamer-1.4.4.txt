@@ -1,0 +1,55 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+solution obtained from official source package
+solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.0
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gstreamer-1.4.4\win32\msvc-120
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://cairographics.org/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+intl
+glib
+libxml
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+open config.h from $(SolutionDir)src and modify following macros to reflect your system:
+HOST_CPU
+HAVE_CPU_X86_64
+additionaly uncomment/comment other macros, or use MSYS2 and reconfigure
+there are some macros in preprocessor setting, so check these too.
+set correct SRC_DIR in solution_gstreamer.props before building.
+set path to bison and flex in base_setup.props (required)
+Open Visual Studio solution and build.
+Build Install to install headers and documentation.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+no test projects because obviously test sources do not support Windows.
+some linker and compiler warnings are ignored on solution level
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.1.0
+	Debug x64
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+gboolean _gst_disable_registry_cache = FALSE is unresolved because GST_DISABLE_LOADSAVE and
+GST_DISABLE_REGISTRY id defined, need to compile libxml, undefine tese macros and uncomment
+_gst_disable_registry_cache in *.def file
+there is still more sources to create additional projects.
+check directories defined by macros, PLUGIN_DIR and such...
+gstcoreelement is a dll, but what does it export?? no *.def file...

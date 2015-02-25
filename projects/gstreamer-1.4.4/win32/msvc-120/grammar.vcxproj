@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D7EB3D4-7E91-4D98-80EA-28A8F2E365F7}</ProjectGuid>
+    <RootNamespace>grammar</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_gstreamer.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_gstreamer.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_gstreamer.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_gstreamer.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\gst\gstmarshal.list">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glib-genmarshal &gt; NUL 2&gt; NUL
+if %25errorlevel%25 == 9009 goto NOGLIBGENMARSHAL
+rem resets errorlevel to 0 because it is 1 now:
+dir &gt; NUL
+
+if exist ..\..\gst\gstmarshal.c goto HEADER
+echo #include "glib-object.h" &gt; gstmarshal.c.tmp
+echo #include "gstmarshal.h" &gt;&gt; gstmarshal.c.tmp
+glib-genmarshal --body --prefix=gst_marshal ..\..\gst\gstmarshal.list &gt;&gt; gstmarshal.c.tmp
+move gstmarshal.c.tmp ..\..\gst\gstmarshal.c
+:HEADER
+if exist ..\..\gst\gstmarshal.h goto END
+echo #include "gst/gstconfig.h" &gt; gstmarshal.h.tmp
+glib-genmarshal --header --prefix=gst_marshal ..\..\gst\gstmarshal.list &gt;&gt; gstmarshal.h.tmp
+move gstmarshal.h.tmp ..\..\gst\gstmarshal.h
+goto END
+
+:NOGLIBGENMARSHAL
+echo ERROR %25errorlevel%25
+echo ### YOU DO NOT HAVE GLIB-GENMARSHAL.EXE IN YOUR PATH.
+echo ### INSTALL GLIB-DEV AND/OR MAKE SURE IT IS IN YOUR PATH!
+
+:END
+
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glib-genmarshal &gt; NUL 2&gt; NUL
+if %25errorlevel%25 == 9009 goto NOGLIBGENMARSHAL
+rem resets errorlevel to 0 because it is 1 now:
+dir &gt; NUL
+
+if exist ..\..\gst\gstmarshal.c goto HEADER
+echo #include "glib-object.h" &gt; gstmarshal.c.tmp
+echo #include "gstmarshal.h" &gt;&gt; gstmarshal.c.tmp
+glib-genmarshal --body --prefix=gst_marshal ..\..\gst\gstmarshal.list &gt;&gt; gstmarshal.c.tmp
+move gstmarshal.c.tmp ..\..\gst\gstmarshal.c
+:HEADER
+if exist ..\..\gst\gstmarshal.h goto END
+echo #include "gst/gstconfig.h" &gt; gstmarshal.h.tmp
+glib-genmarshal --header --prefix=gst_marshal ..\..\gst\gstmarshal.list &gt;&gt; gstmarshal.h.tmp
+move gstmarshal.h.tmp ..\..\gst\gstmarshal.h
+goto END
+
+:NOGLIBGENMARSHAL
+echo ERROR %25errorlevel%25
+echo ### YOU DO NOT HAVE GLIB-GENMARSHAL.EXE IN YOUR PATH.
+echo ### INSTALL GLIB-DEV AND/OR MAKE SURE IT IS IN YOUR PATH!
+
+:END
+
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">glib-genmarshal &gt; NUL 2&gt; NUL
+if %25errorlevel%25 == 9009 goto NOGLIBGENMARSHAL
+rem resets errorlevel to 0 because it is 1 now:
+dir &gt; NUL
+
+if exist ..\..\gst\gstmarshal.c goto HEADER
+echo #include "glib-object.h" &gt; gstmarshal.c.tmp
+echo #include "gstmarshal.h" &gt;&gt; gstmarshal.c.tmp
+glib-genmarshal --body --prefix=gst_marshal ..\..\gst\gstmarshal.list &gt;&gt; gstmarshal.c.tmp
+move gstmarshal.c.tmp ..\..\gst\gstmarshal.c
+:HEADER
+if exist ..\..\gst\gstmarshal.h goto END
+echo #include "gst/gstconfig.h" &gt; gstmarshal.h.tmp
+glib-genmarshal --header --prefix=gst_marshal ..\..\gst\gstmarshal.list &gt;&gt; gstmarshal.h.tmp
+move gstmarshal.h.tmp ..\..\gst\gstmarshal.h
+goto END
+
+:NOGLIBGENMARSHAL
+echo ERROR %25errorlevel%25
+echo ### YOU DO NOT HAVE GLIB-GENMARSHAL.EXE IN YOUR PATH.
+echo ### INSTALL GLIB-DEV AND/OR MAKE SURE IT IS IN YOUR PATH!
+
+:END
+
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">glib-genmarshal &gt; NUL 2&gt; NUL
+if %25errorlevel%25 == 9009 goto NOGLIBGENMARSHAL
+rem resets errorlevel to 0 because it is 1 now:
+dir &gt; NUL
+
+if exist ..\..\gst\gstmarshal.c goto HEADER
+echo #include "glib-object.h" &gt; gstmarshal.c.tmp
+echo #include "gstmarshal.h" &gt;&gt; gstmarshal.c.tmp
+glib-genmarshal --body --prefix=gst_marshal ..\..\gst\gstmarshal.list &gt;&gt; gstmarshal.c.tmp
+move gstmarshal.c.tmp ..\..\gst\gstmarshal.c
+:HEADER
+if exist ..\..\gst\gstmarshal.h goto END
+echo #include "gst/gstconfig.h" &gt; gstmarshal.h.tmp
+glib-genmarshal --header --prefix=gst_marshal ..\..\gst\gstmarshal.list &gt;&gt; gstmarshal.h.tmp
+move gstmarshal.h.tmp ..\..\gst\gstmarshal.h
+goto END
+
+:NOGLIBGENMARSHAL
+echo ERROR %25errorlevel%25
+echo ### YOU DO NOT HAVE GLIB-GENMARSHAL.EXE IN YOUR PATH.
+echo ### INSTALL GLIB-DEV AND/OR MAKE SURE IT IS IN YOUR PATH!
+
+:END
+
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gstmarshal.tmp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gstmarshal.tmp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gstmarshal.tmp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gstmarshal.tmp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\gst\parse\grammar.y">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(BISON_DIR)bison -d -v -p_gst_parse_yy ..\..\gst\parse\grammar.y -o ..\..\gst\parse\grammar.tab.c
+$(FLEX_DIR)flex -P_gst_parse_yy -o..\..\gst\parse\lex._gst_parse_yy.c ..\..\gst\parse\parse.l
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(BISON_DIR)bison -d -v -p_gst_parse_yy ..\..\gst\parse\grammar.y -o ..\..\gst\parse\grammar.tab.c
+$(FLEX_DIR)flex -P_gst_parse_yy -o..\..\gst\parse\lex._gst_parse_yy.c ..\..\gst\parse\parse.l
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(BISON_DIR)bison -d -v -p_gst_parse_yy ..\..\gst\parse\grammar.y -o ..\..\gst\parse\grammar.tab.c
+$(FLEX_DIR)flex -P_gst_parse_yy -o..\..\gst\parse\lex._gst_parse_yy.c ..\..\gst\parse\parse.l
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(BISON_DIR)bison -d -v -p_gst_parse_yy ..\..\gst\parse\grammar.y -o ..\..\gst\parse\grammar.tab.c
+$(FLEX_DIR)flex -P_gst_parse_yy -o..\..\gst\parse\lex._gst_parse_yy.c ..\..\gst\parse\parse.l
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\gst\parse\lex._gst_parse_yy.c;..\..\gst\parse\grammar.tab.c;..\..\gst\parse\grammar.tab.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\gst\parse\lex._gst_parse_yy.c;..\..\gst\parse\grammar.tab.c;..\..\gst\parse\grammar.tab.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\gst\parse\lex._gst_parse_yy.c;..\..\gst\parse\grammar.tab.c;..\..\gst\parse\grammar.tab.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\gst\parse\lex._gst_parse_yy.c;..\..\gst\parse\grammar.tab.c;..\..\gst\parse\grammar.tab.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\common\gstconfig.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy /y ..\common\gstconfig.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">copy /y ..\common\gstconfig.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy /y ..\common\gstconfig.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy /y ..\common\gstconfig.h ..\..\gst
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\gstconfig.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\gstconfig.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\gstconfig.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\gstconfig.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\common\gstversion.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy /y ..\common\gstversion.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">copy /y ..\common\gstversion.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy /y ..\common\gstversion.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy /y ..\common\gstversion.h ..\..\gst
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\gst\gstversion.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\gst\gstversion.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\gst\gstversion.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\gst\gstversion.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\common\gstenumtypes.c">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">copy /y ..\common\gstenumtypes.c ..\..\gst
+copy /y ..\common\gstenumtypes.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">copy /y ..\common\gstenumtypes.c ..\..\gst
+copy /y ..\common\gstenumtypes.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy /y ..\common\gstenumtypes.c ..\..\gst
+copy /y ..\common\gstenumtypes.h ..\..\gst
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy /y ..\common\gstenumtypes.c ..\..\gst
+copy /y ..\common\gstenumtypes.h ..\..\gst
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\gst\gstenumtypes.c;..\..\gst\gstenumtypes.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\gst\gstenumtypes.c;..\..\gst\gstenumtypes.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\gst\gstenumtypes.c;..\..\gst\gstenumtypes.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\gst\gstenumtypes.c;..\..\gst\gstenumtypes.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

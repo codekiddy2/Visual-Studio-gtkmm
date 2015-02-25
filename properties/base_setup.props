@@ -9,6 +9,8 @@
     <NASM_DIR>D:\gtkmm\install\nasm\</NASM_DIR>
     <CMAKE_DIR>D:\gtkmm\install\CMake\bin\</CMAKE_DIR>
     <MSYS2_DIR>D:\gtkmm\install\msys64\</MSYS2_DIR>
+    <BISON_DIR>$(MSYS2_DIR)mingw64\bin\</BISON_DIR>
+    <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
@@ -35,6 +37,12 @@
     <BuildMacro Include="MSYS2_DIR">
       <Value>$(MSYS2_DIR)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="BISON_DIR">
+      <Value>$(BISON_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="FLEX_DIR">
+      <Value>$(FLEX_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

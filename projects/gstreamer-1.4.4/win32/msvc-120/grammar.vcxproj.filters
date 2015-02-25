@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\common\gstconfig.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\gstversion.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\common\gstenumtypes.c">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\gst\parse\grammar.y">
+      <Filter>Custom Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\gst\gstmarshal.list">
+      <Filter>Custom Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{44f91cb9-4d45-43f0-8e4d-b5214432c10d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{10f73466-5d7b-448d-b1be-93cc7ee0be87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom Files">
+      <UniqueIdentifier>{0baf1827-2772-423b-aabd-ed77e8485680}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

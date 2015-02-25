@@ -1,0 +1,15 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/libs/gst/base
+includedir=
+girdir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/libs/gst/base
+typelibdir=/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/libs/gst/base
+
+Name: GStreamer base classes, uninstalled
+Description: Base classes for GStreamer elements, Not Installed
+Requires: gstreamer-1.0 = 1.4.4
+Version: 1.4.4
+
+Libs: /d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/libs/gst/base/libgstbase-1.0.la
+Cflags: -I/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/libs -I/d/GitHub/Visual-Studio-gtkmm/projects/gstreamer-1.4.4/libs
