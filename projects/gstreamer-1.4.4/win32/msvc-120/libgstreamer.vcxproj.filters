@@ -24,6 +24,9 @@
     <Filter Include="Header Files\printf">
       <UniqueIdentifier>{5d268e23-f7c4-4139-83a0-b2365de1ce15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\config">
+      <UniqueIdentifier>{a04da150-dc5d-44fd-9e86-c788ecc11741}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\common\dirent.c">
@@ -285,9 +288,6 @@
     <ClInclude Include="..\..\gst\printf\vasnprintf.h">
       <Filter>Header Files\printf</Filter>
     </ClInclude>
-    <ClInclude Include="src\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gst\gettext.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -521,6 +521,9 @@
     </ClInclude>
     <ClInclude Include="..\..\gst\math-compat.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>Header Files\config</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug dll|Win32">
+      <Configuration>Debug dll</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug dll|x64">
+      <Configuration>Debug dll</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug static|Win32">
+      <Configuration>Debug static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug static|x64">
+      <Configuration>Debug static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release dll|Win32">
+      <Configuration>Release dll</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release dll|x64">
+      <Configuration>Release dll</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release static|Win32">
+      <Configuration>Release static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release static|x64">
+      <Configuration>Release static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D6039F6-5078-416F-A3AF-A36EFC7E6A1C}</ProjectGuid>
+    <RootNamespace>libxml2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_libxml2.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>LIBXML_ICONV_ENABLED;HAVE_WIN32_THREADS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>LIBXML_ICU_ENABLED;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link />
+    <PreBuildEvent>
+      <Command>xcopy $(SolutionDir)config.h $(SRC_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>LIBXML_ICONV_ENABLED;HAVE_WIN32_THREADS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>LIBXML_ICU_ENABLED;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link />
+    <PreBuildEvent>
+      <Command>xcopy $(SolutionDir)config.h $(SRC_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>LIBXML_ICONV_ENABLED;HAVE_WIN32_THREADS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>LIBXML_ICU_ENABLED;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link />
+    <PreBuildEvent>
+      <Command>xcopy $(SolutionDir)config.h $(SRC_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>LIBXML_ICONV_ENABLED;HAVE_WIN32_THREADS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>LIBXML_ICU_ENABLED;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link />
+    <PreBuildEvent>
+      <Command>xcopy $(SolutionDir)config.h $(SRC_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>LIBXML_ICONV_ENABLED;HAVE_WIN32_THREADS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>LIBXML_ICU_ENABLED;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link />
+    <PreBuildEvent>
+      <Command>xcopy $(SolutionDir)config.h $(SRC_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>/IGNORE:4049 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>LIBXML_ICONV_ENABLED;HAVE_WIN32_THREADS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>LIBXML_ICU_ENABLED;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link />
+    <PreBuildEvent>
+      <Command>xcopy $(SolutionDir)config.h $(SRC_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>/IGNORE:4049 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>LIBXML_ICONV_ENABLED;HAVE_WIN32_THREADS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>LIBXML_ICU_ENABLED;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link />
+    <PreBuildEvent>
+      <Command>xcopy $(SolutionDir)config.h $(SRC_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>/IGNORE:4049 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>LIBXML_ICONV_ENABLED;HAVE_WIN32_THREADS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>LIBXML_ICU_ENABLED;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link />
+    <PreBuildEvent>
+      <Command>xcopy $(SolutionDir)config.h $(SRC_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>/IGNORE:4049 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\buf.c" />
+    <ClCompile Include="..\..\c14n.c" />
+    <ClCompile Include="..\..\catalog.c" />
+    <ClCompile Include="..\..\chvalid.c" />
+    <ClCompile Include="..\..\debugXML.c" />
+    <ClCompile Include="..\..\dict.c" />
+    <ClCompile Include="..\..\DOCBparser.c" />
+    <ClCompile Include="..\..\encoding.c" />
+    <ClCompile Include="..\..\entities.c" />
+    <ClCompile Include="..\..\error.c" />
+    <ClCompile Include="..\..\globals.c" />
+    <ClCompile Include="..\..\hash.c" />
+    <ClCompile Include="..\..\HTMLparser.c" />
+    <ClCompile Include="..\..\HTMLtree.c" />
+    <ClCompile Include="..\..\legacy.c" />
+    <ClCompile Include="..\..\list.c" />
+    <ClCompile Include="..\..\nanoftp.c" />
+    <ClCompile Include="..\..\nanohttp.c" />
+    <ClCompile Include="..\..\parser.c" />
+    <ClCompile Include="..\..\parserInternals.c" />
+    <ClCompile Include="..\..\pattern.c" />
+    <ClCompile Include="..\..\relaxng.c" />
+    <ClCompile Include="..\..\SAX.c" />
+    <ClCompile Include="..\..\SAX2.c" />
+    <ClCompile Include="..\..\schematron.c" />
+    <ClCompile Include="..\..\threads.c" />
+    <ClCompile Include="..\..\tree.c" />
+    <ClCompile Include="..\..\uri.c" />
+    <ClCompile Include="..\..\valid.c" />
+    <ClCompile Include="..\..\xinclude.c" />
+    <ClCompile Include="..\..\xlink.c" />
+    <ClCompile Include="..\..\xmlcatalog.c" />
+    <ClCompile Include="..\..\xmlIO.c" />
+    <ClCompile Include="..\..\xmlmemory.c" />
+    <ClCompile Include="..\..\xmlmodule.c" />
+    <ClCompile Include="..\..\xmlreader.c" />
+    <ClCompile Include="..\..\xmlregexp.c" />
+    <ClCompile Include="..\..\xmlsave.c" />
+    <ClCompile Include="..\..\xmlschemas.c" />
+    <ClCompile Include="..\..\xmlschemastypes.c" />
+    <ClCompile Include="..\..\xmlstring.c" />
+    <ClCompile Include="..\..\xmlunicode.c" />
+    <ClCompile Include="..\..\xmlwriter.c" />
+    <ClCompile Include="..\..\xpath.c" />
+    <ClCompile Include="..\..\xpointer.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\elfgcchack.h" />
+    <ClInclude Include="..\..\libxml.h" />
+    <ClInclude Include="config.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

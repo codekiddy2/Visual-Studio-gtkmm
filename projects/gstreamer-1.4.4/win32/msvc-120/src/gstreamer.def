@@ -1444,5 +1444,5 @@ EXPORTS
 	gst_version
 	gst_version_string
 
-	;** UNRESOLVED **
-	;_gst_disable_registry_cache DATA
+	;** following needs libxml **
+	_gst_disable_registry_cache DATA

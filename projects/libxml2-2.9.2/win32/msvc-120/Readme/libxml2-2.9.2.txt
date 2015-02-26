@@ -1,55 +1,46 @@
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
-solution obtained from official source package
+solution obtained from official package
 solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.1
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gstreamer-1.4.4\win32\msvc-120
+solution version = 1.1.0
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\libxml2-2.9.2\win32\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://cairographics.org/
+official sources: http://xmlsoft.org/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-intl
-glib
-libxml
+iconv (optional)
+icu (optional)
+zlib (optional)
+lzma (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-open config.h from $(SolutionDir)src and modify following macros to reflect your system:
-HOST_CPU
-HAVE_CPU_X86_64
-additionaly uncomment/comment other macros, or use MSYS2 and reconfigure
-there are some macros in preprocessor setting, so check these too.
-set correct SRC_DIR in solution_gstreamer.props before building.
-set path to bison and flex in base_setup.props (required)
-Open Visual Studio solution and build.
-Build Install to install headers and documentation.
+check config.h and updade as necesary...
+Open Visual Studio solution select configuration and build.
+Once done install headers by running the "Install" project.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-no test projects because obviously test sources do not support Windows.
-some linker and compiler warnings are ignored on solution level
-to build whithout libxml dependency define GST_DISABLE_LOADSAVE and GST_DISABLE_REGISTRY,
-also uncomment _gst_disable_registry_cache in *.def file
-by looking at code it looks xml parsing is not implemented at all ??
+there are linker and compiler warnings disabled
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
+List of tests:
+
 1.1.0
-	Debug x64
+	Debug dll/static x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-there is still more sources to create additional projects.
-check directories defined by macros, PLUGIN_DIR and such...
-gstcoreelement is a dll, but what does it export?? no *.def file...
+create icu project and link with libxml2

@@ -11,7 +11,7 @@
       <AdditionalOptions>/IGNORE:4049,4197,4217 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <ClCompile>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;GST_DISABLE_LOADSAVE;GST_DISABLE_REGISTRY;GST_DATADIR="$(SHARE_DIR)";GST_PLUGIN_SCANNER_INSTALLED="$(LIB_DIR)\gst-plugin-scanner";LOCALEDIR="$(SHARE_DIR)\locale";PLUGINDIR="$(LIB_DIR)\gstreamer-1.0";LIBDIR="$(LIB_DIR)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;GST_DATADIR="$(SHARE_DIR)";GST_PLUGIN_SCANNER_INSTALLED="$(LIB_DIR)\gst-plugin-scanner";LOCALEDIR="$(SHARE_DIR)\locale";PLUGINDIR="$(LIB_DIR)\gstreamer-1.0";LIBDIR="$(LIB_DIR)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)src\;$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WarningLevel>Level1</WarningLevel>
       <DisableSpecificWarnings>4005;4129;%(DisableSpecificWarnings)</DisableSpecificWarnings>

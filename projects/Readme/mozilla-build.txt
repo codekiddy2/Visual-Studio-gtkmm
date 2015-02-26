@@ -31,3 +31,4 @@ export LDFLAGS=''
 in MS sheel path names *must* not contain '/' while in unix shell is opposite. ie. compiler settings will not work!
 also CL flag must be given a full path, so the above example will not work if libtool starts to ie: cd.. cd../.. -> ERROR 100%
 in UNIX shell flags passed directly to configure are better than exporting them into varibles
+includes and libs should be defined in compiler file, in some cases configure script can't find headers..
