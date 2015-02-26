@@ -91,17 +91,15 @@ cd $(INCLUDE_DIR)
 if not exist gstreamer mkdir gstreamer
 cd gstreamer
 mkdir controler
-mkdir base
 mkdir net
-mkdir gst
+mkdir gst\base
 echo installing headers ...
 cd controler
 xcopy $(SRC_DIR)libs\gst\controller\*.h /Y
 copy controller.h ..\
-cd ..\base
+cd ..\gst\base
 xcopy $(SRC_DIR)libs\gst\base\*.h /Y
-copy base.h ..\
-cd ..\net
+cd ..\..\net
 xcopy $(SRC_DIR)libs\gst\net\*.h /Y
 copy net.h ..\
 cd ..\gst
@@ -136,17 +134,15 @@ cd $(INCLUDE_DIR)
 if not exist gstreamer mkdir gstreamer
 cd gstreamer
 mkdir controler
-mkdir base
 mkdir net
-mkdir gst
+mkdir gst\base
 echo installing headers ...
 cd controler
 xcopy $(SRC_DIR)libs\gst\controller\*.h /Y
 copy controller.h ..\
-cd ..\base
+cd ..\gst\base
 xcopy $(SRC_DIR)libs\gst\base\*.h /Y
-copy base.h ..\
-cd ..\net
+cd ..\..\net
 xcopy $(SRC_DIR)libs\gst\net\*.h /Y
 copy net.h ..\
 cd ..\gst
@@ -181,17 +177,15 @@ cd $(INCLUDE_DIR)
 if not exist gstreamer mkdir gstreamer
 cd gstreamer
 mkdir controler
-mkdir base
 mkdir net
-mkdir gst
+mkdir gst\base
 echo installing headers ...
 cd controler
 xcopy $(SRC_DIR)libs\gst\controller\*.h /Y
 copy controller.h ..\
-cd ..\base
+cd ..\gst\base
 xcopy $(SRC_DIR)libs\gst\base\*.h /Y
-copy base.h ..\
-cd ..\net
+cd ..\..\net
 xcopy $(SRC_DIR)libs\gst\net\*.h /Y
 copy net.h ..\
 cd ..\gst
@@ -226,17 +220,15 @@ cd $(INCLUDE_DIR)
 if not exist gstreamer mkdir gstreamer
 cd gstreamer
 mkdir controler
-mkdir base
 mkdir net
-mkdir gst
+mkdir gst\base
 echo installing headers ...
 cd controler
 xcopy $(SRC_DIR)libs\gst\controller\*.h /Y
 copy controller.h ..\
-cd ..\base
+cd ..\gst\base
 xcopy $(SRC_DIR)libs\gst\base\*.h /Y
-copy base.h ..\
-cd ..\net
+cd ..\..\net
 xcopy $(SRC_DIR)libs\gst\net\*.h /Y
 copy net.h ..\
 cd ..\gst

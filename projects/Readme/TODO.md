@@ -9,7 +9,7 @@ Following TODO's apply to "Redesign" branch
 6. create master solution
 7. test GL extensions with cairo.
 8. use mainCRTStartup for base_windows.props and update dpendent projects
-9. --done
+9. create master config.h for all solutions and solution level config.h headers
 10. separate each project into it's own folder in solution directory
 11. sincronyze compiler/linker flags for custom build cmd projects.
 12. minimize amount of build events in project to reduce the "cmd exit = blah"
@@ -29,7 +29,7 @@ Following TODO's apply to "Redesign" branch
 25. merge TODO's from readme files here
 26. make solution for libgw32
 27. rename projects (in windows explorer) so that the name is the same as in solutions
-28. create ICU project to optionally link with harbuzz
+28. create ICU project to optionally link with harbuzz, libxml and others?? (what with expat then?)
 29. RETURN "TEST CALLER APP" BACK TO FFI! test with older versions!
 30. check for config header of each solution for consistency such as targeted widnows.
 31. rename gtk_stack.props into stack_gtk.props and update projects
