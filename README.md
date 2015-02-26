@@ -10,3 +10,12 @@ There are also pre-built binaries for VS in "release" section (link above)
 ```
 If you encounter a failure please give a feedback.
 ```
+
+**THANKS!!**
+```
+Special thanks to Fan Chun-wei for his solutions and tutorial on how to compile GTK+
+wiki.gnome.org/action/show/Projects/GTK+/Win32/MSVCCompilationOfGTKStack
+
+Special thanks to Arnavion and other people from hexchat.
+github.com/hexchat/gtk-win32
+```
