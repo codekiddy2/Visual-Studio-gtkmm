@@ -23,7 +23,7 @@ Following TODO's apply to "Redesign" branch
 19. new directory structure for multi versioning.
 20. same intermediate root directory for asm and C/C++ projects
 21. define location for *.def files in solution folder, and how to "install" them into SYMBOLS_DIR
-22. --done
+22. build all gst-* sources and dependencies (video, audio ...)
 23. link asm outputs automatically to linker instead of object files.
 24. define path for nasm and similar tools in properties, so that %PATH% won't be needed
 25. merge TODO's from readme files here
@@ -41,4 +41,10 @@ Following TODO's apply to "Redesign" branch
 37. implement custom *.pc files for pkg-config
 38. check linker library inputs because some properties added new linker inputs, no need to specify an input 2 times.
 39. some configurations (different) should install different headers, chaeck install projects.
+40. set linker /IGNORE and reenable threat linker warnings as errors in some solutions (glib...)
+
+
+
+
+
 
