@@ -116,7 +116,7 @@
       <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>zlib.dll.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;zlib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>

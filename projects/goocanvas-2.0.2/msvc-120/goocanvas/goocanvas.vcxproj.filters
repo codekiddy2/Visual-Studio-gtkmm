@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\config">
+      <UniqueIdentifier>{fb952a3d-1076-4ef3-a30c-1b90684795a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\goocanvas.h">
@@ -76,7 +79,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\config.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\config</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

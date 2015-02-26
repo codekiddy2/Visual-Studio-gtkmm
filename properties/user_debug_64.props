@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <ROOT_DIR>C:\gtkmm-3-VS-2013\</ROOT_DIR>
+    <BIN_DIR>$(ROOT_DIR)bin\</BIN_DIR>
+    <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
+    <INCLUDE_DIR>$(ROOT_DIR)include\</INCLUDE_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(INCLUDE_DIR);$(INCLUDE_DIR)gtkmm;$(LIB_DIR)gtkmm;$(LIB_DIR)gdkmm;$(INCLUDE_DIR)sigc++;$(INCLUDE_DIR)glibmm;$(INCLUDE_DIR)pangomm;$(INCLUDE_DIR)atkmm;$(LIB_DIR)sigc++;$(LIB_DIR)glibmm;$(LIB_DIR)pangomm;$(LIB_DIR)giomm;$(INCLUDE_DIR)intl;$(INCLUDE_DIR)iconv;$(INCLUDE_DIR)glib;$(INCLUDE_DIR)dirnet;$(INCLUDE_DIR)harfbuzz;$(INCLUDE_DIR)expat;$(INCLUDE_DIR)zlib;$(INCLUDE_DIR)fontconfig;$(INCLUDE_DIR)jpeg-turbo;$(INCLUDE_DIR)freetype;$(INCLUDE_DIR)png;$(INCLUDE_DIR)ffi;$(INCLUDE_DIR)tiff;$(INCLUDE_DIR)pixman;$(INCLUDE_DIR)cairo;$(INCLUDE_DIR)pango;$(INCLUDE_DIR)gtk;$(LIB_DIR)glib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4250;4290;4101;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtkmm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;atkmm.dll.lib;pangomm.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;gio.dll.lib;atk.dll.lib;cairo.dll.lib;pango.dll.lib;pangocairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="ROOT_DIR">
+      <Value>$(ROOT_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BIN_DIR">
+      <Value>$(BIN_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIB_DIR">
+      <Value>$(LIB_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="INCLUDE_DIR">
+      <Value>$(INCLUDE_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

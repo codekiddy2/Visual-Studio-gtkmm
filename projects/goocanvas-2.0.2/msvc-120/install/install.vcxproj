@@ -90,11 +90,10 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist goocanvas\goocanvas mkdir goocanvas\goocanvas
-cd goocanvas\goocanvas
+if not exist goocanvas mkdir goocanvas
+cd goocanvas
 echo installing headers ...
 xcopy $(SRC_DIR)src\*.h /Y
-xcopy goocanvas.h ..\ /Y
 cd $(REF_DIR)
 if not exist goocanvas\html mkdir goocanvas\html
 cd goocanvas\html
@@ -118,11 +117,10 @@ copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist goocanvas\goocanvas mkdir goocanvas\goocanvas
-cd goocanvas\goocanvas
+if not exist goocanvas mkdir goocanvas
+cd goocanvas
 echo installing headers ...
 xcopy $(SRC_DIR)src\*.h /Y
-xcopy goocanvas.h ..\ /Y
 cd $(REF_DIR)
 if not exist goocanvas\html mkdir goocanvas\html
 cd goocanvas\html
@@ -131,7 +129,6 @@ xcopy $(SRC_DIR)docs\html\*.* /Y
 echo installing pkg-config files ...
 cd $(PKG_CONFIG_PATH)
 copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
-      <Message>installing goocanvas ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -146,11 +143,10 @@ copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist goocanvas\goocanvas mkdir goocanvas\goocanvas
-cd goocanvas\goocanvas
+if not exist goocanvas mkdir goocanvas
+cd goocanvas
 echo installing headers ...
 xcopy $(SRC_DIR)src\*.h /Y
-xcopy goocanvas.h ..\ /Y
 cd $(REF_DIR)
 if not exist goocanvas\html mkdir goocanvas\html
 cd goocanvas\html
@@ -159,7 +155,6 @@ xcopy $(SRC_DIR)docs\html\*.* /Y
 echo installing pkg-config files ...
 cd $(PKG_CONFIG_PATH)
 copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
-      <Message>installing goocanvas ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -174,11 +169,10 @@ copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist goocanvas\goocanvas mkdir goocanvas\goocanvas
-cd goocanvas\goocanvas
+if not exist goocanvas mkdir goocanvas
+cd goocanvas
 echo installing headers ...
 xcopy $(SRC_DIR)src\*.h /Y
-xcopy goocanvas.h ..\ /Y
 cd $(REF_DIR)
 if not exist goocanvas\html mkdir goocanvas\html
 cd goocanvas\html
@@ -187,7 +181,6 @@ xcopy $(SRC_DIR)docs\html\*.* /Y
 echo installing pkg-config files ...
 cd $(PKG_CONFIG_PATH)
 copy $(SolutionDir)install\goocanvas-$(Configuration)-$(Platform).pc goocanvas-2.0.pc</Command>
-      <Message>installing goocanvas ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

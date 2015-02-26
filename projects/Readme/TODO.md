@@ -42,6 +42,7 @@ Following TODO's apply to "Redesign" branch
 38. check linker library inputs because some properties added new linker inputs, no need to specify an input 2 times.
 39. some configurations (different) should install different headers, chaeck install projects.
 40. set linker /IGNORE and reenable threat linker warnings as errors in some solutions (glib...)
+41. instead on manualy entering linker inputs for each project there should be something like "consume" or "use" properties for each solution
 
 
 
