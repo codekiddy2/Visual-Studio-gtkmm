@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SRC_DIR>$(PROJECTS_DIR)cryptopp-5.6.2\</SRC_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\;$(SolutionDir)..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)
+if not exist Backup mkdir Backup
+cd Backup
+if not exist .\dll.h move /Y $(SRC_DIR)dll.h .\
+if not exist .\fipstest.cpp move /Y $(SRC_DIR)fipstest.cpp .\
+cd $(SRC_DIR)
+xcopy $(SolutionDir)src\dll.h $(SRC_DIR) /Y
+xcopy $(SolutionDir)src\fipstest.cpp $(SRC_DIR) /Y
+</Command>
+      <Message>Coping modified files ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
