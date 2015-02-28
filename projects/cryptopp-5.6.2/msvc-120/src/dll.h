@@ -48,7 +48,7 @@
 #endif
 #endif
 
-#pragma comment(lib, "crypto++.dll.lib")
+#pragma comment(lib, "cryptopp.dll.lib")
 
 #endif		// #ifdef CRYPTOPP_IMPORTS
 
