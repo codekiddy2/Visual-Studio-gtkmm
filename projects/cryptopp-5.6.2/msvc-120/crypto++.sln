@@ -2,13 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crypto++", "cryptdll.vcxproj", "{EBD86293-69A9-456B-B814-916E12AA9BBF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp_dll", "cryptdll.vcxproj", "{EBD86293-69A9-456B-B814-916E12AA9BBF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-crypto++", "cryptest.vcxproj", "{9EAFA456-89B4-4879-AD4F-C2C341184CF5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-cryptopp", "cryptest.vcxproj", "{9EAFA456-89B4-4879-AD4F-C2C341184CF5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crypto++static", "cryptlib.vcxproj", "{3423EC9A-52E4-4A4D-9753-EDEBC38785EF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp_static", "cryptlib.vcxproj", "{3423EC9A-52E4-4A4D-9753-EDEBC38785EF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-crypto++dll", "dlltest.vcxproj", "{A7483CE8-2784-46CE-8CB8-8C0C1D27E232}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-cryptopp_dll", "dlltest.vcxproj", "{A7483CE8-2784-46CE-8CB8-8C0C1D27E232}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{2C6DF77E-F586-40D6-B07B-252D1B249087}"
 	ProjectSection(SolutionItems) = preProject
