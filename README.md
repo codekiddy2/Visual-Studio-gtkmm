@@ -6,7 +6,7 @@ can be found on wiki, the link on the right.
 There are also pre-built binaries for VS 2013 in "release" section (link above)
 Here is an image of my result, creating new gtkmm 3.14 project in Visual Studio 2013
 ```
-![alt tag](https://github.com/codekiddy2/Visual-Studio-gtkmm/blob/Redesign/projects/Readme/result.png)
+![alt tag](https://github.com/codekiddy2/Visual-Studio-gtkmm/blob/Redesign/projects/Readme/gtkmm%20visual%20studio.png)
 
 **EXTENDING C++ libraries**
 ```
@@ -20,7 +20,7 @@ So that all you have to do is click on File > New > Project
 and start coding with latest libraries with 0 setup needed.
 Here is yet another image showing that this is possible:
 ```
-![alt tag](https://github.com/codekiddy2/Visual-Studio-gtkmm/blob/Redesign/projects/Readme/result2.PNG)
+![alt tag](https://github.com/codekiddy2/Visual-Studio-gtkmm/blob/Redesign/projects/Readme/gtkmm%20visual%20studio2.png)
 
 
 **REPORT FAILURES:**
