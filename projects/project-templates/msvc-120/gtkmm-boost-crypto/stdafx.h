@@ -1,7 +1,7 @@
 #pragma once
 
 // PCH includes
-// TODO: modify includes for faster compilation and intellisense according to your needs
+// TODO: modify or add more includes here for faster compilation and intellisense according to your needs
 
 
 DW // disable warnings macro (to compile own code with W4 flag)
@@ -15,7 +15,7 @@ DW // disable warnings macro (to compile own code with W4 flag)
 // #include <atkmm\atkmm.h>
 // #include <pangomm\pangomm.h>
 
-// avoiding capitall letters for intellisense
+// avoiding capitall letters
 namespace gtk = Gtk;
 namespace glib = Glib;
 namespace cairo = Cairo;
@@ -27,7 +27,7 @@ namespace cairo = Cairo;
 #include <boost\smart_ptr.hpp>
 #include <boost\filesystem.hpp>
 
-// reference additional shortcuts for namespaces here
+// shortcuts for boost namespaces
 namespace asio = boost::asio;
 namespace ip = boost::asio::ip;
 namespace posix_time = boost::posix_time;
@@ -43,7 +43,7 @@ namespace filesystem = boost::filesystem;
 #include <cryptopp\pubkey.h>
 #include <cryptopp\filters.h>
 
-// avoiding capitall letters for intellisense
+// avoiding capitall letters
 namespace cryptopp = CryptoPP;
 
 EW // enable warnings macro

@@ -11,6 +11,7 @@
     <REF_DIR>$(SHARE_DIR)doc\reference\</REF_DIR>
     <PKG_CONFIG_PATH>$(SHARE_DIR)pkgconfig\</PKG_CONFIG_PATH>
     <PROJECTS_DIR>$(REPO_DIR)projects\</PROJECTS_DIR>
+    <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -156,6 +157,9 @@
     </BuildMacro>
     <BuildMacro Include="PROJECTS_DIR">
       <Value>$(PROJECTS_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PROPS_DIR">
+      <Value>$(PROPS_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

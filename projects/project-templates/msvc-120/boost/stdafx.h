@@ -1,7 +1,7 @@
 #pragma once
 
 // PCH includes
-// TODO: modify includes for faster compilation and intellisense according to your needs
+// TODO: modify or add more includes here for faster compilation and intellisense according to your needs
 
 
 DW // disable warnings macro (to compile own code with W4 flag)
@@ -13,7 +13,7 @@ DW // disable warnings macro (to compile own code with W4 flag)
 #include <boost\smart_ptr.hpp>
 #include <boost\filesystem.hpp>
 
-// reference additional shortcuts for namespaces here
+// shortcuts for boost namespaces
 namespace asio = boost::asio;
 namespace ip = boost::asio::ip;
 namespace posix_time = boost::posix_time;
