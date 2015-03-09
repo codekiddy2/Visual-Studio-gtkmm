@@ -8,7 +8,7 @@ There are also pre-built binaries for VS in "release" section (link above)
 
 **EXTENDING C++ libraries**
 ```
-Initialy I was "heated" to build gtkmm, and the amound of frustration to do so
+Initialy I was "heated" to build gtkmm, and the amount of frustration to do so
 was not funny at all, sadly that's not enough to make great C++ apps,
 So I extended this to networking and cryptography so that we can have an
 ALL IN ONE package!
