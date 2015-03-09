@@ -3,8 +3,10 @@
 Visual Studio 2013 projects to build gtk+ and gtkmm and it's dependencies.
 More information such as dependency graphs and how to use these projects
 can be found on wiki, the link on the right.
-There are also pre-built binaries for VS in "release" section (link above)
+There are also pre-built binaries for VS 2013 in "release" section (link above)
+Here is an image of my result, creating new gtkmm 3.14 project in Visual Studio 2013
 ```
+![alt tag](https://github.com/codekiddy2/Visual-Studio-gtkmm/blob/Redesign/projects/Readme/result.png)
 
 **EXTENDING C++ libraries**
 ```
@@ -15,8 +17,9 @@ ALL IN ONE package!
 so here you'll will find more than just gtkmm, projects to build Crypto++ and
 project templates for Visual Studio including gtkmm, crypto++ and boost.
 So that all you have to do is click on File > New > Project
-and start coding with latest libraries with 0 setup needed.
+and start coding with latest libraries with 0 setup needed as shown in the image above.
 ```
+
 
 **REPORT FAILURES:**
 ```
