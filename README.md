@@ -16,6 +16,8 @@ so here you'll will find more than just gtkmm, projects to build Crypto++ and
 project templates for Visual Studio including gtkmm, crypto++ and boost.
 So that all you have to do is click on File > New > Project
 and start coding with latest libraries with 0 setup needed.
+To see what I mean here is an image:
+![alt tag](https://github.com/codekiddy2/Visual-Studio-gtkmm/blob/Redesign/projects/Readme/result.png)
 ```
 
 **REPORT FAILURES:**
