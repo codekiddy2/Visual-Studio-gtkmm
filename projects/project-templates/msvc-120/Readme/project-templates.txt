@@ -1,0 +1,55 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+solution created by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.0.0
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\project-templates\msvc-120
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+gtkmm
+goocanvasmm
+boost
+crypto++
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+These template projects can be installed by build the install project which will copy preconfigured templates into
+Visual Studio templates directory.
+Alternatively you can modify these projects for your needs and export them as templates into:
+$(USERPROFILE)\Documents\Visual Studio 2013\Templates\ProjectTemplates\
+Properties directory must exist with all the user_*.props properties.
+There are also icons included so that templates would have a nice apperance and description on File > New Project
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+Each project template is set up to use/create a precompiled header, this is absolute must in order to have fast intellisense,
+also compilation time will be reduced and there will be almost no need to include anything except for special needs of course.
+Read following if you want to learn more:
+http://blogs.msdn.com/b/vcblog/archive/2010/01/26/precompiled-header-files-in-visual-studio-2010.aspx
+http://blogs.msdn.com/b/vcblog/archive/2011/03/29/10146895.aspx
+There are macros 'DW' and 'EW' which are used to disable warnings for system headers.
+Either use them to compile with warning level 4 or set warning level to 3 or less.
+gtkmm-boost-crypto++ is an all-in-one template, and requires at least /Zm200 option since it needs more memory for
+precompiled header. for more info about /Zm see:
+https://msdn.microsoft.com/en-us/library/bdscwf1c.aspx
+In case of problem replace Zm200 with Zm1000 (750mb for PCH)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.0
+	Debug x64
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+Make templates for other configurations too.
