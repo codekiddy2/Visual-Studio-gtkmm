@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{5407E2
 		Readme\project-templates.txt = Readme\project-templates.txt
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtkmm-boost-crypto++", "gtkmm-boost-crypto\gtkmm-boost-crypto.vcxproj", "{14B219F6-04BA-45FC-A881-B78FF455FCD1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ultimate++", "gtkmm-boost-crypto\gtkmm-boost-crypto.vcxproj", "{14B219F6-04BA-45FC-A881-B78FF455FCD1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{F729CC26-0C06-4C13-945F-56BD5A66A4C9}"
 EndProject

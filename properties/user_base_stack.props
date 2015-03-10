@@ -2,40 +2,45 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
+    <INCLUDE_DIR>$(ROOT_DIR)include\</INCLUDE_DIR>
+    <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
+    <PROJECTS_DIR>$(REPO_DIR)projects\</PROJECTS_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
-      <CompileAsManaged>false</CompileAsManaged>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WINVER=0x0601;_WIN32_WINNT=0x0601;DW=__pragma(warning( disable: 4309 4505 4250 )) __pragma(warning( push, 0 ));EW=__pragma(warning( default: 4309 4505 )) __pragma(warning( pop ));%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <OpenMPSupport>false</OpenMPSupport>
+      <PreprocessorDefinitions>DW=__pragma(warning( disable: 4309 4505 4250 )) __pragma(warning( push, 0 ));EW=__pragma(warning( default: 4309 4505 )) __pragma(warning( pop ));WINVER=0x0601;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAs>CompileAsCpp</CompileAs>
       <FloatingPointExceptions>true</FloatingPointExceptions>
+      <DisableSpecificWarnings />
+      <TreatSpecificWarningsAsErrors />
+      <SDLCheck>true</SDLCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
     </ClCompile>
     <Link>
-      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
-      <SubSystem>NotSet</SubSystem>
-      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <FixedBaseAddress>false</FixedBaseAddress>
-      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <ImportLibrary />
     </Link>
-    <Lib>
-      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
-    </Lib>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
+    <Lib />
+    <ProjectReference />
+    <ResourceCompile />
+    <Midl />
+    <Xdcmake />
+    <BuildLog />
+    <Bscmake />
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <BuildMacro Include="PROPS_DIR">
-      <Value>$(PROPS_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
+    <BuildMacro Include="INCLUDE_DIR">
+      <Value>$(INCLUDE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIB_DIR">
+      <Value>$(LIB_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PROJECTS_DIR">
+      <Value>$(PROJECTS_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

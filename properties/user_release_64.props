@@ -4,16 +4,11 @@
     <Import Project="root_release.props" />
     <Import Project="user_base_stack.props" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros">
-    <BIN_DIR>$(ROOT_DIR)bin\</BIN_DIR>
-    <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
-    <INCLUDE_DIR>$(ROOT_DIR)include\</INCLUDE_DIR>
-  </PropertyGroup>
+  <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile />
     <Link>
-      <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <TargetMachine>MachineX64</TargetMachine>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
@@ -21,15 +16,5 @@
       <PreprocessorDefinitions>_WIN32;_WIN64;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <BuildMacro Include="BIN_DIR">
-      <Value>$(BIN_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="LIB_DIR">
-      <Value>$(LIB_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="INCLUDE_DIR">
-      <Value>$(INCLUDE_DIR)</Value>
-    </BuildMacro>
-  </ItemGroup>
+  <ItemGroup />
 </Project>

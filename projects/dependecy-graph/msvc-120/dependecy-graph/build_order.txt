@@ -109,6 +109,8 @@ gtk+
 
 goocanvas
 	-gtk+
+
+gstreamer
 	...
 
 libsigc++
@@ -124,6 +126,6 @@ gtkmm
 	...
 goocanvasmm
 	...
-
+gstreamermm
 
 
