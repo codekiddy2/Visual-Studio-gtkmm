@@ -29,7 +29,7 @@
 // modified by codekiddy -- add your windows version
 #if defined(WINAPI_FAMILY_PARTITION) && (!(defined(IOWIN32_USING_WINRT_API)))
 #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_APP)
-#define _WIN32_WINNT 0x0601
+#define _WIN32_WINNT 0x0A00
 #endif
 #endif
 // end of modify

@@ -17,7 +17,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "miniunz", "miniunz.vcxproj"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{3ADD9B33-5D46-451A-BFD5-B0F4CD04AD6A}"
 	ProjectSection(SolutionItems) = preProject
-		Readme\zlib-1.2.8.md = Readme\zlib-1.2.8.md
+		Readme\zlib-1.2.8.txt = Readme\zlib-1.2.8.txt
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asm", "asm\asm.vcxproj", "{A204152B-9D27-47E1-BCEA-1305B6653FFE}"

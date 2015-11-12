@@ -156,7 +156,7 @@ echo asm output cleanup done!</Command>
       </Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\..\masmx64\
 ml64.exe /D _WINDOWS /D _DEBUG /D ASMV /D ASMINF /Flgvmat64.lst /c /Zi gvmat64.asm
-move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Debug\x64\intermediate\zlib\asm
+move *.obj $(INTERMEDIATE_DIR)
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </Outputs>
@@ -165,7 +165,7 @@ move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Debug\x64\intermediate\zlib
       </Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\..\masmx64\
 ml64.exe /D _WINDOWS /D ASMV /D ASMINF /Flgvmat64.lst /c /Zi gvmat64.asm
-move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Release\x64\intermediate\zlib\asm
+move *.obj $(INTERMEDIATE_DIR)
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </Outputs>
@@ -183,7 +183,7 @@ move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Release\x64\intermediate\zl
       </Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\..\masmx64\
 ml64.exe /D _WINDOWS /D _DEBUG /D ASMV /D ASMINF/Flinffasx64.lst /c /Zi inffasx64.asm
-move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Debug\x64\intermediate\zlib\asm</Command>
+move *.obj $(INTERMEDIATE_DIR)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">inffasx64.obj</Outputs>
@@ -191,7 +191,7 @@ move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Debug\x64\intermediate\zlib
       </Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\..\masmx64\
 ml64.exe /D _WINDOWS /D ASMV /D ASMINF /Flinffasx64.lst /c /Zi inffasx64.asm
-move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Release\x64\intermediate\zlib\asm</Command>
+move *.obj $(INTERMEDIATE_DIR)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">inffasx64.obj</Outputs>
@@ -210,12 +210,12 @@ move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Release\x64\intermediate\zl
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\..\masmx86
 ml /coff /Zi /c /D WIN32 /D _WINDOWS /D _DEBUG /D ASMV /D ASMINF /Flinffas32.lst inffas32.asm
-move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\intermediate\zlib\asm</Command>
+move *.obj $(INTERMEDIATE_DIR)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">inffas32.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\..\masmx86
 ml /coff /Zi /c /D WIN32 /D _WINDOWS /D ASMV /D ASMINF /Flinffas32.lst inffas32.asm
-move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Release\Win32\intermediate\zlib\asm</Command>
+move *.obj $(INTERMEDIATE_DIR)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">inffas32.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -227,13 +227,13 @@ move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Release\Win32\intermediate\
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\..\masmx86
 ml /coff /Zi /c /D WIN32 /D _DEBUG /D _WINDOWS /D ASMV /D ASMINF /Flmatch686.lst match686.asm
-move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\intermediate\zlib\asm
+move *.obj $(INTERMEDIATE_DIR)
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">match686.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\..\masmx86
 ml /coff /Zi /c /D WIN32 /D _WINDOWS /D ASMV /D ASMINF /Flmatch686.lst match686.asm
-move *.obj D:\Github\Visual-Studio-gtkmm\output\v140\Release\Win32\intermediate\zlib\asm</Command>
+move *.obj $(INTERMEDIATE_DIR)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">match686.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>

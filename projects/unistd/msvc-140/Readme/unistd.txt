@@ -1,0 +1,2 @@
+This project will install only one header, it is here just as a place holder for planned
+master solution, not because we need a project to install a single line header.
