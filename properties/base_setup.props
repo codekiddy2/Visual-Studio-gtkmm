@@ -4,11 +4,11 @@
   <PropertyGroup Label="UserMacros">
     <DRIVE>D</DRIVE>
     <REPO_DIR>D:\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
-    <PYTHON_DIR>D:\gtkmm\install\Python3\</PYTHON_DIR>
-    <PERL_DIR>D:\gtkmm\install\Perl64\bin\</PERL_DIR>
-    <NASM_DIR>D:\gtkmm\install\nasm\</NASM_DIR>
-    <CMAKE_DIR>D:\gtkmm\install\CMake\bin\</CMAKE_DIR>
-    <MSYS2_DIR>D:\gtkmm\install\msys64\</MSYS2_DIR>
+    <PYTHON_DIR>D:\Github\install\Python35\</PYTHON_DIR>
+    <PERL_DIR>D:\Github\install\Perl64\bin\</PERL_DIR>
+    <NASM_DIR>D:\Github\install\nasm\</NASM_DIR>
+    <CMAKE_DIR>D:\Github\install\CMake\bin\</CMAKE_DIR>
+    <MSYS2_DIR>D:\Github\install\msys64\</MSYS2_DIR>
     <BISON_DIR>$(MSYS2_DIR)mingw64\bin\</BISON_DIR>
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
   </PropertyGroup>
