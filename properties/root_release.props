@@ -4,7 +4,7 @@
     <Import Project="base_setup.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <ROOT_DIR>$(REPO_DIR)output\Release\$(Platform)\</ROOT_DIR>
+    <ROOT_DIR>$(REPO_DIR)output\$(PlatformToolset)\Release\$(Platform)\</ROOT_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <LinkIncremental>false</LinkIncremental>
