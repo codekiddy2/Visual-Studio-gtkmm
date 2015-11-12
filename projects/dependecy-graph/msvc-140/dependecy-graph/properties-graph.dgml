@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph ZoomLevel="1.5" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Base_console" Category="Category4" Bounds="-385.917920906612,-258.751483112064,90.1800000000001,25.96" Label="base_console" UseManualLocation="True" />
+    <Node Id="Base_debug_32" Category="Category1" Bounds="-638.987501519513,-377.856722380221,101.683333333333,25.96" Label="base_debug_32" UseManualLocation="True" />
+    <Node Id="Base_debug_64" Category="Category1" Bounds="-824.352363720825,-371.060361982417,101.683333333333,25.96" Label="base_debug_64" UseManualLocation="True" />
+    <Node Id="Base_dll" Category="Category4" Bounds="-788.490401967305,-254.687349881672,62.3899999999999,25.9600000000001" Label="base_dll" UseManualLocation="True" />
+    <Node Id="Base_lib" Category="Category4" Bounds="-654.807534346577,-256.868998422673,62.3766666666666,25.96" Label="base_lib" UseManualLocation="True" />
+    <Node Id="Base_release_32" Category="Category1" Bounds="-435.858422635381,-379.121776199249,104.54,25.96" Label="base_release_32" UseManualLocation="True" />
+    <Node Id="Base_release_64" Category="Category1" Bounds="-254.474114378259,-379.633969578581,104.54,25.96" Label="base_release_64" UseManualLocation="True" />
+    <Node Id="Base_setup" Category="Category1" Bounds="-541.519677806911,-599.764131143799,78.79,25.96" Label="base_setup" UseManualLocation="True" />
+    <Node Id="Base_stack" Category="Category1" Bounds="-529.892657803299,-453.753597157735,76.2833333333333,25.96" Label="base_stack" UseManualLocation="True" />
+    <Node Id="Base_utility" Category="Category4" Bounds="-228.65827327165,-261.946455705894,78.96,25.96" Label="base_utility" UseManualLocation="True" />
+    <Node Id="Base_windows" Category="Category4" Bounds="-536.560967203776,-258.503003491211,95.7433333333333,25.96" Label="base_windows" UseManualLocation="True" />
+    <Node Id="Gtk_stack" Category="Category4" Bounds="-528.15049660999,-317.625741695645,77.06,25.96" Label="stack_gtk+" UseManualLocation="True" />
+    <Node Id="Gtkmm_stack" Category="Category2" Bounds="-534.338128458659,-202.542903491211,89.5233333333333,25.96" Label="stack_gtkmm" UseManualLocation="True" />
+    <Node Id="Project" Category="Category5" Bounds="-517.813955688477,21.2133255615235,57.05,25.96" Label="project" UseManualLocation="True" />
+    <Node Id="Root_debug" Category="Category1" Bounds="-731.787578986717,-524.783262050679,83.7633333333333,25.96" Label="base_debug" UseManualLocation="True" />
+    <Node Id="Root_release" Category="Category1" Bounds="-346.427578986717,-527.765165934549,86.62,25.96" Label="base_release" UseManualLocation="True" />
+    <Node Id="Solution_name" Category="Category2" Bounds="-537.925705362956,-146.666974438477,97.1033333333335,25.96" Label="solution_name" UseManualLocation="True" />
+    <Node Id="User_base_stack" Bounds="-552.024245653384,-529.867115478516,103.596666666667,25.96" Label="user_base_stack" UseManualLocation="True" />
+    <Node Id="User_debug_32" Bounds="-706.597782719838,-452.792629665644,99.4866666666667,25.96" Label="user_debug_32" UseManualLocation="True" />
+    <Node Id="User_debug_64" Bounds="-879.122345650059,-449.794220933946,99.4866666666667,25.96" Label="user_debug_64" UseManualLocation="True" />
+    <Node Id="User_debug_641" Bounds="-225.713788953238,-450.054629013457,102.343333333333,25.96" Label="user_release_64" UseManualLocation="True" />
+    <Node Id="User_release_32" Bounds="-380.527875754835,-454.60172404298,102.343333333333,25.96" Label="user_release_32" UseManualLocation="True" />
+    <Node Id="User_stack_cryptopp" Bounds="-356.031653195232,-125.569675742731,129.16,25.96" Label="user_stack_crypto++" UseManualLocation="True" />
+    <Node Id="User_stack_gtkmm" Bounds="-548.481748860677,-90.7068744384765,116.836666666667,25.96" Label="user_stack_gtkmm" UseManualLocation="True" />
+    <Node Id="User_stack_library" Bounds="-751.394608539018,-129.744753757372,109.34,25.96" Label="user_stack_boost" UseManualLocation="True" />
+    <Node Id="User_stack_master" Bounds="-547.590029296875,-34.7467744384766,115.12,25.96" Label="user_stack_master" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Base_setup" Target="Root_debug" Bounds="-649.040663033807,-573.804131143799,114.40901267747,45.6833986091945" />
+    <Link Source="Base_setup" Target="Root_release" Bounds="-466.247610411747,-573.804131143799,118.789813351917,42.9770850645307" />
+    <Link Source="Base_stack" Target="Base_debug_32" Bounds="-564.589024977256,-427.79360534668,56.3524423764322,44.3693351259279" />
+    <Link Source="Base_stack" Target="Base_debug_64" Bounds="-720.648321931979,-429.646384312649,190.983681499804,56.0515201201476" />
+    <Link Source="Base_stack" Target="Base_release_32" Bounds="-472.939315734738,-427.79360534668,63.1314682666373,43.5605234924702" />
+    <Link Source="Base_stack" Target="Base_release_64" Bounds="-453.609325154622,-431.009914479012,192.517999449834,49.2817015448545" />
+    <Link Source="Gtk_stack" Target="Base_console" Bounds="-456.816224443362,-291.665751953125,74.8153311668736,29.6029411355054" />
+    <Link Source="Gtk_stack" Target="Base_dll" Bounds="-717.33933522146,-295.586192195628,189.188836564233,44.4839753518013" />
+    <Link Source="Gtk_stack" Target="Base_lib" Bounds="-586.849638171302,-291.665751953125,68.6018173562285,31.1049557612843" />
+    <Link Source="Gtk_stack" Target="Base_utility" Bounds="-451.090498657227,-297.50520011607,213.582908107881,39.5821392902478" />
+    <Link Source="Gtk_stack" Target="Base_windows" Bounds="-489.416060400996,-291.665751953125,0.380586928867956,24.1638645710735" />
+    <Link Source="Gtkmm_stack" Target="Solution_name" Bounds="-489.529521276197,-176.667074438477,0.07596908528825,21.0001588893668" />
+    <Link Source="Root_debug" Target="Base_stack" Bounds="-653.695002936129,-498.823268432617,117.549370189071,42.1361816483432" />
+    <Link Source="Root_debug" Target="User_base_stack" Bounds="-648.024278157552,-515.257671077635,87.00322355341,2.33188052575304" />
+    <Link Source="Root_release" Target="Base_stack" Bounds="-450.290649559031,-501.80515625,114.090913681541,44.7643211148965" />
+    <Link Source="Root_release" Target="User_base_stack" Bounds="-439.428130513348,-516.238768867927,93.000546284832,0.9917557462594" />
+    <Link Source="User_base_stack" Target="User_debug_32" Bounds="-622.401626607085,-503.907115478516,95.7981012227247,47.1407791288977" />
+    <Link Source="User_base_stack" Target="User_debug_64" Bounds="-771.607959512426,-504.561100781069,220.713857184179,53.6929459222004" />
+    <Link Source="User_base_stack" Target="User_debug_641" Bounds="-449.647536340862,-504.492305675467,216.263524533613,52.9978096611233" />
+    <Link Source="User_base_stack" Target="User_release_32" Bounds="-470.758367633035,-503.907115478516,103.698186382875,45.6773936983587" />
+    <Link Source="User_stack_cryptopp" Target="User_stack_master" Bounds="-453.46551760927,-99.6096759033203,133.633957512626,61.1195566910442" />
+    <Link Source="User_stack_gtkmm" Target="User_stack_master" Bounds="-490.055671558489,-64.7468744384766,0.0125288237858854,21.0001016017333" />
+    <Link Source="User_stack_library" Target="User_stack_master" Bounds="-668.483002274271,-103.784755249023,142.033727637677,65.2794927059748" />
+    <Link Source="User_stack_master" Target="Project" Bounds="-489.85813654763,-8.78677443847654,0.27811252392712,21.0008890801634" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="Category 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category4" Label="Category 4" Background="#FF1BA1E2" IsTag="True" />
+    <Category Id="Category5" Label="Category 5" Background="#FF9B4F96" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Category 6" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category6')" />
+      <Setter Property="Background" Value="#FFA1260D" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 5" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 2" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 4" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category4')" />
+      <Setter Property="Background" Value="#FF1BA1E2" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 1" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

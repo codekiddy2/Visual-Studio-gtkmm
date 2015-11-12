@@ -1,15 +1,16 @@
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
-Solution created by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+solution obtained from official zlib package
+solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.2
-solution dir = D:\GitHub\Visual-Studio-gtkmm\projects\libiconv-1.14\msvc-140
+solution version = 1.2.0
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\zlib-1.2.8\contrib\vstudio\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: https://www.gnu.org/software/libiconv/
+official sources: http://www.zlib.net/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -18,29 +19,58 @@ DEPENDENCIES:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Open Visual Studio solution, select configuration and build.
-Make sure you run debug-test on test projects!
-Install by building the "Install" project.
+copy/replace iowin32.c from project directory and paste it into zlib-1.2.8\contrib\minizip
+If you're not using Windows 7 then modify iowin32.c and replace _WIN32_WINNT value with
+value for your Windows on line 30
+Open Visual Studio solution and build.
+If you are trying to build only dll version make sure you build asm project first.
+Once done install headers by running the "Install" project.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-Define USING_STATIC_LIBICONV before including iconv.h if you wish to link static version in your projects.
-See test-iconv_static project settings to learn how to do that.
+#zlib > iowin32.c line 28: (define your windows version)
+#define _WIN32_WINNT = 0x0601
+
+#file : zlibvc.def: line 4 (change version)
+VERSION		1.28 
+
+#x64:
+#run manualy (sometimes assembly does not get compiled):
+cd D:\gtkmm\build\zlib-1.2.8\contrib\masmx64
+.\bld_ml64.bat
+
+#x64
+if testzlib results in unresolved external, try to remove the project and add old one.
+
+#x86
+try to remove ZLIB_WINAPI in case of unresolved problems.
+-- UPDATE: ZLIB_WINAPI must be present when building the DLL, (not tested for *.lib)
+	also calling code must define ZLIB_WINAPI (tested with "test-zlib_dll")
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
-1.0.2
+List of tests:
+1.0.3
 	Debug x86
 	Debug x64
 	Release x86
 	Release x64
 
-1.1.0-1
-	Debug x64 + Debug
+1.0.4
+	Debug x86
+	Debug x64
+	Release x86
+	Release x64
 
-1.1.2
+1.0.5
+	All 4 + Debugging passed.
+
+1.1.0
+	Debug x64
+
+1.2.0
 	All
 
 **************************************************************************************************************************************************************************

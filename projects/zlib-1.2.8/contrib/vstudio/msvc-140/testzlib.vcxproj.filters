@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\testzlib\testzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\masmx64\inffas8664.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{46b31d18-bae9-462c-80a0-b30844f7d38f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{7fcc4dd2-1620-4bad-b683-9ba767c32a75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files\Debug64">
+      <UniqueIdentifier>{22953c88-6ecb-4520-a262-09377f6a7560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files\Debux86">
+      <UniqueIdentifier>{e5bbc5cf-2db2-436e-825f-90782c50e98b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files\Release64">
+      <UniqueIdentifier>{cffc0b3f-29ca-422c-b790-5532f55af6f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files\Release86">
+      <UniqueIdentifier>{4484632a-9610-49fa-9eb8-fca3ad4524f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\gvmat64.obj">
+      <Filter>Object Files\Debug64</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\inffasx64.obj">
+      <Filter>Object Files\Debug64</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\inffas32.obj">
+      <Filter>Object Files\Debux86</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\match686.obj">
+      <Filter>Object Files\Debux86</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\output\v140\Release\x64\intermediate\zlib\asm\gvmat64.obj">
+      <Filter>Object Files\Release64</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\output\v140\Release\x64\intermediate\zlib\asm\inffasx64.obj">
+      <Filter>Object Files\Release64</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\output\v140\Release\Win32\intermediate\zlib\asm\inffas32.obj">
+      <Filter>Object Files\Release86</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\output\v140\Release\Win32\intermediate\zlib\asm\match686.obj">
+      <Filter>Object Files\Release86</Filter>
+    </Object>
+  </ItemGroup>
+</Project>

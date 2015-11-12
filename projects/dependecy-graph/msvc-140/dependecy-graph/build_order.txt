@@ -1,0 +1,131 @@
+PACKAGE
+	-DEPENDENCIES
+
+****************************
+#undefined:
+
+bzip
+ICU
+
+
+****************************
+
+libreadline
+libeditline
+libbz2
+dirnet
+unistd
+iconv
+zlib
+epoxy
+ffi
+libjpeg-turbo
+expat
+freeglut
+pixman
+
+*****************************
+
+pcre
+	-bzip2 (optional)
+	-readline (optional)
+	-editline (optional)
+
+gettext
+	-iconv (circular dependency)
+	-expat (optional, configure script will not check for it /??)
+	-libxml2 (optional, give also path for croco)
+
+jasper
+	-libjpeg-turbo
+    -freeglut
+
+png
+	-zlib
+
+tiff
+	-zlib
+	-libjpeg-turbo
+
+Freetype
+	-harfbuzz (optional circular dependency, [freetype -> harfbuzz -> freetype])
+	-icu (optional)
+
+glib
+	-libffi
+	-zlib
+	-gettext
+	-pcre (if building with extern pcre)
+	
+harfbuzz (rebuild freetype with harbuzz support)
+	-freetype
+	-libjpeg-turbo
+	-glib
+
+Fontconfig
+	-libxml2 or expat
+	-freetype
+	-harfbuzz
+
+gdk-pixbuf
+	-libpng
+	-zlib
+	-glib
+	-iconv
+	 (if using NoGDI then also..)
+	-jpeg
+	-jasper
+	-tiff
+
+atk
+	-glib
+	-intl
+
+cairo
+	-zlib
+	-libpng
+	-pixman
+	-glib
+	-gobject support
+
+	(if building pango with font config then)
+	-freetype
+	-fontconfig
+	-expat
+
+	opengl (if build with opengl extensions)
+
+Pango
+	-glib
+	-harfbuz
+	-cairo
+	-fontconfig (optional, cairo must be build with fontconfig too)
+
+gtk+
+	-pango
+	-atk
+	-gdk-pixbuf
+	-epoxy (if building gtk+ 3.15.x)
+
+goocanvas
+	-gtk+
+
+gstreamer
+	...
+
+libsigc++
+glibmm
+	...
+cairomm
+	...
+pangomm
+	...
+atkmm
+	...
+gtkmm
+	...
+goocanvasmm
+	...
+gstreamermm
+
+
