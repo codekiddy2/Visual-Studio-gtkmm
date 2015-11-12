@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A84D3840-B684-4129-A466-87C0DE24B6BB}</ProjectGuid>
+    <RootNamespace>libintl_static</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>intl_static</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_intl.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_intl.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_intl.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_intl.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>intl</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>intl</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>intl</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>intl</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader />
+    </ClCompile>
+    <Lib />
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader />
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader />
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader />
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\gettext-runtime\intl\bindtextdom.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\dcgettext.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\dcigettext.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\dcngettext.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\dgettext.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\dngettext.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\explodename.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\finddomain.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\gettext.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\hash-string.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\intl-compat.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\intl-exports.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\gettext-runtime\intl\l10nflist.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\langprefs.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\loadmsgcat.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\localcharset.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\localealias.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\localename.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\lock.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\log.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\ngettext.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\os2compat.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\gettext-runtime\intl\osdep.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\plural-exp.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\plural.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\printf-args.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\gettext-runtime\intl\printf-parse.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\gettext-runtime\intl\printf.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\relocatable.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\setlocale.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\gettext-runtime\intl\textdomain.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\threadlib.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\gettext-runtime\intl\tsearch.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\gettext-runtime\intl\vasnprintf.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\gettext-runtime\intl\version.c" />
+    <ClCompile Include="..\..\gettext-runtime\intl\xsize.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\codekiddy-libintl_setlocale.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\gettext-runtime\config.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\eval-plural.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\export.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\gettextP.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\gmo.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\hash-string.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\libgnuintl.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\loadinfo.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\localcharset.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\lock.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\os2compat.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\plural-exp.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\printf-args.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\printf-parse.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\relocatable.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\tsearch.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\vasnprintf.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\vasnwprintf.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\verify.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\wprintf-parse.h" />
+    <ClInclude Include="..\..\gettext-runtime\intl\xsize.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\libintl-x64.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ResourceCompile>
+    <ResourceCompile Include="..\libintl.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -2,13 +2,14 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\libjpeg-turbo-1.4.0\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\libjpeg-turbo-1.4.2\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile />
     <ClCompile>
       <SmallerTypeCheck>false</SmallerTypeCheck>
+      <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
