@@ -1,0 +1,84 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+solution obtained from github.com/blinkseb/harfbuzz
+solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.1
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\harfbuzz-1.0.6\msvc-140
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+freetype
+glib (optional)
+gobject (optional)
+ucdn (optional)
+icu (optional)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+hb-gobject-enums.h in solution directory was made during a version 0.9.38
+to generate a new one do this:
+copy configuration files from configuration folder into sources root directory.
+Open VS cmd promt (x86 or x64 depending on for which target you compile), cd into
+src root and ran the *.bat file, then again cd into src root and configure by running
+the *.sh file.
+You may need to edit these files to update paths and/or customize your compilation.
+once done you can define HAVE_CONFIG_H while compiling harfbuzz.
+
+Make sure you have all the libraries defined in preprocessor before building to
+avoid errors and if not remove appropriate defines..
+
+Open solution, select configuration and build
+Once done you need to rebuild Freetype with FT_CONFIG_OPTION_USE_HARFBUZZ macro in order
+for Freetype to use harfbuzz features.
+Some preprocessor definitions are undefined, once you build cairo with font-config
+support, UCDN and ICU you can define these macros and rebuild (optional).
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+Some test projects are set to test either the dll or lib, if you want to perform all the tests
+on dll only set them to input dll import library to the linker, the same apply for static lib.
+test.
+Make sure you pass command line arguments to test projects trough debugger settings,
+otherwiste testings will be false positive ^^
+
+Debug x64 configuration tests only the dll's by default.
+if you test static version make sure you link against usp10.lib and Rpcrt4.lib (Windows SDK)
+
+since msvc-140:
+added hb-ot-shape-complex-use,use-table and fallback
+disabled hb-ot-shape-complex-sea
+thread link warning as error disabled for harbuzz_static LNK4221
+
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.0
+	All 4
+
+1.0.2
+	Debug x64
+
+1.0.3
+	All 4 (no debug)
+
+1.1.0
+	Debug x64
+
+1.1.1
+	Debug x64 + debug
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+Check if configuration is needed before compiling.

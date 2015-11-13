@@ -1,0 +1,68 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+solution obtained from wiki.gnome.org/action/show/Projects/GTK+/Win32/MSVCCompilationOfGTKStack
+solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.1
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\fontconfig-2.11.94\msvc-140
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://www.freedesktop.org/wiki/Software/fontconfig/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+expat
+freetype
+harfbuzz
+libiconv
+dirnet
+unistd
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+
+Optionaly you can modify config.h to input additional data or remove existing
+depending on what you have or do not have, you are supposed to understand the contents
+of this header.
+
+Open Solution select configuration and build.
+Once installation is done you will also need to open fontconfig.h (the installed one!)
+and replace following:
+#include <unistd.h>
+with:
+#include <io.h>
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+Update: Do not install fonts from fontconfig, anyway it will not work, but at least in this version fc-cache
+does not fail.
+
+since msvc-140:
+linker warning threat as error disabled for fontconfig project
+fc-cache fails.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.0
+	Debug x64
+
+1.0.1
+	All 4 + Debug
+
+1.1.0-1
+	Debug x64 + Debug
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+
+
+
+

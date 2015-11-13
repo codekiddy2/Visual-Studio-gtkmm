@@ -9,7 +9,7 @@ copy ..\..\..\config.h.win32 ..\..\..\config.h
 
 :DONE_CONFIG_H</GenConfigH>
     <GenMarshalSrc>cd ..\..\..\atk$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</GenMarshalSrc>
-    <SRC_DIR>$(REPO_DIR)projects\atk-2.14.0\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\atk-2.17.90\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>

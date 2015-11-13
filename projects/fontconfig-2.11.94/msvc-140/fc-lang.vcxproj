@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF6AE3B3-C0CA-4C8B-9F93-A183BF5005C9}</ProjectGuid>
+    <RootNamespace>fc-lang</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\properties\solution_fontconfig.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\properties\solution_fontconfig.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\properties\solution_fontconfig.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\properties\solution_fontconfig.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(BIN_DIR)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(BIN_DIR)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Command>if not exist .\config.h copy .\config.h.vc .\config.h
+rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\fontconfig;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Command>if exist $(SRC_DIR)fc-lang\fclang.h goto END
+cd $(SRC_DIR)fc-lang
+$(BIN_DIR)fc-lang.exe -d . aa.orth ab.orth af.orth am.orth ar.orth as.orth ast.orth av.orth ay.orth az_az.orth az_ir.orth ba.orth bm.orth be.orth bg.orth bh.orth bho.orth bi.orth bin.orth bn.orth bo.orth br.orth bs.orth bua.orth ca.orth ce.orth ch.orth chm.orth chr.orth co.orth cs.orth cu.orth cv.orth cy.orth da.orth de.orth dz.orth el.orth en.orth eo.orth es.orth et.orth eu.orth fa.orth fi.orth fj.orth fo.orth fr.orth ff.orth fur.orth fy.orth ga.orth gd.orth gez.orth gl.orth gn.orth gu.orth gv.orth ha.orth haw.orth he.orth hi.orth ho.orth hr.orth hu.orth hy.orth ia.orth ig.orth id.orth ie.orth ik.orth io.orth is.orth it.orth iu.orth ja.orth ka.orth kaa.orth ki.orth kk.orth kl.orth km.orth kn.orth ko.orth kok.orth ks.orth ku_am.orth ku_ir.orth kum.orth kv.orth kw.orth ky.orth la.orth lb.orth lez.orth ln.orth lo.orth lt.orth lv.orth mg.orth mh.orth mi.orth mk.orth ml.orth mn_cn.orth mo.orth mr.orth mt.orth my.orth nb.orth nds.orth ne.orth nl.orth nn.orth no.orth nr.orth nso.orth ny.orth oc.orth om.orth or.orth os.orth pa.orth pl.orth ps_af.orth ps_pk.orth pt.orth rm.orth ro.orth ru.orth sa.orth sah.orth sco.orth se.orth sel.orth sh.orth shs.orth si.orth sk.orth sl.orth sm.orth sma.orth smj.orth smn.orth sms.orth so.orth sq.orth sr.orth ss.orth st.orth sv.orth sw.orth syr.orth ta.orth te.orth tg.orth th.orth ti_er.orth ti_et.orth tig.orth tk.orth tl.orth tn.orth to.orth tr.orth ts.orth tt.orth tw.orth tyv.orth ug.orth uk.orth ur.orth uz.orth ve.orth vi.orth vo.orth vot.orth wa.orth wen.orth wo.orth xh.orth yap.orth yi.orth yo.orth zh_cn.orth zh_hk.orth zh_mo.orth zh_sg.orth zh_tw.orth zu.orth ak.orth an.orth ber_dz.orth ber_ma.orth byn.orth crh.orth csb.orth dv.orth ee.orth fat.orth fil.orth hne.orth hsb.orth ht.orth hz.orth ii.orth jv.orth kab.orth kj.orth kr.orth ku_iq.orth ku_tr.orth kwm.orth lg.orth li.orth mai.orth mn_mn.orth ms.orth na.orth ng.orth nv.orth ota.orth pa_pk.orth pap_an.orth pap_aw.orth qu.orth rn.orth rw.orth sc.orth sd.orth sg.orth sid.orth sn.orth su.orth ty.orth wal.orth za.orth lah.orth &lt; fclang.tmpl.h &gt; fclang.h
+cd ..
+:END</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>if not exist .\config.h copy .\config.h.vc .\config.h
+rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\fontconfig;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Command>if exist $(SRC_DIR)fc-lang\fclang.h goto END
+cd $(SRC_DIR)fc-lang
+$(BIN_DIR)fc-lang.exe -d . aa.orth ab.orth af.orth am.orth ar.orth as.orth ast.orth av.orth ay.orth az_az.orth az_ir.orth ba.orth bm.orth be.orth bg.orth bh.orth bho.orth bi.orth bin.orth bn.orth bo.orth br.orth bs.orth bua.orth ca.orth ce.orth ch.orth chm.orth chr.orth co.orth cs.orth cu.orth cv.orth cy.orth da.orth de.orth dz.orth el.orth en.orth eo.orth es.orth et.orth eu.orth fa.orth fi.orth fj.orth fo.orth fr.orth ff.orth fur.orth fy.orth ga.orth gd.orth gez.orth gl.orth gn.orth gu.orth gv.orth ha.orth haw.orth he.orth hi.orth ho.orth hr.orth hu.orth hy.orth ia.orth ig.orth id.orth ie.orth ik.orth io.orth is.orth it.orth iu.orth ja.orth ka.orth kaa.orth ki.orth kk.orth kl.orth km.orth kn.orth ko.orth kok.orth ks.orth ku_am.orth ku_ir.orth kum.orth kv.orth kw.orth ky.orth la.orth lb.orth lez.orth ln.orth lo.orth lt.orth lv.orth mg.orth mh.orth mi.orth mk.orth ml.orth mn_cn.orth mo.orth mr.orth mt.orth my.orth nb.orth nds.orth ne.orth nl.orth nn.orth no.orth nr.orth nso.orth ny.orth oc.orth om.orth or.orth os.orth pa.orth pl.orth ps_af.orth ps_pk.orth pt.orth rm.orth ro.orth ru.orth sa.orth sah.orth sco.orth se.orth sel.orth sh.orth shs.orth si.orth sk.orth sl.orth sm.orth sma.orth smj.orth smn.orth sms.orth so.orth sq.orth sr.orth ss.orth st.orth sv.orth sw.orth syr.orth ta.orth te.orth tg.orth th.orth ti_er.orth ti_et.orth tig.orth tk.orth tl.orth tn.orth to.orth tr.orth ts.orth tt.orth tw.orth tyv.orth ug.orth uk.orth ur.orth uz.orth ve.orth vi.orth vo.orth vot.orth wa.orth wen.orth wo.orth xh.orth yap.orth yi.orth yo.orth zh_cn.orth zh_hk.orth zh_mo.orth zh_sg.orth zh_tw.orth zu.orth ak.orth an.orth ber_dz.orth ber_ma.orth byn.orth crh.orth csb.orth dv.orth ee.orth fat.orth fil.orth hne.orth hsb.orth ht.orth hz.orth ii.orth jv.orth kab.orth kj.orth kr.orth ku_iq.orth ku_tr.orth kwm.orth lg.orth li.orth mai.orth mn_mn.orth ms.orth na.orth ng.orth nv.orth ota.orth pa_pk.orth pap_an.orth pap_aw.orth qu.orth rn.orth rw.orth sc.orth sd.orth sg.orth sid.orth sn.orth su.orth ty.orth wal.orth za.orth lah.orth &lt; fclang.tmpl.h &gt; fclang.h
+cd ..
+:END</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Command>if not exist .\config.h copy .\config.h.vc .\config.h
+rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\fontconfig;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Command>if exist $(SRC_DIR)fc-lang\fclang.h goto END
+cd $(SRC_DIR)fc-lang
+$(BIN_DIR)fc-lang.exe -d . aa.orth ab.orth af.orth am.orth ar.orth as.orth ast.orth av.orth ay.orth az_az.orth az_ir.orth ba.orth bm.orth be.orth bg.orth bh.orth bho.orth bi.orth bin.orth bn.orth bo.orth br.orth bs.orth bua.orth ca.orth ce.orth ch.orth chm.orth chr.orth co.orth cs.orth cu.orth cv.orth cy.orth da.orth de.orth dz.orth el.orth en.orth eo.orth es.orth et.orth eu.orth fa.orth fi.orth fj.orth fo.orth fr.orth ff.orth fur.orth fy.orth ga.orth gd.orth gez.orth gl.orth gn.orth gu.orth gv.orth ha.orth haw.orth he.orth hi.orth ho.orth hr.orth hu.orth hy.orth ia.orth ig.orth id.orth ie.orth ik.orth io.orth is.orth it.orth iu.orth ja.orth ka.orth kaa.orth ki.orth kk.orth kl.orth km.orth kn.orth ko.orth kok.orth ks.orth ku_am.orth ku_ir.orth kum.orth kv.orth kw.orth ky.orth la.orth lb.orth lez.orth ln.orth lo.orth lt.orth lv.orth mg.orth mh.orth mi.orth mk.orth ml.orth mn_cn.orth mo.orth mr.orth mt.orth my.orth nb.orth nds.orth ne.orth nl.orth nn.orth no.orth nr.orth nso.orth ny.orth oc.orth om.orth or.orth os.orth pa.orth pl.orth ps_af.orth ps_pk.orth pt.orth rm.orth ro.orth ru.orth sa.orth sah.orth sco.orth se.orth sel.orth sh.orth shs.orth si.orth sk.orth sl.orth sm.orth sma.orth smj.orth smn.orth sms.orth so.orth sq.orth sr.orth ss.orth st.orth sv.orth sw.orth syr.orth ta.orth te.orth tg.orth th.orth ti_er.orth ti_et.orth tig.orth tk.orth tl.orth tn.orth to.orth tr.orth ts.orth tt.orth tw.orth tyv.orth ug.orth uk.orth ur.orth uz.orth ve.orth vi.orth vo.orth vot.orth wa.orth wen.orth wo.orth xh.orth yap.orth yi.orth yo.orth zh_cn.orth zh_hk.orth zh_mo.orth zh_sg.orth zh_tw.orth zu.orth ak.orth an.orth ber_dz.orth ber_ma.orth byn.orth crh.orth csb.orth dv.orth ee.orth fat.orth fil.orth hne.orth hsb.orth ht.orth hz.orth ii.orth jv.orth kab.orth kj.orth kr.orth ku_iq.orth ku_tr.orth kwm.orth lg.orth li.orth mai.orth mn_mn.orth ms.orth na.orth ng.orth nv.orth ota.orth pa_pk.orth pap_an.orth pap_aw.orth qu.orth rn.orth rw.orth sc.orth sd.orth sg.orth sid.orth sn.orth su.orth ty.orth wal.orth za.orth lah.orth &lt; fclang.tmpl.h &gt; fclang.h
+cd ..
+:END</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>if not exist .\config.h copy .\config.h.vc .\config.h
+rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\fontconfig;.\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Command>if exist $(SRC_DIR)fc-lang\fclang.h goto END
+cd $(SRC_DIR)fc-lang
+$(BIN_DIR)fc-lang.exe -d . aa.orth ab.orth af.orth am.orth ar.orth as.orth ast.orth av.orth ay.orth az_az.orth az_ir.orth ba.orth bm.orth be.orth bg.orth bh.orth bho.orth bi.orth bin.orth bn.orth bo.orth br.orth bs.orth bua.orth ca.orth ce.orth ch.orth chm.orth chr.orth co.orth cs.orth cu.orth cv.orth cy.orth da.orth de.orth dz.orth el.orth en.orth eo.orth es.orth et.orth eu.orth fa.orth fi.orth fj.orth fo.orth fr.orth ff.orth fur.orth fy.orth ga.orth gd.orth gez.orth gl.orth gn.orth gu.orth gv.orth ha.orth haw.orth he.orth hi.orth ho.orth hr.orth hu.orth hy.orth ia.orth ig.orth id.orth ie.orth ik.orth io.orth is.orth it.orth iu.orth ja.orth ka.orth kaa.orth ki.orth kk.orth kl.orth km.orth kn.orth ko.orth kok.orth ks.orth ku_am.orth ku_ir.orth kum.orth kv.orth kw.orth ky.orth la.orth lb.orth lez.orth ln.orth lo.orth lt.orth lv.orth mg.orth mh.orth mi.orth mk.orth ml.orth mn_cn.orth mo.orth mr.orth mt.orth my.orth nb.orth nds.orth ne.orth nl.orth nn.orth no.orth nr.orth nso.orth ny.orth oc.orth om.orth or.orth os.orth pa.orth pl.orth ps_af.orth ps_pk.orth pt.orth rm.orth ro.orth ru.orth sa.orth sah.orth sco.orth se.orth sel.orth sh.orth shs.orth si.orth sk.orth sl.orth sm.orth sma.orth smj.orth smn.orth sms.orth so.orth sq.orth sr.orth ss.orth st.orth sv.orth sw.orth syr.orth ta.orth te.orth tg.orth th.orth ti_er.orth ti_et.orth tig.orth tk.orth tl.orth tn.orth to.orth tr.orth ts.orth tt.orth tw.orth tyv.orth ug.orth uk.orth ur.orth uz.orth ve.orth vi.orth vo.orth vot.orth wa.orth wen.orth wo.orth xh.orth yap.orth yi.orth yo.orth zh_cn.orth zh_hk.orth zh_mo.orth zh_sg.orth zh_tw.orth zu.orth ak.orth an.orth ber_dz.orth ber_ma.orth byn.orth crh.orth csb.orth dv.orth ee.orth fat.orth fil.orth hne.orth hsb.orth ht.orth hz.orth ii.orth jv.orth kab.orth kj.orth kr.orth ku_iq.orth ku_tr.orth kwm.orth lg.orth li.orth mai.orth mn_mn.orth ms.orth na.orth ng.orth nv.orth ota.orth pa_pk.orth pap_an.orth pap_aw.orth qu.orth rn.orth rw.orth sc.orth sd.orth sg.orth sid.orth sn.orth su.orth ty.orth wal.orth za.orth lah.orth &lt; fclang.tmpl.h &gt; fclang.h
+cd ..
+:END</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\fc-lang\fc-lang.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="fc-case.vcxproj">
+      <Project>{1b4e62f7-3437-48d5-aab2-cbbe3de513ed}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
