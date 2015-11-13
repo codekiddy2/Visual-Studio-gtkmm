@@ -10,7 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E385C30F-25E9-4FFB-9E11-100CCED2C7DB}"
 	ProjectSection(SolutionItems) = preProject
 		Readme\atk-2.14.0.txt = Readme\atk-2.14.0.txt
-		Readme\atk-2.17.90.txt = Readme\atk-2.17.90.txt
+		Readme\atk-2.18.0.txt = Readme\atk-2.18.0.txt
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-atk-document", "test-atk\test-atk.vcxproj", "{3FC58708-42C4-40D7-91F8-D8881F1B0619}"

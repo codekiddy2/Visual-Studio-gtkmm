@@ -4,7 +4,7 @@
   <PropertyGroup Label="UserMacros">
     <DRIVE>D</DRIVE>
     <REPO_DIR>D:\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
-    <PYTHON_DIR>D:\Github\install\Python35\</PYTHON_DIR>
+    <PYTHON_DIR>D:\Github\Install\Python35\</PYTHON_DIR>
     <PERL_DIR>D:\Github\install\Perl64\bin\</PERL_DIR>
     <NASM_DIR>D:\Github\install\nasm\</NASM_DIR>
     <CMAKE_DIR>D:\Github\install\CMake\bin\</CMAKE_DIR>

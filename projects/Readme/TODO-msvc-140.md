@@ -56,3 +56,4 @@ New TODO's since msvc-140
 48. some projects output pdb into both bin and symbols dir (all projects?)
 49. decide what to do with outdated projects (older versions)
 50. not all links point to direct download page (GNOME projects)
+51. it is possible that newer version packages have source files and headers which are not yet included in projects.

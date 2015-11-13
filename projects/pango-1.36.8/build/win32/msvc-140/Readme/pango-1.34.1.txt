@@ -1,48 +1,46 @@
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
-Solution obtained from official source package.
+solution obtained from official source package
 solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.5
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\glib-2.46.2\build\win32\msvc-140
+solution version = 1.1.0
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pango-1.34.1\build\win32\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://ftp.gnome.org/pub/GNOME/sources/
+official sources: http://ftp.gnome.org/pub/gnome/sources/pango/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-intl
-zlib
-ffi
-pcre (optional)
+cairo
+harfbuzz (optional)
+pango
+pangoft2 (optional)
+pangowin32
+gio
+gmodule
+gobject
+glib
+libintl
+fontconfig (optional)
+freetype (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Open Solution select configuration and build
-Install by building the "Install" project
-Make sure all the test projects pass by running them!
-
-since 1.15:
-gobject and test gobject use nuget package manager to get libffi
-Get-Project <project name> | Install-package libffi
-thread linker warning as error set to no on solution level.
-linker input for ffi.lib removed for gobject debug x64 only
+Open "pango.sln" Visual Studio solution and build.
+the pango.sln will build pango without fontconfig and freetype support, this is
+recommended since official fontconfig does not work on windows.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-glib (extern pcre) will link to pcre8.dll.lib
-codegen python files need to be installed into glib-2.0/share/codegen, to avoid
-gdbus generated error.
-test-gio has runtime check reduced in debug mode due to runtime error.
-ZLIB_WINAPI must be defined for x86 builds, also zlib.dll x86 must define that macro
-on building.
-libffi must be built by msvc wraper.
+Latest version of fontconfig does compile, link and even passes tests
+found in solution, but it fails when used with pango, not tested with cairo
+since cairo solution does not have real world test project.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -51,18 +49,16 @@ TESTINGS:
 	Debug x64
 
 1.0.1
-	All 4 (NO debugging)
-
-1.0.2
 	Debug x64
 
-1.0.3
-	Added test projects...
-	Debug x64
-
-1.1.0-5
+1.1.0
 	Debug x64 + Debug
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
+merge pango.sln and pango-fc.sln into single solution.
+
+
+
+

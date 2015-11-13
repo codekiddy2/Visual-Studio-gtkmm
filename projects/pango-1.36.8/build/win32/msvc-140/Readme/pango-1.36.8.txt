@@ -1,3 +1,8 @@
+CHANGES:
+removed pangowin32-fontmap.c from ./src and added original
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
@@ -8,26 +13,40 @@ solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtk
 **************************************************************************************************************************************************************************
 INFO:
 solution version = 1.1.1
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\atk-2.17.90\build\win32\msvc-140
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pango-1.36.8\build\win32\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://ftp.gnome.org/pub/GNOME/sources/atk/
+official sources: http://ftp.gnome.org/pub/gnome/sources/pango/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-glib
-gobject
+cairo
+harfbuzz (optional)
+pango
+pangoft2 (optional)
+pangowin32
+gio
 gmodule
-intl
+gobject
+glib
+libintl
+fontconfig (optional)
+freetype (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Open Visual Studio solution and build.
+set the SRC_DIR before building.
+Open "pango.sln" Visual Studio solution and build.
+the pango.sln will build pango without fontconfig and freetype support, this is
+recommended since official fontconfig does not work on windows.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
+Latest version of fontconfig does compile, link and even passes tests
+found in solution, but it fails when used with pango, not tested with cairo
+since cairo solution does not have real world test project.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -38,16 +57,12 @@ TESTINGS:
 1.0.1
 	Debug x64
 
-1.1.0
-	Debug x64
-
-1.1.1
-	Debug x64 + deubg
+1.1.0-1
+	Debug x64 + Debug
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-
 
 
 
