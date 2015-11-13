@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Broadway|Win32">
+      <Configuration>Debug_Broadway</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Broadway|x64">
+      <Configuration>Debug_Broadway</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Broadway|Win32">
+      <Configuration>Release_Broadway</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Broadway|x64">
+      <Configuration>Release_Broadway</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC5AADB5-95CD-4BF0-BA8B-0C16FE7073FB}</ProjectGuid>
+    <RootNamespace>install</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+
+mkdir gtk\gdk\win32
+
+mkdir gtk\gdk\deprecated
+
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+
+mkdir gtk\gtk\a11y
+
+mkdir gtk\gtk\deprecated
+
+mkdir libgail
+cd gtk\gdk\win32
+
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+
+mkdir gtk\gdk\win32
+
+mkdir gtk\gdk\deprecated
+
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+
+mkdir gtk\gtk\a11y
+
+mkdir gtk\gtk\deprecated
+
+mkdir libgail
+cd gtk\gdk\win32
+
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+
+mkdir gtk\gdk\win32
+
+mkdir gtk\gdk\deprecated
+
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+
+mkdir gtk\gtk\a11y
+
+mkdir gtk\gtk\deprecated
+
+mkdir libgail
+cd gtk\gdk\win32
+
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
+ /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+
+mkdir gtk\gdk\win32
+
+mkdir gtk\gdk\deprecated
+
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+
+mkdir gtk\gtk\a11y
+
+mkdir gtk\gtk\deprecated
+
+mkdir libgail
+cd gtk\gdk\win32
+
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
+ /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+
+mkdir gtk\gdk\win32
+
+mkdir gtk\gdk\deprecated
+
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+
+mkdir gtk\gtk\a11y
+
+mkdir gtk\gtk\deprecated
+
+mkdir libgail
+cd gtk\gdk\win32
+
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+
+mkdir gtk\gdk\win32
+
+mkdir gtk\gdk\deprecated
+
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+
+mkdir gtk\gtk\a11y
+
+mkdir gtk\gtk\deprecated
+
+mkdir libgail
+cd gtk\gdk\win32
+
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
+ /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+
+mkdir gtk\gdk\win32
+
+mkdir gtk\gdk\deprecated
+
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+
+mkdir gtk\gtk\a11y
+
+mkdir gtk\gtk\deprecated
+
+mkdir libgail
+cd gtk\gdk\win32
+
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
+ /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">
+    <PreBuildEvent>
+      <Command>d:
+cd $(ROOT_DIR)include
+mkdir gtk\gdk
+
+mkdir gtk\gdk\win32
+
+mkdir gtk\gdk\deprecated
+
+mkdir gtk\gdk\broadway
+mkdir gtk\gtk
+
+mkdir gtk\gtk\a11y
+
+mkdir gtk\gtk\deprecated
+
+mkdir libgail
+cd gtk\gdk\win32
+
+xcopy $(SRC_DIR)gdk\win32\*.h /Y
+cd ..\deprecated
+xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+cd ..\broadway
+xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+move gdkbroadway.h ..\
+cd ..
+xcopy $(SRC_DIR)gdk\*.h /Y
+cd ..\gtk
+xcopy $(SRC_DIR)gtk\*.h /Y
+cd deprecated
+xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+cd ..\a11y
+xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+cd ..\..\..\libgail
+xcopy $(SRC_DIR)libgail-util\*.h /Y
+cd $(ROOT_DIR)
+mkdir share\icons\hicolor
+cd share\icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+cd ..\..\..\
+mkdir share\glib-2.0\schemas
+cd share\glib-2.0\schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml
+ /Y
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
+echo "Compiling gsettings XML Files..."
+
+$(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas</Command>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">
+    <PreBuildEvent>
+      <Message>Installing GTK+ ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\config.h.win32">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Installing Build Results...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GtkDoInstallBin)$(GtkDoInstall)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(InstalledDlls);$(InstalledBins);%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">Installing Build Results...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">$(GtkDoInstallBin)$(GtkDoInstall)$(GtkDoInstallBroadwayHeaders)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">$(InstalledDlls);$(InstalledBins);$(InstalledBroadwayBins);%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Installing Build Results...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GtkDoInstallBin)$(GtkDoInstall)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(InstalledDlls);$(InstalledBins);%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">Installing Build Results...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">$(GtkDoInstallBin)$(GtkDoInstall)$(GtkDoInstallBroadwayHeaders)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">$(InstalledDlls);$(InstalledBins);$(InstalledBroadwayBins);%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Installing Build Results...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GtkDoInstallBin)$(GtkDoInstall)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(InstalledDlls);$(InstalledBins);%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">Installing Build Results...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">$(GtkDoInstallBin)$(GtkDoInstall)$(GtkDoInstallBroadwayHeaders)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">$(InstalledDlls);$(InstalledBins);$(InstalledBroadwayBins);%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Installing Build Results...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GtkDoInstallBin)$(GtkDoInstall)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(InstalledDlls);$(InstalledBins);%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">Installing Build Results...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">$(GtkDoInstallBin)$(GtkDoInstall)$(GtkDoInstallBroadwayHeaders)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">$(InstalledDlls);$(InstalledBins);$(InstalledBroadwayBins);%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="gdk.vcxproj">
+      <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073f7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="gtk.vcxproj">
+      <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073f5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="gailutil.vcxproj">
+      <Project>{29e3e814-1ba3-4ad7-a3a7-3669cb80a942}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="gtk3-icon-browser.vcxproj">
+      <Project>{3281202a-cd26-4c67-b892-eb34bdbc612e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="broadwayd.vcxproj">
+      <Project>{3281202a-cd26-4c67-b892-eb34bdbc6130}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="gtk-encode-symbolic-svg.vcxproj">
+      <Project>{3281202a-cd26-4c67-b892-eb34bdbc6131}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

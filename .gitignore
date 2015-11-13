@@ -1,3 +1,8 @@
+
+# =========================
+# Operating System Files
+# =========================
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -17,38 +22,17 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Office Temp Files
+~$*
+
+
 # =========================
-# Operating System Files
+# Visual Studio Files
 # =========================
 
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-#Visual Studio
-#OS junk files
-[Tt]humbs.db
-*.DS_Store
-
-#Visual Studio files
+#extensions
 *.[Oo]bj
+*.[Cc]ache
 *.user
 *.aps
 *.pch
@@ -61,40 +45,30 @@ Temporary Items
 *.tlb
 *.tlh
 *.bak
-*.[Cc]ache
 *.ilk
 *.log
 *.lib
 *.sbr
 *.sdf
 *.opensdf
-#*.unsuccessfulbuild
+*.unsuccessfulbuild
+
+#folders
 ipch/
 [Oo]bj/
-[Bb]in
+[Bb]in/
 [Dd]ebug*/
 [Rr]elease*/
-Ankh.NoLoad
+[Oo]utput/
 
-#MonoDevelop
-*.pidb
-*.userprefs
-
-#Tooling
+#Tools
 _ReSharper*/
 *.resharper
 [Tt]est[Rr]esult*
 *.sass-cache
 
-#Project files
-#[Bb]uild/
-[Oo]utput/
-
 #Subversion files
 .svn
-
-# Office Temp Files
-~$*
 
 # vim Temp Files
 *~
@@ -116,7 +90,21 @@ packages/
 #assembler listing
 *.lst
 
-#folders
-output
-packages
-/projects/libffi-3.1/x86_64-w64-mingw32/fficonfig.h
+
+
+# =========================
+# Repository Specific Files
+# =========================
+
+#extensions
+*.h
+*.c
+*.cpp
+*.cc
+*.hpp
+
+!msvc-1*/*.h
+!msvc-1*/*.c
+!msvc-1*/*.cpp
+!msvc-1*/*.cc
+!msvc-1*/*.hpp
