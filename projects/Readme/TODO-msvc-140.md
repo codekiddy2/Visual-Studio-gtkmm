@@ -55,3 +55,4 @@ New TODO's since msvc-140
 47. some projects output lib files for executables (test-iconv.exe)
 48. some projects output pdb into both bin and symbols dir (all projects?)
 49. decide what to do with outdated projects (older versions)
+50. not all links point to direct download page (GNOME projects)

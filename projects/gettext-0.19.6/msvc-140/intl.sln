@@ -6,7 +6,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "intl_static", "libintl_stat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "intl_dll", "libintl_dll\libintl_dll.vcxproj", "{9E3973B5-12BD-4E6F-A30A-D41D8E657A4D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{512493DD-7941-477F-92C9-E3A0F6B2E14B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{512493DD-7941-477F-92C9-E3A0F6B2E14B}"
 	ProjectSection(SolutionItems) = preProject
 		Readme\gettext-0.19.4.txt = Readme\gettext-0.19.4.txt
 		Readme\gettext-0.19.6.txt = Readme\gettext-0.19.6.txt

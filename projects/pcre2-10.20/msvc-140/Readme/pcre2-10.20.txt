@@ -1,0 +1,92 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+solution created by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.2
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pcre2-10.20\msvc-120
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://www.pcre.org/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+zlib (optional)
+bzip2 (optional)
+libeditline (optional)
+libreadline (optional)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+Open solution select configuration and build.
+Install with "Install" project
+
+To reconfigure headers and sources found in project-dir/src use cmake-gui
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+to link staticaly to pcre define PCRE_STATIC in your projects
+static configuration will link staticaly to every dependency.
+
+PCRE2 configuration summary:
+
+  Install prefix .................. : D:/Github/
+  C compiler ...................... : D:/Github/Install/VisualStudio/VC/bin/x86_amd64/cl.exe
+  C compiler flags ................ : -ID:/Github/Visual-Studio-gtkmm/projects/pcre2-10.20/src 
+
+  Build 8 bit PCRE2 library ....... : ON
+  Build 16 bit PCRE2 library ...... : ON
+  Build 32 bit PCRE2 library ...... : ON
+  Enable JIT compiling support .... : OFF
+  Enable Unicode support .......... : ON
+  Newline char/sequence ........... : ANY
+  \R matches only ANYCRLF ......... : OFF
+  EBCDIC coding ................... : OFF
+  EBCDIC coding with NL=0x25 ...... : OFF
+  Rebuild char tables ............. : OFF
+  Use heap recursion .............. : OFF
+  Internal link size .............. : 2
+  Parentheses nest limit .......... : 250
+  Match limit ..................... : 10000000
+  Match limit recursion ........... : MATCH_LIMIT
+  Build shared libs ............... : ON
+  Build static libs ............... : OFF
+  Build pcre2grep ................. : ON
+  Enable JIT in pcre2grep ......... : OFF
+  Buffer size for pcre2grep ....... : 20480
+  Build tests (implies pcre2test  . : ON
+               and pcre2grep)
+  Link pcre2grep with libz ........ : ON
+  Link pcre2grep with libbz2 ...... : ON
+  Link pcre2test with libeditline . : Library not found
+  Link pcre2test with libreadline . : Library not found
+  Support Valgrind .................: OFF
+  Install MSVC .pdb files ..........: ON
+
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.2
+	Debug x64
+	Debug x86
+
+1.1.0
+	Debug x64
+
+1.1.1
+	Debug dll, Debug static x64 + Debug
+
+1.1.2
+	Debug x64
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+	
+

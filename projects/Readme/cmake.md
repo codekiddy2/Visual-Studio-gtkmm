@@ -2,14 +2,14 @@
 EXAMPLE FOR /X64 /DEBUG ENVIRONMENT AND PROJECT SETUP IN MICROSOFT SHELL
 ```
 
-	set ROOT_DIR=D:\gtkmm\output\Debug\x64
+	set ROOT_DIR=D:\Github\Visual-Studio-gtkmm\output\v140\Debug\x64
 	set PATH=%ROOT_DIR%\bin;%PATH%
 	set LIB=%ROOT_DIR%\lib;%LIB%
-	set INCLUDE=%ROOT_DIR%\include;%INCLUDE%
+	set INCLUDE=%ROOT_DIR%\include;%ROOT_DIR%\include\bzip2;%ROOT_DIR%\include\zlib;;%INCLUDE%
 
-	mkdir msvc-120
-	cd msvc-120
-	cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 12 Win64" ../
+	mkdir msvc-140
+	cd msvc-140
+	cmake -D CMAKE_BUILD_TYPE=Debug -G "Visual Studio 14 Win64" ../
 
 OR
 
