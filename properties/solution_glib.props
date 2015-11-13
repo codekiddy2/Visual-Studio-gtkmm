@@ -6,14 +6,16 @@
     <GenGLibConfigH>copy ..\..\..\glib\glibconfig.h.win32 ..\..\..\glib\glibconfig.h</GenGLibConfigH>
     <GenGModuleConfH>copy ..\..\..\gmodule\gmoduleconf.h.win32 ..\..\..\gmodule\gmoduleconf.h</GenGModuleConfH>
     <GenGNetworkingH>copy ..\..\..\gio\gnetworking.h.win32 ..\..\..\gio\gnetworking.h</GenGNetworkingH>
-    <GenGLibMKEnums>if exist $(PYTHON_DIR)\python.exe $(PYTHON_DIR)\python.exe ..\process_in_win32.py --glib-mkenums</GenGLibMKEnums>
+    <GenGLibMKEnums>if exist $(PYTHON_DIR)\python.exe $(PYTHON_DIR)\python.exe ..\replace.py --action=replace-var --input=..\..\..\gobject\glib-mkenums.in --output=..\..\..\gobject\glib-mkenums --var=GLIB_VERSION --outstring=2.46.2</GenGLibMKEnums>
     <UseSystemPCREDefines>USE_SYSTEM_PCRE</UseSystemPCREDefines>
     <LocalCharsetDefs>LIBDIR=$(LIB_DIR)</LocalCharsetDefs>
     <GLibBundledPCREDefines>PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;SUPPORT_UCP;SUPPORT_UTF;SUPPORT_UTF8;G_LOG_DOMAIN="GLib-GRegex"</GLibBundledPCREDefines>
     <GLibBundledPCREUndefs>-UBSR_ANYCRLF -UEBCDIC</GLibBundledPCREUndefs>
     <SRC_DIR>$(REPO_DIR)projects\glib-2.42.1\</SRC_DIR>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <Linkage-libffi>static</Linkage-libffi>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..;..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -26,6 +28,7 @@
     <Link />
     <Link>
       <AdditionalDependencies>intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
