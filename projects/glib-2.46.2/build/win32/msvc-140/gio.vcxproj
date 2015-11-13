@@ -224,6 +224,7 @@
     <ClCompile Include="..\..\..\gio\gioscheduler.c" />
     <ClCompile Include="..\..\..\gio\giostream.c" />
     <ClCompile Include="..\..\..\gio\gkeyfilesettingsbackend.c" />
+    <ClCompile Include="..\..\..\gio\glistmodel.c" />
     <ClCompile Include="..\..\..\gio\gloadableicon.c" />
     <ClCompile Include="..\..\..\gio\glocaldirectorymonitor.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>

@@ -4,7 +4,7 @@
   <PropertyGroup Label="UserMacros">
     <GtkBinaryVersion>3.0.0</GtkBinaryVersion>
     <GtkDummyPrefix>$(ROOT_DIR)</GtkDummyPrefix>
-    <GtkVersion>3.14.8</GtkVersion>
+    <GtkVersion>3.16.7</GtkVersion>
     <GenerateGtkWin32RC>$(PYTHON_DIR)python ..\process-in-win32.py --gtkwin32rc --gtk3manifest</GenerateGtkWin32RC>
     <GenerateGtkDbusBuiltSources>cd ..\..\..\gtk $(PYTHON_DIR)python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml cd $(SolutionDir)</GenerateGtkDbusBuiltSources>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h</GenConfigH>
@@ -54,7 +54,7 @@ copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\GDK_BROADWAY_BUILD
 echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)_Broadway
 
 :DONE_GDKCONFIG_H</GenGdkConfigHBroadway>
-    <SRC_DIR>$(REPO_DIR)projects\gtk+-3.14.8\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\gtk+-3.16.7\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_gtk+</_PropertySheetDisplayName>

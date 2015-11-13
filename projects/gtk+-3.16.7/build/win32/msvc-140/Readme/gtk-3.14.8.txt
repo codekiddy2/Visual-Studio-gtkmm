@@ -1,62 +1,62 @@
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
-solution obtained from wiki.gnome.org/action/show/Projects/GTK+/Win32/MSVCCompilationOfGTKStack
+Solution obtained from official source package.
 solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.2
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\cairo-1.14.4\msvc\msvc-140
+solution version = 1.1.0
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gtk+-3.14.8\build\win32\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://cairographics.org/
+official sources: http://ftp.gnome.org/pub/GNOME/sources/gtk+/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-freetype (optional)
-fontconfig (optional)
-harfbuzz
-pixman
-libpng
-zlib
+gtk-inspector
+gdk
+atk
+pangowin32
+imm32
+winspool
+comctl32
+pangocairo
+cairo
+cairo-gobject
+pango
+gdk-pixbuf
+gio
+gmodule
 gobject
 glib
-openGL (optional)
+libintl
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-set correct SRC_DIR in solution_cairo.props before building.
-make sure there are no *.FEATURES and *.GOBJECT files, also no $(Platform)$(Configuration)
-test project depends on "Install" entries inside solution directory.
-Open Visual Studio solution and build.
-Build cairo-gobject before "Install" if you want gobject support
-Build Install to install headers.
+Open Solution select configuration and build
+Install by building the "Install" project
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-removed harfbuzz.dll.lib from link time in Debug x64
-edit: harbuzz is inherited??
-
-added cairo-line.c (due to unresolved external for GTK+ 3.15.x)
-update install procedure
+PANGO_ANALYSIS_FLAG_IS_ELLIPSIS is defined in preprocessor as (1 << 1) (update: it's *REMOVED*)
+for gdbusgenerated to work codegen python files need to be installed into share/glib-2.0/codegen (see gdbus.codegen in %BIN_DIR%)
+4098 warning disabled as error for all projects
+gdk-broadway, gdk, gailutil release has G_ENABLE_DEBUG preprocessor because all release projects produce debugging info,
+release builds do not declare this macro in original solution.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
-1.0.1
+1.0.0
 	Debug x64
 
-1.1.2
+1.1.0
 	Debug x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-Create a real world test project, the current one is a hello world that does nothing.
-add include for test project into solution directory because test project dependes on #include <cairo/...h>
-
-remove original macros and put them into pre-build process in project settings

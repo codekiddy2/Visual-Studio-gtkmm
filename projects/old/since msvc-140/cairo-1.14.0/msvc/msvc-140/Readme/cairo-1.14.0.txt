@@ -1,3 +1,10 @@
+CHANGES:
+added cairo-line.c (due to unresolved external for GTK+ 3.15.x)
+update install procedure
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
@@ -7,8 +14,8 @@ solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtk
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.2
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\cairo-1.14.4\msvc\msvc-140
+solution version = 1.1.1
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\cairo-1.14.0\msvc\msvc-120
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: http://cairographics.org/
 
@@ -30,7 +37,8 @@ openGL (optional)
 INSTRUCTIONS:
 set correct SRC_DIR in solution_cairo.props before building.
 make sure there are no *.FEATURES and *.GOBJECT files, also no $(Platform)$(Configuration)
-test project depends on "Install" entries inside solution directory.
+test project depend on "Install"
+entries inside solution directory.
 Open Visual Studio solution and build.
 Build cairo-gobject before "Install" if you want gobject support
 Build Install to install headers.
@@ -39,10 +47,6 @@ Build Install to install headers.
 **************************************************************************************************************************************************************************
 NOTES:
 removed harfbuzz.dll.lib from link time in Debug x64
-edit: harbuzz is inherited??
-
-added cairo-line.c (due to unresolved external for GTK+ 3.15.x)
-update install procedure
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -50,13 +54,8 @@ TESTINGS:
 1.0.1
 	Debug x64
 
-1.1.2
-	Debug x64
-
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
 Create a real world test project, the current one is a hello world that does nothing.
 add include for test project into solution directory because test project dependes on #include <cairo/...h>
-
-remove original macros and put them into pre-build process in project settings

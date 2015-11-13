@@ -606,6 +606,9 @@
     <ClCompile Include="..\..\..\gio\gnativesocketaddress.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\gio\glistmodel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\gio\gnetworking.h.win32">
