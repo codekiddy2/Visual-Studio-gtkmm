@@ -22,7 +22,7 @@ cp index.theme $ROOT_DIR/share/icons/Adwaita
 #took link from https://wiki.gnome.org/action/show/Projects/GTK+/Win32/MSVCCompilationOfGTKStack?action=show&redirect=GTK%2B%2FWin32%2FMSVCCompilationOfGTKStack
 cd $ROOT_DIR/share/icons/Adwaita
 wget https://dl.dropboxusercontent.com/u/30316581/adwaita-icons-theme-png-3.14.0.7z
-tar -Jxvf adwaita-icons-theme-png-3.14.0.7z
+p7zip -d adwaita-icons-theme-png-3.14.0.7z
 rm adwaita-icons-theme-png-3.14.0.7z
 
 #update cache

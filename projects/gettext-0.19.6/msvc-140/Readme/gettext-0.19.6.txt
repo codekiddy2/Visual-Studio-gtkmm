@@ -35,10 +35,6 @@ Copy plural-exp.h from project-directory/src and paste/replace it with original 
 Open Visual Studio solution and before building ensure paths in preprocessor corespond to your installation path in case you do not
 follow default settings, select configuration and build.
 Once done build the "Install" project to install headers.
-This solution will not install locale files, to install them download gettext-runtime-dev for your system (x64 or x86)
-package from GNOME website: http://ftp.acc.umu.se/pub/GNOME/binaries/
-Extract conents of share folder from the package into D:\GitHub\Visual-Studio-gtkmm\output\v140\Debug\x64\share
-The path above is for Debug x64, so you may need to adjust that!
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -54,6 +50,13 @@ this project will link to DLL of libiconv as well as all the projects from my co
 define USING_STATIC_LIBICONV in preprocessor definitions to avoid unresolved stuff.
 
 codekiddy-setlocale.c is not needed (in src dir) it was used in previous version compilations.
+
+since msvc-140:
+following is out of date:
+This solution will not install locale files, to install them download gettext-runtime-dev for your system (x64 or x86)
+package from GNOME website: http://ftp.acc.umu.se/pub/GNOME/binaries/
+Extract conents of share folder from the package into D:\GitHub\Visual-Studio-gtkmm\output\v140\Debug\x64\share
+The path above is for Debug x64, so you may need to adjust that!
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -74,6 +77,10 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 need to install locale files?
-is locale.alias (Locale name alias data base) needed and how to generate it? 
+is locale.alias (Locale name alias data base) needed and how to generate it?
+edit: NONE OF ABOVE IS NEEDED.
+
 when building libintl original locale_charset.h should be included, not the one customized
 from libiconv, which means setting includes so that compiler look for intl headers before iconv headers.
+
+test if current preprocessor entry is case sensitive.
