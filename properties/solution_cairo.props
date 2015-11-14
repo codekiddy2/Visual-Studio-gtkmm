@@ -145,6 +145,7 @@ echo #endif &gt;&gt; $(SolutionDir)\cairo-features.h
       <SDLCheck>false</SDLCheck>
       <WarningLevel>Level2</WarningLevel>
       <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
     <Link>
       <AdditionalDependencies>pixman.dll.lib;png.dll.lib;zlib.dll.lib;harfbuzz.dll.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>

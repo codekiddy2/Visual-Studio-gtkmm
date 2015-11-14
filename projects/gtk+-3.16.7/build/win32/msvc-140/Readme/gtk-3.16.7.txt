@@ -51,6 +51,10 @@ release builds do not declare this macro in original solution.
 since msvc-140
 epoxy.dll.lib added to linker: gtk, gdk, gtk3-demo
 
+not need to "prepare" GTK+ (see prepare.md), it's all done in dependent projects
+icons must be installed and cached
+libffi is still questionalble (or icons? edit needed)
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
