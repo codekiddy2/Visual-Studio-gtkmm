@@ -57,3 +57,5 @@ New TODO's since msvc-140
 49. decide what to do with outdated projects (older versions)
 50. not all links point to direct download page (GNOME projects)
 51. it is possible that newer version packages have source files and headers which are not yet included in projects.
+52. check references, all need to have "same" settings. ie. copy local etc...
+53. describe properties into some readme, their function etc.

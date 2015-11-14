@@ -1,22 +1,68 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "dependecy-graph", "dependecy-graph\dependecy-graph.modelproj", "{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stage3", "Stage3", "{F08DD63C-ECBB-42DD-9BC8-0305BD6E7CC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libsigc++", "libsigc++", "{DFEA64BC-470F-4131-AFDB-5A1401EF279D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sigc++", "..\..\libsigc++-2.5.4\msvc-140\libsigc++2.vcxproj", "{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{F73C19F3-FAF9-4533-BB6F-C0B9523C08C6}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\libsigc++-2.5.4\msvc-140\Readme\libsigc++2.4.0.txt = ..\..\libsigc++-2.5.4\msvc-140\Readme\libsigc++2.4.0.txt
+		..\..\libsigc++-2.5.4\msvc-140\Readme\libsigc++2.5.4.txt = ..\..\libsigc++-2.5.4\msvc-140\Readme\libsigc++2.5.4.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "..\..\libsigc++-2.5.4\msvc-140\install\install.vcxproj", "{78916D71-54AB-4C74-9525-2301898FD91D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}.Release|x64.ActiveCfg = Release|Any CPU
+		{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}.Release|x86.ActiveCfg = Release|Any CPU
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Debug|x64.ActiveCfg = Debug|x64
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Debug|x64.Build.0 = Debug|x64
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Debug|x86.ActiveCfg = Debug|Win32
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Debug|x86.Build.0 = Debug|Win32
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Release|Any CPU.ActiveCfg = Release|Win32
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Release|x64.ActiveCfg = Release|x64
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Release|x64.Build.0 = Release|x64
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Release|x86.ActiveCfg = Release|Win32
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72}.Release|x86.Build.0 = Release|Win32
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Debug|x64.ActiveCfg = Debug|x64
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Debug|x64.Build.0 = Debug|x64
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Debug|x86.ActiveCfg = Debug|Win32
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Debug|x86.Build.0 = Debug|Win32
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x64.ActiveCfg = Release|x64
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x64.Build.0 = Release|x64
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x86.ActiveCfg = Release|Win32
+		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DFEA64BC-470F-4131-AFDB-5A1401EF279D} = {F08DD63C-ECBB-42DD-9BC8-0305BD6E7CC7}
+		{83997EF6-02D6-4CDB-8B3C-DBCA3018CC72} = {DFEA64BC-470F-4131-AFDB-5A1401EF279D}
+		{F73C19F3-FAF9-4533-BB6F-C0B9523C08C6} = {DFEA64BC-470F-4131-AFDB-5A1401EF279D}
+		{78916D71-54AB-4C74-9525-2301898FD91D} = {DFEA64BC-470F-4131-AFDB-5A1401EF279D}
 	EndGlobalSection
 EndGlobal

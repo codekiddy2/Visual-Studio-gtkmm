@@ -36,6 +36,8 @@ Open Visual Studio solution and before building ensure paths in preprocessor cor
 follow default settings, select configuration and build.
 Once done build the "Install" project to install headers.
 
+output from test projects must be readable.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
