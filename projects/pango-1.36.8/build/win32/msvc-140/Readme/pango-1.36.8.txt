@@ -48,6 +48,12 @@ Latest version of fontconfig does compile, link and even passes tests
 found in solution, but it fails when used with pango, not tested with cairo
 since cairo solution does not have real world test project.
 
+msvc-140:
+For fresh build, prebuild event will expand headers in /pango directory ( only once ),
+and it will also create confirmation files.
+test-pango-cairo requires output file name ( png extension ), it will create an image.
+either set debugger option in project settings or run from command promt.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:

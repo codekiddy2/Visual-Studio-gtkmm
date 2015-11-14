@@ -4,10 +4,9 @@
     <VSVer>10</VSVer>
     <GlibEtcInstallRootFromBuildWin32>..\..\..\vs$(VSVer)\$(Platform)</GlibEtcInstallRootFromBuildWin32>
     <CopyDir>$(GlibEtcInstallRoot)</CopyDir>
-    <PangoBinaryVersion>1.36.8</PangoBinaryVersion>
+    <PangoBinaryVersion>1.8.0</PangoBinaryVersion>
     <PangoDummyPrefix>$(ROOT_DIR)</PangoDummyPrefix>
     <PangoDefines>G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)etc";LIBDIR="$(PangoDummyPrefix)lib"</PangoDefines>
-    <NoFCDef>PANGO_VISUALC_NO_FC</NoFCDef>
     <DoGenGir>
 set VSVER=$(VSVer)
 set CONF=$(Configuration)
@@ -26,7 +25,7 @@ cd vs$(VSVer)
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..;..\..\..\pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)etc";LIBDIR="$(PangoDummyPrefix)lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <WarningLevel>Level2</WarningLevel>
+      <WarningLevel>Level1</WarningLevel>
       <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
     <Link>
@@ -34,9 +33,59 @@ cd vs$(VSVer)
     </Link>
     <PreBuildEvent>
       <Command>if exist ..\..\..\config.h goto DONE_CONFIG_H
-copy ..\..\..\config.h.win32 ..\..\..\config.h
+copy /Y ..\..\..\config.h.win32 ..\..\..\config.h
 :DONE_CONFIG_H
-</Command>
+
+if exist ..\..\..\pango\DONE_MODULE_DEFS_H goto DONE_MODULE_DEFS_H
+
+
+copy /Y ..\..\..\pango\module-defs.h.win32 ..\..\..\pango\module-defs.h
+
+
+copy /Y ..\..\..\pango\module-defs.h.win32 ..\..\..\pango\DONE_MODULE_DEFS_H
+
+
+:DONE_MODULE_DEFS_H
+
+
+
+if exist ..\..\..\pango\DONE_MODULE_DEFS_LANG_C goto DONE_MODULE_DEFS_LANG_C
+
+
+copy /Y ..\..\..\pango\module-defs-lang.c.win32 ..\..\..\pango\module-defs-lang.c
+
+
+copy /Y ..\..\..\pango\module-defs-lang.c.win32 ..\..\..\pango\DONE_MODULE_DEFS_LANG_C
+
+
+:DONE_MODULE_DEFS_LANG_C
+
+
+
+if exist ..\..\..\pango\DONE_MODULE_DEFS_FC_C goto DONE_MODULE_DEFS_FC_C
+
+
+copy /Y ..\..\..\pango\module-defs-fc.c.win32 ..\..\..\pango\module-defs-fc.c
+
+
+copy /Y ..\..\..\pango\module-defs-fc.c.win32 ..\..\..\pango\DONE_MODULE_DEFS_FC_C
+
+
+:DONE_MODULE_DEFS_FC_C
+
+
+
+if exist ..\..\..\pango\DONE_MODULE_DEFS_WIN32_C goto DONE_MODULE_DEFS_WIN32_C
+
+
+copy /Y ..\..\..\pango\module-defs-win32.c.win32 ..\..\..\pango\module-defs-win32.c
+
+
+copy /Y ..\..\..\pango\module-defs-win32.c.win32 ..\..\..\pango\DONE_MODULE_DEFS_WIN32_C
+
+
+:DONE_MODULE_DEFS_WIN32_C
+      </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -48,9 +97,6 @@ copy ..\..\..\config.h.win32 ..\..\..\config.h
     </BuildMacro>
     <BuildMacro Include="PangoDefines">
       <Value>$(PangoDefines)</Value>
-    </BuildMacro>
-    <BuildMacro Include="NoFCDef">
-      <Value>$(NoFCDef)</Value>
     </BuildMacro>
     <BuildMacro Include="DoGenGir">
       <Value>$(DoGenGir)</Value>

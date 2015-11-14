@@ -120,7 +120,7 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\lib";LOCALEDIR="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
     </ClCompile>
     <Link>

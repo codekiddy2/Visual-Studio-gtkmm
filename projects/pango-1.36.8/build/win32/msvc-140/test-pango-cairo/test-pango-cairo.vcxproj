@@ -148,6 +148,9 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
+    <ProjectReference Include="..\pangoft2.vcxproj">
+      <Project>{68cc80b9-7225-4fb5-b9ab-9c1df50b6c73}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\pangowin32.vcxproj">
       <Project>{68cc80b9-7225-4fb5-b9ab-9c1df50b6c74}</Project>
       <Private>false</Private>

@@ -74,6 +74,6 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 need to install locale files?
-is locale.alias needed? 
+is locale.alias (Locale name alias data base) needed and how to generate it? 
 when building libintl original locale_charset.h should be included, not the one customized
 from libiconv, which means setting includes so that compiler look for intl headers before iconv headers.
