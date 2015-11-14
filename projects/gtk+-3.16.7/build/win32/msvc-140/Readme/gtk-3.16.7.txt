@@ -52,8 +52,19 @@ since msvc-140
 epoxy.dll.lib added to linker: gtk, gdk, gtk3-demo
 
 not need to "prepare" GTK+ (see prepare.md), it's all done in dependent projects
-icons must be installed and cached
-libffi is still questionalble (or icons? edit needed)
+icons must be installed and cached (both hicolor and adwaita)
+
+Troubleshooting:
+gtk-demo runs and throws an error message with unknown symbols, possible cause:
+libffi is still questionalble (or icons? edit needed) building custom ffi and icons solved the problem
+
+gtk-demo runs without fonts and console behind shows pango rleated errors, possible cause:
+build cairo and pango without freetype. (of course fontconfig is out of question -> it never worked)
+
+gtk-demo runs but has missing icons, possible cause:
+icons must be installed in /share/icons
+make sure gtk-update-icon-cache-3.0 works and tha build process of icons works as it should.
+
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

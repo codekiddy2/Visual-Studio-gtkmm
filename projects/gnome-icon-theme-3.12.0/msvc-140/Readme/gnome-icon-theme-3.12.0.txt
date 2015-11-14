@@ -1,4 +1,4 @@
-copy config file to SRC_ROOT
+copy config files to SRC_ROOT
 check contents
 run bat file from VS cmd prompt
 run sh file from MSYS2 and run:
@@ -6,3 +6,5 @@ run sh file from MSYS2 and run:
 pacman -S mingw-w64-x86_64-gcc
 pacman -S make
 pacman -S intltool
+pacman -S tar
+pacman -S icon-naming-utils

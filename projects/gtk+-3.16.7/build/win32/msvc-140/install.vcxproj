@@ -615,35 +615,6 @@ xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\config.h.win32">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GtkDoInstallBin)$(GtkDoInstall)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(InstalledDlls);$(InstalledBins);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">$(GtkDoInstallBin)$(GtkDoInstall)$(GtkDoInstallBroadwayHeaders)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">$(InstalledDlls);$(InstalledBins);$(InstalledBroadwayBins);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GtkDoInstallBin)$(GtkDoInstall)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(InstalledDlls);$(InstalledBins);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">$(GtkDoInstallBin)$(GtkDoInstall)$(GtkDoInstallBroadwayHeaders)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">$(InstalledDlls);$(InstalledBins);$(InstalledBroadwayBins);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GtkDoInstallBin)$(GtkDoInstall)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(InstalledDlls);$(InstalledBins);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">$(GtkDoInstallBin)$(GtkDoInstall)$(GtkDoInstallBroadwayHeaders)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">$(InstalledDlls);$(InstalledBins);$(InstalledBroadwayBins);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GtkDoInstallBin)$(GtkDoInstall)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(InstalledDlls);$(InstalledBins);%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">Installing Build Results...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">$(GtkDoInstallBin)$(GtkDoInstall)$(GtkDoInstallBroadwayHeaders)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">$(InstalledDlls);$(InstalledBins);$(InstalledBroadwayBins);%(Outputs)</Outputs>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">true</ExcludedFromBuild>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="gdk.vcxproj">
       <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073f7}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
