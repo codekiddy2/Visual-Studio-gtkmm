@@ -1,0 +1,21 @@
+First make sure you've prepared MSYS2 environment by reading the
+"MSYS2-prepare.md" found in readme folder
+
+update contents of config files to reflect your build and package versions
+run bat file from VS cmd prompt (x64 or x86 cmd prompt depending on build type)
+
+cd into this (root) directory:
+>cd D:\Github\Visual-Studio-gtkmm\projects\compile-icons
+>debug-64
+
+from within MSYS2 shell cd into root directory:
+>cd "D:\Github\Visual-Studio-gtkmm\projects\compile-icons"
+
+run sh file from MSYS2:
+>./debug-64.sh
+
+
+Error while compiling adwaita:
+can't load file: unrecognized image file format
+librsvg might help, see:
+https://forums.gentoo.org/viewtopic-p-7676022.html?sid=8846a956b1eb99118e1039434d3385eb
