@@ -115,7 +115,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glib.dll.lib;ffi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -188,19 +188,6 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-    <Import Project="packages\libffi.redist.3.2.1.1\build\native\libffi.redist.targets" Condition="Exists('packages\libffi.redist.3.2.1.1\build\native\libffi.redist.targets')" />
-    <Import Project="packages\libffi.3.2.1.1\build\native\libffi.targets" Condition="Exists('packages\libffi.3.2.1.1\build\native\libffi.targets')" />
-  </ImportGroup>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('packages\libffi.redist.3.2.1.1\build\native\libffi.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libffi.redist.3.2.1.1\build\native\libffi.redist.targets'))" />
-    <Error Condition="!Exists('packages\libffi.3.2.1.1\build\native\libffi.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libffi.3.2.1.1\build\native\libffi.targets'))" />
-  </Target>
+  <ImportGroup Label="ExtensionTargets" />
 </Project>

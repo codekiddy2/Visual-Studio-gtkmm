@@ -96,9 +96,7 @@ cd $(REF_DIR)
 if not exist gdk-pixbuf\html mkdir gdk-pixbuf\html
 cd gdk-pixbuf\html
 echo installing documentation ...
-xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y
-
-</Command>
+xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -119,9 +117,7 @@ cd $(REF_DIR)
 if not exist gdk-pixbuf\html mkdir gdk-pixbuf\html
 cd gdk-pixbuf\html
 echo installing documentation ...
-xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y
-
-</Command>
+xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -142,9 +138,7 @@ cd $(REF_DIR)
 if not exist gdk-pixbuf\html mkdir gdk-pixbuf\html
 cd gdk-pixbuf\html
 echo installing documentation ...
-xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y
-
-</Command>
+xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -165,9 +159,7 @@ cd $(REF_DIR)
 if not exist gdk-pixbuf\html mkdir gdk-pixbuf\html
 cd gdk-pixbuf\html
 echo installing documentation ...
-xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y
-
-</Command>
+xcopy $(SRC_DIR)docs\reference\gdk-pixbuf\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -198,6 +198,12 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
+    <ProjectReference Include="gtk-query-immodules\gtk-query-immodules.vcxproj">
+      <Project>{edbd738f-6666-4fe5-b82f-939ee784456e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="gtk-update-icon-cache\gtk-update-icon-cache.vcxproj">
+      <Project>{4a0352a4-e700-4f18-b714-42adfe150768}</Project>
+    </ProjectReference>
     <ProjectReference Include="gtk.vcxproj">
       <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073f5}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

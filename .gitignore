@@ -115,3 +115,9 @@ packages/
 !msvc-1*/src/*.cpp
 !msvc-1*/src/*.cc
 !msvc-1*/src/*.hpp
+
+#exclude Cairo outputs
+*.FEATURES
+*.GOBJECT
+*.FT
+

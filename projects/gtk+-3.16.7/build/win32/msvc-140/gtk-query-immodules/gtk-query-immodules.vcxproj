@@ -101,6 +101,10 @@
     <Link>
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
+$(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc\immodules.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -113,6 +117,10 @@
     <Link>
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
+$(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc\immodules.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -125,6 +133,10 @@
     <Link>
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
+$(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc\immodules.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -137,6 +149,10 @@
     <Link>
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
+$(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc\immodules.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\gtk\queryimmodules.c" />

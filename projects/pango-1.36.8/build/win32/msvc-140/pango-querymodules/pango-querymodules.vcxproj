@@ -100,6 +100,10 @@
     <Link>
       <AdditionalDependencies>pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)pango-querymodules --update-cache
+$(BIN_DIR)pango-querymodules &gt; $(LIB_DIR)pango/1.8.0/modules.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -111,6 +115,10 @@
     <Link>
       <AdditionalDependencies>pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)pango-querymodules --update-cache
+$(BIN_DIR)pango-querymodules &gt; $(LIB_DIR)pango/1.8.0/modules.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -122,6 +130,10 @@
     <Link>
       <AdditionalDependencies>pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)pango-querymodules --update-cache
+$(BIN_DIR)pango-querymodules &gt; $(LIB_DIR)pango/1.8.0/modules.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -133,6 +145,10 @@
     <Link>
       <AdditionalDependencies>pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)pango-querymodules --update-cache
+$(BIN_DIR)pango-querymodules &gt; $(LIB_DIR)pango/1.8.0/modules.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\pango\querymodules.c" />

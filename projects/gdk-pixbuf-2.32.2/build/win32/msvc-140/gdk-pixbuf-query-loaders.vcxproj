@@ -89,6 +89,10 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+$(BIN_DIR)gdk-pixbuf-query-loaders &gt; $(LIB_DIR)gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)\loaders.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -100,6 +104,10 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+$(BIN_DIR)gdk-pixbuf-query-loaders &gt; $(LIB_DIR)gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)\loaders.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -111,6 +119,10 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+$(BIN_DIR)gdk-pixbuf-query-loaders &gt; $(LIB_DIR)gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)\loaders.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -122,6 +134,10 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
+    <PostBuildEvent>
+      <Command>$(BIN_DIR)gdk-pixbuf-query-loaders --update-cache
+$(BIN_DIR)gdk-pixbuf-query-loaders &gt; $(LIB_DIR)gdk-pixbuf-2.0\$(GdkPixbufBinaryVersion)\loaders.cache</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\gdk-pixbuf\queryloaders.c" />

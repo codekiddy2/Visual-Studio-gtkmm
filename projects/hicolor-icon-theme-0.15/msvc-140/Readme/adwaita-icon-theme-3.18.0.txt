@@ -1,0 +1,8 @@
+copy config file to SRC_ROOT
+check contents
+run bat file from VS cmd prompt
+run sh file from MSYS2 and run:
+
+pacman -S mingw-w64-x86_64-gcc
+pacman -S make
+pacman -S intltool
