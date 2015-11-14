@@ -96,28 +96,23 @@ packages/
 # Repository Specific Files
 # =========================
 
-#exclude sources
-*.h
-*.c
-*.cpp
-*.cc
-*.hpp
-
-#include source modifications
-!msvc-1*/*.h
-!msvc-1*/*.c
-!msvc-1*/*.cpp
-!msvc-1*/*.cc
-!msvc-1*/*.hpp
-
-!msvc-1*/src/*.h
-!msvc-1*/src/*.c
-!msvc-1*/src/*.cpp
-!msvc-1*/src/*.cc
-!msvc-1*/src/*.hpp
-
 #exclude Cairo outputs
 *.FEATURES
 *.GOBJECT
 *.FT
 
+#include sources in solution folders
+!**/msvc-1*/*.c
+!**/msvc-1*/*.cc
+!**/msvc-1*/*.cpp
+!**/msvc-1*/*.h
+!**/msvc-1*/*.hh
+!**/msvc-1*/*.hpp
+
+#include sources in project folders
+!**/msvc-1*/*/*.c
+!**/msvc-1*/*/*.cc
+!**/msvc-1*/*/*.cpp
+!**/msvc-1*/*/*.h
+!**/msvc-1*/*/*.hh
+!**/msvc-1*/*/*.hpp
