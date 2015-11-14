@@ -408,7 +408,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|Win32'">
@@ -421,7 +421,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|Win32'">
@@ -434,7 +434,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|Win32'">
@@ -447,7 +447,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|Win32'">
@@ -460,7 +460,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -486,7 +486,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|Win32'">
@@ -499,7 +499,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|Win32'">
@@ -512,7 +512,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|Win32'">
@@ -525,7 +525,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|Win32'">
@@ -538,7 +538,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -555,7 +555,7 @@
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;pixman.dll.lib;png.dll.lib;zlib.dll.lib;msimg32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
@@ -571,7 +571,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|x64'">
@@ -587,7 +587,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'">
@@ -603,7 +603,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|x64'">
@@ -619,7 +619,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'">
@@ -635,7 +635,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -667,7 +667,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|x64'">
@@ -683,7 +683,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'">
@@ -699,7 +699,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|x64'">
@@ -715,7 +715,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|x64'">
@@ -731,7 +731,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gobject.dll.lib;glib.dll.lib;cairo.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -1,1 +1,0 @@
-#define CAIRO_HAS_FT_FONT 1 

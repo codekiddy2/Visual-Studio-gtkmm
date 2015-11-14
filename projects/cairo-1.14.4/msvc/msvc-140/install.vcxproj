@@ -858,6 +858,9 @@ xcopy $(SRC_DIR)doc\public\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="cairo-gobject.vcxproj">
+      <Project>{e6933c13-f3fc-4d92-80bf-f9253f25ad77}</Project>
+    </ProjectReference>
     <ProjectReference Include="cairo.vcxproj">
       <Project>{55b6dc50-f887-4765-8a56-6e98e60461ab}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

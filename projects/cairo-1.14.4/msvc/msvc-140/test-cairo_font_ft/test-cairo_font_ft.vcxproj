@@ -22,6 +22,11 @@
     <ClCompile Include="Sample.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\cairo-gobject.vcxproj">
+      <Project>{e6933c13-f3fc-4d92-80bf-f9253f25ad77}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\cairo.vcxproj">
       <Project>{55b6dc50-f887-4765-8a56-6e98e60461ab}</Project>
       <Private>false</Private>

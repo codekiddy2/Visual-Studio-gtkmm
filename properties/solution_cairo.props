@@ -134,7 +134,7 @@ type $(SolutionDir)\$(Configuration).FEATURES &gt;&gt; $(SolutionDir)\cairo-feat
 echo #endif &gt;&gt; $(SolutionDir)\cairo-features.h
 
 </GenTmpFeaturesHeader>
-    <SRC_DIR>$(REPO_DIR)projects\cairo-1.14.0\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)cairo-1.14.4\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_cairo</_PropertySheetDisplayName>
@@ -148,7 +148,7 @@ echo #endif &gt;&gt; $(SolutionDir)\cairo-features.h
       <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>pixman.dll.lib;png.dll.lib;zlib.dll.lib;harfbuzz.dll.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pixman.dll.lib;png.dll.lib;zlib.dll.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

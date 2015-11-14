@@ -17,7 +17,7 @@ official sources: http://cairographics.org/
 DEPENDENCIES:
 freetype (optional)
 fontconfig (optional)
-harfbuzz
+harfbuzz (optional - if freetype is linked)
 pixman
 libpng
 zlib
@@ -30,6 +30,8 @@ openGL (optional)
 INSTRUCTIONS:
 set correct SRC_DIR in solution_cairo.props before building.
 make sure there are no *.FEATURES and *.GOBJECT files, also no $(Platform)$(Configuration)
+also delete $(INCLUDE_DIR)cairo for clean build and cairo-features.h in solution directory.
+
 test project depends on "Install" entries inside solution directory.
 Open Visual Studio solution and build.
 Build cairo-gobject before "Install" if you want gobject support
@@ -39,10 +41,14 @@ Build Install to install headers.
 **************************************************************************************************************************************************************************
 NOTES:
 removed harfbuzz.dll.lib from link time in Debug x64
-edit: harbuzz is inherited??
+edit: harbuzz is inherited (see dependencies section) ??
+- removing harfbuzz if freetype is not linked. (that is Debug and release x86 x64 all projects)
 
 added cairo-line.c (due to unresolved external for GTK+ 3.15.x)
 update install procedure
+
+FreeType and Expat are required if building Pango with FontConfig support.
+GObject support is required To build and run GTK+3.x
 
 since msvc-140
 set RTC (runtime checks) /RTCc to off, to make gtk-demo run
@@ -60,6 +66,7 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 Create a real world test project, the current one is a hello world that does nothing.
-add include for test project into solution directory because test project dependes on #include <cairo/...h>
 
-remove original macros and put them into pre-build process in project settings
+[done, install builds first] add include for test project into solution directory because test project dependes on #include <cairo/...h>
+
+remove original macros and put them into pre-build process in project settings ( EDIT: error prone )
