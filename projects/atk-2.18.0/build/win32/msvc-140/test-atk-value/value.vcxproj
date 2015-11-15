@@ -19,162 +19,126 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9198CEFB-E3D2-4A72-BF42-A880D78C2443}</ProjectGuid>
-    <RootNamespace>install</RootNamespace>
+    <ProjectGuid>{C25E8AB5-12D9-48E7-8EAC-CB19F48AF7A5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>testatk</RootNamespace>
+    <ProjectName>test-atk-value</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_ffi.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_ffi.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_ffi.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_ffi.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>atk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\ffi mkdir include\ffi
-cd include\ffi
-xcopy $(SolutionDir)\include\*.h  /Y
-copy $(SRC_DIR)include\ffi_common.h /Y
-cd $(LIB_DIR)
-copy $(SRC_DIR)x86_64-w64-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Command>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>atk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\ffi mkdir include\ffi
-cd include\ffi
-xcopy $(SolutionDir)\include\*.h  /Y
-copy $(SRC_DIR)include\ffi_common.h /Y
-cd $(LIB_DIR)
-copy $(SRC_DIR)x86_64-w64-mingw32\.libs\libffi_convenience.lib ffi.lib /Y
-</Command>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>atk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\ffi mkdir include\ffi
-cd include\ffi
-xcopy $(SolutionDir)\include\*.h  /Y
-copy $(SRC_DIR)include\ffi_common.h /Y
-cd $(LIB_DIR)
-copy $(SRC_DIR)i686-pc-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Command>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
     <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>atk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\ffi mkdir include\ffi
-cd include\ffi
-xcopy $(SolutionDir)\include\*.h  /Y
-copy $(SRC_DIR)include\ffi_common.h /Y
-cd $(LIB_DIR)
-copy $(SRC_DIR)i686-pc-mingw32\.libs\libffi_convenience.lib ffi.lib /Y
-</Command>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\libffi\libffi.vcxproj">
-      <Project>{793f0abe-66e5-48c0-9690-3060ff08aff5}</Project>
+    <ProjectReference Include="..\atk.vcxproj">
+      <Project>{86eacd59-f69f-4aad-854b-aa03d5447360}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
-    <ProjectReference Include="..\libffi_dll\libffi_dll.vcxproj">
-      <Project>{4aa8a495-3b3c-4752-8e90-0061fe39209a}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\tests\testvalue.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

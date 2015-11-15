@@ -31,13 +31,15 @@ make
 once done copy libffi_convenience.lib file into lib directory and rename into ffi.lib
 copy ffitarget.h and ffi.h into include_dir/ffi
 
-
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
 x64 configuration does not work with libffi-3.2 (bug in 64 assembly code)
 While running test projects you may see the "First time exception" output, which is OK since
 that's what these test projects do, look for output in console.
+
+edit:since msvc-140:
+file version is unclear, leaving so.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

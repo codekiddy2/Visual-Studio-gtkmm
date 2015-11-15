@@ -15,6 +15,9 @@
     <Filter Include="Definition files">
       <UniqueIdentifier>{6e1c60f4-9bb8-4571-a9d7-a0e455711873}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\config">
+      <UniqueIdentifier>{44d8d6c4-29a3-466c-be40-f951bff1ab12}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\gtk\gtkmm\aboutdialog.cc">
@@ -1414,6 +1417,9 @@
     <ClInclude Include="..\gtk\gtkmm\stacksidebar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="gtkmm\gtkmmconfig.h">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include=".\gtkmm\gtkmm.rc">
@@ -1422,6 +1428,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="gtkmm\gtkmm.def">
+      <Filter>Definition files</Filter>
+    </None>
+    <None Include="gtkmm\gtkmm_no_atk.def">
       <Filter>Definition files</Filter>
     </None>
   </ItemGroup>

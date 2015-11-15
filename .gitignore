@@ -101,8 +101,9 @@ packages/
 *.FT
 
 #exclude extracted sources
-/projects/*/*
+/projects/*/
 !**/msvc-1*/
+!**/msvc-1*/*/
 
 #exclude build output
 [Oo]utput/

@@ -25,13 +25,8 @@
     <ClInclude Include="..\..\testsuite\libffi.call\ffitest.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\libffi\libffi.vcxproj">
-      <Project>{793f0abe-66e5-48c0-9690-3060ff08aff5}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    <ProjectReference Include="..\install\install.vcxproj">
+      <Project>{9198cefb-e3d2-4a72-bf42-a880d78c2443}</Project>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">

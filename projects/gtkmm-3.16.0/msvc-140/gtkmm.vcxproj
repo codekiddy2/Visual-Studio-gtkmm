@@ -136,7 +136,7 @@
     </PreLinkEvent>
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -634,6 +634,7 @@
     <ClInclude Include="..\gtk\gtkmm\widgetpath.h" />
     <ClInclude Include="..\gtk\gtkmm\window.h" />
     <ClInclude Include="..\gtk\gtkmm\wrap_init.h" />
+    <ClInclude Include="gtkmm\gtkmmconfig.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include=".\gtkmm\gtkmm.rc" />
@@ -650,6 +651,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="gtkmm\gtkmm.def" />
+    <None Include="gtkmm\gtkmm_no_atk.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
