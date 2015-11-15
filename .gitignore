@@ -110,20 +110,20 @@ packages/
 *.hpp
 
 #include sources in solution folders
-!**/msvc-1*/*.c
-!**/msvc-1*/*.cc
-!**/msvc-1*/*.cpp
-!**/msvc-1*/*.h
-!**/msvc-1*/*.hh
-!**/msvc-1*/*.hpp
+!/projects/*/msvc-1*/*.c
+!/projects/*/msvc-1*/*.cc
+!/projects/*/msvc-1*/*.cpp
+!/projects/*/msvc-1*/*.h
+!/projects/*/msvc-1*/*.hh
+!/projects/*/msvc-1*/*.hpp
 
 #include sources in project folders
-!**/msvc-1*/*/*.c
-!**/msvc-1*/*/*.cc
-!**/msvc-1*/*/*.cpp
-!**/msvc-1*/*/*.h
-!**/msvc-1*/*/*.hh
-!**/msvc-1*/*/*.hpp
+!/projects/*/msvc-1*/*/*.c
+!/projects/*/msvc-1*/*/*.cc
+!/projects/*/msvc-1*/*/*.cpp
+!/projects/*/msvc-1*/*/*.h
+!/projects/*/msvc-1*/*/*.hh
+!/projects/*/msvc-1*/*/*.hpp
 
 #other files
 *.in
