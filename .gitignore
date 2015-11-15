@@ -59,7 +59,6 @@ ipch/
 [Bb]in/
 [Dd]ebug*/
 [Rr]elease*/
-[Oo]utput/
 
 #Tools
 _ReSharper*/
@@ -102,30 +101,8 @@ packages/
 *.FT
 
 #exclude extracted sources
-*.c
-*.cc
-*.cpp
-*.h
-*.hh
-*.hpp
+/projects/*/*
+!**/msvc-1*/
 
-#include sources in solution folders
-!/projects/*/msvc-1*/*.c
-!/projects/*/msvc-1*/*.cc
-!/projects/*/msvc-1*/*.cpp
-!/projects/*/msvc-1*/*.h
-!/projects/*/msvc-1*/*.hh
-!/projects/*/msvc-1*/*.hpp
-
-#include sources in project folders
-!/projects/*/msvc-1*/*/*.c
-!/projects/*/msvc-1*/*/*.cc
-!/projects/*/msvc-1*/*/*.cpp
-!/projects/*/msvc-1*/*/*.h
-!/projects/*/msvc-1*/*/*.hh
-!/projects/*/msvc-1*/*/*.hpp
-
-#other files
-*.in
-D:\Github\Visual-Studio-gtkmm\projects\cairo*\msvc\msvc-1*\cairo-features.h
-D:\Github\Visual-Studio-gtkmm\projects\libsigc*\msvc-1*\sigc++config.h
+#exclude build output
+[Oo]utput/
