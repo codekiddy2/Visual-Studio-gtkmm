@@ -124,3 +124,8 @@ packages/
 !**/msvc-1*/*/*.h
 !**/msvc-1*/*/*.hh
 !**/msvc-1*/*/*.hpp
+
+#other files
+*.in
+D:\Github\Visual-Studio-gtkmm\projects\cairo*\msvc\msvc-1*\cairo-features.h
+D:\Github\Visual-Studio-gtkmm\projects\libsigc*\msvc-1*\sigc++config.h
