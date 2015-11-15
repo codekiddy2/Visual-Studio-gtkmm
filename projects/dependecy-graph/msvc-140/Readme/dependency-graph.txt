@@ -1,5 +1,12 @@
-This is a Visual Studio 2013 Solution with direct graph document project,
+This is a Visual Studio 2015 Solution with direct graph document project,
 visualy showing dpendencies between packages and allowing you swith to different
 projects and solutions with single click, removing the need to click on open/close
 solution each time you wan't to check other code.
-You will need Visual Studio 2013 Ultimate to open this type of project.
+You will need Visual Studio 2015 Ultimate to open this type of project.
+
+TODO:
+make this solution a master solution, and separate them to "build stages".
+projects that need to be configured manualy are in between stages.
+
+does cairomm depends on glibmm??
+does fontconfig depend on harfbuzz?
