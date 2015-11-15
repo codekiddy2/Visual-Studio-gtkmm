@@ -1,60 +1,49 @@
 COPYRIGHT:
 Feel free to redistribute, modify, remove or add contents.
 Please do not remove this file from solution or remove it's contents.
-solution obtained from official source package
+Solution obtained from official source package.
 solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
 solution version = 1.1.1
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\freetype-2.6.1\builds\windows\msvc-140
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pangomm-2.38.1\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://www.freetype.org/
+official sources: http://ftp.gnome.org/pub/GNOME/sources/pangomm/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-harfbuzz (circular / optional)
+sigc++
+glib
+atk
+cairo
+pango
+glibmm
+cairomm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Project is set to depend on harfbuzz, if you dot have harfbuzz installed yet, then, before
-launching the build remove the FT_CONFIG_OPTION_USE_HARFBUZZ preprocessor macro berore building.
-
-open solution, select configuration and build
-Install headers by building the "Install" project.
-
-Once you install harfbuzz, you'll need to put the FT_CONFIG_OPTION_USE_HARFBUZZ back and 
-rebuild, in order for freetype to enjoy harbuzz features.
-
-To ran a test project make sure you pass arguments to the application in your debugger.
-ie: C:\Windows\Fonts\Arial.ttf some_text
-test project assumes you have harfbuzz, modify linker input if not.
+Open Solution select configuration and build
+Install by building the "Install" project
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-Version 2.6.1 does not work with pango, gtk-demo has no fonts, and console behind shows errors.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
-1.0.3
-	Debug x64
-	Debug x86
-
-1.0.4
-	All 4
-
-1.1.0
+1.0.0
 	Debug x64
 
-1.1.1
-	Debug x64 + debug
+1.1.0-1
+	Debug x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-build dll version
+some configurations do not inherit (blank settings)
+create test project
