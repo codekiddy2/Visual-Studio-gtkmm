@@ -4,7 +4,7 @@
     <Import Project="stack_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\glibmm-2.42.0\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\glibmm-2.46.1\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>

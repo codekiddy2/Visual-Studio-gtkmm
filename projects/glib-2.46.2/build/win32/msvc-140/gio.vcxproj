@@ -282,6 +282,7 @@
     <ClCompile Include="..\..\..\gio\gsimpleaction.c" />
     <ClCompile Include="..\..\..\gio\gsimpleactiongroup.c" />
     <ClCompile Include="..\..\..\gio\gsimpleasyncresult.c" />
+    <ClCompile Include="..\..\..\gio\gsimpleiostream.c" />
     <ClCompile Include="..\..\..\gio\gsimplepermission.c" />
     <ClCompile Include="..\..\..\gio\gsimpleproxyresolver.c" />
     <ClCompile Include="..\..\..\gio\gsocketaddress.c" />
