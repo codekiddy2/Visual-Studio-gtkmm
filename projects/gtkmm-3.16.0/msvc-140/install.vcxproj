@@ -110,8 +110,8 @@ cd gdkmm\include
 xcopy $(SolutionDir)gdkmm\gdkmmconfig.h /Y
 echo installing demo ...
 cd $(ROOT_DIR)
-if not exist share\gtkmm\demo-3.0 mkdir share\gtkmm\demo-3.0
-cd share\gtkmm\demo-3.0
+if not exist share\gtkmm-3.0\demo mkdir share\gtkmm-3.0\demo
+cd share\gtkmm-3.0\demo
 xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
 xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
 xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
@@ -160,8 +160,8 @@ cd gdkmm\include
 xcopy $(SolutionDir)gdkmm\gdkmmconfig.h /Y
 echo installing demo ...
 cd $(ROOT_DIR)
-if not exist share\gtkmm\demo-3.0 mkdir share\gtkmm\demo-3.0
-cd share\gtkmm\demo-3.0
+if not exist share\gtkmm-3.0\demo mkdir share\gtkmm-3.0\demo
+cd share\gtkmm-3.0\demo
 xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
 xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
 xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
@@ -210,8 +210,8 @@ cd gdkmm\include
 xcopy $(SolutionDir)gdkmm\gdkmmconfig.h /Y
 echo installing demo ...
 cd $(ROOT_DIR)
-if not exist share\gtkmm\demo-3.0 mkdir share\gtkmm\demo-3.0
-cd share\gtkmm\demo-3.0
+if not exist share\gtkmm-3.0\demo mkdir share\gtkmm-3.0\demo
+cd share\gtkmm-3.0\demo
 xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
 xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
 xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y
@@ -260,8 +260,8 @@ cd gdkmm\include
 xcopy $(SolutionDir)gdkmm\gdkmmconfig.h /Y
 echo installing demo ...
 cd $(ROOT_DIR)
-if not exist share\gtkmm\demo-3.0 mkdir share\gtkmm\demo-3.0
-cd share\gtkmm\demo-3.0
+if not exist share\gtkmm-3.0\demo mkdir share\gtkmm-3.0\demo
+cd share\gtkmm-3.0\demo
 xcopy $(SRC_DIR)demos\gtk-demo\*.cc /Y
 xcopy $(SRC_DIR)demos\gtk-demo\*.h /Y
 xcopy $(SRC_DIR)demos\gtk-demo\*.gif /Y

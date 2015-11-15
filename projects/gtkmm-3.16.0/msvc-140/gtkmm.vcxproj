@@ -96,7 +96,7 @@
     </PreLinkEvent>
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -115,7 +115,7 @@
     </PreLinkEvent>
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -136,7 +136,7 @@
     </PreLinkEvent>
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -158,7 +158,7 @@
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName)$(ReleaseDllSuffix).dll</OutputFile>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OptimizeReferences>true</OptimizeReferences>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -580,6 +580,7 @@
     <ClInclude Include="..\gtk\gtkmm\spinbutton.h" />
     <ClInclude Include="..\gtk\gtkmm\spinner.h" />
     <ClInclude Include="..\gtk\gtkmm\stack.h" />
+    <ClInclude Include="..\gtk\gtkmm\stacksidebar.h" />
     <ClInclude Include="..\gtk\gtkmm\stackswitcher.h" />
     <ClInclude Include="..\gtk\gtkmm\statusbar.h" />
     <ClInclude Include="..\gtk\gtkmm\statusicon.h" />
@@ -646,6 +647,9 @@
       <Project>{07324745-c9be-4d65-b08a-9c88188c0c28}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gtkmm\gtkmm.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

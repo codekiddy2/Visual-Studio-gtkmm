@@ -30,9 +30,10 @@ pango
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Before building open the gtkmmconfig.h found ./msvc-120/gtkmm and comment out
+Before building open the gtkmmconfig.h found ./msvc-1xx/gtkmm and comment out
 the #define GTKMM_ATKMM_ENABLED 1
-edit (msvc-140): this is not problem any more.
+edit (msvc-140): the above is still problem:
+access violation reading location, in atkmm implementor destructor.
 
 Once you do that save the gtkmmconfig.h header...
 Open Solution select configuration and build
@@ -45,11 +46,16 @@ NOTES:
 undefined vsnprintf_l vsprintf_l _local_stdio_printf_options
 adding legacy_stdio_definitions.lib to linker input does not help
 
-project uses modified version of def file with following symbols commented out:
+gtkmm project uses modified version of def file with following symbols commented out:
 ;_local_stdio_printf_options
 ;vsnprintf_l
 ;vsprintf_l
 this is changed in project settings > link
+you might need to re-copy original def file from DEF_DIR in case of source modifications.
+
+if demo project can't find source files on run time check demo-common.cc line 22
+function name is: get_democodedir
+then modify install project to install files correctly.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
