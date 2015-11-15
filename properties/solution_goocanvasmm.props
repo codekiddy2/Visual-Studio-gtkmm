@@ -4,7 +4,7 @@
     <Import Project="stack_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\goocanvasmm-1.90.9\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\goocanvasmm-1.90.11\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -13,6 +13,10 @@
       <DisableSpecificWarnings>4250;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
+    <Link />
+    <Link>
+      <AdditionalDependencies>atkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
