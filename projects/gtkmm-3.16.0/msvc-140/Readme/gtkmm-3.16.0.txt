@@ -1,0 +1,72 @@
+COPYRIGHT:
+Feel free to redistribute, modify, remove or add contents.
+Please do not remove this file from solution or remove it's contents.
+Solution obtained from official source package.
+solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.2
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gtkmm-3.16.0\msvc-140
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://ftp.gnome.org/pub/GNOME/sources/gtkmm/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+atkmm
+pangomm
+glibmm
+cairomm
+sigc++
+gtk.dll
+gdk-pixbuf
+glib.dll
+atk
+cairo
+pango
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+Before building open the gtkmmconfig.h found ./msvc-120/gtkmm and comment out
+the #define GTKMM_ATKMM_ENABLED 1
+edit (msvc-140): this is not problem any more.
+
+Once you do that save the gtkmmconfig.h header...
+Open Solution select configuration and build
+Install by building the "Install" project
+You must "Install" before running the demo application!
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+undefined vsnprintf_l vsprintf_l _local_stdio_printf_options
+adding legacy_stdio_definitions.lib to linker input does not help
+
+project uses modified version of def file with following symbols commented out:
+;_local_stdio_printf_options
+;vsnprintf_l
+;vsprintf_l
+this is changed in project settings > link
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.0
+	Debug x64
+
+1.1.0
+	Debug x64
+
+1.1.1
+	Debug x64
+
+1.1.2
+	Debug x64 + Debug
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+some settings are blank (not inherited)

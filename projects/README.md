@@ -1,4 +1,4 @@
-Here you will find Visual Studio 2013 projects for individual packages.
+Here you will find Visual Studio 2013/2015 projects for individual packages.
 All of the projects share exactly the same settings found in properties folder.
 See wiki -> properties for more information.
 
