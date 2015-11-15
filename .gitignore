@@ -101,6 +101,14 @@ packages/
 *.GOBJECT
 *.FT
 
+#exclude extracted sources
+*.c
+*.cc
+*.cpp
+*.h
+*.hh
+*.hpp
+
 #include sources in solution folders
 !**/msvc-1*/*.c
 !**/msvc-1*/*.cc
