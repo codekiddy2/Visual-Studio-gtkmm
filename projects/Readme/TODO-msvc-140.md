@@ -61,3 +61,4 @@ New TODO's since msvc-140
 53. describe properties into some readme, their function etc.
 54. [HIGH PRIORITY] make project level properties ( benefit: easy relocation of solutions - it will inherit all other properties,  and less work to maintain flags)
 55. [HIGH PRIORITY] remove version numbers from project directories, easier to manage git and updates. ( or move solutions out of sources )
+56. [HIGH PRIORITY] move test/example projects into one directory "Tests" inside solution directory ( TODO 10 first? and others )
