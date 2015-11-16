@@ -40,7 +40,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pangocairo-threads", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-color", "test-color\test-color.vcxproj", "{E85FA6B9-475A-464C-83F9-4BB1408A3E74}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-ot-tags", "New folder\new.vcxproj", "{D7EA92F1-346B-4598-9462-02492EB8DCE8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen-all-unicode", "gen-all-unicode\gen-all-unicode.vcxproj", "{D7EA92F1-346B-4598-9462-02492EB8DCE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
