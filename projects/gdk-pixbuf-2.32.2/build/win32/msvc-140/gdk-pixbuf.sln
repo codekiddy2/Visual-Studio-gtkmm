@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{C0838F
 		Readme\gdk-pixbuf-2.32.2.txt = Readme\gdk-pixbuf-2.32.2.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E9C6DFCA-01CB-4225-BFE8-A474F461D35D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pixbuff_random", "test-gdk-pixbuf_random\test-gdk-pixbuf_random.vcxproj", "{3FC58708-42C4-40D7-91F8-D8881F1B0619}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_NoGDIP|Win32 = Debug_NoGDIP|Win32
@@ -103,8 +107,27 @@ Global
 		{2AD2FF07-0514-41A8-8A32-920C744EA1A6}.Release|Win32.Build.0 = Release|Win32
 		{2AD2FF07-0514-41A8-8A32-920C744EA1A6}.Release|x64.ActiveCfg = Release|x64
 		{2AD2FF07-0514-41A8-8A32-920C744EA1A6}.Release|x64.Build.0 = Release|x64
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Debug_NoGDIP|Win32.ActiveCfg = Debug|Win32
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Debug_NoGDIP|Win32.Build.0 = Debug|Win32
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Debug_NoGDIP|x64.ActiveCfg = Debug|x64
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Debug_NoGDIP|x64.Build.0 = Debug|x64
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Debug|Win32.Build.0 = Debug|Win32
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Debug|x64.ActiveCfg = Debug|x64
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Debug|x64.Build.0 = Debug|x64
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Release_NoGDIP|Win32.ActiveCfg = Release|Win32
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Release_NoGDIP|Win32.Build.0 = Release|Win32
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Release_NoGDIP|x64.ActiveCfg = Release|x64
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Release_NoGDIP|x64.Build.0 = Release|x64
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Release|Win32.ActiveCfg = Release|Win32
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Release|Win32.Build.0 = Release|Win32
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Release|x64.ActiveCfg = Release|x64
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3FC58708-42C4-40D7-91F8-D8881F1B0619} = {E9C6DFCA-01CB-4225-BFE8-A474F461D35D}
 	EndGlobalSection
 EndGlobal
