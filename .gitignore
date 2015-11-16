@@ -103,7 +103,6 @@ packages/
 #exclude extracted sources
 /projects/*/
 !**/msvc-1*/
-!**/msvc-1*/*/
 
 #exclude build output
 [Oo]utput/
