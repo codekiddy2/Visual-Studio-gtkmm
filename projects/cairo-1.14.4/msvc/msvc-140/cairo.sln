@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{ACC42B
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-cairo", "test-cairo_font_ft\test-cairo_font_ft.vcxproj", "{3198921D-09F3-46C7-B1D7-9D6BB4B7CFD9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D67FDE40-51DE-40DE-B9B3-A71954C763A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_FC_GL|Win32 = Debug_FC_GL|Win32
@@ -240,5 +242,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3198921D-09F3-46C7-B1D7-9D6BB4B7CFD9} = {D67FDE40-51DE-40DE-B9B3-A71954C763A4}
 	EndGlobalSection
 EndGlobal

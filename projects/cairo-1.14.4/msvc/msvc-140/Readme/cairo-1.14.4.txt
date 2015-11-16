@@ -53,6 +53,8 @@ GObject support is required To build and run GTK+3.x
 since msvc-140
 set RTC (runtime checks) /RTCc to off, to make gtk-demo run
 
+freetype somewhere linked staticaly (FC and GL) and in other cases dll
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -66,7 +68,8 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 Create a real world test project, the current one is a hello world that does nothing.
-
-[done, install builds first] add include for test project into solution directory because test project dependes on #include <cairo/...h>
+edit: one real world test project is present in GTK+ solution
 
 remove original macros and put them into pre-build process in project settings ( EDIT: error prone )
+
+make cairo output's debug folder and other stuff into intermediate directory

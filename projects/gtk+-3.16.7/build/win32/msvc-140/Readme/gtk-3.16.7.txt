@@ -84,3 +84,7 @@ TESTINGS:
 TODO:
 
 add more test projects.
+update icon cache prebuild event fails, check why and fix.
+
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\ removed from
+post build event, fix hicolor cache making and return command back
