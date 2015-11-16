@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7EF4D5F8-1EF2-4EA7-B131-7D8F6BF58170}</ProjectGuid>
+    <ProjectGuid>{B4E863CB-EFF3-4467-BBED-BB6B77F00726}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>testgoocanvasmm</RootNamespace>
   </PropertyGroup>
@@ -272,18 +272,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\examples\demo\main.cc" />
-    <ClCompile Include="..\..\examples\demo\primitives.cc" />
-    <ClCompile Include="..\..\examples\demo\window.cc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\examples\demo\page.h" />
-    <ClInclude Include="..\..\examples\demo\primitives.h" />
-    <ClInclude Include="..\..\examples\demo\window.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\examples\demo\flower.png" />
-    <Image Include="..\..\examples\demo\toroid.png" />
+    <ClCompile Include="..\..\tests\child_properties\main.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

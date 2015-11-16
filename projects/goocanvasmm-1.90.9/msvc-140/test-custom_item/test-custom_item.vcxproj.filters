@@ -15,33 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\examples\demo\main.cc">
+    <ClCompile Include="..\..\examples\custom_item\exampleitem.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\examples\demo\primitives.cc">
+    <ClCompile Include="..\..\examples\custom_item\examplewindow.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\examples\demo\window.cc">
+    <ClCompile Include="..\..\examples\custom_item\main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\examples\demo\page.h">
+    <ClInclude Include="..\..\examples\custom_item\examplewindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\examples\demo\primitives.h">
+    <ClInclude Include="..\..\examples\custom_item\exampleitem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\examples\demo\window.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\examples\demo\flower.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\..\examples\demo\toroid.png">
-      <Filter>Resource Files</Filter>
-    </Image>
   </ItemGroup>
 </Project>

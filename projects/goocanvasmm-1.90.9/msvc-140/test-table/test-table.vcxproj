@@ -35,9 +35,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7EF4D5F8-1EF2-4EA7-B131-7D8F6BF58170}</ProjectGuid>
+    <ProjectGuid>{A5C1D273-635B-4CFE-8968-268A25AB0395}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>testgoocanvasmm</RootNamespace>
+    <ProjectName>test-table</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="Configuration">
@@ -272,18 +273,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\examples\demo\main.cc" />
-    <ClCompile Include="..\..\examples\demo\primitives.cc" />
-    <ClCompile Include="..\..\examples\demo\window.cc" />
+    <ClCompile Include="..\..\examples\table\examplewindow.cc" />
+    <ClCompile Include="..\..\examples\table\main.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\examples\demo\page.h" />
-    <ClInclude Include="..\..\examples\demo\primitives.h" />
-    <ClInclude Include="..\..\examples\demo\window.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\examples\demo\flower.png" />
-    <Image Include="..\..\examples\demo\toroid.png" />
+    <ClInclude Include="..\..\examples\table\examplewindow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
