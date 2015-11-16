@@ -26,7 +26,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gailutil", "gailutil.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install.vcxproj", "{FC5AADB5-95CD-4BF0-BA8B-0C16FE7073FB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A1B8F1C-E62A-446B-9568-940F9C215631}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{6A1B8F1C-E62A-446B-9568-940F9C215631}"
 	ProjectSection(SolutionItems) = preProject
 		Readme\gtk-3.14.8.txt = Readme\gtk-3.14.8.txt
 		Readme\gtk-3.16.7.txt = Readme\gtk-3.16.7.txt
@@ -35,6 +35,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtk-query-immodules", "gtk-query-immodules\gtk-query-immodules.vcxproj", "{EDBD738F-6666-4FE5-B82F-939EE784456E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtk-update-icon-cache", "gtk-update-icon-cache\gtk-update-icon-cache.vcxproj", "{4A0352A4-E700-4F18-B714-42ADFE150768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7134ADCC-9DEB-4F9D-BDCB-9269D057DDF4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testfontchooserdialog", "testfontchooserdialog\testfontchooserdialog.vcxproj", "{ABE0E247-4A3F-48B4-8938-0CE916E06014}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -380,8 +384,37 @@ Global
 		{4A0352A4-E700-4F18-B714-42ADFE150768}.Release|Win32.Build.0 = Release|Win32
 		{4A0352A4-E700-4F18-B714-42ADFE150768}.Release|x64.ActiveCfg = Release|x64
 		{4A0352A4-E700-4F18-B714-42ADFE150768}.Release|x64.Build.0 = Release|x64
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug_Broadway|Mixed Platforms.ActiveCfg = Debug|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug_Broadway|Mixed Platforms.Build.0 = Debug|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug_Broadway|Win32.ActiveCfg = Debug|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug_Broadway|Win32.Build.0 = Debug|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug_Broadway|x64.ActiveCfg = Debug|x64
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug_Broadway|x64.Build.0 = Debug|x64
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug|Win32.Build.0 = Debug|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug|x64.ActiveCfg = Debug|x64
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Debug|x64.Build.0 = Debug|x64
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release_Broadway|Mixed Platforms.ActiveCfg = Release|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release_Broadway|Mixed Platforms.Build.0 = Release|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release_Broadway|Win32.ActiveCfg = Release|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release_Broadway|Win32.Build.0 = Release|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release_Broadway|x64.ActiveCfg = Release|x64
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release_Broadway|x64.Build.0 = Release|x64
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release|Win32.ActiveCfg = Release|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release|Win32.Build.0 = Release|Win32
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release|x64.ActiveCfg = Release|x64
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC5AADB5-95CD-4BF0-BA8B-0C16FE7073FC} = {7134ADCC-9DEB-4F9D-BDCB-9269D057DDF4}
+		{3281202A-CD26-4C67-B892-EB34BDBC612F} = {7134ADCC-9DEB-4F9D-BDCB-9269D057DDF4}
+		{ABE0E247-4A3F-48B4-8938-0CE916E06014} = {7134ADCC-9DEB-4F9D-BDCB-9269D057DDF4}
 	EndGlobalSection
 EndGlobal

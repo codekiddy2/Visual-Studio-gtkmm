@@ -46,9 +46,10 @@ https://msdn.microsoft.com/en-us/library/bdscwf1c.aspx
 In case of problem replace Zm200 with Zm1000 (750mb for PCH)
 
 since msvc-140:
-removed goocanvasmm.dll.lib from user_stack_gtkmm.props because gocanvasmm does not work if
-gtkmm is built without atkmm support.
 commented out #include <goocanvasmm\goocanvasmm.h> in stdafx.h
+
+For some unknown reason project templates do not work in VS 2015, even if
+creating new ones.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
