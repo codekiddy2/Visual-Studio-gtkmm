@@ -57,6 +57,10 @@ if demo project can't find source files on run time check demo-common.cc line 22
 function name is: get_democodedir
 then modify install project to install files correctly.
 
+it is important to rebuild the "install" project if changing configurations such as
+chaning config header (atk)! othervise unresolved stuff migh happen.
+also updating def file linker input.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
