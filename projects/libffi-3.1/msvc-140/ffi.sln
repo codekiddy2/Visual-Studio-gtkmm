@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-closure", "test-closure\test-closure.vcxproj", "{2328C3E3-00CA-4365-BC2D-DF250B2D45C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A58287BA-9AB3-419A-8804-9C917ED8C67E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -68,5 +70,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{852EE642-C850-4D5C-9F2E-05506BA30ACD} = {A58287BA-9AB3-419A-8804-9C917ED8C67E}
+		{2F952FEB-CC50-4EFC-8509-CAA32505908D} = {A58287BA-9AB3-419A-8804-9C917ED8C67E}
+		{2328C3E3-00CA-4365-BC2D-DF250B2D45C8} = {A58287BA-9AB3-419A-8804-9C917ED8C67E}
 	EndGlobalSection
 EndGlobal

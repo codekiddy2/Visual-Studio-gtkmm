@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-tiff-raw_decode", "tes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-tiff-arrays", "test-tiff-arrays\test-tiff-arrays.vcxproj", "{A35F88B8-EB31-4D0F-B1EB-50A8DF6A198A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{94E045B0-39DA-42A0-8D8D-194E73A38A9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -56,5 +58,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F958168-B8E6-48DB-9904-337FE1735890} = {94E045B0-39DA-42A0-8D8D-194E73A38A9D}
+		{A35F88B8-EB31-4D0F-B1EB-50A8DF6A198A} = {94E045B0-39DA-42A0-8D8D-194E73A38A9D}
 	EndGlobalSection
 EndGlobal

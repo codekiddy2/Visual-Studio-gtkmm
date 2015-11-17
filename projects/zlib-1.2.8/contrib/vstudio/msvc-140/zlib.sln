@@ -24,6 +24,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asm", "asm\asm.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{39539317-370A-4E74-9DCE-87AC5F65D8BE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5B5E87F0-7E8C-480C-B814-83B5F0A9CDB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -95,5 +97,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA6666AA-E09F-4135-9C0C-4FE50C3C654B} = {5B5E87F0-7E8C-480C-B814-83B5F0A9CDB4}
+		{C52F9E7B-498A-42BE-8DB4-85A15694366A} = {5B5E87F0-7E8C-480C-B814-83B5F0A9CDB4}
+		{48CDD9DC-E09F-4135-9C0C-4FE50C3C654B} = {5B5E87F0-7E8C-480C-B814-83B5F0A9CDB4}
+		{C52F9E7B-498A-42BE-8DB4-85A15694382A} = {5B5E87F0-7E8C-480C-B814-83B5F0A9CDB4}
 	EndGlobalSection
 EndGlobal

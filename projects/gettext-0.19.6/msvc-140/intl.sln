@@ -18,6 +18,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-intl_static", "test-li
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B00E1593-5DC7-4706-9B69-1DD03A7AAE96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -65,5 +67,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49858290-18D1-41DD-B2F9-A62E8199B428} = {B00E1593-5DC7-4706-9B69-1DD03A7AAE96}
+		{46E91814-0E89-4CA3-A39B-F2895ACE083C} = {B00E1593-5DC7-4706-9B69-1DD03A7AAE96}
 	EndGlobalSection
 EndGlobal

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imgcmp", "imgcmp.vcxproj", "{4256EF24-F726-4DD0-8476-46DB9F7A240E}"
 EndProject
@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{7BAD7E
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{93683D98-F38D-4979-A170-59FA011A449A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AAAAEFC2-A20D-4F6B-915B-81C3F079D51C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,5 +77,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4256EF24-F726-4DD0-8476-46DB9F7A240E} = {AAAAEFC2-A20D-4F6B-915B-81C3F079D51C}
+		{B294F348-F3B8-4009-81D8-F8103C03E97C} = {AAAAEFC2-A20D-4F6B-915B-81C3F079D51C}
+		{7B462142-FED6-41DD-A36A-8E49D1F47902} = {AAAAEFC2-A20D-4F6B-915B-81C3F079D51C}
+		{B1CD0CF8-A287-4FA0-BF62-E96C3FC24301} = {AAAAEFC2-A20D-4F6B-915B-81C3F079D51C}
 	EndGlobalSection
 EndGlobal

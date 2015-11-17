@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{796C61
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{A456E658-14FF-4173-ADCE-825FA7670170}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C35420D2-199D-4845-A171-C20F9D490E15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug Library|Win32 = Debug Library|Win32
@@ -160,5 +162,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{228BA965-50D5-42B2-8BCF-AFCC227E3C1D} = {C35420D2-199D-4845-A171-C20F9D490E15}
+		{9B36B6FE-7FC0-434F-A71F-BBEF8099F1D8} = {C35420D2-199D-4845-A171-C20F9D490E15}
+		{277AC57F-313B-4D06-B119-A3CDB672D2FF} = {C35420D2-199D-4845-A171-C20F9D490E15}
+		{C5D3156C-8C8C-4936-B35F-2B829BA36FEC} = {C35420D2-199D-4845-A171-C20F9D490E15}
 	EndGlobalSection
 EndGlobal

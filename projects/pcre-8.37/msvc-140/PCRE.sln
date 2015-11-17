@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pcre_stringpiece", "te
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pcrecpp", "test-pcrecpp\test-pcrecpp.vcxproj", "{E64D57EA-112A-4B58-86DD-3982AE496582}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E73D68C3-2514-4E06-BFE0-175455963370}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug dll|Win32 = Debug dll|Win32
@@ -217,5 +219,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3BECA22-1745-4587-95B1-4842270DFF54} = {E73D68C3-2514-4E06-BFE0-175455963370}
+		{A18DA23B-3B98-4CE2-8A9F-EEABF4148862} = {E73D68C3-2514-4E06-BFE0-175455963370}
+		{A66114F5-DB03-4B34-850D-D80F7DB77D4D} = {E73D68C3-2514-4E06-BFE0-175455963370}
+		{E64D57EA-112A-4B58-86DD-3982AE496582} = {E73D68C3-2514-4E06-BFE0-175455963370}
 	EndGlobalSection
 EndGlobal

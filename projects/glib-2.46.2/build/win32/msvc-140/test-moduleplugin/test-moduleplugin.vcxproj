@@ -57,24 +57,28 @@
     <Import Project="..\..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\..\properties\base_dll.props" />
     <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
+    <Import Project="..\..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\..\properties\base_dll.props" />
     <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
+    <Import Project="..\..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\..\properties\base_dll.props" />
     <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
+    <Import Project="..\..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\..\properties\base_dll.props" />
     <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
+    <Import Project="..\..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

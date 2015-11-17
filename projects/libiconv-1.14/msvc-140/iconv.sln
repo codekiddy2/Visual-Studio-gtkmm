@@ -18,6 +18,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-iconv_static", "test-l
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{09E2CF1F-8B1A-4545-B384-6BF5F5B85EC4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BBC244C6-F9A7-44C8-A42E-A0DFFC2F4391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -61,5 +63,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E394F1AD-04A7-4B28-BCD9-7A6EED0DDE17} = {BBC244C6-F9A7-44C8-A42E-A0DFFC2F4391}
+		{DC5B8071-B42F-4F92-9333-0C72D14F98F8} = {BBC244C6-F9A7-44C8-A42E-A0DFFC2F4391}
 	EndGlobalSection
 EndGlobal

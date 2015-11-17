@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-freeglut", "test-freeglut\test-freeglut.vcxproj", "{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0A995460-13EA-4290-888C-35F54CAD2F78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -55,5 +57,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4} = {0A995460-13EA-4290-888C-35F54CAD2F78}
 	EndGlobalSection
 EndGlobal

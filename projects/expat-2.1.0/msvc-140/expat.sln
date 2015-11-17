@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elements", "examples\elements.vcxproj", "{71BA845B-9FCD-428B-BC0C-DB10C0BF128F}"
 EndProject
@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{F611BA
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{34A755CD-2CE2-49BB-AE70-B2B608ADABAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D2627A46-9124-4272-AF3C-23B0618E610C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,5 +97,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71BA845B-9FCD-428B-BC0C-DB10C0BF128F} = {D2627A46-9124-4272-AF3C-23B0618E610C}
+		{FDC09F30-AE87-4CF4-9FEA-528AC37C7D49} = {D2627A46-9124-4272-AF3C-23B0618E610C}
+		{380C7223-535B-4B34-8295-1232211D5843} = {D2627A46-9124-4272-AF3C-23B0618E610C}
 	EndGlobalSection
 EndGlobal

@@ -57,21 +57,25 @@
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\properties\solution_jpeg-turbo.props" />
+    <Import Project="..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\properties\solution_jpeg-turbo.props" />
+    <Import Project="..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\properties\solution_jpeg-turbo.props" />
+    <Import Project="..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\properties\solution_jpeg-turbo.props" />
+    <Import Project="..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
