@@ -9,6 +9,7 @@ PATH setup is done in:
 * Path
 
 >Here is what needs to be added to path:
+
 	D:\Github\install\nasm;
 	D:\Github\install\CMake\bin;
 	D:\Github\install\Python3;
