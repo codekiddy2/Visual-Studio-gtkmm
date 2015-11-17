@@ -22,6 +22,7 @@
     <ProjectGuid>{C3E734B7-A89C-4011-B5D1-B3748F11D5BF}</ProjectGuid>
     <RootNamespace>testpixman</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectName>trap-test</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -54,24 +55,28 @@
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\..\properties\solution_pixman.props" />
+    <Import Project="..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\..\properties\solution_pixman.props" />
+    <Import Project="..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\..\properties\solution_pixman.props" />
+    <Import Project="..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\..\properties\solution_pixman.props" />
+    <Import Project="..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />

@@ -154,6 +154,8 @@ pixman_image_get_height
 pixman_image_get_stride
 pixman_image_get_width
 prng_randmemset_r
+;following is added since msvc-140
+_pixman_internal_only_get_implementation
 
 
 

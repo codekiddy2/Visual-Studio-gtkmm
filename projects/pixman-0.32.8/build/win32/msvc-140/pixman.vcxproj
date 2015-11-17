@@ -167,6 +167,22 @@
     <ClCompile Include="..\..\..\pixman\pixman-utils.c" />
     <ClCompile Include="..\..\..\test\utils-prng.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\pixman\loongson-mmintrin.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-accessor.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-arm-common.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-arm-neon-asm.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-arm-simd-asm.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-combine32.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-compiler.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-edge-imp.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-inlines.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-mips-dspr2-asm.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-mips-dspr2.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-private.h" />
+    <ClInclude Include="..\..\..\pixman\pixman-version.h" />
+    <ClInclude Include="..\..\..\pixman\pixman.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
