@@ -1,6 +1,5 @@
-```
-Following TODO's apply to "msvc-140" branch
-```
+**Stuff that need to be done aka "Road map"**
+
 * DEFINE PREPROCESSOR FOR CMAKE ON CMAKE PROJECTS
 * add build log file to solution from inermediate directory
 * build freetype dll (see details on http://stackoverflow.com/questions/6207176/compiling-freetype-to-dll-as-opposed-to-static-library)
@@ -44,9 +43,8 @@ Following TODO's apply to "msvc-140" branch
 * set linker /IGNORE and reenable threat linker warnings as errors in some solutions (glib...)
 * instead on manualy entering linker inputs for each project there should be something like "consume" or "use" properties for each solution
 
-```
-New TODO's since msvc-140
-```
+**New TODO's since msvc-140**
+
 * edit solution and project versions
 * create editline and readline projects
 * update wiki and give detailed info

@@ -1,6 +1,4 @@
-```
-README FOLDER
-```
+**Readme folder**
 
 This folder contains readme files common to entry repository.
 

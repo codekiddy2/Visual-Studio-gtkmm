@@ -1,6 +1,6 @@
-```
-Directory structure
-```
+**Directory structure**
+
+>Working directory tree
 
 	D:\
 		D:\Github

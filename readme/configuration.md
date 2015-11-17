@@ -1,6 +1,4 @@
-```
-List of Projects that need configuration
-```
+**List of Projects that need configuration**
 
 * libffi (mozilla-build)
 * expat (cmake-gui)
@@ -13,9 +11,8 @@ List of Projects that need configuration
 * adwaita icon theme (msys2)
 * hicolor icon theme (msys2)
 
-```
-List of projects that use external tools
-```
+**List of projects that use external tools**
+
 * libjpeg (nasm)
 * tiff (nmake)
 * epoxy (nmake + unofficial package)

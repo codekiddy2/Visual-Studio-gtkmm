@@ -1,6 +1,6 @@
 **Example how to use mozilla-build with MS SDK**
 
-x64 configuration:
+*x64 configuration*
 
 >Open x64 Visual Studio command promt and run:
 
@@ -25,11 +25,10 @@ x64 configuration:
 	export LIBS=-lkernel32.lib -luser32.lib -lgdi32.lib -lwinspool.lib -lcomdlg32.lib -ladvapi32.lib -lshell32.lib -lole32.lib -loleaut32.lib -luuid.lib -lodbc32.lib -lodbccp32.lib
 	export LDFLAGS=''
 
-note that above *.compiler file is a file contaning both compiler and linker flags.
+*note that above *.compiler file is a file contaning both compiler and linker flags*
 
-simple rules to minimize errors:
-
-* in MS sheel path names must not contain '/' while in unix shell is opposite. ie. compiler settings will not work!
-* also CL flag must be given a full path, so the above example will not work if libtool starts to ie: cd.. cd../.. -> ERROR 100%
-* in UNIX shell flags passed directly to configure are better than exporting them into varibles
-* includes and libs should be defined in compiler file, in some cases configure script can't find headers..
+* simple rules to minimize errors:
+	* in MS sheel path names must not contain '/' while in unix shell is opposite. ie. compiler settings will not work!
+	* also CL flag must be given a full path, so the above example will not work if libtool starts to ie: cd.. cd../.. -> ERROR 100%
+	* in UNIX shell flags passed directly to configure are better than exporting them into varibles
+	* includes and libs should be defined in compiler file, in some cases configure script can't find headers..
