@@ -4,6 +4,8 @@ this file is for reference only, taken out from MSYS2 environment
 
 **FLAGS**
 
+* list flags
+
 	> pkg-config --cflags --libs gtkmm-3.0
 
 **INSTALL ICONS**
