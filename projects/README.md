@@ -13,5 +13,10 @@ Some projects override these global settings for specific needs but this is redu
 These projects will fail to load if properties folder containing properties
 is not placed next to projects folder.
 
-Therefore the only possible way to make things work is to clone entry repository and place it into:
-**D:/Github/Visual-Studio-gtkmm**
+To save yourself time and make things work clone entry repository into:
+
+**D:/Github/**
+
+Therefore your clone should end up like this:
+
+**D:/Github/Visual-Studio-gtkmm/**
