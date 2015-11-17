@@ -1,12 +1,12 @@
 **System PATH settings**
 
->PATH setup is done in:
-	* Control Panel\All Control Panel Items\System 
-	* Advanced system settings 
-	* advanced 
-	* Environment variables
-	* System variables
-	* Path
+PATH setup is done in:
+* Control Panel\All Control Panel Items\System 
+* Advanced system settings 
+* advanced 
+* Environment variables
+* System variables
+* Path
 
 >Here is what needs to be added to path:
 	D:\Github\install\nasm;
