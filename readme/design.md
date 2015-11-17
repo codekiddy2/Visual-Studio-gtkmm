@@ -36,19 +36,20 @@
 	source files should be sorted by using project filters: Header Files, Source Files, Module Files and Resource Files...
 	project configurations should be named like so:
 
-* dll configuration: Debug dll | Release dll
-* lib configuration: Debug static | Release static
-* discrepancy only for specific needs.
-* Virtual names (folders and files) within solution should be the same as the names of real files and folders.
+	* dll configuration: Debug dll | Release dll
+	* lib configuration: Debug static | Release static
+	
+	discrepancy only for specific needs.
+	Virtual names (folders and files) within solution should be the same as the names of real files and folders.
 
 >OUTPUT FILES
 
 	following naming convention:
 	
-* output name*.lib     (static library)
-* output name*.dll.lib (import library)
-* output name*.dll.exp (export library)
-* output name*.dll     (shared library)
+	* output name*.lib     (static library)
+	* output name*.dll.lib (import library)
+	* output name*.dll.exp (export library)
+	* output name*.dll     (shared library)
 
 >SOLUTION
 
