@@ -1,5 +1,0 @@
-This is a Visual Studio 2013 Solution with direct graph document project,
-visualy showing dpendencies between packages and allowing you swith to different
-projects and solutions with single click, removing the need to click on open/close
-solution each time you wan't to check other code.
-You will need Visual Studio 2013 Ultimate to open this type of project.
