@@ -2,48 +2,53 @@
 Design rules
 ```
 
->/* DIRECTORES */
+>DIRECTORES
 
-1. Working directory (repository) = D:\GitHub\Visual-Studio-gtkmm\
-2. Projects directory = <Working directory>\projects\
-3. Properties directory = <Working directory>\properties\
+* Root directory = D:/GitHub/Visual-Studio-gtkmm/
+* Projects directory = D:/GitHub/Visual-Studio-gtkmm/projects/
+* Properties directory = D:/GitHub/Visual-Studio-gtkmm/properties/
+* Readme directory = D:/GitHub/Visual-Studio-gtkmm/readme/
+* Solution directory = D:/GitHub/Visual-Studio-gtkmm/projects/"package name"/msvc-140/
+* Project directory = D:/GitHub/Visual-Studio-gtkmm/projects/"package name"/msvc-140/"Project name"/
+* Test project directory = D:/GitHub/Visual-Studio-gtkmm/projects/"package name"/msvc-140/test/"project name"/
+* Project readme directory = D:/GitHub/Visual-Studio-gtkmm/projects/"package name"/msvc-140/"Project name"/readme/
 
+>PROPERTIES
 
->/* PROPERTIES */
-
-4. All properties inherit other properties in certain order, as shown in the image on wiki > properties
-5. Each solution should have it's own property page for specific solution level edits, other properties must not be changed.
-6. Project settings can be changed/overriden only if solution level setting does not apply to all projects within solution.
-
-
->/* PROJECT FILES */
-
-8. Solution/project is not finished if it does not pass successful build of all configurations.
-9. Each solution should contain an "install project" to install both headers and documentation.
-10. Each solution must contain a readme in separate Sulution filter named "Readme" with following entries in following order:
-	COPYRIGHT
-	INFO
-	DEPENDENCIES
-	INSTRUCTIONS
-	NOTES
-	TESTINGS
-	TODO
-11. there should be no warning outputs while opening a solution, also hidden properties and paths must be removed by using xml editor.
-12. source files should be sorted by using project filters: Header Files, Source Files, Module Files and Resource Files...
-12. project configurations should be named like so:
-	dll configuration: Debug dll | Release dll
-	lib configuration: Release dll | Release static
-	discrepancy only for specific needs.
+* All properties inherit other properties according to hierarchy.
+* All projects within solution have common solution level property page whose settings apply to all projects.
+* Project level settings can be changed/overriden only if solution level setting are bad for that project.
 
 
->/* OUTPUT FILES */
+>PROJECT FILES
 
-14. following naming convention:
-	<output name>*.lib     (static library)
-	<output name>*.dll.lib (import library)
-	<output name>*.dll.exp (export library)
-	<output name>*.dll     (shared library)
+* Solution/project is not finished if it does not pass successful build of all configurations.
+* Each solution contains an "install project" to install both headers and documentation.
+* Each solution contains a readme filter with readme files with following entries in order:
+	* COPYRIGHT
+	* INFO
+	* DEPENDENCIES
+	* INSTRUCTIONS
+	* NOTES
+	* TESTINGS
+	* TODO
+* Readme files withing solution are edited for each package version separately.
+* source files should be sorted by using project filters: Header Files, Source Files, Module Files and Resource Files...
+* project configurations should be named like so:
+	* dll configuration: Debug dll | Release dll
+	* lib configuration: Debug static | Release static
+	* discrepancy only for specific needs.
+* Virtual names (folders and files) within solution should be the same as the names of real files and folders.
 
->/* SOLUTION */
+>OUTPUT FILES
 
-15. solution should be set to start one (only) of the test projects on debug
+* following naming convention:
+	* output name*.lib     (static library)
+	* output name*.dll.lib (import library)
+	* output name*.dll.exp (export library)
+	* output name*.dll     (shared library)
+
+>SOLUTION
+
+* Solution should be set to start one of the test projects on debug
+* Opening a solution should not result in errors or warnings.
