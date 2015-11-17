@@ -3,6 +3,7 @@ PROJECTS DIRECTORY
 ```
 Here you will find Visual Studio 2015 projects and solutions for individual packages.
 Each package has it's version number indicating for which version these projects will work.
+
 Projects and solutions are placed into folder named "msvc-140".
 
 All of the projects depend on Visual Studio properties which are placed into ../properties folder.
@@ -13,7 +14,7 @@ Some projects override these global settings for specific needs but this is redu
 These projects will fail to load if properties folder containing properties
 is not placed next to projects folder.
 
-To save yourself time and make things work clone entry repository into:
+To save yourself time and make things work, clone entry repository into:
 
 **D:/Github/**
 
