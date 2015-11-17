@@ -1,13 +1,16 @@
 ```
 Preparing MSYS2 environment
 ```
->Update the system packages:
+>Update the system packages
+
 	pacman --needed -Sy bash pacman pacman-mirrors msys2-runtime
 
->Restart shell and:
+>Restart shell and
+
 	pacman -Su
 	
 >Install tools
+
 	pacman -S pkg-config
 	pacman -S mingw-w64-x86_64-gcc
 	pacman -S make
