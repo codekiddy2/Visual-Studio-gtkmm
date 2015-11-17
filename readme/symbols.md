@@ -1,6 +1,7 @@
 **Visual Studio Symbols settings**
 
-Download Symbols for your Windows x64 / x86:
+>Download Symbols for your Windows x64 / x86:
+
 	https://msdn.microsoft.com/en-us/windows/hardware/gg463028.aspx
 
 >Install both x64 and x86 symbols into:
