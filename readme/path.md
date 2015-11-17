@@ -1,15 +1,14 @@
-```
-System PATH settings
-```
-PATH setup is done in:
-	Control Panel\All Control Panel Items\System 
-		> Advanced system settings 
-		> advanced 
-		> Environment variables
-		> System variables
-		> Path
+**System PATH settings**
 
-Here is what needs to be added to path:
+>PATH setup is done in:
+	* Control Panel\All Control Panel Items\System 
+	* Advanced system settings 
+	* advanced 
+	* Environment variables
+	* System variables
+	* Path
+
+>Here is what needs to be added to path:
 	D:\Github\install\nasm;
 	D:\Github\install\CMake\bin;
 	D:\Github\install\Python3;
