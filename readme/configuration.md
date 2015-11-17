@@ -18,3 +18,5 @@
 * epoxy (nmake + unofficial package)
 * GTK+ (python)
 * libepoxy (python)
+* gstreamer (bison)
+* gstreamer(mm?) (flex)

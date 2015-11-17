@@ -22,4 +22,6 @@
 	pacman -S tar
 	pacman -S itstool
 	pacman -S p7zip
+	pacman -S bison
+	pacman -S flex
 	

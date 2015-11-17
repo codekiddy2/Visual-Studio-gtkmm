@@ -9,7 +9,7 @@
     <NASM_DIR>D:\Github\install\nasm\</NASM_DIR>
     <CMAKE_DIR>D:\Github\install\CMake\bin\</CMAKE_DIR>
     <MSYS2_DIR>D:\Github\install\msys64\</MSYS2_DIR>
-    <BISON_DIR>$(MSYS2_DIR)mingw64\bin\</BISON_DIR>
+    <BISON_DIR>$(MSYS2_DIR)usr\bin\</BISON_DIR>
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
   </PropertyGroup>
   <PropertyGroup />
