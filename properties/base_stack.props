@@ -12,6 +12,7 @@
     <PKG_CONFIG_PATH>$(SHARE_DIR)pkgconfig\</PKG_CONFIG_PATH>
     <PROJECTS_DIR>$(REPO_DIR)projects\</PROJECTS_DIR>
     <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
+    <TEST_DIR>$(ROOT_DIR)bin\test\</TEST_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -160,6 +161,9 @@
     </BuildMacro>
     <BuildMacro Include="PROPS_DIR">
       <Value>$(PROPS_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TEST_DIR">
+      <Value>$(TEST_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

@@ -1,36 +1,74 @@
+# ====================================================================================================
+#
+# This gitignore file is designed for https://github.com/codekiddy2/Visual-Studio-gtkmm
+#
+# The file is divided into 3 sections:
+# 	-Operating system files		( files related to operating system )
+#	-Visual studio files		( files related to visual studio)
+#	-Repository specific files	( files related to repository)
+# 
+# Each section is further sorted by file type first, and then by directory level.
+#
+# Author: codekiddy
+#
+# ====================================================================================================
+
+
+
+
+# ==================================================
+# 				OPERATING SYSTEM FILES
+# ==================================================
+
 
 # =========================
-# Operating System Files
+# windows image file caches
 # =========================
-
-# Windows image file caches
 Thumbs.db
 ehthumbs.db
 
-# Folder config file
+
+# ==================
+# folder config file
+# ==================
 Desktop.ini
 
-# Recycle Bin used on file shares
+
+# ===============================
+# recycle bin used on file shares
+# ===============================
 $RECYCLE.BIN/
 
-# Windows Installer files
+
+# =======================
+# windows installer files
+# =======================
 *.cab
 *.msi
 *.msm
 *.msp
 
-# Windows shortcuts
+
+# =================
+# windows shortcuts
+# =================
 *.lnk
 
-# Office Temp Files
+
+# =================
+# office temp files
+# =================
 ~$*
 
 
-# =========================
-# Visual Studio Files
-# =========================
+# ==================================================
+# 				VISUAL STUDIO FILES
+# ==================================================
 
-#extensions
+
+# ===============
+# file extensions
+# ===============
 *.[Oo]bj
 *.[Cc]ache
 *.user
@@ -53,56 +91,167 @@ $RECYCLE.BIN/
 *.opensdf
 *.unsuccessfulbuild
 
-#folders
+
+# =====
+# tools
+# =====
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+*.sass-cache
+
+
+# =========
+# subverion
+# =========
+.svn
+
+
+# ==============
+# vim temp files
+# ==============
+*~
+
+
+# =====
+# nuget
+# =====
+packages/
+*.nupkg
+
+
+# =======
+# ncrunch
+# =======
+*ncrunch*
+*crunch*.local.xml
+
+
+# ===============================
+# visual studio database projects
+# ===============================
+*.dbmdl
+
+
+# ==========
+# test files
+# ==========
+*.testsettings
+
+
+# =================
+# assembler listing
+# =================
+*.lst
+
+
+# ===========
+# directories
+# ===========
 ipch/
 [Oo]bj/
 [Bb]in/
 [Dd]ebug*/
 [Rr]elease*/
 
-#Tools
-_ReSharper*/
-*.resharper
-[Tt]est[Rr]esult*
-*.sass-cache
 
-#Subversion files
-.svn
-
-# vim Temp Files
-*~
-
-#NuGet
-packages/
-*.nupkg
-
-#ncrunch
-*ncrunch*
-*crunch*.local.xml
-
-# visual studio database projects
-*.dbmdl
-
-#Test files
-*.testsettings
-
-#assembler listing
-*.lst
+# ==================================================
+# 			REPOSITORY SPECIFIC FILES
+# ==================================================
 
 
-
-# =========================
-# Repository Specific Files
-# =========================
-
-#exclude Cairo outputs
+# ===============
+# file extensions
+# ===============
 *.FEATURES
 *.GOBJECT
 *.FT
 
-#exclude extracted sources
-/projects/*/
-!**/msvc-1*/
 
-#exclude build output
-[Oo]utput/
+# ==============
+# directory root
+# ==============
+!/
+
+
+# =================
+# directory level 1
+# =================
+/output/
+!/projects/
+!/properties/
+
+
+# =================
+# directory level 2
+# =================
+/projects/old/*
+!/projects/Readme/
+
+
+# =================
+# directory level 3
+# =================
+/projects/*/*
+
+#atk, gdk-pixbuf, glib, gtk+, pango, pixman
+!/projects/*/build/
+
+#freetype
+!/projects/*/builds/
+
+#zlib
+!/projects/*/contrib/
+
+#cairo
+!/projects/*/msvc/
+
+#gstreamer, libxml
+!/projects/*/win32/
+
+#jasper, libepoxy
+!/projects/*/src/
+
+#libpng
+!/projects/*/projects/
+
+#all other projects
+!/projects/*/msvc-140/
+
+
+# =================
+# directory level 4
+# =================
+/projects/*/build/*
+!/projects/*/build/win32/
+
+/projects/*/builds/*
+!/projects/*/builds/windows/
+
+/projects/*/contrib/*
+!/projects/*/contrib/vstudio/
+
+/projects/*/msvc/*
+!/projects/*/msvc/msvc-140/
+
+/projects/*/win32/*
+!/projects/*/win32/msvc-140/
+
+/projects/*/src/*
+!/projects/*/src/msvc-140/
+
+/projects/*/projects/*
+!/projects/*/projects/msvc-140/
+
+
+# =================
+# directory level 5
+# =================
+/projects/*/build/win32/*
+!/projects/*/build/win32/msvc-140/
+
+/projects/*/builds/windows/*
+!/projects/*/builds/windows/msvc-140/
+
+/projects/*/contrib/vstudio/*
+!/projects/*/contrib/vstudio/msvc-140/
