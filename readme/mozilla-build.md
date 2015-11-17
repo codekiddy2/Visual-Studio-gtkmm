@@ -1,6 +1,7 @@
 **Example how to use mozilla-build with MS SDK**
 
-* x64 configuration:
+x64 configuration:
+
 >Open x64 Visual Studio command promt and run:
 
 	set ROOT_DIR=D:\gtkmm\output\Debug\x64
