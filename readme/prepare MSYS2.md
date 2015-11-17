@@ -1,6 +1,5 @@
-```
-Preparing MSYS2 environment
-```
+**Preparing MSYS2 environment**
+
 >Update the system packages
 
 	pacman --needed -Sy bash pacman pacman-mirrors msys2-runtime
