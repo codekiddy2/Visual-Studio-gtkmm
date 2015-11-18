@@ -1,8 +1,8 @@
 **DESCRIPTION**
 
 This file describes "fundamenal" setup that applies to all projects.
-There is no exception, steps mentioned here must be applied to all
-projects before doing anything else!
+Steps mentioned here must be applied to all
+projects before compilation!
 
 
 **One time setup**
@@ -16,7 +16,7 @@ To review these settings open property manager under
 
 >View > Property manager
 
-In property manager expand whiever project node and then whichever
+In property manager expand whichever project node and then whichever
 configuration node and find "base_setup".props property sheet and open it.
 
 Settings which need to be reviewed here are as follows:
@@ -63,8 +63,7 @@ need to check their contents and update entries as needed.
 Usually but not always these headers are created once for specific
 package version, opertaing system and compiler version.
 
-To check if project contains such header expand each project node
-in solution explorer and look for "Config" folder.
+Most solutions have a folder called "Config"
 
 If there is such folder, it should contain a header file "*config.h"
 open the file and check that their contents are correct and up to date.
@@ -106,6 +105,8 @@ command used to configure sources.
 
 These files might be out of date or they might not even exist for your
 configuration type.
+
+You can edit them in solution explorer under "Config" folder.
 
 You are advised to update them and additionaly read following files:
 
@@ -154,6 +155,7 @@ latest version number. that is the package which we will build.
 
 
 **Troubleshooting**
+
 You can read other readme files in:
 
 	D:\Github\Visual-Studio-gtkmm\Readme
@@ -161,5 +163,5 @@ You can read other readme files in:
 Why we use Visual Studio Code now becomes clear, it has nice syntax
 highlighting and allows you browse repository quickly.
 
-Also you'll be able to read any kind of files including project files it self,
+Also you'll be able to read any kind of files including editing projects,
 as well as files which can't be normaly read by using Windows notepad.
