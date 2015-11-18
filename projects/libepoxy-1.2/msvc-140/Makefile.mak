@@ -40,7 +40,7 @@ EPOXY_DLL_BASENAME = lib$(EPOXY_BASENAME)-0
 EPOXY_DLL_BASENAME = $(EPOXY_BASENAME)
 !endif
 
-!include .\msvc-140\detectenv-msvc.mak
+!include ..\msvc-140\detectenv-msvc.mak
 !include Makefile.sources
 
 all: $(EPOXY_DLL_BASENAME).dll
@@ -51,10 +51,10 @@ $(EPOXY_DLL_BASENAME).dll: ../$(GL_GEN_HEADER) ../$(WGL_GEN_HEADER) $(GENERATED_
 	@if exist $@.manifest mt /manifest $@.manifest /outputresource:$@;2
 
 ..\$(WGL_GEN_HEADER) $(GENERATED_WGL_SOURCE): gen_dispatch.py
-	$(PYTHONDIR)\python.exe gen_dispatch.py --dir .. ..\registry\wgl.xml
+	$(PYTHONDIR)python.exe gen_dispatch.py --dir .. ..\registry\wgl.xml
 
 ..\$(GL_GEN_HEADER) $(GENERATED_GL_SOURCE): gen_dispatch.py
-	$(PYTHONDIR)\python.exe gen_dispatch.py --dir .. ..\registry\gl.xml
+	$(PYTHONDIR)python.exe gen_dispatch.py --dir .. ..\registry\gl.xml
 
 clean:
 	@-del *.lib

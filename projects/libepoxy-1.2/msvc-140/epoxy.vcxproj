@@ -53,67 +53,67 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_epoxy.props" />
+    <Import Project="..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_epoxy.props" />
+    <Import Project="..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_epoxy.props" />
+    <Import Project="..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\properties\solution_epoxy.props" />
+    <Import Project="..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeBuildCommandLine>copy Makefile.mak .\..\Makefile.vc /Y
-cd ..
+    <NMakeBuildCommandLine>copy Makefile.mak ..\src\Makefile.vc /Y
+cd ..\src
 nmake /f Makefile.vc CFG=debug</NMakeBuildCommandLine>
-    <NMakeCleanCommandLine>cd ..
+    <NMakeCleanCommandLine>cd ..\src
 nmake /f Makefile.vc CFG=debug clean</NMakeCleanCommandLine>
-    <NMakeReBuildCommandLine>cd ..
+    <NMakeReBuildCommandLine>cd ..\src
 nmake /f Makefile.vc CFG=debug clean
 nmake /f Makefile.vc CFG=debug</NMakeReBuildCommandLine>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <NMakeBuildCommandLine>copy Makefile.mak .\..\Makefile.vc /Y
-cd ..
+    <NMakeBuildCommandLine>copy Makefile.mak ..\src\Makefile.vc /Y
+cd ..\src
 nmake /f Makefile.vc CFG=debug</NMakeBuildCommandLine>
-    <NMakeCleanCommandLine>cd ..
+    <NMakeCleanCommandLine>cd ..\src
 nmake /f Makefile.vc CFG=debug clean</NMakeCleanCommandLine>
-    <NMakeReBuildCommandLine>cd ..
+    <NMakeReBuildCommandLine>cd ..\src
 nmake /f Makefile.vc CFG=debug clean
 nmake /f Makefile.vc CFG=debug</NMakeReBuildCommandLine>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <NMakeBuildCommandLine>copy Makefile.mak .\..\Makefile.vc /Y
-cd ..
+    <NMakeBuildCommandLine>copy Makefile.mak ..\src\Makefile.vc /Y
+cd ..\src
 nmake /f Makefile.vc CFG=release</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>cd ..
+    <NMakeReBuildCommandLine>cd ..\src
 nmake /f Makefile.vc CFG=release clean
 nmake /f Makefile.vc CFG=release</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>cd ..
+    <NMakeCleanCommandLine>cd ..\src
 nmake /f Makefile.vc CFG=release clean</NMakeCleanCommandLine>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <NMakeBuildCommandLine>copy Makefile.mak .\..\Makefile.vc /Y
-cd ..
+    <NMakeBuildCommandLine>copy Makefile.mak ..\src\Makefile.vc /Y
+cd ..\src
 nmake /f Makefile.vc CFG=release</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>cd ..
+    <NMakeReBuildCommandLine>cd ..\src
 nmake /f Makefile.vc CFG=release clean
 nmake /f Makefile.vc CFG=release</NMakeReBuildCommandLine>
-    <NMakeCleanCommandLine>cd ..
+    <NMakeCleanCommandLine>cd ..\src
 nmake /f Makefile.vc CFG=release clean</NMakeCleanCommandLine>
   </PropertyGroup>
   <ItemDefinitionGroup>
