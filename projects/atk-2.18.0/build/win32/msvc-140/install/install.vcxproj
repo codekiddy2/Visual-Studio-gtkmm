@@ -48,27 +48,27 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\..\properties\solution_atk.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\..\properties\solution_atk.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\..\properties\solution_atk.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\..\properties\base_utility.props" />
-    <Import Project="..\..\..\..\..\properties\solution_atk.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -148,7 +148,7 @@ xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\config.h.win32">
+    <CustomBuild Include="..\..\..\..\config.h.win32">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Installing Build Results...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(AtkDoInstall)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(InstalledDlls);%(Outputs)</Outputs>
@@ -164,9 +164,8 @@ xcopy $(SRC_DIR)docs\html\*.* /Y</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="atk.vcxproj">
+    <ProjectReference Include="..\atk\atk.vcxproj">
       <Project>{86eacd59-f69f-4aad-854b-aa03d5447360}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

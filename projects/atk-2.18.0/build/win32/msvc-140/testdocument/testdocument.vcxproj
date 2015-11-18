@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C25E8AB5-12D9-48E7-8EAC-CB19F48AF7A5}</ProjectGuid>
+    <ProjectGuid>{3FC58708-42C4-40D7-91F8-D8881F1B0619}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>testatk</RootNamespace>
-    <ProjectName>test-atk-value</ProjectName>
+    <ProjectName>testdocument</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -132,17 +132,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\atk.vcxproj">
-      <Project>{86eacd59-f69f-4aad-854b-aa03d5447360}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
+    <ClCompile Include="..\..\..\..\tests\testdocument.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\tests\testvalue.c" />
+    <ProjectReference Include="..\atk\atk.vcxproj">
+      <Project>{86eacd59-f69f-4aad-854b-aa03d5447360}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

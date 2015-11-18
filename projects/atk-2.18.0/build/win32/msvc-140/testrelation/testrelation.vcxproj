@@ -22,6 +22,7 @@
     <ProjectGuid>{A1B2D418-B957-4C99-BD4C-A17F91DC4242}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>testatkrelation</RootNamespace>
+    <ProjectName>testrelation</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -134,13 +135,8 @@
     <ClCompile Include="..\..\..\..\tests\testrelation.c" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\atk.vcxproj">
+    <ProjectReference Include="..\atk\atk.vcxproj">
       <Project>{86eacd59-f69f-4aad-854b-aa03d5447360}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
