@@ -35,7 +35,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{99716C38-6BCE-4A93-8F41-9568C9049119}"
 	ProjectSection(SolutionItems) = preProject
-		config.h = config.h
+		src\config.h = src\config.h
 	EndProjectSection
 EndProject
 Global

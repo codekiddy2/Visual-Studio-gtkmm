@@ -1,11 +1,11 @@
 **Stuff that needs to be done aka "Road map"**
 
-* [HIGH PRIORITY] separate each project into it's own folder in solution directory
 * [HIGH PRIORITY] move all solutions into source's root directory
-* [HIGH PRIORITY] define location for *.def files in solution folder, and how to "install" them into SYMBOLS_DIR
 * [HIGH PRIORITY] rename projects (in windows explorer) so that the name is the same as in solutions
-* [HIGH PRIORITY] rename gtk_stack.props into stack_gtk.props and update projects
+* [HIGH PRIORITY] separate each project into it's own folder in solution directory
 * [HIGH PRIORITY] move test/example projects into one directory "Tests" inside solution directory
+* [HIGH PRIORITY] define location for *.def files in solution folder, and how to "install" them into SYMBOLS_DIR
+* [HIGH PRIORITY] rename gtk_stack.props into stack_gtk.props and update projects
 * DEFINE PREPROCESSOR FOR CMAKE ON CMAKE PROJECTS
 * add build log file to solution from inermediate directory
 * configure remaining install projects to install documentation
@@ -18,7 +18,6 @@
 * minimize amount of build events in project to reduce the "cmd exit = blah"
 * add version number to each lib/dll file.
 * [HIGH PRIORITY] add missing projects to existing solutions (test projects, different versions...)
-* [HIGH PRIORITY] add general "shared" readme file into each solution.
 * [HIGH PRIORITY] some projects do not need configuration any more, check which one's and update readme files
 * ran batch build for all projects and all configurations.
 * check inheritance consitency of all projects
@@ -51,6 +50,7 @@
 * it is possible that newer version packages have source files and headers which are not yet included in projects.
 * check references, all need to have "same" settings. ie. copy local etc...
 * describe properties into some readme, their function etc.
-* [HIGH PRIORITY] make project level properties ( benefit: easy relocation of solutions - it will inherit all other properties,  and less work to maintain flags)
+* [HIGH PRIORITY] make project level properties ( benefit: easy relocation of solutions - it will inherit all other properties, and less work to maintain flags)
 * [HIGH PRIORITY] remove version numbers from project directories, easier to manage git and updates. ( or move solutions out of sources )
 * [HIGH PRIORITY] make all test projects have their cmd line needed stuff located in output directory (png's, files...)
+* check inclusion of headers, update properties to use macros and not relative directories.

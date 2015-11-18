@@ -99,7 +99,7 @@
     <Link>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>.\..\src\codekiddy-intl.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(MOD_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -111,7 +111,7 @@
     <Link>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>.\..\src\codekiddy-intl.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(MOD_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -126,7 +126,7 @@
     <Link>
       <DataExecutionPrevention />
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>.\..\src\codekiddy-intl.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(MOD_DIR)intl.def</ModuleDefinitionFile>
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
     <PreBuildEvent>
@@ -145,7 +145,7 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     <Link>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>.\..\src\codekiddy-intl.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(MOD_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -253,11 +253,11 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     <ClInclude Include="..\..\gettext-runtime\intl\xsize.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\libintl-x64.rc">
+    <ResourceCompile Include="src\libintl-x64.rc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ResourceCompile>
-    <ResourceCompile Include="..\libintl.rc">
+    <ResourceCompile Include="src\libintl.rc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ResourceCompile>

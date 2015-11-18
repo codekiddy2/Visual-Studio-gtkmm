@@ -176,10 +176,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\libintl.rc">
+    <ResourceCompile Include="src\libintl.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
-    <ResourceCompile Include="..\libintl-x64.rc">
+    <ResourceCompile Include="src\libintl-x64.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

@@ -171,7 +171,7 @@
     <ClCompile Include="..\..\..\zutil.c" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="zlib.rc" />
+    <ResourceCompile Include="src\zlib.rc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="zlibvc.def" />

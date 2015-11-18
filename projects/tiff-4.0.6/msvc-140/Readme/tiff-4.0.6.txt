@@ -21,7 +21,8 @@ jbig (optional)
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Copy tiffiop.h from solution-dir/src to src-dir\libtiff
+Copy tiffiop.h from solution-dir/src to src-dir\libtiff.
+
 to retarget tiff_dll to new compiler change project type to exe,
 retarget and then change back to nmake project and save, otherwise
 paths won't be correct.

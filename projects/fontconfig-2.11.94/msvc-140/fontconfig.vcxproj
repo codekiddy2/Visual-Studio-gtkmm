@@ -89,7 +89,7 @@
 rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>.\src\;.\..\fontconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR);.\..\fontconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;DLL_EXPORT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -97,7 +97,7 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>expat.dll.lib;freetype.lib;iconv.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>fontconfig.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)fontconfig.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -113,7 +113,7 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
 rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>.\src\;.\..\fontconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR);.\..\fontconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;DLL_EXPORT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -121,7 +121,7 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>expat.dll.lib;freetype.lib;libiconv.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>fontconfig.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)fontconfig.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -137,7 +137,7 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
 rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>.\src\;.\..\fontconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR);.\..\fontconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;DLL_EXPORT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -145,7 +145,7 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>expat.dll.lib;freetype.lib;libiconv.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>fontconfig.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)fontconfig.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -161,7 +161,7 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
 rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>.\src\;.\..\fontconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR);.\..\fontconfig;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;DLL_EXPORT;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -169,7 +169,7 @@ rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>expat.dll.lib;freetype.lib;libiconv.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>fontconfig.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)fontconfig.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
       <DataExecutionPrevention>
       </DataExecutionPrevention>

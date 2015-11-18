@@ -20,7 +20,7 @@ DEPENDENCIES:
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
 copy/replace iowin32.c from project directory and paste it into zlib-1.2.8\contrib\minizip
-If you're not using Windows 7 then modify iowin32.c and replace _WIN32_WINNT value with
+If you're not using Windows 10 then modify iowin32.c and replace _WIN32_WINNT value with
 value for your Windows on line 30
 Open Visual Studio solution and build.
 If you are trying to build only dll version make sure you build asm project first.

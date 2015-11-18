@@ -134,7 +134,7 @@ This folder contains readme files, you don't need to read them all
 except following files:
 
 * locale.md
-* symbold.md
+* symbols.md
 * path.md
 * debugging.md
 * directories.md

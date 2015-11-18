@@ -121,7 +121,7 @@
       <Culture>0x040c</Culture>
     </ResourceCompile>
     <Link>
-      <ModuleDefinitionFile>.\zlibvc.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)zlibvc.def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
@@ -149,7 +149,7 @@
     <Link>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ModuleDefinitionFile>.\zlibvc.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)zlibvc.def</ModuleDefinitionFile>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <PreBuildEvent />
@@ -173,7 +173,7 @@
       <Culture>0x040c</Culture>
     </ResourceCompile>
     <Link>
-      <ModuleDefinitionFile>.\zlibvc.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)zlibvc.def</ModuleDefinitionFile>
     </Link>
     <PreBuildEvent />
     <CustomBuildStep />
@@ -201,7 +201,7 @@
       <Culture>0x040c</Culture>
     </ResourceCompile>
     <Link>
-      <ModuleDefinitionFile>.\zlibvc.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)zlibvc.def</ModuleDefinitionFile>
     </Link>
     <PreBuildEvent />
   </ItemDefinitionGroup>
@@ -241,7 +241,7 @@
     <ClCompile Include="..\..\..\zutil.c" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="zlib.rc" />
+    <ResourceCompile Include="src\zlib.rc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="zlibvc.def" />

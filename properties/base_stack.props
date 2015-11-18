@@ -13,6 +13,8 @@
     <PROJECTS_DIR>$(REPO_DIR)projects\</PROJECTS_DIR>
     <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
     <TEST_DIR>$(ROOT_DIR)bin\test\</TEST_DIR>
+    <DEF_DIR>$(SolutionDir)def\</DEF_DIR>
+    <MOD_DIR>$(SolutionDir)src\</MOD_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -164,6 +166,12 @@
     </BuildMacro>
     <BuildMacro Include="TEST_DIR">
       <Value>$(TEST_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DEF_DIR">
+      <Value>$(DEF_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MOD_DIR">
+      <Value>$(MOD_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

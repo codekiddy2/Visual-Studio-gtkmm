@@ -95,10 +95,10 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>HARFBUZZ_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>harfbuzz.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)harfbuzz.def</ModuleDefinitionFile>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -107,10 +107,10 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>HARFBUZZ_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>harfbuzz.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)harfbuzz.def</ModuleDefinitionFile>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -119,11 +119,11 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>HARFBUZZ_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>harfbuzz.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)harfbuzz.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -131,11 +131,11 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>HARFBUZZ_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>harfbuzz.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)harfbuzz.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

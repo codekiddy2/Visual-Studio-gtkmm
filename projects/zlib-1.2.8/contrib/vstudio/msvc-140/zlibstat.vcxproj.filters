@@ -91,11 +91,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="zlib.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
     <Object Include="..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\gvmat64.obj">
       <Filter>Object Files\Debug64</Filter>
     </Object>
@@ -120,5 +115,10 @@
     <Object Include="..\..\..\..\..\output\v140\Release\x64\intermediate\zlib\asm\inffasx64.obj">
       <Filter>Object Files\Release64</Filter>
     </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\zlib.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

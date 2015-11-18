@@ -155,7 +155,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -168,7 +168,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -181,7 +181,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -194,7 +194,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">
@@ -209,7 +209,7 @@
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
     <BuildLog />
     <ResourceCompile />
@@ -227,7 +227,7 @@
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
     <BuildLog />
     <ResourceCompile />
@@ -245,7 +245,7 @@
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
     <BuildLog />
     <ResourceCompile />
@@ -269,7 +269,7 @@
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>gdk-pixbuf.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
     <BuildLog />
     <ResourceCompile />
