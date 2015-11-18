@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{E385C3
 	ProjectSection(SolutionItems) = preProject
 		Readme\atk-2.14.0.txt = Readme\atk-2.14.0.txt
 		Readme\atk-2.18.0.txt = Readme\atk-2.18.0.txt
+		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-atk-document", "test-atk\test-atk.vcxproj", "{3FC58708-42C4-40D7-91F8-D8881F1B0619}"
@@ -24,6 +25,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-atk-role", "test-atk-role\role.vcxproj", "{023D7A58-280E-4FA8-AF5B-C872E56DA0B6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-atk-value", "test-atk-value\value.vcxproj", "{C25E8AB5-12D9-48E7-8EAC-CB19F48AF7A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{9E82709E-B10A-4F6E-8183-5A8938D21A66}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\config.h = ..\..\..\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

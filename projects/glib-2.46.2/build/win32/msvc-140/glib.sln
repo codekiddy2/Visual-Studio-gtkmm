@@ -34,6 +34,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gdbus", "gdbus.vcxproj", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{9B1ACF57-EB2B-4D4F-8CA2-A2FBC436E86A}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\glib-2.42.1.txt = Readme\glib-2.42.1.txt
 		Readme\glib-2.46.2.txt = Readme\glib-2.46.2.txt
 	EndProjectSection
@@ -53,6 +54,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-moduleplugin_b", "test-moduleplugin_b\test-moduleplugin_b.vcxproj", "{14D88B29-6AA1-4132-80FA-4EDC13BC92F2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-gthread", "test-gthread\test-gthread.vcxproj", "{49501637-7E3D-4E8C-969D-9F80C1332CE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{8B51814C-5440-4E96-8006-DF90267545B0}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\config.h = ..\..\..\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

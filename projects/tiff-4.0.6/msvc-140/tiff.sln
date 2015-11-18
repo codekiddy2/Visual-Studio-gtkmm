@@ -7,6 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiff_dll", "libtiff.vcxproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{69C175C9-3104-453C-8CC2-BB0446A2C466}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\tiff-4.0.2.txt = Readme\tiff-4.0.2.txt
 		Readme\tiff-4.0.6.txt = Readme\tiff-4.0.6.txt
 	EndProjectSection

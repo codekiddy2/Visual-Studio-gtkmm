@@ -35,6 +35,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pngunknown", "pngunknown\pn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{796C61EA-88E3-489F-A9F7-CEEA7A87F37D}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\readme\fundamental.md = ..\..\..\..\readme\fundamental.md
 		Readme\png-1.6.16.txt = Readme\png-1.6.16.txt
 		Readme\png-1.6.18.txt = Readme\png-1.6.18.txt
 	EndProjectSection

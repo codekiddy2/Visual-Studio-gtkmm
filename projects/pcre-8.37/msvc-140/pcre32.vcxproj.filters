@@ -69,9 +69,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src..\pcre.h">
       <Filter>Header Files</Filter>
     </ClInclude>

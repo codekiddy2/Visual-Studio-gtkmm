@@ -344,7 +344,6 @@
     <ProjectReference />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\config.h" />
     <ClInclude Include="src\pcre2.h" />
   </ItemGroup>
   <ItemGroup>

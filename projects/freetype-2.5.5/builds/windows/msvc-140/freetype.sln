@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{AB84FC
 	ProjectSection(SolutionItems) = preProject
 		Readme\freetype-2.5.5.txt = Readme\freetype-2.5.5.txt
 		Readme\freetype-2.6.1.txt = Readme\freetype-2.6.1.txt
+		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{CE47F1CD-EE52-4A8A-887B-FB5FECE1FC8D}"

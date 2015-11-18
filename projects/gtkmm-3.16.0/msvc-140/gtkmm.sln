@@ -14,6 +14,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install.vcxproj"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{67B26596-803C-4F70-A570-1CB1BE5585A0}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\gtkmm-3.14.0.txt = Readme\gtkmm-3.14.0.txt
 		Readme\gtkmm-3.16.0.txt = Readme\gtkmm-3.16.0.txt
 	EndProjectSection
@@ -45,6 +46,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrap_existing", "Tests\wrap_existing\wrap_existing.vcxproj", "{356D4D92-72CA-4D87-973A-6FC8790196DB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "child_widget_managed", "Tests\child_widget_managed\child_widget_managed.vcxproj", "{D7C15610-9F97-4C4A-B081-1114AE6DD8B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{B950A2E8-423E-4D0D-B89A-7534981EF6D0}"
+	ProjectSection(SolutionItems) = preProject
+		gdkmm\gdkmmconfig.h = gdkmm\gdkmmconfig.h
+		gtkmm\gtkmmconfig.h = gtkmm\gtkmmconfig.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

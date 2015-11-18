@@ -32,7 +32,7 @@ pango
 INSTRUCTIONS:
 Before building open the gtkmmconfig.h found ./msvc-1xx/gtkmm and comment out
 the #define GTKMM_ATKMM_ENABLED 1
-edit (msvc-140): the above is still problem:
+edit (msvc-140 gtkmm-3.16.0): the above is still problem since msvc 120 gtkmm-3.14.0:
 access violation reading location, in atkmm implementor destructor.
 
 Once you do that save the gtkmmconfig.h header...
@@ -50,8 +50,19 @@ gtkmm project uses modified version of def file with following symbols commented
 ;_local_stdio_printf_options
 ;vsnprintf_l
 ;vsprintf_l
-this is changed in project settings > link
-you might need to re-copy original def file from DEF_DIR in case of source modifications.
+
+if re-building gtkmm following won't be auto done:
+
+in case of config.h modifications.
+you need to copy-replace gtkmmconfig.h into ROOT_DIR/LIB_DIR/gtkmm/
+
+you need to adjust which def file is used from DEF_DIR in case of
+GTKMM_ATKMM_ENABLED modifications.
+
+gendef places it's updated output into DEF_DIR but project uses custom one, so
+consider copy-replacing the def file and applying fixes.
+
+which def file is used is changed in project settings > link > input
 
 if demo project can't find source files on run time check demo-common.cc line 22
 function name is: get_democodedir

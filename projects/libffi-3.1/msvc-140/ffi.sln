@@ -7,6 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffi_static", "libffi\libffi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{DA984880-D2AB-4865-9141-E7F69B071A38}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\libffi-3.0.13.txt = Readme\libffi-3.0.13.txt
 		Readme\libffi-3.1.txt = Readme\libffi-3.1.txt
 	EndProjectSection
@@ -22,6 +23,19 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-closure", "test-closure\test-closure.vcxproj", "{2328C3E3-00CA-4365-BC2D-DF250B2D45C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A58287BA-9AB3-419A-8804-9C917ED8C67E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{8B9AE35D-E7FF-43BF-BF29-702ABF0F8DC5}"
+	ProjectSection(SolutionItems) = preProject
+		configuration\debug-32.bat = configuration\debug-32.bat
+		configuration\debug-32.sh = configuration\debug-32.sh
+		configuration\debug-64.bat = configuration\debug-64.bat
+		configuration\debug-64.sh = configuration\debug-64.sh
+		..\x86_64-w64-mingw32\fficonfig.h = ..\x86_64-w64-mingw32\fficonfig.h
+		configuration\release-32.bat = configuration\release-32.bat
+		configuration\release-32.sh = configuration\release-32.sh
+		configuration\release-64.bat = configuration\release-64.bat
+		configuration\release-64.sh = configuration\release-64.sh
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

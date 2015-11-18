@@ -11,6 +11,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{05203D2A-13EF-4421-AD56-098088A2F17B}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\goocanvas-2.0.2.txt = Readme\goocanvas-2.0.2.txt
 	EndProjectSection
 EndProject
@@ -29,6 +30,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-scalability", "test-scalability\test-scalability.vcxproj", "{3405C9E8-3884-4169-B8E5-1735EE03D90A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-generic-position", "test-generic-position\test-generic-position.vcxproj", "{5D6CC37D-0993-43B3-891B-9F0CB2AB9C59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{F83FDFB3-7A81-4EBA-82EE-B1FCE12B6CEE}"
+	ProjectSection(SolutionItems) = preProject
+		..\config.h = ..\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

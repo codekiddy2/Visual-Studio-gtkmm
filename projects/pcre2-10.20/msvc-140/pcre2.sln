@@ -4,6 +4,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{D36FE64B-4A0A-4B2B-940B-E7CB17EB4519}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\pcre-8.36.txt = Readme\pcre-8.36.txt
 		Readme\pcre2-10.20.txt = Readme\pcre2-10.20.txt
 	EndProjectSection
@@ -23,6 +24,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pcre", "pcre2-test.vcxproj", "{D3BECA22-1745-4587-95B1-4842270DFF54}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pcre2-demo", "pcre2-demo\pcre2-demo.vcxproj", "{A66114F5-DB03-4B34-850D-D80F7DB77D4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{C8C4AFD9-1AF5-46F3-8F13-18F59AB55DA3}"
+	ProjectSection(SolutionItems) = preProject
+		src\config.h = src\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

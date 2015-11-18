@@ -42,6 +42,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install.vcxproj"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{83F3116E-ACB9-4362-A38B-C6DAE401CC1D}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\glibmm-2.42.0.txt = Readme\glibmm-2.42.0.txt
 		Readme\glibmm-2.46.1.txt = Readme\glibmm-2.46.1.txt
 	EndProjectSection
@@ -49,6 +50,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F7B89F00-0709-4FF1-9514-3CABE94C9DEF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glibmm-interface-implementation", "glibmm-interface-implementation.vcxproj", "{1719097E-52E5-4722-8D56-0E83EA1054EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{D187BB46-03E2-4095-9395-85BEE0ADCE9C}"
+	ProjectSection(SolutionItems) = preProject
+		giomm\giommconfig.h = giomm\giommconfig.h
+		glibmm\glibmmconfig.h = glibmm\glibmmconfig.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

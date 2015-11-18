@@ -117,9 +117,6 @@
     <ClInclude Include="..\..\gettext-runtime\intl\libgnuintl.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gettext-runtime\config.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gettext-runtime\intl\eval-plural.h">
       <Filter>Headers</Filter>
     </ClInclude>

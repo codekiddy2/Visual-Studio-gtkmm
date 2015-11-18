@@ -221,7 +221,6 @@
     <ClCompile Include="..\src\codekiddy-libintl_setlocale.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\gettext-runtime\config.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\eval-plural.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\export.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\gettextP.h" />

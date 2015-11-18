@@ -45,6 +45,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sigc++", "libsigc++2.vcxpro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{301AE32D-1C80-4E42-9647-F76320F3B8BF}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\libsigc++2.4.0.txt = Readme\libsigc++2.4.0.txt
 		Readme\libsigc++2.5.4.txt = Readme\libsigc++2.5.4.txt
 	EndProjectSection
@@ -52,6 +53,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A74E9F49-9E2E-43F2-B228-3546DA1DAC8E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{78916D71-54AB-4C74-9525-2301898FD91D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{21292812-8701-4AFC-BD55-8932636C14C2}"
+	ProjectSection(SolutionItems) = preProject
+		sigc++config.h = sigc++config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

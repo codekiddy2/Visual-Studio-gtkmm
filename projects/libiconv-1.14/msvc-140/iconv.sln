@@ -7,6 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iconv_dll", "libiconv\libic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1CD2B378-3055-4A0C-9C7A-B8F1B0DD4BB8}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\libiconv-1.14.md = Readme\libiconv-1.14.md
 	EndProjectSection
 EndProject

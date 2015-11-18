@@ -24,6 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{7A9BDD
 	ProjectSection(SolutionItems) = preProject
 		Readme\cairomm-1.11.2.txt = Readme\cairomm-1.11.2.txt
 		Readme\cairomm-1.12.0.txt = Readme\cairomm-1.12.0.txt
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{78916D71-54AB-4C74-9525-2301898FD91D}"
@@ -43,6 +44,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-surface", "examples\test-surface\test-surface.vcxproj", "{49DF37BA-C2C3-4B72-B760-E34751858C81}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-user-font", "examples\test-user-font\test-user-font.vcxproj", "{22C8F205-537E-4D7A-828E-F2AF1A6E5B0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{DB031D66-6160-4072-A089-64A33A33B852}"
+	ProjectSection(SolutionItems) = preProject
+		cairomm\cairommconfig.h = cairomm\cairommconfig.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

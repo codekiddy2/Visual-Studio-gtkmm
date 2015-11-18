@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="src\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\pcre2.h">
       <Filter>Header Files</Filter>
     </ClInclude>

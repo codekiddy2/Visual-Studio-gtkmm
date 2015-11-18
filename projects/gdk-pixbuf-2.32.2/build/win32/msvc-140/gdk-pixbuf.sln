@@ -15,6 +15,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gdk-pixbuf-pixdata", "gdk-p
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{C0838FEB-F36C-4817-B0E6-4913809B1068}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\gdk-pixbuf-2.30.8.txt = Readme\gdk-pixbuf-2.30.8.txt
 		Readme\gdk-pixbuf-2.32.2.txt = Readme\gdk-pixbuf-2.32.2.txt
 	EndProjectSection
@@ -32,6 +33,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pixbuf-save", "pixbuf-save\pixbuf-save.vcxproj", "{2700053B-AD8F-4FF6-A02B-FB14B95F93C9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pixbuf-resource", "pixbuf-resource\pixbuf-resource.vcxproj", "{AD86F84A-F69D-4757-BFBE-DF0B0733A1B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{54D22430-4E67-450E-88A6-20B579230D9C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\config.h = ..\..\..\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -17,6 +17,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "miniunz", "miniunz.vcxproj"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{3ADD9B33-5D46-451A-BFD5-B0F4CD04AD6A}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\zlib-1.2.8.txt = Readme\zlib-1.2.8.txt
 	EndProjectSection
 EndProject

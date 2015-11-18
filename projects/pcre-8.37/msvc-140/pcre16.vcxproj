@@ -341,7 +341,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src..\pcre.h" />
-    <ClInclude Include="src\config.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\pcre16_byte_order.c" />

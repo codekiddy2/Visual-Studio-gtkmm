@@ -60,6 +60,8 @@ package from GNOME website: http://ftp.acc.umu.se/pub/GNOME/binaries/
 Extract conents of share folder from the package into D:\GitHub\Visual-Studio-gtkmm\output\v140\Debug\x64\share
 The path above is for Debug x64, so you may need to adjust that!
 
+config.h which is used by project is get-text-runtime.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:

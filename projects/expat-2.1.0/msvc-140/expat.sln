@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{F611BAAA-FCC8-4275-9C57-0AEB014B8841}"
 	ProjectSection(SolutionItems) = preProject
 		Readme\expat-2.1.0.txt = Readme\expat-2.1.0.txt
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{34A755CD-2CE2-49BB-AE70-B2B608ADABAD}"

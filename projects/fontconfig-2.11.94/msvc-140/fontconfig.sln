@@ -28,9 +28,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{359FA6
 	ProjectSection(SolutionItems) = preProject
 		Readme\fontconfig-2.11.92.txt = Readme\fontconfig-2.11.92.txt
 		Readme\fontconfig-2.11.94.txt = Readme\fontconfig-2.11.94.txt
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{E6362BF4-B8C9-4248-86BF-840D694DB670}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{99716C38-6BCE-4A93-8F41-9568C9049119}"
+	ProjectSection(SolutionItems) = preProject
+		config.h = config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

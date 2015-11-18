@@ -12,9 +12,9 @@
 #define PANGOMM_MAJOR_VERSION 2
 
 /* Micro version number of pangomm. */
-#define PANGOMM_MICRO_VERSION 0
+#define PANGOMM_MICRO_VERSION 1
 
 /* Minor version number of pangomm. */
-#define PANGOMM_MINOR_VERSION 34
+#define PANGOMM_MINOR_VERSION 38
 
 #endif /* !PANGOMM_PANGOMMCONFIG_H_INCLUDED */

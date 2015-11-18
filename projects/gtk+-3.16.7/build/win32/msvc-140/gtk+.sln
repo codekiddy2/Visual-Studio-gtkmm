@@ -28,6 +28,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install.vcxproj"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{6A1B8F1C-E62A-446B-9568-940F9C215631}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\gtk-3.14.8.txt = Readme\gtk-3.14.8.txt
 		Readme\gtk-3.16.7.txt = Readme\gtk-3.16.7.txt
 	EndProjectSection
@@ -51,6 +52,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testfilechooser", "testfilechooser\testfilechooser.vcxproj", "{B87F3571-7161-4E24-A021-3EFFD5D15F92}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testgtk", "testgtk\testgtk.vcxproj", "{040D3D37-ECE8-458D-87D7-5D18051C5804}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{2C70C705-6B33-4CC2-873A-DF20D581D5E1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\config.h = ..\..\..\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

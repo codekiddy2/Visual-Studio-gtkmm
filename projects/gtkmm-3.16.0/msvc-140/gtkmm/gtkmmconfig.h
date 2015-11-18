@@ -17,7 +17,7 @@
 #define GTKMM_MICRO_VERSION 0
 
 /* Minor version number of gtkmm. */
-#define GTKMM_MINOR_VERSION 14
+#define GTKMM_MINOR_VERSION 16
 
 /* Define when building gtkmm as a static library. */
 /* #undef GTKMM_STATIC_LIB */

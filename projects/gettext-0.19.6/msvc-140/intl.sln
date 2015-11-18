@@ -8,6 +8,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "intl_dll", "libintl_dll\lib
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{512493DD-7941-477F-92C9-E3A0F6B2E14B}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\gettext-0.19.4.txt = Readme\gettext-0.19.4.txt
 		Readme\gettext-0.19.6.txt = Readme\gettext-0.19.6.txt
 	EndProjectSection
@@ -19,6 +20,37 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B00E1593-5DC7-4706-9B69-1DD03A7AAE96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{7979FA5F-8013-46FB-8578-70B85A14D958}"
+	ProjectSection(SolutionItems) = preProject
+		configuration\debug-32.bat = configuration\debug-32.bat
+		configuration\debug-32.compiler = configuration\debug-32.compiler
+		configuration\debug-32.sh = configuration\debug-32.sh
+		configuration\debug-64.bat = configuration\debug-64.bat
+		configuration\debug-64.compiler = configuration\debug-64.compiler
+		configuration\debug-64.sh = configuration\debug-64.sh
+		configuration\release-32.bat = configuration\release-32.bat
+		configuration\release-32.compiler = configuration\release-32.compiler
+		configuration\release-32.sh = configuration\release-32.sh
+		configuration\release-64.bat = configuration\release-64.bat
+		configuration\release-64.compiler = configuration\release-64.compiler
+		configuration\release-64.sh = configuration\release-64.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "get-text-runtime", "get-text-runtime", "{CE049BDC-1636-42B0-805C-9A5430C87487}"
+	ProjectSection(SolutionItems) = preProject
+		..\gettext-runtime\config.h = ..\gettext-runtime\config.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "get-test-tools", "get-test-tools", "{2028080E-981B-448E-81CC-93A7CF63F92F}"
+	ProjectSection(SolutionItems) = preProject
+		..\gettext-tools\config.h = ..\gettext-tools\config.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libasprintf", "libasprintf", "{99B3E8B9-AF07-44C6-9C39-0C6299A10E27}"
+	ProjectSection(SolutionItems) = preProject
+		..\gettext-runtime\libasprintf\config.h = ..\gettext-runtime\libasprintf\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,5 +103,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{49858290-18D1-41DD-B2F9-A62E8199B428} = {B00E1593-5DC7-4706-9B69-1DD03A7AAE96}
 		{46E91814-0E89-4CA3-A39B-F2895ACE083C} = {B00E1593-5DC7-4706-9B69-1DD03A7AAE96}
+		{CE049BDC-1636-42B0-805C-9A5430C87487} = {7979FA5F-8013-46FB-8578-70B85A14D958}
+		{2028080E-981B-448E-81CC-93A7CF63F92F} = {7979FA5F-8013-46FB-8578-70B85A14D958}
+		{99B3E8B9-AF07-44C6-9C39-0C6299A10E27} = {7979FA5F-8013-46FB-8578-70B85A14D958}
 	EndGlobalSection
 EndGlobal

@@ -7,6 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "harfbuzz_static", "harfbuzz
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{8440619F-6D28-499D-8B12-E02D3D259C17}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\Harfbuzz-0.9.38.txt = Readme\Harfbuzz-0.9.38.txt
 		Readme\Harfbuzz-1.0.6.txt = Readme\Harfbuzz-1.0.6.txt
 	EndProjectSection
@@ -26,6 +27,13 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{78916D71-54AB-4C74-9525-2301898FD91D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F4BF116A-F249-4EF3-9017-F9B0DF3B9499}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{DA501FF0-2597-40D0-951A-5236AA6ECE1C}"
+	ProjectSection(SolutionItems) = preProject
+		configuration\debug-64.bat = configuration\debug-64.bat
+		configuration\debug-64.compiler = configuration\debug-64.compiler
+		configuration\debug-64.sh = configuration\debug-64.sh
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

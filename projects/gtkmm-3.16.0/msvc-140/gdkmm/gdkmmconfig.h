@@ -14,6 +14,6 @@
 #define GDKMM_MICRO_VERSION 0
 
 /* Minor version number of gdkmm. */
-#define GDKMM_MINOR_VERSION 14
+#define GDKMM_MINOR_VERSION 16
 
 #endif /* !_GDKMM_CONFIG_H */

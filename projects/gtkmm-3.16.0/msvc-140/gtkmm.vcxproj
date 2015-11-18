@@ -634,7 +634,6 @@
     <ClInclude Include="..\gtk\gtkmm\widgetpath.h" />
     <ClInclude Include="..\gtk\gtkmm\window.h" />
     <ClInclude Include="..\gtk\gtkmm\wrap_init.h" />
-    <ClInclude Include="gtkmm\gtkmmconfig.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include=".\gtkmm\gtkmm.rc" />

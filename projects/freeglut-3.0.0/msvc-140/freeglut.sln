@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{F4CED4
 	ProjectSection(SolutionItems) = preProject
 		Readme\freeglut-3.0.0-rc2.txt = Readme\freeglut-3.0.0-rc2.txt
 		Readme\freeglut-3.0.0.txt = Readme\freeglut-3.0.0.txt
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}"
@@ -17,6 +18,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-freeglut", "test-freeglut\test-freeglut.vcxproj", "{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0A995460-13EA-4290-888C-35F54CAD2F78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{A386B451-A58C-49C8-976B-6FE8976FCD35}"
+	ProjectSection(SolutionItems) = preProject
+		..\config.h = ..\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

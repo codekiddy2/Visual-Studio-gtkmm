@@ -7,6 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goocanvasmm", "goocanvasmm\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{70B47358-0563-4C84-808C-BB748BEE40C2}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\goocanvasmm-1.90.9.txt = Readme\goocanvasmm-1.90.9.txt
 	EndProjectSection
 EndProject

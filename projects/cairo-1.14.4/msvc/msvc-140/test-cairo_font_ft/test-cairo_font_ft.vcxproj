@@ -47,7 +47,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3198921D-09F3-46C7-B1D7-9D6BB4B7CFD9}</ProjectGuid>
     <RootNamespace>test-cairo</RootNamespace>
-    <ProjectName>test-cairo</ProjectName>
+    <ProjectName>test-cairo_font_ft</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">

@@ -12,6 +12,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install.vcxproj"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{70800A3E-F547-4ABB-8236-CF99D7B2E3FC}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\pango-1.34.1.txt = Readme\pango-1.34.1.txt
 		Readme\pango-1.36.8.txt = Readme\pango-1.36.8.txt
 	EndProjectSection
@@ -41,6 +42,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-color", "test-color\test-color.vcxproj", "{E85FA6B9-475A-464C-83F9-4BB1408A3E74}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen-all-unicode", "gen-all-unicode\gen-all-unicode.vcxproj", "{D7EA92F1-346B-4598-9462-02492EB8DCE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{134820D1-5F7A-430E-B3CD-F740045EF786}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\config.h = ..\..\..\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

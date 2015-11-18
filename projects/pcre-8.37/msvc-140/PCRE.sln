@@ -11,6 +11,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pcre", "pcretest.vcxpr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{D36FE64B-4A0A-4B2B-940B-E7CB17EB4519}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\pcre-8.36.txt = Readme\pcre-8.36.txt
 		Readme\pcre-8.37.txt = Readme\pcre-8.37.txt
 	EndProjectSection
@@ -34,6 +35,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pcrecpp", "test-pcrecpp\test-pcrecpp.vcxproj", "{E64D57EA-112A-4B58-86DD-3982AE496582}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E73D68C3-2514-4E06-BFE0-175455963370}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{9A199CC5-A15D-411B-9422-E0A6333F9E9F}"
+	ProjectSection(SolutionItems) = preProject
+		src\config.h = src\config.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

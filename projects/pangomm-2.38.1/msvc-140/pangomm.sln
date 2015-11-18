@@ -8,11 +8,17 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pangomm", "pangomm\pangomm.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{7566EB93-5CBD-4CB4-B766-5BB1206D6A87}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\pangomm-2.34.0.txt = Readme\pangomm-2.34.0.txt
 		Readme\pangomm-2.38.1.txt = Readme\pangomm-2.38.1.txt
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{78916D71-54AB-4C74-9525-2301898FD91D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{EE7C31BF-E831-4439-9DC7-5ADA8E564FB6}"
+	ProjectSection(SolutionItems) = preProject
+		pangomm\pangommconfig.h = pangomm\pangommconfig.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
