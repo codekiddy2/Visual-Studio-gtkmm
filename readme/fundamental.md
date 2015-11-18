@@ -6,6 +6,7 @@ projects before doing anything else!
 
 
 **One time setup**
+
 One time setup as the title implies is a setup you set once
 (in beginning) and forget about it.
 
@@ -26,6 +27,7 @@ Make sure paths mentioned here point to correct locations.
 
 
 **Solution setup**
+
 Solution setup is a kind of setup you will need to review for
 each solution.
 
@@ -54,6 +56,7 @@ If unsure, leave them alone.
 
 
 **Configuration headers**
+
 Some projects might contain configuration headers, and if so we
 need to check their contents and update entries as needed.
 
@@ -72,12 +75,51 @@ If unsure about specific macro leave them alone.
 
 
 **Configuration files**
+
 Some solutions might contain configuration files.
 
-TODO: add configuration files to solution and update this readme.
+There are 3 files in total needed to configure sources:
+
+* *.bat
+* *.compiler
+* *.sh
+
+what's the name of the file depends on which configuration you build.
+ie. for debug x64 the files are named:
+
+* Debug64.bat
+* Debug64.compiler
+* Debug64.sh
+
+the batch (*.bat) file sets environment variables and provides path to
+compiler settings.
+
+This file must be run from Visual Studio command prompt (cmd).
+there are 2 kinds of Visual Studio cmd. x64 and x86.
+
+Which one you use depends on your build type.
+Once the bach file is run it will open up MSYS2 shell and
+provide compiler settings which are saved in *.compiler file.
+
+From within MSYS2 shell you run the *.sh file which contains the
+command used to configure sources.
+
+These files might be out of date or they might not even exist for your
+configuration type.
+
+You are advised to update them and additionaly read following files:
+
+* mozilla-build.md
+* cmake.md
+* configuration.md
+* prepare MSYS2.md
+
+thse files should help explain how to edit and update before mentioned
+configuration files.
 
 
 **Development environment settings**
+
 I suppose you installed Visual Studio Code as told on
 Visual-Studio-gtkmm wiki page.
 
@@ -100,6 +142,7 @@ Make sure you set up your system and IDE as told.
 
 
 **Final step**
+
 In solution explorer beside this file there might be other files
 named by package and their version. (ex. libiconv-1.14.txt)
 
