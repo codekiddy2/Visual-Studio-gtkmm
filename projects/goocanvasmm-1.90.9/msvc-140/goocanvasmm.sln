@@ -15,8 +15,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-goocanvasmm", "test-go
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{9BDE2215-8362-478F-A2F9-2061463DFFAC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gendef", "gendef.vcxproj", "{07324745-C9BE-4D65-B08A-9C88188C0C28}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B57B8422-C81D-45F4-9A58-9D0085873EC8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-child_properties", "test-child_properties\test-child_properties.vcxproj", "{B4E863CB-EFF3-4467-BBED-BB6B77F00726}"
@@ -36,6 +34,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-text", "test-text\test-text.vcxproj", "{AFDA5868-81F1-4383-90A4-2BD1B127F88D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-table_model", "test-table_model\test-table_model.vcxproj", "{936D06A7-3E26-4D34-ABC4-8EAA331B1321}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gendef", "gendef\gendef.vcxproj", "{07324745-C9BE-4D65-B08A-9C88188C0C28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,18 +89,6 @@ Global
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release dll|x64.ActiveCfg = Release|x64
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release static|Win32.ActiveCfg = Release|Win32
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release static|x64.ActiveCfg = Release|x64
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug dll|Win32.ActiveCfg = Debug dll|Win32
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug dll|Win32.Build.0 = Debug dll|Win32
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug dll|x64.ActiveCfg = Debug dll|x64
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug dll|x64.Build.0 = Debug dll|x64
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug static|Win32.ActiveCfg = Debug dll|Win32
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug static|x64.ActiveCfg = Debug dll|x64
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release dll|Win32.ActiveCfg = Release dll|Win32
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release dll|Win32.Build.0 = Release dll|Win32
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release dll|x64.ActiveCfg = Release dll|x64
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release dll|x64.Build.0 = Release dll|x64
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release static|Win32.ActiveCfg = Release dll|Win32
-		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release static|x64.ActiveCfg = Release dll|x64
 		{B4E863CB-EFF3-4467-BBED-BB6B77F00726}.Debug dll|Win32.ActiveCfg = Debug dll|Win32
 		{B4E863CB-EFF3-4467-BBED-BB6B77F00726}.Debug dll|Win32.Build.0 = Debug dll|Win32
 		{B4E863CB-EFF3-4467-BBED-BB6B77F00726}.Debug dll|x64.ActiveCfg = Debug dll|x64
@@ -245,6 +233,22 @@ Global
 		{936D06A7-3E26-4D34-ABC4-8EAA331B1321}.Release static|Win32.Build.0 = Release static|Win32
 		{936D06A7-3E26-4D34-ABC4-8EAA331B1321}.Release static|x64.ActiveCfg = Release static|x64
 		{936D06A7-3E26-4D34-ABC4-8EAA331B1321}.Release static|x64.Build.0 = Release static|x64
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug dll|Win32.ActiveCfg = Debug dll|Win32
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug dll|Win32.Build.0 = Debug dll|Win32
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug dll|x64.ActiveCfg = Debug dll|x64
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug dll|x64.Build.0 = Debug dll|x64
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug static|Win32.ActiveCfg = Debug dll|Win32
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug static|Win32.Build.0 = Debug dll|Win32
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug static|x64.ActiveCfg = Debug dll|x64
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Debug static|x64.Build.0 = Debug dll|x64
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release dll|Win32.ActiveCfg = Release dll|Win32
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release dll|Win32.Build.0 = Release dll|Win32
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release dll|x64.ActiveCfg = Release dll|x64
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release dll|x64.Build.0 = Release dll|x64
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release static|Win32.ActiveCfg = Release dll|Win32
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release static|Win32.Build.0 = Release dll|Win32
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release static|x64.ActiveCfg = Release dll|x64
+		{07324745-C9BE-4D65-B08A-9C88188C0C28}.Release static|x64.Build.0 = Release dll|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

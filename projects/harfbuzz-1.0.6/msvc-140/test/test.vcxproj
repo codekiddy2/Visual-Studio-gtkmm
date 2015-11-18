@@ -127,9 +127,6 @@
     <ClCompile Include="..\..\src\test.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\harfbuzz.vcxproj">
-      <Project>{6318d4fc-7f92-4fda-8e6f-adad0502f848}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\Harfbuzz_dll\Harfbuzz_dll.vcxproj">
       <Project>{9568dc27-7002-4ead-bc14-1cab92c8683c}</Project>
       <Private>false</Private>

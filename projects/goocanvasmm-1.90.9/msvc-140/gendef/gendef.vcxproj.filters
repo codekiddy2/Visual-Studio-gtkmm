@@ -6,7 +6,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include=".\gendef\gendef.cc">
+    <ClCompile Include="gendef.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

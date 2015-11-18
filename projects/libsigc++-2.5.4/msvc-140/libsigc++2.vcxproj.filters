@@ -169,7 +169,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="sigc.rc">
+    <ResourceCompile Include="src\sigc.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

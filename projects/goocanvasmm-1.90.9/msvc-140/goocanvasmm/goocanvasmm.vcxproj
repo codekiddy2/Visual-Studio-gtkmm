@@ -413,13 +413,8 @@ copy $(SolutionDir)src\config.h /Y</Command>
     <ClInclude Include="..\src\goocanvasmmconfig.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\gendef.vcxproj">
+    <ProjectReference Include="..\gendef\gendef.vcxproj">
       <Project>{07324745-c9be-4d65-b08a-9c88188c0c28}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
