@@ -65,7 +65,7 @@ TESTINGS:
 1.0.1
 	Debug x64 + Debug
 
-1.1.0-1
+1.1.0-2
 	Debug x64 + Debug
 
 **************************************************************************************************************************************************************************
@@ -74,4 +74,4 @@ TODO:
 make better structure between user_*.props and other properties.
 user_*.props must inherit default properties and override not needed stuff.
 carefull with macros!
-user_base_stack.props can't inherit base_stack.props because of
+user_base_stack.props can't inherit base_stack.props because of (TODO: edit needed)

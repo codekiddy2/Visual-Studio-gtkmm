@@ -75,7 +75,7 @@
     </Link>
     <PreBuildEvent>
       <Command>$(SystemDrive)
-cd $(USERPROFILE)\Documents\Visual Studio 2015\Templates\ProjectTemplates\
+cd $(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates
 xcopy $(ProjectDir)*.zip /Y
 </Command>
     </PreBuildEvent>
@@ -91,7 +91,7 @@ xcopy $(ProjectDir)*.zip /Y
     </Link>
     <PreBuildEvent>
       <Command>$(SystemDrive)
-cd $(USERPROFILE)\Documents\Visual Studio 2013\Templates\ProjectTemplates\
+cd $(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates
 xcopy $(ProjectDir)*.zip /Y
 </Command>
     </PreBuildEvent>
@@ -107,7 +107,7 @@ xcopy $(ProjectDir)*.zip /Y
     </Link>
     <PreBuildEvent>
       <Command>$(SystemDrive)
-cd $(USERPROFILE)\Documents\Visual Studio 2013\Templates\ProjectTemplates\
+cd $(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates
 xcopy $(ProjectDir)*.zip /Y
 </Command>
     </PreBuildEvent>
@@ -123,7 +123,7 @@ xcopy $(ProjectDir)*.zip /Y
     </Link>
     <PreBuildEvent>
       <Command>$(SystemDrive)
-cd $(USERPROFILE)\Documents\Visual Studio 2013\Templates\ProjectTemplates\
+cd $(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates
 xcopy $(ProjectDir)*.zip /Y
 </Command>
     </PreBuildEvent>
