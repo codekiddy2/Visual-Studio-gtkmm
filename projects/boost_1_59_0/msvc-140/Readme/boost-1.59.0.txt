@@ -37,6 +37,10 @@ http://www.boost.org/build/doc/html/index.html
 
 Build events must be separated, b2 --install won't work in same build event as bootstrap.bat
 
+Define:
+BOOST_ALL_DYN_LINK to link to dll libs
+BOOST_ALL_NO_LIB to link manually
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
