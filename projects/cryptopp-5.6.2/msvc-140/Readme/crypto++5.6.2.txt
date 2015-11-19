@@ -32,6 +32,9 @@ dll.h modified to reflect modified lib name
 fipstest.cpp modified to target Windows 7
 FIPS dll does not work, use static library.
 
+since msvc-140
+added to ignore lib warnings as errors in solution level props.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:

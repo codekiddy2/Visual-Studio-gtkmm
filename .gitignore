@@ -163,9 +163,14 @@ ipch/
 # ===============
 # file extensions
 # ===============
+
+#cario output
 *.FEATURES
 *.GOBJECT
 *.FT
+
+#cryptopp test files
+*.dat
 
 
 # ==============
@@ -243,6 +248,8 @@ ipch/
 /projects/*/projects/*
 !/projects/*/projects/msvc-140/
 
+#cryptopp test files
+/projects/cryptopp*/msvc-140/TestVectors/
 
 # =================
 # directory level 5

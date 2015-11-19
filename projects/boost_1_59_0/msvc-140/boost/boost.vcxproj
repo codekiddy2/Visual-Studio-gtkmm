@@ -138,7 +138,7 @@
     <Import Project="..\..\..\..\properties\solution_boost.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -148,23 +148,20 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PreBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent>
       <Command>$(DRIVE):
-if not exist $(B2_DIR)b2.exe goto END
 cd $(SRC_DIR)
-$(B2_DIR)b2 --layout=system link=shared threading=multi variant=debug toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --layout=$(LAYOUT) link=shared threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
-echo ...Installing headers...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY
-goto DONE
-:END
-echo BoostBuild is not installed, build canceled.
-:DONE</Command>
-    </PreBuildEvent>
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
     <ClCompile>
@@ -175,23 +172,20 @@ echo BoostBuild is not installed, build canceled.
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PreBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent>
       <Command>$(DRIVE):
-if not exist $(B2_DIR)b2.exe goto END
 cd $(SRC_DIR)
-$(B2_DIR)b2 --layout=system link=static threading=multi variant=debug toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --layout=$(LAYOUT) link=static threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
-echo ...Installing headers...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY
-goto DONE
-:END
-echo BoostBuild is not installed, build canceled.
-:DONE</Command>
-    </PreBuildEvent>
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
     <ClCompile>
@@ -206,23 +200,22 @@ echo BoostBuild is not installed, build canceled.
       <Command>
       </Command>
     </CustomBuildStep>
-    <PreBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent>
       <Command>$(DRIVE):
-if not exist $(B2_DIR)b2.exe goto END
 cd $(SRC_DIR)
-$(B2_DIR)b2 --layout=system link=shared threading=multi variant=debug toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --layout=$(LAYOUT) link=shared threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
-echo ...Installing headers...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY
-goto DONE
-:END
-echo BoostBuild is not installed, build canceled.
-:DONE</Command>
-    </PreBuildEvent>
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
+    <PreBuildEvent />
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
     <ClCompile>
@@ -237,23 +230,20 @@ echo BoostBuild is not installed, build canceled.
       <Command>
       </Command>
     </CustomBuildStep>
-    <PreBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent>
       <Command>$(DRIVE):
-if not exist $(B2_DIR)b2.exe goto END
 cd $(SRC_DIR)
-$(B2_DIR)b2 --layout=system link=static threading=multi variant=debug toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --layout=$(LAYOUT) link=static threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
-echo ...Installing headers...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY
-goto DONE
-:END
-echo BoostBuild is not installed, build canceled.
-:DONE</Command>
-    </PreBuildEvent>
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
     <ClCompile>
@@ -268,23 +258,20 @@ echo BoostBuild is not installed, build canceled.
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
-    <PreBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent>
       <Command>$(DRIVE):
-if not exist $(B2_DIR)b2.exe goto END
 cd $(SRC_DIR)
-$(B2_DIR)b2 --layout=system link=shared threading=multi variant=release toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --layout=$(LAYOUT) link=shared threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
-echo ...Installing headers...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY
-goto DONE
-:END
-echo BoostBuild is not installed, build canceled.
-:DONE</Command>
-    </PreBuildEvent>
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
     <ClCompile>
@@ -299,23 +286,20 @@ echo BoostBuild is not installed, build canceled.
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
-    <PreBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent>
       <Command>$(DRIVE):
-if not exist $(B2_DIR)b2.exe goto END
 cd $(SRC_DIR)
-$(B2_DIR)b2 --layout=system link=static threading=multi variant=release toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --layout=$(LAYOUT) link=static threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
-echo ...Installing headers...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY
-goto DONE
-:END
-echo BoostBuild is not installed, build canceled.
-:DONE</Command>
-    </PreBuildEvent>
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
     <ClCompile>
@@ -330,23 +314,20 @@ echo BoostBuild is not installed, build canceled.
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
-    <PreBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent>
       <Command>$(DRIVE):
-if not exist $(B2_DIR)b2.exe goto END
 cd $(SRC_DIR)
-$(B2_DIR)b2 --layout=system link=shared threading=multi variant=release toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --layout=$(LAYOUT) link=shared threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
-echo ...Installing headers...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY
-goto DONE
-:END
-echo BoostBuild is not installed, build canceled.
-:DONE</Command>
-    </PreBuildEvent>
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
     <ClCompile>
@@ -361,23 +342,20 @@ echo BoostBuild is not installed, build canceled.
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
-    <PreBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent>
       <Command>$(DRIVE):
-if not exist $(B2_DIR)b2.exe goto END
 cd $(SRC_DIR)
-$(B2_DIR)b2 --layout=system link=static threading=multi variant=release toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --layout=$(LAYOUT) link=static threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
-echo ...Installing headers...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY
-goto DONE
-:END
-echo BoostBuild is not installed, build canceled.
-:DONE</Command>
-    </PreBuildEvent>
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+    </PostBuildEvent>
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

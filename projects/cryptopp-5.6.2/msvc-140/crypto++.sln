@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp_dll", "cryptdll.vcxproj", "{EBD86293-69A9-456B-B814-916E12AA9BBF}"
 EndProject
@@ -13,6 +13,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{2C6DF77E-F586-40D6-B07B-252D1B249087}"
 	ProjectSection(SolutionItems) = preProject
 		Readme\crypto++5.6.2.txt = Readme\crypto++5.6.2.txt
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}"
@@ -95,6 +96,7 @@ Global
 		{A7483CE8-2784-46CE-8CB8-8C0C1D27E232}.Release|x64.Build.0 = Release|x64
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Debug|Win32.ActiveCfg = Debug|Win32
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Debug|x64.ActiveCfg = Debug|x64
+		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Debug|x64.Build.0 = Debug|x64
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Debug|Win32.ActiveCfg = Debug|Win32
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Debug|x64.ActiveCfg = Debug|x64
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Release|Win32.ActiveCfg = Release|Win32
