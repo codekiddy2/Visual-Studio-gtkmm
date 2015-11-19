@@ -23,3 +23,18 @@
 				properties
 			
 			
+>Solution directory tree
+
+	Solution
+		install		( install project )
+		src			( modified sources )
+		def			( definition files )
+		test		( test projects )
+			test 1
+			test 2
+			test 3
+		readme		( readme files )
+		project 1
+		project 2
+		project 3 ...
+		

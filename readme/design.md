@@ -32,7 +32,7 @@
 	* TESTINGS
 	* TODO
 
-	Readme files withing solution are edited for each package version separately.
+	Readme files within solution are edited for each package version separately.
 	source files should be sorted by using project filters: Header Files, Source Files, Module Files and Resource Files...
 	project configurations should be named like so:
 

@@ -154,6 +154,18 @@ there migh be more such files but you need to read the one with
 latest version number. that is the package which we will build.
 
 
+**Test projects**
+
+Almost each solution has several test projects, their purpose is to
+test the library ( dll or lib ) after successful compilation.
+
+they are extra useful in cases where we have no idea which library
+is causing troubles.
+
+In which case you can just go down the dependency tree and test each
+library until you find fauly one.
+
+
 **Troubleshooting**
 
 You can read other readme files in:
