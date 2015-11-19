@@ -11,6 +11,7 @@
     <MSYS2_DIR>D:\Github\install\msys64\</MSYS2_DIR>
     <BISON_DIR>$(MSYS2_DIR)usr\bin\</BISON_DIR>
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
+    <B2_DIR>D:\Github\Install\BoostBuild\bin\</B2_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
@@ -43,6 +44,9 @@
     </BuildMacro>
     <BuildMacro Include="FLEX_DIR">
       <Value>$(FLEX_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="B2_DIR">
+      <Value>$(B2_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

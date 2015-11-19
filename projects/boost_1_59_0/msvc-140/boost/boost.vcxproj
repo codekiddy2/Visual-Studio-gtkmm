@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug static|Win32">
+      <Configuration>Debug static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug static|x64">
+      <Configuration>Debug static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug dll|Win32">
+      <Configuration>Debug dll</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release static|Win32">
+      <Configuration>Release static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release static|x64">
+      <Configuration>Release static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release dll|Win32">
+      <Configuration>Release dll</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug dll|x64">
+      <Configuration>Debug dll</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release dll|x64">
+      <Configuration>Release dll</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F783B7ED-98E9-4DF9-8E87-7618C590495C}</ProjectGuid>
+    <RootNamespace>boost</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\solution_boost.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\solution_boost.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\solution_boost.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\solution_boost.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\solution_boost.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\solution_boost.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\solution_boost.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\solution_boost.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(B2_DIR)b2.exe goto END
+cd $(SRC_DIR)
+$(B2_DIR)b2 --layout=system link=shared threading=multi variant=debug toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+move /Y *.lib $(LIB_DIR)
+move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo ...Installing headers...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY
+goto DONE
+:END
+echo BoostBuild is not installed, build canceled.
+:DONE</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(B2_DIR)b2.exe goto END
+cd $(SRC_DIR)
+$(B2_DIR)b2 --layout=system link=static threading=multi variant=debug toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+move /Y *.lib $(LIB_DIR)
+move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo ...Installing headers...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY
+goto DONE
+:END
+echo BoostBuild is not installed, build canceled.
+:DONE</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(B2_DIR)b2.exe goto END
+cd $(SRC_DIR)
+$(B2_DIR)b2 --layout=system link=shared threading=multi variant=debug toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+move /Y *.lib $(LIB_DIR)
+move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo ...Installing headers...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY
+goto DONE
+:END
+echo BoostBuild is not installed, build canceled.
+:DONE</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(B2_DIR)b2.exe goto END
+cd $(SRC_DIR)
+$(B2_DIR)b2 --layout=system link=static threading=multi variant=debug toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+move /Y *.lib $(LIB_DIR)
+move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo ...Installing headers...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY
+goto DONE
+:END
+echo BoostBuild is not installed, build canceled.
+:DONE</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(B2_DIR)b2.exe goto END
+cd $(SRC_DIR)
+$(B2_DIR)b2 --layout=system link=shared threading=multi variant=release toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+move /Y *.lib $(LIB_DIR)
+move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo ...Installing headers...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY
+goto DONE
+:END
+echo BoostBuild is not installed, build canceled.
+:DONE</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(B2_DIR)b2.exe goto END
+cd $(SRC_DIR)
+$(B2_DIR)b2 --layout=system link=static threading=multi variant=release toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+move /Y *.lib $(LIB_DIR)
+move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo ...Installing headers...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY
+goto DONE
+:END
+echo BoostBuild is not installed, build canceled.
+:DONE</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(B2_DIR)b2.exe goto END
+cd $(SRC_DIR)
+$(B2_DIR)b2 --layout=system link=shared threading=multi variant=release toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+move /Y *.lib $(LIB_DIR)
+move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo ...Installing headers...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY
+goto DONE
+:END
+echo BoostBuild is not installed, build canceled.
+:DONE</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(B2_DIR)b2.exe goto END
+cd $(SRC_DIR)
+$(B2_DIR)b2 --layout=system link=static threading=multi variant=release toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=shared --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+move /Y *.lib $(LIB_DIR)
+move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo ...Installing headers...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY
+goto DONE
+:END
+echo BoostBuild is not installed, build canceled.
+:DONE</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

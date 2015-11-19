@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boost", "boost\boost.vcxproj", "{F783B7ED-98E9-4DF9-8E87-7618C590495C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{18200235-3F68-4980-8E05-165EAE6774B2}"
+	ProjectSection(SolutionItems) = preProject
+		Readme\boost-1.59.0.txt = Readme\boost-1.59.0.txt
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug dll|x64 = Debug dll|x64
+		Debug dll|x86 = Debug dll|x86
+		Debug static|x64 = Debug static|x64
+		Debug static|x86 = Debug static|x86
+		Release dll|x64 = Release dll|x64
+		Release dll|x86 = Release dll|x86
+		Release static|x64 = Release static|x64
+		Release static|x86 = Release static|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Debug dll|x64.ActiveCfg = Debug dll|x64
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Debug dll|x64.Build.0 = Debug dll|x64
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Debug dll|x86.ActiveCfg = Debug dll|Win32
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Debug dll|x86.Build.0 = Debug dll|Win32
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Debug static|x64.ActiveCfg = Debug static|x64
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Debug static|x64.Build.0 = Debug static|x64
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Debug static|x86.ActiveCfg = Debug static|Win32
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Debug static|x86.Build.0 = Debug static|Win32
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Release dll|x64.ActiveCfg = Release dll|x64
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Release dll|x64.Build.0 = Release dll|x64
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Release dll|x86.ActiveCfg = Release dll|Win32
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Release dll|x86.Build.0 = Release dll|Win32
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Release static|x64.ActiveCfg = Release static|x64
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Release static|x64.Build.0 = Release static|x64
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Release static|x86.ActiveCfg = Release static|Win32
+		{F783B7ED-98E9-4DF9-8E87-7618C590495C}.Release static|x86.Build.0 = Release static|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

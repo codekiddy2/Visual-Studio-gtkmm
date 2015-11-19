@@ -145,6 +145,7 @@
     </BuildMacro>
     <BuildMacro Include="INTERMEDIATE_DIR">
       <Value>$(INTERMEDIATE_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="SYMBOLS_DIR">
       <Value>$(SYMBOLS_DIR)</Value>

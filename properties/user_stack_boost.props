@@ -2,12 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <BOOST_DIR>$(PROJECTS_DIR)boost_1_57_0\</BOOST_DIR>
+    <BOOST_DIR>$(PROJECTS_DIR)boost_1_59_0\</BOOST_DIR>
+    <STAGE_DIR>$(ROOT_DIR)boost\lib\</STAGE_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalLibraryDirectories>$(BOOST_DIR)stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(STAGE_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
     </Link>
     <ClCompile>
@@ -18,6 +19,9 @@
   <ItemGroup>
     <BuildMacro Include="BOOST_DIR">
       <Value>$(BOOST_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="STAGE_DIR">
+      <Value>$(STAGE_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
