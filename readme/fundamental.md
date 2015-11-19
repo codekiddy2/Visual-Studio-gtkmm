@@ -177,3 +177,10 @@ highlighting and allows you browse repository quickly.
 
 Also you'll be able to read any kind of files including editing projects,
 as well as files which can't be normaly read by using Windows notepad.
+
+
+**Notes**
+Notes and changelog which applies to all projects..
+
+/VERBOSE:LIB removed from "base_stack.props"
+/NOLOGO set for linker

@@ -1,0 +1,1 @@
+#define GTKMM_ATKMM_ENABLED 1

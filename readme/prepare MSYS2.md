@@ -1,6 +1,14 @@
 **Preparing MSYS2 environment**
 
->Update the system packages
+MSYS2 x64 shell is located in:
+
+	D:\Github\Install\msys64\mingw64_shell.bat
+
+MSYS2 x86 shell is located in:
+	
+	D:\Github\Install\msys64\mingw32_shell.bat
+
+>Depending on your build type open one of them and update the system packages
 
 	pacman --needed -Sy bash pacman pacman-mirrors msys2-runtime
 
@@ -8,7 +16,7 @@
 
 	pacman -Su
 	
->Install tools
+>Install tools one by one and confirm prompt when asked
 
 	pacman -S pkg-config
 	pacman -S mingw-w64-x86_64-gcc

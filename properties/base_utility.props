@@ -21,9 +21,7 @@ if not exist $(PKG_CONFIG_PATH) mkdir $(PKG_CONFIG_PATH)</Command>
       <TreatOutputAsContent>false</TreatOutputAsContent>
       <Outputs>$(ROOT_DIR);%(Outputs)</Outputs>
     </CustomBuildStep>
-    <PreBuildEvent>
-      <Message>Installing $(SolutionName) ...</Message>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

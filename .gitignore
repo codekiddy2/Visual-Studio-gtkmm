@@ -185,6 +185,7 @@ ipch/
 /output/
 !/projects/
 !/properties/
+!/readme/
 
 
 # =================

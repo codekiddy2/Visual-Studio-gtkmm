@@ -91,7 +91,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
       <PreprocessorDefinitions>WITH_SIMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -111,7 +111,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
       <PreprocessorDefinitions>WITH_SIMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -131,7 +131,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
       <PreprocessorDefinitions>WITH_SIMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -153,7 +153,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
       <PreprocessorDefinitions>WITH_SIMD;%(PreprocessorDefinitions)</PreprocessorDefinitions>

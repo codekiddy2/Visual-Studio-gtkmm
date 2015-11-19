@@ -5,7 +5,7 @@
 #include <gdkmmconfig.h>
 
 /* Defined when the --enable-api-atkmm configure argument was given */
-// #define GTKMM_ATKMM_ENABLED 1
+#define GTKMM_ATKMM_ENABLED 1
 
 /* Define to omit deprecated API from gtkmm. */
 /* #undef GTKMM_DISABLE_DEPRECATED */

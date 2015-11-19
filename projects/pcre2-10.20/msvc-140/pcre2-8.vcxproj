@@ -243,8 +243,6 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
       <PreprocessorDefinitions>PCRE2_CODE_UNIT_WIDTH=8;pcre2_8_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -269,8 +267,6 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
       <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -295,8 +291,6 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
       <PreprocessorDefinitions>PCRE2_CODE_UNIT_WIDTH=8;pcre2_8_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -321,8 +315,6 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
       <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>

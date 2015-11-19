@@ -136,7 +136,7 @@
     </PreLinkEvent>
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>

@@ -22,6 +22,7 @@
 				output
 				projects
 				properties
+				readme
 			
 			
 >Solution directory tree

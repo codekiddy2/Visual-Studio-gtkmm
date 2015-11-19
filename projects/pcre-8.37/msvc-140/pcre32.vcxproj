@@ -241,8 +241,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";pcre32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -269,6 +268,7 @@
       <DebugInformationFormat>
       </DebugInformationFormat>
       <PreprocessorDefinitions>PCRE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";pcre32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -294,6 +294,7 @@
       </ExceptionHandling>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";pcre32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -320,6 +321,7 @@
       <DebugInformationFormat>
       </DebugInformationFormat>
       <PreprocessorDefinitions>PCRE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";pcre32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>

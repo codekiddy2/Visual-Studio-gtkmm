@@ -59,7 +59,7 @@
     </ClCompile>
     <Link>
       <ShowProgress>LinkVerboseSAFESEH</ShowProgress>
-      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
       <ManifestFile>$(INTERMEDIATE_DIR)$(TargetName)$(TargetExt).manifest</ManifestFile>
       <MapFileName>$(SYMBOLS_DIR)map\$(TargetName).map</MapFileName>
@@ -76,7 +76,6 @@
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
       <ImportLibrary>$(LIB_DIR)$(TargetName)$(TargetExt).lib</ImportLibrary>
       <FixedBaseAddress>false</FixedBaseAddress>
-      <AdditionalOptions>/VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <Manifest>
       <SuppressStartupBanner>false</SuppressStartupBanner>

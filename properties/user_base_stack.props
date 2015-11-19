@@ -10,7 +10,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>DW=__pragma(warning( disable: 4309 4505 4250 )) __pragma(warning( push, 0 ));EW=__pragma(warning( default: 4309 4505 )) __pragma(warning( pop ));WINVER=0x0601;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DW=__pragma(warning( disable: 4309 4505 4250 )) __pragma(warning( push, 0 ));EW=__pragma(warning( default: 4309 4505 )) __pragma(warning( pop ));WINVER=0x0A00;_WIN32_WINNT=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAs>CompileAsCpp</CompileAs>
       <FloatingPointExceptions>true</FloatingPointExceptions>

@@ -111,7 +111,7 @@
       <TypeLibraryName>$(OutDir)zlibvc.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..;..\..\masmx86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)contrib\masmx86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ASMV;ASMINF;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation>
       </BrowseInformation>
@@ -137,7 +137,7 @@
       <TypeLibraryName>$(OutDir)zlibvc.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..;..\..\masmx86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)contrib\masmx86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ASMV;ASMINF;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation>
       </BrowseInformation>
@@ -163,7 +163,7 @@
       <TypeLibraryName>$(OutDir)zlibvc.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..;..\..\masmx86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)contrib\masmx86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB_WINAPI;ASMV;ASMINF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation>
       </BrowseInformation>
@@ -191,7 +191,7 @@
       <TypeLibraryName>$(OutDir)zlibvc.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..;..\..\masmx86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)contrib\masmx86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ZLIB_WINAPI;ASMV;ASMINF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation>
       </BrowseInformation>
