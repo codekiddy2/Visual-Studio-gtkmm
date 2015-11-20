@@ -20,9 +20,18 @@
 				Extracted
 			D:\Github\Visual-Studio-gtkmm
 				output
+					v140
+						Debug
+							Win32
+							x64
+						Release
+							Win32
+							x64
 				projects
+					"package_name-version" ...
 				properties
 				readme
+					images
 			
 			
 >Solution directory tree

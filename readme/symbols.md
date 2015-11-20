@@ -12,12 +12,16 @@
 
 >Under Visual Studio > Tools > Options > Debugging > Symbols set these paths:
 
-	Microsoft Symbol Servers:
+	Microsoft Symbol Servers
 	D:\Github\Visual-Studio-gtkmm\output\v140\Debug\x64\symbols
 	D:\Github\Visual-Studio-gtkmm\output\v140\Release\x64\symbols
 	D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\symbols
 	D:\Github\Visual-Studio-gtkmm\output\v140\Release\Win32\symbols
 	D:\Github\Install\Symbols
+	D:\Github\Visual-Studio-gtkmm\output\v140\Debug\x64\symbols\test
+	D:\Github\Visual-Studio-gtkmm\output\v140\Release\x64\symbols\test
+	D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\symbols\test
+	D:\Github\Visual-Studio-gtkmm\output\v140\Release\Win32\symbols\test
 
 **Symbols Cache Directory**
 
