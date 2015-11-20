@@ -1,27 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\gettext-runtime\intl\xsize.c">
-      <Filter>Sources\copy</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\intl-exports.c">
-      <Filter>Sources\copy</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\os2compat.c">
-      <Filter>Sources\copy</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\printf-args.c">
-      <Filter>Sources\copy</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\printf-parse.c">
-      <Filter>Sources\copy</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\tsearch.c">
-      <Filter>Sources\copy</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\vasnprintf.c">
-      <Filter>Sources\copy</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\libasprintf\alloca.c">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -71,14 +50,8 @@
     <Filter Include="Resource Files">
       <UniqueIdentifier>{a2dadf76-1aa7-4b48-98c5-c52fc6c6164f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Sources\copy">
-      <UniqueIdentifier>{64cb86b2-25da-4aeb-b85e-3ca66b223084}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\gettext-runtime\libasprintf\errno.in.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gettext-runtime\libasprintf\size_max.h">
       <Filter>Headers</Filter>
     </ClInclude>

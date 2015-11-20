@@ -21,6 +21,9 @@ expat or libxml2 (optional)
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
+select configuration and build.
+
+following is out of date:
 copy/paste appropriate *.compiler file, *.bat file and *.sh file from configuration folder
 into sources root directory and configure by using gnu autotools and mozilla-build system like so:
 bat file must be strted from apropriate VS command promt (x86 or x64 depending on wheter you compile x86 or x64)!
@@ -48,7 +51,7 @@ the *.bat file is set to include modified version! so:
 io.h must be included by force in project settings to avoid unresolved functions:
 open(), close(), read() ... not tested yet and at the moment I have no idea if this is wrong or not,
 so you can modify the INCLUDE variable, in both *.bat file and *.compiler file.
-this project will link to DLL of libiconv as well as all the projects from my collection (only DLL's), if you want static link
+this project will link to DLL of libiconv, if you want static link
 define USING_STATIC_LIBICONV in preprocessor definitions to avoid unresolved stuff.
 
 codekiddy-setlocale.c is not needed (in src dir) it was used in previous version compilations. (EDIT: removed)
@@ -62,6 +65,8 @@ The path above is for Debug x64, so you may need to adjust that!
 
 config.h which is used by intl project is get-text-runtime.
 plural-exp.c is not modified but is there (in MOD_DIR) to include *modified* plural-exp.h
+
+if there are unresolved externals in test-intl_static, rebuild intl_static.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -86,6 +91,6 @@ is locale.alias (Locale name alias data base) needed and how to generate it?
 edit: NONE OF ABOVE IS NEEDED.
 
 when building libintl original locale_charset.h should be included, not the one customized
-from libiconv, which means setting includes so that compiler look for intl headers before iconv headers.
+from libiconv, which means setting includes so that compiler look for intl header before iconv header.
 
 test if current preprocessor entry is case sensitive.

@@ -27,13 +27,13 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -44,9 +44,9 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -55,25 +55,25 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\properties\base_lib.props" />
-    <Import Project="..\..\..\..\properties\solution_intl.props" />
+    <Import Project="..\..\..\..\properties\solution_gettext.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\properties\base_lib.props" />
-    <Import Project="..\..\..\..\properties\solution_intl.props" />
+    <Import Project="..\..\..\..\properties\solution_gettext.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_lib.props" />
-    <Import Project="..\..\..\..\properties\solution_intl.props" />
+    <Import Project="..\..\..\..\properties\solution_gettext.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\properties\base_lib.props" />
-    <Import Project="..\..\..\..\properties\solution_intl.props" />
+    <Import Project="..\..\..\..\properties\solution_gettext.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -94,9 +94,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;IN_LIBASPRINTF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR)libasprintf;$(SRC_DIR)gettext-runtime\libasprintf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <DataExecutionPrevention />
@@ -104,12 +105,16 @@
       <ModuleDefinitionFile>$(DEF_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;IN_LIBASPRINTF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR)libasprintf;$(SRC_DIR)gettext-runtime\libasprintf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <DataExecutionPrevention />
@@ -117,15 +122,19 @@
       <ModuleDefinitionFile>$(DEF_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Lib>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\lib";LOCALEDIR="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;IN_LIBASPRINTF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
-      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MOD_DIR)libasprintf;$(SRC_DIR)gettext-runtime\libasprintf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <DataExecutionPrevention />
@@ -137,6 +146,9 @@
       <Command>cd .\..\
 copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     </PreBuildEvent>
+    <Lib>
+      <TreatLibWarningAsErrors>false</TreatLibWarningAsErrors>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
@@ -158,48 +170,6 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\gettext-runtime\intl\intl-exports.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\os2compat.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\printf-args.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\printf-parse.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\tsearch.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\vasnprintf.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\xsize.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\libasprintf\alloca.c" />
     <ClCompile Include="..\..\gettext-runtime\libasprintf\asnprintf.c" />
     <ClCompile Include="..\..\gettext-runtime\libasprintf\asprintf.c" />
@@ -222,7 +192,6 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\gettext-runtime\libasprintf\errno.in.h" />
     <ClInclude Include="..\..\gettext-runtime\libasprintf\lib-asprintf.h" />
     <ClInclude Include="..\..\gettext-runtime\libasprintf\printf-args.h" />
     <ClInclude Include="..\..\gettext-runtime\libasprintf\printf-parse.h" />
