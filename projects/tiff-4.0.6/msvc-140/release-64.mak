@@ -130,7 +130,7 @@ MAKE	=	nmake
 CC	=	cl 
 CXX	=	cl
 AR	=	lib
-LD	=	link
+LD	=	link /INCREMENTAL:NO
 
 CFLAGS  =	$(OPTFLAGS) $(INCL) $(EXTRAFLAGS)
 CXXFLAGS =	$(OPTFLAGS) $(INCL) $(EXTRAFLAGS)
