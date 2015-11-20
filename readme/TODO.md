@@ -55,3 +55,5 @@
 * [HIGH PRIORITY] make all test projects have their cmd line needed stuff located in output directory (png's, files...)
 * check inclusion of headers, update properties to use macros and not relative directories.
 * [HIGH PRIORITY] some test projects with both static and release configurations might link against either dll or lib only, instead of by configuration type 
+* not all projects have /Zi flag set (sellect them all to quickly see the "different options"
+* compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include

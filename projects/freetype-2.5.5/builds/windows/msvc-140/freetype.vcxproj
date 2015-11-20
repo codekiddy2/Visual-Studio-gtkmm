@@ -223,8 +223,6 @@
     <ClCompile>
       <ProgramDataBaseFileName>
       </ProgramDataBaseFileName>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;$(UserDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -237,8 +235,6 @@
       <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ProgramDataBaseFileName>
       </ProgramDataBaseFileName>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;$(UserDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -250,8 +246,6 @@
     <ClCompile>
       <ProgramDataBaseFileName>
       </ProgramDataBaseFileName>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;$(UserDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -264,8 +258,6 @@
       <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ProgramDataBaseFileName>
       </ProgramDataBaseFileName>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;$(UserDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
