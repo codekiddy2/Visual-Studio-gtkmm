@@ -45,7 +45,7 @@
 * define what solution version numbers means
 * not all projects follow design rules
 * some projects output lib files for executables (test-iconv.exe)
-* some projects output pdb into both bin and symbols dir (all projects?)
+* some projects output pdb into both bin and symbols dir (all projects?) (edit, only debug configurations)
 * not all links point to direct download page (GNOME projects)
 * it is possible that newer version packages have source files and headers which are not yet included in projects.
 * check references, all need to have "same" settings. ie. copy local etc...
@@ -54,3 +54,4 @@
 * [HIGH PRIORITY] remove version numbers from project directories, easier to manage git and updates. ( or move solutions out of sources )
 * [HIGH PRIORITY] make all test projects have their cmd line needed stuff located in output directory (png's, files...)
 * check inclusion of headers, update properties to use macros and not relative directories.
+* [HIGH PRIORITY] some test projects with both static and release configurations might link against either dll or lib only, instead of by configuration type 

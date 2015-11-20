@@ -18,6 +18,9 @@ DEPENDENCIES:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTION:
+Select configuration and build.
+
+folowing is (probably out of date):
 start cmake-gui from appropriate VS command promt (x86 or x64 depending against which target you compile),
 then set the source and destination to the root directory of freeglut,
 click on configure, review settings and reconfigure if needed (do *not* click on generate)
@@ -45,3 +48,4 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 
+check if freeglut does not need configuration prior to build.

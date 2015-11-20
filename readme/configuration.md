@@ -1,8 +1,8 @@
 **List of Projects that need configuration**
 
 * libffi (mozilla-build)
-* expat (cmake-gui)
-* freeglut (cmake-gui)
+* expat (cmake-gui) configuration is optional ?
+* freeglut (cmake-gui) configuration is optional ?
 * gettext (mozilla-build)
 * pkg-config (mozilla-build)
 * harfbuzz (mozilla-build) configuration is optional

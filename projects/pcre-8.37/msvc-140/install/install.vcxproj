@@ -103,7 +103,7 @@ cd pcre\pcre
 echo installing headers ...
 xcopy $(SRC_DIR)*.h /Y
 cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
+xcopy $(MOD_DIR)pcre.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist pcre\html mkdir pcre\html
@@ -128,7 +128,7 @@ cd pcre\pcre
 echo installing headers ...
 xcopy $(SRC_DIR)*.h /Y
 cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
+xcopy $(MOD_DIR)pcre.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist pcre\html mkdir pcre\html
@@ -153,7 +153,7 @@ cd pcre\pcre
 echo installing headers ...
 xcopy $(SRC_DIR)*.h /Y
 cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
+xcopy $(MOD_DIR)pcre.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist pcre\html mkdir pcre\html
@@ -178,7 +178,7 @@ cd pcre\pcre
 echo installing headers ...
 xcopy $(SRC_DIR)*.h /Y
 cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
+xcopy $(MOD_DIR)pcre.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist pcre\html mkdir pcre\html

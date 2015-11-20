@@ -2,12 +2,12 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\jasper-1.900.1\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)jasper-1.900.1\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\libjasper\include;..\libjasper\jpg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR)src\libjasper\include;$(SRC_DIR)src\libjasper\jpg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -88,16 +88,16 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist pcre\pcre mkdir pcre\pcre
-cd pcre\pcre
+if not exist pcre2\pcre2 mkdir pcre2\pcre2
+cd pcre2\pcre2
 echo installing headers ...
 xcopy $(SRC_DIR)*.h /Y
 cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
+xcopy $(MOD_DIR)pcre2.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
-if not exist pcre\html mkdir pcre\html
-cd pcre\html
+if not exist pcre2\html mkdir pcre2\html
+cd pcre2\html
 xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -113,16 +113,16 @@ xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist pcre\pcre mkdir pcre\pcre
-cd pcre\pcre
+if not exist pcre2\pcre2 mkdir pcre2\pcre2
+cd pcre2\pcre2
 echo installing headers ...
 xcopy $(SRC_DIR)*.h /Y
 cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
+xcopy $(MOD_DIR)pcre2.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
-if not exist pcre\html mkdir pcre\html
-cd pcre\html
+if not exist pcre2\html mkdir pcre2\html
+cd pcre2\html
 xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -138,16 +138,16 @@ xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist pcre\pcre mkdir pcre\pcre
-cd pcre\pcre
+if not exist pcre2\pcre2 mkdir pcre2\pcre2
+cd pcre2\pcre2
 echo installing headers ...
 xcopy $(SRC_DIR)*.h /Y
 cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
+xcopy $(MOD_DIR)pcre2.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
-if not exist pcre\html mkdir pcre\html
-cd pcre\html
+if not exist pcre2\html mkdir pcre2\html
+cd pcre2\html
 xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -163,16 +163,16 @@ xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist pcre\pcre mkdir pcre\pcre
-cd pcre\pcre
+if not exist pcre2\pcre2 mkdir pcre2\pcre2
+cd pcre2\pcre2
 echo installing headers ...
 xcopy $(SRC_DIR)*.h /Y
 cd ..
-xcopy $(SolutionDir)src\pcre.h /Y
+xcopy $(MOD_DIR)pcre2.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
-if not exist pcre\html mkdir pcre\html
-cd pcre\html
+if not exist pcre2\html mkdir pcre2\html
+cd pcre2\html
 xcopy $(SRC_DIR)doc\html\*.* /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>

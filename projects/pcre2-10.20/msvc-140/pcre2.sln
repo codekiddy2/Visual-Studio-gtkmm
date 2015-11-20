@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{C8C4AF
 		src\config.h = src\config.h
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{477E083F-7164-4D63-998B-0796634D7A15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug dll|Win32 = Debug dll|Win32
@@ -43,14 +45,21 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug dll|Win32.ActiveCfg = Debug|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug dll|Win32.Build.0 = Debug|Win32
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug dll|x64.ActiveCfg = Debug|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug dll|x64.Build.0 = Debug|x64
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug static|Win32.ActiveCfg = Debug|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug static|Win32.Build.0 = Debug|Win32
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug static|x64.ActiveCfg = Debug|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug static|x64.Build.0 = Debug|x64
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release dll|Win32.ActiveCfg = Release|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release dll|Win32.Build.0 = Release|Win32
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release dll|x64.ActiveCfg = Release|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release dll|x64.Build.0 = Release|x64
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release static|Win32.ActiveCfg = Release|Win32
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release static|Win32.Build.0 = Release|Win32
 		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release static|x64.ActiveCfg = Release|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release static|x64.Build.0 = Release|x64
 		{E0382755-982C-44F4-9D0D-1131DAD2014D}.Debug dll|Win32.ActiveCfg = Debug dll|Win32
 		{E0382755-982C-44F4-9D0D-1131DAD2014D}.Debug dll|Win32.Build.0 = Debug dll|Win32
 		{E0382755-982C-44F4-9D0D-1131DAD2014D}.Debug dll|x64.ActiveCfg = Debug dll|x64
@@ -166,5 +175,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3BECA22-1745-4587-95B1-4842270DFF54} = {477E083F-7164-4D63-998B-0796634D7A15}
+		{A66114F5-DB03-4B34-850D-D80F7DB77D4D} = {477E083F-7164-4D63-998B-0796634D7A15}
 	EndGlobalSection
 EndGlobal

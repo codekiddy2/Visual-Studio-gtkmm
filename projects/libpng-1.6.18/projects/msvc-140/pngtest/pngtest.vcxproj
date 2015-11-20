@@ -38,6 +38,7 @@
     <ProjectGuid>{228BA965-50D5-42B2-8BCF-AFCC227E3C1D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>pngtest</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -238,7 +239,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;PNG_DEBUG=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
     </ClCompile>
@@ -254,7 +255,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;PNG_DEBUG=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>
       </DisableSpecificWarnings>
     </ClCompile>
@@ -263,9 +264,9 @@
     </Link>
     <CustomBuildStep>
       <Message>Executing PNG test program</Message>
-      <Command>"$(OutDir)pngtest.exe" ..\..\..\pngtest.png "$(IntDir)pngout.png"</Command>
+      <Command>"$(OutDir)pngtest.exe" $(SRC_DIR)pngtest.png "$(IntDir)pngout.png"</Command>
       <Outputs>$(IntDir)pngout.png</Outputs>
-      <Inputs>..\..\..\pngtest.png;$(OutDir)pngtest.exe</Inputs>
+      <Inputs>$(SRC_DIR)pngtest.png;$(OutDir)pngtest.exe</Inputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Library|Win32'">
@@ -281,9 +282,9 @@
     <CustomBuildStep>
       <Message>Executing PNG test program</Message>
       <Command>$(OutDir)pngtest.exe ..\..\..\pngtest.png $(IntDir)pngout.png</Command>
-      <Command>"$(OutDir)pngtest.exe" ..\..\..\pngtest.png "$(IntDir)pngout.png"</Command>
+      <Command>"$(OutDir)pngtest.exe" $(SRC_DIR)pngtest.png "$(IntDir)pngout.png"</Command>
       <Outputs>$(IntDir)pngout.png</Outputs>
-      <Inputs>..\..\..\pngtest.png;$(OutDir)pngtest.exe</Inputs>
+      <Inputs>$(SRC_DIR)pngtest.png;$(OutDir)pngtest.exe</Inputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Library|x64'">
@@ -298,9 +299,9 @@
     <CustomBuildStep>
       <Message>Executing PNG test program</Message>
       <Command>$(OutDir)pngtest.exe ..\..\..\pngtest.png $(IntDir)pngout.png</Command>
-      <Command>"$(OutDir)pngtest.exe" ..\..\..\pngtest.png "$(IntDir)pngout.png"</Command>
+      <Command>"$(OutDir)pngtest.exe" $(SRC_DIR)pngtest.png "$(IntDir)pngout.png"</Command>
       <Outputs>$(IntDir)pngout.png</Outputs>
-      <Inputs>..\..\..\pngtest.png;$(OutDir)pngtest.exe</Inputs>
+      <Inputs>$(SRC_DIR)pngtest.png;$(OutDir)pngtest.exe</Inputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>

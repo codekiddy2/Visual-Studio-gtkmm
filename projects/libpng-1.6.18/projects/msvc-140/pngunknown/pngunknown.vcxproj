@@ -228,7 +228,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;PNG_DEBUG=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>png.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -242,7 +242,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;PNG_DEBUG=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>png.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

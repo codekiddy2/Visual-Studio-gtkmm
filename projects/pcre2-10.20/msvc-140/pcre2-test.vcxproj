@@ -38,7 +38,7 @@
     <ProjectGUID>{D3BECA22-1745-4587-95B1-4842270DFF54}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
-    <ProjectName>test-pcre</ProjectName>
+    <ProjectName>test-pcre2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" Label="Configuration">
@@ -172,7 +172,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -222,7 +222,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -272,7 +272,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -322,7 +322,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>

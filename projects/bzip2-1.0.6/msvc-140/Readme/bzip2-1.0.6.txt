@@ -19,7 +19,7 @@ DEPENDENCIES:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-If you want to build static library open bzip2.c and set BZ_UNIX to 0 and BZ_LCCWIN32 to 1
+If you want bzip2 to link staticaly open bzip2.c and set BZ_UNIX to 0 and BZ_LCCWIN32 to 1
 Open Solution select configuration and build
 Install by building the "Install" project
 

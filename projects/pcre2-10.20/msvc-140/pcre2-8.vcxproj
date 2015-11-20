@@ -171,7 +171,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";pcre32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -219,7 +219,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";pcre32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -267,7 +267,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";pcre32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -315,7 +315,7 @@
     <ClCompile>
       <ExceptionHandling>
       </ExceptionHandling>
-      <PreprocessorDefinitions>PCRE_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";pcre32_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>

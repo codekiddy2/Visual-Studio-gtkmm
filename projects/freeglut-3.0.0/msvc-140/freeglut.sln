@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0A995460
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{A386B451-A58C-49C8-976B-6FE8976FCD35}"
 	ProjectSection(SolutionItems) = preProject
-		..\config.h = ..\config.h
+		src\config.h = src\config.h
 	EndProjectSection
 EndProject
 Global

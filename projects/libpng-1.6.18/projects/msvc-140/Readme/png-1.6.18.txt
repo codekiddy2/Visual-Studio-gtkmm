@@ -29,6 +29,9 @@ NOTES:
 leave precompiled headers alone
 x86 configuration must define ZLIB_WINAPI while linking to zlib
 
+pngtest and pngunknown fail in Release DLL buils, so they have PNG_DEBUG=2 defined
+for easier debugging.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -44,8 +47,10 @@ TESTINGS:
 
 1.1.0-1
 	Debug x64 + Debug
+	Release x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-Separate lib configurations from dll into separate projects.
+Separate lib configurations from dll into separate projects. (edit ??)
+test porgrams contain relative paths, replace them with $(SRC_DIR)
