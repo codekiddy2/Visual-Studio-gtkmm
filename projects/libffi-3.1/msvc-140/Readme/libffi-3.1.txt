@@ -21,33 +21,37 @@ DEPENDENCIES:
 INSTRUCTIONS:
 You can also use Nuget package manager in dependent projects (questionable if that would work)
 
-copy files from "configuration" folder into libffi's root directory..
+copy 2 files for your build type from "configuration" folder into libffi's root directory..
 Open apropriate VS command promt (x86 or x64 depending on which target you compile)
 execute the *.bat file, again cd into libffi root and configure by using the *.sh file.
 You may need to modify these files in case of errors or different build type.
 
-Do *not* build ffi_dll or ffi_static projects (that costed me 4 days of painful debugging!)
-compilation *must* be done by:
-make
+Do not used ffi_dll or ffi_static projects ffi must be compiled by wrapper provided in
+source tree. (that costed me 4 days of painful debugging!)
 
-once done copy libffi_convenience.lib file into lib directory and rename into ffi.lib
-copy ffitarget.h and ffi.h into include_dir/ffi
+once configuration is done, build solution which is currently configured to build test-ffi_static
+test-closure and install project. it will also build the dll and test projects should pass
+but the dll does not work.
 
 test-ffi_static and test-closure must pass.
-ffi_dll, test-ffi_dll and ffi_static excluded from build in configuration manager.
+ffi_dll, test-ffi_dll and ffi_static are excluded from build in configuration manager.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-x64 configuration does not work with libffi-3.2 (bug in 64 assembly code)
-While running test projects you may see the "First time exception" output, which is OK?? since
-that's what these test projects do, look for output in console.
+x64 configuration does not work with libffi-3.2 (probably bug in 64 assembly code)
+While running test projects you might see the "First time exception" output, which is OK?? since
+that's what these test projects do, look for output in console, not sure.
 
 edit: since msvc-140:
 there is no exception when testing static lib!
 
 FFI_BUILDING must be defined for static libs, ffi dll must not define that macro.
 not sure if dependent project need to define that too.
+
+install project is supposed to do following:
+copy libffi_convenience.lib file into lib directory and rename into ffi.lib
+copy ffitarget.h and ffi.h into include_dir/ffi
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -69,6 +73,7 @@ TESTINGS:
 
 1.1.2
 	Debug x64 + Debug
+	Release x64 + test
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
