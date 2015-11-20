@@ -61,3 +61,5 @@
 * [HIGH PRIORITY] define against which libs projects link, dll.lib or lib, some test projects ie. link differently for each configuration. (harfbuzz most notably)
 * some projects create output folders within solution, chech which ones.
 * searching projects folder, it turns out there are a lot of pdb files, check if any project is miscofingured about symobls
+* check which source files are missing and which are no longer needed in projects.
+

@@ -11,6 +11,5 @@
 #define CAIRO_HAS_SCRIPT_SURFACE 1 
 #define CAIRO_HAS_TEE_SURFACE 1 
 #define CAIRO_HAS_XML_SURFACE 1 
-#define CAIRO_HAS_TRACE 1 
 #define CAIRO_HAS_FT_FONT 1 
 #endif 

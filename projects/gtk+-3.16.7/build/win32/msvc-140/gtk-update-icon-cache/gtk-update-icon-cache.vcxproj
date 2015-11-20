@@ -90,9 +90,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile />
     <Link />
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile />
     <PostBuildEvent>
       <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
 $(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
@@ -102,9 +100,7 @@ $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile />
     <Link />
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile />
     <PostBuildEvent>
       <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
 $(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
@@ -114,9 +110,7 @@ $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile />
     <Link />
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile />
     <PostBuildEvent>
       <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
 $(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
@@ -126,9 +120,7 @@ $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile />
     <Link />
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile />
     <PostBuildEvent>
       <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
 $(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\

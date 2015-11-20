@@ -141,7 +141,7 @@ echo #endif &gt;&gt; $(SolutionDir)\cairo-features.h
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\..;..\..\src;..\..\util\cairo-gobject;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SRC_DIR);$(SRC_DIR)src;$(SRC_DIR)util\cairo-gobject;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <WarningLevel>Level2</WarningLevel>
       <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>

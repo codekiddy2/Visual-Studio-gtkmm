@@ -94,7 +94,6 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GTK_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
@@ -110,7 +109,6 @@ $(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GTK_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
@@ -126,7 +124,6 @@ $(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GTK_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
@@ -142,7 +139,6 @@ $(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GTK_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />

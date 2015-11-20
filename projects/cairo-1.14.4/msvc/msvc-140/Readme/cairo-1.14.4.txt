@@ -29,7 +29,7 @@ openGL (optional)
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
 set correct SRC_DIR in solution_cairo.props before building.
-make sure there are no *.FEATURES and *.GOBJECT files, also no $(Platform)$(Configuration)
+make sure there are no *.FEATURES *.GOBJECT files and similar files, also no $(Platform)$(Configuration)
 also delete $(INCLUDE_DIR)cairo for clean build and cairo-features.h in solution directory.
 
 test project depends on "Install" entries inside solution directory.
@@ -63,12 +63,14 @@ TESTINGS:
 
 1.1.2
 	Debug x64
+	Debug_FT x64
+	Release_FT x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
 Create a real world test project, the current one is a hello world that does nothing.
-edit: one real world test project is present in GTK+ solution
+edit: better test project is present in GTK+ and cairomm solution
 
 remove original macros and put them into pre-build process in project settings ( EDIT: error prone )
 

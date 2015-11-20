@@ -22,6 +22,7 @@
     <ProjectGuid>{AB3AC3D1-C18A-41E1-8028-D55B1BFA5372}</ProjectGuid>
     <RootNamespace>testpango</RootNamespace>
     <ProjectName>markup-parse</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -41,12 +42,14 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -96,9 +99,7 @@
     <Link>
       <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangocairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile />
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(BIN_DIR)
@@ -111,9 +112,7 @@ if not exist markups mkdir markups</Command>
     <Link>
       <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangocairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile />
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(BIN_DIR)
@@ -124,11 +123,9 @@ if not exist markups mkdir markups</Command>
     <ClCompile />
     <Link />
     <Link>
-      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangocairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile />
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(BIN_DIR)
@@ -139,11 +136,9 @@ if not exist markups mkdir markups</Command>
     <ClCompile />
     <Link />
     <Link>
-      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangocairo.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile />
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(BIN_DIR)

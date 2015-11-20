@@ -88,3 +88,5 @@ update icon cache prebuild event fails, check why and fix.
 
 $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\ removed from
 post build event, fix hicolor cache making and return command back
+
+check if test projects need $(SRC_DIR)glib for includes search
