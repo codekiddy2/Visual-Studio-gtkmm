@@ -90,6 +90,10 @@ $RECYCLE.BIN/
 *.sdf
 *.opensdf
 *.unsuccessfulbuild
+*.pdb
+*.dll
+*.lib
+*.exe
 
 
 # =====
