@@ -95,11 +95,12 @@
     <ClCompile>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
+      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>$(MOD_DIR)intl.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -107,11 +108,12 @@
     <ClCompile>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
+      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>$(MOD_DIR)intl.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -122,11 +124,12 @@
     <ClCompile>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\lib";LOCALEDIR="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
+      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <DataExecutionPrevention />
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(MOD_DIR)intl.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)intl.def</ModuleDefinitionFile>
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
     <PreBuildEvent>
@@ -141,11 +144,12 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     <ClCompile>
       <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
+      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>$(MOD_DIR)intl.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;expat.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -183,7 +187,6 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\intl\osdep.c" />
-    <ClCompile Include="..\..\gettext-runtime\intl\plural-exp.c" />
     <ClCompile Include="..\..\gettext-runtime\intl\plural.c" />
     <ClCompile Include="..\..\gettext-runtime\intl\printf-args.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -199,12 +202,6 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\intl\printf.c" />
     <ClCompile Include="..\..\gettext-runtime\intl\relocatable.c" />
-    <ClCompile Include="..\..\gettext-runtime\intl\setlocale.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\intl\textdomain.c" />
     <ClCompile Include="..\..\gettext-runtime\intl\threadlib.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -228,7 +225,8 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\src\codekiddy-libintl_setlocale.c" />
+    <ClCompile Include="..\src\gettext-runtime\plural-exp.c" />
+    <ClCompile Include="..\src\gettext-runtime\setlocale.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\gettext-runtime\intl\eval-plural.h" />
@@ -236,12 +234,12 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     <ClInclude Include="..\..\gettext-runtime\intl\gettextP.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\gmo.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\hash-string.h" />
-    <ClInclude Include="..\..\gettext-runtime\intl\libgnuintl.h" />
+    <ClInclude Include="..\src\gettext-runtime\plural-exp.h" />
+    <ClInclude Include="..\src\libgnuintl.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\loadinfo.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\localcharset.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\lock.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\os2compat.h" />
-    <ClInclude Include="..\..\gettext-runtime\intl\plural-exp.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\printf-args.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\printf-parse.h" />
     <ClInclude Include="..\..\gettext-runtime\intl\relocatable.h" />
@@ -253,17 +251,17 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
     <ClInclude Include="..\..\gettext-runtime\intl\xsize.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="src\libintl-x64.rc">
+    <ResourceCompile Include="..\src\libintl-x64.rc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ResourceCompile>
-    <ResourceCompile Include="src\libintl.rc">
+    <ResourceCompile Include="..\src\libintl.rc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\src\codekiddy-intl.def" />
+    <None Include="..\def\intl.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

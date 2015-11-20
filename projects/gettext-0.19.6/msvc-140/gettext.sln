@@ -22,6 +22,23 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B00E1593-5DC7-4706-9B69-1DD03A7AAE96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{7979FA5F-8013-46FB-8578-70B85A14D958}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gettext-runtime", "gettext-runtime", "{CE049BDC-1636-42B0-805C-9A5430C87487}"
+	ProjectSection(SolutionItems) = preProject
+		src\gettext-runtime\config.h = src\gettext-runtime\config.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gettext-tools", "gettext-tools", "{2028080E-981B-448E-81CC-93A7CF63F92F}"
+	ProjectSection(SolutionItems) = preProject
+		src\gettext-tools\config.h = src\gettext-tools\config.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libasprintf", "libasprintf", "{99B3E8B9-AF07-44C6-9C39-0C6299A10E27}"
+	ProjectSection(SolutionItems) = preProject
+		src\libasprintf\config.h = src\libasprintf\config.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configuration", "configuration", "{E0214A07-B0F1-4D4D-BB57-91BB29D985AB}"
 	ProjectSection(SolutionItems) = preProject
 		configuration\debug-32.bat = configuration\debug-32.bat
 		configuration\debug-32.compiler = configuration\debug-32.compiler
@@ -37,20 +54,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{7979FA
 		configuration\release-64.sh = configuration\release-64.sh
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "get-text-runtime", "get-text-runtime", "{CE049BDC-1636-42B0-805C-9A5430C87487}"
-	ProjectSection(SolutionItems) = preProject
-		..\gettext-runtime\config.h = ..\gettext-runtime\config.h
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "get-test-tools", "get-test-tools", "{2028080E-981B-448E-81CC-93A7CF63F92F}"
-	ProjectSection(SolutionItems) = preProject
-		..\gettext-tools\config.h = ..\gettext-tools\config.h
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libasprintf", "libasprintf", "{99B3E8B9-AF07-44C6-9C39-0C6299A10E27}"
-	ProjectSection(SolutionItems) = preProject
-		..\gettext-runtime\libasprintf\config.h = ..\gettext-runtime\libasprintf\config.h
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libasprintf", "libasprintf\libasprintf.vcxproj", "{01C84084-D700-4F5A-AF1D-765C36A5F785}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,9 +97,21 @@ Global
 		{46E91814-0E89-4CA3-A39B-F2895ACE083C}.Release|x64.ActiveCfg = Release|x64
 		{46E91814-0E89-4CA3-A39B-F2895ACE083C}.Release|x64.Build.0 = Release|x64
 		{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}.Debug|Win32.Build.0 = Debug|Win32
 		{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}.Debug|x64.ActiveCfg = Debug|x64
+		{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}.Debug|x64.Build.0 = Debug|x64
 		{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}.Release|Win32.ActiveCfg = Release|Win32
+		{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}.Release|Win32.Build.0 = Release|Win32
 		{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}.Release|x64.ActiveCfg = Release|x64
+		{843FD3CF-BCCE-484B-AFFD-ED67BB2ABBBA}.Release|x64.Build.0 = Release|x64
+		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Debug|Win32.ActiveCfg = Debug|Win32
+		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Debug|Win32.Build.0 = Debug|Win32
+		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Debug|x64.ActiveCfg = Debug|x64
+		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Debug|x64.Build.0 = Debug|x64
+		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Release|Win32.ActiveCfg = Release|Win32
+		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Release|Win32.Build.0 = Release|Win32
+		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Release|x64.ActiveCfg = Release|x64
+		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,5 +122,6 @@ Global
 		{CE049BDC-1636-42B0-805C-9A5430C87487} = {7979FA5F-8013-46FB-8578-70B85A14D958}
 		{2028080E-981B-448E-81CC-93A7CF63F92F} = {7979FA5F-8013-46FB-8578-70B85A14D958}
 		{99B3E8B9-AF07-44C6-9C39-0C6299A10E27} = {7979FA5F-8013-46FB-8578-70B85A14D958}
+		{E0214A07-B0F1-4D4D-BB57-91BB29D985AB} = {7979FA5F-8013-46FB-8578-70B85A14D958}
 	EndGlobalSection
 EndGlobal

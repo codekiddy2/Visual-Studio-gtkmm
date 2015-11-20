@@ -67,9 +67,6 @@
     <ClCompile Include="..\..\gettext-runtime\intl\plural.c">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\plural-exp.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\intl\printf.c">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -94,9 +91,6 @@
     <ClCompile Include="..\..\gettext-runtime\intl\printf-parse.c">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\setlocale.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\intl\threadlib.c">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -109,14 +103,14 @@
     <ClCompile Include="..\..\gettext-runtime\intl\xsize.c">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\codekiddy-libintl_setlocale.c">
+    <ClCompile Include="..\src\gettext-runtime\setlocale.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gettext-runtime\plural-exp.c">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\gettext-runtime\intl\libgnuintl.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gettext-runtime\intl\eval-plural.h">
       <Filter>Headers</Filter>
     </ClInclude>
@@ -174,6 +168,12 @@
     <ClInclude Include="..\..\gettext-runtime\intl\xsize.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\libgnuintl.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gettext-runtime\plural-exp.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Sources">
@@ -187,10 +187,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="src\libintl-x64.rc">
+    <ResourceCompile Include="..\src\libintl.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
-    <ResourceCompile Include="src\libintl.rc">
+    <ResourceCompile Include="..\src\libintl-x64.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

@@ -87,12 +87,12 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(ROOT_DIR)include mkdir $(ROOT_DIR)include
-cd $(ROOT_DIR)include
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+cd $(INCLUDE_DIR)
 mkdir iconv
 cd iconv
-copy /Y $(SRC_DIR)msvc-120\libiconv\iconv.h
-copy /Y $(SRC_DIR)msvc-120\libiconv\localcharset.h
+copy /Y $(SolutionDir)libiconv\iconv.h
+copy /Y $(SolutionDir)libiconv\localcharset.h
 xcopy /Y $(SRC_DIR)lib\*.h
 </Command>
     </PreBuildEvent>
@@ -109,12 +109,12 @@ xcopy /Y $(SRC_DIR)lib\*.h
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(ROOT_DIR)include mkdir $(ROOT_DIR)include
-cd $(ROOT_DIR)include
-mkdir iconv
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+cd $(INCLUDE_DIR)
+if not exist iconv mkdir iconv
 cd iconv
-copy /Y $(SRC_DIR)msvc-120\libiconv\iconv.h
-copy /Y $(SRC_DIR)msvc-120\libiconv\localcharset.h
+copy /Y $(SolutionDir)libiconv\iconv.h
+copy /Y $(SolutionDir)libiconv\localcharset.h
 xcopy /Y $(SRC_DIR)lib\*.h
 </Command>
     </PreBuildEvent>
@@ -131,12 +131,12 @@ xcopy /Y $(SRC_DIR)lib\*.h
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(ROOT_DIR)include mkdir $(ROOT_DIR)include
-cd $(ROOT_DIR)include
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+cd $(INCLUDE_DIR)
 mkdir iconv
 cd iconv
-copy /Y $(SRC_DIR)msvc-120\libiconv\iconv.h
-copy /Y $(SRC_DIR)msvc-120\libiconv\localcharset.h
+copy /Y $(SolutionDir)libiconv\iconv.h
+copy /Y $(SolutionDir)libiconv\localcharset.h
 xcopy /Y $(SRC_DIR)lib\*.h
 </Command>
     </PreBuildEvent>
@@ -153,12 +153,12 @@ xcopy /Y $(SRC_DIR)lib\*.h
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(ROOT_DIR)include mkdir $(ROOT_DIR)include
-cd $(ROOT_DIR)include
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+cd $(INCLUDE_DIR)
 mkdir iconv
 cd iconv
-copy /Y $(SRC_DIR)msvc-120\libiconv\iconv.h
-copy /Y $(SRC_DIR)msvc-120\libiconv\localcharset.h
+copy /Y $(SolutionDir)libiconv\iconv.h
+copy /Y $(SolutionDir)libiconv\localcharset.h
 xcopy /Y $(SRC_DIR)lib\*.h
 </Command>
     </PreBuildEvent>

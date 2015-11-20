@@ -90,11 +90,11 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir intl
-cd intl
-copy $(SRC_DIR)gettext-runtime\intl\*.h /Y
-copy libgnuintl.h libintl.h</Command>
+cd $(INCLUDE_DIR)
+if not exist gettext\intl mkdir gettext\intl
+cd gettext\intl
+xcopy $(SRC_DIR)gettext-runtime\intl\*.h /Y
+copy $(MOD_DIR)libgnuintl.h libintl.h</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Installing libintl ...</Message>
@@ -111,11 +111,11 @@ copy libgnuintl.h libintl.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir intl
-cd intl
-copy $(SRC_DIR)gettext-runtime\intl\*.h /Y
-copy libgnuintl.h libintl.h</Command>
+cd $(INCLUDE_DIR)
+if not exist gettext\intl mkdir gettext\intl
+cd gettext\intl
+xcopy $(SRC_DIR)gettext-runtime\intl\*.h /Y
+copy $(MOD_DIR)libgnuintl.h libintl.h</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Installing libintl ...</Message>
@@ -132,11 +132,11 @@ copy libgnuintl.h libintl.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir intl
-cd intl
-copy $(SRC_DIR)gettext-runtime\intl\*.h /Y
-copy libgnuintl.h libintl.h</Command>
+cd $(INCLUDE_DIR)
+if not exist gettext\intl mkdir gettext\intl
+cd gettext\intl
+xcopy $(SRC_DIR)gettext-runtime\intl\*.h /Y
+copy $(MOD_DIR)libgnuintl.h libintl.h</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Installing libintl ...</Message>
@@ -153,11 +153,11 @@ copy libgnuintl.h libintl.h</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
-mkdir intl
-cd intl
-copy $(SRC_DIR)gettext-runtime\intl\*.h /Y
-copy libgnuintl.h libintl.h</Command>
+cd $(INCLUDE_DIR)
+if not exist gettext\intl mkdir gettext\intl
+cd gettext\intl
+xcopy $(SRC_DIR)gettext-runtime\intl\*.h /Y
+copy $(MOD_DIR)libgnuintl.h libintl.h</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Installing libintl ...</Message>
