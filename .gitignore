@@ -170,7 +170,7 @@ ipch/
 *.FT
 
 #cryptopp test files
-*.dat
+**/TestData/*.dat
 
 
 # ==============

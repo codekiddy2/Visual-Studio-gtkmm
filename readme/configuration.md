@@ -3,7 +3,7 @@
 * libffi (mozilla-build)
 * expat (cmake-gui) configuration is optional ?
 * freeglut (cmake-gui) configuration is optional ?
-* gettext (mozilla-build)
+* gettext (mozilla-build) configuration is optional
 * pkg-config (mozilla-build)
 * harfbuzz (mozilla-build) configuration is optional
 * readline ?
