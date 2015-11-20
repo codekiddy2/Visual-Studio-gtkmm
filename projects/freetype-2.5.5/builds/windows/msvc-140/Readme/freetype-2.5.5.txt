@@ -33,7 +33,7 @@ ie: C:\Windows\Fonts\Arial.ttf some_text
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-freerype_dll project include custom header, make sure to upgrade that header if building new
+freerype_dll project includes custom header, make sure to upgrade that header if building new
 version of freetype.
 customization includes following in ftconfig.h line 353:
 

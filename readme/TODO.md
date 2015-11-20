@@ -45,7 +45,7 @@
 * define what solution version numbers means
 * not all projects follow design rules
 * some projects output lib files for executables (test-iconv.exe)
-* some projects output pdb into both bin and symbols dir (all projects?) (edit, only debug configurations)
+* some projects output pdb into both bin and symbols dir (all projects?) (edit, only debug configurations, for static libs into SYMBOLS_DIR for dlls and exe into BIN_DIR, behavior due to incremental linking and /Zi option: https://msdn.microsoft.com/en-us/library/yd4f8bd1(v=vs.90).aspx)
 * not all links point to direct download page (GNOME projects)
 * it is possible that newer version packages have source files and headers which are not yet included in projects.
 * check references, all need to have "same" settings. ie. copy local etc...
@@ -57,3 +57,6 @@
 * [HIGH PRIORITY] some test projects with both static and release configurations might link against either dll or lib only, instead of by configuration type 
 * not all projects have /Zi flag set (sellect them all to quickly see the "different options"
 * compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include
+* only dll's generate a map file, check why..
+* [HIGH PRIORITY] define against which libs projects link, dll.lib or lib, some test projects ie. link differently for each configuration. (harfbuzz most notably)
+* some projects create output folders within solution, chech which ones.

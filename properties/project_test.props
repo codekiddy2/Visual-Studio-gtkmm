@@ -5,6 +5,19 @@
   <PropertyGroup>
     <OutDir>$(TEST_DIR)</OutDir>
   </PropertyGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AssemblerListingLocation>$(SYMBOLS_DIR)test\asm\$(TargetName).asm</AssemblerListingLocation>
+      <XMLDocumentationFileName>$(SYMBOLS_DIR)test\xml\$(TargetName).xml</XMLDocumentationFileName>
+    </ClCompile>
+    <Link>
+      <ProgramDatabaseFile>$(SYMBOLS_DIR)test\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Link>
+      <MapFileName>$(SYMBOLS_DIR)test\map\$(TargetName).map</MapFileName>
+      <ImportLibrary>$(LIB_DIR)test\$(TargetName)$(TargetExt).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
