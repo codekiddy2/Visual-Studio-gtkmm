@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B51E3679-EFD8-409D-8B41-E172AB6CF7C9}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>epoxy_generated</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\gl.xml">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/epoxy/gl_generated.h, src/gl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating include/epoxy/gl_generated.h, src/gl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating include/epoxy/gl_generated.h, src/gl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating include/epoxy/gl_generated.h, src/gl_generated_dispatch.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/gl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/gl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/gl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/gl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)registry/gl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\gl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)registry/gl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\gl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)registry/gl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\gl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)registry/gl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\gl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)include\epoxy\gl_generated.h;$(SRC_DIR)msvc-140\src\gl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)include\epoxy\gl_generated.h;$(SRC_DIR)msvc-140\src\gl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)include\epoxy\gl_generated.h;$(SRC_DIR)msvc-140\src\gl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)include\epoxy\gl_generated.h;$(SRC_DIR)msvc-140\src\gl_generated_dispatch.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\egl.xml">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/epoxy/egl_generated.h, src/egl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating include/epoxy/egl_generated.h, src/egl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating include/epoxy/egl_generated.h, src/egl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating include/epoxy/egl_generated.h, src/egl_generated_dispatch.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/egl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/egl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/egl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/egl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)registry/egl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\egl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)registry/egl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\egl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)registry/egl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\egl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)registry/egl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\egl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)msvc-140\include\epoxy\egl_generated.h;$(SRC_DIR)msvc-140\src\egl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)msvc-140\include\epoxy\egl_generated.h;$(SRC_DIR)msvc-140\src\egl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)msvc-140\include\epoxy\egl_generated.h;$(SRC_DIR)msvc-140\src\egl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)msvc-140\include\epoxy\egl_generated.h;$(SRC_DIR)msvc-140\src\egl_generated_dispatch.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\wgl.xml">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/epoxy/wgl_generated.h, src/wgl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating include/epoxy/wgl_generated.h, src/wgl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating include/epoxy/wgl_generated.h, src/wgl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating include/epoxy/wgl_generated.h, src/wgl_generated_dispatch.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/wgl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/wgl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/wgl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/wgl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)registry/wgl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\wgl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)registry/wgl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\wgl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)registry/wgl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\wgl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)registry/wgl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\wgl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)msvc-140\include\epoxy\wgl_generated.h;$(SRC_DIR)msvc-140\src\wgl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)msvc-140\include\epoxy\wgl_generated.h;$(SRC_DIR)msvc-140\src\wgl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)msvc-140\include\epoxy\wgl_generated.h;$(SRC_DIR)msvc-140\src\wgl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)msvc-140\include\epoxy\wgl_generated.h;$(SRC_DIR)msvc-140\src\wgl_generated_dispatch.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\glx.xml">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/epoxy/glx_generated.h, src/glx_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating include/epoxy/glx_generated.h, src/glx_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating include/epoxy/glx_generated.h, src/glx_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating include/epoxy/glx_generated.h, src/glx_generated_dispatch.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/glx.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/glx.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/glx.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/glx.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)registry/glx.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\glx.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)registry/glx.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\glx.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)registry/glx.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\glx.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)registry/glx.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\glx.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)msvc-140\include\epoxy\glx_generated.h;$(SRC_DIR)msvc-140\src\glx_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)msvc-140\include\epoxy\glx_generated.h;$(SRC_DIR)msvc-140\src\glx_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)msvc-140\include\epoxy\glx_generated.h;$(SRC_DIR)msvc-140\src\glx_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)msvc-140\include\epoxy\glx_generated.h;$(SRC_DIR)msvc-140\src\glx_generated_dispatch.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\gl_generated.h" />
+    <None Include="src\gl_generated_dispatch.c" />
+    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\egl_generated.h" />
+    <None Include="src\egl_generated_dispatch.c" />
+    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\wgl_generated.h" />
+    <None Include="src\wgl_generated_dispatch.c" />
+    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\glx_generated.h" />
+    <None Include="src\glx_generated_dispatch.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

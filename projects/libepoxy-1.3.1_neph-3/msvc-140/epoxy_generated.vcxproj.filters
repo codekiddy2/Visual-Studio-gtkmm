@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\egl.xml">
+      <Filter>Generate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\gl.xml">
+      <Filter>Generate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\glx.xml">
+      <Filter>Generate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\wgl.xml">
+      <Filter>Generate</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\gl_generated.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\egl_generated.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\wgl_generated.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\glx_generated.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="src\egl_generated_dispatch.c">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\gl_generated_dispatch.c">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\glx_generated_dispatch.c">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\wgl_generated_dispatch.c">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C1F554D3-060E-4769-9BD1-91B369A5A686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1A95A360-1D27-48ED-BBEB-544BA234A66A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generate">
+      <UniqueIdentifier>{dba087e7-d254-427b-b4a9-3e462bf5d7d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

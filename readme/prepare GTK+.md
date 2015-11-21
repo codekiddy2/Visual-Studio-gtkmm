@@ -59,8 +59,10 @@
 >default dir at runtime = libdir/gtk-3.0/3.0.0/immodules.cache
 >collects information about loadable input method modules for GTK+
 
+>--update-cache Write the output to the default cache location instead of stdout
+
 	gtk-query-immodules-3.0 --update-cache
-	gtk-query-immodules-3.0 > D:/Github/Visual-Studio-gtkmm/output/v140\Debug/x64/lib/gtk-3.0/3.0.0/etc/immodules.cache
+	#gtk-query-immodules-3.0 > D:/Github/Visual-Studio-gtkmm/output/v140/Debug/x64/lib/gtk-3.0/3.0.0/etc/immodules.cache
 
 **Update icon cache**
 

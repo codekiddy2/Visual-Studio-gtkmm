@@ -38,6 +38,7 @@
     <ProjectGuid>{FC5AADB5-95CD-4BF0-BA8B-0C16FE7073FF}</ProjectGuid>
     <RootNamespace>gtkprebuild</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

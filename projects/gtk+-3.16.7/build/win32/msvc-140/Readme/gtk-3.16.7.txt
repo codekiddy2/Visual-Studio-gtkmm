@@ -67,6 +67,9 @@ make sure gtk-update-icon-cache-3.0 works and tha build process of icons works a
 
 gtk v 3.18.4 does not work, it calls for cairo function that does not exist in cairo.
 
+update icon cache prebuild event fails.
+edit: it works if compilation of icons was fine.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -84,9 +87,3 @@ TESTINGS:
 TODO:
 
 add more test projects.
-update icon cache prebuild event fails, check why and fix.
-
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\ removed from
-post build event, fix hicolor cache making and return command back
-
-check if test projects need $(SRC_DIR)glib for includes search

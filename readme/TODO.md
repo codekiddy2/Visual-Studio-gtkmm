@@ -15,7 +15,7 @@
 * use mainCRTStartup for base_windows.props and update dpendent projects
 * create master config.h for all solutions and solution level config.h headers
 * sincronyze compiler/linker flags for custom build cmd projects.
-* minimize amount of build events in project to reduce the "cmd exit = blah"
+* minimize amount of build events in project to reduce the "cmd exit = blah" (edit: check for existence of dependent dlls or libs, command fails if there is project build failed)
 * add version number to each lib/dll file.
 * [HIGH PRIORITY] add missing projects to existing solutions (test projects, different versions...)
 * [HIGH PRIORITY] some projects do not need configuration any more, check which one's and update readme files
@@ -62,4 +62,6 @@
 * some projects create output folders within solution, chech which ones.
 * searching projects folder, it turns out there are a lot of pdb files, check if any project is miscofingured about symobls
 * check which source files are missing and which are no longer needed in projects.
-
+* check pdb output names when building both lib and dll in same solution
+* project_test.props can inherit base_console.props directly (edit: test project can be window or dll base, so no)
+* project_test.props should be below solution level property, not above.

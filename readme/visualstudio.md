@@ -22,7 +22,7 @@ Don't prompt me to build, just build
 
 Show me line numbers
 
-* Tools > Options > Text editor C/C++ > Settings
+* Tools > Options > Text editor > All languages
 	* line numbers
 
 
@@ -40,3 +40,6 @@ Show useful buttons
 			* open project
 	* Editor
 		
+Debug currently selected project
+
+* Right click solution > Set startup projects > current selection

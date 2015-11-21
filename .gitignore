@@ -173,9 +173,6 @@ ipch/
 *.GOBJECT
 *.FT
 
-#cryptopp test files
-**/TestData/*.dat
-
 
 # ==============
 # directory root
@@ -203,6 +200,7 @@ ipch/
 # directory level 3
 # =================
 /projects/*/*
+
 
 #atk, gdk-pixbuf, glib, gtk+, pango, pixman
 !/projects/*/build/
@@ -255,6 +253,15 @@ ipch/
 
 #cryptopp test files
 /projects/cryptopp*/msvc-140/TestVectors/
+/projects/cryptopp*/msvc-140/TestData/
+
+#libepoxy generated files
+/projects/libepoxy*/msvc-140/include/
+/projects/libepoxy*/msvc-140/src/
+
+#cairo generated files
+/projects/cairo*/msvc/msvc-140/cairo-features.h
+
 
 # =================
 # directory level 5

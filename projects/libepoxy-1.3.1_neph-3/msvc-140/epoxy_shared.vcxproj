@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{4D2B9CAD-DA01-4F1D-8777-E0A2E7F79469}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>epoxy_shared</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">epoxy</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">epoxy</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">epoxy</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">epoxy</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>EPOXY_DLL;BUILD_WGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\epoxy-test\msvc-140\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EPOXY_DLL;BUILD_WGL;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";epoxy_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <Version>
+      </Version>
+      <LinkStatus />
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>EPOXY_DLL;BUILD_WGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\epoxy-test\msvc-140\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EPOXY_DLL;BUILD_WGL;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";epoxy_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <Version>
+      </Version>
+      <LinkStatus>
+      </LinkStatus>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>EPOXY_DLL;BUILD_WGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\epoxy-test\msvc-140\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EPOXY_DLL;BUILD_WGL;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";epoxy_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <Version>
+      </Version>
+      <LinkStatus>
+      </LinkStatus>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>EPOXY_DLL;BUILD_WGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>D:\GitHub\Visual-Studio-gtkmm\projects\epoxy-test\msvc-140\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EPOXY_DLL;BUILD_WGL;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";epoxy_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <Version>
+      </Version>
+      <LinkStatus>
+      </LinkStatus>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\gl.xml">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/epoxy/gl_generated.h, src/gl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating include/epoxy/gl_generated.h, src/gl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating include/epoxy/gl_generated.h, src/gl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating include/epoxy/gl_generated.h, src/gl_generated_dispatch.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/gl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/gl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/gl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/gl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)registry/gl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\gl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)registry/gl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\gl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)registry/gl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\gl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)registry/gl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\gl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)msvc-140\include\epoxy\gl_generated.h;$(SRC_DIR)msvc-140\src\gl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)msvc-140\include\epoxy\gl_generated.h;$(SRC_DIR)msvc-140\src\gl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)msvc-140\include\epoxy\gl_generated.h;$(SRC_DIR)msvc-140\src\gl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)msvc-140\include\epoxy\gl_generated.h;$(SRC_DIR)msvc-140\src\gl_generated_dispatch.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\wgl.xml">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/epoxy/wgl_generated.h, src/wgl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating include/epoxy/wgl_generated.h, src/wgl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating include/epoxy/wgl_generated.h, src/wgl_generated_dispatch.c</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating include/epoxy/wgl_generated.h, src/wgl_generated_dispatch.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/wgl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/wgl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/wgl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(PYTHON_DIR)python.exe $(SRC_DIR)src/gen_dispatch.py --dir $(SRC_DIR)msvc-140 $(SRC_DIR)registry/wgl.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)registry/wgl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\wgl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)registry/wgl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\wgl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)registry/wgl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\wgl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)registry/wgl.xml;$(SRC_DIR)src\gen_dispatch.py;$(SRC_DIR)registry\wgl.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)msvc-140\include\epoxy\wgl_generated.h;$(SRC_DIR)msvc-140\src\wgl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)msvc-140\include\epoxy\wgl_generated.h;$(SRC_DIR)msvc-140\src\wgl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)msvc-140\include\epoxy\wgl_generated.h;$(SRC_DIR)msvc-140\src\wgl_generated_dispatch.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)msvc-140\include\epoxy\wgl_generated.h;$(SRC_DIR)msvc-140\src\wgl_generated_dispatch.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include\epoxy\gl.h" />
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src\dispatch_common.h" />
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\gl_generated.h" />
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\KHR\khrplatform.h" />
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include\epoxy\wgl.h" />
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\wgl_generated.h" />
+    <ClCompile Include="..\src\dispatch_common.c" />
+    <ClCompile Include="src\gl_generated_dispatch.c" />
+    <ClCompile Include="..\src\dispatch_wgl.c" />
+    <ClCompile Include="src\wgl_generated_dispatch.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -33,7 +33,7 @@
       <PrecompiledHeaderOutputFile>$(INTERMEDIATE_DIR)$(TargetName).pch</PrecompiledHeaderOutputFile>
       <CompileAs>Default</CompileAs>
       <TreatSpecificWarningsAsErrors>4098;4002;4003;4013;4020;4021;4027;4029;4033;4035;4045;4047;4049;4053;4071;4150;4819;4530;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
-      <DisableSpecificWarnings>4101;4244;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4101;4244;4305;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
       <ProgramDataBaseFileName>$(INTERMEDIATE_DIR)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(SYMBOLS_DIR)asm\$(TargetName).asm</AssemblerListingLocation>

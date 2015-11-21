@@ -22,6 +22,7 @@
     <ProjectGuid>{EDBD738F-6666-4FE5-B82F-939EE784456E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>gtkqueryimmodules</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -101,8 +102,9 @@
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
-$(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc\immodules.cache</Command>
+      <Command>if not exist $(BIN_DIR)gtk.dll exit
+$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
+$(BIN_DIR)gtk-query-immodules-3.0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -116,8 +118,9 @@ $(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
-$(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc\immodules.cache</Command>
+      <Command>if not exist $(BIN_DIR)gtk.dll exit
+$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
+$(BIN_DIR)gtk-query-immodules-3.0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -131,8 +134,9 @@ $(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
-$(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc\immodules.cache</Command>
+      <Command>if not exist $(BIN_DIR)gtk.dll exit
+$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
+$(BIN_DIR)gtk-query-immodules-3.0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -146,8 +150,9 @@ $(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
-$(BIN_DIR)gtk-query-immodules-3.0 &gt; $(LIB_DIR)gtk-3.0\$(GtkBinaryVersion)\etc\immodules.cache</Command>
+      <Command>if not exist $(BIN_DIR)gtk.dll exit
+$(BIN_DIR)gtk-query-immodules-3.0 --update-cache
+$(BIN_DIR)gtk-query-immodules-3.0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

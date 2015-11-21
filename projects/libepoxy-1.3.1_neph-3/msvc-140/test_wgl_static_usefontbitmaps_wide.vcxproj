@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DE773F0B-48CF-4DAF-A331-1AD05FC8705F}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>test_wgl_static_usefontbitmaps_wide</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BUILD_WGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;BUILD_WGL;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>epoxy.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BUILD_WGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;BUILD_WGL;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>epoxy.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BUILD_WGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;BUILD_WGL;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>epoxy.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BUILD_WGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;BUILD_WGL;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src;D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>epoxy.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\test\wgl_common.h" />
+    <ClCompile Include="..\test\wgl_common.c" />
+    <ClCompile Include="..\test\wgl_usefontbitmaps.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Github/Visual-Studio-gtkmm/projects/libepoxy-test/msvc-140/epoxy_static.vcxproj">
+      <Project>C805D352-B551-4AE4-B59C-B348061DC50F</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

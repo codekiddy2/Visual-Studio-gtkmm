@@ -22,6 +22,7 @@
     <ProjectGuid>{3281202A-CD26-4C67-B892-EB34BDBC612F}</ProjectGuid>
     <RootNamespace>gtk3demoapplication</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

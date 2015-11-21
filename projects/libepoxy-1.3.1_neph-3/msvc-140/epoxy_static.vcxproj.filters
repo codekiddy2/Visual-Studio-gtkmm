@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\dispatch_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dispatch_wgl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wgl_generated_dispatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gl_generated_dispatch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include\epoxy\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src\dispatch_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\gl_generated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\KHR\khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include\epoxy\wgl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\wgl_generated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\gl.xml">
+      <Filter>Generate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\wgl.xml">
+      <Filter>Generate</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C1F554D3-060E-4769-9BD1-91B369A5A686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1A95A360-1D27-48ED-BBEB-544BA234A66A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generate">
+      <UniqueIdentifier>{4f640f8a-e6a7-429c-98d4-00254d812303}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

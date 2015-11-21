@@ -180,7 +180,11 @@ as well as files which can't be normaly read by using Windows notepad.
 
 
 **Notes**
+
 Notes and changelog which applies to all projects..
 
 /VERBOSE:LIB removed from "base_stack.props"
+
 /NOLOGO set for linker
+
+added ignore w4311 to base_stack (apearing mostly in gtk+, seen elsewhere?)
