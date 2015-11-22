@@ -178,15 +178,3 @@ latest version number. that is the package which we will build.
 the "troubleshooting" file can help to solve problems in case of
 build errors.
 
-
-**Notes**
-
-Notes and changelog which applies to all projects..
-
-/VERBOSE:LIB removed from "base_stack.props"
-
-/NOLOGO set for linker
-
-added ignore w4311 to base_stack (apearing mostly in gtk+, seen elsewhere?)
-
-"Use full paths" set to "no" in base_stack.props.

@@ -121,6 +121,7 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(ProjectName).def</ModuleDefinitionFile>
+      <LinkStatus />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -139,6 +140,7 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(ProjectName).def</ModuleDefinitionFile>
+      <LinkStatus />
     </Link>
     <PostBuildEvent />
   </ItemDefinitionGroup>
