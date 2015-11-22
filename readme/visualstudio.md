@@ -42,4 +42,4 @@ Show useful buttons
 		
 Debug currently selected project
 
-* Right click solution > Set startup projects > current selection
+* Solution properties > Set startup projects > current selection

@@ -13,10 +13,11 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(SRC_DIR)tools\build
-bootstrap.bat</Command>
+if not exist $(B2_DIR) bootstrap.bat</Command>
     </PreBuildEvent>
     <PreLinkEvent>
-      <Command>$(DRIVE):
+      <Command>if exist $(B2_DIR)b2.exe exit
+$(DRIVE):
 cd $(SRC_DIR)tools\build\
 .\b2 install toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) --prefix=$(INSTALL_DIR)BoostBuild\</Command>
     </PreLinkEvent>
@@ -29,14 +30,15 @@ SET BZIP2_LIBPATH=$(LIB_DIR)
 SET ZLIB_BINARY=zlib.dll
 SET ZLIB_LIBPATH=$(LIB_DIR)
 SET ZLIB_INCLUDE=$(INCLUDE_DIR)zlib
-$(B2_DIR)b2 cxxflags="-I $(INCLUDE_DIR)iconv" linkflags="-link -LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 cxxflags="/I $(INCLUDE_DIR)iconv" linkflags="/LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
 echo Installing headers, please wait...
-xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
+REM xcopy .\* $(INCLUDE_DIR)boost /EFQY
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -15,7 +15,11 @@
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>WINVER=0x0A00;_WIN32_WINNT=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="DRIVE">
       <Value>$(DRIVE)</Value>

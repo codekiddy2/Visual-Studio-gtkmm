@@ -41,7 +41,7 @@ http://www.boost.org/build/doc/html/index.html
 Build events must be separated, b2 --install won't work in same build event as bootstrap.bat
 
 Define:
-BOOST_ALL_DYN_LINK to link to dll libs
+BOOST_ALL_DYN_LINK to auto link to dll libs
 BOOST_ALL_NO_LIB to link manually
 
 Following was hard to learn, it's worth noting down:
@@ -55,15 +55,31 @@ SET ZLIB_LIBPATH=$(LIB_DIR)
 SET ZLIB_INCLUDE=$(INCLUDE_DIR)zlib
 
 if there is no macro for library then compiler and linker flags passed are as folows:
-$(B2_DIR)b2 cxxflags="-I $(INCLUDE_DIR)iconv" linkflags="-link -LIBPATH:$(LIB_DIR) iconv.dll.lib"
+
+$(B2_DIR)b2 cxxflags="-I $(INCLUDE_DIR)iconv" linkflags="-LIBPATH:$(LIB_DIR) iconv.dll.lib"
+$(B2_DIR)b2 cxxflags="/I $(INCLUDE_DIR)iconv /I $(INCLUDE_DIR)zlib /I $(INCLUDE_DIR) /LIBPATH:$(LIB_DIR) -link zlib.dll.lib iconv.dll.lib"
+
+following did not work:
+-sZLIB_BINARY=zlib.dll.lib -sZLIB_INCLUDE="D:\GitHub\Visual-Studio-gtkmm\output\v140\Release\x64\include\zlib" -sZLIB_LIBPATH="D:\GitHub\Visual-Studio-gtkmm\output\v140\Release\x64\lib"
+
+following is probably incorrect:
+SET ICONV_BINARY=iconv.dll
+SET ICONV_INCLUDE=$(INCLUDE_DIR)iconv
+SET ICONV_LIBPATH=$(LIB_DIR)
+SET ICONV_PATH=$(ROOT_DIR)
+
+set following variable (only ?) to make boost build zlib "boost_zlib.lib"
+SET ZLIB_SOURCE=D:\Github\Visual-Studio-gtkmm\projects\zlib-1.2.8
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
 1.0.0
 	Debug x64
+	Release x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
 Add test projects
+separeate "install" project
