@@ -39,7 +39,7 @@
       <AssemblerListingLocation>$(SYMBOLS_DIR)asm\$(TargetName).asm</AssemblerListingLocation>
       <ObjectFileName>$(INTERMEDIATE_DIR)</ObjectFileName>
       <BrowseInformationFile>$(INTERMEDIATE_DIR)</BrowseInformationFile>
-      <UseFullPaths>true</UseFullPaths>
+      <UseFullPaths>false</UseFullPaths>
       <PrecompiledHeaderFile>$(TargetName).h</PrecompiledHeaderFile>
       <XMLDocumentationFileName>$(SYMBOLS_DIR)xml\$(TargetName).xml</XMLDocumentationFileName>
       <TreatWarningAsError>false</TreatWarningAsError>

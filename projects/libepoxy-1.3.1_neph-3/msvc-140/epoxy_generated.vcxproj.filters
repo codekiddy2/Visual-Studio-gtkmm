@@ -1,32 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\egl.xml">
+    <CustomBuild Include="..\registry\wgl.xml">
       <Filter>Generate</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\gl.xml">
+    <CustomBuild Include="..\registry\glx.xml">
       <Filter>Generate</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\glx.xml">
+    <CustomBuild Include="..\registry\gl.xml">
       <Filter>Generate</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\wgl.xml">
+    <CustomBuild Include="..\registry\egl.xml">
       <Filter>Generate</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\gl_generated.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\egl_generated.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\wgl_generated.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\glx_generated.h">
-      <Filter>Header Files</Filter>
-    </None>
     <None Include="src\egl_generated_dispatch.c">
       <Filter>Source Files</Filter>
     </None>
@@ -38,6 +26,18 @@
     </None>
     <None Include="src\wgl_generated_dispatch.c">
       <Filter>Source Files</Filter>
+    </None>
+    <None Include="include\epoxy\wgl_generated.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\epoxy\egl_generated.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\epoxy\glx_generated.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="include\epoxy\gl_generated.h">
+      <Filter>Header Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

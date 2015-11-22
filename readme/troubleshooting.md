@@ -1,5 +1,5 @@
 
-**A LIST OF ERRORS AND HOW TO FIX THEM**
+**A LIST OF POSSIBLE ERRORS AND HOW TO FIX THEM**
 
 1. error: The application was unable to start correctly (0xc000007b)
 	1. 32 bit application is loading 64 bit DLL or vice versa.
@@ -27,3 +27,16 @@
 	7. more info at:
 		1. https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(C1083)&rd=true
 		2. https://msdn.microsoft.com/en-us/library/36k2cdd4(v=vs.140).aspx
+
+
+**More info**
+
+You can read more 'readme' files in:
+
+	D:\Github\Visual-Studio-gtkmm\Readme
+	
+Use Visual studio Code, it has nice syntax
+highlighting and allows you browse repository quickly.
+
+Also you'll be able to read any kind of files including editing projects,
+as well as files which can't be normaly read by using Windows notepad.

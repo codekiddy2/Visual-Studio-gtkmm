@@ -142,18 +142,6 @@ except following files:
 Make sure you set up your system and IDE as told.
 
 
-**Final step**
-
-In solution explorer beside this file there might be other files
-named by package and their version. (ex. libiconv-1.14.txt)
-
-These files contain specific information and additional instructions
-you need to perform before starting the build process.
-
-there migh be more such files but you need to read the one with
-latest version number. that is the package which we will build.
-
-
 **Test projects**
 
 Almost each solution has several test projects, their purpose is to
@@ -165,18 +153,30 @@ is causing troubles.
 In which case you can just go down the dependency tree and test each
 library until you find fauly one.
 
+If you wish to run test projects for multiple configurations (ex. x86 x64)
+the best way is to set PATH in debugger environment instead of modifing
+system path in control panel like so:
 
-**Troubleshooting**
+In property manager Select all test projects at once and click on "properties"
+button, or right click properties, then in property pages that opens set
+* "Configuration" to "All configurations"
+* "Platform" to "All platform"
+* Common properties > Debugging > Environment > path=$(BIN_DIR);%path%
 
-You can read other readme files in:
 
-	D:\Github\Visual-Studio-gtkmm\Readme
-	
-Why we use Visual Studio Code now becomes clear, it has nice syntax
-highlighting and allows you browse repository quickly.
+**More info**
 
-Also you'll be able to read any kind of files including editing projects,
-as well as files which can't be normaly read by using Windows notepad.
+In solution explorer beside this file there are other files
+named by package and their version. (ex. libiconv-1.14.txt)
+
+These files contain specific information and additional instructions
+you need to perform before starting the build process.
+
+there migh be more such files but you need to read the one with
+latest version number. that is the package which we will build.
+
+the "troubleshooting" file can help to solve problems in case of
+build errors.
 
 
 **Notes**
@@ -188,3 +188,5 @@ Notes and changelog which applies to all projects..
 /NOLOGO set for linker
 
 added ignore w4311 to base_stack (apearing mostly in gtk+, seen elsewhere?)
+
+"Use full paths" set to "no" in base_stack.props.

@@ -82,7 +82,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -90,7 +90,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -98,7 +98,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -106,10 +106,11 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\gdk\win32\gdkcursor-win32.c" />
@@ -139,6 +140,7 @@
     <ProjectReference Include="gtk-prebuild.vcxproj">
       <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073ff}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

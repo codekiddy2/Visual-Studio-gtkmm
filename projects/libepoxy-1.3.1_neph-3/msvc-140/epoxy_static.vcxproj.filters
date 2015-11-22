@@ -15,30 +15,30 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include\epoxy\gl.h">
+    <ClInclude Include="..\src\dispatch_common.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\src\dispatch_common.h">
+    <ClInclude Include="..\include\epoxy\gl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\gl_generated.h">
+    <ClInclude Include="include\epoxy\gl_generated.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\KHR\khrplatform.h">
+    <ClInclude Include="..\registry\KHR\khrplatform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\include\epoxy\wgl.h">
+    <ClInclude Include="..\include\epoxy\wgl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\msvc-140\include\epoxy\wgl_generated.h">
+    <ClInclude Include="include\epoxy\wgl_generated.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\gl.xml">
+    <CustomBuild Include="..\registry\gl.xml">
       <Filter>Generate</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\libepoxy-test\registry\wgl.xml">
+    <CustomBuild Include="..\registry\wgl.xml">
       <Filter>Generate</Filter>
     </CustomBuild>
   </ItemGroup>

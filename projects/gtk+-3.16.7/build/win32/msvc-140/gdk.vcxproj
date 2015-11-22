@@ -141,7 +141,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -153,7 +153,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;$(SRC_DIR)gdk\broadway;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -165,7 +165,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -177,7 +177,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;$(SRC_DIR)gdk\broadway;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -189,7 +189,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -201,7 +201,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;$(SRC_DIR)gdk\broadway;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -213,7 +213,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -225,7 +225,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;$(SRC_DIR)gdk\broadway;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>

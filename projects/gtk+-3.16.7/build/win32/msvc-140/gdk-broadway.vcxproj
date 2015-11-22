@@ -131,6 +131,7 @@
     <ProjectReference Include="gtk-prebuild.vcxproj">
       <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073ff}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

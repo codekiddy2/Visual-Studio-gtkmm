@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_WGL|Win32">
+      <Configuration>Debug_WGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_WGL|x64">
+      <Configuration>Debug_WGL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_WGL|Win32">
+      <Configuration>Release_WGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_WGL|x64">
+      <Configuration>Release_WGL</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
@@ -19,11 +35,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\epoxy_generated.vcxproj">
-      <Project>{b51e3679-efd8-409d-8b41-e172ab6cf7c9}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="..\epoxy_shared.vcxproj">
       <Project>{4d2b9cad-da01-4f1d-8777-e0a2e7f79469}</Project>
       <Private>false</Private>
@@ -31,11 +42,6 @@
     </ProjectReference>
     <ProjectReference Include="..\epoxy_static.vcxproj">
       <Project>{c805d352-b551-4ae4-b59c-b348061dc50f}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\Test\khronos_typedefs.vcxproj">
-      <Project>{fdc09f30-ae87-4cf4-9fea-528ac37c7d49}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
@@ -51,7 +57,19 @@
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_WGL|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_WGL|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
@@ -63,7 +81,19 @@
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_WGL|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_WGL|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
@@ -78,7 +108,19 @@
     <Import Project="..\..\..\..\properties\base_utility.props" />
     <Import Project="..\..\..\..\properties\solution_epoxy.props" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_WGL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_WGL|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_utility.props" />
@@ -90,7 +132,19 @@
     <Import Project="..\..\..\..\properties\base_utility.props" />
     <Import Project="..\..\..\..\properties\solution_epoxy.props" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_WGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_epoxy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_WGL|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\properties\base_utility.props" />
@@ -113,6 +167,26 @@ cd $(ROOT_DIR)
 if not exist include\epoxy mkdir include\epoxy
 cd include\epoxy
 xcopy $(SRC_DIR)include\epoxy\*.h /Y
+xcopy $(SRC_DIR)msvc-140\include\epoxy\*.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_WGL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include\epoxy mkdir include\epoxy
+cd include\epoxy
+xcopy $(SRC_DIR)include\epoxy\*.h /Y
+xcopy $(SRC_DIR)msvc-140\include\epoxy\*.h /Y
+cd $(INCLUDE_DIR)
 if not exist KHR mkdir KHR
 cd KHR
 copy $(SRC_DIR)registry\KHR\*.h /Y</Command>
@@ -133,6 +207,26 @@ cd $(ROOT_DIR)
 if not exist include\epoxy mkdir include\epoxy
 cd include\epoxy
 xcopy $(SRC_DIR)include\epoxy\*.h /Y
+xcopy $(SRC_DIR)msvc-140\include\epoxy\*.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_WGL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include\epoxy mkdir include\epoxy
+cd include\epoxy
+xcopy $(SRC_DIR)include\epoxy\*.h /Y
+xcopy $(SRC_DIR)msvc-140\include\epoxy\*.h /Y
+cd $(INCLUDE_DIR)
 if not exist KHR mkdir KHR
 cd KHR
 copy $(SRC_DIR)registry\KHR\*.h /Y</Command>
@@ -153,6 +247,26 @@ cd $(ROOT_DIR)
 if not exist include\epoxy mkdir include\epoxy
 cd include\epoxy
 xcopy $(SRC_DIR)include\epoxy\*.h /Y
+xcopy $(SRC_DIR)msvc-140\include\epoxy\*.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_WGL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include\epoxy mkdir include\epoxy
+cd include\epoxy
+xcopy $(SRC_DIR)include\epoxy\*.h /Y
+xcopy $(SRC_DIR)msvc-140\include\epoxy\*.h /Y
+cd $(INCLUDE_DIR)
 if not exist KHR mkdir KHR
 cd KHR
 copy $(SRC_DIR)registry\KHR\*.h /Y</Command>
@@ -173,6 +287,26 @@ cd $(ROOT_DIR)
 if not exist include\epoxy mkdir include\epoxy
 cd include\epoxy
 xcopy $(SRC_DIR)include\epoxy\*.h /Y
+xcopy $(SRC_DIR)msvc-140\include\epoxy\*.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_WGL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(ROOT_DIR)
+if not exist include\epoxy mkdir include\epoxy
+cd include\epoxy
+xcopy $(SRC_DIR)include\epoxy\*.h /Y
+xcopy $(SRC_DIR)msvc-140\include\epoxy\*.h /Y
+cd $(INCLUDE_DIR)
 if not exist KHR mkdir KHR
 cd KHR
 copy $(SRC_DIR)registry\KHR\*.h /Y</Command>
