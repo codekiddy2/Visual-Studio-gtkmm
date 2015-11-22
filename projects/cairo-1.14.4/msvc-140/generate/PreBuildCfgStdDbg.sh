@@ -1,2 +1,2 @@
 $(PreBuildCfgStd)
-echo #define CAIRO_HAS_TRACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_TRACE 1 >> $(FEATURES_DIR)$(Configuration).FEATURES

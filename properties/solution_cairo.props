@@ -2,63 +2,78 @@
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
     <SRC_DIR>$(PROJECTS_DIR)cairo-1.14.4\</SRC_DIR>
-    <PreBuildCfgStd>if exist $(INTERMEDIATE_DIR)$(Configuration).FEATURES goto DONE_CONFIG
-if exist $(INTERMEDIATE_DIR)*.FEATURES del $(INTERMEDIATE_DIR)*.FEATURES
-if exist $(INTERMEDIATE_DIR)*.FT del $(INTERMEDIATE_DIR)*.FT
-if exist $(INTERMEDIATE_DIR)*.FC del $(INTERMEDIATE_DIR)*.FC
-if exist $(INTERMEDIATE_DIR)*.GL del $(INTERMEDIATE_DIR)*.GL
-if exist $(INTERMEDIATE_DIR)*.GOBJECT del $(INTERMEDIATE_DIR)*.GOBJECT
-echo #define CAIRO_HAS_WIN32_SURFACE 1 > $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_WIN32_FONT 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_PNG_FUNCTIONS 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_IMAGE_SURFACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_PS_SURFACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_PDF_SURFACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_SVG_SURFACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_SCRIPT_SURFACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_TEE_SURFACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_XML_SURFACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
+    <PreBuildCfgStd>
+if not exist $(ROOT_DIR)intermediate\$(SolutionName)\install mkdir $(ROOT_DIR)intermediate\$(SolutionName)\install
+if exist $(FEATURES_DIR)$(Configuration).FEATURES goto DONE_CONFIG
+if exist $(FEATURES_DIR)*.FEATURES del $(FEATURES_DIR)*.FEATURES
+if exist $(FEATURES_DIR)*.FT del $(FEATURES_DIR)*.FT
+if exist $(FEATURES_DIR)*.FC del $(FEATURES_DIR)*.FC
+if exist $(FEATURES_DIR)*.GL del $(FEATURES_DIR)*.GL
+if exist $(FEATURES_DIR)*.GOBJECT del $(FEATURES_DIR)*.GOBJECT
+echo #define CAIRO_HAS_WIN32_SURFACE 1 &gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_WIN32_FONT 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_PNG_FUNCTIONS 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_IMAGE_SURFACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_PS_SURFACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_PDF_SURFACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_SVG_SURFACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_SCRIPT_SURFACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_TEE_SURFACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_XML_SURFACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
 :DONE_CONFIG
-mkdir $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-deprecated.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-pdf.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-ps.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-script.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-svg.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-tee.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-win32.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-xml.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-copy $(SRC_DIR)src\cairo-version.h $(ROOT_DIR)intermediate\$(SolutionName)\include\</PreBuildCfgStd>
-    <PreBuildCfgStdDbg>$(PreBuildCfgStd)
-echo #define CAIRO_HAS_TRACE 1 &gt;&gt; $(INTERMEDIATE_DIR)$(Configuration).FEATURES</PreBuildCfgStdDbg>
-    <PreBuildCfgFT>if exist $(INTERMEDIATE_DIR)$(Configuration).FT goto DONE_FT
-echo #define CAIRO_HAS_FT_FONT 1 > $(INTERMEDIATE_DIR)$(Configuration).FT
-echo #define CAIRO_HAS_FT_FONT 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-copy $(SRC_DIR)src\cairo-ft.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-:DONE_FT</PreBuildCfgFT>
-    <PreBuildCfgFC>if exist $(INTERMEDIATE_DIR)$(Configuration).FC goto DONE_FC
-echo #define CAIRO_HAS_FC_FONT 1 > $(INTERMEDIATE_DIR)$(Configuration).FC
-echo #define CAIRO_HAS_FC_FONT 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-:DONE_FC</PreBuildCfgFC>
-    <PreBuildCfgGL>if exist $(INTERMEDIATE_DIR)\$(Configuration).GL goto DONE_GL
-echo #define CAIRO_HAS_GL_SURFACE 1 > $(INTERMEDIATE_DIR)$(Configuration).GL
-echo #define CAIRO_HAS_WGL_FUNCTIONS 1 >> $(INTERMEDIATE_DIR)$(Configuration).GL
-echo #define CAIRO_HAS_GL_SURFACE 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-echo #define CAIRO_HAS_WGL_FUNCTIONS 1 >> $(INTERMEDIATE_DIR)$(Configuration).FEATURES
-copy $(SRC_DIR)src\cairo-gl.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-:DONE_GL</PreBuildCfgGL>
-    <GenTmpFeaturesHeader>if not exist $(INTERMEDIATE_DIR)$(Configuration).FEATURES del $(ROOT_DIR)intermediate\$(SolutionName)\include\cairo-features.h
-echo /* Generated by VS Project File  Do not edit. */ > $(ROOT_DIR)intermediate\$(SolutionName)\include\cairo-features.h
-echo #ifndef CAIRO_FEATURES_H >> $(ROOT_DIR)intermediate\$(SolutionName)\include\cairo-features.h
-echo #define CAIRO_FEATURES_H >> $(ROOT_DIR)intermediate\$(SolutionName)\include\cairo-features.h
-type $(INTERMEDIATE_DIR)$(Configuration).FEATURES >> $(ROOT_DIR)intermediate\$(SolutionName)\include\cairo-features.h
-echo #endif >> $(ROOT_DIR)intermediate\$(SolutionName)\include\cairo-features.h</GenTmpFeaturesHeader>
-    <PreBuildCfgGobject>if exist $(INTERMEDIATE_DIR)$(Configuration).GOBJECT goto DONE_GOBJECT
-echo #define CAIRO_HAS_GOBJECT_FUNCTIONS 1 > $(ROOT_DIR)intermediate\$(SolutionName)cairo\$(Configuration).GOBJECT
-echo #define CAIRO_HAS_GOBJECT_FUNCTIONS 1 >> $(ROOT_DIR)intermediate\$(SolutionName)cairo\$(Configuration).FEATURES
-copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(ROOT_DIR)intermediate\$(SolutionName)\include\
-:DONE_GOBJECT</PreBuildCfgGobject>
+copy $(SRC_DIR)src\cairo.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-deprecated.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-pdf.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-ps.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-script.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-svg.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-tee.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-win32.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-xml.h $(FEATURES_DIR) /Y
+copy $(SRC_DIR)src\cairo-version.h $(FEATURES_DIR) /Y
+    </PreBuildCfgStd>
+    <PreBuildCfgStdDbg>
+$(PreBuildCfgStd)
+echo #define CAIRO_HAS_TRACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+    </PreBuildCfgStdDbg>
+    <PreBuildCfgFT>
+if exist $(FEATURES_DIR)$(Configuration).FT goto DONE_FT
+echo #define CAIRO_HAS_FT_FONT 1 &gt; $(FEATURES_DIR)$(Configuration).FT
+echo #define CAIRO_HAS_FT_FONT 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+copy $(SRC_DIR)src\cairo-ft.h $(FEATURES_DIR) /Y
+:DONE_FT
+    </PreBuildCfgFT>
+    <PreBuildCfgFC>
+if exist $(FEATURES_DIR)$(Configuration).FC goto DONE_FC
+echo #define CAIRO_HAS_FC_FONT 1 &gt; $(FEATURES_DIR)$(Configuration).FC
+echo #define CAIRO_HAS_FC_FONT 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+:DONE_FC
+    </PreBuildCfgFC>
+    <PreBuildCfgGL>
+if exist $(FEATURES_DIR)$(Configuration).GL goto DONE_GL
+echo #define CAIRO_HAS_GL_SURFACE 1 &gt; $(FEATURES_DIR)$(Configuration).GL
+echo #define CAIRO_HAS_WGL_FUNCTIONS 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).GL
+echo #define CAIRO_HAS_GL_SURFACE 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+echo #define CAIRO_HAS_WGL_FUNCTIONS 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+copy $(SRC_DIR)src\cairo-gl.h $(FEATURES_DIR) /Y
+:DONE_GL
+    </PreBuildCfgGL>
+    <GenTmpFeaturesHeader>
+if not exist $(FEATURES_DIR)$(Configuration).FEATURES del $(FEATURES_DIR)cairo-features.h
+echo /* Generated by VS Project File  Do not edit. */ &gt; $(FEATURES_DIR)cairo-features.h
+echo #ifndef CAIRO_FEATURES_H &gt;&gt; $(FEATURES_DIR)cairo-features.h
+echo #define CAIRO_FEATURES_H &gt;&gt; $(FEATURES_DIR)cairo-features.h
+type $(FEATURES_DIR)$(Configuration).FEATURES &gt;&gt; $(FEATURES_DIR)cairo-features.h
+echo #endif &gt;&gt; $(FEATURES_DIR)cairo-features.h
+    </GenTmpFeaturesHeader>
+    <PreBuildCfgGobject>
+if exist $(FEATURES_DIR)$(Configuration).GOBJECT goto DONE_GOBJECT
+echo #define CAIRO_HAS_GOBJECT_FUNCTIONS 1 &gt; $(FEATURES_DIR)$(Configuration).GOBJECT
+echo #define CAIRO_HAS_GOBJECT_FUNCTIONS 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
+copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(FEATURES_DIR) /Y
+:DONE_GOBJECT
+    </PreBuildCfgGobject>
+    <FEATURES_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\install\</FEATURES_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_cairo</_PropertySheetDisplayName>
@@ -66,7 +81,7 @@ copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(ROOT_DIR)intermediate\$(Solu
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ROOT_DIR)intermediate\$(SolutionName)\include;$(SRC_DIR);$(SRC_DIR)src;$(SRC_DIR)util\cairo-gobject;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)src;$(SRC_DIR)util\cairo-gobject;$(FEATURES_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <WarningLevel>Level2</WarningLevel>
       <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -75,6 +90,7 @@ copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(ROOT_DIR)intermediate\$(Solu
     <Link>
       <AdditionalDependencies>pixman.dll.lib;png.dll.lib;zlib.dll.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
@@ -100,6 +116,10 @@ copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(ROOT_DIR)intermediate\$(Solu
     </BuildMacro>
     <BuildMacro Include="PreBuildCfgGobject">
       <Value>$(PreBuildCfgGobject)</Value>
+    </BuildMacro>
+    <BuildMacro Include="FEATURES_DIR">
+      <Value>$(FEATURES_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>
