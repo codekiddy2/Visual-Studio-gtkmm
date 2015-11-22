@@ -3,7 +3,9 @@
   <ImportGroup Label="PropertySheets">
     <Import Project="gtk_stack.props" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="UserMacros">
+    <LINK>shared</LINK>
+  </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(BIN_DIR)</OutDir>
     <ExtensionsToDeleteOnClean>*.dll;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
@@ -19,5 +21,9 @@
       <MapExports>true</MapExports>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BuildMacro Include="LINK">
+      <Value>$(LINK)</Value>
+    </BuildMacro>
+  </ItemGroup>
 </Project>

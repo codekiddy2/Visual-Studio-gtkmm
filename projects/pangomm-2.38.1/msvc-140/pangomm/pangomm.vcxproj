@@ -23,13 +23,13 @@
     <ProjectGuid>{A93D607A-5C37-4AEC-BA08-6A655F6DC834}</ProjectGuid>
     <RootNamespace>glibmm</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>PGInstrument</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -40,7 +40,6 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>PGInstrument</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -54,33 +53,33 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PreLinkEventUseInBuild>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pangomm-vc100-1_4</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pangomm-vc100-1_4</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pangomm-vc100-d-1_4</TargetName>
@@ -89,15 +88,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>.;../..;../../pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>PANGOMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate glibmm def file</Message>
-      <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;cairomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
@@ -108,15 +104,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>.;../..;../../pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>PANGOMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate glibmm def file</Message>
-      <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;cairomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
@@ -130,15 +123,12 @@
     </Midl>
     <ClCompile>
       <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>.;../..;../../pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>PANGOMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate glibmm def file</Message>
-      <Command>$(BIN_DIR)gendef $(SYMBOLS_DIR)def\$(TargetName).def $(TargetName) $(INTERMEDIATE_DIR)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;cairomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
@@ -152,15 +142,12 @@
     </Midl>
     <ClCompile>
       <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>.;../..;../../pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>PANGOMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate glibmm def file</Message>
-      <Command>$(SolutionDir)gendef\$(Platform)\$(Configuration)\gendef $(Platform)\$(Configuration)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;cairomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>

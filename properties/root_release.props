@@ -5,6 +5,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
     <ROOT_DIR>$(REPO_DIR)output\$(PlatformToolset)\Release\$(Platform)\</ROOT_DIR>
+    <VARIANT>release</VARIANT>
   </PropertyGroup>
   <PropertyGroup>
     <LinkIncremental>false</LinkIncremental>
@@ -38,7 +39,8 @@
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
-      <LinkStatus>false</LinkStatus>
+      <LinkStatus>
+      </LinkStatus>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -48,6 +50,9 @@
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">
       <Value>$(ROOT_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VARIANT">
+      <Value>$(VARIANT)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

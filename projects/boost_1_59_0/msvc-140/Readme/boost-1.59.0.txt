@@ -17,10 +17,13 @@ official sources: http://www.boost.org/
 DEPENDENCIES:
 zlib (optional)
 iconv (optional)
+bzip2 (optional)
+icu (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
+this solution will build boost with zlib, bzip2 and iconv support.
 Open Solution select configuration and build
 
 **************************************************************************************************************************************************************************
@@ -41,6 +44,19 @@ Define:
 BOOST_ALL_DYN_LINK to link to dll libs
 BOOST_ALL_NO_LIB to link manually
 
+Following was hard to learn, it's worth noting down:
+
+SET BZIP2_BINARY=bzip2.dll					-the name of the *import* library (not dll)
+SET BZIP2_INCLUDE=$(INCLUDE_DIR)bzip2	-include search path
+SET BZIP2_LIBPATH=$(LIB_DIR)				-library search path
+
+SET ZLIB_BINARY=zlib.dll
+SET ZLIB_LIBPATH=$(LIB_DIR)
+SET ZLIB_INCLUDE=$(INCLUDE_DIR)zlib
+
+if there is no macro for library then compiler and linker flags passed are as folows:
+$(B2_DIR)b2 cxxflags="-I $(INCLUDE_DIR)iconv" linkflags="-link -LIBPATH:$(LIB_DIR) iconv.dll.lib"
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -50,3 +66,4 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
+Add test projects

@@ -53,24 +53,28 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_glibmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_glibmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_glibmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_glibmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -80,10 +84,7 @@
       <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate glibmm def file</Message>
-      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(ProjectName).def $(ProjectName).dll $(INTERMEDIATE_DIR)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -98,10 +99,7 @@
       <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate glibmm def file</Message>
-      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(ProjectName).def $(ProjectName).dll $(INTERMEDIATE_DIR)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -113,10 +111,7 @@
       <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate glibmm def file</Message>
-      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(ProjectName).def $(ProjectName).dll $(INTERMEDIATE_DIR)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -132,10 +127,7 @@
       <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate glibmm def file</Message>
-      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(ProjectName).def $(TargetFileName) $(INTERMEDIATE_DIR)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <DataExecutionPrevention>
       </DataExecutionPrevention>

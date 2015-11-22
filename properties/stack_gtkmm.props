@@ -12,9 +12,7 @@
     <Link>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;gio.dll.lib;atk.dll.lib;cairo.dll.lib;pango.dll.lib;pangocairo.dll.lib;gtk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PreLinkEvent>
-      <Command>if not exist $(SYMBOLS_DIR)def mkdir $(SYMBOLS_DIR)def</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
