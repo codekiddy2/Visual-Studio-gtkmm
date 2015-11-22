@@ -65,3 +65,4 @@
 * check pdb output names when building both lib and dll in same solution
 * project_test.props can inherit base_console.props directly (edit: test project can be window or dll base, so no)
 * project_test.props should be below solution level property, not above.
+* fontconfig when built, gets involed into other projects, check includes.

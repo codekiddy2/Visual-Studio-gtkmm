@@ -13,6 +13,7 @@
     <MSYS2_DIR>$(INSTALL_DIR)msys64\</MSYS2_DIR>
     <BISON_DIR>$(MSYS2_DIR)usr\bin\</BISON_DIR>
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
+    <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -56,6 +57,9 @@
     </BuildMacro>
     <BuildMacro Include="FLEX_DIR">
       <Value>$(FLEX_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PROPS_DIR">
+      <Value>$(PROPS_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
