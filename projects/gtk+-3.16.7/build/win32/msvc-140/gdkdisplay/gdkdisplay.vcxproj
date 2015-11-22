@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -18,35 +18,47 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\testsuite\gdk\display.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gdk.vcxproj">
+      <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073f7}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6129DE55-62EE-4445-8084-84C4B8FBEB38}</ProjectGuid>
+    <ProjectGuid>{AC359D74-8500-4270-A7DA-ED70E96031A2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>pkgconfig</RootNamespace>
+    <RootNamespace>testgio</RootNamespace>
+    <ProjectName>gdkdisplay</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -55,27 +67,31 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_64.props" />
-    <Import Project="..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\properties\solution_pkg-config.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_gtk+.props" />
+    <Import Project="..\..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_32.props" />
-    <Import Project="..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\properties\solution_pkg-config.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_gtk+.props" />
+    <Import Project="..\..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_release_64.props" />
-    <Import Project="..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\properties\solution_pkg-config.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_gtk+.props" />
+    <Import Project="..\..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_release_32.props" />
-    <Import Project="..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\properties\solution_pkg-config.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_gtk+.props" />
+    <Import Project="..\..\..\..\..\..\properties\project_test.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
@@ -86,57 +102,40 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\include";PKG_CONFIG_SYSTEM_LIBRARY_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\x64\\lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <BrowseInformation>true</BrowseInformation>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32\\include";PKG_CONFIG_SYSTEM_LIBRARY_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Debug\\Win32\\lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\include";PKG_CONFIG_SYSTEM_LIBRARY_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\x64\\lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;PKG_CONFIG_SYSTEM_INCLUDE_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\include";PKG_CONFIG_SYSTEM_LIBRARY_PATH="D:\\GitHub\\Visual-Studio-gtkmm\\output\\Release\\Win32\\lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <PostBuildEvent />
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\main.c" />
-    <ClCompile Include="..\..\parse.c" />
-    <ClCompile Include="..\..\pkg.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\config.h" />
-    <ClInclude Include="..\..\parse.h" />
-    <ClInclude Include="..\..\pkg.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

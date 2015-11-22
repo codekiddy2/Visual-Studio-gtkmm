@@ -20,15 +20,21 @@
     <ClCompile Include="..\..\pkg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\rpmvercmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\parse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\pkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rpmvercmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

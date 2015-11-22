@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{ACC42B
 		Readme\cairo-1.14.0.txt = Readme\cairo-1.14.0.txt
 		Readme\cairo-1.14.4.txt = Readme\cairo-1.14.4.txt
 		..\..\..\..\readme\fundamental.md = ..\..\..\..\readme\fundamental.md
+		..\..\..\..\readme\troubleshooting.md = ..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-cairo_font_ft", "test-cairo_font_ft\test-cairo_font_ft.vcxproj", "{3198921D-09F3-46C7-B1D7-9D6BB4B7CFD9}"

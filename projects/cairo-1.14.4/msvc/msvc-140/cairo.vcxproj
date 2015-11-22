@@ -102,6 +102,7 @@
     <ProjectGuid>{55B6DC50-F887-4765-8A56-6E98E60461AB}</ProjectGuid>
     <RootNamespace>cairo</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|Win32'" Label="Configuration">

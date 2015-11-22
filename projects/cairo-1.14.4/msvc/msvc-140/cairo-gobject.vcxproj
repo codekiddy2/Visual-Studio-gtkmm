@@ -102,6 +102,7 @@
     <ProjectGuid>{E6933C13-F3FC-4D92-80BF-F9253F25AD77}</ProjectGuid>
     <RootNamespace>cairogobject</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|Win32'" Label="Configuration">

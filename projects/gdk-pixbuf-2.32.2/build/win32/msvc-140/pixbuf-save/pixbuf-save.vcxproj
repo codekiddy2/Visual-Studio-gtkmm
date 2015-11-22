@@ -65,29 +65,29 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
     <Import Project="..\..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
     <Import Project="..\..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
     <Import Project="..\..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
     <Import Project="..\..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_gdk-pixbuf.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
@@ -103,6 +103,15 @@
     <Link>
       <AdditionalDependencies>gdk-pixbuf.dll.lib;glib.dll.lib;gobject.dll.lib</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(TEST_DIR)
+xcopy $(SRC_DIR)tests\*.jpg /Y
+xcopy $(SRC_DIR)tests\*.png /Y
+xcopy $(SRC_DIR)tests\*.gif /Y
+xcopy $(SRC_DIR)tests\*.jpeg /Y
+xcopy $(SRC_DIR)tests\*.bmp /Y</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -113,6 +122,15 @@
     <Link>
       <AdditionalDependencies>gdk-pixbuf.dll.lib;glib.dll.lib;gobject.dll.lib</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(TEST_DIR)
+xcopy $(SRC_DIR)tests\*.jpg /Y
+xcopy $(SRC_DIR)tests\*.png /Y
+xcopy $(SRC_DIR)tests\*.gif /Y
+xcopy $(SRC_DIR)tests\*.jpeg /Y
+xcopy $(SRC_DIR)tests\*.bmp /Y</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -123,6 +141,15 @@
     <Link>
       <AdditionalDependencies>gdk-pixbuf.dll.lib;glib.dll.lib;gobject.dll.lib</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(TEST_DIR)
+xcopy $(SRC_DIR)tests\*.jpg /Y
+xcopy $(SRC_DIR)tests\*.png /Y
+xcopy $(SRC_DIR)tests\*.gif /Y
+xcopy $(SRC_DIR)tests\*.jpeg /Y
+xcopy $(SRC_DIR)tests\*.bmp /Y</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -133,6 +160,15 @@
     <Link>
       <AdditionalDependencies>gdk-pixbuf.dll.lib;glib.dll.lib;gobject.dll.lib</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(TEST_DIR)
+xcopy $(SRC_DIR)tests\*.jpg /Y
+xcopy $(SRC_DIR)tests\*.png /Y
+xcopy $(SRC_DIR)tests\*.gif /Y
+xcopy $(SRC_DIR)tests\*.jpeg /Y
+xcopy $(SRC_DIR)tests\*.bmp /Y</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

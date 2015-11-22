@@ -30,3 +30,9 @@ For Debug x86:
 For Release x86:
 
 	D:\GitHub\Visual-Studio-gtkmm\output\v140\Release\Win32\bin;
+
+
+Add PKG_CONFIG_PATH to system variables and set value to (modify path as needed):
+	
+	D:\GitHub\Visual-Studio-gtkmm\output\v140\Release\x64\share\pkgconfig
+	

@@ -30,8 +30,12 @@
     <Node Id="Gstreamermm" Category="Category4" Bounds="588.792128211033,202.803594015125,94.2433333333333,25.96" Label="gstreamermm" UseManualLocation="True">
       <Category Ref="Category5" />
     </Node>
-    <Node Id="Gtk" Category="Category2" Bounds="1210.64007083237,455.214350992402,50,25.96" Label="gtk+" UseManualLocation="True" />
-    <Node Id="Gtkmm" Category="Category2" Bounds="433.672739507258,581.548980397489,57.77,25.96" Label="gtkmm" UseManualLocation="True" />
+    <Node Id="Gtk" Category="Category2" Bounds="1210.64007083237,455.214350992402,50,25.96" Label="gtk+" UseManualLocation="True">
+      <Category Ref="Category4" />
+    </Node>
+    <Node Id="Gtkmm" Category="Category2" Bounds="433.672739507258,581.548980397489,57.77,25.96" Label="gtkmm" UseManualLocation="True">
+      <Category Ref="Category4" />
+    </Node>
     <Node Id="Harfbuzz" Category="Category2" Bounds="373.199849962705,176.718648865388,65.5233333333335,25.96" Label="harfbuzz" UseManualLocation="True" />
     <Node Id="Hicolor-icon-theme" Category="Category2" Bounds="1315.30594068745,645.392642579852,126.65,25.96" Label="adwaita-icon-theme" UseManualLocation="True" />
     <Node Id="Hicolor-icon-theme1" Category="Category2" Bounds="1134.55083862026,644.76421625952,121.996666666667,25.96" Label="hicolor-icon-theme" UseManualLocation="True" />
@@ -49,7 +53,7 @@
     <Node Id="Pcre" Category="Category2" Bounds="94.4173970848736,100.984578327172,50,25.9599999999999" Label="pcre" UseManualLocation="True" />
     <Node Id="Pixbuf" Category="Category2" Bounds="1365.27561749076,310.454816492895,77.9633333333334,25.96" Label="gdk-pixbuf" UseManualLocation="True" />
     <Node Id="Pixman" Category="Category2" Bounds="471.370563581532,227.615893528151,58.6999999999998,25.96" Label="pixman" UseManualLocation="True" />
-    <Node Id="Pkg-config" Category="Category5" Bounds="202.524202898551,221.997608695652,77.9766666666665,25.96" Label="pkg-config" UseManualLocation="True" />
+    <Node Id="Pkg-config" Category="Category2" Bounds="202.524202898551,221.997608695652,77.9766666666665,25.96" Label="pkg-config" UseManualLocation="True" />
     <Node Id="Png" Category="Category2" Bounds="1121.01440429688,96.8933403761493,50,25.96" Label="png" UseManualLocation="True" />
     <Node Id="Readline" Bounds="0,0,62.5033333333331,25.96" Label="readline" />
     <Node Id="Tiff" Category="Category2" Bounds="1258.25166666667,129.5675,50,25.96" Label="tiff" />
@@ -88,23 +92,23 @@
     <Link Source="Freetype" Target="Fontconfig" Bounds="89.1015194812534,247.268337978526,317.708174535061,76.7906224483777" />
     <Link Source="Freetype" Target="Harfbuzz" Bounds="407.946838378906,211.443954467773,24.7384643554688,107.331588745117" />
     <Link Source="Freetype" Target="Pango" Bounds="442.511629114986,344.735549886952,24.542868648296,82.5600708309733" />
-    <Link Source="Glib" Target="Atk" Bounds="795.244322610355,178.813442687988,269.349147088217,218.425679138221" />
+    <Link Source="Glib" Target="Atk" Bounds="795.244323514834,178.813440376149,269.349163114908,218.42568161477" />
     <Link Source="Glib" Target="Cairo" Bounds="724.290539413303,176.015081794129,331.315871878279,134.970202814291" />
     <Link Source="Glib" Target="Glibmm" Bounds="211.997209597032,171.153829551549,843.602417480048,179.531726812099" />
-    <Link Source="Glib" Target="Goocanvas" Bounds="830.395063577467,178.813442687988,243.454593276969,468.157459049992" />
+    <Link Source="Glib" Target="Goocanvas" Bounds="830.395064210551,178.813440376149,243.454609919423,468.157461469238" />
     <Link Source="Glib" Target="Gstreamer" Bounds="819.290707266449,126.833272662691,236.308919810631,35.268935754201" />
     <Link Source="Glib" Target="Gtk" Bounds="1087.25533186326,178.813440376149,137.622528992947,268.392376722667" />
-    <Link Source="Glib" Target="Gtkmm" Bounds="488.665881218478,178.813442687988,573.220719120446,397.606014074989" />
+    <Link Source="Glib" Target="Gtkmm" Bounds="488.665881709396,178.813440376149,573.22073589654,397.606016467347" />
     <Link Source="Glib" Target="Harfbuzz" Bounds="447.71755737191,166.717811126913,607.88206970517,21.5037248944573" />
     <Link Source="Glib" Target="Pango" Bounds="508.731140136719,178.789901733398,549.493469238281,255.934921264648" />
     <Link Source="Glib" Target="Pangomm" Bounds="361.435351360912,174.463761330013,694.164275716168,239.634419765488" />
     <Link Source="Glib" Target="Pixbuf" Bounds="1104.94265528513,177.68699817251,264.566609140359,128.827669492494" />
-    <Link Source="Glib" Target="Pkg-config" Bounds="289.470467392668,167.893541439373,766.129159684412,63.1321398573054" />
+    <Link Source="Glib" Target="Pkg-config" Bounds="289.403289794922,167.547256469727,766.196319580078,60.3199768066406" />
     <Link Source="Glibmm" Target="Atkmm" Bounds="54.6507406197387,371.987964020622,112.999102487885,279.847575037217" />
     <Link Source="Glibmm" Target="Gtkmm" Bounds="188.855082372426,371.987964020622,250.755528953021,203.88326097921" />
     <Link Source="Glibmm" Target="Pangomm" Bounds="199.407302327279,371.987964020622,82.8575837447214,40.5596490240092" />
-    <Link Source="Gobject-introspection" Target="Goocanvas" Bounds="835.753274813916,392.799412231445,207.911148417795,255.179069211288" />
-    <Link Source="Gobject-introspection" Target="Gtk" Bounds="1080.88306327959,392.799412231445,122.326506322815,59.5953591949951" />
+    <Link Source="Gobject-introspection" Target="Goocanvas" Bounds="835.753274562706,392.799410741105,207.911145858637,255.179070651649" />
+    <Link Source="Gobject-introspection" Target="Gtk" Bounds="1080.88306027071,392.799410741105,122.326509334421,59.5953606815356" />
     <Link Source="Goocanvas" Target="Goocanvasmm" Bounds="363.801929050134,668.579264900494,417.434170010018,7.02150008022272" />
     <Link Source="Gstreamer" Target="Gstreamermm" Bounds="661.964149061694,132.994609671539,92.978341077559,64.6699722856577" />
     <Link Source="Gtk" Target="Glade" Bounds="1045.06277855623,481.174350992402,176.49105051265,162.630591900852" />
@@ -132,7 +136,7 @@
     <Link Source="Libintl" Target="Goocanvas" Bounds="821.408431606462,114.186075060087,46.4213388345481,531.803782635613" />
     <Link Source="Libintl" Target="Gtk" Bounds="881.931799292723,114.186075060087,334.378008697606,334.661617760477" />
     <Link Source="Libintl" Target="Pango" Bounds="495.000881593591,114.186075060087,359.197896636988,315.793963519136" />
-    <Link Source="Librsvg" Target="Hicolor-icon-theme" Bounds="1378.99584864919,535.348150500441,1.67763752336714,101.045732254637" />
+    <Link Source="Librsvg" Target="Hicolor-icon-theme" Bounds="1378.99584864919,535.348150500441,1.67763752336509,101.045732254637" />
     <Link Source="Libsigc++" Target="Atkmm" Bounds="41.0782356571553,388.826067395449,4.57806312148222,262.356186510571" />
     <Link Source="Libsigc++" Target="Cairomm" Bounds="46.3640511832812,388.826067395449,72.5064203228304,170.732898480298" />
     <Link Source="Libsigc++" Target="Glibmm" Bounds="75.8000705796558,364.010840679735,57.8599072975828,7.37849479703419" />
