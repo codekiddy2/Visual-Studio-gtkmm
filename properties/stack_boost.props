@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>boost_atomic.lib;boost_chrono.lib;boost_container.lib;boost_context.lib;boost_coroutine.lib;boost_date_time.lib;boost_filesystem.lib;boost_graph.lib;boost_iostreams.lib;boost_locale.lib;boost_log.lib;boost_log_setup.lib;boost_math_c99.lib;boost_math_c99f.lib;boost_math_c99l.lib;boost_math_tr1.lib;boost_math_tr1f.lib;boost_math_tr1l.lib;boost_prg_exec_monitor.lib;boost_program_options.lib;boost_python.lib;boost_python3.lib;boost_random.lib;boost_regex.lib;boost_serialization.lib;boost_signals.lib;boost_system.lib;boost_thread.lib;boost_timer.lib;boost_unit_test_framework.lib;boost_wave.lib;boost_wserialization.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

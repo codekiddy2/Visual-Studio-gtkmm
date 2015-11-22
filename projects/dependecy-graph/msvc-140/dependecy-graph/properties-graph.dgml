@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DirectedGraph ZoomLevel="1.24" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+<DirectedGraph ZoomLevel="1.23" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
     <Node Id="Base_console" Category="Category4" Bounds="-335.315768145482,-323.269227882505,90.1800000000001,25.96" Label="base_console" UseManualLocation="True" />
     <Node Id="Base_debug_32" Category="Category1" Bounds="-625.071891276041,-432.095458748372,101.683333333333,25.96" Label="base_debug_32" UseManualLocation="True" />
@@ -15,7 +15,8 @@
     <Node Id="Gtk_stack" Category="Category4" Bounds="-521.825227050781,-376.135358748372,77.0599999999999,25.96" Label="stack_gtk+" UseManualLocation="True" />
     <Node Id="Gtkmm_stack" Category="Category2" Bounds="-521.687569986979,-262.866901045736,89.5233333333333,25.9600000000001" Label="stack_gtkmm" UseManualLocation="True" />
     <Node Id="Project" Category="Category5" Bounds="-504.791912288613,-116.21852583432,57.05,25.96" Label="project" UseManualLocation="True" />
-    <Node Id="Project_test" Category="Category2" Bounds="-340.189417946982,-159.320580811144,81.5333333333333,25.96" Label="project_test" UseManualLocation="True" />
+    <Node Id="Project_gendef" Category="Category2" Bounds="-296.992430216471,-209.892383166504,99.2633333333333,25.96" Label="project_gendef" UseManualLocation="True" />
+    <Node Id="Project_test" Category="Category2" Bounds="-374.335758463542,-265.852483166504,81.5333333333333,25.96" Label="project_test" UseManualLocation="True" />
     <Node Id="Root_debug" Category="Category1" Bounds="-807.690808128412,-577.915522449866,83.7633333333333,25.96" Label="base_debug" UseManualLocation="True" />
     <Node Id="Root_release" Category="Category1" Bounds="-206.006605074581,-582.254613629422,86.62,25.96" Label="base_release" UseManualLocation="True" />
     <Node Id="Solution_name" Category="Category2" Bounds="-525.275177408854,-206.906801045736,97.1033333333335,25.96" Label="solution_name" UseManualLocation="True" />
@@ -42,13 +43,13 @@
     <Link Source="Gtk_stack" Target="Base_utility" Bounds="-444.765227050781,-361.25897064563,253.924826382802,12.4977944392185" />
     <Link Source="Gtk_stack" Target="Base_windows" Bounds="-483.499119133538,-350.175358748372,0.127148338734571,21.5051462213047" />
     <Link Source="Gtkmm_stack" Target="Solution_name" Bounds="-476.878958163601,-236.906901045736,0.0759519066846792,21.0001588627372" />
-    <Link Source="Project_test" Target="Project" Bounds="-438.997880284415,-136.404560883372,98.8084623374332,24.0824902081085" />
+    <Link Source="Project_gendef" Target="Solution_name" Bounds="-419.172606452208,-196.266334850298,122.180176235736,1.59040190330347" />
+    <Link Source="Project_test" Target="Solution_name" Bounds="-436.878409074436,-239.892483166504,71.7863237170962,29.5589465531134" />
     <Link Source="Root_debug" Target="Base_stack" Bounds="-724.820874456893,-552.819583542698,181.495634431907,53.649255735414" />
     <Link Source="Root_debug" Target="User_base_stack" Bounds="-723.927474795079,-561.256112246365,165.467872219376,14.5367705216003" />
     <Link Source="Root_release" Target="Base_stack" Bounds="-449.940224790292,-558.436449240845,244.058979932681,61.2521340529577" />
     <Link Source="Root_release" Target="User_base_stack" Bounds="-436.928504518949,-565.66843009415,230.921899444368,19.2275860473327" />
     <Link Source="Solution_name" Target="Project" Bounds="-476.658158877091,-180.946801045736,0.280581986003028,55.7283892812594" />
-    <Link Source="Solution_name" Target="Project_test" Bounds="-429.732349781169,-181.314718946612,80.9959080242168,21.7387061907651" />
     <Link Source="User_base_stack" Target="User_debug_32" Bounds="-832.956053037858,-529.667865380377,284.013258379116,64.9152339201898" />
     <Link Source="User_base_stack" Target="User_debug_64" Bounds="-894.635887507368,-537.519066033663,345.141753392784,25.7333592795355" />
     <Link Source="User_base_stack" Target="User_debug_641" Bounds="-445.897467447917,-541.668589292183,375.640681662302,0.252660803313802" />

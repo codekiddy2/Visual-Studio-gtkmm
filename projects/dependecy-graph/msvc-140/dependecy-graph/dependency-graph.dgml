@@ -57,7 +57,7 @@
     <Node Id="Png" Category="Category2" Bounds="1121.01440429688,96.8933403761493,50,25.96" Label="png" UseManualLocation="True" />
     <Node Id="Readline" Bounds="0,0,62.5033333333331,25.96" Label="readline" />
     <Node Id="Tiff" Category="Category2" Bounds="1258.25166666667,129.5675,50,25.96" Label="tiff" />
-    <Node Id="Unistd" Category="Category2" Bounds="594.480916075074,-3.62142374180748,52.7133333333334,25.96" Label="unistd" UseManualLocation="True" />
+    <Node Id="Unistd" Category="Category2" Bounds="636.8722204229,-5.79533678528574,52.7133333333334,25.96" Label="unistd" UseManualLocation="True" />
     <Node Id="Zlib" Category="Category2" Bounds="1082.32082186253,3.18269430775655,50,25.9599999999999" Label="zlib" UseManualLocation="True" />
   </Nodes>
   <Links>
@@ -67,6 +67,7 @@
     <Link Source="Atk" Target="Gtkmm" Bounds="492.855668813198,428.834758326482,256.947595328561,148.217215830099" />
     <Link Source="Atkmm" Target="Gtkmm" Bounds="74.4448214894284,601.651570191388,350.384131910043,66.1469053034721" />
     <Link Source="Boost" Target="Cairomm" Bounds="157.3579923129,97.3763762740425,779.910715851341,465.851338346637" />
+    <Link Source="Bzip2" Target="Boost" Bounds="232.251663208008,16.923059463501,692.644027709961,64.5443325042725" />
     <Link Source="Bzip2" Target="Pcre" Bounds="136.613564231208,25.96,59.3483704975978,68.2338476501316" />
     <Link Source="Cairo" Target="Cairomm" Bounds="163.917068481445,335.410797119141,502.173751831055,228.631072998047" />
     <Link Source="Cairo" Target="Goocanvas" Bounds="695.821031166584,337.542374968922,115.658044519148,308.984534375539" />
@@ -120,6 +121,7 @@
     <Link Source="Harfbuzz" Target="Freetype" Bounds="412.065582275391,202.678649902344,24.8084716796875,107.312591552734" />
     <Link Source="Hicolor-icon-theme" Target="Gtk" Bounds="1250.80808906393,488.367861349879,118.063475433803,157.024781229973" />
     <Link Source="Hicolor-icon-theme1" Target="Gtk" Bounds="1198.29451744204,489.97955651902,32.7378557241248,154.7846597405" />
+    <Link Source="Icu" Target="Boost" Bounds="546.439015499996,15.1597978794825,378.547774534698,63.5285350951566" />
     <Link Source="Icu" Target="Harfbuzz" Bounds="419.231759777927,23.9442551125725,93.8210805496867,145.214904351796" />
     <Link Source="Icu" Target="Libxml2" Bounds="396.422862034299,19.4555110634433,100.016153465697,33.9705103319518" />
     <Link Source="Jasper" Target="Pixbuf" Bounds="1404.76550589928,155.5275,3.37455753183576,145.929721877588" />
@@ -159,8 +161,8 @@
     <Link Source="Png" Target="Pixbuf" Bounds="1161.71008425536,122.853340376149,219.915903472586,181.865865934097" />
     <Link Source="Readline" Target="Pcre" Bounds="42.5840027499119,25.96,59.5819645176536,68.2448785279641" />
     <Link Source="Tiff" Target="Pixbuf" Bounds="1291.93471280546,155.5275,98.6353747163587,147.44677655214" />
-    <Link Source="Unistd" Target="Fontconfig" Bounds="84.4395331185064,19.6933125375301,510.062429755841,200.160874286133" />
-    <Link Source="Unistd" Target="Libintl" Bounds="647.194249408407,19.1149159993761,188.328249051413,69.7126994033572" />
+    <Link Source="Unistd" Target="Fontconfig" Bounds="86.4179070247197,16.913131965109,550.454308144551,203.177362425232" />
+    <Link Source="Unistd" Target="Libintl" Bounds="688.990607187086,18.9578976094581,147.086634394961,67.2193157801351" />
     <Link Source="Zlib" Target="Boost" Bounds="991.955178570454,27.5116138460017,90.6961753117831,41.7237857282638" />
     <Link Source="Zlib" Target="Cairo" Bounds="715.71832570027,29.1426943077565,374.078702738059,277.082789325415" />
     <Link Source="Zlib" Target="Crypto++" Bounds="1132.32082186253,14.5826616161555,28.877101857335,0.846867470601858" />
