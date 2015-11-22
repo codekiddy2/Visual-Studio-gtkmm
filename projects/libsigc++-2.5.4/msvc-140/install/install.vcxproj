@@ -50,14 +50,12 @@
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -110,7 +108,7 @@ xcopy sigc++.h ..\
 cd $(LIB_DIR)
 if not exist sigc++\include mkdir sigc++\include
 cd sigc++\include
-xcopy $(SolutionDir)sigc++config.h /Y
+xcopy $(MOD_DIR)sigc++config.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist sigc++\html mkdir sigc++\html
@@ -140,7 +138,7 @@ xcopy sigc++.h ..\
 cd $(LIB_DIR)
 if not exist sigc++\include mkdir sigc++\include
 cd sigc++\include
-xcopy $(SolutionDir)sigc++config.h /Y
+xcopy $(MOD_DIR)sigc++config.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist sigc++\html mkdir sigc++\html
@@ -174,7 +172,7 @@ xcopy sigc++.h ..\
 cd $(LIB_DIR)
 if not exist sigc++\include mkdir sigc++\include
 cd sigc++\include
-xcopy $(SolutionDir)sigc++config.h /Y
+xcopy $(MOD_DIR)sigc++config.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist sigc++\html mkdir sigc++\html
@@ -208,7 +206,7 @@ xcopy sigc++.h ..\
 cd $(LIB_DIR)
 if not exist sigc++\include mkdir sigc++\include
 cd sigc++\include
-xcopy $(SolutionDir)sigc++config.h /Y
+xcopy $(MOD_DIR)sigc++config.h /Y
 echo installing documentation ...
 cd $(REF_DIR)
 if not exist sigc++\html mkdir sigc++\html

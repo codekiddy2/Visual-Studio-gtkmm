@@ -11,7 +11,7 @@
 #define GIOMM_MAJOR_VERSION 2
 
 /* Micro version number of giomm. */
-#define GIOMM_MICRO_VERSION 0
+#define GIOMM_MICRO_VERSION 1
 
 /* Minor version number of giomm. */
 #define GIOMM_MINOR_VERSION 46

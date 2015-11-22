@@ -23,13 +23,13 @@
     <ProjectGuid>{58B2B53C-C4FF-47FD-817B-095E45B7F7D4}</ProjectGuid>
     <RootNamespace>glibmm</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -40,7 +40,6 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -75,19 +74,15 @@
     <Import Project="..\..\..\properties\solution_glibmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PreLinkEventUseInBuild>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PreLinkEvent>
       <Message>Generate glibmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(ProjectName)$(DebugDllSuffix).dll $(IntDir)*.obj</Command>
+      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(ProjectName).def $(ProjectName).dll $(INTERMEDIATE_DIR)*.obj</Command>
     </PreLinkEvent>
     <Link>
       <DataExecutionPrevention>
@@ -101,7 +96,7 @@
     </Midl>
     <ClCompile>
       <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PreLinkEvent>
       <Message>Generate glibmm def file</Message>
@@ -116,11 +111,11 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PreLinkEvent>
       <Message>Generate glibmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(ProjectName)$(ReleaseDllSuffix).dll $(IntDir)*.obj</Command>
+      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(ProjectName).def $(ProjectName).dll $(INTERMEDIATE_DIR)*.obj</Command>
     </PreLinkEvent>
     <Link>
       <DataExecutionPrevention>
@@ -134,17 +129,18 @@
     </Midl>
     <ClCompile>
       <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PreLinkEvent>
       <Message>Generate glibmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(ProjectName)$(ReleaseDllSuffix).dll $(IntDir)*.obj</Command>
+      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(ProjectName).def $(TargetFileName) $(INTERMEDIATE_DIR)*.obj</Command>
     </PreLinkEvent>
     <Link>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(ProjectName).def</ModuleDefinitionFile>
     </Link>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\glib\glibmm\arrayhandle.cc" />
@@ -299,6 +295,7 @@
     <ProjectReference Include="gendef.vcxproj">
       <Project>{07324745-c9be-4d65-b08a-9c88188c0c28}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
