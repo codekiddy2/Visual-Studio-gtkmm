@@ -43,3 +43,9 @@ Show useful buttons
 Debug currently selected project
 
 * Solution properties > Set startup projects > current selection
+
+Show me hidden (usualy junk) files
+
+* Tools > options > Environment > Documents
+	* show miscelaneous files in solution explorer
+	* Items saved in miscelaneous files project (set to 5)

@@ -17,3 +17,6 @@ Whole program optimization and LTCG turn off for all configurations:
 http://blogs.msdn.com/b/vcblog/archive/2009/02/24/quick-tips-on-using-whole-program-optimization.aspx
 
 set /NOLOGO for compiler in "base_stack.props"
+set /NOLOGO for librarian in "base_stack.props"
+
+appending macros to include directories accross all projects for finer inclusion control.

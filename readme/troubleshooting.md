@@ -20,12 +20,12 @@ if still things don't work this list here might help resolve the issue.
 	2. check "Additional include directories" are pointing compiler to correct place
 	3. depending on include directive in source file, compiler search in done in following order:
 		1. header file name that is enclosed by quotation marks (ex. #include "filename.h")
-				1. If the quotation marks contain an absolute path, the compiler only looks for the file at that location
-				2. If the quotation marks contain a relative path, the compiler looks for the file in the directory relative to the source directory
-					1. In the same directory as the file that contains the #include statement.
-					2. In the directories of the currently opened include files, in the reverse order in which they were opened. The search begins in the directory of the parent include file and continues upward through the directories of any grandparent include files.
-					3. Along the path that's specified by each /I compiler option.
-					4. Along the paths that are specified by the INCLUDE environment variable.
+			1. If the quotation marks contain an absolute path, the compiler only looks for the file at that location
+			2. If the quotation marks contain a relative path, the compiler looks for the file in the directory relative to the source directory
+				1. In the same directory as the file that contains the #include statement.
+				2. In the directories of the currently opened include files, in the reverse order in which they were opened. The search begins in the directory of the parent include file and continues upward through the directories of any grandparent include files.
+				3. Along the path that's specified by each /I compiler option.
+				4. Along the paths that are specified by the INCLUDE environment variable.
 		2. header file name that is enclosed by angle brackets (ex. #include `<filename.h>`)
 			1. Along the path that's specified by each /I compiler option.
 			2. When compiling occurs on the command line, along the paths that are specified by the INCLUDE environment variable.
