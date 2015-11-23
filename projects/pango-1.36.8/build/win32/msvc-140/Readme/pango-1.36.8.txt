@@ -51,6 +51,9 @@ either set debugger option in project settings or run from command promt.
 
 removed pangowin32-fontmap.c from ./src and added original
 
+pangoft2 set to use mulibyte character set because fonconfig had problems with unicode,
+test needed.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
