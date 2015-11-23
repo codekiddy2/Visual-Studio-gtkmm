@@ -23,7 +23,6 @@
   <ItemDefinitionGroup>
     <Link />
     <ClCompile>
-      <SuppressStartupBanner>false</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
@@ -56,6 +55,7 @@
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
     <Link>
       <ShowProgress>LinkVerboseSAFESEH</ShowProgress>

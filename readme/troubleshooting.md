@@ -1,6 +1,10 @@
 
 **A LIST OF POSSIBLE ERRORS AND HOW TO FIX THEM**
 
+This file assumes you have applied steps mentioned in "fundamental.md"
+if still things don't work this list here might help resolve the issue.
+
+
 1. error: The application was unable to start correctly (ex. 0xc000007b)
 	1. 32 bit application is loading 64 bit DLL or vice versa.
 		1. check you PATH settings
@@ -56,7 +60,7 @@
 	4. check if input file name is mistyped in Common properties > Linker > input > additional dependencies
 
 
-**More info**
+**My problem is not listed here**
 
 You can read more 'readme' files in:
 
@@ -67,3 +71,9 @@ highlighting and allows you browse repository quickly.
 
 Also you'll be able to read any kind of files including editing projects,
 as well as files which can't be normaly read by using Windows notepad.
+
+If none of the information so far helps, you have several options left:
+
+1. Open an issue on: https://github.com/codekiddy2/Visual-Studio-gtkmm/issues
+2. Ask for help on forums which discus build process
+3. Ask google for help.

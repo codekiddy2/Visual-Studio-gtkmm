@@ -8,8 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{ACC42B
 		Readme\cairo-1.12.18.txt = Readme\cairo-1.12.18.txt
 		Readme\cairo-1.14.0.txt = Readme\cairo-1.14.0.txt
 		Readme\cairo-1.14.4.txt = Readme\cairo-1.14.4.txt
-		..\..\..\..\readme\fundamental.md = ..\..\..\..\readme\fundamental.md
-		..\..\..\..\readme\troubleshooting.md = ..\..\..\..\readme\troubleshooting.md
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D67FDE40-51DE-40DE-B9B3-A71954C763A4}"

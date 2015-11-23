@@ -2,14 +2,16 @@
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
     <SRC_DIR>$(PROJECTS_DIR)cairo-1.14.4\</SRC_DIR>
+    <FEATURES_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\install\</FEATURES_DIR>
     <PreBuildCfgStd>
-if not exist $(ROOT_DIR)intermediate\$(SolutionName)\install mkdir $(ROOT_DIR)intermediate\$(SolutionName)\install
+if not exist $(FEATURES_DIR) mkdir $(FEATURES_DIR)
 if exist $(FEATURES_DIR)$(Configuration).FEATURES goto DONE_CONFIG
 if exist $(FEATURES_DIR)*.FEATURES del $(FEATURES_DIR)*.FEATURES
 if exist $(FEATURES_DIR)*.FT del $(FEATURES_DIR)*.FT
 if exist $(FEATURES_DIR)*.FC del $(FEATURES_DIR)*.FC
 if exist $(FEATURES_DIR)*.GL del $(FEATURES_DIR)*.GL
 if exist $(FEATURES_DIR)*.GOBJECT del $(FEATURES_DIR)*.GOBJECT
+if exist $(FEATURES_DIR)*.h del $(FEATURES_DIR)*.h
 echo #define CAIRO_HAS_WIN32_SURFACE 1 &gt; $(FEATURES_DIR)$(Configuration).FEATURES
 echo #define CAIRO_HAS_WIN32_FONT 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
 echo #define CAIRO_HAS_PNG_FUNCTIONS 1 &gt;&gt; $(FEATURES_DIR)$(Configuration).FEATURES
@@ -73,11 +75,9 @@ echo #define CAIRO_HAS_GOBJECT_FUNCTIONS 1 &gt;&gt; $(FEATURES_DIR)$(Configurati
 copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(FEATURES_DIR) /Y
 :DONE_GOBJECT
     </PreBuildCfgGobject>
-    <FEATURES_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\install\</FEATURES_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_cairo</_PropertySheetDisplayName>
-    <ExtensionsToDeleteOnClean>*.GOBJECT;*.FEATURES;*.FC;*.GL;*.FT;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -86,6 +86,7 @@ copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(FEATURES_DIR) /Y
       <WarningLevel>Level2</WarningLevel>
       <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <SmallerTypeCheck>false</SmallerTypeCheck>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <AdditionalDependencies>pixman.dll.lib;png.dll.lib;zlib.dll.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -95,6 +96,10 @@ copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(FEATURES_DIR) /Y
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="FEATURES_DIR">
+      <Value>$(FEATURES_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="PreBuildCfgStd">
       <Value>$(PreBuildCfgStd)</Value>
@@ -116,10 +121,6 @@ copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(FEATURES_DIR) /Y
     </BuildMacro>
     <BuildMacro Include="PreBuildCfgGobject">
       <Value>$(PreBuildCfgGobject)</Value>
-    </BuildMacro>
-    <BuildMacro Include="FEATURES_DIR">
-      <Value>$(FEATURES_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

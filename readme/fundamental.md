@@ -4,6 +4,9 @@ This file describes "fundamenal" setup that applies to all projects.
 Steps mentioned here must be applied to all
 projects before compilation!
 
+More detailed information is available on Visual-Studio-gtkmm-wiki:
+
+https://github.com/codekiddy2/Visual-Studio-gtkmm/wiki
 
 **One time setup**
 
@@ -178,3 +181,5 @@ latest version number. that is the package which we will build.
 the "troubleshooting" file can help to solve problems in case of
 build errors.
 
+You should reffer to "troubleshooting.md" file after ensuring you've
+checked suggestions mentioned here and on the wiki page.

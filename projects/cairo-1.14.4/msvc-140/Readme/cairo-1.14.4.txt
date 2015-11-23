@@ -7,7 +7,7 @@ solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtk
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.2
+solution version = 1.1.3
 solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\cairo-1.14.4\msvc\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: http://cairographics.org/
@@ -29,13 +29,12 @@ openGL (optional)
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
 set correct SRC_DIR in solution_cairo.props before building.
-make sure there are no *.FEATURES *.GOBJECT files and similar files, also no $(Platform)$(Configuration)
-also delete $(INCLUDE_DIR)cairo for clean build and cairo-features.h in solution directory.
 
-test project depends on "Install" entries inside solution directory.
 Open Visual Studio solution and build.
-Build cairo-gobject before "Install" if you want gobject support
 Build Install to install headers.
+If you're rebuilding solution or building for new configuration make
+sure you rebuild install project because Visual Studio will skip it,
+therefore installed headers might be "incorrect".
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -51,9 +50,15 @@ FreeType and Expat are required if building Pango with FontConfig support.
 GObject support is required To build and run GTK+3.x
 
 since msvc-140
-set RTC (runtime checks) /RTCc to off, to make gtk-demo run
+set RTC (runtime checks) /RTCc to off in debug config., to make gtk-demo run,
+smaller type check is also set to no. (don't know when)
 
 freetype somewhere linked staticaly (FC and GL) and in other cases dll
+edit: fixed, harbuzz.dll.lib should be removed also in all configurations where
+freetype is lined dinamicaly.
+
+test project depends on "Install".
+Build cairo-gobject before "Install" if you want gobject support
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -66,12 +71,14 @@ TESTINGS:
 	Debug_FT x64
 	Release_FT x64
 
+1.1.3
+	Release x64
+	Release_FT x64
+	Release_GL x64 (without GL)
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-Create a real world test project, the current one is a hello world that does nothing.
-edit: better test project is present in GTK+ and cairomm solution
+Create a more test projects, the current one is a hello world that does nothing.
+edit: better test project is present in GTK+ and cairomm solutions.
 
-remove original macros and put them into pre-build process in project settings ( EDIT: error prone )
-
-make cairo output's debug folder and other stuff into intermediate directory

@@ -2,9 +2,9 @@
 
 /VERBOSE:LIB removed from "base_stack.props"
 
-/NOLOGO set for linker
+/NOLOGO set for linker in "base_stack.props"
 
-added ignore w4311 to base_stack (apearing mostly in gtk+, seen elsewhere?)
+added ignore w4311 to base_stack.props (apearing mostly in gtk+, seen elsewhere?)
 
 "Use full paths" set to "no" in base_stack.props.
 
@@ -16,3 +16,4 @@ Whole program optimization and LTCG turn off for all configurations:
 		
 http://blogs.msdn.com/b/vcblog/archive/2009/02/24/quick-tips-on-using-whole-program-optimization.aspx
 
+set /NOLOGO for compiler in "base_stack.props"
