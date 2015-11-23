@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\gettext-0.19.6\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)gettext-0.19.6\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -14,6 +14,8 @@
     <ClCompile>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>$(SRC_DIR)gettext-runtime;$(SRC_DIR)gettext-runtime\intl;$(SRC_DIR)gettext-runtime\gnulib-m4;$(SRC_DIR)gettext-runtime\gnulib-lib;$(INCLUDE_DIR)unistd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>INSTALLPREFIX="$(ROOT_DIR)";DEPENDS_ON_LIBINTL;DEPENDS_ON_LIBCHARSET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>DEBUGGING</UndefinePreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

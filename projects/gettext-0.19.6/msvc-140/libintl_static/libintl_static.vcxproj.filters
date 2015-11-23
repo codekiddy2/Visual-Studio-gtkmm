@@ -79,28 +79,10 @@
     <ClCompile Include="..\..\gettext-runtime\intl\version.c">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\intl-exports.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\os2compat.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\printf-args.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\printf-parse.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\intl\threadlib.c">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gettext-runtime\intl\tsearch.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\vasnprintf.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gettext-runtime\intl\xsize.c">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="..\src\gettext-runtime\setlocale.c">
@@ -135,16 +117,7 @@
     <ClInclude Include="..\..\gettext-runtime\intl\lock.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gettext-runtime\intl\os2compat.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gettext-runtime\intl\plural-exp.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gettext-runtime\intl\printf-args.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gettext-runtime\intl\printf-parse.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gettext-runtime\intl\relocatable.h">
@@ -163,9 +136,6 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gettext-runtime\intl\wprintf-parse.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gettext-runtime\intl\xsize.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\src\libgnuintl.h">

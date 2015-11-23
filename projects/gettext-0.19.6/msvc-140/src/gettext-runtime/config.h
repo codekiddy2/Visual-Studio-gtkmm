@@ -38,7 +38,8 @@
 #define ENABLE_NLS 1
 
 /* Define to 1 if the package shall run at any location in the file system. */
-/* #undef ENABLE_RELOCATABLE */
+// codekiddy add - doesn't work
+#undef ENABLE_RELOCATABLE
 
 /* Define to 1 if realpath() can malloc memory, always gives an absolute path,
    and handles trailing slash correctly. */
@@ -157,6 +158,8 @@
 
 /* Define to 1 if you have <alloca.h> and it should be used (not on Ultrix).
    */
+	// codekiddy add
+	// there is alloca.h.in source tree
 /* #undef HAVE_ALLOCA_H */
 
 /* Define to 1 if you have the `argz_count' function. */
@@ -172,7 +175,8 @@
 /* #undef HAVE_ARGZ_STRINGIFY */
 
 /* Define to 1 if you have the `asprintf' function. */
-/* #undef HAVE_ASPRINTF */
+// codekiddy add
+#define HAVE_ASPRINTF 1
 
 /* Define to 1 if you have the `atexit' function. */
 #define HAVE_ATEXIT 1
@@ -196,7 +200,8 @@
 
 /* Define if the GNU dcgettext() function is already present or preinstalled.
    */
-/* #undef HAVE_DCGETTEXT */
+	// codekiddy add
+#define HAVE_DCGETTEXT 1
 
 /* Define to 1 if you have the declaration of `clearerr_unlocked', and to 0 if
    you don't. */
@@ -303,7 +308,8 @@
 #define HAVE_DECL__SNWPRINTF 1
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-/* #undef HAVE_DLFCN_H */
+//codekiddy add
+#undef HAVE_DLFCN_H
 
 /* Define if you have the declaration of environ. */
 #define HAVE_ENVIRON_DECL 1
@@ -330,7 +336,8 @@
 /* #undef HAVE_GETLOCALENAME_L */
 
 /* Define to 1 if you have the <getopt.h> header file. */
-/* #undef HAVE_GETOPT_H */
+// codekiddy add
+#undef HAVE_GETOPT_H
 
 /* Define to 1 if you have the `getopt_long_only' function. */
 /* #undef HAVE_GETOPT_LONG_ONLY */
@@ -339,7 +346,8 @@
 /* #undef HAVE_GETPAGESIZE */
 
 /* Define if the GNU gettext() function is already present or preinstalled. */
-/* #undef HAVE_GETTEXT */
+// codekiddy add
+#define HAVE_GETTEXT 1
 
 /* Define to 1 if you have the `gettimeofday' function. */
 /* #undef HAVE_GETTIMEOFDAY */
@@ -1093,7 +1101,8 @@
 #define HAVE_TOWLOWER 1
 
 /* Define to 1 if you have the `tsearch' function. */
-/* #undef HAVE_TSEARCH */
+//codekiddy don't have
+#undef HAVE_TSEARCH
 
 /* Define if you have the 'uintmax_t' type in <stdint.h> or <inttypes.h>. */
 #define HAVE_UINTMAX_T 1
@@ -1145,7 +1154,8 @@
 #define HAVE_WORKING_O_NOFOLLOW 0
 
 /* Define to 1 if you have the <xlocale.h> header file. */
-/* #undef HAVE_XLOCALE_H */
+// codekiddy add
+#define HAVE_XLOCALE_H 1
 
 /* Define to 1 if the system has the type `_Bool'. */
 #define HAVE__BOOL 1
@@ -1170,7 +1180,8 @@
 /* #undef ICONV_FLAVOR */
 
 /* Define to the value of ${prefix}, as a string. */
-#define INSTALLPREFIX "/d/GitHub/Visual-Studio-gtkmm/output/msvc-140/Debug/x64"
+//codekiddy uncomment and add into preprocessor
+// #define INSTALLPREFIX "/d/GitHub/Visual-Studio-gtkmm/output/msvc-140/Debug/x64"
 
 /* Define if integer division by zero raises signal SIGFPE. */
 #define INTDIV0_RAISES_SIGFPE 0

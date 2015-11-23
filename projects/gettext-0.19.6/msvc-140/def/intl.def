@@ -56,5 +56,45 @@ locale_charset @37
 ; ** UNRESOLVED EXTERNALS**
 ;_imp___ctype_ptr
 ;gl_locale_name_thread
-;libintl_relocate @38
-;libintl_set_relocation_prefix @39
+;libintl_relocate
+;libintl_set_relocation_prefix
+
+;** MANUALY ADDED SYMBOLS - commented unresolved **
+;gl_lock_t @38
+;gl_lock_define @39
+;gl_lock_define_initialized @40
+;gl_lock_init @41
+;gl_lock_lock @42
+;gl_lock_unlock @43
+;gl_recursive_lock_t @44
+;gl_recursive_lock_define @45
+;gl_recursive_lock_define_initialized @46
+;gl_recursive_lock_init @47
+;gl_recursive_lock_lock @48
+;gl_recursive_lock_unlock @49
+;libintl_thread_in_use @50
+libintl_lock_init_func @51
+libintl_lock_lock_func @52
+libintl_lock_unlock_func @53
+libintl_lock_destroy_func @54
+;libintl_rwlock_init_multithreaded @55
+libintl_rwlock_init_func @56
+;libintl_rwlock_rdlock_multithreaded @57
+libintl_rwlock_rdlock_func @58
+libintl_rwlock_wrlock_func @59
+;libintl_rwlock_unlock_multithreaded @60
+libintl_rwlock_unlock_func @61
+;libintl_rwlock_destroy_multithreaded @62
+libintl_rwlock_destroy_func @63
+;libintl_recursive_lock_init_multithreaded @64
+libintl_recursive_lock_init_func @65
+;libintl_recursive_lock_lock_multithreaded @66
+libintl_recursive_lock_lock_func @67
+;libintl_recursive_lock_unlock_multithreaded @68
+libintl_recursive_lock_unlock_func @69
+;libintl_recursive_lock_destroy_multithreaded @70
+libintl_recursive_lock_destroy_func @71
+libintl_once_func @72
+;libintl_once_singlethreaded @73
+;libintl_once_multithreaded @74
+;libintl_rwlock_wrlock_multithreaded @75

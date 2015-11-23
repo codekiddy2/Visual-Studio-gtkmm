@@ -56,6 +56,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configuration", "configurat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libasprintf", "libasprintf\libasprintf.vcxproj", "{01C84084-D700-4F5A-AF1D-765C36A5F785}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-lock", "test-lock\test-lock.vcxproj", "{04196AEE-1FD3-400C-A74F-2B364FE17962}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -112,6 +114,14 @@ Global
 		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Release|Win32.Build.0 = Release|Win32
 		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Release|x64.ActiveCfg = Release|x64
 		{01C84084-D700-4F5A-AF1D-765C36A5F785}.Release|x64.Build.0 = Release|x64
+		{04196AEE-1FD3-400C-A74F-2B364FE17962}.Debug|Win32.ActiveCfg = Debug|Win32
+		{04196AEE-1FD3-400C-A74F-2B364FE17962}.Debug|Win32.Build.0 = Debug|Win32
+		{04196AEE-1FD3-400C-A74F-2B364FE17962}.Debug|x64.ActiveCfg = Debug|x64
+		{04196AEE-1FD3-400C-A74F-2B364FE17962}.Debug|x64.Build.0 = Debug|x64
+		{04196AEE-1FD3-400C-A74F-2B364FE17962}.Release|Win32.ActiveCfg = Release|Win32
+		{04196AEE-1FD3-400C-A74F-2B364FE17962}.Release|Win32.Build.0 = Release|Win32
+		{04196AEE-1FD3-400C-A74F-2B364FE17962}.Release|x64.ActiveCfg = Release|x64
+		{04196AEE-1FD3-400C-A74F-2B364FE17962}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,5 +133,6 @@ Global
 		{2028080E-981B-448E-81CC-93A7CF63F92F} = {7979FA5F-8013-46FB-8578-70B85A14D958}
 		{99B3E8B9-AF07-44C6-9C39-0C6299A10E27} = {7979FA5F-8013-46FB-8578-70B85A14D958}
 		{E0214A07-B0F1-4D4D-BB57-91BB29D985AB} = {7979FA5F-8013-46FB-8578-70B85A14D958}
+		{04196AEE-1FD3-400C-A74F-2B364FE17962} = {B00E1593-5DC7-4706-9B69-1DD03A7AAE96}
 	EndGlobalSection
 EndGlobal

@@ -19,11 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\test-libintl\sample.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\libintl_static\libintl_static.vcxproj">
-      <Project>{a84d3840-b684-4129-a466-87c0de24b6bb}</Project>
+    <ProjectReference Include="..\libintl_dll\libintl_dll.vcxproj">
+      <Project>{9e3973b5-12bd-4e6f-a30a-d41d8e657a4d}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
@@ -31,11 +28,14 @@
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\gettext-runtime\tests\test-lock.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{46E91814-0E89-4CA3-A39B-F2895ACE083C}</ProjectGuid>
+    <ProjectGuid>{04196AEE-1FD3-400C-A74F-2B364FE17962}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>testlibintl_static</RootNamespace>
-    <ProjectName>test-intl_static</ProjectName>
+    <RootNamespace>testlibintl</RootNamespace>
+    <ProjectName>test-lock</ProjectName>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -45,13 +45,13 @@
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
@@ -73,16 +73,16 @@
     <Import Project="..\..\..\..\properties\project_test.props" />
     <Import Project="..\..\..\..\properties\solution_gettext.props" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\properties\project_test.props" />
     <Import Project="..\..\..\..\properties\solution_gettext.props" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_console.props" />
     <Import Project="..\..\..\..\properties\project_test.props" />
     <Import Project="..\..\..\..\properties\solution_gettext.props" />
@@ -96,8 +96,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -107,19 +107,7 @@
       <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>intl.lib;shlwapi.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>DGETTEXT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link>
-      <AdditionalDependencies>intl.lib;shlwapi.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>intl.dll.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -130,7 +118,18 @@
       <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>intl.lib;shlwapi.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>intl.dll.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>intl.dll.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,7 +140,7 @@
       <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>intl.lib;shlwapi.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>intl.dll.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

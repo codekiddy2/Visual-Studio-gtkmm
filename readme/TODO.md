@@ -67,3 +67,4 @@
 * project_test.props should be below solution level property, not above.
 * fontconfig when built, gets involed into other projects, check includes.
 * build gettest with ENABLE_RELOCATABLE macro
+* link glib with pcre2

@@ -61,8 +61,9 @@ extern "C" {
 
 
 /* Version number: (major<<16) + (minor<<8) + subminor */
-#define LIBINTL_VERSION 0x001306
-extern LIBINTL_DLL_EXPORTED __declspec (dllimport) int libintl_version;
+#define LIBINTL_VERSION 0x00196
+// codekiddy: C4273 warning - original was: extern LIBINTL_DLL_EXPORTED __declspec (dllimport) in libintl_version
+extern int libintl_version;
 
 
 /* We redirect the functions to those prefixed with "libintl_".  This is
