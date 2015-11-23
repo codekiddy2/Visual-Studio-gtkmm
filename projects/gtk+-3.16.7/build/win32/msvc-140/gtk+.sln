@@ -57,6 +57,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{2C70C705-6B33-4CC2-873A-DF20D581D5E1}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\config.h = ..\..\..\config.h
+		..\..\..\gdk\gdkconfig.h = ..\..\..\gdk\gdkconfig.h
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gdkdisplay", "gdkdisplay\gdkdisplay.vcxproj", "{AC359D74-8500-4270-A7DA-ED70E96031A2}"

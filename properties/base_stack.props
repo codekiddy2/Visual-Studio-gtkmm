@@ -126,7 +126,7 @@
     <Lib>
       <ErrorReporting>PromptImmediately</ErrorReporting>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
       <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
       <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
       <Verbose>true</Verbose>

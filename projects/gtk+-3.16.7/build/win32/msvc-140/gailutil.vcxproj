@@ -83,7 +83,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\libgail-util\gailutil.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)libgail-util\gailutil.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -95,7 +95,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\libgail-util\gailutil.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)libgail-util\gailutil.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -107,7 +107,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\libgail-util\gailutil.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)libgail-util\gailutil.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -119,7 +119,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\libgail-util\gailutil.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)libgail-util\gailutil.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

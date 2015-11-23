@@ -2,59 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
+    <SRC_DIR>$(PROJECTS_DIR)gtk+-3.16.7\</SRC_DIR>
     <GtkBinaryVersion>3.0.0</GtkBinaryVersion>
-    <GtkDummyPrefix>$(ROOT_DIR)</GtkDummyPrefix>
     <GtkVersion>3.16.7</GtkVersion>
-    <GenerateGtkWin32RC>$(PYTHON_DIR)python ..\process-in-win32.py --gtkwin32rc --gtk3manifest</GenerateGtkWin32RC>
-    <GenerateGtkDbusBuiltSources>cd ..\..\..\gtk $(PYTHON_DIR)python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml cd $(SolutionDir)</GenerateGtkDbusBuiltSources>
-    <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h</GenConfigH>
-    <GenGdkConfigHWin32>if exist ..\..\..\MSVC_$(Configuration) goto DONE_GDKCONFIG_H
-
-if exist ..\..\..\gdk\gdkconfig.h del ..\..\..\gdk\gdkconfig.h
-
-if exist ..\..\..\GDK_BROADWAY_BUILD del ..\..\..\GDK_BROADWAY_BUILD
-
-if exist ..\..\..\MSVC_$(Configuration)_Broadway del ..\..\..\MSVC_$(Configuration)_Broadway
-
-if exist $(Configuration)\$(Platform)\bin\$(GtkDllPrefix)gdk$(GtkDllSuffix).dll del $(Configuration)\$(Platform)\bin\$(GtkDllPrefix)gdk$(GtkDllSuffix).dll
-
-if exist $(Configuration)\$(Platform)\bin\gdk-$(ApiVersion).lib del $(Configuration)\$(Platform)\bin\gdk-$(ApiVersion).lib
-
-if "$(Configuration)" == "Release" del ..\..\..\MSVC_Debug
-
-if "$(Configuration)" == "Debug" del ..\..\..\MSVC_Release
-
-copy ..\..\..\gdk\gdkconfig.h.win32 ..\..\..\gdk\gdkconfig.h
-
-copy ..\..\..\gdk\gdkconfig.h.win32 ..\..\..\GDK_WIN32ONLY_BUILD
-
-echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)
-
-:DONE_GDKCONFIG_H</GenGdkConfigHWin32>
-    <GenGdkConfigHBroadway>if exist ..\..\..\MSVC_$(Configuration)_Broadway goto DONE_GDKCONFIG_H
-
-
-if exist ..\..\..\gdk\gdkconfig.h del ..\..\..\gdk\gdkconfig.h
-
-if exist ..\..\..\GDK_WIN32ONLY_BUILD del ..\..\..\GDK_WIN32ONLY_BUILD
-
-if exist ..\..\..\MSVC_Release del ..\..\..\MSVC_Release
-
-if exist ..\..\..\MSVC_Debug del ..\..\..\MSVC_Debug
-
-
-if "$(Configuration)" == "Release_Broadway" del ..\..\..\MSVC_Debug_Broadway
-
-if "$(Configuration)" == "Debug_Broadway" del ..\..\..\MSVC_Release_Broadway
-
-copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\gdk\gdkconfig.h
-
-copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\GDK_BROADWAY_BUILD
-
-echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)_Broadway
-
-:DONE_GDKCONFIG_H</GenGdkConfigHBroadway>
-    <SRC_DIR>$(REPO_DIR)projects\gtk+-3.16.7\</SRC_DIR>
+    <GtkDummyPrefix>$(ROOT_DIR)</GtkDummyPrefix>
+    <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h /Y</GenConfigH>
+    <GenGdkConfigHWin32>copy ..\..\..\gdk\gdkconfig.h.win32 ..\..\..\gdk\gdkconfig.h /Y</GenGdkConfigHWin32>
+    <GenGdkConfigHBroadway>copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\gdk\gdkconfig.h /Y</GenGdkConfigHBroadway>
+    <GenerateGtkWin32RC>$(PYTHON_DIR)python $(SRC_DIR)build\win32\process-in-win32.py --gtkwin32rc --gtk3manifest</GenerateGtkWin32RC>
+    <GenerateGtkDbusBuiltSources>cd $(SRC_DIR)gtk $(PYTHON_DIR)python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml cd $(SolutionDir)</GenerateGtkDbusBuiltSources>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_gtk+</_PropertySheetDisplayName>
@@ -73,20 +29,17 @@ echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)_Broadway
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
     <BuildMacro Include="GtkBinaryVersion">
       <Value>$(GtkBinaryVersion)</Value>
-    </BuildMacro>
-    <BuildMacro Include="GtkDummyPrefix">
-      <Value>$(GtkDummyPrefix)</Value>
     </BuildMacro>
     <BuildMacro Include="GtkVersion">
       <Value>$(GtkVersion)</Value>
     </BuildMacro>
-    <BuildMacro Include="GenerateGtkWin32RC">
-      <Value>$(GenerateGtkWin32RC)</Value>
-    </BuildMacro>
-    <BuildMacro Include="GenerateGtkDbusBuiltSources">
-      <Value>$(GenerateGtkDbusBuiltSources)</Value>
+    <BuildMacro Include="GtkDummyPrefix">
+      <Value>$(GtkDummyPrefix)</Value>
     </BuildMacro>
     <BuildMacro Include="GenConfigH">
       <Value>$(GenConfigH)</Value>
@@ -97,8 +50,11 @@ echo $(Configuration) &gt; ..\..\..\MSVC_$(Configuration)_Broadway
     <BuildMacro Include="GenGdkConfigHBroadway">
       <Value>$(GenGdkConfigHBroadway)</Value>
     </BuildMacro>
-    <BuildMacro Include="SRC_DIR">
-      <Value>$(SRC_DIR)</Value>
+    <BuildMacro Include="GenerateGtkWin32RC">
+      <Value>$(GenerateGtkWin32RC)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GenerateGtkDbusBuiltSources">
+      <Value>$(GenerateGtkDbusBuiltSources)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
