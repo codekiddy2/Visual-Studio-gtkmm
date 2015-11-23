@@ -43,14 +43,12 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -59,29 +57,29 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
     <Import Project="..\..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
     <Import Project="..\..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
     <Import Project="..\..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
     <Import Project="..\..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\..\properties\solution_glib.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
     <NuGetPackageImportStamp>765a3ff5</NuGetPackageImportStamp>
@@ -95,7 +93,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>GLIB_COMPILATION;G_LOG_DOMAIN="GLib";G_ENABLE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\;..\..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -106,7 +104,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>GLIB_COMPILATION;G_LOG_DOMAIN="GLib";G_ENABLE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\;..\..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -117,7 +115,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>GLIB_COMPILATION;G_LOG_DOMAIN="GLib";G_ENABLE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\;..\..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -128,7 +126,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>GLIB_COMPILATION;G_LOG_DOMAIN="GLib";G_ENABLE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\;..\..\..\..\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

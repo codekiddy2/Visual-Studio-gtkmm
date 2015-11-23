@@ -37,6 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{9B1ACF
 		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\glib-2.42.1.txt = Readme\glib-2.42.1.txt
 		Readme\glib-2.46.2.txt = Readme\glib-2.46.2.txt
+		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0EEBA45D-51BB-4DDB-A06F-54DB49C50CAD}"
