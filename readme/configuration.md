@@ -20,3 +20,4 @@
 * libepoxy (python)
 * gstreamer (bison)
 * gstreamer(mm?) (flex)
+* glib (python)

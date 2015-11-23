@@ -96,28 +96,28 @@
     <ClCompile />
     <Link />
     <Link>
-      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
     <ClCompile />
     <Link />
     <Link>
-      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">
     <ClCompile />
     <Link />
     <Link>
-      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
     <ClCompile />
     <Link />
     <Link>
-      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pango.dll.lib;cairo.dll.lib;pangoft2.dll.lib;pangocairo.dll.lib;freetype.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

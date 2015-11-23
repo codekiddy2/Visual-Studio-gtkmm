@@ -2,16 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
+    <SRC_DIR>$(PROJECTS_DIR)glib-2.46.2\</SRC_DIR>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h /Y</GenConfigH>
     <GenGLibConfigH>copy ..\..\..\glib\glibconfig.h.win32 ..\..\..\glib\glibconfig.h</GenGLibConfigH>
-    <GenGModuleConfH>copy ..\..\..\gmodule\gmoduleconf.h.win32 ..\..\..\gmodule\gmoduleconf.h</GenGModuleConfH>
     <GenGNetworkingH>copy ..\..\..\gio\gnetworking.h.win32 ..\..\..\gio\gnetworking.h</GenGNetworkingH>
+    <GenGModuleConfH>copy ..\..\..\gmodule\gmoduleconf.h.win32 ..\..\..\gmodule\gmoduleconf.h</GenGModuleConfH>
     <GenGLibMKEnums>if exist $(PYTHON_DIR)\python.exe $(PYTHON_DIR)\python.exe ..\replace.py --action=replace-var --input=..\..\..\gobject\glib-mkenums.in --output=..\..\..\gobject\glib-mkenums --var=GLIB_VERSION --outstring=2.46.2</GenGLibMKEnums>
-    <UseSystemPCREDefines>USE_SYSTEM_PCRE</UseSystemPCREDefines>
     <LocalCharsetDefs>LIBDIR=$(LIB_DIR)</LocalCharsetDefs>
-    <GLibBundledPCREDefines>PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;SUPPORT_UCP;SUPPORT_UTF;SUPPORT_UTF8;G_LOG_DOMAIN="GLib-GRegex"</GLibBundledPCREDefines>
     <GLibBundledPCREUndefs>-UBSR_ANYCRLF -UEBCDIC</GLibBundledPCREUndefs>
-    <SRC_DIR>$(REPO_DIR)projects\glib-2.46.2\</SRC_DIR>
+    <GLibBundledPCREDefines>PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;SUPPORT_UCP;SUPPORT_UTF;SUPPORT_UTF8;G_LOG_DOMAIN="GLib-GRegex"</GLibBundledPCREDefines>
   </PropertyGroup>
   <PropertyGroup>
     <Linkage-libffi>static</Linkage-libffi>
@@ -32,35 +31,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
     <BuildMacro Include="GenConfigH">
       <Value>$(GenConfigH)</Value>
     </BuildMacro>
     <BuildMacro Include="GenGLibConfigH">
       <Value>$(GenGLibConfigH)</Value>
     </BuildMacro>
-    <BuildMacro Include="GenGModuleConfH">
-      <Value>$(GenGModuleConfH)</Value>
-    </BuildMacro>
     <BuildMacro Include="GenGNetworkingH">
       <Value>$(GenGNetworkingH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GenGModuleConfH">
+      <Value>$(GenGModuleConfH)</Value>
     </BuildMacro>
     <BuildMacro Include="GenGLibMKEnums">
       <Value>$(GenGLibMKEnums)</Value>
     </BuildMacro>
-    <BuildMacro Include="UseSystemPCREDefines">
-      <Value>$(UseSystemPCREDefines)</Value>
-    </BuildMacro>
     <BuildMacro Include="LocalCharsetDefs">
       <Value>$(LocalCharsetDefs)</Value>
-    </BuildMacro>
-    <BuildMacro Include="GLibBundledPCREDefines">
-      <Value>$(GLibBundledPCREDefines)</Value>
     </BuildMacro>
     <BuildMacro Include="GLibBundledPCREUndefs">
       <Value>$(GLibBundledPCREUndefs)</Value>
     </BuildMacro>
-    <BuildMacro Include="SRC_DIR">
-      <Value>$(SRC_DIR)</Value>
+    <BuildMacro Include="GLibBundledPCREDefines">
+      <Value>$(GLibBundledPCREDefines)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

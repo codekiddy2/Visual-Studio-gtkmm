@@ -142,7 +142,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>usp10.lib;pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangowin32.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangowin32.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -154,7 +154,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>usp10.lib;pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangowin32.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangowin32.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
@@ -165,7 +165,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>usp10.lib;pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangowin32.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangowin32.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -177,7 +177,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>usp10.lib;pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangowin32.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangowin32.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
@@ -188,7 +188,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>usp10.lib;pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangowin32.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangowin32.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -200,7 +200,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>usp10.lib;pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangowin32.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangowin32.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
@@ -211,7 +211,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>usp10.lib;pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangowin32.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangowin32.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -223,7 +223,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>usp10.lib;pango.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangowin32.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangowin32.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -249,7 +249,12 @@
     <ProjectReference Include="pango.vcxproj">
       <Project>{68cc80b9-7225-4fb5-b9ab-9c1df50b6c72}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\pango\pangowin32-private.h" />
+    <ClInclude Include="..\..\..\pango\pangowin32.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

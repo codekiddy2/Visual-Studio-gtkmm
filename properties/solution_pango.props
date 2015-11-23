@@ -4,19 +4,8 @@
     <VSVer>10</VSVer>
     <GlibEtcInstallRootFromBuildWin32>..\..\..\vs$(VSVer)\$(Platform)</GlibEtcInstallRootFromBuildWin32>
     <CopyDir>$(GlibEtcInstallRoot)</CopyDir>
-    <PangoBinaryVersion>1.8.0</PangoBinaryVersion>
     <PangoDummyPrefix>$(ROOT_DIR)</PangoDummyPrefix>
-    <PangoDefines>G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)etc";LIBDIR="$(PangoDummyPrefix)lib"</PangoDefines>
-    <DoGenGir>
-set VSVER=$(VSVer)
-set CONF=$(Configuration)
-set PLAT=$(Platform)
-set BASEDIR=$(GlibEtcInstallRootFromBuildWin32)
-cd ..
-call gengir_pango.bat
-cd vs$(VSVer)
-</DoGenGir>
-    <SRC_DIR>$(REPO_DIR)projects\pango-1.36.8\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)pango-1.36.8\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_pango</_PropertySheetDisplayName>
@@ -90,17 +79,8 @@ copy /Y ..\..\..\pango\module-defs-win32.c.win32 ..\..\..\pango\DONE_MODULE_DEFS
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <BuildMacro Include="PangoBinaryVersion">
-      <Value>$(PangoBinaryVersion)</Value>
-    </BuildMacro>
     <BuildMacro Include="PangoDummyPrefix">
       <Value>$(PangoDummyPrefix)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PangoDefines">
-      <Value>$(PangoDefines)</Value>
-    </BuildMacro>
-    <BuildMacro Include="DoGenGir">
-      <Value>$(DoGenGir)</Value>
     </BuildMacro>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>

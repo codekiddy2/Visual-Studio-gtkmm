@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(ROOT_DIR)share/locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(SHARE_DIR)locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -86,7 +86,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(ROOT_DIR)share/locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(SHARE_DIR)locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -102,7 +102,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(ROOT_DIR)share/locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(SHARE_DIR)locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -113,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(ROOT_DIR)share/locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;ATK_LOCALEDIR="$(SHARE_DIR)locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -160,48 +160,85 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">if exist $(SRC_DIR)config.h goto DONE_CONFIG_H
 copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
 :DONE_CONFIG_H</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)config.h;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying config.h from config.h.win32...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">if exist $(SRC_DIR)config.h goto DONE_CONFIG_H
 copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
 :DONE_CONFIG_H</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\config.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)config.h;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying config.h from config.h.win32...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">if exist $(SRC_DIR)config.h goto DONE_CONFIG_H
 copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
 :DONE_CONFIG_H</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)config.h;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying config.h from config.h.win32...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">if exist $(SRC_DIR)config.h goto DONE_CONFIG_H
 copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
 :DONE_CONFIG_H</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\config.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)config.h;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="..\..\..\..\atk\atkmarshal.list">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating Marshalling Sources...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)atk
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)atk\atkmarshal.h;$(SRC_DIR)atk\atkmarshal.c;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Marshalling Sources...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)atk
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)atk\atkmarshal.h;$(SRC_DIR)atk\atkmarshal.c;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating Marshalling Sources...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)atk
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)atk\atkmarshal.h;$(SRC_DIR)atk\atkmarshal.c;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Marshalling Sources...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)atk
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h
 $(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\atk\atkmarshal.h;..\..\..\atk\atkmarshal.c;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)atk\atkmarshal.h;$(SRC_DIR)atk\atkmarshal.c;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\..\atk\atk.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\atk\atk-enum-types.h" />
+    <ClInclude Include="..\..\..\..\atk\atk.h" />
+    <ClInclude Include="..\..\..\..\atk\atkaction.h" />
+    <ClInclude Include="..\..\..\..\atk\atkcomponent.h" />
+    <ClInclude Include="..\..\..\..\atk\atkdocument.h" />
+    <ClInclude Include="..\..\..\..\atk\atkeditabletext.h" />
+    <ClInclude Include="..\..\..\..\atk\atkgobjectaccessible.h" />
+    <ClInclude Include="..\..\..\..\atk\atkhyperlink.h" />
+    <ClInclude Include="..\..\..\..\atk\atkhyperlinkimpl.h" />
+    <ClInclude Include="..\..\..\..\atk\atkhypertext.h" />
+    <ClInclude Include="..\..\..\..\atk\atkimage.h" />
+    <ClInclude Include="..\..\..\..\atk\atkmisc.h" />
+    <ClInclude Include="..\..\..\..\atk\atknoopobject.h" />
+    <ClInclude Include="..\..\..\..\atk\atknoopobjectfactory.h" />
+    <ClInclude Include="..\..\..\..\atk\atkobject.h" />
+    <ClInclude Include="..\..\..\..\atk\atkobjectfactory.h" />
+    <ClInclude Include="..\..\..\..\atk\atkplug.h" />
+    <ClInclude Include="..\..\..\..\atk\atkprivate.h" />
+    <ClInclude Include="..\..\..\..\atk\atkrange.h" />
+    <ClInclude Include="..\..\..\..\atk\atkregistry.h" />
+    <ClInclude Include="..\..\..\..\atk\atkrelation.h" />
+    <ClInclude Include="..\..\..\..\atk\atkrelationset.h" />
+    <ClInclude Include="..\..\..\..\atk\atkrelationtype.h" />
+    <ClInclude Include="..\..\..\..\atk\atkselection.h" />
+    <ClInclude Include="..\..\..\..\atk\atksocket.h" />
+    <ClInclude Include="..\..\..\..\atk\atkstate.h" />
+    <ClInclude Include="..\..\..\..\atk\atkstateset.h" />
+    <ClInclude Include="..\..\..\..\atk\atkstreamablecontent.h" />
+    <ClInclude Include="..\..\..\..\atk\atktable.h" />
+    <ClInclude Include="..\..\..\..\atk\atktablecell.h" />
+    <ClInclude Include="..\..\..\..\atk\atktext.h" />
+    <ClInclude Include="..\..\..\..\atk\atkutil.h" />
+    <ClInclude Include="..\..\..\..\atk\atkvalue.h" />
+    <ClInclude Include="..\..\..\..\atk\atkversion.h" />
+    <ClInclude Include="..\..\..\..\atk\atkwindow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

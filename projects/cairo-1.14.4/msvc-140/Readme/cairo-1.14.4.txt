@@ -55,7 +55,7 @@ smaller type check is also set to no. (don't know when)
 
 freetype somewhere linked staticaly (FC and GL) and in other cases dll
 edit: fixed, harbuzz.dll.lib should be removed also in all configurations where
-freetype is lined dinamicaly.
+freetype is lined dinamicaly. (edit, fixed, all DYN link)
 
 test project depends on "Install".
 Build cairo-gobject before "Install" if you want gobject support

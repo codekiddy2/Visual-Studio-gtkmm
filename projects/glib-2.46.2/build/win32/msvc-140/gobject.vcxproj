@@ -158,16 +158,16 @@
     <CustomBuild Include="..\..\..\gobject\glib-mkenums.in">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating glib-mkenums...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenGLibMKEnums)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\gobject\glib-mkenums;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)gobject\glib-mkenums;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating glib-mkenums...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GenGLibMKEnums)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\gobject\glib-mkenums;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)gobject\glib-mkenums;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating glib-mkenums...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenGLibMKEnums)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\gobject\glib-mkenums;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)gobject\glib-mkenums;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating glib-mkenums...</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenGLibMKEnums)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\gobject\glib-mkenums;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)gobject\glib-mkenums;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

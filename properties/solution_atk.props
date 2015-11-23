@@ -2,14 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <DefDir>$(INTERMEDIATE_DIR)</DefDir>
-    <GenConfigH>if exist ..\..\..\config.h goto DONE_CONFIG_H
-
-copy ..\..\..\config.h.win32 ..\..\..\config.h
-
-:DONE_CONFIG_H</GenConfigH>
-    <GenMarshalSrc>cd ..\..\..\atk$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --header &gt; atkmarshal.h$(BIN_DIR)glib-genmarshal --prefix=atk_marshal atkmarshal.list --body &gt; atkmarshal.c</GenMarshalSrc>
-    <SRC_DIR>$(REPO_DIR)projects\atk-2.18.0\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)atk-2.18.0\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -23,15 +16,6 @@ copy ..\..\..\config.h.win32 ..\..\..\config.h
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <BuildMacro Include="DefDir">
-      <Value>$(DefDir)</Value>
-    </BuildMacro>
-    <BuildMacro Include="GenConfigH">
-      <Value>$(GenConfigH)</Value>
-    </BuildMacro>
-    <BuildMacro Include="GenMarshalSrc">
-      <Value>$(GenMarshalSrc)</Value>
-    </BuildMacro>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>
     </BuildMacro>

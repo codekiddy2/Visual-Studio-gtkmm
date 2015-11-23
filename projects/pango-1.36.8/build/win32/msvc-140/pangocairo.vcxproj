@@ -136,30 +136,29 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies>cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>pangoft2.dll.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>..\..\..\pango\pangocairo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangocairo.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>fontconfig.dll.lib;freetype.lib;cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangocairo.def</ModuleDefinitionFile>
+      <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangocairo.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <Optimization>&lt;inherit from parent or project defaults&gt;</Optimization>
@@ -167,65 +166,62 @@
     <Link>
       <AdditionalDependencies>cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>pangoft2.dll.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>..\..\..\pango\pangocairo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangocairo.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <Optimization>&lt;inherit from parent or project defaults&gt;</Optimization>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>fontconfig.dll.lib;freetype.lib;cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangocairo.def</ModuleDefinitionFile>
+      <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangocairo.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies>cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>pangoft2.dll.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>..\..\..\pango\pangocairo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangocairo.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>fontconfig.dll.lib;freetype.lib;cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangocairo.def</ModuleDefinitionFile>
+      <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangocairo.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies>cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangocairo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangocairo.def</ModuleDefinitionFile>
       <IgnoreSpecificDefaultLibraries>pangoft2.dll.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>fontconfig.dll.lib;freetype.lib;cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangocairo.def</ModuleDefinitionFile>
+      <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangocairo.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -263,14 +259,26 @@
     <ProjectReference Include="pango.vcxproj">
       <Project>{68cc80b9-7225-4fb5-b9ab-9c1df50b6c72}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
     <ProjectReference Include="pangoft2.vcxproj">
       <Project>{68cc80b9-7225-4fb5-b9ab-9c1df50b6c73}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="pangowin32.vcxproj">
       <Project>{68cc80b9-7225-4fb5-b9ab-9c1df50b6c74}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\pango\pangocairo-coretext.h" />
+    <ClInclude Include="..\..\..\pango\pangocairo-coretextfont.h" />
+    <ClInclude Include="..\..\..\pango\pangocairo-fc.h" />
+    <ClInclude Include="..\..\..\pango\pangocairo-private.h" />
+    <ClInclude Include="..\..\..\pango\pangocairo-win32.h" />
+    <ClInclude Include="..\..\..\pango\pangocairo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

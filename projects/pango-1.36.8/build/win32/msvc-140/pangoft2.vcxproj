@@ -82,8 +82,8 @@
       <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>fontconfig.dll.lib;freetype.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangoft2.def</ModuleDefinitionFile>
+      <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangoft2.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
@@ -94,8 +94,8 @@
       <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>fontconfig.dll.lib;freetype.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangoft2.def</ModuleDefinitionFile>
+      <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangoft2.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
@@ -106,8 +106,8 @@
       <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>fontconfig.dll.lib;freetype.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangoft2.def</ModuleDefinitionFile>
+      <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangoft2.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
@@ -118,8 +118,8 @@
       <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>fontconfig.dll.lib;freetype.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>..\..\..\pango\pangoft2.def</ModuleDefinitionFile>
+      <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pangoft2.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -148,7 +148,19 @@
     <ProjectReference Include="pango.vcxproj">
       <Project>{68cc80b9-7225-4fb5-b9ab-9c1df50b6c72}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\pango\module-defs.h" />
+    <ClInclude Include="..\..\..\pango\pango-ot-private.h" />
+    <ClInclude Include="..\..\..\pango\pango-ot.h" />
+    <ClInclude Include="..\..\..\pango\pangofc-decoder.h" />
+    <ClInclude Include="..\..\..\pango\pangofc-font.h" />
+    <ClInclude Include="..\..\..\pango\pangofc-fontmap.h" />
+    <ClInclude Include="..\..\..\pango\pangofc-private.h" />
+    <ClInclude Include="..\..\..\pango\pangoft2-private.h" />
+    <ClInclude Include="..\..\..\pango\pangoft2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

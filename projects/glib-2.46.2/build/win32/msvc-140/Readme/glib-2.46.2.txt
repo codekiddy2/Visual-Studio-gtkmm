@@ -37,12 +37,18 @@ linker input for ffi.lib removed for gobject debug x64 only
 **************************************************************************************************************************************************************************
 NOTES:
 glib (extern pcre) will link to pcre8.dll.lib
+
 codegen python files need to be installed into glib-2.0/share/codegen, to avoid
 gdbus generated error.
+
 test-gio has runtime check reduced in debug mode due to runtime error.
+
 ZLIB_WINAPI must be defined for x86 builds, also zlib.dll x86 must define that macro
 on building.
 libffi must be built by msvc wraper.
+
+gnulib, libcharset and pcre source files have their macros defined in source file properties.
+these are defined in solution level property page.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -69,3 +75,6 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
+
+make configuration for glib to link to gettext's version of localcharset and gnulib.
+also consider ENABLE_RELOCATABLE in gettext.

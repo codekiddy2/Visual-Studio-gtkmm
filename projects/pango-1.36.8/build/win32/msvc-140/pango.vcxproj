@@ -141,7 +141,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>..\..\..\pango\pango.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pango.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -151,7 +151,7 @@
       <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>..\..\..\pango\pango.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pango.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
@@ -160,7 +160,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>..\..\..\pango\pango.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pango.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -171,7 +171,7 @@
       <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>..\..\..\pango\pango.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pango.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
@@ -180,7 +180,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>..\..\..\pango\pango.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pango.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -190,7 +190,7 @@
       <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>..\..\..\pango\pango.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pango.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
@@ -199,7 +199,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>..\..\..\pango\pango.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pango.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -209,7 +209,7 @@
       <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <ModuleDefinitionFile>..\..\..\pango\pango.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SRC_DIR)pango\pango.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -267,6 +267,49 @@
     <ClCompile Include="..\..\..\pango\mini-fribidi\fribidi.c" />
     <ClCompile Include="..\..\..\pango\mini-fribidi\fribidi_char_type.c" />
     <ClCompile Include="..\..\..\pango\mini-fribidi\fribidi_types.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\pango\mini-fribidi\fribidi.h" />
+    <ClInclude Include="..\..\..\pango\mini-fribidi\fribidi_config.h" />
+    <ClInclude Include="..\..\..\pango\mini-fribidi\fribidi_types.h" />
+    <ClInclude Include="..\..\..\pango\modules.h" />
+    <ClInclude Include="..\..\..\pango\pango-attributes.h" />
+    <ClInclude Include="..\..\..\pango\pango-bidi-type.h" />
+    <ClInclude Include="..\..\..\pango\pango-break.h" />
+    <ClInclude Include="..\..\..\pango\pango-color-table.h" />
+    <ClInclude Include="..\..\..\pango\pango-context.h" />
+    <ClInclude Include="..\..\..\pango\pango-coverage.h" />
+    <ClInclude Include="..\..\..\pango\pango-engine-private.h" />
+    <ClInclude Include="..\..\..\pango\pango-engine.h" />
+    <ClInclude Include="..\..\..\pango\pango-enum-types.h" />
+    <ClInclude Include="..\..\..\pango\pango-features.h" />
+    <ClInclude Include="..\..\..\pango\pango-font.h" />
+    <ClInclude Include="..\..\..\pango\pango-fontmap.h" />
+    <ClInclude Include="..\..\..\pango\pango-fontset.h" />
+    <ClInclude Include="..\..\..\pango\pango-glyph-item.h" />
+    <ClInclude Include="..\..\..\pango\pango-glyph.h" />
+    <ClInclude Include="..\..\..\pango\pango-gravity.h" />
+    <ClInclude Include="..\..\..\pango\pango-impl-utils.h" />
+    <ClInclude Include="..\..\..\pango\pango-item.h" />
+    <ClInclude Include="..\..\..\pango\pango-language-sample-table.h" />
+    <ClInclude Include="..\..\..\pango\pango-language.h" />
+    <ClInclude Include="..\..\..\pango\pango-layout-private.h" />
+    <ClInclude Include="..\..\..\pango\pango-layout.h" />
+    <ClInclude Include="..\..\..\pango\pango-matrix.h" />
+    <ClInclude Include="..\..\..\pango\pango-modules.h" />
+    <ClInclude Include="..\..\..\pango\pango-renderer.h" />
+    <ClInclude Include="..\..\..\pango\pango-script-lang-table.h" />
+    <ClInclude Include="..\..\..\pango\pango-script-private.h" />
+    <ClInclude Include="..\..\..\pango\pango-script.h" />
+    <ClInclude Include="..\..\..\pango\pango-tabs.h" />
+    <ClInclude Include="..\..\..\pango\pango-types.h" />
+    <ClInclude Include="..\..\..\pango\pango-utils.h" />
+    <ClInclude Include="..\..\..\pango\pango.h" />
+    <ClInclude Include="..\..\..\pango\pangocoretext-private.h" />
+    <ClInclude Include="..\..\..\pango\pangocoretext.h" />
+    <ClInclude Include="..\..\..\pango\pangoxft-private.h" />
+    <ClInclude Include="..\..\..\pango\pangoxft-render.h" />
+    <ClInclude Include="..\..\..\pango\pangoxft.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
