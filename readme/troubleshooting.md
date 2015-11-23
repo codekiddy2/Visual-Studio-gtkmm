@@ -59,6 +59,11 @@ if still things don't work this list here might help resolve the issue.
 	3. check active solution configuration and platform are correct and that all projects target same solution configuration
 	4. check if input file name is mistyped in Common properties > Linker > input > additional dependencies
 
+5. Gdk-ERROR **: _gdk_visual_init: unsupported BITSPIXEL: 0
+	* GTK+ and cairo must be compiled without whole program optimization
+	* LTCG flag must be turned off
+	* LTCG link status should be turned off as well
+
 
 **My problem is not listed here**
 

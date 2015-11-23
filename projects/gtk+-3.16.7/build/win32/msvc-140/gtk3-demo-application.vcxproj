@@ -52,29 +52,29 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
     <Import Project="..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
     <Import Project="..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
     <Import Project="..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\properties\base_console.props" />
-    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
     <Import Project="..\..\..\..\..\properties\project_test.props" />
+    <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -125,19 +125,15 @@
     <ClCompile Include="..\..\..\demos\gtk-demo\demo_resources.c" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="gdk.vcxproj">
-      <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073f7}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <Private>false</Private>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
     <ProjectReference Include="gtk-query-immodules\gtk-query-immodules.vcxproj">
       <Project>{edbd738f-6666-4fe5-b82f-939ee784456e}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="gtk-update-icon-cache\gtk-update-icon-cache.vcxproj">
       <Project>{4a0352a4-e700-4f18-b714-42adfe150768}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="gtk.vcxproj">
       <Project>{fc5aadb5-95cd-4bf0-ba8b-0c16fe7073f5}</Project>

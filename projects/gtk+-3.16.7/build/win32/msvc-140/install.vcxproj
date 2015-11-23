@@ -151,55 +151,58 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)include
-mkdir gtk\gdk
-mkdir gtk\gdk\win32
-mkdir gtk\gdk\deprecated
-mkdir gtk\gtk
-mkdir gtk\gtk\a11y
-mkdir gtk\gtk\deprecated
-mkdir libgail
+if not exist gtk\gdk mkdir gtk\gdk
+if not exist gtk\gdk\win32 mkdir gtk\gdk\win32
+if not exist gtk\gdk\deprecated mkdir gtk\gdk\deprecated
+if not exist gtk\gtk mkdir gtk\gtk
+if not exist gtk\gtk\a11y mkdir gtk\gtk\a11y
+if not exist gtk\gtk\deprecated mkdir gtk\gtk\deprecated
+if not exist libgail mkdir libgail
 cd gtk\gdk\win32
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
+echo INSTALL: headers
+xcopy $(SRC_DIR)gdk\win32\*.h /YQ
 cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gdk\deprecated\*.h /YQ
 cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gdk\*.h /YQ
 copy gdk.h ..\
 cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /YQ
 copy gtk.h ..\
 cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gtk\deprecated\*.h /YQ
 cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+xcopy $(SRC_DIR)gtk\a11y\*.h /YQ
 cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+xcopy $(SRC_DIR)libgail-util\*.h /YQ
+cd $(SHARE_DIR)icons\hicolor
+echo INSTALL: gtk demo data
+xcopy $(SRC_DIR)demos\gtk-demo\data\* /EFYQ
 cd ..\..\..\
-mkdir share\glib-2.0\schemas
+if not exist share\glib-2.0\schemas mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
+echo INSTALL: schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /YQ
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /YQ
+echo INSTALL: compile gsettings files...
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
-echo installing documentation ...
+echo INSTALL: documentation
 cd $(LIB_DIR)
+echo INSTALL: immodules directory
 if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
 if not exist gailutil\html mkdir gailutil\html
 cd gtk+\html
-xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+echo INSTALL: help files
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /YQ
 cd ..\..\gdk\html
-xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /YQ
 cd ..\..\gailutil\html
-xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -207,55 +210,58 @@ xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)include
-mkdir gtk\gdk
-mkdir gtk\gdk\win32
-mkdir gtk\gdk\deprecated
-mkdir gtk\gtk
-mkdir gtk\gtk\a11y
-mkdir gtk\gtk\deprecated
-mkdir libgail
+if not exist gtk\gdk mkdir gtk\gdk
+if not exist gtk\gdk\win32 mkdir gtk\gdk\win32
+if not exist gtk\gdk\deprecated mkdir gtk\gdk\deprecated
+if not exist gtk\gtk mkdir gtk\gtk
+if not exist gtk\gtk\a11y mkdir gtk\gtk\a11y
+if not exist gtk\gtk\deprecated mkdir gtk\gtk\deprecated
+if not exist libgail mkdir libgail
 cd gtk\gdk\win32
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
+echo INSTALL: headers
+xcopy $(SRC_DIR)gdk\win32\*.h /YQ
 cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gdk\deprecated\*.h /YQ
 cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gdk\*.h /YQ
 copy gdk.h ..\
 cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /YQ
 copy gtk.h ..\
 cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gtk\deprecated\*.h /YQ
 cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+xcopy $(SRC_DIR)gtk\a11y\*.h /YQ
 cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+xcopy $(SRC_DIR)libgail-util\*.h /YQ
+cd $(SHARE_DIR)icons\hicolor
+echo INSTALL: gtk demo data
+xcopy $(SRC_DIR)demos\gtk-demo\data\* /EFYQ
 cd ..\..\..\
-mkdir share\glib-2.0\schemas
+if not exist share\glib-2.0\schemas mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
+echo INSTALL: schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /YQ
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /YQ
+echo INSTALL: compile gsettings files...
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
-echo installing documentation ...
+echo INSTALL: documentation
 cd $(LIB_DIR)
+echo INSTALL: immodules directory
 if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
 if not exist gailutil\html mkdir gailutil\html
 cd gtk+\html
-xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+echo INSTALL: help files
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /YQ
 cd ..\..\gdk\html
-xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /YQ
 cd ..\..\gailutil\html
-xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -263,55 +269,58 @@ xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)include
-mkdir gtk\gdk
-mkdir gtk\gdk\win32
-mkdir gtk\gdk\deprecated
-mkdir gtk\gtk
-mkdir gtk\gtk\a11y
-mkdir gtk\gtk\deprecated
-mkdir libgail
+if not exist gtk\gdk mkdir gtk\gdk
+if not exist gtk\gdk\win32 mkdir gtk\gdk\win32
+if not exist gtk\gdk\deprecated mkdir gtk\gdk\deprecated
+if not exist gtk\gtk mkdir gtk\gtk
+if not exist gtk\gtk\a11y mkdir gtk\gtk\a11y
+if not exist gtk\gtk\deprecated mkdir gtk\gtk\deprecated
+if not exist libgail mkdir libgail
 cd gtk\gdk\win32
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
+echo INSTALL: headers
+xcopy $(SRC_DIR)gdk\win32\*.h /YQ
 cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gdk\deprecated\*.h /YQ
 cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gdk\*.h /YQ
 copy gdk.h ..\
 cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /YQ
 copy gtk.h ..\
 cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gtk\deprecated\*.h /YQ
 cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+xcopy $(SRC_DIR)gtk\a11y\*.h /YQ
 cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+xcopy $(SRC_DIR)libgail-util\*.h /YQ
+cd $(SHARE_DIR)icons\hicolor
+echo INSTALL: gtk demo data
+xcopy $(SRC_DIR)demos\gtk-demo\data\* /EFYQ
 cd ..\..\..\
-mkdir share\glib-2.0\schemas
+if not exist share\glib-2.0\schemas mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
+echo INSTALL: schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /YQ
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /YQ
+echo INSTALL: compile gsettings files...
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
-echo installing documentation ...
+echo INSTALL: documentation
 cd $(LIB_DIR)
+echo INSTALL: immodules directory
 if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
 if not exist gailutil\html mkdir gailutil\html
 cd gtk+\html
-xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+echo INSTALL: help files
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /YQ
 cd ..\..\gdk\html
-xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /YQ
 cd ..\..\gailutil\html
-xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -319,55 +328,58 @@ xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)include
-mkdir gtk\gdk
-mkdir gtk\gdk\win32
-mkdir gtk\gdk\deprecated
-mkdir gtk\gtk
-mkdir gtk\gtk\a11y
-mkdir gtk\gtk\deprecated
-mkdir libgail
+if not exist gtk\gdk mkdir gtk\gdk
+if not exist gtk\gdk\win32 mkdir gtk\gdk\win32
+if not exist gtk\gdk\deprecated mkdir gtk\gdk\deprecated
+if not exist gtk\gtk mkdir gtk\gtk
+if not exist gtk\gtk\a11y mkdir gtk\gtk\a11y
+if not exist gtk\gtk\deprecated mkdir gtk\gtk\deprecated
+if not exist libgail mkdir libgail
 cd gtk\gdk\win32
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
+echo INSTALL: headers
+xcopy $(SRC_DIR)gdk\win32\*.h /YQ
 cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gdk\deprecated\*.h /YQ
 cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gdk\*.h /YQ
 copy gdk.h ..\
 cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /YQ
 copy gtk.h ..\
 cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gtk\deprecated\*.h /YQ
 cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+xcopy $(SRC_DIR)gtk\a11y\*.h /YQ
 cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+xcopy $(SRC_DIR)libgail-util\*.h /YQ
+cd $(SHARE_DIR)icons\hicolor
+echo INSTALL: gtk demo data
+xcopy $(SRC_DIR)demos\gtk-demo\data\* /EFYQ
 cd ..\..\..\
-mkdir share\glib-2.0\schemas
+if not exist share\glib-2.0\schemas mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
+echo INSTALL: schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /YQ
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /YQ
+echo INSTALL: compile gsettings files...
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
-echo installing documentation ...
+echo INSTALL: documentation
 cd $(LIB_DIR)
+echo INSTALL: immodules directory
 if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
 if not exist gailutil\html mkdir gailutil\html
 cd gtk+\html
-xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+echo INSTALL: help files
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /YQ
 cd ..\..\gdk\html
-xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /YQ
 cd ..\..\gailutil\html
-xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -384,50 +396,51 @@ mkdir gtk\gtk\a11y
 mkdir gtk\gtk\deprecated
 mkdir libgail
 cd gtk\gdk\win32
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
+echo INSTALL: headers
+xcopy $(SRC_DIR)gdk\win32\*.h /YQ
 cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gdk\deprecated\*.h /YQ
 cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+xcopy $(SRC_DIR)gdk\broadway\*.h /YQ
 copy gdkbroadway.h ..\
 cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gdk\*.h /YQ
 copy gdk.h ..\
 cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /YQ
 copy gtk.h ..\
 cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gtk\deprecated\*.h /YQ
 cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+xcopy $(SRC_DIR)gtk\a11y\*.h /YQ
 cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+xcopy $(SRC_DIR)libgail-util\*.h /YQ
+cd $(SHARE_DIR)icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data\* /EFYQ
 cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
+echo INSTALL: schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /YQ
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /YQ
+echo INSTALL: compile gsettings files
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
 cd $(LIB_DIR)
+echo INSTALL: checking existence of immodules directory
 if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
-echo installing documentation ...
+echo INSTALL: documentation
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
 if not exist gailutil\html mkdir gailutil\html
 cd gtk+\html
-xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /YQ
 cd ..\..\gdk\html
-xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /YQ
 cd ..\..\gailutil\html
-xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -444,50 +457,51 @@ mkdir gtk\gtk\a11y
 mkdir gtk\gtk\deprecated
 mkdir libgail
 cd gtk\gdk\win32
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
+echo INSTALL: headers
+xcopy $(SRC_DIR)gdk\win32\*.h /YQ
 cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gdk\deprecated\*.h /YQ
 cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+xcopy $(SRC_DIR)gdk\broadway\*.h /YQ
 copy gdkbroadway.h ..\
 cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gdk\*.h /YQ
 copy gdk.h ..\
 cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /YQ
 copy gtk.h ..\
 cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gtk\deprecated\*.h /YQ
 cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+xcopy $(SRC_DIR)gtk\a11y\*.h /YQ
 cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+xcopy $(SRC_DIR)libgail-util\*.h /YQ
+cd $(SHARE_DIR)icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data\* /EFYQ
 cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
+echo INSTALL: schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /YQ
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /YQ
+echo INSTALL: compile gsettings files
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
 cd $(LIB_DIR)
+echo INSTALL: checking existence of immodules directory
 if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
-echo installing documentation ...
+echo INSTALL: documentation
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
 if not exist gailutil\html mkdir gailutil\html
 cd gtk+\html
-xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /YQ
 cd ..\..\gdk\html
-xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /YQ
 cd ..\..\gailutil\html
-xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|Win32'">
@@ -503,50 +517,51 @@ mkdir gtk\gtk\a11y
 mkdir gtk\gtk\deprecated
 mkdir libgail
 cd gtk\gdk\win32
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
+echo INSTALL: headers
+xcopy $(SRC_DIR)gdk\win32\*.h /YQ
 cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gdk\deprecated\*.h /YQ
 cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+xcopy $(SRC_DIR)gdk\broadway\*.h /YQ
 copy gdkbroadway.h ..\
 cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gdk\*.h /YQ
 copy gdk.h ..\
 cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /YQ
 copy gtk.h ..\
 cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gtk\deprecated\*.h /YQ
 cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+xcopy $(SRC_DIR)gtk\a11y\*.h /YQ
 cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+xcopy $(SRC_DIR)libgail-util\*.h /YQ
+cd $(SHARE_DIR)icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data\* /EFYQ
 cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
+echo INSTALL: schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /YQ
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /YQ
+echo INSTALL: compile gsettings files
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
 cd $(LIB_DIR)
+echo INSTALL: checking existence of immodules directory
 if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
-echo installing documentation ...
+echo INSTALL: documentation
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
 if not exist gailutil\html mkdir gailutil\html
 cd gtk+\html
-xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /YQ
 cd ..\..\gdk\html
-xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /YQ
 cd ..\..\gailutil\html
-xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -563,50 +578,51 @@ mkdir gtk\gtk\a11y
 mkdir gtk\gtk\deprecated
 mkdir libgail
 cd gtk\gdk\win32
-xcopy $(SRC_DIR)gdk\win32\*.h /Y
+echo INSTALL: headers
+xcopy $(SRC_DIR)gdk\win32\*.h /YQ
 cd ..\deprecated
-xcopy $(SRC_DIR)gdk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gdk\deprecated\*.h /YQ
 cd ..\broadway
-xcopy $(SRC_DIR)gdk\broadway\*.h /Y
+xcopy $(SRC_DIR)gdk\broadway\*.h /YQ
 copy gdkbroadway.h ..\
 cd ..
-xcopy $(SRC_DIR)gdk\*.h /Y
+xcopy $(SRC_DIR)gdk\*.h /YQ
 copy gdk.h ..\
 cd ..\gtk
-xcopy $(SRC_DIR)gtk\*.h /Y
+xcopy $(SRC_DIR)gtk\*.h /YQ
 copy gtk.h ..\
 cd deprecated
-xcopy $(SRC_DIR)gtk\deprecated\*.h /Y
+xcopy $(SRC_DIR)gtk\deprecated\*.h /YQ
 cd ..\a11y
-xcopy $(SRC_DIR)gtk\a11y\*.h /Y
+xcopy $(SRC_DIR)gtk\a11y\*.h /YQ
 cd ..\..\..\libgail
-xcopy $(SRC_DIR)libgail-util\*.h /Y
-cd $(ROOT_DIR)
-mkdir share\icons\hicolor
-cd share\icons\hicolor
-xcopy $(SRC_DIR)demos\gtk-demo\data /EFY
+xcopy $(SRC_DIR)libgail-util\*.h /YQ
+cd $(SHARE_DIR)icons\hicolor
+xcopy $(SRC_DIR)demos\gtk-demo\data\* /EFYQ
 cd ..\..\..\
 mkdir share\glib-2.0\schemas
 cd share\glib-2.0\schemas
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /Y
-xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /Y
-xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /Y
-echo "Compiling gsettings XML Files..."
+echo INSTALL: schemas
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.FileChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.ColorChooser.gschema.xml /YQ
+xcopy $(SRC_DIR)gtk\org.gtk.Settings.Debug.gschema.xml /YQ
+xcopy $(SRC_DIR)demos\gtk-demo\org.gtk.Demo.gschema.xml /YQ
+echo INSTALL: compile gsettings files
 $(ROOT_DIR)bin\glib-compile-schemas.exe $(ROOT_DIR)share\glib-2.0\schemas
 cd $(LIB_DIR)
+echo INSTALL: checking existence of immodules directory
 if not exist gtk-3.0\3.0.0\etc mkdir gtk-3.0\3.0.0\etc
-echo installing documentation ...
+echo INSTALL: documentation
 cd $(REF_DIR)
 if not exist gtk+\html mkdir gtk+\html
 if not exist gdk\html mkdir gdk\html
 if not exist gailutil\html mkdir gailutil\html
 cd gtk+\html
-xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gtk\html\*.* /YQ
 cd ..\..\gdk\html
-xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /Y
+xcopy $(SRC_DIR)docs\reference\gdk\html\*.* /YQ
 cd ..\..\gailutil\html
-xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
       <Message>Installing GTK+ ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
