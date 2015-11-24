@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{D36FE6
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\pcre-8.36.txt = Readme\pcre-8.36.txt
 		Readme\pcre-8.37.txt = Readme\pcre-8.37.txt
+		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}"

@@ -66,5 +66,4 @@
 * project_test.props can inherit base_console.props directly (edit: test project can be window or dll base, so no)
 * project_test.props should be below solution level property, not above.
 * fontconfig when built, gets involed into other projects, check includes.
-* build gettest with ENABLE_RELOCATABLE macro, check DIRECTORY_SEPARATOR macro and test current preprocessor definition
 * link glib with pcre2
