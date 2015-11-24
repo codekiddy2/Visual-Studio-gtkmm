@@ -4,8 +4,8 @@
     <VSVer>10</VSVer>
     <GlibEtcInstallRootFromBuildWin32>..\..\..\vs$(VSVer)\$(Platform)</GlibEtcInstallRootFromBuildWin32>
     <CopyDir>$(GlibEtcInstallRoot)</CopyDir>
-    <PangoDummyPrefix>$(ROOT_DIR)</PangoDummyPrefix>
     <SRC_DIR>$(PROJECTS_DIR)pango-1.36.8\</SRC_DIR>
+    <PangoDummyPrefix>$(DUMMY_ROOT)</PangoDummyPrefix>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_pango</_PropertySheetDisplayName>
@@ -13,7 +13,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)etc";LIBDIR="$(PangoDummyPrefix)lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;G_LOG_DOMAIN="Pango";PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;SYSCONFDIR="$(PangoDummyPrefix)/etc";LIBDIR="$(PangoDummyPrefix)/lib";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level1</WarningLevel>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <DisableSpecificWarnings>4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -79,11 +79,11 @@ copy /Y ..\..\..\pango\module-defs-win32.c.win32 ..\..\..\pango\DONE_MODULE_DEFS
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <BuildMacro Include="PangoDummyPrefix">
-      <Value>$(PangoDummyPrefix)</Value>
-    </BuildMacro>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PangoDummyPrefix">
+      <Value>$(PangoDummyPrefix)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

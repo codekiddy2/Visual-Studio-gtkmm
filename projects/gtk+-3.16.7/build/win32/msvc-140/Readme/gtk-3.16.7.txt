@@ -70,6 +70,9 @@ gtk v 3.18.4 does not work, it calls for cairo function that does not exist in c
 update icon cache prebuild event fails.
 edit: it works if compilation of icons was fine.
 
+Warning 4129 set to threat as error, "unrecognized character escape sequence", this needs to
+be correct, this sets directories.
+ 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:

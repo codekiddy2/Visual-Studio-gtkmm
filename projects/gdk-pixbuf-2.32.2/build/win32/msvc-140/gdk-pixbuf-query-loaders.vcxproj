@@ -82,7 +82,7 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <DataExecutionPrevention>
@@ -97,7 +97,7 @@ $(BIN_DIR)gdk-pixbuf-query-loaders &gt; $(LIB_DIR)gdk-pixbuf-2.0\$(GdkPixbufBina
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <DataExecutionPrevention>
@@ -112,7 +112,7 @@ $(BIN_DIR)gdk-pixbuf-query-loaders &gt; $(LIB_DIR)gdk-pixbuf-2.0\$(GdkPixbufBina
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <DataExecutionPrevention>
@@ -127,7 +127,7 @@ $(BIN_DIR)gdk-pixbuf-query-loaders &gt; $(LIB_DIR)gdk-pixbuf-2.0\$(GdkPixbufBina
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PIXBUF_LIBDIR="$(GdkPixbufDummyPrefix)/lib/gdk-pixbuf/$(GdkPixbufBinaryVersion)/loaders";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <DataExecutionPrevention>

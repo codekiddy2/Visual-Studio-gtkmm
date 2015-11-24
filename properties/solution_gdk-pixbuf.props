@@ -2,11 +2,11 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
+    <SRC_DIR>$(PROJECTS_DIR)gdk-pixbuf-2.32.2\</SRC_DIR>
     <GenerateGdkPixbufDef>echo EXPORTS &gt; $(INTERMEDIATE_DIR)gdk-pixbuf.def &amp;&amp; cl /EP -DG_OS_WIN32 -DINCLUDE_VARIABLES -DALL_FILES -DG_GNUC_CONST= -DG_GNUC_NULL_TERMINATED= ..\..\..\gdk-pixbuf\gdk-pixbuf.symbols &gt;&gt; $(INTERMEDIATE_DIR)gdk-pixbuf.def</GenerateGdkPixbufDef>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h</GenConfigH>
     <GdkPixbufBinaryVersion>2.32.2</GdkPixbufBinaryVersion>
-    <GdkPixbufDummyPrefix>D:\\GitHub\\Visual-Studio-gtkmm\\output\\$(PlatformToolset)\\$(Configuration)\\$(Platform)</GdkPixbufDummyPrefix>
-    <SRC_DIR>$(REPO_DIR)projects\gdk-pixbuf-2.32.2\</SRC_DIR>
+    <GdkPixbufDummyPrefix>$(DUMMY_ROOT)</GdkPixbufDummyPrefix>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -20,6 +20,9 @@
     <Xdcmake />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
     <BuildMacro Include="GenerateGdkPixbufDef">
       <Value>$(GenerateGdkPixbufDef)</Value>
     </BuildMacro>
@@ -31,9 +34,6 @@
     </BuildMacro>
     <BuildMacro Include="GdkPixbufDummyPrefix">
       <Value>$(GdkPixbufDummyPrefix)</Value>
-    </BuildMacro>
-    <BuildMacro Include="SRC_DIR">
-      <Value>$(SRC_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
-  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="UserMacros">
+    <DUMMY_ROOT>$(DRIVE):/GitHub/Visual-Studio-gtkmm/output/$(PlatformToolset)/$(Configuration)/$(Platform)</DUMMY_ROOT>
+  </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>stack_gtk+</_PropertySheetDisplayName>
   </PropertyGroup>
@@ -9,6 +11,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(INCLUDE_DIR);$(INCLUDE_DIR)goocanvas;$(INCLUDE_DIR)gettext\intl;$(INCLUDE_DIR)gettext\libasprintf;$(INCLUDE_DIR)iconv;$(INCLUDE_DIR)gstreamer;$(INCLUDE_DIR)gdk-pixbuf;$(INCLUDE_DIR)atk;$(INCLUDE_DIR)glib;$(INCLUDE_DIR)dirent;$(INCLUDE_DIR)harfbuzz;$(INCLUDE_DIR)expat;$(INCLUDE_DIR)libxml;$(INCLUDE_DIR)zlib;$(INCLUDE_DIR)fontconfig;$(INCLUDE_DIR)jpeg-turbo;$(INCLUDE_DIR)freetype;$(INCLUDE_DIR)png;$(INCLUDE_DIR)ffi;$(INCLUDE_DIR)tiff;$(INCLUDE_DIR)pixman;$(INCLUDE_DIR)cairo;$(INCLUDE_DIR)pango;$(INCLUDE_DIR)pcre2;$(INCLUDE_DIR)pcre;$(INCLUDE_DIR)bzip2;$(INCLUDE_DIR)gtk;$(LIB_DIR)glib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>CompileAsC</CompileAs>
+      <TreatSpecificWarningsAsErrors>4129;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <DisableSpecificWarnings>4311;4133;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -18,5 +22,9 @@
       <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BuildMacro Include="DUMMY_ROOT">
+      <Value>$(DUMMY_ROOT)</Value>
+    </BuildMacro>
+  </ItemGroup>
 </Project>

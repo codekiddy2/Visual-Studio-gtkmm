@@ -8,7 +8,7 @@
     <GenGNetworkingH>copy ..\..\..\gio\gnetworking.h.win32 ..\..\..\gio\gnetworking.h</GenGNetworkingH>
     <GenGModuleConfH>copy ..\..\..\gmodule\gmoduleconf.h.win32 ..\..\..\gmodule\gmoduleconf.h</GenGModuleConfH>
     <GenGLibMKEnums>if exist $(PYTHON_DIR)\python.exe $(PYTHON_DIR)\python.exe ..\replace.py --action=replace-var --input=..\..\..\gobject\glib-mkenums.in --output=..\..\..\gobject\glib-mkenums --var=GLIB_VERSION --outstring=2.46.2</GenGLibMKEnums>
-    <LocalCharsetDefs>LIBDIR=$(LIB_DIR)</LocalCharsetDefs>
+    <LocalCharsetDefs>LIBDIR=$(DUMMY_ROOT)/lib</LocalCharsetDefs>
     <GLibBundledPCREUndefs>-UBSR_ANYCRLF -UEBCDIC</GLibBundledPCREUndefs>
     <GLibBundledPCREDefines>PCRE_STATIC;LINK_SIZE=2;MAX_NAME_SIZE=32;MAX_NAME_COUNT=10000;NEWLINE=-1;POSIX_MALLOC_THRESHOLD=10;MATCH_LIMIT=10000000;MATCH_LIMIT_RECURSION=10000000;SUPPORT_UCP;SUPPORT_UTF;SUPPORT_UTF8;G_LOG_DOMAIN="GLib-GRegex"</GLibBundledPCREDefines>
   </PropertyGroup>

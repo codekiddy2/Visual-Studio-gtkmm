@@ -5,7 +5,7 @@
     <SRC_DIR>$(PROJECTS_DIR)gtk+-3.16.7\</SRC_DIR>
     <GtkBinaryVersion>3.0.0</GtkBinaryVersion>
     <GtkVersion>3.16.7</GtkVersion>
-    <GtkDummyPrefix>$(ROOT_DIR)</GtkDummyPrefix>
+    <GtkDummyPrefix>$(DUMMY_ROOT)</GtkDummyPrefix>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h /Y</GenConfigH>
     <GenGdkConfigHWin32>copy ..\..\..\gdk\gdkconfig.h.win32 ..\..\..\gdk\gdkconfig.h /Y</GenGdkConfigHWin32>
     <GenGdkConfigHBroadway>copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\gdk\gdkconfig.h /Y</GenGdkConfigHBroadway>

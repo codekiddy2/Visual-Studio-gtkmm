@@ -13,7 +13,7 @@ D:\Github\Visual-Studio-gtkmm\projects\compile-icons\msvc-140\start-32
 
 copy-paste one of the following lines (depending on your build type) to MSYS2 shell and hit enter:
 
-/d/Github/Visual-Studio-gtkmm/projects/compile-icons/release-32.sh
-/d/Github/Visual-Studio-gtkmm/projects/compile-icons/release-64.sh
-/d/Github/Visual-Studio-gtkmm/projects/compile-icons/debug-32.sh
-/d/Github/Visual-Studio-gtkmm/projects/compile-icons/debug-64.sh
+/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/release-32.sh
+/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/release-64.sh
+/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/debug-32.sh
+/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/debug-64.sh

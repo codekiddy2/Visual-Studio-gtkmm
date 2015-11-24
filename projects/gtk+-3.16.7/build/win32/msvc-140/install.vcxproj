@@ -383,14 +383,14 @@ xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)include
-mkdir gtk\gdk
-mkdir gtk\gdk\win32
-mkdir gtk\gdk\deprecated
-mkdir gtk\gdk\broadway
-mkdir gtk\gtk
-mkdir gtk\gtk\a11y
-mkdir gtk\gtk\deprecated
-mkdir libgail
+if not exist gtk\gdk mkdir gtk\gdk
+if not exist gtk\gdk\win32 mkdir gtk\gdk\win32
+if not exist gtk\gdk\deprecated mkdir gtk\gdk\deprecated
+if not exist gtk\gdk\broadway mkdir gtk\gdk\broadway
+if not exist gtk\gtk mkdir gtk\gtk
+if not exist gtk\gtk\a11y mkdir gtk\gtk\a11y
+if not exist gtk\gtk\deprecated mkdir gtk\gtk\deprecated
+if not exist libgail mkdir libgail
 cd gtk\gdk\win32
 echo INSTALL: headers
 xcopy $(SRC_DIR)gdk\win32\*.h /YQ
@@ -444,14 +444,14 @@ xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)include
-mkdir gtk\gdk
-mkdir gtk\gdk\win32
-mkdir gtk\gdk\deprecated
-mkdir gtk\gdk\broadway
-mkdir gtk\gtk
-mkdir gtk\gtk\a11y
-mkdir gtk\gtk\deprecated
-mkdir libgail
+if not exist gtk\gdk mkdir gtk\gdk
+if not exist gtk\gdk\win32 mkdir gtk\gdk\win32
+if not exist gtk\gdk\deprecated mkdir gtk\gdk\deprecated
+if not exist gtk\gdk\broadway mkdir gtk\gdk\broadway
+if not exist gtk\gtk mkdir gtk\gtk
+if not exist gtk\gtk\a11y mkdir gtk\gtk\a11y
+if not exist gtk\gtk\deprecated mkdir gtk\gtk\deprecated
+if not exist libgail mkdir libgail
 cd gtk\gdk\win32
 echo INSTALL: headers
 xcopy $(SRC_DIR)gdk\win32\*.h /YQ
@@ -504,14 +504,14 @@ xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)include
-mkdir gtk\gdk
-mkdir gtk\gdk\win32
-mkdir gtk\gdk\deprecated
-mkdir gtk\gdk\broadway
-mkdir gtk\gtk
-mkdir gtk\gtk\a11y
-mkdir gtk\gtk\deprecated
-mkdir libgail
+if not exist gtk\gdk mkdir gtk\gdk
+if not exist gtk\gdk\win32 mkdir gtk\gdk\win32
+if not exist gtk\gdk\deprecated mkdir gtk\gdk\deprecated
+if not exist gtk\gdk\broadway mkdir gtk\gdk\broadway
+if not exist gtk\gtk mkdir gtk\gtk
+if not exist gtk\gtk\a11y mkdir gtk\gtk\a11y
+if not exist gtk\gtk\deprecated mkdir gtk\gtk\deprecated
+if not exist libgail mkdir libgail
 cd gtk\gdk\win32
 echo INSTALL: headers
 xcopy $(SRC_DIR)gdk\win32\*.h /YQ
@@ -565,14 +565,14 @@ xcopy $(SRC_DIR)docs\reference\libgail-util\html\*.* /YQ</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)include
-mkdir gtk\gdk
-mkdir gtk\gdk\win32
-mkdir gtk\gdk\deprecated
-mkdir gtk\gdk\broadway
-mkdir gtk\gtk
-mkdir gtk\gtk\a11y
-mkdir gtk\gtk\deprecated
-mkdir libgail
+if not exist gtk\gdk mkdir gtk\gdk
+if not exist gtk\gdk\win32 mkdir gtk\gdk\win32
+if not exist gtk\gdk\deprecated mkdir gtk\gdk\deprecated
+if not exist gtk\gdk\broadway mkdir gtk\gdk\broadway
+if not exist gtk\gtk mkdir gtk\gtk
+if not exist gtk\gtk\a11y mkdir gtk\gtk\a11y
+if not exist gtk\gtk\deprecated mkdir gtk\gtk\deprecated
+if not exist libgail mkdir libgail
 cd gtk\gdk\win32
 echo INSTALL: headers
 xcopy $(SRC_DIR)gdk\win32\*.h /YQ
