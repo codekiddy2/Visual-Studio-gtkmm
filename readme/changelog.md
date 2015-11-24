@@ -20,6 +20,8 @@ set /NOLOGO for librarian in "base_stack.props"
 
 appending macros to "Additional include directories" accross all projects for finer inclusion control.
 
+setting all project to use multibyte character set
+
 
 **Compiler warnings**
 
@@ -67,3 +69,11 @@ base_stack.props
 stack_gtk+.props
 
 	4129	(level 1)	'character' : unrecognized character escape sequence
+	
+>candidates for "treat as error"
+
+	4273	(level 1)	'function' : inconsistent DLL linkage
+	
+>candidates for "ignore"
+
+	4018	(level 3)	'expression' : signed/unsigned mismatch
