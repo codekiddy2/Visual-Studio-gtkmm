@@ -29,11 +29,13 @@ added threat as error 4129 to stack_gtk.props
 >Ignored warnigs:
 
 base_stack.props
+
 	4101	(level 3)	'identifier' : unreferenced local variable
 	4244	(level 3,4)	'conversion' conversion from 'type1' to 'type2', possible loss of data
 	4305	(level 1)	'identifier' : truncation from 'type1' to 'type2'
 	
 stack_gtk+.props
+
 	4311	(level 1)	'variable' : pointer truncation from 'type' to 'type'
 	4133	(level 3)	'type' : incompatible types - from 'type1' to 'type2'
 
@@ -41,6 +43,7 @@ stack_gtk+.props
 >Warnings treated as error:
 
 base_stack.props
+
 	4098	(level 1)	'function' : void function returning a value
 	4002	(level 1)	too many actual parameters for macro 'identifier'
 	4003				not enough actual parameters for macro
@@ -57,8 +60,9 @@ base_stack.props
 	4053				An expression of type void was used as an operand
 	4071				no function prototype given
 	4150	(level 2)	deletion of pointer to incomplete type 'type'; no destructor called
-	4819				The file contains a character that cannot be represented in the current code page
+	4819	(level 1)	The file contains a character that cannot be represented in the current code page (number).
 	4530	(level 1)	C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
 
 stack_gtk+.props
+
 	4129	(level 1)	'character' : unrecognized character escape sequence
