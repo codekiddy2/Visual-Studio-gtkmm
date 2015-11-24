@@ -7,6 +7,7 @@
 "Use full paths" set to "no" in base_stack.props.
 
 Whole program optimization and LTCG turn off for all configurations:
+
 		1. turn off: Common properties > Genearl > Whole program optimization
 		2. inherit: Common properties > C/C++ > Optimization > Whole program optimization
 		3. inherit: Common properties > Linker > Optimization > Link time code generation
@@ -17,15 +18,15 @@ http://blogs.msdn.com/b/vcblog/archive/2009/02/24/quick-tips-on-using-whole-prog
 set /NOLOGO for compiler in "base_stack.props"
 set /NOLOGO for librarian in "base_stack.props"
 
-appending macros to include directories accross all projects for finer inclusion control.
+appending macros to "Additional include directories" accross all projects for finer inclusion control.
 
 
-warnings: (adding to stack_gtk.props, base_setup should be left alone, settings there are from msvc_recommended_pragmas.h ? )
-added ignore warning 4311, 4133 to stack_gtk.props (apearing mostly in gtk+, seen elsewhere?)
-added threat as error 4129 to stack_gtk.props
+**Compiler warnings**
 
-**Warnings**
+added ignore warning 4311, 4133 to stack_gtk+.props (apearing mostly in gtk+ ?)
+added treat as error 4129 to stack_gtk.props
 
+ 
 >Ignored warnigs:
 
 base_stack.props
@@ -46,19 +47,19 @@ base_stack.props
 
 	4098	(level 1)	'function' : void function returning a value
 	4002	(level 1)	too many actual parameters for macro 'identifier'
-	4003				not enough actual parameters for macro
-	4013				'function' undefined; assuming extern returning int
-	4020				too many actual parameters
-	4021				too few actual parameters
-	4027				function declared without formal parameter list
-	4029				declared formal parameter list different from definition
-	4033				'function' must return a value
-	4035				'function' : no return value
-	4045				array bounds overflow
-	4047				different levels of indirection
-	4049				terminating line number emission
-	4053				An expression of type void was used as an operand
-	4071				no function prototype given
+	4003	(level 1)	not enough actual parameters for macro 'identifier'
+	4013	(level 3)	'function' undefined; assuming extern returning int
+	4020	(level 1)	'function' : too many actual parameters
+	4021	(level 1)	'function' : too few actual parameters
+	4027	(level 1)	function declared without formal parameter list
+	4029	(level 1)	declared formal parameter list different from definition
+	4033	(level 1)	'function' must return a value
+	4035	(level 3)	'function' : no return value
+	4045	(level 1)	'array' : array bounds overflow
+	4047	(level 1)	'operator' : 'identifier1' differs in levels of indirection from 'identifier2'
+	4049	(level 1)	compiler limit : terminating line number emission
+	4053	(level 4)	The ?: operator is given an expression of type void. The value of the void operand is undefined.
+	4071	(level 2)	'function' : no function prototype given
 	4150	(level 2)	deletion of pointer to incomplete type 'type'; no destructor called
 	4819	(level 1)	The file contains a character that cannot be represented in the current code page (number).
 	4530	(level 1)	C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
