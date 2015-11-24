@@ -163,7 +163,7 @@ system path in control panel like so:
 In property manager Select all test projects at once and click on "properties"
 button, or right click properties, then in property pages that opens set
 * "Configuration" to "All configurations"
-* "Platform" to "All platform"
+* "Platform" to "All platforms"
 * Common properties > Debugging > Environment > path=$(BIN_DIR);%path%
 
 

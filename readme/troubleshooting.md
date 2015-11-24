@@ -8,6 +8,7 @@
 
 
 **1. error: The application was unable to start correctly (ex. 0xc000007b)**
+
 	1. 32 bit application is loading 64 bit DLL or vice versa.
 		1. check you PATH settings
 		2. check debugging environment.
@@ -18,6 +19,7 @@
 
 
 **2. error: compiler can't find include file (ex. filename.h)**
+
 	1. first check $(SRC_DIR) macro is set to correct source package
 	2. check "Additional include directories" are pointing compiler to correct place
 	3. depending on include directive in source file, compiler search in done in following order:
@@ -39,6 +41,7 @@
 		2. https://msdn.microsoft.com/en-us/library/36k2cdd4(v=vs.140).aspx
 
 **3. error: unresolved external symbol (ex. ?allocate@?$allocator@D@std@@QEAAPEAD_K@Z )**
+
 	1. if compiling glibmm, atkmm, pangomm, cairomm, gtkmm, goocanvasmm or gstreamermm
 		1. turn off: Common properties > Genearl > Whole program optimization
 		2. inherit: Common properties > C/C++ > Optimization > Whole program optimization
@@ -56,12 +59,14 @@
 
 
 **4. error: linker can't open input file (ex. somelib.lib)**
+
 	1. check library search directory in Common properties > Linker > General > Additional library directories
 	2. in project that builds missing library check Common properties > Linker > Advanced > import library
 	3. check active solution configuration and platform are correct and that all projects target same solution configuration
 	4. check if input file name is mistyped in Common properties > Linker > input > additional dependencies
 
 **5. Gdk-ERROR **: _gdk_visual_init: unsupported BITSPIXEL: 0**
+
 	* GTK+ and cairo must be compiled without whole program optimization
 	* LTCG flag must be turned off
 	* LTCG link status should be turned off as well
