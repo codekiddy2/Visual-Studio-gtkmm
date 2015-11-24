@@ -11,15 +11,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\util\cairo-gobject\cairo-gobject-enums.c">
+    <ClCompile Include="$(SRC_DIR)util\cairo-gobject\cairo-gobject-enums.c">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\cairo-gobject\cairo-gobject-structs.c">
+    <ClCompile Include="$(SRC_DIR)util\cairo-gobject\cairo-gobject-structs.c">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\util\cairo-gobject\cairo-gobject.h">
+    <ClInclude Include="$(SRC_DIR)util\cairo-gobject\cairo-gobject.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
