@@ -57,6 +57,9 @@ icons must be installed and cached (both hicolor and adwaita)
 Troubleshooting:
 gtk-demo runs and throws an error message with unknown symbols, possible cause:
 libffi is still questionalble (or icons? edit needed) building custom ffi and icons solved the problem
+edit^
+FOLLOWING MUST BE COMPILED WITH MULTIBYTE TO PROBLEM WITH UNKNOWN FONTS ERROR WINDOW
+pcre, iconv, gettext, glib, gdk-pixbuf, cairo, pango, atk, pixman and gtk+
 
 gtk-demo runs without fonts and console behind shows pango rleated errors, possible cause:
 build cairo and pango without freetype. (of course fontconfig is out of question -> it never worked)
@@ -72,7 +75,7 @@ edit: it works if compilation of icons was fine.
 
 Warning 4129 set to threat as error, "unrecognized character escape sequence", this needs to
 be correct, this sets directories.
- 
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:

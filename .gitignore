@@ -85,7 +85,6 @@ $RECYCLE.BIN/
 *.bak
 *.ilk
 *.log
-*.lib
 *.sbr
 *.sdf
 *.opensdf
@@ -94,6 +93,7 @@ $RECYCLE.BIN/
 *.dll
 *.lib
 *.exe
+*.exp
 
 
 # =====
@@ -168,11 +168,6 @@ ipch/
 # file extensions
 # ===============
 
-#cario output
-*.FEATURES
-*.GOBJECT
-*.FT
-
 
 # ==============
 # directory root
@@ -192,7 +187,6 @@ ipch/
 # =================
 # directory level 2
 # =================
-/projects/old/*
 !/projects/Readme/
 
 
@@ -211,13 +205,10 @@ ipch/
 #zlib
 !/projects/*/contrib/
 
-#cairo
-!/projects/*/msvc/
-
 #gstreamer, libxml
 !/projects/*/win32/
 
-#jasper, libepoxy
+#jasper, libepoxy-1.2
 !/projects/*/src/
 
 #libpng
@@ -258,9 +249,6 @@ ipch/
 #libepoxy generated files
 /projects/libepoxy*/msvc-140/include/
 /projects/libepoxy*/msvc-140/src/
-
-#cairo generated files
-/projects/cairo*/msvc/msvc-140/cairo-features.h
 
 
 # =================
