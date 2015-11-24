@@ -92,7 +92,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Debug\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;BUILDING_LIBINTL;BUILDING_DLL;LIBDIR=$(LIBDIR);LOCALEDIR=$(LOCALEDIR);LOCALE_ALIAS_PATH=$(LOCALE_ALIAS_PATH);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
       <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -105,7 +105,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\Win32\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;BUILDING_LIBINTL;BUILDING_DLL;LIBDIR=$(LIBDIR);LOCALEDIR=$(LOCALEDIR);LOCALE_ALIAS_PATH=$(LOCALE_ALIAS_PATH);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
       <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -121,7 +121,7 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\lib";LOCALEDIR="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\Github\\Visual-Studio-gtkmm\\output\\v140\\Debug\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;BUILDING_LIBINTL;BUILDING_DLL;LIBDIR=$(LIBDIR);LOCALEDIR=$(LOCALEDIR);LOCALE_ALIAS_PATH=$(LOCALE_ALIAS_PATH);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
       <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -141,7 +141,7 @@ copy .\..\gettext-runtime\intl\libgnuintl.h /Y</Command>
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>IN_LIBINTL;HAVE_CONFIG_H;BUILDING_LIBINTL;BUILDING_DLL;HAVE_ICONV=1;DEPENDS_ON_LIBICONV=1;LIBDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\lib";LOCALEDIR="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\share\\locale";LOCALE_ALIAS_PATH="d:\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\Release\\x64\\share\\locale";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IN_LIBINTL;BUILDING_LIBINTL;BUILDING_DLL;LIBDIR=$(LIBDIR);LOCALEDIR=$(LOCALEDIR);LOCALE_ALIAS_PATH=$(LOCALE_ALIAS_PATH);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader />
       <AdditionalIncludeDirectories>$(MOD_DIR)gettext-runtime;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

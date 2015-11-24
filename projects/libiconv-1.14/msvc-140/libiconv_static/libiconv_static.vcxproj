@@ -20,8 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\lib\relocatable.c" />
-    <ClCompile Include="..\libiconv\iconv.c" />
-    <ClCompile Include="..\libiconv\localcharset.c" />
+    <ClCompile Include="..\src\iconv.c" />
+    <ClCompile Include="..\src\localcharset.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\lib\aliases.h" />
@@ -240,18 +240,18 @@
     <ClInclude Include="..\..\lib\utf8.h" />
     <ClInclude Include="..\..\lib\vietcomb.h" />
     <ClInclude Include="..\..\lib\viscii.h" />
-    <ClInclude Include="..\libiconv\config.h" />
-    <ClInclude Include="..\libiconv\iconv.h" />
-    <ClInclude Include="..\libiconv\localcharset.h" />
+    <ClInclude Include="..\src\iconv.h" />
+    <ClInclude Include="..\src\localcharset.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\libiconv\libiconv.rc" />
+    <ResourceCompile Include="..\src\libiconv.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9B2F0A36-007C-4A8F-BC70-C72F0F82234B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>libiconv_static</RootNamespace>
     <ProjectName>iconv_static</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -271,13 +271,11 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -328,6 +326,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>BUILDING_LIBICONV;BUILDING_LIBCHARSET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -339,6 +338,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>BUILDING_LIBICONV;BUILDING_LIBCHARSET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -350,6 +350,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>BUILDING_LIBICONV;BUILDING_LIBCHARSET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -363,6 +364,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>BUILDING_LIBICONV;BUILDING_LIBCHARSET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

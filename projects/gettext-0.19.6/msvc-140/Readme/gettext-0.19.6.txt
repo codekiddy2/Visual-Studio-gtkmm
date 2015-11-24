@@ -39,7 +39,7 @@ Open Visual Studio solution and before building ensure paths in preprocessor cor
 follow default settings, select configuration and build.
 Once done build the "Install" project to install headers.
 
-output from test projects must be readable.
+outputs from test projects must be readable (and positive).
 
 libexpat is needed for gettext tools not libintl
 
@@ -53,6 +53,9 @@ the *.bat file is set to include modified version! so:
 io.h must be included by force in project settings to avoid unresolved functions:
 open(), close(), read() ... not tested yet and at the moment I have no idea if this is wrong or not,
 so you can modify the INCLUDE variable, in both *.bat file and *.compiler file.
+edit^ :
+see TODO
+
 this project will link to DLL of libiconv, if you want static link
 define USING_STATIC_LIBICONV in preprocessor definitions to avoid unresolved stuff.
 
@@ -86,8 +89,8 @@ TESTINGS:
 	Debug x64
 
 1.1.0-2
-	Debug x64
-	Release x64
+	Debug x64 + test
+	Release x64 + test
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -96,7 +99,14 @@ need to install locale files?
 is locale.alias (Locale name alias data base) needed and how to generate it?
 edit: NONE OF ABOVE IS NEEDED.
 
-when building libintl original locale_charset.h should be included, not the one customized
+when building libintl original localcharset.h should be included, not the one customized
 from libiconv, which means setting includes so that compiler look for intl header before iconv header.
+edit^ :
+localcharset has #include "localcharset.h" so it includes correct header.
+
+build gettest with ENABLE_RELOCATABLE macro does not work
 
 test if current preprocessor entry is case sensitive.
+edit^ :
+check DIRECTORY_SEPARATOR macro and test current preprocessor definition which
+differs with DIRECTORY_SEPARATOR found in source code.

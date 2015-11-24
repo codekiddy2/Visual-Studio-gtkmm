@@ -23,6 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>libiconv</RootNamespace>
     <ProjectName>iconv_dll</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -35,20 +36,18 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -99,6 +98,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>LIBICONV_EXPORTS;BUILDING_LIBCHARSET;BUILDING_LIBICONV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
   </ItemDefinitionGroup>
@@ -107,6 +107,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>LIBICONV_EXPORTS;BUILDING_LIBCHARSET;BUILDING_LIBICONV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
   </ItemDefinitionGroup>
@@ -115,22 +116,24 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>LIBICONV_EXPORTS;BUILDING_LIBCHARSET;BUILDING_LIBICONV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PreprocessorDefinitions>LIBICONV_EXPORTS;BUILDING_LIBCHARSET;BUILDING_LIBICONV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="iconv.c" />
-    <ClCompile Include="localcharset.c" />
+    <ClCompile Include="..\src\iconv.c" />
+    <ClCompile Include="..\src\localcharset.c" />
     <ClCompile Include="..\..\lib\relocatable.c" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="libiconv.rc" />
+    <ResourceCompile Include="..\src\libiconv.rc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\lib\aliases.h" />
@@ -349,9 +352,8 @@
     <ClInclude Include="..\..\lib\utf8.h" />
     <ClInclude Include="..\..\lib\vietcomb.h" />
     <ClInclude Include="..\..\lib\viscii.h" />
-    <ClInclude Include="config.h" />
-    <ClInclude Include="iconv.h" />
-    <ClInclude Include="localcharset.h" />
+    <ClInclude Include="..\src\iconv.h" />
+    <ClInclude Include="..\src\localcharset.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\lib\encodings.def" />
