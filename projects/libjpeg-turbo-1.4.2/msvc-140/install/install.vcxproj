@@ -155,22 +155,6 @@ xcopy $(SRC_DIR)*.h /FY</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\jpeg-static.vcxproj">
-      <Project>{3cee3be9-bd1f-4bb1-92fe-afd7fb742d23}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-    <ProjectReference Include="..\sharedlib\jpeg.vcxproj">
-      <Project>{1307d66c-f139-43ca-9208-5a34ca014e45}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
     <ProjectReference Include="..\turbojpeg-static.vcxproj">
       <Project>{4194ea4e-d199-4952-b568-8ee89b269ae5}</Project>
       <Private>false</Private>

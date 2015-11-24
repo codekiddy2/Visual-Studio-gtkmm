@@ -1,43 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\adler32.c">
+    <ClCompile Include="..\..\..\..\adler32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\compress.c">
+    <ClCompile Include="..\..\..\..\compress.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\crc32.c">
+    <ClCompile Include="..\..\..\..\crc32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\deflate.c">
+    <ClCompile Include="..\..\..\..\deflate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\infback.c">
+    <ClCompile Include="..\..\..\..\infback.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\inffast.c">
+    <ClCompile Include="..\..\..\..\inffast.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\inftrees.c">
+    <ClCompile Include="..\..\..\masmx64\inffas8664.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\inflate.c">
+    <ClCompile Include="..\..\..\..\inflate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\testzlib\testzlib.c">
+    <ClCompile Include="..\..\..\..\inftrees.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\trees.c">
+    <ClCompile Include="..\..\..\testzlib\testzlib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\zutil.c">
+    <ClCompile Include="..\..\..\..\trees.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\uncompr.c">
+    <ClCompile Include="..\..\..\..\uncompr.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\masmx64\inffas8664.c">
+    <ClCompile Include="..\..\..\..\zutil.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,28 +62,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Object Include="..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\gvmat64.obj">
-      <Filter>Object Files\Debug64</Filter>
-    </Object>
-    <Object Include="..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\inffasx64.obj">
-      <Filter>Object Files\Debug64</Filter>
-    </Object>
-    <Object Include="..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\inffas32.obj">
-      <Filter>Object Files\Debux86</Filter>
-    </Object>
-    <Object Include="..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\match686.obj">
-      <Filter>Object Files\Debux86</Filter>
-    </Object>
-    <Object Include="..\..\..\..\..\output\v140\Release\x64\intermediate\zlib\asm\gvmat64.obj">
+    <Object Include="..\..\..\..\..\..\output\v140\Release\x64\intermediate\zlib\asm\gvmat64.obj">
       <Filter>Object Files\Release64</Filter>
     </Object>
-    <Object Include="..\..\..\..\..\output\v140\Release\x64\intermediate\zlib\asm\inffasx64.obj">
+    <Object Include="..\..\..\..\..\..\output\v140\Release\x64\intermediate\zlib\asm\inffasx64.obj">
       <Filter>Object Files\Release64</Filter>
     </Object>
-    <Object Include="..\..\..\..\..\output\v140\Release\Win32\intermediate\zlib\asm\inffas32.obj">
+    <Object Include="..\..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\gvmat64.obj">
+      <Filter>Object Files\Debug64</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\inffasx64.obj">
+      <Filter>Object Files\Debug64</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\inffas32.obj">
+      <Filter>Object Files\Debux86</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\match686.obj">
+      <Filter>Object Files\Debux86</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\..\output\v140\Release\Win32\intermediate\zlib\asm\inffas32.obj">
       <Filter>Object Files\Release86</Filter>
     </Object>
-    <Object Include="..\..\..\..\..\output\v140\Release\Win32\intermediate\zlib\asm\match686.obj">
+    <Object Include="..\..\..\..\..\..\..\output\v140\Release\Win32\intermediate\zlib\asm\match686.obj">
       <Filter>Object Files\Release86</Filter>
     </Object>
   </ItemGroup>

@@ -4,12 +4,13 @@
 * expat (cmake-gui) configuration is optional ?
 * freeglut (cmake-gui) configuration is optional ?
 * gettext (mozilla-build) configuration is optional
-* pkg-config (mozilla-build)
+* pkg-config (mozilla-build) configuration is optional ?
 * harfbuzz (mozilla-build) configuration is optional
 * readline ?
 * editline ?
 * adwaita icon theme (msys2)
 * hicolor icon theme (msys2)
+* libjpeg (cmake) configuration is optional
 
 **List of projects that use external tools**
 

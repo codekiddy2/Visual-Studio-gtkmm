@@ -17,7 +17,6 @@
     </Link>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
-      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
     </Lib>
     <Midl />
     <ProjectReference />

@@ -2,11 +2,11 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{5efcce53-1c7c-4771-b07a-423422b569e3}</UniqueIdentifier>
+      <UniqueIdentifier>{c73c3696-f320-4e55-a38d-741b82873fed}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\testzlib\testzlib.c">
+    <ClCompile Include="..\..\..\minizip\minizip.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

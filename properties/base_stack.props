@@ -26,7 +26,7 @@
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_OBSOLETE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <PrecompiledHeaderOutputFile>$(INTERMEDIATE_DIR)$(TargetName).pch</PrecompiledHeaderOutputFile>
@@ -85,7 +85,7 @@
     <ResourceCompile>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <ResourceOutputFileName>$(INTERMEDIATE_DIR)%(Filename).res</ResourceOutputFileName>
-      <ShowProgress>true</ShowProgress>
+      <ShowProgress>false</ShowProgress>
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Midl>

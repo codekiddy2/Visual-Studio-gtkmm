@@ -21,14 +21,14 @@
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jccolor-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jccolor-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jccolor-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jccolor-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jccolor-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jccolor-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jccolor-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jccolor-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jccolor-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jccolor-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jccolor-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jccolor-sse2-64.obj</Outputs>
@@ -46,14 +46,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jccolor-sse2-64.asm</C
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jcgray-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcgray-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcgray-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcgray-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcgray-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcgray-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcgray-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcgray-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcgray-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jcgray-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jcgray-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jcgray-sse2-64.obj</Outputs>
@@ -71,14 +71,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcgray-sse2-64.asm</Co
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jcsample-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcsample-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcsample-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcsample-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcsample-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcsample-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcsample-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcsample-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcsample-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jcsample-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jcsample-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jcsample-sse2-64.obj</Outputs>
@@ -96,14 +96,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jcsample-sse2-64.asm</
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jdcolor-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdcolor-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdcolor-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdcolor-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdcolor-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdcolor-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdcolor-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdcolor-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdcolor-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jdcolor-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdcolor-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jdcolor-sse2-64.obj</Outputs>
@@ -121,14 +121,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdcolor-sse2-64.asm</C
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jdmerge-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdmerge-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdmerge-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdmerge-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdmerge-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdmerge-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdmerge-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdmerge-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdmerge-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jdmerge-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdmerge-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jdmerge-sse2-64.obj</Outputs>
@@ -146,14 +146,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdmerge-sse2-64.asm</C
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jdsample-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdsample-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdsample-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdsample-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdsample-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdsample-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdsample-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdsample-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdsample-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jdsample-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdsample-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jdsample-sse2-64.obj</Outputs>
@@ -171,14 +171,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jdsample-sse2-64.asm</
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jfdctflt-sse-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctflt-sse-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctflt-sse-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctflt-sse-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctflt-sse-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctflt-sse-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctflt-sse-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctflt-sse-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctflt-sse-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jfdctflt-sse-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctflt-sse-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jfdctflt-sse-64.obj</Outputs>
@@ -196,14 +196,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctflt-sse-64.asm</C
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jfdctfst-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctfst-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctfst-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctfst-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctfst-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctfst-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctfst-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctfst-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctfst-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jfdctfst-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctfst-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jfdctfst-sse2-64.obj</Outputs>
@@ -221,14 +221,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctfst-sse2-64.asm</
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jfdctint-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctint-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctint-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctint-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctint-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctint-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctint-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctint-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctint-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jfdctint-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctint-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jfdctint-sse2-64.obj</Outputs>
@@ -246,14 +246,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jfdctint-sse2-64.asm</
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jidctflt-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctflt-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctflt-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctflt-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctflt-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jidctflt-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctflt-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jidctflt-sse2-64.obj</Outputs>
@@ -271,14 +271,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctflt-sse2-64.asm</
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jidctfst-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctfst-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctfst-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctfst-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctfst-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctfst-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctfst-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctfst-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctfst-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jidctfst-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctfst-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jidctfst-sse2-64.obj</Outputs>
@@ -296,14 +296,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctfst-sse2-64.asm</
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jidctint-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctint-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctint-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctint-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctint-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctint-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctint-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctint-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctint-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jidctint-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctint-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jidctint-sse2-64.obj</Outputs>
@@ -321,14 +321,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctint-sse2-64.asm</
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jidctred-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctred-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctred-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctred-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctred-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctred-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctred-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctred-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctred-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jidctred-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctred-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jidctred-sse2-64.obj</Outputs>
@@ -346,14 +346,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jidctred-sse2-64.asm</
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jquantf-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquantf-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquantf-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquantf-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquantf-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquantf-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquantf-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquantf-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquantf-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jquantf-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jquantf-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jquantf-sse2-64.obj</Outputs>
@@ -371,14 +371,14 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquantf-sse2-64.asm</C
   <ItemGroup>
     <CustomBuild Include="..\..\simd\jquanti-sse2-64.asm">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquanti-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquanti-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquanti-sse2-64.asm</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquanti-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquanti-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquanti-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquanti-sse2-64.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin64 -DWIN64 -D__x86_64__ -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquanti-sse2-64.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jquanti-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jquanti-sse2-64.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jquanti-sse2-64.obj</Outputs>
@@ -398,8 +398,8 @@ nasm -fwin64 -DWIN64 -D__x86_64__ -I..\win\ -I..\simd\ -g jquanti-sse2-64.asm</C
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jccolor-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jccolor-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jccolor-mmx.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jccolor-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
@@ -408,8 +408,8 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jccolor-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jccolor-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jccolor-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jccolor-mmx.asm</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -420,11 +420,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jccolor-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jccolor-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jccolor-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jccolor-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jccolor-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jccolor-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jccolor-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -435,11 +435,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jccolor-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcgray-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcgray-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jcgray-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcgray-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcgray-mmx.asm</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jcgray-mmx.obj</Outputs>
     </CustomBuild>
@@ -450,11 +450,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcgray-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcgray-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcgray-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jcgray-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcgray-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcgray-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jcgray-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -464,12 +464,12 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcgray-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcsample-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcsample-mmx.asm</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jcsample-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcsample-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcsample-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jcsample-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -479,11 +479,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcsample-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcsample-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcsample-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jcsample-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcsample-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jcsample-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jcsample-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
@@ -495,11 +495,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jcsample-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdcolor-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdcolor-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdcolor-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdcolor-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdcolor-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jdcolor-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -509,11 +509,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdcolor-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdcolor-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdcolor-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdcolor-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdcolor-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdcolor-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jdcolor-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
@@ -525,11 +525,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdcolor-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdmerge-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdmerge-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdmerge-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdmerge-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdmerge-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jdmerge-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -540,11 +540,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdmerge-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdmerge-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdmerge-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdmerge-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdmerge-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdmerge-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jdmerge-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -555,11 +555,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdmerge-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdsample-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdsample-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdsample-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdsample-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdsample-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jdsample-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -570,11 +570,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdsample-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdsample-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdsample-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jdsample-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdsample-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jdsample-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jdsample-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -585,11 +585,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jdsample-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctflt-3dn.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctflt-3dn.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctflt-3dn.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctflt-3dn.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctflt-3dn.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jfdctflt-3dn.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -600,11 +600,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctflt-3dn.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctflt-sse.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctflt-sse.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctflt-sse.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctflt-sse.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctflt-sse.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jfdctflt-sse.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -615,11 +615,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctflt-sse.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctfst-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctfst-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctfst-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctfst-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctfst-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jfdctfst-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -630,11 +630,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctfst-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctfst-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctfst-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctfst-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctfst-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctfst-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jfdctfst-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -645,11 +645,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctfst-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctint-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctint-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctint-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctint-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctint-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jfdctint-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -660,11 +660,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctint-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctint-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctint-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jfdctint-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctint-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jfdctint-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jfdctint-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -675,11 +675,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jfdctint-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-3dn.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-3dn.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctflt-3dn.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-3dn.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-3dn.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctflt-3dn.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -690,11 +690,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-3dn.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-sse.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-sse.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctflt-sse.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-sse.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-sse.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctflt-sse.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -705,11 +705,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-sse.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctflt-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctflt-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctflt-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -720,11 +720,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctflt-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctfst-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctfst-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctfst-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctfst-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctfst-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctfst-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -735,11 +735,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctfst-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctfst-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctfst-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctfst-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctfst-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctfst-sse2.asm</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctfst-sse2.obj</Outputs>
     </CustomBuild>
@@ -750,11 +750,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctfst-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctint-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctint-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctint-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctint-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctint-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctint-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -765,11 +765,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctint-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctint-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctint-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctint-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctint-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctint-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctint-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -780,11 +780,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctint-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctred-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctred-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctred-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctred-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctred-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctred-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -795,12 +795,12 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctred-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctred-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctred-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jidctred-sse2.obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jidctred-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctred-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jidctred-sse2.asm</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
     <CustomBuild Include="..\..\simd\jquant-3dn.asm">
@@ -810,11 +810,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jidctred-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-3dn.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquant-3dn.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jquant-3dn.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-3dn.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquant-3dn.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jquant-3dn.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -825,11 +825,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-3dn.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquant-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jquant-mmx.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-mmx.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquant-mmx.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jquant-mmx.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -840,11 +840,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-mmx.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-sse.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquant-sse.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jquant-sse.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-sse.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquant-sse.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jquant-sse.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -855,11 +855,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquant-sse.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquantf-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquantf-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jquantf-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquantf-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquantf-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jquantf-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -870,11 +870,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquantf-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquanti-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquanti-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jquanti-sse2.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquanti-sse2.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jquanti-sse2.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jquanti-sse2.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -885,11 +885,11 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jquanti-sse2.asm</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jsimdcpu.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jsimdcpu.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jsimdcpu.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .\..\..\simd
-nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jsimdcpu.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)simd
+$(NASM_DIR)nasm -fwin32 -DWIN32 -I$(SRC_DIR)win\ -I$(SRC_DIR)simd\ -g jsimdcpu.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jsimdcpu.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -899,6 +899,7 @@ nasm -fwin32 -DWIN32 -I..\win\ -I..\simd\ -g jsimdcpu.asm</Command>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>simd</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">

@@ -12,6 +12,8 @@ Whole program optimization and LTCG turn off for all configurations:
 		2. inherit: Common properties > C/C++ > Optimization > Whole program optimization
 		3. inherit: Common properties > Linker > Optimization > Link time code generation
 		4. clear: common properties > Linker > General > LTCG status in base_release.props
+		5. clear: common properties > librarian > Genear > Link Time Code Generation
+		
 		
 http://blogs.msdn.com/b/vcblog/archive/2009/02/24/quick-tips-on-using-whole-program-optimization.aspx
 
@@ -22,12 +24,13 @@ appending macros to "Additional include directories" accross all projects for fi
 
 setting all project to use multibyte character set
 
+set to no: common properties > resources > suppress startup banner base_stack.props
+set to no: common properties > resources > show progress base_stack.props
 
 **Compiler warnings**
 
 added ignore warning 4311, 4133 to stack_gtk+.props (apearing mostly in gtk+ ?)
 added treat as error 4129 to stack_gtk.props
-
  
 >Ignored warnigs:
 
