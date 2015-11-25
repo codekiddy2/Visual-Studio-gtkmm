@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jbig", "jbig\jbig.vcxproj", "{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tstcodec85", "tstcodec85\tstcodec85.vcxproj", "{3C13C42F-C4AB-4BB6-9428-350796F76204}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E51667DC-02F0-4DF4-BF56-CDD9B6DABF71}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{2093D218-190E-4194-9421-3BA7CBF33B10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{AB83BC31-8542-430C-97CC-D587C7B42E47}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+		Readme\jbigkit-2.1.txt = Readme\jbigkit-2.1.txt
+		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}.Debug|x64.ActiveCfg = Debug|x64
+		{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}.Debug|x64.Build.0 = Debug|x64
+		{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}.Debug|x86.ActiveCfg = Debug|Win32
+		{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}.Debug|x86.Build.0 = Debug|Win32
+		{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}.Release|x64.ActiveCfg = Release|x64
+		{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}.Release|x64.Build.0 = Release|x64
+		{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}.Release|x86.ActiveCfg = Release|Win32
+		{A38CC069-FDFD-4E02-ACDF-D671AEA4C477}.Release|x86.Build.0 = Release|Win32
+		{3C13C42F-C4AB-4BB6-9428-350796F76204}.Debug|x64.ActiveCfg = Debug|x64
+		{3C13C42F-C4AB-4BB6-9428-350796F76204}.Debug|x64.Build.0 = Debug|x64
+		{3C13C42F-C4AB-4BB6-9428-350796F76204}.Debug|x86.ActiveCfg = Debug|Win32
+		{3C13C42F-C4AB-4BB6-9428-350796F76204}.Debug|x86.Build.0 = Debug|Win32
+		{3C13C42F-C4AB-4BB6-9428-350796F76204}.Release|x64.ActiveCfg = Release|x64
+		{3C13C42F-C4AB-4BB6-9428-350796F76204}.Release|x64.Build.0 = Release|x64
+		{3C13C42F-C4AB-4BB6-9428-350796F76204}.Release|x86.ActiveCfg = Release|Win32
+		{3C13C42F-C4AB-4BB6-9428-350796F76204}.Release|x86.Build.0 = Release|Win32
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x64.ActiveCfg = Debug|x64
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x64.Build.0 = Debug|x64
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x86.ActiveCfg = Debug|Win32
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x86.Build.0 = Debug|Win32
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x64.ActiveCfg = Release|x64
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x64.Build.0 = Release|x64
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x86.ActiveCfg = Release|Win32
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C13C42F-C4AB-4BB6-9428-350796F76204} = {E51667DC-02F0-4DF4-BF56-CDD9B6DABF71}
+	EndGlobalSection
+EndGlobal

@@ -23,3 +23,17 @@
 	export CFLAGS=-I/d/gtkmm/output/Debug/x64/include:$CFLAGS
 	export CPPFLAGS=-I/d/gtkmm/output/Debug/x64/include:$CPPFLAGS
 	export CXXFLAGS=-I/d/gtkmm/output/Debug/x64/include:$CXXFLAGS
+
+>Example used to generate libtiff solution
+
+	set ROOT_DIR=D:\Github\Visual-Studio-gtkmm\output\v140\Release\x64
+	set LIB=%ROOT_DIR%\lib;%LIB%
+	set INCLUDE_DIR=%ROOT_DIR%\include
+	set INCLUDE=%INCLUDE_DIR%;%INCLUDE_DIR%\zlib;%INCLUDE_DIR%\jpeg-turbo;%INCLUDE_DIR%\lzma;%INCLUDE%
+	
+	
+	set ZLIB_INCLUDE_DIR=%INCLUDE_DIR%\zlib
+	set JPEG_INCLUDE_DIR=%INCLUDE_DIR%\jpeg-turbo
+	set GLUT_INCLUDE_DIR=%INCLUDE_DIR%\GL
+	set LIBLZMA_INCLUDE_DIR=%INCLUDE_DIR%\lzma
+	
