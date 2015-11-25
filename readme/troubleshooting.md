@@ -54,6 +54,7 @@
 	6. check if included source files should be excluded instead, (ex. depends on library which you do not have).
 	7. if project depends on definition file, check their contents (possibly comment out symbol in *.def file)
 	8. check if definition file is missing
+	9. clean solution, then rebuild (GTK+ solution is an example for this issue with broadway libs)
 	9. check macros in source files to see macro conditions.
 	10. copy paste unresolved symbol into google.
 

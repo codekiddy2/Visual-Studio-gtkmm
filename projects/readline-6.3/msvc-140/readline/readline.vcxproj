@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA6E1997-F3D2-4BCA-9B13-463417E292A0}</ProjectGuid>
+    <RootNamespace>readline</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_readline.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_readline.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_readline.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_readline.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile />
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(MOD_DIR);$(PROJECTS_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <ForcedIncludeFiles>io.h;sys\stat.h</ForcedIncludeFiles>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile />
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(MOD_DIR);$(PROJECTS_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <ForcedIncludeFiles>io.h;sys\stat.h</ForcedIncludeFiles>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile />
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(MOD_DIR);$(PROJECTS_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <ForcedIncludeFiles>io.h;sys\stat.h</ForcedIncludeFiles>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile />
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SRC_DIR);$(MOD_DIR);$(PROJECTS_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <ForcedIncludeFiles>io.h;sys\stat.h</ForcedIncludeFiles>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\bind.c" />
+    <ClCompile Include="..\..\callback.c" />
+    <ClCompile Include="..\..\colors.c" />
+    <ClCompile Include="..\..\compat.c" />
+    <ClCompile Include="..\..\complete.c" />
+    <ClCompile Include="..\..\display.c" />
+    <ClCompile Include="..\..\emacs_keymap.c" />
+    <ClCompile Include="..\..\funmap.c" />
+    <ClCompile Include="..\..\histexpand.c" />
+    <ClCompile Include="..\..\histfile.c" />
+    <ClCompile Include="..\..\history.c" />
+    <ClCompile Include="..\..\histsearch.c" />
+    <ClCompile Include="..\..\input.c" />
+    <ClCompile Include="..\..\isearch.c" />
+    <ClCompile Include="..\..\keymaps.c" />
+    <ClCompile Include="..\..\kill.c" />
+    <ClCompile Include="..\..\macro.c" />
+    <ClCompile Include="..\..\mbutil.c" />
+    <ClCompile Include="..\..\misc.c" />
+    <ClCompile Include="..\..\nls.c" />
+    <ClCompile Include="..\..\parens.c" />
+    <ClCompile Include="..\..\parse-colors.c" />
+    <ClCompile Include="..\..\readline.c" />
+    <ClCompile Include="..\..\rltty.c" />
+    <ClCompile Include="..\..\savestring.c" />
+    <ClCompile Include="..\..\search.c" />
+    <ClCompile Include="..\..\shell.c" />
+    <ClCompile Include="..\..\signals.c" />
+    <ClCompile Include="..\..\terminal.c" />
+    <ClCompile Include="..\..\text.c" />
+    <ClCompile Include="..\..\tilde.c" />
+    <ClCompile Include="..\..\undo.c" />
+    <ClCompile Include="..\..\vi_keymap.c" />
+    <ClCompile Include="..\..\vi_mode.c" />
+    <ClCompile Include="..\..\xfree.c" />
+    <ClCompile Include="..\..\xmalloc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ansi_stdlib.h" />
+    <ClInclude Include="..\..\chardefs.h" />
+    <ClInclude Include="..\..\colors.h" />
+    <ClInclude Include="..\..\histlib.h" />
+    <ClInclude Include="..\..\history.h" />
+    <ClInclude Include="..\..\keymaps.h" />
+    <ClInclude Include="..\..\parse-colors.h" />
+    <ClInclude Include="..\..\posixdir.h" />
+    <ClInclude Include="..\..\posixjmp.h" />
+    <ClInclude Include="..\..\posixselect.h" />
+    <ClInclude Include="..\..\posixstat.h" />
+    <ClInclude Include="..\..\readline.h" />
+    <ClInclude Include="..\..\rldefs.h" />
+    <ClInclude Include="..\..\rlmbutil.h" />
+    <ClInclude Include="..\..\rlprivate.h" />
+    <ClInclude Include="..\..\rlshell.h" />
+    <ClInclude Include="..\..\rlstdc.h" />
+    <ClInclude Include="..\..\rltty.h" />
+    <ClInclude Include="..\..\rltypedefs.h" />
+    <ClInclude Include="..\..\rlwinsize.h" />
+    <ClInclude Include="..\..\tcap.h" />
+    <ClInclude Include="..\..\tilde.h" />
+    <ClInclude Include="..\..\xmalloc.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

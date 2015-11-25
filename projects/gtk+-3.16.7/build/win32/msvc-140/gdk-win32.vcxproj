@@ -81,8 +81,6 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -97,8 +95,6 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

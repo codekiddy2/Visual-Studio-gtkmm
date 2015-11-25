@@ -76,6 +76,9 @@ edit: it works if compilation of icons was fine.
 Warning 4129 set to threat as error, "unrecognized character escape sequence", this needs to
 be correct, this sets directories.
 
+unresolved extrenals related to broadway happens when chaning configuration from broadway
+to non-broadway. clean solution then rebuild.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
