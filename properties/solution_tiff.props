@@ -7,6 +7,12 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile />
+    <ClCompile>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>zlib.dll.lib;jpeg.dll.lib;jbig.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">

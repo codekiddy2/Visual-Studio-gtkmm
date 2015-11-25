@@ -6,7 +6,7 @@ solution created by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.1
+solution version = 1.2.0
 solution dir = D:\GitHub\Visual-Studio-gtkmm\projects\tiff-4.0.6\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: http://www.remotesensing.org/libtiff/
@@ -17,21 +17,12 @@ DEPENDENCIES:
 jpeg-turbo
 zlib
 jbig (optional)
+lzma
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Copy tiffiop.h from solution-dir/src to src-dir\libtiff.
-
-to retarget tiff_dll to new compiler change project type to exe,
-retarget and then change back to nmake project and save, otherwise
-paths won't be correct.
-
 Open Visual Studio solution and build.
-In case you installed dependecies into non-standard location or if you want to
-customize your installment you need to modify appropriate *.mak file.
-Install by running the "Install" project.
-do not ignore to run tests.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -42,32 +33,62 @@ TESTINGS:
 1.1.0-1
 	Debug x64 + Debug
 
+1.2.0
+	Release x64 + test
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
+out of date:
 do not set /Tc flag (compile as C), otherwise "macro-izing" #error will appear!
 
-since msvc-140
-added  /INCREMENTAL:NO to linker for release builds.
+since CMAKE generated solution:
+
+Building tiff version 4.0.6
+libtiff library version 5.2.4
+CMAKE_HOST_SYSTEM_PROCESSOR set to AMD64
+HOST_FILLORDER set to FILLORDER_MSB2LSB
+HOST_BIG_ENDIAN set to 0
+HAVE_IEEEFP set to 1
+
+Libtiff is now configured for 
+
+  Installation directory:             C:/Program Files/tiff
+  Documentation directory:            C:/Program Files/tiff/share/doc/tiff
+  C compiler:                         D:/Github/Install/VisualStudio/VC/bin/x86_amd64/cl.exe
+  C++ compiler:                       D:/Github/Install/VisualStudio/VC/bin/x86_amd64/cl.exe
+  Build shared libraries:             ON
+  Enable linker symbol versioning:    FALSE
+  Support Microsoft Document Imaging: ON
+  Use win32 IO:                       TRUE
+
+ Support for internal codecs:
+  CCITT Group 3 & 4 algorithms:       ON
+  Macintosh PackBits algorithm:       ON
+  LZW algorithm:                      ON
+  ThunderScan 4-bit RLE algorithm:    ON
+  NeXT 2-bit RLE algorithm:           ON
+  LogLuv high dynamic range encoding: ON
+
+ Support for external codecs:
+  ZLIB support:                       ON (requested) TRUE (availability)
+  Pixar log-format algorithm:         ON (requested) TRUE (availability)
+  JPEG support:                       ON (requested) TRUE (availability)
+  Old JPEG support:                   ON (requested) TRUE (availability)
+  JPEG 8/12 bit dual mode:            OFF (requested) FALSE (availability)
+  ISO JBIG support:                   ON (requested) TRUE (availability)
+  LZMA2 support:                      ON (requested) TRUE (availability)
+
+  C++ support:                        ON (requested) TRUE (availability)
+
+  OpenGL support:                     TRUE
+
+Configuring done
+
+tiffgt includes windows.h by force
+libtiff.def has only one symbold added to make tiffgt link.
+tiffcp.c added to MOD_DIR to make the code compile
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-check compiler flags!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

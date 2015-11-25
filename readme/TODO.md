@@ -67,7 +67,7 @@
 * project_test.props should be below solution level property, not above.
 * fontconfig when built, gets involed into other projects, check includes.
 * link glib with pcre2
-* make single threaded configurations and ARM configuration
+* make single threaded configurations and ARM configuration (hint: solution props inherit "threading" property sheet)
 * make use of export libraries.
 * check which projects output random files and update gitignore
-
+* properties for (exe's) tools, samples..., same as for test projects for separate directory
