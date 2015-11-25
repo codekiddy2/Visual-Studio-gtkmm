@@ -253,6 +253,11 @@ ipch/
 #libjpeg generated test files
 /projects/*/msvc-140/test*jpeg*/*.jpg
 
+#xz generated test files
+/projects/xz*/msvc-140/Tests/create_compress_files/compress_generated_abc
+/projects/xz*/msvc-140/Tests/create_compress_files/compress_generated_random
+/projects/xz*/msvc-140/Tests/create_compress_files/compress_generated_text
+
 # =================
 # directory level 5
 # =================
