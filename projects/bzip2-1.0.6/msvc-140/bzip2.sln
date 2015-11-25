@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{1CEC38
 	ProjectSection(SolutionItems) = preProject
 		Readme\bzip2-1.0.6.txt = Readme\bzip2-1.0.6.txt
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{687E6B35-CD55-45D4-8B34-52FE394D1542}"

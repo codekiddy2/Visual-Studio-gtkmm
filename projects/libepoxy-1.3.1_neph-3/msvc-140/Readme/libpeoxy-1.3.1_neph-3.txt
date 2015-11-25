@@ -44,4 +44,4 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 Currently only *_WGL with KHR configuration works, generate *.py files with cmake
-and enableall configurations.
+and enable all configurations.

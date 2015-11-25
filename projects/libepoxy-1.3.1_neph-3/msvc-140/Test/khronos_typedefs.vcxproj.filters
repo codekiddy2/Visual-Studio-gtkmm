@@ -9,10 +9,6 @@
       <UniqueIdentifier>{2f0b4978-d277-45c6-a16e-e9d079c511c1}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{48783a9e-ba32-43d7-bf9b-83781464a027}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="khronos_typedefs.c">
