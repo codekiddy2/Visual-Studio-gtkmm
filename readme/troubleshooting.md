@@ -71,6 +71,11 @@
 	* LTCG flag must be turned off
 	* LTCG link status should be turned off as well
 
+**The command "some command" exited with code "some code"**
+	* check if custom build step or build event begins with " set path=$(BIN_DIR);%path%" "
+	* check if command contains valid paths
+	* check for typos in command line
+
 
 **My problem is not listed here**
 
