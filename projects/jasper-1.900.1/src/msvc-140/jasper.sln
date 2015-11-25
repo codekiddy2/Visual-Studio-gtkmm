@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{7BAD7E
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\readme\fundamental.md = ..\..\..\..\readme\fundamental.md
 		Readme\jasper-1.900.1.txt = Readme\jasper-1.900.1.txt
+		..\..\..\..\readme\troubleshooting.md = ..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{93683D98-F38D-4979-A170-59FA011A449A}"
