@@ -230,7 +230,7 @@
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src\readline\5.0;$(SRC_DIR)src\readline\5.0\readline;$(SRC_DIR)src\readline\5.0\readline-5.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;READLINE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>READLINE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
     <Lib>
@@ -243,7 +243,7 @@
     <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src\readline\5.0;$(SRC_DIR)src\readline\5.0\readline;$(SRC_DIR)src\readline\5.0\readline-5.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;BUILD_READLINE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILD_READLINE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
     <Lib>
@@ -258,7 +258,7 @@
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src\readline\5.0;$(SRC_DIR)src\readline\5.0\readline;$(SRC_DIR)src\readline\5.0\readline-5.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;READLINE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>READLINE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
     <Lib>
@@ -271,7 +271,7 @@
     <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src\readline\5.0;$(SRC_DIR)src\readline\5.0\readline;$(SRC_DIR)src\readline\5.0\readline-5.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;BUILD_READLINE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILD_READLINE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
     <Lib>
@@ -288,7 +288,7 @@
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src\readline\5.0;$(SRC_DIR)src\readline\5.0\readline;$(SRC_DIR)src\readline\5.0\readline-5.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;READLINE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>READLINE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
     <Lib>
@@ -301,7 +301,7 @@
     <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src\readline\5.0;$(SRC_DIR)src\readline\5.0\readline;$(SRC_DIR)src\readline\5.0\readline-5.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;BUILD_READLINE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILD_READLINE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
     <Lib>
@@ -318,7 +318,7 @@
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src\readline\5.0;$(SRC_DIR)src\readline\5.0\readline;$(SRC_DIR)src\readline\5.0\readline-5.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;READLINE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>READLINE_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
     <Lib>
@@ -331,7 +331,7 @@
     <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src\readline\5.0;$(SRC_DIR)src\readline\5.0\readline;$(SRC_DIR)src\readline\5.0\readline-5.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;BUILD_READLINE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILD_READLINE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
     <Lib>

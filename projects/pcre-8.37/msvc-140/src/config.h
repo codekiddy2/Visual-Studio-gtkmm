@@ -39,7 +39,8 @@
 #define SUPPORT_LIBZ 1
 // codekiddy add:
 #define SUPPORT_LIBEDIT 1
-/* #undef SUPPORT_LIBREADLINE */
+//#define SUPPORT_LIBREADLINE 1
+// end add
 
 /* #undef SUPPORT_VALGRIND */
 /* #undef SUPPORT_GCOV */

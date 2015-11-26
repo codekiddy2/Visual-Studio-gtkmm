@@ -19,6 +19,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "readline", "readline\readli
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{687E6B35-CD55-45D4-8B34-52FE394D1542}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rltest", "rltest\rltest.vcxproj", "{AC95C141-53CA-49D0-90FD-7966BAE9B756}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{5455DD05-A2A8-4A8F-8F79-73D1D0489E39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug dll|x64 = Debug dll|x64
@@ -83,8 +87,35 @@ Global
 		{687E6B35-CD55-45D4-8B34-52FE394D1542}.Release|x64.Build.0 = Release|x64
 		{687E6B35-CD55-45D4-8B34-52FE394D1542}.Release|x86.ActiveCfg = Release|Win32
 		{687E6B35-CD55-45D4-8B34-52FE394D1542}.Release|x86.Build.0 = Release|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug dll|x64.ActiveCfg = Debug|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug dll|x64.Build.0 = Debug|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug dll|x86.ActiveCfg = Debug|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug dll|x86.Build.0 = Debug|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug static|x64.ActiveCfg = Debug|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug static|x64.Build.0 = Debug|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug static|x86.ActiveCfg = Debug|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug static|x86.Build.0 = Debug|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug|x64.ActiveCfg = Debug|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug|x64.Build.0 = Debug|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug|x86.ActiveCfg = Debug|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Debug|x86.Build.0 = Debug|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release dll|x64.ActiveCfg = Release|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release dll|x64.Build.0 = Release|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release dll|x86.ActiveCfg = Release|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release dll|x86.Build.0 = Release|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release static|x64.ActiveCfg = Release|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release static|x64.Build.0 = Release|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release static|x86.ActiveCfg = Release|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release static|x86.Build.0 = Release|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release|x64.ActiveCfg = Release|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release|x64.Build.0 = Release|x64
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release|x86.ActiveCfg = Release|Win32
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC95C141-53CA-49D0-90FD-7966BAE9B756} = {5455DD05-A2A8-4A8F-8F79-73D1D0489E39}
 	EndGlobalSection
 EndGlobal

@@ -40,3 +40,4 @@ TESTINGS:
 TODO:
 DLL
 test projects
+fix C2375
