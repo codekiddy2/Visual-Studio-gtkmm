@@ -9,10 +9,6 @@
       <UniqueIdentifier>{0638fe1b-842e-4db0-b609-7da558bbad33}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{c192904c-2a84-40cd-8829-c5a00d5a15fb}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gencnvex.c">

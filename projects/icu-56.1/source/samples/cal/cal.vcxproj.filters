@@ -9,10 +9,6 @@
       <UniqueIdentifier>{ace55cd2-56c0-4c6d-965b-8866c5396b04}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{823558d3-c303-4670-9e92-d8f5c02e39e2}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cal.c">

@@ -9,10 +9,6 @@
       <UniqueIdentifier>{384d6dc3-d172-42ad-b155-2995c3a6821a}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{b7a5bc57-56cb-42af-9127-0a3369186ee8}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="date.c">

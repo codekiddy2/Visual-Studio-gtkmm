@@ -10,6 +10,7 @@
       <WarningLevel>Level1</WarningLevel>
       <CompileAs>Default</CompileAs>
       <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories />
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

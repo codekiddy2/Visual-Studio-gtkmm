@@ -9,10 +9,6 @@
       <UniqueIdentifier>{0f0a70a2-7e7e-4e7a-88ab-b3bf739fabed}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{ac6d5215-57af-486d-81ed-badc17745780}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="derb.cpp">

@@ -9,10 +9,6 @@
       <UniqueIdentifier>{e7ef9b3f-40af-4fb6-a566-a733e6b718ee}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{a2128bc1-f7fe-41cb-bbbb-c298cb2b91db}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="genccode.c">

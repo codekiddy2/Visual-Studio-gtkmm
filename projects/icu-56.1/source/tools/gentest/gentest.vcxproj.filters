@@ -9,10 +9,6 @@
       <UniqueIdentifier>{1a629c8b-9a21-4677-969f-6b262e4d56d4}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{f452beb5-882e-4c16-a7a6-479e858063d0}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="genres32.c">

@@ -9,10 +9,6 @@
       <UniqueIdentifier>{56407937-8dde-450c-b05f-115430ced4a1}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{7de2655e-2d51-47cf-8e41-c3fe55c0f921}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gencmn.c">

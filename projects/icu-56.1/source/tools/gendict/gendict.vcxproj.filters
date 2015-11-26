@@ -9,10 +9,6 @@
       <UniqueIdentifier>{7b2185f2-4ff9-4419-b596-0a21e37414c9}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{1dc5e7e3-4d1b-4031-a31f-c39b3a3e283a}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gendict.cpp">

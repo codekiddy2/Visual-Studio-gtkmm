@@ -9,10 +9,6 @@
       <UniqueIdentifier>{7156c811-7116-4eef-8bb1-0400c51f9fd3}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{df647868-56cc-475d-a3f6-1d1f50aa5e4f}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="errmsg.c">

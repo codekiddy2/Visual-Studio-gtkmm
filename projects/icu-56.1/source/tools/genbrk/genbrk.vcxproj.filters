@@ -9,10 +9,6 @@
       <UniqueIdentifier>{1e6ae8a2-19da-42f9-a533-f032edd29aa9}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{1034b176-e390-4db1-bb83-307d3f9924b5}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="genbrk.cpp">
