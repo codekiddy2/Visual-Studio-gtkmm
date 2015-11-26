@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{C79D99
 		Readme\wineditline-2.101.txt = Readme\wineditline-2.101.txt
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -64,6 +66,14 @@ Global
 		{EC9AAF40-9554-4231-A9FD-33760A0C4277}.Release|x64.Build.0 = Release|x64
 		{EC9AAF40-9554-4231-A9FD-33760A0C4277}.Release|x86.ActiveCfg = Release|Win32
 		{EC9AAF40-9554-4231-A9FD-33760A0C4277}.Release|x86.Build.0 = Release|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug|x64.ActiveCfg = Debug|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug|x64.Build.0 = Debug|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Debug|x86.Build.0 = Debug|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release|x64.ActiveCfg = Release|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release|x64.Build.0 = Release|x64
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release|x86.ActiveCfg = Release|Win32
+		{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
