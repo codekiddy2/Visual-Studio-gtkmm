@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="collationinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="denseranges.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filestrm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filetools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flagparser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="package.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pkg_genc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pkg_gencmn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pkg_icu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swapimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toolutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ucbuf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ucln_tu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ucm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ucmstate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unewdata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uoptions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="writesrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbgutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pkgitems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ppucd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="udbgutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="collationinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbgutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="denseranges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filestrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filetools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flagparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="package.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pkg_genc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pkg_gencmn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pkg_imp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pkg_icu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ppucd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swapimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="toolutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ucbuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ucm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="udbgutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unewdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uoptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="writesrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{975f9210-7feb-4e7d-b832-6c0c0faa89b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{33be0297-c230-4e65-a146-71b4427c5e6e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

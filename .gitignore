@@ -187,7 +187,7 @@ ipch/
 # =================
 # directory level 2
 # =================
-!/projects/Readme/
+!/projects/*/
 
 
 # =================
@@ -195,6 +195,8 @@ ipch/
 # =================
 /projects/*/*
 
+#icu
+!/projects/icu*/source/
 
 #atk, gdk-pixbuf, glib, gtk+, pango, pixman
 !/projects/*/build/
@@ -221,6 +223,13 @@ ipch/
 # =================
 # directory level 4
 # =================
+#icu
+/projects/icu*/source/*
+!/projects/icu*/source/*/
+!/projects/icu*/source/*.sln
+!/projects/icu*/source/*.vcxproj
+!/projects/icu*/source/*.filters
+
 /projects/*/build/*
 !/projects/*/build/win32/
 
@@ -258,9 +267,17 @@ ipch/
 /projects/xz*/msvc-140/Tests/create_compress_files/compress_generated_random
 /projects/xz*/msvc-140/Tests/create_compress_files/compress_generated_text
 
+
 # =================
 # directory level 5
 # =================
+#icu
+/projects/icu*/source/*/*
+!/projects/icu*/source/*/*/
+!/projects/icu*/source/*/*.sln
+!/projects/icu*/source/*/*.vcxproj
+!/projects/icu*/source/*/*.filters
+
 /projects/*/build/win32/*
 !/projects/*/build/win32/msvc-140/
 
@@ -269,3 +286,25 @@ ipch/
 
 /projects/*/contrib/vstudio/*
 !/projects/*/contrib/vstudio/msvc-140/
+
+
+# =================
+# directory level 6
+# =================
+#icu
+/projects/icu*/source/*/*/*
+!/projects/icu*/source/*/*/*/
+!/projects/icu*/source/*/*/*.sln
+!/projects/icu*/source/*/*/*.vcxproj
+!/projects/icu*/source/*/*/*.filters
+
+
+# =================
+# directory level 7
+# =================
+#icu
+/projects/icu*/source/*/*/*/*
+/projects/icu*/source/*/*/*/*/
+!/projects/icu*/source/*/*/*/*.sln
+!/projects/icu*/source/*/*/*/*.vcxproj
+!/projects/icu*/source/*/*/*/*.filters
