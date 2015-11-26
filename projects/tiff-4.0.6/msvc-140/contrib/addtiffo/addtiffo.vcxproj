@@ -135,8 +135,8 @@
     <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\tiff-4.0.6\contrib\addtiffo\tif_ovrcache.c" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:/Github/Visual-Studio-gtkmm/projects/tiff-4.0.6/cmake-build/libtiff/tiff.vcxproj">
-      <Project>791EA467-43CA-41AC-A3B6-47B689A6C1E2</Project>
+    <ProjectReference Include="..\..\libtiff\tiff.vcxproj">
+      <Project>{791ea467-43ca-41ac-a3b6-47b689a6c1e2}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

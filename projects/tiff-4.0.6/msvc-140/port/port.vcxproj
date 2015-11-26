@@ -117,6 +117,13 @@
     <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\tiff-4.0.6\port\getopt.c" />
     <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\tiff-4.0.6\port\strcasecmp.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libtiff\tiff.vcxproj">
+      <Project>{791ea467-43ca-41ac-a3b6-47b689a6c1e2}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -168,7 +168,7 @@
     <Link>
       <Version>
       </Version>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;editline.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -193,7 +193,7 @@
     <Link>
       <Version>
       </Version>
-      <AdditionalDependencies>pcre8.lib;pcre16.lib;pcre32.lib;pcreposix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.lib;pcre16.lib;pcre32.lib;pcreposix.lib;editline.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -217,7 +217,7 @@
     <Link>
       <Version>
       </Version>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;editline.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -242,7 +242,7 @@
     <Link>
       <Version>
       </Version>
-      <AdditionalDependencies>pcre8.lib;pcre16.lib;pcre32.lib;pcreposix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.lib;pcre16.lib;pcre32.lib;pcreposix.lib;editline.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -264,7 +264,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;editline.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
@@ -291,7 +291,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>pcre8.lib;pcre16.lib;pcre32.lib;pcreposix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.lib;pcre16.lib;pcre32.lib;pcreposix.lib;editline.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
@@ -317,7 +317,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;editline.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
@@ -344,7 +344,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>pcre8.dll.lib;pcre16.dll.lib;pcre32.dll.lib;pcreposix.dll.lib;editline.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>

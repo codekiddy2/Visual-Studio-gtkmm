@@ -9,6 +9,7 @@
     <ClCompile />
     <ClCompile>
       <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>JPEG_SUPPORT;JBIG_SUPPORT;LZMA_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.dll.lib;jpeg.dll.lib;jbig.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
