@@ -71,7 +71,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testplug", "..\tools\icuinf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{F94A84B1-ECA7-4BD4-986E-8166448D465D}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\readme\fundamental.md = ..\..\..\..\readme\fundamental.md
 		Readme\icu-56.1.txt = Readme\icu-56.1.txt
+		..\..\..\..\readme\troubleshooting.md = ..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Global
