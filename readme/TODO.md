@@ -71,3 +71,4 @@
 * make use of export libraries.
 * check which projects output random files and update gitignore
 * properties for (exe's) tools, samples..., same as for test projects for separate directory
+* project that will download and extract sources.

@@ -29,6 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{359FA6
 		Readme\fontconfig-2.11.92.txt = Readme\fontconfig-2.11.92.txt
 		Readme\fontconfig-2.11.94.txt = Readme\fontconfig-2.11.94.txt
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{E6362BF4-B8C9-4248-86BF-840D694DB670}"
@@ -131,9 +132,13 @@ Global
 		{3CE4B363-40A4-4604-B1A2-5785BA80F32F}.Release|Win32.ActiveCfg = Release|Win32
 		{3CE4B363-40A4-4604-B1A2-5785BA80F32F}.Release|x64.ActiveCfg = Release|x64
 		{E6362BF4-B8C9-4248-86BF-840D694DB670}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6362BF4-B8C9-4248-86BF-840D694DB670}.Debug|Win32.Build.0 = Debug|Win32
 		{E6362BF4-B8C9-4248-86BF-840D694DB670}.Debug|x64.ActiveCfg = Debug|x64
+		{E6362BF4-B8C9-4248-86BF-840D694DB670}.Debug|x64.Build.0 = Debug|x64
 		{E6362BF4-B8C9-4248-86BF-840D694DB670}.Release|Win32.ActiveCfg = Release|Win32
+		{E6362BF4-B8C9-4248-86BF-840D694DB670}.Release|Win32.Build.0 = Release|Win32
 		{E6362BF4-B8C9-4248-86BF-840D694DB670}.Release|x64.ActiveCfg = Release|x64
+		{E6362BF4-B8C9-4248-86BF-840D694DB670}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -39,7 +39,8 @@ typedef int mode_t;
 //#define snprintf _snprintf
 
 /* Font configuration directory */
-#define CONFDIR "D:/GitHub/Visual-Studio-gtkmm/output/Debug/x64/share/fontconfig/conf"
+// codekiddy, this is defined in preprocessor
+//#define CONFDIR "D:/GitHub/Visual-Studio-gtkmm/output/Debug/x64/share/fontconfig/conf"
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -57,9 +58,10 @@ typedef int mode_t;
 #undef FC_ARCHITECTURE
 
 /* System font directory */
-#define FC_DEFAULT_FONTS "C:/Windows/Fonts"
-
-#define FC_CACHEDIR "D:/GitHub/Visual-Studio-gtkmm/output/Debug/x64/share/fontconfig/cache"
+// codekiddy: defined in preprocessor
+//#define FC_DEFAULT_FONTS "C:/Windows/Fonts"
+// codekiddy: defined in preprocessor:
+//#define FC_CACHEDIR "D:/GitHub/Visual-Studio-gtkmm/output/Debug/x64/share/fontconfig/cache"
 
 /* Define to 1 if you have the `chsize' function. */
 #define HAVE_CHSIZE 1
@@ -111,7 +113,8 @@ typedef int mode_t;
 #define HAVE_FT_GET_PS_FONT_INFO 1
 
 /* Define to 1 if you have the `FT_Get_X11_Font_Format' function. */
-#define HAVE_FT_GET_X11_FONT_FORMAT 1
+///codekiddy undef: no such thing
+///#define HAVE_FT_GET_X11_FONT_FORMAT 1
 
 /* Define to 1 if you have the `FT_Has_PS_Glyph_Names' function. */
 #define HAVE_FT_HAS_PS_GLYPH_NAMES 1
@@ -393,7 +396,7 @@ typedef int mode_t;
 
 
 /* Version number of package */
-#define VERSION "2.11.92"
+#define VERSION "2.11.94"
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */

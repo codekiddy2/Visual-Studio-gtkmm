@@ -2,13 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\fontconfig-2.11.94\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)fontconfig-2.11.94\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>.\;..\;..\src\;.\src\;$(INCLUDE_DIR)unistd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR);$(SRC_DIR)src\;$(INCLUDE_DIR)unistd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;CONFDIR="$(DUMMY_ROOT)/share/fontconfig/conf";FC_CACHEDIR="$(DUMMY_ROOT)/share/fontconfig/cache";FC_DEFAULT_FONTS="c:/Windows/Fonts";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level2</WarningLevel>
       <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
