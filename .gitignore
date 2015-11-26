@@ -297,6 +297,7 @@ ipch/
 !/projects/icu*/source/*/*/*.sln
 !/projects/icu*/source/*/*/*.vcxproj
 !/projects/icu*/source/*/*/*.filters
+!/projects/icu*/source/msvc-140/*/*
 
 
 # =================
