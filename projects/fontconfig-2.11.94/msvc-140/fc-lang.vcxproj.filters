@@ -9,10 +9,18 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Headers\mod">
+      <UniqueIdentifier>{796d5984-5075-4b89-bdb2-e0bc27174814}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\fc-lang\fc-lang.c">
       <Filter>Sources</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\fcaliastail.h">
+      <Filter>Headers\mod</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

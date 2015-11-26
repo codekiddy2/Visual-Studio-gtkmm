@@ -9,12 +9,11 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
-    </Filter>
     <Filter Include="Definition Files">
       <UniqueIdentifier>{c0cf8831-4b22-4a35-b895-606804f70eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\mod">
+      <UniqueIdentifier>{f7a66048-2992-4291-9e7c-84c34ab14828}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -96,17 +95,9 @@
     <ClCompile Include="..\src\fcrange.c">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\fcweight.cpp">
+    <ClCompile Include="..\src\fcweight.c">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\fccfg.c">
-      <Filter>Sources</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="fontconfig.def">
-      <Filter>Definition Files</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\fcstdint.h">
@@ -142,8 +133,13 @@
     <ClInclude Include="..\src\fcobjshash.gperf.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Headers</Filter>
+    <ClInclude Include="src\fcftaliastail.h">
+      <Filter>Headers\mod</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="def\fontconfig.def">
+      <Filter>Definition Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

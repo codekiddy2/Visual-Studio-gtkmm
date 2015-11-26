@@ -91,21 +91,20 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>echo caching fonts ...
-$(BIN_DIR)fc-cache.exe -s -f -v</Command>
+      <Command>$(BIN_DIR)fc-cache.exe -s -f -v</Command>
+      <Message>Caching fonts ...</Message>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
+cd $(INCLUDE_DIR)
 if not exist fontconfig mkdir fontconfig
 cd fontconfig
 copy $(SRC_DIR)fontconfig\*.h /Y
-mkdir ..\..\etc\fonts\conf.d
-cd ..\..\etc\fonts\conf.d
-xcopy $(SRC_DIR)conf.d\*.conf /EFY
+if not exist $(ROOT_DIR)etc\fonts\conf.d mkdir $(ROOT_DIR)etc\fonts\conf.d
+cd $(ROOT_DIR)etc\fonts\conf.d
+xcopy $(SRC_DIR)conf.d\*.conf /EFYQ
 cd ..
-copy $(SRC_DIR)msvc-120\fonts.conf
-echo Installation done!</Command>
+copy $(MOD_DIR)fonts.conf</Command>
       <Message>Installing font configuration ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -120,23 +119,22 @@ echo Installation done!</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
+cd $(INCLUDE_DIR)
 if not exist fontconfig mkdir fontconfig
 cd fontconfig
 copy $(SRC_DIR)fontconfig\*.h /Y
-mkdir ..\..\etc\fonts\conf.d
-cd ..\..\etc\fonts\conf.d
-xcopy $(SRC_DIR)conf.d\*.conf /EFY
+if not exist $(ROOT_DIR)etc\fonts\conf.d mkdir $(ROOT_DIR)etc\fonts\conf.d
+cd $(ROOT_DIR)etc\fonts\conf.d
+xcopy $(SRC_DIR)conf.d\*.conf /EFYQ
 cd ..
-copy $(SRC_DIR)msvc-140\fonts.conf
-echo Installation done!</Command>
+copy $(MOD_DIR)fonts.conf</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Installing font configuration ...</Message>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo caching fonts ...
-$(BIN_DIR)fc-cache.exe -s -f -v</Command>
+      <Command>$(BIN_DIR)fc-cache.exe -s -f -v</Command>
+      <Message>Caching fonts ...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -153,21 +151,20 @@ $(BIN_DIR)fc-cache.exe -s -f -v</Command>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>echo caching fonts ...
-$(BIN_DIR)fc-cache.exe -s -f -v</Command>
+      <Command>$(BIN_DIR)fc-cache.exe -s -f -v</Command>
+      <Message>Caching fonts ...</Message>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
+cd $(INCLUDE_DIR)
 if not exist fontconfig mkdir fontconfig
 cd fontconfig
 copy $(SRC_DIR)fontconfig\*.h /Y
-mkdir ..\..\etc\fonts\conf.d
-cd ..\..\etc\fonts\conf.d
-xcopy $(SRC_DIR)conf.d\*.conf /EFY
+if not exist $(ROOT_DIR)etc\fonts\conf.d mkdir $(ROOT_DIR)etc\fonts\conf.d
+cd $(ROOT_DIR)etc\fonts\conf.d
+xcopy $(SRC_DIR)conf.d\*.conf /EFYQ
 cd ..
-copy $(SRC_DIR)msvc-120\fonts.conf
-echo Installation done!</Command>
+copy $(MOD_DIR)fonts.conf</Command>
       <Message>Installing font configuration ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -185,33 +182,24 @@ echo Installation done!</Command>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>echo caching fonts ...
-$(BIN_DIR)fc-cache.exe -s -f -v</Command>
+      <Command>$(BIN_DIR)fc-cache.exe -s -f -v</Command>
+      <Message>Caching fonts ...</Message>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)include
+cd $(INCLUDE_DIR)
 if not exist fontconfig mkdir fontconfig
 cd fontconfig
 copy $(SRC_DIR)fontconfig\*.h /Y
-mkdir ..\..\etc\fonts\conf.d
-cd ..\..\etc\fonts\conf.d
-xcopy $(SRC_DIR)conf.d\*.conf /EFY
+if not exist $(ROOT_DIR)etc\fonts\conf.d mkdir $(ROOT_DIR)etc\fonts\conf.d
+cd $(ROOT_DIR)etc\fonts\conf.d
+xcopy $(SRC_DIR)conf.d\*.conf /EFYQ
 cd ..
-copy $(SRC_DIR)msvc-120\fonts.conf
-echo Installation done!</Command>
+copy $(MOD_DIR)fonts.conf</Command>
       <Message>Installing font configuration ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\fc-arch.vcxproj">
-      <Project>{3ce4b363-40a4-4604-b1a2-5785ba80f32f}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
     <ProjectReference Include="..\fc-cache.vcxproj">
       <Project>{d61c0dca-5b99-466d-b218-84b4aad8095e}</Project>
       <Private>false</Private>
@@ -220,32 +208,8 @@ echo Installation done!</Command>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
-    <ProjectReference Include="..\fc-case.vcxproj">
-      <Project>{1b4e62f7-3437-48d5-aab2-cbbe3de513ed}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
     <ProjectReference Include="..\fc-cat.vcxproj">
       <Project>{243550bd-4e28-4a45-a090-ac5ae9fa1e67}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-    <ProjectReference Include="..\fc-glyphname.vcxproj">
-      <Project>{9e193d8e-2adf-4cd9-8860-9da4c41e6eb8}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-    <ProjectReference Include="..\fc-lang.vcxproj">
-      <Project>{df6ae3b3-c0ca-4c8b-9f93-a183bf5005c9}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
@@ -278,14 +242,6 @@ echo Installation done!</Command>
     </ProjectReference>
     <ProjectReference Include="..\fc-scan.vcxproj">
       <Project>{a0ed2140-c16b-490b-8b6e-94e865b31300}</Project>
-      <Private>false</Private>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
-    </ProjectReference>
-    <ProjectReference Include="..\fontconfig.vcxproj">
-      <Project>{e82c60a1-5613-4db5-b965-5f1e11cb68bd}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>

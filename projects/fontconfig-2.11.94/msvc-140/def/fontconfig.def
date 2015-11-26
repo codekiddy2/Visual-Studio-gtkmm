@@ -198,3 +198,4 @@ EXPORTS
 	FcConfigSetSysRoot
 	FcDirCacheRescan
 	FcConfigGetSysRoot
+	FcLangNormalize

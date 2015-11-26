@@ -3,12 +3,13 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <SRC_DIR>$(PROJECTS_DIR)fontconfig-2.11.94\</SRC_DIR>
+    <DUMMY_TEST_DIR>D:/Github/Visual-Studio-gtkmm/projects/fontconfig-2.11.94/test</DUMMY_TEST_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR);$(SRC_DIR)src\;$(INCLUDE_DIR)unistd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;CONFDIR="$(DUMMY_ROOT)/share/fontconfig/conf";FC_CACHEDIR="$(DUMMY_ROOT)/share/fontconfig/cache";FC_DEFAULT_FONTS="c:/Windows/Fonts";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;CONFDIR="$(DUMMY_ROOT)/etc/fonts";FC_CACHEDIR="$(DUMMY_ROOT)/etc/fonts/cache";FC_DEFAULT_FONTS="C:/Windows/Fonts";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level2</WarningLevel>
       <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
@@ -16,6 +17,9 @@
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DUMMY_TEST_DIR">
+      <Value>$(DUMMY_TEST_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

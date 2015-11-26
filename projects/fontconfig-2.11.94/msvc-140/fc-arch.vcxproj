@@ -87,12 +87,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <PreBuildEvent>
-      <Command>if not exist .\config.h copy .\config.h.vc .\config.h
-rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <ClCompile>
-      <AdditionalIncludeDirectories>.\fc-arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -110,12 +106,8 @@ cd ..
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <PreBuildEvent>
-      <Command>if not exist .\config.h copy .\config.h.vc .\config.h
-rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <ClCompile>
-      <AdditionalIncludeDirectories>.\fc-arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -133,12 +125,8 @@ cd ..
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <PreBuildEvent>
-      <Command>if not exist .\config.h copy .\config.h.vc .\config.h
-rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <ClCompile>
-      <AdditionalIncludeDirectories>.\fc-arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -156,12 +144,8 @@ cd ..
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <PreBuildEvent>
-      <Command>if not exist .\config.h copy .\config.h.vc .\config.h
-rem if not exist .\stdint.h copy .\stdint.h.vs9 .\stdint.h</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <ClCompile>
-      <AdditionalIncludeDirectories>.\fc-arch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>

@@ -44,8 +44,19 @@ Update: Do not install fonts from fontconfig, anyway it will not work, but at le
 does not fail.
 
 since msvc-140:
-linker warning threat as error disabled for fontconfig project
+linker warning treat as error disabled for fontconfig project
 fc-cache fails.
+
+Fontconfig ships with eight command line utilities to manage and query fonts and the font configuration of the system:
+
+fc-list: Lists all fonts fontconfig knows about or all fonts matching a pattern.
+fc-match: Matches font-pattern (empty pattern by default) using the normal fontconfig matching rules to find the most appropriate font available.
+fc-cache: Creates a cache of all FreeType readable fonts in a specified directory or create a cache of all FreeType readable fonts from all directories specified in Configuration files.
+fc-cat: Reads the font information from cache files or related to font directories and emits it in ASCII form.
+fc-query: Querys font files and reports resulting pattern(s).
+fc-scan: Scans font files and directories and reports resulting pattern(s).
+fc-pattern: Lists best font(s) matching the supplied pattern(s).
+fc-validate: Validate font file(s) and reports the results.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -58,11 +69,8 @@ TESTINGS:
 
 1.1.0-1
 	Debug x64 + Debug
+	Release x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-
-
-
-
