@@ -9,7 +9,7 @@
     <Node Id="Cairomm" Category="Category2" Bounds="94.6841215567987,567.842905544596,66.4333333333334,25.96" Label="cairomm" UseManualLocation="True" />
     <Node Id="Crypto++" Category="Category2" Bounds="1100.96236653646,-3.89215738897325,70.0933333333332,25.96" Label="crypto++" UseManualLocation="True" />
     <Node Id="Dirnet" Category="Category2" Bounds="296.307326660156,-2.75505083503724,51.28,25.96" Label="dirent" UseManualLocation="True" />
-    <Node Id="Editline" Category="Category4" Bounds="92.6533333333332,0,59.1966666666667,25.96" Label="editline" />
+    <Node Id="Editline" Category="Category2" Bounds="92.6533333333332,0,59.1966666666667,25.96" Label="editline" />
     <Node Id="Epoxy" Category="Category2" Bounds="1384.62602324255,447.599241349931,51.6733333333332,25.96" Label="epoxy" UseManualLocation="True" />
     <Node Id="Expat" Category="Category2" Bounds="743.390630443852,1.12474611314209,50,25.96" Label="expat" UseManualLocation="True" />
     <Node Id="Ffi" Category="Category2" Bounds="1203.216550129,282.458593822204,50,25.9599999999999" Label="ffi" UseManualLocation="True">
@@ -39,7 +39,7 @@
     <Node Id="Harfbuzz" Category="Category2" Bounds="373.199849962705,176.718648865388,65.5233333333335,25.96" Label="harfbuzz" UseManualLocation="True" />
     <Node Id="Hicolor-icon-theme" Category="Category2" Bounds="1315.30594068745,645.392642579852,126.65,25.96" Label="adwaita-icon-theme" UseManualLocation="True" />
     <Node Id="Hicolor-icon-theme1" Category="Category2" Bounds="1134.55083862026,644.76421625952,121.996666666667,25.96" Label="hicolor-icon-theme" UseManualLocation="True" />
-    <Node Id="Icu" Category="Category4" Bounds="496.439015499996,-2.01574488742746,50,25.96" Label="icu" UseManualLocation="True" />
+    <Node Id="Icu" Bounds="496.439015499996,-2.01574488742746,50,25.96" Label="icu" UseManualLocation="True" />
     <Node Id="Jasper" Category="Category2" Bounds="1382.63521994618,129.5675,51.6100000000001,25.96" Label="jasper" UseManualLocation="True" />
     <Node Id="Jbig-kit" Category="Category2" Bounds="1212.58223632812,50.4275125455856,57.6700000000001,25.96" Label="jbig-kit" UseManualLocation="True" />
     <Node Id="Jpeg" Category="Category2" Bounds="1281.38293457031,-5.53258745441428,50,25.9599999999999" Label="jpeg" UseManualLocation="True" />
@@ -56,7 +56,7 @@
     <Node Id="Pixman" Category="Category2" Bounds="471.370563581532,227.615893528151,58.6999999999998,25.96" Label="pixman" UseManualLocation="True" />
     <Node Id="Pkg-config" Category="Category2" Bounds="202.524202898551,221.997608695652,77.9766666666665,25.96" Label="pkg-config" UseManualLocation="True" />
     <Node Id="Png" Category="Category2" Bounds="1183.37544762993,125.82648675823,50,25.96" Label="png" UseManualLocation="True" />
-    <Node Id="Readline" Category="Category4" Bounds="0,0,62.5033333333331,25.96" Label="readline" />
+    <Node Id="Readline" Category="Category1" Bounds="0,0,62.5033333333331,25.96" Label="readline" />
     <Node Id="Tiff" Category="Category2" Bounds="1271.24868646526,115.385581450722,50,25.96" Label="tiff" UseManualLocation="True" />
     <Node Id="Unistd" Category="Category2" Bounds="636.8722204229,-5.79533678528574,52.7133333333334,25.96" Label="unistd" UseManualLocation="True" />
     <Node Id="Zlib" Category="Category2" Bounds="1020.96240356445,50.999440689087,50,25.9599999999999" Label="zlib" UseManualLocation="True" />
@@ -93,7 +93,7 @@
     <Link Source="Freeglut" Target="Tiff" Bounds="1315.18577227522,28.4715510528564,78.4515243066494,80.4697689438599" />
     <Link Source="Freetype" Target="Cairo" Bounds="470.49636068298,325.531588478498,186.469696135123,5.31612884222727" />
     <Link Source="Freetype" Target="Fontconfig" Bounds="89.1015194812534,247.268337978526,317.708174535061,76.7906224483777" />
-    <Link Source="Freetype" Target="Harfbuzz" Bounds="414.107482910156,211.443954467773,24.7251586914063,107.331588745117" />
+    <Link Source="Freetype" Target="Harfbuzz" Bounds="407.946838378906,211.443954467773,24.7384643554688,107.331588745117" />
     <Link Source="Freetype" Target="Pango" Bounds="442.511629114986,344.735549886952,24.542868648296,82.5600708309733" />
     <Link Source="Glib" Target="Atk" Bounds="795.563540607302,183.002171482341,268.757238040788,214.294810744776" />
     <Link Source="Glib" Target="Cairo" Bounds="724.328390028447,179.937818677515,331.271219346553,131.390741478221" />
@@ -120,7 +120,7 @@
     <Link Source="Gtk" Target="Gtkmm" Bounds="500.324921372962,472.279770626445,710.315149459408,116.07741831838" />
     <Link Source="Gtkmm" Target="Goocanvasmm" Bounds="338.91583400948,607.508980397489,98.9054045613458,51.898696363943" />
     <Link Source="Harfbuzz" Target="Fontconfig" Bounds="89.2807059414725,193.888738078413,283.919144021232,36.3121496485144" />
-    <Link Source="Harfbuzz" Target="Freetype" Bounds="405.904937744141,202.678649902344,24.82177734375,107.312591552734" />
+    <Link Source="Harfbuzz" Target="Freetype" Bounds="412.065582275391,202.678649902344,24.8084716796875,107.312591552734" />
     <Link Source="Hicolor-icon-theme" Target="Gtk" Bounds="1250.80808906393,488.367861349879,118.063475433803,157.024781229973" />
     <Link Source="Hicolor-icon-theme1" Target="Gtk" Bounds="1198.29451744204,489.97955651902,32.7378557241248,154.7846597405" />
     <Link Source="Icu" Target="Boost" Bounds="546.439015499996,15.0953483192524,385.370468993024,63.6800530604853" />
