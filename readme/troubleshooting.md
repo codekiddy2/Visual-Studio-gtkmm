@@ -36,7 +36,11 @@
 	4. to show includes, set Project Settings -> Configuration Properties -> C/C++ -> Advanced -> Show Includes
 	5. check if there is no /X compiler option, which can be used to exclude directories from the include file search path
 	6. The name of a file may be mistyped, check if there is a typo.
-	7. more info at:
+	7. list of directories specified in property pages under "C/C++ > Additional include directories" is performed in following order
+		1. list of directories in single property page is searched from top to bottom
+		2. list of directories specified in project property page directly will be searched first
+		3. list of directories from child properties are *apended* to parent property page
+	8. a *portion* of the information above was extracted from here:
 		1. https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(C1083)&rd=true
 		2. https://msdn.microsoft.com/en-us/library/36k2cdd4(v=vs.140).aspx
 
