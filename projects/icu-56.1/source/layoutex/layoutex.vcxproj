@@ -44,7 +44,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
@@ -84,15 +83,11 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\lib\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\x86\Debug\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\x64\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\x64\Release\</IntDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\x64\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\x64\Debug\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -177,26 +172,13 @@
       <TypeLibraryName>.\..\..\lib64\iculx.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\include;..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;U_LAYOUTEX_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <StringPooling>true</StringPooling>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeaderOutputFile>.\x64\Release/layoutex.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\x64\Release/</AssemblerListingLocation>
-      <ObjectFileName>.\x64\Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\x64\Release/</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>$(SRC_DIR)include;$(SRC_DIR)source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>U_LAYOUTEX_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <Culture>0x0409</Culture>
-    </ResourceCompile>
+    <ResourceCompile />
     <Link>
-      <OutputFile>..\..\bin64\iculx56.dll</OutputFile>
-      <ProgramDatabaseFile>.\..\..\lib64\iculx.pdb</ProgramDatabaseFile>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <BaseAddress>0x4ac80000</BaseAddress>
-      <ImportLibrary>..\..\lib64\iculx.lib</ImportLibrary>
-      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalDependencies>icule.dll.lib;icuuc.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -314,10 +296,12 @@
     <ProjectReference Include="..\common\common.vcxproj">
       <Project>{73c0a65b-d1f2-4de1-b3a6-15dad2c23f3d}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
     <ProjectReference Include="..\layout\layout.vcxproj">
       <Project>{c920062a-0647-4553-a3b2-37c58065664b}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

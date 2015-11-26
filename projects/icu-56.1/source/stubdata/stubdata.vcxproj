@@ -185,14 +185,13 @@
       <TypeLibraryName>.\x64\Release\icudt.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SRC_DIR)common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR)source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>STUBDATA_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>
       </ExceptionHandling>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;STUBDATA_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>STUBDATA_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <PreLinkEvent>
       <Command>echo "File with stubdata build time, used as a dependency to trigger fresh data build, since stubdata dll will overwrite the real one." &gt; "$(ProjectDir)stubdatabuilt.txt"</Command>

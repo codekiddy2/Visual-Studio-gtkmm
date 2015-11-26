@@ -173,6 +173,7 @@
     <ResourceCompile />
     <Link>
       <BaseAddress>0x4a800000</BaseAddress>
+      <AdditionalDependencies>icudt.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -1748,6 +1749,7 @@
     <ProjectReference Include="..\stubdata\stubdata.vcxproj">
       <Project>{203ec78a-0531-43f0-a636-285439bde025}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

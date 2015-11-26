@@ -9,10 +9,6 @@
       <UniqueIdentifier>{b2dfb7a8-10dc-4668-bc01-42b2b3403944}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{76918e76-1025-421a-9363-11071191fbbc}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ctest.c">
