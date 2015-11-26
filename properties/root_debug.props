@@ -90,6 +90,9 @@
       <EnableCOMDATFolding>false</EnableCOMDATFolding>
     </Link>
     <Lib />
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">

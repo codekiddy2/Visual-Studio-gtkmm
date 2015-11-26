@@ -46,6 +46,9 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
     </Link>
     <Lib />
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">

@@ -12,7 +12,8 @@
     <PKG_CONFIG_PATH>$(SHARE_DIR)pkgconfig\</PKG_CONFIG_PATH>
     <PROJECTS_DIR>$(REPO_DIR)projects\</PROJECTS_DIR>
     <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
-    <TEST_DIR>$(ROOT_DIR)bin\test\</TEST_DIR>
+    <TEST_DIR>$(BIN_DIR)test\</TEST_DIR>
+    <TOOLS_DIR>$(BIN_DIR)tools\</TOOLS_DIR>
     <DEF_DIR>$(SolutionDir)def\</DEF_DIR>
     <MOD_DIR>$(SolutionDir)src\</MOD_DIR>
   </PropertyGroup>
@@ -166,6 +167,9 @@
     </BuildMacro>
     <BuildMacro Include="TEST_DIR">
       <Value>$(TEST_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TOOLS_DIR">
+      <Value>$(TOOLS_DIR)</Value>
     </BuildMacro>
     <BuildMacro Include="DEF_DIR">
       <Value>$(DEF_DIR)</Value>

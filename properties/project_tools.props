@@ -1,8 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?> 
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
-  <ItemDefinitionGroup />
+  <PropertyGroup>
+    <OutDir>$(TOOLS_DIR)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AssemblerListingLocation>$(SYMBOLS_DIR)tools\asm\$(TargetName).asm</AssemblerListingLocation>
+      <XMLDocumentationFileName>$(SYMBOLS_DIR)tools\xml\$(TargetName).xml</XMLDocumentationFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(LIB_DIR)tools\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SYMBOLS_DIR)tools\$(TargetName).pdb</ProgramDatabaseFile>
+      <MapFileName>$(SYMBOLS_DIR)tools\map\$(TargetName).map</MapFileName>
+      <ImportLibrary>$(LIB_DIR)tools\$(TargetName)$(TargetExt).lib</ImportLibrary>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(LIB_DIR)tools\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

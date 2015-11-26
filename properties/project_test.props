@@ -18,6 +18,9 @@
       <ImportLibrary>$(LIB_DIR)test\$(TargetName)$(TargetExt).lib</ImportLibrary>
       <AdditionalLibraryDirectories>$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
