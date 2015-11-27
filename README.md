@@ -8,7 +8,7 @@ There are also pre-built binaries for VS 2013 in "release" section (link above)
 
 Here is an (outdated) image of my result, creating new gtkmm 3.14 project in Visual Studio 2013
 
-![alt tag](https://github.com/codekiddy2/Visual-Studio-gtkmm/blob/Redesign/projects/Readme/gtkmm%20visual%20studio.png)
+![alt tag](https://raw.githubusercontent.com/codekiddy2/Visual-Studio-gtkmm/master/readme/images/gtkmm%20visual%20studio.png)
 
 **More C++ libraries**
 
@@ -22,7 +22,7 @@ So that all you have to do is click on
 and start coding with latest libraries with 0 setup needed.
 Here is another image showing that building gtkmm with Visual Studio is easy:
 
-![alt tag](https://github.com/codekiddy2/Visual-Studio-gtkmm/blob/Redesign/projects/Readme/gtkmm%20visual%20studio2.png)
+![alt tag](https://raw.githubusercontent.com/codekiddy2/Visual-Studio-gtkmm/master/readme/images/gtkmm%20visual%20studio2.png)
 
 
 **Report failures**
