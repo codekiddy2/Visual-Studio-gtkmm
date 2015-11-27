@@ -82,6 +82,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F1E3D59C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{22A7B7B3-FE5B-4BEB-BD31-CFABC5A25548}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{A456E658-14FF-4173-ADCE-825FA7670170}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -346,6 +348,14 @@ Global
 		{659D0C08-D4ED-4BF3-B02B-2D8D4B5A7A7A}.Release|Win32.Build.0 = Release|Win32
 		{659D0C08-D4ED-4BF3-B02B-2D8D4B5A7A7A}.Release|x64.ActiveCfg = Release|x64
 		{659D0C08-D4ED-4BF3-B02B-2D8D4B5A7A7A}.Release|x64.Build.0 = Release|x64
+		{A456E658-14FF-4173-ADCE-825FA7670170}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A456E658-14FF-4173-ADCE-825FA7670170}.Debug|Win32.Build.0 = Debug|Win32
+		{A456E658-14FF-4173-ADCE-825FA7670170}.Debug|x64.ActiveCfg = Debug|x64
+		{A456E658-14FF-4173-ADCE-825FA7670170}.Debug|x64.Build.0 = Debug|x64
+		{A456E658-14FF-4173-ADCE-825FA7670170}.Release|Win32.ActiveCfg = Release|Win32
+		{A456E658-14FF-4173-ADCE-825FA7670170}.Release|Win32.Build.0 = Release|Win32
+		{A456E658-14FF-4173-ADCE-825FA7670170}.Release|x64.ActiveCfg = Release|x64
+		{A456E658-14FF-4173-ADCE-825FA7670170}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
