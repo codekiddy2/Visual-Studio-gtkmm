@@ -49,3 +49,14 @@ Show me hidden (usualy junk) files
 * Tools > options > Environment > Documents
 	* show miscelaneous files in solution explorer
 	* Items saved in miscelaneous files project (set to 5)
+
+Change solution eplorer mode
+
+* Tools > options > Project and Solutions > Visual C++ Project settings
+	* Solution explorer mode
+	
+
+Show build timing
+
+* Tools > options > Project and Solutions > Visual C++ Project settings
+	* Build timing
