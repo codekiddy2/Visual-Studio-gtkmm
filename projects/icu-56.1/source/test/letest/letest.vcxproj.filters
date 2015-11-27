@@ -9,10 +9,6 @@
       <UniqueIdentifier>{2eb34de4-4fbe-448c-be16-2c21a0389dc5}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{82b29573-e0e1-4989-8c27-5021819be852}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cfonts.cpp">

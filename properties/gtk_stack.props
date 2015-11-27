@@ -15,12 +15,9 @@
       <DisableSpecificWarnings>4311;4133;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>freeglut.lib;freeglutd.lib;freeglut_static.lib;freeglut_staticd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
-    <Lib>
-      <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="DUMMY_ROOT">

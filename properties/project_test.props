@@ -16,11 +16,8 @@
     <Link>
       <MapFileName>$(SYMBOLS_DIR)test\map\$(TargetName).map</MapFileName>
       <ImportLibrary>$(LIB_DIR)test\$(TargetName)$(TargetExt).lib</ImportLibrary>
-      <AdditionalLibraryDirectories>$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
-    <Lib>
-      <AdditionalLibraryDirectories>$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

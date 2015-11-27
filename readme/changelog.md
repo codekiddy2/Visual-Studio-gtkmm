@@ -27,6 +27,8 @@ setting all project to use multibyte character set
 set to no: common properties > resources > suppress startup banner base_stack.props
 set to no: common properties > resources > show progress base_stack.props
 
+all LIB search paths moved from stack_gtk+ to base_stack.
+
 **Compiler warnings**
 
 added ignore warning 4311, 4133 to stack_gtk+.props (apearing mostly in gtk+ ?)

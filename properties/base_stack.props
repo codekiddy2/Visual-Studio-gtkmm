@@ -77,6 +77,7 @@
       <ProgramDatabaseFile>$(SYMBOLS_DIR)$(TargetName).pdb</ProgramDatabaseFile>
       <ImportLibrary>$(LIB_DIR)$(TargetName)$(TargetExt).lib</ImportLibrary>
       <FixedBaseAddress>false</FixedBaseAddress>
+      <AdditionalLibraryDirectories>$(LIB_DIR);$(LIB_DIR)tools\;$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Manifest>
       <SuppressStartupBanner>false</SuppressStartupBanner>
@@ -131,6 +132,7 @@
       <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
       <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
       <Verbose>true</Verbose>
+      <AdditionalLibraryDirectories>$(LIB_DIR);$(LIB_DIR)tools\;$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
