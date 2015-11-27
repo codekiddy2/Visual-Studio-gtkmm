@@ -12,7 +12,7 @@ Here is an (outdated) image of my result, creating new gtkmm 3 project in Visual
 
 **More C++ libraries**
 
-Beside projects to compile / build gtkmm, there are also projects to build Crypto++, boost, icu
+Beside projects to compile / build gtkmm, there are also projects to build Crypto++, boost, icu,
 GTK+ and many others as well as project templates for Visual Studio including gtkmm, crypto++ and boost.
 
 So that all you have to do is click on 
