@@ -15,8 +15,6 @@
       <AdditionalIncludeDirectories>..\;..\gdk;.\gdkmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4250;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <SmallerTypeCheck>false</SmallerTypeCheck>
-      <ForcedIncludeFiles>$(MOD_DIR)config.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <PreprocessorDefinitions>GTKMM_ATKMM_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
