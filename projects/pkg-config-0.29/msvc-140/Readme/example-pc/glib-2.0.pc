@@ -1,0 +1,10 @@
+prefix=/D:/Github/Visual-Studio-gtkmm/output/v140/Release/x64
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: glib-2.0
+Description: glib blah
+Version: 2.46.2
+Cflags: -I${includedir}/glib
+Libs: -L${libdir} glib.dll.lib

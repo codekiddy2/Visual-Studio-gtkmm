@@ -27,6 +27,18 @@
     <Filter Include="Header Files\Glib">
       <UniqueIdentifier>{9e6480e0-f479-413e-b176-2fcb9d95bfde}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ICU">
+      <UniqueIdentifier>{8fea6536-9bc2-4806-aba9-540cd084b897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ICU">
+      <UniqueIdentifier>{3566bc7e-bdcb-4a83-8528-57723a3cb049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ucdn">
+      <UniqueIdentifier>{000b552c-c220-45e9-a328-581d29c75b80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ucdn">
+      <UniqueIdentifier>{08465bfe-acc9-4cff-81f2-fa210c893451}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\hb-blob.h">
@@ -80,9 +92,6 @@
     <ClInclude Include="..\..\src\hb-graphite2.h">
       <Filter>Header Files\Excluded</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\hb-icu.h">
-      <Filter>Header Files\Excluded</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\hb-glib.h">
       <Filter>Header Files\Glib</Filter>
     </ClInclude>
@@ -97,6 +106,15 @@
     </ClInclude>
     <ClInclude Include="..\..\src\hb-coretext.h">
       <Filter>Header Files\Excluded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hb-icu.h">
+      <Filter>Header Files\ICU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hb-ucdn\ucdn.h">
+      <Filter>Header Files\ucdn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hb-ucdn\unicodedata_db.h">
+      <Filter>Header Files\ucdn</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -178,19 +196,10 @@
     <ClCompile Include="..\..\src\hb-ot-shape-complex-myanmar.cc">
       <Filter>Source Files\Complex</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\hb-ot-shape-complex-sea.cc">
-      <Filter>Source Files\Complex</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\hb-ot-shape-complex-thai.cc">
       <Filter>Source Files\Complex</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\hb-graphite2.cc">
-      <Filter>Source Files\Excluded</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\hb-icu.cc">
-      <Filter>Source Files\Excluded</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\hb-ucdn.cc">
       <Filter>Source Files\Excluded</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\hb-ot-shape-complex-hangul.cc">
@@ -219,6 +228,15 @@
     </ClCompile>
     <ClCompile Include="..\..\src\hb-ot-shape-complex-use-table.cc">
       <Filter>Source Files\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hb-icu.cc">
+      <Filter>Source Files\ICU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hb-ucdn.cc">
+      <Filter>Source Files\ucdn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hb-gobject-enums.cc">
+      <Filter>Source Files\Glib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

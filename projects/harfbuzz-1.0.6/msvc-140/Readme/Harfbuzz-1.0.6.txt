@@ -37,10 +37,14 @@ Make sure you have all the libraries defined in preprocessor before building to
 avoid errors and if not remove appropriate defines..
 
 Open solution, select configuration and build
+in case of errors check macros defined in preprocessor in solution level property page.
+
 Once done you need to rebuild Freetype with FT_CONFIG_OPTION_USE_HARFBUZZ macro in order
 for Freetype to use harfbuzz features.
 Some preprocessor definitions are undefined, once you build cairo with font-config
 support, UCDN and ICU you can define these macros and rebuild (optional).
+
+Test projects do not take ICU into account, only core harfbuzz features.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -59,6 +63,7 @@ added hb-ot-shape-complex-use,use-table and fallback
 disabled hb-ot-shape-complex-sea
 thread link warning as error disabled for harbuzz_static LNK4221
 
+config.h is there to harvest macros, it's not used in build process.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

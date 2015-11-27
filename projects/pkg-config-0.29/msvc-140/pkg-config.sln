@@ -13,6 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{4D9C19
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example-pc", "example-pc", "{EC91813F-CAA7-4C1B-9908-AB85FDA0BB29}"
+	ProjectSection(SolutionItems) = preProject
+		Readme\example-pc\glib-2.0.pc = Readme\example-pc\glib-2.0.pc
+		Readme\example-pc\gobject-2.0.pc = Readme\example-pc\gobject-2.0.pc
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -32,5 +38,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC91813F-CAA7-4C1B-9908-AB85FDA0BB29} = {4D9C1982-7FFE-4951-B061-F089D008C5FD}
 	EndGlobalSection
 EndGlobal

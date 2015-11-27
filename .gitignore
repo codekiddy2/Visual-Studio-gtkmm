@@ -226,10 +226,11 @@ ipch/
 #icu
 /projects/icu*/source/*
 !/projects/icu*/source/*/
-#/projects/icu*/source/allinone/
 !/projects/icu*/source/*.sln
 !/projects/icu*/source/*.vcxproj
 !/projects/icu*/source/*.filters
+#icu ignored
+/projects/icu*/source/allinone/
 
 /projects/*/build/*
 !/projects/*/build/win32/
