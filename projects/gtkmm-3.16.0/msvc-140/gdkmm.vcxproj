@@ -52,33 +52,32 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PreLinkEventUseInBuild>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
@@ -86,10 +85,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate gdkmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
@@ -104,10 +100,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate gdkmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
@@ -124,10 +117,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate gdkmm def file</Message>
-      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(TargetName).def $(TargetName) $(INTERMEDIATE_DIR)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
@@ -144,10 +134,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate gdkmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName)$(ReleaseDllSuffix).dll</OutputFile>
@@ -220,6 +207,7 @@
     <ProjectReference Include="gendef.vcxproj">
       <Project>{07324745-c9be-4d65-b08a-9c88188c0c28}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

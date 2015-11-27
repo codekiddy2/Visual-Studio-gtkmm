@@ -51,6 +51,8 @@ gtkmm project uses modified version of def file with following symbols commented
 ;vsnprintf_l
 ;vsprintf_l
 
+If still no luck, link against custom def file, remove any unresolved symbols from def file.
+
 if re-building gtkmm following won't be auto done:
 
 in case of config.h modifications.
@@ -86,6 +88,7 @@ TESTINGS:
 
 1.1.2
 	Debug x64 + Debug
+	Release x64 + Debug
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

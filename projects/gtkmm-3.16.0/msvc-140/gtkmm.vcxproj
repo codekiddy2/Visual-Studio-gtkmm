@@ -53,32 +53,32 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PreLinkEventUseInBuild>
-    <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PreLinkEventUseInBuild>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)$(ReleaseDllSuffix)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -89,13 +89,10 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate gtkmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -108,13 +105,10 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate gtkmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -129,10 +123,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate gtkmm def file</Message>
-      <Command>$(BIN_DIR)gendef.exe $(SYMBOLS_DIR)def\$(TargetName).def $(TargetName) $(INTERMEDIATE_DIR)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
@@ -150,14 +141,11 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <PreLinkEvent>
-      <Message>Generate gtkmm def file</Message>
-      <Command>$(OutDir)\gendef.exe $(DefDir)\$(ProjectName).def $(TargetFileName) $(IntDir)*.obj</Command>
-    </PreLinkEvent>
+    <PreLinkEvent />
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName)$(ReleaseDllSuffix).dll</OutputFile>
-      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName)_no_atk.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(SolutionDir)gtkmm\$(TargetName).def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OptimizeReferences>true</OptimizeReferences>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -641,10 +629,12 @@
     <ProjectReference Include="gdkmm.vcxproj">
       <Project>{976c8f9c-1a1d-4e23-b79e-ec9091bbea0e}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
     <ProjectReference Include="gendef.vcxproj">
       <Project>{07324745-c9be-4d65-b08a-9c88188c0c28}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
