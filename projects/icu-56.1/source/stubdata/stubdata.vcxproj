@@ -76,8 +76,6 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>icudt</TargetName>
@@ -138,10 +136,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>STUBDATA_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>.\x86\Debug/stubdata.pch</PrecompiledHeaderOutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <CompileAs>Default</CompileAs>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;STUBDATA_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -151,15 +147,7 @@
       <Command>echo "File with stubdata build time, used as a dependency to trigger fresh data build, since stubdata dll will overwrite the real one." &gt; "$(ProjectDir)stubdatabuilt.txt"</Command>
     </PreLinkEvent>
     <Link>
-      <ProgramDatabaseFile>.\x86\Debug/icudt.pdb</ProgramDatabaseFile>
-      <NoEntryPoint>true</NoEntryPoint>
-      <SetChecksum>true</SetChecksum>
       <BaseAddress>0x4ad00000</BaseAddress>
-      <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <DataExecutionPrevention>
-      </DataExecutionPrevention>
-      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
-      <ImportLibrary>..\..\lib\icudt.lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -201,8 +189,6 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>STUBDATA_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
-      <CompileAs>Default</CompileAs>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;STUBDATA_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -212,11 +198,7 @@
       <Command>echo "File with stubdata build time, used as a dependency to trigger fresh data build, since stubdata dll will overwrite the real one." &gt; "$(ProjectDir)stubdatabuilt.txt"</Command>
     </PreLinkEvent>
     <Link>
-      <NoEntryPoint>true</NoEntryPoint>
-      <SetChecksum>true</SetChecksum>
       <BaseAddress>0x4ad00000</BaseAddress>
-      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
-      <ImportLibrary>..\..\lib64\icudt.lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

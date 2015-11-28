@@ -41,3 +41,5 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 configuration for static build.
+some preprocessor definitions can be placed to solution level property page.
+some values might not be inherited
