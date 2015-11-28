@@ -43,6 +43,7 @@ If you encounter a failure or have suggestion please give a feedback.
 >Big thanks to authors of VS solutions found in official source packages.
 
 
+**Licence**
 
 	Copyright (C) 2015  codekiddy
 
