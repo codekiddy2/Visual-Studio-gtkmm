@@ -136,6 +136,7 @@
     <Link>
       <AdditionalDependencies>icuuc.dll.lib;icuin.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <CustomBuildStep />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>

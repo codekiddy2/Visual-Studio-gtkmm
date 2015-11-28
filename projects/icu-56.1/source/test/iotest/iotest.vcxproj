@@ -101,6 +101,7 @@
       <TargetMachine>MachineX86</TargetMachine>
       <AdditionalDependencies>icuio.dll.lib;icuin.dll.lib;icutest.dll.lib;icuuc.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <CustomBuildStep />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>

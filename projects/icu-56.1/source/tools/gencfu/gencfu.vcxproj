@@ -83,8 +83,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <CustomBuildStep>
-      <Command>copy "$(TargetPath)" ..\..\..\bin</Command>
-      <Outputs>..\..\..\bin\$(TargetFileName);%(Outputs)</Outputs>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;$(SRC_DIR)source\i18n;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

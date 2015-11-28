@@ -105,9 +105,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <CustomBuildStep>
-      <Command>copy "$(TargetPath)" ..\..\..\bin
-</Command>
-      <Outputs>$(ProjectDir)..\..\..\bin\$(TargetFileName);%(Outputs)</Outputs>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <Midl>
       <TypeLibraryName>.\x86\Debug/uconv.tlb</TypeLibraryName>
@@ -181,16 +182,16 @@
     <None Include="resources\fr.txt" />
     <None Include="resources\root.txt" />
     <CustomBuild Include="makedata.mak">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nmake /nologo /f %(Filename).mak icup="$(ProjectDir)..\..\.." CFG=x86\Debug
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nmake /nologo /f %(Filename).mak icup="$(ICUP)" CFG=x86\Debug
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">x86\Debug/uconvmsg.lib;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nmake /nologo /f %(Filename).mak icup="$(ProjectDir)..\..\.." CFG=x64\Debug
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nmake /nologo /f %(Filename).mak icup="$(ICUP)" CFG=x64\Debug
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">x64\Debug/uconvmsg.lib;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nmake /nologo /f %(Filename).mak icup="$(ProjectDir)..\..\.." CFG=x86\Release
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nmake /nologo /f %(Filename).mak icup="$(ICUP)" CFG=x86\Release
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">x86\Release/uconvmsg.lib;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nmake /nologo /f %(Filename).mak icup="$(ProjectDir)..\..\.." CFG=x64\Release
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nmake /nologo /f %(Filename).mak icup="$(ICUP)" CFG=x64\Release
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x64\Release/uconvmsg.lib;%(Outputs)</Outputs>
     </CustomBuild>

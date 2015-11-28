@@ -117,6 +117,7 @@
     <Link>
       <AdditionalDependencies>icutu.dll.lib;icuin.dll.lib;icutest.dll.lib;icuuc.dll.lib;icule.dll.lib;iculx.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <CustomBuildStep />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>

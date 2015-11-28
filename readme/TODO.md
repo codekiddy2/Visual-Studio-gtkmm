@@ -73,3 +73,4 @@
 * properties for (exe's) tools, samples..., same as for test projects for separate directory
 * project that will download and extract sources.
 * make GtkSourceView solution, (proposed on gtkmm-list)
+* try to define macro fot path, for debugger
