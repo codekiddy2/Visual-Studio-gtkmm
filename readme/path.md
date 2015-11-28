@@ -3,7 +3,7 @@
 PATH setup is done in:
 * Control Panel\All Control Panel Items\System > Advanced system settings> advanced > Environment variables > System variables > Path
 
->Here is what needs to be added to path:
+>Here is what should be added to path to avoid possible project misconfigurations:
 
 	D:\Github\install\nasm;
 	D:\Github\install\BoostBuild;
@@ -12,7 +12,17 @@ PATH setup is done in:
 	D:\Github\install\Python3\Scripts;
 	D:\Github\install\Perl64\bin;
 	
-Depending on your build type append only one of the following
+If building multiple configurations the rest of PATH setup is done
+in debugger setup like so:
+
+In property manager Select all test projects at once and click on "properties"
+button, or right click properties, then in property pages that opens set
+* "Configuration" to "All configurations"
+* "Platform" to "All platforms"
+* Common properties > Debugging > Environment > path=$(BIN_DIR);%path%
+
+Else, if building only one configuration,
+depending on your build type append only one of the following
 directories to your path:
 
 For Debug x64:

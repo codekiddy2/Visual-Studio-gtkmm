@@ -45,7 +45,7 @@ If you encounter a failure or have suggestion please give a feedback.
 
 **Licence**
 
-	Copyright (C) 2015  codekiddy
+	Copyright (C) 2015 codekiddy
 
 	Visual Studio Gtkmm is free software: you can redistribute it
 	and/or modify it under the terms of the GNU General Public License
