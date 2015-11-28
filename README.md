@@ -58,6 +58,6 @@ If you encounter a failure or have suggestion please give a feedback.
 	GNU General Public License for more details.
 
 	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see [](http://www.gnu.org/licenses).
+	along with this program.  If not, see http://www.gnu.org/licenses.
 	
 ![](https://raw.githubusercontent.com/codekiddy2/Visual-Studio-gtkmm/msvc-140/readme/images/gplv3.png)
