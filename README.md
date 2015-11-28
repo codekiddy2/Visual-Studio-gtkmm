@@ -41,3 +41,6 @@ If you encounter a failure or have suggestion please give a feedback.
 	github.com/hexchat/gtk-win32
 
 >Big thanks to authors of VS solutions found in official source packages.
+
+
+![](https://raw.githubusercontent.com/codekiddy2/Visual-Studio-gtkmm/msvc-140/readme/images/gplv3.png)
