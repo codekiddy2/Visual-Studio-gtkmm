@@ -99,7 +99,7 @@
       <TypeLibraryName>.\..\..\lib\icuuc.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;U_COMMON_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;U_COMMON_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>.\x86\Release/common.pch</PrecompiledHeaderOutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -126,7 +126,7 @@
       <TypeLibraryName>.\..\..\lib\icuucd.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;U_COMMON_IMPLEMENTATION;RBBI_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;U_COMMON_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>.\x86\Debug/common.pch</PrecompiledHeaderOutputFile>
       <BrowseInformation>true</BrowseInformation>
@@ -174,7 +174,7 @@
       <TypeLibraryName>.\..\..\lib64\icuucd.tlb</TypeLibraryName>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;WIN64;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;U_COMMON_IMPLEMENTATION;RBBI_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;U_COMMON_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <BrowseInformation>true</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

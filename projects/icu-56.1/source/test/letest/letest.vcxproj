@@ -90,7 +90,6 @@
     <ClCompile>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>$(SRC_DIR)include\layout;$(SRC_DIR)include;$(SRC_DIR)source\common;$(SRC_DIR)source\tools\ctestfw;$(SRC_DIR)source\tools\toolutil;$(SRC_DIR)source\layout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -115,7 +114,6 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)include\layout;$(SRC_DIR)include;$(SRC_DIR)source\common;$(SRC_DIR)source\tools\ctestfw;$(SRC_DIR)source\tools\toolutil;$(SRC_DIR)source\layout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderOutputFile>.\x86\Debug/letest.pch</PrecompiledHeaderOutputFile>
@@ -164,7 +162,6 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)include\layout;$(SRC_DIR)include;$(SRC_DIR)source\common;$(SRC_DIR)source\tools\ctestfw;$(SRC_DIR)source\tools\toolutil;$(SRC_DIR)source\layout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

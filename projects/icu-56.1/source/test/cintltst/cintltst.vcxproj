@@ -89,7 +89,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)include;$(SRC_DIR)source\tools\ctestfw;$(SRC_DIR)source\common;$(SRC_DIR)source\i18n;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>.\x86\Debug/cintltst.pch</PrecompiledHeaderOutputFile>
       <BrowseInformation>true</BrowseInformation>
@@ -119,7 +119,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)include;$(SRC_DIR)source\tools\ctestfw;$(SRC_DIR)source\common;$(SRC_DIR)source\i18n;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>.\x86\Release/cintltst.pch</PrecompiledHeaderOutputFile>
@@ -146,7 +146,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)include;$(SRC_DIR)source\tools\ctestfw;$(SRC_DIR)source\common;$(SRC_DIR)source\i18n;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;WIN64;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_ATTRIBUTE_DEPRECATED=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <BrowseInformation>true</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

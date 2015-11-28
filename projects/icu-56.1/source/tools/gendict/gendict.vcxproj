@@ -94,7 +94,6 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>.\x86\Release/gendict.pch</PrecompiledHeaderOutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -122,7 +121,6 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>.\x86\Debug/gendict.pch</PrecompiledHeaderOutputFile>
       <BrowseInformation>true</BrowseInformation>
@@ -178,7 +176,6 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <BrowseInformation>true</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

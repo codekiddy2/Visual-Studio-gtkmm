@@ -91,7 +91,6 @@
     </CustomBuildStep>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -122,7 +121,6 @@
     </CustomBuildStep>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <MinimalRebuild>true</MinimalRebuild>
       <StringPooling>true</StringPooling>
@@ -178,7 +176,6 @@
     </CustomBuildStep>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)source\common;$(SRC_DIR)source\tools\toolutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <MinimalRebuild>true</MinimalRebuild>
       <StringPooling>true</StringPooling>

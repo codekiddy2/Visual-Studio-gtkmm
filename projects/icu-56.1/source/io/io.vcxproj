@@ -100,7 +100,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)include;$(SRC_DIR)source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;U_IO_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_IO_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>.\x86\Release/icuio.pch</PrecompiledHeaderOutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -130,7 +130,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)include;$(SRC_DIR)source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;U_IO_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_IO_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>.\x86\Debug/icuio.pch</PrecompiledHeaderOutputFile>
       <BrowseInformation>true</BrowseInformation>
@@ -184,7 +184,7 @@
     </Midl>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)include;$(SRC_DIR)source\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;U_IO_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>U_IO_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <BrowseInformation>true</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
