@@ -3,7 +3,6 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <SRC_DIR>$(PROJECTS_DIR)icu-56.1\</SRC_DIR>
-    <ICUP>$(SRC_DIR)</ICUP>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -17,9 +16,6 @@
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="ICUP">
-      <Value>$(ICUP)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

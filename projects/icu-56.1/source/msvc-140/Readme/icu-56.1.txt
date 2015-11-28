@@ -31,6 +31,12 @@ Install by building the "Install" project
 NOTES:
 cintltst needs: enable language extenstions
 
+portion of dlls and tools is copied to $(SRC_DIR)bin to make uconv and makedata compile
+
+toolutil has smaller type check disabled in debug mode.
+makedata fails with don't know how to make 'genrb.exe'
+in release mode genrb also doesn't work.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -43,3 +49,4 @@ TODO:
 configuration for static build.
 some preprocessor definitions can be placed to solution level property page.
 some values might not be inherited
+fix don't know how to make 'genrb.exe' in makedata project.

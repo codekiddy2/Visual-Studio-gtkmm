@@ -118,6 +118,12 @@
       <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
       <AdditionalLibraryDirectories />
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) $(SRC_DIR)bin /Y</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>$(SRC_DIR)bin\$(TargetFileName)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -145,6 +151,10 @@
       <BaseAddress>0x4ad00000</BaseAddress>
     </Link>
     <CustomBuildStep />
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) $(SRC_DIR)bin /Y</Command>
+      <Outputs>$(SRC_DIR)bin\$(TargetFileName)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
