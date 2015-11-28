@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{137F9CB4-2BC4-4E3D-BD1E-4E930A12FCDE}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
+		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 		Readme\unistd.txt = Readme\unistd.txt
 	EndProjectSection
 EndProject

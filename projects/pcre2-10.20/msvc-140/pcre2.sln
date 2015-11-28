@@ -5,8 +5,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{D36FE64B-4A0A-4B2B-940B-E7CB17EB4519}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
 		Readme\pcre-8.36.txt = Readme\pcre-8.36.txt
 		Readme\pcre2-10.20.txt = Readme\pcre2-10.20.txt
+		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{2F529363-83DA-42BC-BA3D-7FEE39F2AD34}"
@@ -21,7 +23,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pcre2-posix", "pcre2-posix\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pcre2-grep", "pcre2-grep\pcre2-grep.vcxproj", "{4D905894-C15E-4ADD-BCF3-2F858C854DB5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pcre", "pcre2-test.vcxproj", "{D3BECA22-1745-4587-95B1-4842270DFF54}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-pcre2", "pcre2-test.vcxproj", "{D3BECA22-1745-4587-95B1-4842270DFF54}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pcre2-demo", "pcre2-demo\pcre2-demo.vcxproj", "{A66114F5-DB03-4B34-850D-D80F7DB77D4D}"
 EndProject

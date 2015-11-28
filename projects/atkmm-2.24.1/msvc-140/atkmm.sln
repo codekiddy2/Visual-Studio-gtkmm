@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{E5D86F
 		Readme\atkmm-2.22.7.txt = Readme\atkmm-2.22.7.txt
 		Readme\atkmm-2.24.1.txt = Readme\atkmm-2.24.1.txt
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject

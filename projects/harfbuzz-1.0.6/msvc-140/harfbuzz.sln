@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{844061
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\Harfbuzz-0.9.38.txt = Readme\Harfbuzz-0.9.38.txt
 		Readme\Harfbuzz-1.0.6.txt = Readme\Harfbuzz-1.0.6.txt
+		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject

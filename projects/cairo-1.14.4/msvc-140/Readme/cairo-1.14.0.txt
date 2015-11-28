@@ -1,15 +1,12 @@
-CHANGES:
-added cairo-line.c (due to unresolved external for GTK+ 3.15.x)
-update install procedure
+Copyright (C) 2015 codekiddy
 
-**************************************************************************************************************************************************************************
-**************************************************************************************************************************************************************************
+For Copyright notices see Licence.txt attached to solution.
 
-COPYRIGHT:
-Feel free to redistribute, modify, remove or add contents.
-Please do not remove this file from solution or remove it's contents.
+Please do not remove this file or it's contents from solution as it
+contains important usage information.
+
 solution obtained from wiki.gnome.org/action/show/Projects/GTK+/Win32/MSVCCompilationOfGTKStack
-solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+solution redesign by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -47,6 +44,9 @@ Build Install to install headers.
 **************************************************************************************************************************************************************************
 NOTES:
 removed harfbuzz.dll.lib from link time in Debug x64
+
+added cairo-line.c (due to unresolved external for GTK+ 3.15.x)
+update install procedure
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

@@ -1,8 +1,11 @@
-COPYRIGHT:
-Feel free to redistribute, modify, remove or add contents.
-Please do not remove this file from solution or remove it's contents.
-solution obtained from official source package
-solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+Copyright (C) 2015 codekiddy
+
+For Copyright notices see Licence.txt attached to solution.
+
+Please do not remove this file or it's contents from solution as it
+contains important usage information.
+
+solution design by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
