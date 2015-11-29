@@ -133,7 +133,7 @@
 #define HAVE_LOCALTIME 1
 
 /* Define to 1 if you have the <lzma.h> header file. */
-/* #undef HAVE_LZMA_H */
+#define HAVE_LZMA_H 1
 
 /* Define to 1 if you have the <malloc.h> header file. */
 #define HAVE_MALLOC_H 1
@@ -198,7 +198,7 @@
 #define HAVE_SIGNAL_H 1
 
 /* Define to 1 if you have the `snprintf' function. */
-/* #undef HAVE_SNPRINTF */
+#define HAVE_SNPRINTF 1
 
 /* Define to 1 if you have the `sprintf' function. */
 #define HAVE_SPRINTF 1
@@ -335,7 +335,7 @@
 #define VA_LIST_IS_ARRAY 1
 
 /* Version number of package */
-#define VERSION "2.9.2"
+#define VERSION "2.9.3"
 
 /* Determine what socket length (socklen_t) data type is */
 #define XML_SOCKLEN_T int

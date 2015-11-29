@@ -1,0 +1,72 @@
+Copyright (C) 2015 codekiddy
+
+For Copyright notices see Licence.txt attached to solution.
+
+Please do not remove this file or it's contents from solution as it
+contains important usage information.
+
+solution obtained from official package
+solution redesign by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.1
+solution directory = D:\Github\Visual-Studio-gtkmm\projects\libxml2-2.9.3\win32\msvc-140
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://xmlsoft.org/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+iconv (optional)
+icu (optional)
+zlib (optional)
+lzma (optional)
+readline (optional)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+check config.h and updade as necesary...
+Open Visual Studio solution select configuration and build.
+Once done install headers by running the "Install" project.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+there are linker and compiler warnings disabled
+
+since msvc-140:
+snprintf can be included in config.h, possible linking with libasprintf.lib from gettext ?
+snprintf removed from preprocessor
+
+removed LIBXML_ICONV_ENABLED because it's already declared in xmlversion.h
+possible macros:
+LIBXML_ICU_ENABLED
+WITH_TRIO
+
+macros already defined in xmlversion.h
+LIBXML_ZLIB_ENABLED
+LIBXML_LZMA_ENABLED
+LIBXML_MODULE_EXTENSION ".so"  ??
+LIBXML_ZLIB_ENABLED
+LIBXML_LZMA_ENABLED
+
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+List of tests:
+
+1.1.0
+	Debug dll/static x64
+
+1.1.1
+	Release x64 + test
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+make ICU configuration for libxml2, and readline
+make more test projects

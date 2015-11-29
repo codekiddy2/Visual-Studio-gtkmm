@@ -31,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{6A1B8F
 		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\gtk-3.14.8.txt = Readme\gtk-3.14.8.txt
 		Readme\gtk-3.16.7.txt = Readme\gtk-3.16.7.txt
-		..\..\..\..\..\readme\Licence.txt = ..\..\..\..\..\readme\Licence.txt
+		..\..\..\..\..\readme\LICENSE.txt = ..\..\..\..\..\readme\LICENSE.txt
 		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject

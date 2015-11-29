@@ -6,7 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{3ADD9B33-5D46-451A-BFD5-B0F4CD04AD6A}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
-		..\..\..\..\..\readme\Licence.txt = ..\..\..\..\..\readme\Licence.txt
+		..\..\..\..\..\readme\LICENSE.txt = ..\..\..\..\..\readme\LICENSE.txt
 		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md
 		Readme\zlib-1.2.8.txt = Readme\zlib-1.2.8.txt
 	EndProjectSection

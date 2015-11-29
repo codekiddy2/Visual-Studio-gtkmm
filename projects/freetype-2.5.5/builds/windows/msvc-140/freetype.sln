@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{AB84FC
 		Readme\freetype-2.5.5.txt = Readme\freetype-2.5.5.txt
 		Readme\freetype-2.6.1.txt = Readme\freetype-2.6.1.txt
 		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
-		..\..\..\..\..\readme\Licence.txt = ..\..\..\..\..\readme\Licence.txt
+		..\..\..\..\..\readme\LICENSE.txt = ..\..\..\..\..\readme\LICENSE.txt
 		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject

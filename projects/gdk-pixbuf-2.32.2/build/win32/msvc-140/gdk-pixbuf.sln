@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{C0838F
 		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\gdk-pixbuf-2.30.8.txt = Readme\gdk-pixbuf-2.30.8.txt
 		Readme\gdk-pixbuf-2.32.2.txt = Readme\gdk-pixbuf-2.32.2.txt
-		..\..\..\..\..\readme\Licence.txt = ..\..\..\..\..\readme\Licence.txt
+		..\..\..\..\..\readme\LICENSE.txt = ..\..\..\..\..\readme\LICENSE.txt
 		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject

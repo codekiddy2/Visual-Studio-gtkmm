@@ -8,7 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{D7686172-D5FF-45A2-B458-8ADF8A5C45B6}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
-		..\..\..\..\..\readme\Licence.txt = ..\..\..\..\..\readme\Licence.txt
+		..\..\..\..\..\readme\LICENSE.txt = ..\..\..\..\..\readme\LICENSE.txt
 		Readme\pixman-0.32.6.txt = Readme\pixman-0.32.6.txt
 		Readme\pixman-0.32.8.txt = Readme\pixman-0.32.8.txt
 		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md

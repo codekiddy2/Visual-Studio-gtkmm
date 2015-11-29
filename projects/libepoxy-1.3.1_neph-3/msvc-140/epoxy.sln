@@ -74,7 +74,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{A5D097
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\libpeoxy-1.3.1_neph-3.txt = Readme\libpeoxy-1.3.1_neph-3.txt
-		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
+		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject

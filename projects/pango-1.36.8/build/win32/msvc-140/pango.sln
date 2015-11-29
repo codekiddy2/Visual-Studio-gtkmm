@@ -13,7 +13,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{70800A3E-F547-4ABB-8236-CF99D7B2E3FC}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
-		..\..\..\..\..\readme\Licence.txt = ..\..\..\..\..\readme\Licence.txt
+		..\..\..\..\..\readme\LICENSE.txt = ..\..\..\..\..\readme\LICENSE.txt
 		Readme\pango-1.34.1.txt = Readme\pango-1.34.1.txt
 		Readme\pango-1.36.8.txt = Readme\pango-1.36.8.txt
 		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md

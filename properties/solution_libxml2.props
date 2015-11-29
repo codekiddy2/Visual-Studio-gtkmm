@@ -2,13 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)libxml2-2.9.2\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)libxml2-2.9.3\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
       <TreatSpecificWarningsAsErrors>4098;4002;4003;4013;4020;4021;4027;4029;4033;4035;4045;4049;4053;4071;4150;4819;4530</TreatSpecificWarningsAsErrors>
-      <PreprocessorDefinitions>snprintf=sprintf;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4024;4047;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>

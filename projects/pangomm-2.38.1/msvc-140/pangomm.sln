@@ -9,7 +9,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{7566EB93-5CBD-4CB4-B766-5BB1206D6A87}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
-		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
+		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
 		Readme\pangomm-2.34.0.txt = Readme\pangomm-2.34.0.txt
 		Readme\pangomm-2.38.1.txt = Readme\pangomm-2.38.1.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md

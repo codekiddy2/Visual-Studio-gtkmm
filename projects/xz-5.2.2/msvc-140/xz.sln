@@ -15,7 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{044C0481-9110-46B6-8EE6-D62ADCEFC85A}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
-		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
+		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
 		Readme\lzma-5.2.2.txt = Readme\lzma-5.2.2.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection

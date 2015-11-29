@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{AB83BC
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\jbigkit-2.1.txt = Readme\jbigkit-2.1.txt
-		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
+		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject

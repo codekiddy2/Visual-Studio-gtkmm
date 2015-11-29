@@ -93,3 +93,4 @@ stack_gtk+.props
 >candidates for "ignore"
 
 	4018	(level 3)	'expression' : signed/unsigned mismatch
+	4312	(level 1)	'operation' : conversion from 'type1' to 'type2' of greater size

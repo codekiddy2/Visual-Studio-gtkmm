@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{DA9848
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\libffi-3.0.13.txt = Readme\libffi-3.0.13.txt
 		Readme\libffi-3.1.txt = Readme\libffi-3.1.txt
-		..\..\..\readme\Licence.txt = ..\..\..\readme\Licence.txt
+		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
