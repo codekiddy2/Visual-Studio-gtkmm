@@ -6,7 +6,6 @@ More information such as dependency graphs and how to use these projects
 can be found on here on wiki.
 
 There are also pre-built binaries for VS 2013 and VS 2015 in "release" section (link above).
-
 Here is an (outdated) image of my result, creating new gtkmm 3 project in Visual Studio 2013/2015
 
 ![alt tag](https://raw.githubusercontent.com/codekiddy2/Visual-Studio-gtkmm/master/readme/images/gtkmm%20visual%20studio.png)
