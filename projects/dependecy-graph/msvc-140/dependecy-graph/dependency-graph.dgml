@@ -44,7 +44,7 @@
     <Node Id="Libiconv" Category="Category2" Bounds="887.904644361021,-1.38309764934144,50,25.9599999999998" Label="iconv" UseManualLocation="True" />
     <Node Id="Libintl" Category="Category2" Bounds="912.425606083538,206.813436989199,57.3266666666668,25.96" Label="gettext" UseManualLocation="True" />
     <Node Id="Libsigc++" Category="Category2" Bounds="5.90340391298881,362.866067395449,69.896666666667,25.96" Label="libsigc++" UseManualLocation="True" />
-    <Node Id="Libxml2" Category="Category5" Bounds="1079.23751856914,187.842840485261,58.0866666666666,25.96" Label="libxml2" UseManualLocation="True" />
+    <Node Id="Libxml2" Category="Category2" Bounds="1079.23751856914,187.842840485261,58.0866666666666,25.96" Label="libxml2" UseManualLocation="True" />
     <Node Id="Lzma" Category="Category2" Bounds="1379.59489448879,265.111420871896,50,25.96" Label="lzma" UseManualLocation="True" />
     <Node Id="OpenGL" Bounds="598.95328125,190.326694028302,64.3200000000002,25.96" Label="open GL" UseManualLocation="True" />
     <Node Id="Pango" Category="Category2" Bounds="514.917111822625,380.907749966204,54.0466666666666,25.96" Label="pango" UseManualLocation="True" />
@@ -91,7 +91,7 @@
     <Link Source="Freeglut" Target="Tiff" Bounds="1285.40627021062,28.4715510528564,111.069551561415,146.871801896313" />
     <Link Source="Freetype" Target="Cairo" Bounds="388.022900164852,287.247270343688,268.289878104486,100.598000118468" />
     <Link Source="Freetype" Target="Fontconfig" Bounds="89.283303972877,241.935265891726,235.615531803741,29.5846290106508" />
-    <Link Source="Freetype" Target="Harfbuzz" Bounds="365.828308105469,230.451736450195,14.3578186035156,32.0865020751953" />
+    <Link Source="Freetype" Target="Harfbuzz" Bounds="358.934051513672,230.375915527344,14.1417541503906,32.1623229980469" />
     <Link Source="Freetype" Target="Pango" Bounds="377.050386231609,288.498244229847,136.998474476982,87.5625953799197" />
     <Link Source="Glib" Target="Atk" Bounds="721.886917303037,272.246794028302,60.1534488857415,102.123017445158" />
     <Link Source="Glib" Target="Cairo" Bounds="693.533224247787,272.246794028302,18.4543627368627,106.2849675141" />
@@ -118,13 +118,13 @@
     <Link Source="Gtk" Target="Gtkmm" Bounds="500.441041002313,579.549683913478,733.025116786577,14.2431971090002" />
     <Link Source="Gtkmm" Target="Goocanvasmm" Bounds="338.91583400948,607.508980397489,98.9054045613458,51.898696363943" />
     <Link Source="Harfbuzz" Target="Fontconfig" Bounds="89.3039016723633,210.800109863281,264.335136413574,20.4427947998047" />
-    <Link Source="Harfbuzz" Target="Freetype" Bounds="362.928375244141,222.239456176758,14.3643493652344,32.0818939208984" />
+    <Link Source="Harfbuzz" Target="Freetype" Bounds="368.946563720703,222.239456176758,14.616943359375,32.0097503662109" />
     <Link Source="Hicolor-icon-theme" Target="Gtk" Bounds="1289.01200674663,596.398664030808,71.590129046034,40.6273479320829" />
     <Link Source="Hicolor-icon-theme1" Target="Gtk" Bounds="1231.41701126046,600.324526450166,17.9965107860517,42.2657900303877" />
     <Link Source="Icu" Target="Boost" Bounds="526.150397899293,23.9442551125725,37.0095405487072,101.962395664152" />
     <Link Source="Icu" Target="Harfbuzz" Bounds="400.305904171491,23.9442551125725,112.293778945728,164.896305240836" />
-    <Link Source="Icu" Target="Libxml2" Index="1" Bounds="546.439015499996,19.0524048317789,524.235493817724,169.603806484792" />
-    <Link Source="Icu" Target="Libxml2" Bounds="546.439015499996,19.0524048317789,524.235493817724,169.603806484792" />
+    <Link Source="Icu" Target="Libxml2" Index="1" Bounds="546.439025878906,12.7172479629517,524.275329589844,177.044058799744" />
+    <Link Source="Icu" Target="Libxml2" Bounds="546.439025878906,19.1806640625,524.266052246094,176.943664550781" />
     <Link Source="Jasper" Target="Pixbuf" Bounds="1092.38055113966,176.43475682373,293.067622957339,241.210751701224" />
     <Link Source="Jbig-kit" Target="Tiff" Bounds="1286.46661838001,215.450268037833,107.658417178418,131.716374942535" />
     <Link Source="Jpeg" Target="Jasper" Bounds="1287.06167745745,28.5348433179347,97.3612087235779,115.069286470887" />
