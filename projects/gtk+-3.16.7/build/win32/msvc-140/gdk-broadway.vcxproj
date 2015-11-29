@@ -91,6 +91,8 @@
       <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">
@@ -107,6 +109,8 @@
       <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -164,6 +164,8 @@
       <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk-win32.lib;imm32.lib;winmm.lib;ws2_32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -212,6 +214,8 @@
       <PreprocessorDefinitions>G_ENABLE_DEBUG;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk-win32.lib;imm32.lib;winmm.lib;ws2_32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

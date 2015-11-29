@@ -104,6 +104,8 @@
       <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -116,6 +118,8 @@
       <PreprocessorDefinitions>G_ENABLE_DEBUG;GTK_DISABLE_DEPRECATED;GDK_DISABLE_DEPRECATED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk.dll.lib;atk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

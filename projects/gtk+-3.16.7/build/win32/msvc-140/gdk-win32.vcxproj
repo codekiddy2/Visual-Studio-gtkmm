@@ -89,6 +89,8 @@
       <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -103,6 +105,8 @@
       <PreprocessorDefinitions>G_ENABLE_DEBUG;INSIDE_GDK_WIN32;GDK_COMPILATION;G_LOG_DOMAIN="Gdk";EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Lib />
   </ItemDefinitionGroup>

@@ -95,6 +95,8 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <TreatSpecificWarningsAsErrors>4129;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;atk.dll.lib;pangowin32.dll.lib;imm32.lib;winspool.lib;comctl32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -125,6 +127,8 @@ cd $(SolutionDir)</Command>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <TreatSpecificWarningsAsErrors>4129;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;atk.dll.lib;pangowin32.dll.lib;imm32.lib;winspool.lib;comctl32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

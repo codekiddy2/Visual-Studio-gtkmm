@@ -120,6 +120,8 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -129,6 +131,8 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

@@ -109,6 +109,16 @@ $(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
 $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\
 $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\</Command>
     </PostBuildEvent>
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <ClCompile />
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile />
@@ -131,6 +141,12 @@ $(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
 $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\
 $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\</Command>
     </PostBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\gtk\updateiconcache.c" />

@@ -89,6 +89,8 @@
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -115,6 +117,8 @@
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

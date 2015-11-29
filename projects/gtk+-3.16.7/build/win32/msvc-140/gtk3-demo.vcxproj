@@ -113,6 +113,8 @@
       <PreprocessorDefinitions>EPOXY_DLL;GTK_PREFIX="$(GtkDummyPrefix)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <FunctionLevelLinking>false</FunctionLevelLinking>
@@ -127,6 +129,8 @@
       <PreprocessorDefinitions>EPOXY_DLL;GTK_PREFIX="$(GtkDummyPrefix)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

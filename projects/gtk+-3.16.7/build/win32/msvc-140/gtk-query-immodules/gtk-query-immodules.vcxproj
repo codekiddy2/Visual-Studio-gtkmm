@@ -126,6 +126,8 @@ $(BIN_DIR)gtk-query-immodules-3.0</Command>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>GTK_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link />
     <Link>
@@ -142,6 +144,8 @@ $(BIN_DIR)gtk-query-immodules-3.0</Command>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PreprocessorDefinitions>GTK_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link />
     <Link>

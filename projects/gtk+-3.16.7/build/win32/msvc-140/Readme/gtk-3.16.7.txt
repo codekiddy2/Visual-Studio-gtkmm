@@ -70,18 +70,22 @@ build cairo and pango without freetype. (of course fontconfig is out of question
 
 gtk-demo runs but has missing icons, possible cause:
 icons must be installed in /share/icons
-make sure gtk-update-icon-cache-3.0 works and tha build process of icons works as it should.
+make sure gtk-update-icon-cache-3.0 works and that build process of icons works as it should.
 
 gtk v 3.18.4 does not work, it calls for cairo function that does not exist in cairo.
 
 update icon cache prebuild event fails.
 edit: it works if compilation of icons was fine.
 
-Warning 4129 set to threat as error, "unrecognized character escape sequence", this needs to
+Warning 4129 set to treat as error, "unrecognized character escape sequence", this needs to
 be correct, this sets directories.
 
-unresolved extrenals related to broadway happens when chaning configuration from broadway
+unresolved extrenals related to broadway happens when changing configuration from broadway
 to non-broadway. clean solution then rebuild.
+
+gtk3-icon-browswer is a utility to explore the icons in the current icon theme.
+It shows icons in various sizes, their symbolic variants where available,
+as well as a description of the icon and its context.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -93,7 +97,27 @@ TESTINGS:
 	Debug x64
 
 1.1.1
-	Debug x64 + debug
+	Debug x64 + test ok
+	Release x64 + test fail.. (applying changes to release build)
+
+		test: cl.exe /Od /Ob1
+		gdk
+		gdk-win32
+		gtk
+		gtk3-demo
+
+		result: test passed
+
+		cl.exe /Ob1
+		gtk3-demo, gtk3-demo-application
+
+		result: all tests failed.
+		conclusion: obviously optimization must be turned off and inline function expanion
+						set to value 1 ( /Ob1 )
+
+		gdkdisplay test still fails with above options.
+		setting all projects in release build to use these options...
+
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

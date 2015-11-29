@@ -89,6 +89,8 @@
       <AdditionalIncludeDirectories>$(SRC_DIR)demos\icon-browser;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -115,6 +117,8 @@
       <AdditionalIncludeDirectories>$(SRC_DIR)demos\icon-browser;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
