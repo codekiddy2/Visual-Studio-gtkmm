@@ -1,21 +1,10 @@
 Visual Studio Gtkmm - Visual Studio Projects and Solutions
-	 
-This licence applies soley to Visual Studio solutions, projects
-and other original work attached to these solutions.
-
-For modified material attached to these projects and solutions which are
-licensed and authored under different names and licenses see
-section "Third-Party Software Licenses" below.
-
-Modified material assumes source code attached and shipped with these
-projects and solutions, modified projects obtained from official or
-non-official source packages as well as other kind of licenced works.
 
 Copyright (C) 2015  codekiddy
 	
-This file is part of Visual Studio 
-Gtkmm Visual Studio Gtkmm is free software: you can redistribute it
+This file is part of Visual Studio
 
+Gtkmm Visual Studio Gtkmm is free software: you can redistribute it
 and/or modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation, either version 3
 of the License, or (at your option) any later version.
@@ -29,9 +18,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-*****************************
-Third-Party Software Licenses
-*****************************
+
+***************************************************************************************
+                          Third-Party Software Licenses
+***************************************************************************************
 
 This section contains third-party software notices and/or additional terms
 for licensed third-party software components included within Visual Studio Gtkmm.
