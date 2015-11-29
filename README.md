@@ -1,6 +1,7 @@
 **About Visual-Studio-gtkmm:**
 
-Visual Studio 2015 projects to compile GTK+, GTKMM and all it's dependencies.
+Visual Studio 2015 projects to compile GTK+, GTKMM, ICU, Crypto++, Boost and all it's dependencies.
+
 More information such as dependency graphs and how to use these projects
 can be found on here on wiki.
 
