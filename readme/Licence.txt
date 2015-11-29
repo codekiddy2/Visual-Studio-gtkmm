@@ -1,32 +1,32 @@
-	Visual Studio Gtkmm - Visual Studio Projects and Solutions
+Visual Studio Gtkmm - Visual Studio Projects and Solutions
 	 
-	This licence applies soley to Visual Studio solutions, projects
-	and other original work attached to these solutions.
+This licence applies soley to Visual Studio solutions, projects
+and other original work attached to these solutions.
 
-	For modified material attached to these projects and solutions which are
-	licensed and authored under different names and licenses see
-	section "Third-Party Software Licenses" below.
+For modified material attached to these projects and solutions which are
+licensed and authored under different names and licenses see
+section "Third-Party Software Licenses" below.
 
-	Modified material assumes source code attached and shipped with these
-	projects and solutions, modified projects obtained from official or
-  non-official source packages as well as other kind of licenced works.
+Modified material assumes source code attached and shipped with these
+projects and solutions, modified projects obtained from official or
+non-official source packages as well as other kind of licenced works.
 
-	Copyright (C) 2015  codekiddy
+Copyright (C) 2015  codekiddy
 	
-	This file is part of Visual Studio Gtkmm
+This file is part of Visual Studio 
+Gtkmm Visual Studio Gtkmm is free software: you can redistribute it
 
-  Visual Studio Gtkmm is free software: you can redistribute it
-	and/or modify it under the terms of the GNU General Public License
-	as published by the Free Software Foundation, either version 3
-	of the License, or (at your option) any later version.
+and/or modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation, either version 3
+of the License, or (at your option) any later version.
 
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 *****************************
