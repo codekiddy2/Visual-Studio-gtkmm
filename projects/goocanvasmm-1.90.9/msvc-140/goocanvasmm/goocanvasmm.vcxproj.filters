@@ -304,9 +304,6 @@
     <ClInclude Include="..\..\goocanvas\goocanvasmm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\goocanvasmmconfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>

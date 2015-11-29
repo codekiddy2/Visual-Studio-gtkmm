@@ -39,6 +39,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-table_model", "test-ta
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gendef", "gendef\gendef.vcxproj", "{07324745-C9BE-4D65-B08A-9C88188C0C28}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{3DD0232C-7CB7-4388-919B-2451E9887139}"
+	ProjectSection(SolutionItems) = preProject
+		src\config.h = src\config.h
+		src\goocanvasmmconfig.h = src\goocanvasmmconfig.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug dll|Win32 = Debug dll|Win32
@@ -84,13 +90,21 @@ Global
 		{7EF4D5F8-1EF2-4EA7-B131-7D8F6BF58170}.Release static|x64.ActiveCfg = Release static|x64
 		{7EF4D5F8-1EF2-4EA7-B131-7D8F6BF58170}.Release static|x64.Build.0 = Release static|x64
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Debug dll|Win32.ActiveCfg = Debug|Win32
+		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Debug dll|Win32.Build.0 = Debug|Win32
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Debug dll|x64.ActiveCfg = Debug|x64
+		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Debug dll|x64.Build.0 = Debug|x64
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Debug static|Win32.ActiveCfg = Debug|Win32
+		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Debug static|Win32.Build.0 = Debug|Win32
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Debug static|x64.ActiveCfg = Debug|x64
+		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Debug static|x64.Build.0 = Debug|x64
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release dll|Win32.ActiveCfg = Release|Win32
+		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release dll|Win32.Build.0 = Release|Win32
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release dll|x64.ActiveCfg = Release|x64
+		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release dll|x64.Build.0 = Release|x64
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release static|Win32.ActiveCfg = Release|Win32
+		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release static|Win32.Build.0 = Release|Win32
 		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release static|x64.ActiveCfg = Release|x64
+		{9BDE2215-8362-478F-A2F9-2061463DFFAC}.Release static|x64.Build.0 = Release|x64
 		{B4E863CB-EFF3-4467-BBED-BB6B77F00726}.Debug dll|Win32.ActiveCfg = Debug dll|Win32
 		{B4E863CB-EFF3-4467-BBED-BB6B77F00726}.Debug dll|Win32.Build.0 = Debug dll|Win32
 		{B4E863CB-EFF3-4467-BBED-BB6B77F00726}.Debug dll|x64.ActiveCfg = Debug dll|x64
