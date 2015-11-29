@@ -2,9 +2,9 @@ Visual Studio Gtkmm - Visual Studio Projects and Solutions
 
 Copyright (C) 2015  codekiddy
 	
-This file is part of Visual Studio
+This file is part of Visual Studio Gtkmm
 
-Gtkmm Visual Studio Gtkmm is free software: you can redistribute it
+Visual Studio Gtkmm is free software: you can redistribute it
 and/or modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation, either version 3
 of the License, or (at your option) any later version.
