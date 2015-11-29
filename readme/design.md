@@ -24,7 +24,7 @@
 	Each solution contains an "install project" to install both headers and documentation.
 	Each solution contains a readme filter with readme files with following entries in order:
 	
-	* COPYRIGHT
+	* Copyright
 	* INFO
 	* DEPENDENCIES
 	* INSTRUCTIONS

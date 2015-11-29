@@ -76,13 +76,15 @@
 	* LTCG flag must be turned off
 	* LTCG link status should be turned off as well
 
-**The command "some command" exited with code "some code"**
+**6. The command "some command" exited with code "some code"**
+
 	* check if custom build step or build event begins with " set path=$(BIN_DIR);%path%" "
 	* check if command contains valid paths
 	* check for typos in command line
+	* if command line executes external toll, consult usage documentation for external tool.
 
 
-**My problem is not listed here**
+**7. My problem is not listed here**
 
 You can read more 'readme' files in:
 
