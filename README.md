@@ -5,7 +5,7 @@ Visual Studio 2015 projects to compile GTK+, GTKMM, ICU, Crypto++, Boost and all
 More information such as dependency graphs and how to use these projects
 can be found on here on [wiki](https://github.com/codekiddy2/Visual-Studio-gtkmm/wiki)
 
-There are also experimental pre-built binaries for VS 2013 and VS 2015 in [release section](https://github.com/codekiddy2/Visual-Studio-gtkmm/releases)
+There are also experimental pre-built binaries for VS 2013 and VS 2015 in release [section](https://github.com/codekiddy2/Visual-Studio-gtkmm/releases).
 Here is an image of my result, creating a new gtkmm 3 project in Visual Studio 2013/2015
 
 ![alt tag](https://raw.githubusercontent.com/codekiddy2/Visual-Studio-gtkmm/master/readme/images/gtkmm%20visual%20studio.png)
@@ -23,7 +23,7 @@ So that all you have to do is click on
 
 * File > New > Project
 
-and start coding with latest libraries with without too much overhead.
+and start coding with latest libraries without too much overhead.
 Here is another example image showing that building latest gtkmm with Visual Studio is easy:
 
 ![alt tag](https://raw.githubusercontent.com/codekiddy2/Visual-Studio-gtkmm/master/readme/images/gtkmm%20visual%20studio2.png)
