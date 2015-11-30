@@ -23,6 +23,7 @@
     </ClCompile>
     <Link>
       <ImportLibrary />
+      <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Lib />
     <ProjectReference />

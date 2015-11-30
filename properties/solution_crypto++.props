@@ -11,6 +11,8 @@
       <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)src\;$(SolutionDir)..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>false</SDLCheck>
+      <DisableSpecificWarnings>4297;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <PreBuildEvent>
       <Command>cd $(SRC_DIR)

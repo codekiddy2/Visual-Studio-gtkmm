@@ -10,7 +10,6 @@
     <Link>
       <AdditionalDependencies>cryptopp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Lib />
     <ProjectReference />

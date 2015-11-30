@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{2C6DF7
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B42B3A33-9C90-44DB-8585-61BFF5F1E72F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -97,16 +99,27 @@ Global
 		{A7483CE8-2784-46CE-8CB8-8C0C1D27E232}.Release|x64.ActiveCfg = Release|x64
 		{A7483CE8-2784-46CE-8CB8-8C0C1D27E232}.Release|x64.Build.0 = Release|x64
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Debug|Win32.Build.0 = Debug|Win32
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Debug|x64.ActiveCfg = Debug|x64
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Debug|x64.Build.0 = Debug|x64
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Debug|Win32.ActiveCfg = Debug|Win32
+		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Debug|Win32.Build.0 = Debug|Win32
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Debug|x64.ActiveCfg = Debug|x64
+		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Debug|x64.Build.0 = Debug|x64
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Release|Win32.ActiveCfg = Release|Win32
+		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Release|Win32.Build.0 = Release|Win32
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Release|x64.ActiveCfg = Release|x64
+		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.DLL-Import Release|x64.Build.0 = Release|x64
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Release|Win32.ActiveCfg = Release|Win32
+		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Release|Win32.Build.0 = Release|Win32
 		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Release|x64.ActiveCfg = Release|x64
+		{D3CC6FB9-8A2A-484B-BCD6-4F00CD2599AE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9EAFA456-89B4-4879-AD4F-C2C341184CF5} = {B42B3A33-9C90-44DB-8585-61BFF5F1E72F}
+		{A7483CE8-2784-46CE-8CB8-8C0C1D27E232} = {B42B3A33-9C90-44DB-8585-61BFF5F1E72F}
 	EndGlobalSection
 EndGlobal
