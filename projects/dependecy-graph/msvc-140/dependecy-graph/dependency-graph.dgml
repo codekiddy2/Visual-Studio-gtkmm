@@ -30,9 +30,7 @@
     <Node Id="Gstreamermm" Category="Category4" Bounds="1225.74074228389,450.30355680667,94.2433333333333,25.96" Label="gstreamermm" UseManualLocation="True">
       <Category Ref="Category5" />
     </Node>
-    <Node Id="Gtk" Category="Category2" Bounds="1233.46615778889,566.083916209793,50,25.96" Label="gtk+" UseManualLocation="True">
-      <Category Ref="Category4" />
-    </Node>
+    <Node Id="Gtk" Category="Category2" Bounds="1233.46615778889,566.083916209793,50,25.96" Label="gtk+" UseManualLocation="True" />
     <Node Id="Gtkmm" Category="Category2" Bounds="433.672739507258,581.548980397489,57.77,25.96" Label="gtkmm" UseManualLocation="True" />
     <Node Id="Harfbuzz" Category="Category2" Bounds="353.639047995016,196.279450833077,65.5233333333335,25.96" Label="harfbuzz" UseManualLocation="True" />
     <Node Id="Hicolor-icon-theme" Category="Category2" Bounds="1320.14941080729,637.026011962891,126.65,25.96" Label="adwaita-icon-theme" UseManualLocation="True" />
@@ -91,7 +89,7 @@
     <Link Source="Freeglut" Target="Tiff" Bounds="1285.40627021062,28.4715510528564,111.069551561415,146.871801896313" />
     <Link Source="Freetype" Target="Cairo" Bounds="388.022900164852,287.247270343688,268.289878104486,100.598000118468" />
     <Link Source="Freetype" Target="Fontconfig" Bounds="89.283303972877,241.935265891726,235.615531803741,29.5846290106508" />
-    <Link Source="Freetype" Target="Harfbuzz" Bounds="358.934051513672,230.375915527344,14.1417541503906,32.1623229980469" />
+    <Link Source="Freetype" Target="Harfbuzz" Bounds="359.396148681641,230.485198974609,14.4642944335938,32.0530395507813" />
     <Link Source="Freetype" Target="Pango" Bounds="377.050386231609,288.498244229847,136.998474476982,87.5625953799197" />
     <Link Source="Glib" Target="Atk" Bounds="721.886917303037,272.246794028302,60.1534488857415,102.123017445158" />
     <Link Source="Glib" Target="Cairo" Bounds="693.533224247787,272.246794028302,18.4543627368627,106.2849675141" />
@@ -118,13 +116,13 @@
     <Link Source="Gtk" Target="Gtkmm" Bounds="500.441041002313,579.549683913478,733.025116786577,14.2431971090002" />
     <Link Source="Gtkmm" Target="Goocanvasmm" Bounds="338.91583400948,607.508980397489,98.9054045613458,51.898696363943" />
     <Link Source="Harfbuzz" Target="Fontconfig" Bounds="89.3039016723633,210.800109863281,264.335136413574,20.4427947998047" />
-    <Link Source="Harfbuzz" Target="Freetype" Bounds="368.946563720703,222.239456176758,14.616943359375,32.0097503662109" />
+    <Link Source="Harfbuzz" Target="Freetype" Bounds="369.744812011719,222.239456176758,14.2680053710938,32.1160736083984" />
     <Link Source="Hicolor-icon-theme" Target="Gtk" Bounds="1289.01200674663,596.398664030808,71.590129046034,40.6273479320829" />
     <Link Source="Hicolor-icon-theme1" Target="Gtk" Bounds="1231.41701126046,600.324526450166,17.9965107860517,42.2657900303877" />
     <Link Source="Icu" Target="Boost" Bounds="526.150397899293,23.9442551125725,37.0095405487072,101.962395664152" />
     <Link Source="Icu" Target="Harfbuzz" Bounds="400.305904171491,23.9442551125725,112.293778945728,164.896305240836" />
-    <Link Source="Icu" Target="Libxml2" Index="1" Bounds="546.439025878906,12.7172479629517,524.275329589844,177.044058799744" />
-    <Link Source="Icu" Target="Libxml2" Bounds="546.439025878906,19.1806640625,524.266052246094,176.943664550781" />
+    <Link Source="Icu" Target="Libxml2" Index="1" Bounds="512.342834472656,23.9442558288574,558.552185058594,171.72635269165" />
+    <Link Source="Icu" Target="Libxml2" Bounds="538.785949707031,23.9442558288574,532.117126464844,165.238513946533" />
     <Link Source="Jasper" Target="Pixbuf" Bounds="1092.38055113966,176.43475682373,293.067622957339,241.210751701224" />
     <Link Source="Jbig-kit" Target="Tiff" Bounds="1286.46661838001,215.450268037833,107.658417178418,131.716374942535" />
     <Link Source="Jpeg" Target="Jasper" Bounds="1287.06167745745,28.5348433179347,97.3612087235779,115.069286470887" />

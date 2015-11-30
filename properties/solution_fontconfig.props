@@ -9,7 +9,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR);$(SRC_DIR)src\;$(INCLUDE_DIR)unistd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;CONFDIR="$(DUMMY_ROOT)/etc/fonts";FC_CACHEDIR="$(DUMMY_ROOT)/etc/fonts/cache";FC_DEFAULT_FONTS="C:/Windows/Fonts";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;CONFDIR="$(DUMMY_ROOT)/etc";FC_CACHEDIR="$(DUMMY_ROOT)/etc/fonts/cache";FC_DEFAULT_FONTS="WINDOWSFONTDIR";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level2</WarningLevel>
       <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>

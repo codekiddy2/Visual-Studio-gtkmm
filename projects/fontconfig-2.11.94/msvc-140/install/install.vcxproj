@@ -104,7 +104,8 @@ if not exist $(ROOT_DIR)etc\fonts\conf.d mkdir $(ROOT_DIR)etc\fonts\conf.d
 cd $(ROOT_DIR)etc\fonts\conf.d
 xcopy $(SRC_DIR)conf.d\*.conf /EFYQ
 cd ..
-copy $(MOD_DIR)fonts.conf</Command>
+copy $(MOD_DIR)fonts.conf
+copy $(SRC_DIR)fonts.dtd</Command>
       <Message>Installing font configuration ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -127,7 +128,8 @@ if not exist $(ROOT_DIR)etc\fonts\conf.d mkdir $(ROOT_DIR)etc\fonts\conf.d
 cd $(ROOT_DIR)etc\fonts\conf.d
 xcopy $(SRC_DIR)conf.d\*.conf /EFYQ
 cd ..
-copy $(MOD_DIR)fonts.conf</Command>
+copy $(MOD_DIR)fonts.conf
+copy $(SRC_DIR)fonts.dtd</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Installing font configuration ...</Message>
@@ -164,7 +166,8 @@ if not exist $(ROOT_DIR)etc\fonts\conf.d mkdir $(ROOT_DIR)etc\fonts\conf.d
 cd $(ROOT_DIR)etc\fonts\conf.d
 xcopy $(SRC_DIR)conf.d\*.conf /EFYQ
 cd ..
-copy $(MOD_DIR)fonts.conf</Command>
+copy $(MOD_DIR)fonts.conf
+copy $(SRC_DIR)fonts.dtd</Command>
       <Message>Installing font configuration ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -195,7 +198,8 @@ if not exist $(ROOT_DIR)etc\fonts\conf.d mkdir $(ROOT_DIR)etc\fonts\conf.d
 cd $(ROOT_DIR)etc\fonts\conf.d
 xcopy $(SRC_DIR)conf.d\*.conf /EFYQ
 cd ..
-copy $(MOD_DIR)fonts.conf</Command>
+copy $(MOD_DIR)fonts.conf
+copy $(SRC_DIR)fonts.dtd</Command>
       <Message>Installing font configuration ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>

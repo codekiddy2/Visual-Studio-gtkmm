@@ -74,3 +74,5 @@
 * project that will download and extract sources.
 * make GtkSourceView solution, (proposed on gtkmm-list)
 * try to define macro fot path, for debugger
+* _WINSOCK_DEPRECATED_NO_WARNINGS defined in goocanvas(mm)?? or gstreamer(mm)?? as well as in crypto++, consider moving this macro lower in property inheritance.
+* [HIGH PRIORITY] GTK+ release build x64, demo app missing system icons, gtkmm all configurations build with atkmm support

@@ -52,7 +52,7 @@ typedef int mode_t;
 /* #undef ENABLE_LIBXML2 */
 
 /* Additional font directories */
-// #define FC_ADD_FONTS "yes"
+#define FC_ADD_FONTS "yes"
 
 /* Architecture prefix to use for cache file names */
 #undef FC_ARCHITECTURE
@@ -249,6 +249,9 @@ typedef int mode_t;
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
 
+/* Define to 1 if `d_type' is a member of `struct dirent'. */
+#define HAVE_STRUCT_DIRENT_D_TYPE 1
+
 /* Define to 1 if you have the `strrchr' function. */
 #define HAVE_STRRCHR 1
 
@@ -299,6 +302,18 @@ typedef int mode_t;
 /* Define to 1 if you have the <sys/vfs.h> header file. */
 #undef HAVE_SYS_VFS_H
 
+/* Define to 1 if `usLowerOpticalPointSize' is a member of `TT_OS2'. */
+#define HAVE_TT_OS2_USLOWEROPTICALPOINTSIZE 1
+
+/* Define to 1 if `usUpperOpticalPointSize' is a member of `TT_OS2'. */
+#define HAVE_TT_OS2_USUPPEROPTICALPOINTSIZE 1
+
+/* Define to 1 if you have the `XML_SetDoctypeDeclHandler' function. */
+#define HAVE_XML_SETDOCTYPEDECLHANDLER 1
+
+/* Define to 1 if you have the `_mktemp_s' function. */
+#define HAVE__MKTEMP_S 1
+
 /* Define to 1 if you have the <unistd.h> header file. */
 /*#define HAVE_UNISTD_H 1*/
 
@@ -325,22 +340,22 @@ typedef int mode_t;
 #define PACKAGE "fontconfig"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT ""
+#define PACKAGE_BUGREPORT "https://bugs.freedesktop.org/enter_bug.cgi?product=fontconfig"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME ""
+#define PACKAGE_NAME "fontconfig"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING ""
+#define PACKAGE_STRING "fontconfig 2.11.94"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME ""
+#define PACKAGE_TARNAME "fontconfig"
 
 /* Define to the home page for this package. */
-#undef PACKAGE_URL
+#define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION ""
+#define PACKAGE_VERSION "2.11.94"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
@@ -368,7 +383,7 @@ typedef int mode_t;
 #define STDC_HEADERS 1
 
 /* Use iconv. */
-/*#define USE_ICONV 1*/
+#define USE_ICONV 1
 
 /* Use regex */
 #undef USE_REGEX
