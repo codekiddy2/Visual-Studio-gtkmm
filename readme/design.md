@@ -55,3 +55,16 @@
 
 	Solution should be set to start one of the test projects on debug
 	Opening a solution should not result in errors or warnings.
+	Solution should contain following readme files:
+	
+	* fundamental.md			(basic setup)
+	* troubleshooting.md		(troubleshooting guides)
+	* package_name-version.txt	(build notes and instructions)
+	* LICENSE.txt				(license)
+	
+	Solution versioning numbers
+	
+	* major		(round up when all configurations tests passed)
+	* minor		(round up when upgradig package version or )
+	* micro		(round up when applying significant changes)
+	

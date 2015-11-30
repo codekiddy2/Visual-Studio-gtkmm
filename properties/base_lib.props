@@ -18,6 +18,7 @@
     <Lib />
     <ProjectReference />
     <Link />
+    <Link />
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="LINK">

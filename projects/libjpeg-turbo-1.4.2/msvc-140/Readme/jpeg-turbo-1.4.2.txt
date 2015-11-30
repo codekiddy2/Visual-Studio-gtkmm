@@ -45,7 +45,7 @@ Open Solution and build.
 NOTES:
 Initial output of simd project will spam output winodow with "system can not find the path specified",
 you can ignore this.
-Disabled C4146 as error
+Disabled C4146 as error (edit: removed since SDL:off)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

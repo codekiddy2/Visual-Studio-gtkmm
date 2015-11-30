@@ -9,7 +9,6 @@
     <ClCompile />
     <ClCompile>
       <SmallerTypeCheck>false</SmallerTypeCheck>
-      <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

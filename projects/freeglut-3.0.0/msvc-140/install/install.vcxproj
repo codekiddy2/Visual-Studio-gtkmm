@@ -87,10 +87,9 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include mkdir include
-cd include
-xcopy $(SRC_DIR)include\* /EFY</Command>
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)include\* $(INCLUDE_DIR) /E $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,10 +103,9 @@ xcopy $(SRC_DIR)include\* /EFY</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include mkdir include
-cd include
-xcopy $(SRC_DIR)include\* /EFY</Command>
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)include\* $(INCLUDE_DIR) /E $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -125,10 +123,9 @@ xcopy $(SRC_DIR)include\* /EFY</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include mkdir include
-cd include
-xcopy $(SRC_DIR)include\* /EFY</Command>
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)include\* $(INCLUDE_DIR) /E $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -146,10 +143,9 @@ xcopy $(SRC_DIR)include\* /EFY</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include mkdir include
-cd include
-xcopy $(SRC_DIR)include\* /EFY</Command>
+if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)include\* $(INCLUDE_DIR) /E $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

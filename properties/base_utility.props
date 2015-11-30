@@ -3,25 +3,28 @@
   <ImportGroup Label="PropertySheets">
     <Import Project="gtk_stack.props" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="UserMacros">
+    <COPY_CMD>/YQ</COPY_CMD>
+    <ECHO_HEADERS>echo Installing headers...</ECHO_HEADERS>
+  </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(ROOT_DIR)</OutDir>
-    <CustomBuildBeforeTargets>PreBuildEvent</CustomBuildBeforeTargets>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <PreBuildEvent />
     <PreLinkEvent />
     <PostBuildEvent />
-    <CustomBuildStep>
-      <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
-if not exist $(REF_DIR) mkdir $(REF_DIR)
-if not exist $(PKG_CONFIG_PATH) mkdir $(PKG_CONFIG_PATH)</Command>
-      <Message>Checking existence of directories ...</Message>
-      <TreatOutputAsContent>false</TreatOutputAsContent>
-      <Outputs>$(ROOT_DIR);%(Outputs)</Outputs>
-    </CustomBuildStep>
+    <CustomBuildStep />
     <PreBuildEvent />
+    <PreBuildEvent />
+    <CustomBuild />
   </ItemDefinitionGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BuildMacro Include="COPY_CMD">
+      <Value>$(COPY_CMD)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ECHO_HEADERS">
+      <Value>$(ECHO_HEADERS)</Value>
+    </BuildMacro>
+  </ItemGroup>
 </Project>

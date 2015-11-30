@@ -1,5 +1,8 @@
 **"stack wide" Changelog / status which applies to all projects...**
 
+
+**PROPERTIES CHANGES**
+
 /VERBOSE:LIB removed from "base_stack.props"
 
 /NOLOGO set for linker in "base_stack.props"
@@ -28,6 +31,12 @@ set to no: common properties > resources > suppress startup banner base_stack.pr
 set to no: common properties > resources > show progress base_stack.props
 
 all LIB search paths moved from stack_gtk+ to base_stack.
+
+turn off SDL checks for all projects in base_stack.props
+turn off /MAP for dll's in base_dll.props, base_stack.props now controls /MAP option which if off.
+turn off /MAP:EXPORTS for dll's same as above
+linker > generate debug info changed from "true" to builtin /DEBUG in base_debug/release.props set to no in base_setup.props
+
 
 **Compiler warnings**
 

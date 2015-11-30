@@ -16,6 +16,7 @@
     <TOOLS_DIR>$(BIN_DIR)tools\</TOOLS_DIR>
     <DEF_DIR>$(SolutionDir)def\</DEF_DIR>
     <MOD_DIR>$(SolutionDir)src\</MOD_DIR>
+    <DEBUGGER>PATH=$(BIN_DIR);%PATH%</DEBUGGER>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -25,9 +26,9 @@
     <Link />
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_OBSOLETE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_CRT_OBSOLETE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <PrecompiledHeaderOutputFile>$(INTERMEDIATE_DIR)$(TargetName).pch</PrecompiledHeaderOutputFile>
@@ -178,6 +179,9 @@
     </BuildMacro>
     <BuildMacro Include="MOD_DIR">
       <Value>$(MOD_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DEBUGGER">
+      <Value>$(DEBUGGER)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
