@@ -6,9 +6,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
-    <ClCompile>
-      <SDLCheck>false</SDLCheck>
-    </ClCompile>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">

@@ -8,10 +8,8 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SmallerTypeCheck>false</SmallerTypeCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)src\;$(SolutionDir)..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4297;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <PreBuildEvent>
@@ -21,8 +19,8 @@ cd Backup
 if not exist .\dll.h move /Y $(SRC_DIR)dll.h .\
 if not exist .\fipstest.cpp move /Y $(SRC_DIR)fipstest.cpp .\
 cd $(SRC_DIR)
-xcopy $(SolutionDir)src\dll.h $(SRC_DIR) /Y
-xcopy $(SolutionDir)src\fipstest.cpp $(SRC_DIR) /Y
+xcopy $(MOD_DIR)dll.h $(SRC_DIR) /Y
+xcopy $(MOD_DIR)fipstest.cpp $(SRC_DIR) /Y
 </Command>
       <Message>Coping modified files ...</Message>
     </PreBuildEvent>

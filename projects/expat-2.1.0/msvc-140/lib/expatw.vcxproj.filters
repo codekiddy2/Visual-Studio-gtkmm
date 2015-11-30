@@ -9,7 +9,7 @@
       <UniqueIdentifier>{a7b0674a-5506-4ac7-835a-c09aa953a99e}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
+    <Filter Include="Definition Files">
       <UniqueIdentifier>{e137c734-0842-4633-a24f-241ad7304c97}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
@@ -71,7 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\lib\libexpatw.def">
-      <Filter>Source Files</Filter>
+      <Filter>Definition Files</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

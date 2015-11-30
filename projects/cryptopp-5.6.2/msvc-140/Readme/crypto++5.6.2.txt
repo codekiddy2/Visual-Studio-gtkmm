@@ -35,13 +35,15 @@ Read offical readme about usage!
 NOTES:
 cmd line entry /ZM is there for precompiled header
 dll.h modified to reflect modified lib name
-fipstest.cpp modified to target Windows 7
+fipstest.cpp modified to target current Windows
 FIPS dll does not work, use static library.
 
 since msvc-140
 added to ignore lib warnings as errors in solution level props.
 turn off SDL check on solution level.
 warning 4297 disabled on solution level.
+
+x86 DLL/test build does not work at all, X64 build seems OK ?
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -53,8 +55,11 @@ TESTINGS:
 1.1.0-1
 	Debug x64 + Debug
 	Release x64 + test
+	Debug x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-project properties and their overridings needs to be checked.
+project properties and their overridings needs to be checked. (edit: done)
+explain configuration types.
+fix DLL and test builds for x86 builds

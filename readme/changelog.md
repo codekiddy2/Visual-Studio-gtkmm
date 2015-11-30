@@ -37,6 +37,12 @@ turn off /MAP for dll's in base_dll.props, base_stack.props now controls /MAP op
 turn off /MAP:EXPORTS for dll's same as above
 linker > generate debug info changed from "true" to builtin /DEBUG in base_debug/release.props set to no in base_setup.props
 
+SDL check removed from solution level properties:
+crypto++
+icu
+iconv
+?not sure? editline, expat, freeglut, jpeg, bzip2 or zlib
+
 
 **Compiler warnings**
 

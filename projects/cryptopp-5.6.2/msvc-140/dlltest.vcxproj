@@ -171,6 +171,7 @@
     <ProjectReference Include="cryptdll.vcxproj">
       <Project>{ebd86293-69a9-456b-b814-916e12aa9bbf}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
