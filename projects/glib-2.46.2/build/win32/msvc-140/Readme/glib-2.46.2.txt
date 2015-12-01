@@ -34,7 +34,7 @@ Make sure all the test projects pass by running them!
 since 1.15: (removed)
 gobject and test gobject use nuget package manager to get libffi
 Get-Project <project name> | Install-package libffi
-treat linker warning as error set to no on solution level.
+treat linker warning as error set to on solution level.
 linker input for ffi.lib removed for gobject debug x64 only
 
 **************************************************************************************************************************************************************************
@@ -82,8 +82,5 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-
 make configuration for glib to link to gettext's version of localcharset and gnulib.
 also consider ENABLE_RELOCATABLE in gettext.
-re-enable linker warning, LNK4098 because of libffi linking to wrong CRT.
-^temporary disabled with /NODEFAULTLIB:msvcrt.lib for debug x86

@@ -87,7 +87,7 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)include\ffi
+if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
 cd $(INCLUDE_DIR)ffi
 xcopy $(SRC_DIR)x86_64-w64-mingw32\include\*.h  /Y
 xcopy $(SRC_DIR)x86_64-w64-mingw32\fficonfig.h /Y
@@ -106,7 +106,7 @@ copy $(SRC_DIR)x86_64-w64-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Comma
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)include\ffi
+if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
 cd $(INCLUDE_DIR)ffi
 xcopy $(SRC_DIR)x86_64-w64-mingw32\include\*.h  /Y
 xcopy $(SRC_DIR)x86_64-w64-mingw32\fficonfig.h /Y
@@ -125,7 +125,7 @@ copy $(SRC_DIR)x86_64-w64-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Comma
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)include\ffi
+if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
 cd $(INCLUDE_DIR)ffi
 xcopy $(SRC_DIR)i686-pc-mingw32\include\*.h  /Y
 xcopy $(SRC_DIR)i686-pc-mingw32\fficonfig.h /Y
@@ -144,7 +144,7 @@ copy $(SRC_DIR)i686-pc-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)include\ffi
+if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
 cd $(INCLUDE_DIR)ffi
 xcopy $(SRC_DIR)i686-pc-mingw32\include\*.h  /Y
 xcopy $(SRC_DIR)i686-pc-mingw32\fficonfig.h /Y

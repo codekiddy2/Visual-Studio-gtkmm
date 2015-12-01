@@ -12,10 +12,7 @@
   <ItemDefinitionGroup>
     <PreBuildEvent />
     <ClCompile />
-    <Link>
-      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-    </Link>
+    <Link />
     <ClCompile>
       <AdditionalIncludeDirectories />
     </ClCompile>

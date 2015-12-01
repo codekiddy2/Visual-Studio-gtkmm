@@ -102,6 +102,7 @@
       </PrecompiledHeader>
       <CompileAs>CompileAsCpp</CompileAs>
       <PreprocessorDefinitions>FFI_BUILDING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SRC_DIR)x86_64-w64-mingw32;$(SRC_DIR)x86_64-w64-mingw32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
     <Link>
@@ -127,6 +128,7 @@
       </PrecompiledHeader>
       <CompileAs>CompileAsCpp</CompileAs>
       <PreprocessorDefinitions>FFI_BUILDING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SRC_DIR)x86_64-w64-mingw32;$(SRC_DIR)x86_64-w64-mingw32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
     <Link>
