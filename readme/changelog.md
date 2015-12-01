@@ -41,7 +41,7 @@ SDL check removed from solution level properties:
 crypto++
 icu
 iconv
-?not sure? editline, expat, freeglut, jpeg, bzip2 or zlib
+editline
 
 
 **Compiler warnings**
@@ -109,3 +109,16 @@ stack_gtk+.props
 
 	4018	(level 3)	'expression' : signed/unsigned mismatch
 	4312	(level 1)	'operation' : conversion from 'type1' to 'type2' of greater size
+
+
+**NOTES**
+
+Enable enhanced instruction set
+
+Because the x86 compiler generates code that uses SSE2 instructions by default,
+you must specify /arch:IA32 to disable generation of SSE and SSE2 instructions for x86 processors.
+
+
+/D flag on command line
+
+By default, the value associated with a symbol is 1. For example, /Dname is equivalent to /Dname=1

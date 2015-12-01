@@ -26,7 +26,7 @@ icu (optional)
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-this solution will build boost with zlib, bzip2 and iconv support.
+this solution will build boost with zlib, bzip2, icu and iconv support.
 Open Solution select configuration and build
 
 **************************************************************************************************************************************************************************
@@ -73,6 +73,15 @@ SET ICONV_PATH=$(ROOT_DIR)
 
 set following variable (only ?) to make boost build zlib "boost_zlib.lib"
 SET ZLIB_SOURCE=D:\Github\Visual-Studio-gtkmm\projects\zlib-1.2.8
+
+if ICU libs have non-standard name (as is the case here) set icu link like so:
+SET ICU_LINK="icudt.dll.lib icuin.dll.lib icuio.dll.lib icule.dll.lib iculx.dll.lib icuuc.dll.lib"
+
+set include search path for ICU:
+cxxflags="/I$(INCLUDE_DIR)icu"
+
+if python is not in path use following before invoking b2:
+SET PATH=$(INSTALL_DIR)Python35;$(INSTALL_DIR)Python35\Scripts;%PATH%
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

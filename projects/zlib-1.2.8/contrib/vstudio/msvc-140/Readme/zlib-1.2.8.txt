@@ -50,6 +50,7 @@ if testzlib results in unresolved external, try to remove the project and add ol
 try to remove ZLIB_WINAPI in case of unresolved problems.
 -- UPDATE: ZLIB_WINAPI must be present when building the DLL, (not tested for *.lib)
 	also calling code must define ZLIB_WINAPI (tested with "test-zlib_dll")
+edit: removed ZLIB_WINAPI for debug x86 builds for testing purposes
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -79,3 +80,6 @@ List of tests:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
+try building everything without ZLIB_WINAPI, up to gtkmm.
+see ..\README.txt and see NOTES
+if OK remove ZLIB_WINAPI from entry stack

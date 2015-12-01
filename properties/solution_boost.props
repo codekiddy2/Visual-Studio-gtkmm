@@ -30,15 +30,16 @@ SET BZIP2_LIBPATH=$(LIB_DIR)
 SET ZLIB_BINARY=zlib.dll
 SET ZLIB_LIBPATH=$(LIB_DIR)
 SET ZLIB_INCLUDE=$(INCLUDE_DIR)zlib
-$(B2_DIR)b2 cxxflags="/I $(INCLUDE_DIR)iconv" linkflags="/LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
+SET PATH=$(PYTHON_DIR);$(PYTHON_DIR)Scripts;%PATH%
+SET ICU_LINK="icudt.dll.lib icuin.dll.lib icuio.dll.lib icule.dll.lib iculx.dll.lib icuuc.dll.lib"
+$(B2_DIR)b2 --without-mpi cflags="/I$(INCLUDE_DIR)iconv /I$(INCLUDE_DIR)icu" linkflags="/LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
 echo Installing headers, please wait...
-REM xcopy .\* $(INCLUDE_DIR)boost /EFQY
-</Command>
+xcopy .\* $(INCLUDE_DIR)boost /EFQY</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

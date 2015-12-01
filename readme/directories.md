@@ -11,7 +11,11 @@
 				msys64
 				nasm
 				Python27
+					x64
+					x86
 				Python35
+					x64
+					x86
 				SDK
 				Symbols
 				VisualStudio

@@ -126,12 +126,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Object Include="..\..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\inffas32.obj">
-      <Filter>Object Files\Release86</Filter>
-    </Object>
-    <Object Include="..\..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\match686.obj">
-      <Filter>Object Files\Release86</Filter>
-    </Object>
     <Object Include="..\..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\gvmat64.obj">
       <Filter>Object Files\Debug64</Filter>
     </Object>
@@ -145,9 +139,15 @@
       <Filter>Object Files\Release64</Filter>
     </Object>
     <Object Include="..\..\..\..\..\..\output\v140\Release\Win32\intermediate\zlib\asm\inffas32.obj">
-      <Filter>Object Files\Debux86</Filter>
+      <Filter>Object Files\Release86</Filter>
     </Object>
     <Object Include="..\..\..\..\..\..\output\v140\Release\Win32\intermediate\zlib\asm\match686.obj">
+      <Filter>Object Files\Release86</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\match686.obj">
+      <Filter>Object Files\Debux86</Filter>
+    </Object>
+    <Object Include="..\..\..\..\..\..\output\v140\Debug\Win32\intermediate\zlib\asm\inffas32.obj">
       <Filter>Object Files\Debux86</Filter>
     </Object>
   </ItemGroup>

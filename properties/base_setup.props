@@ -5,8 +5,8 @@
     <DRIVE>d</DRIVE>
     <REPO_DIR>$(DRIVE):\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
     <INSTALL_DIR>$(DRIVE):\Github\Install\</INSTALL_DIR>
-    <PYTHON_DIR>$(INSTALL_DIR)Python35\</PYTHON_DIR>
-    <PYTHON2_DIR>$(INSTALL_DIR)Python27\</PYTHON2_DIR>
+    <PYTHON_DIR>$(INSTALL_DIR)Python35\$(PlatformTarget)\</PYTHON_DIR>
+    <PYTHON2_DIR>$(INSTALL_DIR)Python27\$(PlatformTarget)\</PYTHON2_DIR>
     <PERL_DIR>$(INSTALL_DIR)Perl64\bin\</PERL_DIR>
     <NASM_DIR>$(INSTALL_DIR)nasm\</NASM_DIR>
     <CMAKE_DIR>$(INSTALL_DIR)CMake\bin\</CMAKE_DIR>

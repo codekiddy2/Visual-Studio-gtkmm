@@ -207,12 +207,12 @@ move *.obj $(INTERMEDIATE_DIR)</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)contrib\masmx86\
-ml /coff /Zi /c /D WIN32 /D _WINDOWS /D _DEBUG /D ASMV /D ASMINF /Flinffas32.lst inffas32.asm
+ml /safeseh /coff /Zi /c /D WIN32 /D _WINDOWS /D _DEBUG /D ASMV /D ASMINF /Flinffas32.lst inffas32.asm
 move *.obj $(INTERMEDIATE_DIR)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">inffas32.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)contrib\masmx86\
-ml /coff /Zi /c /D WIN32 /D _WINDOWS /D ASMV /D ASMINF /Flinffas32.lst inffas32.asm
+ml /safeseh /coff /Zi /c /D WIN32 /D _WINDOWS /D ASMV /D ASMINF /Flinffas32.lst inffas32.asm
 move *.obj $(INTERMEDIATE_DIR)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">inffas32.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
@@ -224,13 +224,13 @@ move *.obj $(INTERMEDIATE_DIR)</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd $(SRC_DIR)contrib\masmx86\
-ml /coff /Zi /c /D WIN32 /D _DEBUG /D _WINDOWS /D ASMV /D ASMINF /Flmatch686.lst match686.asm
+ml /safeseh /coff /Zi /c /D WIN32 /D _DEBUG /D _WINDOWS /D ASMV /D ASMINF /Flmatch686.lst match686.asm
 move *.obj $(INTERMEDIATE_DIR)
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">match686.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd $(SRC_DIR)contrib\masmx86\
-ml /coff /Zi /c /D WIN32 /D _WINDOWS /D ASMV /D ASMINF /Flmatch686.lst match686.asm
+ml /safeseh /coff /Zi /c /D WIN32 /D _WINDOWS /D ASMV /D ASMINF /Flmatch686.lst match686.asm
 move *.obj $(INTERMEDIATE_DIR)</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">match686.obj</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
