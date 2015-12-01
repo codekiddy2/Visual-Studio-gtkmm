@@ -98,8 +98,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>port.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>tiff.dll.lib;port.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
@@ -110,8 +109,6 @@
       <AdditionalIncludeDirectories>$(SRC_DIR)libtiff;$(MOD_DIR);$(SRC_DIR)port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
       <PreprocessorDefinitions>NEED_LIBPORT;HAVE_GETOPT;HAVE_SNPRINTF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -127,12 +124,29 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>port.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>tiff.dll.lib;port.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
     <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SRC_DIR)libtiff;$(MOD_DIR);$(SRC_DIR)port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NEED_LIBPORT;HAVE_GETOPT;HAVE_SNPRINTF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tiff.dll.lib;port.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SRC_DIR)libtiff;$(MOD_DIR);$(SRC_DIR)port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NEED_LIBPORT;HAVE_GETOPT;HAVE_SNPRINTF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tiff.dll.lib;port.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\tiff-4.0.6\tools\rgb2ycbcr.c" />

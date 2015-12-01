@@ -8,7 +8,6 @@
   <ItemDefinitionGroup>
     <ClCompile />
     <ClCompile>
-      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>JPEG_SUPPORT;JBIG_SUPPORT;LZMA_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>

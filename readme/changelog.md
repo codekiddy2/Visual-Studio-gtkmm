@@ -42,7 +42,11 @@ crypto++
 icu
 iconv
 editline
+tiff
+xz
 
+
+added /safeseh flag to zlib's asm files, x86 builds must now all have /SAFESEH reenabled
 
 **Compiler warnings**
 
