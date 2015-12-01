@@ -26,20 +26,95 @@ unistd project is used to install unistd.h file
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
+	project-templates dependencies:
+		gtkmm
+		goocanvasmm
+		boost
+		crypto++
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
 
+compile-icons instructions:
+
+First make sure you've prepared MSYS2 environment
+by reading the "MSYS2-prepare.md" found in readme folder
+
+update contents of config files as needed.
+
+open VS cmd prompt (x64 or x86 Visual Studio Native cmd prompt depending on build type)
+
+for x64 cmd prompt copy-paste following and hit enter:
+D:\Github\Visual-Studio-gtkmm\projects\compile-icons\msvc-140\start-64
+
+for x86 cmd prompt copy-paste following and hit enter:
+D:\Github\Visual-Studio-gtkmm\projects\compile-icons\msvc-140\start-32
+
+copy-paste one of the following lines (depending on your build type) to MSYS2 shell and hit enter:
+
+/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/release-32.sh
+/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/release-64.sh
+/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/debug-32.sh
+/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/debug-64.sh
+
+
+
+project templates instructions:
+
+These template projects can be installed by building the install project which will copy preconfigured templates into
+Visual Studio templates directory.
+
+Alternatively you can modify these projects for your needs and export them as templates into:
+%USERPROFILE%\Documents\Visual Studio 2015\My Exported Templates
+
+Properties directory must exist with all the user_*.props properties.
+There are also icons included so that templates would have a nice apperance and description on File > New Project
+In case of errors such as "unable to load project" unload project and edit <import project> to point it to correct path
+containing properties.
+
+In Visual Studio 2015, once exported, new project can be created on:
+File > New > Project > Visual C++ > gtkmm
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
+project-templates notes:
+
+Each project template is set up to use/create a precompiled header, this is absolute must in order to have fast intellisense,
+also compilation time will be reduced and there will be almost no need to include anything except for special needs of course.
+Read following if you want to learn more:
+http://blogs.msdn.com/b/vcblog/archive/2010/01/26/precompiled-header-files-in-visual-studio-2010.aspx
+http://blogs.msdn.com/b/vcblog/archive/2011/03/29/10146895.aspx
+There are macros 'DW' and 'EW' which are used to disable warnings for system headers.
+Either use them to compile with warning level 4 or set warning level to 3 or less.
+gtkmm-boost-crypto++ is an all-in-one template, and requires at least /Zm200 option since it needs more memory for
+precompiled header. for more info about /Zm see:
+https://msdn.microsoft.com/en-us/library/bdscwf1c.aspx
+In case of problem replace Zm200 with Zm1000 (750mb for PCH)
+
+since msvc-140:
+commented out #include <goocanvasmm\goocanvasmm.h> in stdafx.h
+
+For some unknown reason project templates do not work in VS 2015, even if
+creating new ones.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
 1.0.1
 	Debug x86
+
+project templates testings:
+1.0.0
+	Debug x64 + Debug
+
+1.0.1
+	Debug x64 + Debug
+
+1.1.0-2
+	Debug x64 + Debug
+	Release x64 + test
 
 ********************************************************************************************
 ********************************************************************************************
@@ -49,3 +124,9 @@ projects that need to be configured manualy are in between stages.
 
 does cairomm depends on glibmm??
 does fontconfig depend on harfbuzz?
+
+project templates notes:
+make better structure between user_*.props and other properties.
+user_*.props must inherit default properties and override not needed stuff.
+carefull with macros!
+user_base_stack.props can't inherit base_stack.props because of (TODO: edit needed)
