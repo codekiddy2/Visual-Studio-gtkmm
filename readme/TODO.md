@@ -64,7 +64,7 @@
 
 **SELECTED TASKS**
 
-* some projects create output folders within solution, chech which ones.
+* some projects create output folders within solution, chech which ones. (edit: most probably while changing solution configuration)
 * some projects do not need configuration any more, check which one's and update readme files
 * not all links point to direct download page (GNOME projects)
 * check which source files are missing and which are no longer needed in projects.
