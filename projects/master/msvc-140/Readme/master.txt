@@ -1,0 +1,51 @@
+Copyright (C) 2015 codekiddy
+
+For Copyright notices see Licence.txt attached to solution.
+
+Please do not remove this file or it's contents from solution as it
+contains important usage information.
+
+Solution design by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+********************************************************************************************
+********************************************************************************************
+INFO:
+solution version = 1.0.1
+solution directory = D:\Github\Visual-Studio-gtkmm\projects\master\msvc-140
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+
+This is a Visual Studio 2015 Solution containing direct graph document project,
+visualy showing dpendencies between packages and allowing you swith to different
+projects and solutions with single click, removing the need to click on open/close
+solution each time you wan't to check other code.
+You will need Visual Studio 2015 Ultimate to open this type of project.
+
+gendef project is stackwide used to generate definitioin files
+unistd project is used to install unistd.h file
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.1
+	Debug x86
+
+********************************************************************************************
+********************************************************************************************
+TODO:
+make this solution a master solution, and separate them to "build stages".
+projects that need to be configured manualy are in between stages.
+
+does cairomm depends on glibmm??
+does fontconfig depend on harfbuzz?

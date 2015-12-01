@@ -7,7 +7,6 @@
 * rename projects (in windows explorer) so that the name is the same as in solutions
 * separate each project into it's own folder in solution directory
 * move test/example projects into one directory "Tests" inside solution directory
-* define location for *.def files in solution folder, and how to "install" them into SYMBOLS_DIR
 * rename gtk_stack.props into stack_gtk.props and update projects
 * add missing projects to existing solutions (test projects, different versions...)
 * same intermediate root directory for asm and C/C++ projects
@@ -15,6 +14,7 @@
 * make all test projects have their cmd line needed stuff located in output directory (png's, files...)
 * some test projects with both static and release configurations might link against either dll or lib only, instead of by configuration type 
 * define against which libs projects link, dll.lib or lib, some test projects ie. link differently for each configuration. (harfbuzz most notably)
+* configuration should be done with MSYS2 only, avoid using mozilla-build
 
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build
@@ -68,7 +68,7 @@
 * some projects do not need configuration any more, check which one's and update readme files
 * not all links point to direct download page (GNOME projects)
 * check which source files are missing and which are no longer needed in projects.
-
+* define location for *.def files in solution folder, and how to "install" them into SYMBOLS_DIR
 
 **DONE - need to check again**
 

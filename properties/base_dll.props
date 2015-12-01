@@ -17,7 +17,13 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
     </Link>
+    <PreLinkEvent>
+      <Command>if not exist $(SYMBOLS_DIR)def mkdir $(SYMBOLS_DIR)def
+$(TOOLS_DIR)gendef $(SYMBOLS_DIR)def\$(TargetName).def $(TargetName) $(INTERMEDIATE_DIR)*.obj</Command>
+      <Message>Generating module definition file</Message>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="LINK">
