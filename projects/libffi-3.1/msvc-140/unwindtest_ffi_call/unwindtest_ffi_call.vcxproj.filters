@@ -11,12 +11,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="testclosure.c">
+    <ClCompile Include="..\..\testsuite\libffi.call\unwindtest_ffi_call.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ffitest.h">
+    <ClInclude Include="..\..\testsuite\libffi.call\ffitest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

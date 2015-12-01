@@ -32,7 +32,7 @@ SET ZLIB_LIBPATH=$(LIB_DIR)
 SET ZLIB_INCLUDE=$(INCLUDE_DIR)zlib
 SET PATH=$(PYTHON_DIR);$(PYTHON_DIR)Scripts;%PATH%
 SET ICU_LINK="icudt.dll.lib icuin.dll.lib icuio.dll.lib icule.dll.lib iculx.dll.lib icuuc.dll.lib"
-$(B2_DIR)b2 --without-mpi cflags="/I$(INCLUDE_DIR)iconv /I$(INCLUDE_DIR)icu" linkflags="/LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --without-mpi debug-symbols=on cflags="/I$(INCLUDE_DIR)iconv /I$(INCLUDE_DIR)icu" linkflags="/DEBUG /PDB:$(SYMBOLS_DIR) /LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 move /Y *.lib $(LIB_DIR)
 move /Y *.dll $(BIN_DIR)

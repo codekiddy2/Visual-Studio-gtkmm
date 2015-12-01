@@ -167,7 +167,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>png.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -209,9 +209,7 @@
       <Outputs>$(INTERMEDIATE_DIR)pngunknown.out</Outputs>
       <Inputs>$(TEST_DIR)pngunknown.exe</Inputs>
     </CustomBuildStep>
-    <ClCompile>
-      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
     <ClCompile />
@@ -229,7 +227,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;PNG_DEBUG=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PNG_DLL;PNG_USE_DLL;PNG_DEBUG=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>png.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -270,9 +268,7 @@
       <Outputs>$(INTERMEDIATE_DIR)pngunknown.out</Outputs>
       <Inputs>$(TEST_DIR)pngunknown.exe</Inputs>
     </CustomBuildStep>
-    <ClCompile>
-      <PreprocessorDefinitions>ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
     <ClCompile />

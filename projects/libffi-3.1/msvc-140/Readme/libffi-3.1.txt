@@ -34,8 +34,7 @@ Do not used ffi_dll or ffi_static projects ffi must be compiled by wrapper provi
 source tree. (that costed me 4 days of painful debugging!)
 
 once configuration is done, build solution which is currently configured to build test-ffi_static
-test-closure and install project. it will also build the dll and test projects should pass
-but the dll does not work.
+test-closure and install project.
 
 test-ffi_static and test-closure must pass.
 ffi_dll, test-ffi_dll and ffi_static are excluded from build in configuration manager.
@@ -56,6 +55,8 @@ not sure if dependent project need to define that too.
 install project is supposed to do following:
 copy libffi_convenience.lib file into lib directory and rename into ffi.lib
 copy ffitarget.h and ffi.h into include_dir/ffi
+
+libffi 3.2.1 does not work due to missing complex support.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -78,7 +79,10 @@ TESTINGS:
 1.1.2
 	Debug x64 + Debug
 	Release x64 + test
+	Debug x86 + debug
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
+add object files or asm files from config folder to dll project to create a valid dll.
+add more test projects

@@ -96,3 +96,4 @@ TESTINGS:
 TODO:
 Add test projects
 separeate "install" project
+enable deubgging symbols

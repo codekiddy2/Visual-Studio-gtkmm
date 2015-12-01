@@ -12,6 +12,12 @@
     <Filter Include="Assembler Files">
       <UniqueIdentifier>{d1d577ff-8f96-4802-8c9a-01ef33065125}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\i686-pc-mingw32">
+      <UniqueIdentifier>{5b8ab76f-5cfd-4587-8b99-0a55019d3f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\x86_64-w64-mingw32">
+      <UniqueIdentifier>{e2d48067-23f8-47d7-aa0d-eb6384323e9f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\closures.c">
@@ -42,14 +48,23 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\ffi.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\i686-pc-mingw32\fficonfig.h">
+      <Filter>Header Files\i686-pc-mingw32</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\fficonfig.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\i686-pc-mingw32\include\ffi.h">
+      <Filter>Header Files\i686-pc-mingw32</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\ffitarget.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\i686-pc-mingw32\include\ffitarget.h">
+      <Filter>Header Files\i686-pc-mingw32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x86_64-w64-mingw32\fficonfig.h">
+      <Filter>Header Files\x86_64-w64-mingw32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x86_64-w64-mingw32\include\ffi.h">
+      <Filter>Header Files\x86_64-w64-mingw32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\x86_64-w64-mingw32\include\ffitarget.h">
+      <Filter>Header Files\x86_64-w64-mingw32</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

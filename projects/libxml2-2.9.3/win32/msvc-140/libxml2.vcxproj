@@ -179,7 +179,7 @@
     <Link />
     <PreBuildEvent />
     <Link>
-      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
@@ -211,7 +211,7 @@
     <Link />
     <PreBuildEvent />
     <Link>
-      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
