@@ -15,7 +15,15 @@
 * make all test projects have their cmd line needed stuff located in output directory (png's, files...)
 * some test projects with both static and release configurations might link against either dll or lib only, instead of by configuration type 
 * define against which libs projects link, dll.lib or lib, some test projects ie. link differently for each configuration. (harfbuzz most notably)
-* GTK+ release build x64, demo app missing system icons, gtkmm all configurations build with atkmm support
+
+* TOP TROUBLES:
+	* crypto++ x86 build - linker errors - temporary fix: only static build
+	* libffi CRT linkage in x86 build - obvious in gobject - temporary fix /NODEFAULTLIB:msvcrt.lib
+	* GTK+ release build x64, demo app missing system icons
+	* gtkmm with atkmm support - fails in atk::~implementor - temp fix: no atkmm support
+	* boost debugging symbols
+	* fontconfig
+	* readline - unresolved external symbols
 
 
 **LOW PRIORITY TASKS**

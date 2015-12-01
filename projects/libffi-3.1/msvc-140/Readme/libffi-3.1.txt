@@ -86,3 +86,4 @@ TESTINGS:
 TODO:
 add object files or asm files from config folder to dll project to create a valid dll.
 add more test projects
+linker warning are disabled, see why, fix and re-enable

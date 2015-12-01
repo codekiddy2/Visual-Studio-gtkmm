@@ -80,7 +80,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gio;$(SRC_DIR)gmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
@@ -89,13 +89,12 @@
       <AdditionalDependencies>zlib.dll.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gio;$(SRC_DIR)gmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GIO_COMPILATION;G_LOG_DOMAIN="GLib-GIO";DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
@@ -103,7 +102,6 @@
       <AdditionalDependencies>zlib.dll.lib;glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;ws2_32.lib;shlwapi.lib;dnsapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

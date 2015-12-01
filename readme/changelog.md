@@ -44,7 +44,7 @@ iconv
 editline
 tiff
 xz
-
+glib
 
 added /safeseh flag to zlib's asm files, x86 builds must now all have /SAFESEH reenabled
 
@@ -126,3 +126,9 @@ you must specify /arch:IA32 to disable generation of SSE and SSE2 instructions f
 /D flag on command line
 
 By default, the value associated with a symbol is 1. For example, /Dname is equivalent to /Dname=1
+
+
+Debugger: Working Directory (relative paths in sources are according to "Working directory")
+Specifies the working directory of the program being debugged,
+relative to the project directory where your EXE is located.
+If you leave this blank, the working directory is the project directory.

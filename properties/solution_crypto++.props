@@ -24,9 +24,7 @@ xcopy $(MOD_DIR)fipstest.cpp $(SRC_DIR) /Y
 </Command>
       <Message>Coping modified files ...</Message>
     </PreBuildEvent>
-    <Link>
-      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">

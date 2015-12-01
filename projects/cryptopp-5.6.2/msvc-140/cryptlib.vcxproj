@@ -171,7 +171,7 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/IGNORE:4221</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -187,7 +187,7 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/IGNORE:4221</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">
@@ -200,7 +200,7 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/IGNORE:4221</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">
@@ -216,7 +216,7 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/IGNORE:4221</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -229,8 +229,9 @@
     <ResourceCompile>
       <Culture>0x0409</Culture>
     </ResourceCompile>
+    <Lib />
     <Lib>
-      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/IGNORE:4221</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -248,7 +249,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Lib>
-      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/IGNORE:4221</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">
@@ -261,7 +262,7 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib>
-      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/IGNORE:4221</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">
@@ -278,7 +279,7 @@
     </ResourceCompile>
     <Lib />
     <Lib>
-      <AdditionalOptions>/IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/IGNORE:4221</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -520,20 +521,12 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
     </ClCompile>
     <ClCompile Include="..\eccrypto.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">Disabled</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">Disabled</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">MaxSpeed</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">MaxSpeed</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\ecp.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">Disabled</Optimization>
@@ -553,20 +546,12 @@
     </ClCompile>
     <ClCompile Include="..\emsa2.cpp" />
     <ClCompile Include="..\eprecomp.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">Disabled</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">Disabled</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">MaxSpeed</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">MaxSpeed</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\esign.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">Disabled</Optimization>

@@ -28,7 +28,10 @@ See Readme.txt in SRC_DIR for instructions on which configuration to build.
 
 Open Solution select configuration and build
 Install by building the "Install" project
-Read offical readme about usage!
+Read offical readme about usage.
+
+Set Working directory for test-cryptopp in debugger to SRC_DIR.
+^old prebuild event is still there but disabled.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

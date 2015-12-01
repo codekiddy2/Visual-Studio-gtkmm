@@ -12,6 +12,12 @@
     <Filter Include="Miscellaneous">
       <UniqueIdentifier>{c796d723-2d2d-4dbd-b90b-d99a73069c49}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assembler Files">
+      <UniqueIdentifier>{1a561867-4817-41c6-a6ef-22dcafa20886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{1e9719a4-1e8c-45fb-bc20-e916599f0606}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\3way.cpp">
@@ -787,14 +793,14 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\adhoc.cpp.proto">
-      <Filter>Source Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="..\x64dll.asm">
-      <Filter>Source Files</Filter>
+      <Filter>Assembler Files</Filter>
     </CustomBuild>
     <CustomBuild Include="..\x64masm.asm">
-      <Filter>Source Files</Filter>
+      <Filter>Assembler Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\adhoc.cpp.proto">
+      <Filter>Other Files</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

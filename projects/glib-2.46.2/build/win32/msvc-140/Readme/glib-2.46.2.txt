@@ -34,7 +34,7 @@ Make sure all the test projects pass by running them!
 since 1.15: (removed)
 gobject and test gobject use nuget package manager to get libffi
 Get-Project <project name> | Install-package libffi
-thread linker warning as error set to no on solution level.
+treat linker warning as error set to no on solution level.
 linker input for ffi.lib removed for gobject debug x64 only
 
 **************************************************************************************************************************************************************************
@@ -49,6 +49,8 @@ test-gio has runtime check reduced in debug mode due to runtime error.
 
 ZLIB_WINAPI must be defined for x86 builds, also zlib.dll x86 must define that macro
 on building.
+edit: that macro is being removed in entry stack.
+
 libffi must be built by msvc wraper.
 
 gnulib, libcharset and pcre source files have their macros defined in source file properties.
@@ -75,6 +77,7 @@ TESTINGS:
 	
 1.1.0.5
 	Release x64
+	Debug x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -82,3 +85,5 @@ TODO:
 
 make configuration for glib to link to gettext's version of localcharset and gnulib.
 also consider ENABLE_RELOCATABLE in gettext.
+re-enable linker warning, LNK4098 because of libffi linking to wrong CRT.
+^temporary disabled with /NODEFAULTLIB:msvcrt.lib for debug x86

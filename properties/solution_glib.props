@@ -19,7 +19,6 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <SDLCheck>false</SDLCheck>
       <WarningLevel>Level1</WarningLevel>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <DisableSpecificWarnings>4068;4133;4715;4090;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -27,7 +26,6 @@
     <Link />
     <Link>
       <AdditionalDependencies>intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
