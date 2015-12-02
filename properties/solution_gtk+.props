@@ -2,9 +2,9 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)gtk+-3.16.7\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)gtk+-3.18.5\</SRC_DIR>
     <GtkBinaryVersion>3.0.0</GtkBinaryVersion>
-    <GtkVersion>3.16.7</GtkVersion>
+    <GtkVersion>3.18.5</GtkVersion>
     <GtkDummyPrefix>$(DUMMY_ROOT)</GtkDummyPrefix>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h /Y</GenConfigH>
     <GenGdkConfigHWin32>copy ..\..\..\gdk\gdkconfig.h.win32 ..\..\..\gdk\gdkconfig.h /Y</GenGdkConfigHWin32>

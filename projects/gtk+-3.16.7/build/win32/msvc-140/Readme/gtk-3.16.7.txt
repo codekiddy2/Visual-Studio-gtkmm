@@ -72,7 +72,8 @@ gtk-demo runs but has missing icons, possible cause:
 icons must be installed in /share/icons
 make sure gtk-update-icon-cache-3.0 works and that build process of icons works as it should.
 
-gtk v 3.18.4 does not work, it calls for cairo function that does not exist in cairo.
+gtk v 3.18.4-5 does not work, it calls for cairo function that does not exist in cairo.
+need to wait for new cairo version, it's a cairo's problem.
 
 update icon cache prebuild event fails.
 edit: it works if compilation of icons was fine.
