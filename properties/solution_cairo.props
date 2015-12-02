@@ -82,7 +82,6 @@ copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(FEATURES_DIR) /Y
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)src;$(SRC_DIR)util\cairo-gobject;$(FEATURES_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <SDLCheck>false</SDLCheck>
       <WarningLevel>Level2</WarningLevel>
       <DisableSpecificWarnings>4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <SmallerTypeCheck>false</SmallerTypeCheck>
@@ -90,6 +89,7 @@ copy $(SRC_DIR)util\cairo-gobject\cairo-gobject.h $(FEATURES_DIR) /Y
     </ClCompile>
     <Link>
       <AdditionalDependencies>pixman.dll.lib;png.dll.lib;zlib.dll.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent />
   </ItemDefinitionGroup>

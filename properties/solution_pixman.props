@@ -8,7 +8,6 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)pixman;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <SDLCheck>false</SDLCheck>
       <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
   </ItemDefinitionGroup>

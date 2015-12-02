@@ -1,6 +1,6 @@
 #set environment
 export ROOT_DIR=/d/GitHub/Visual-Studio-gtkmm/output/v140/Debug/Win32
-export PROJECT_DIR=/d/GitHub/Visual-Studio-gtkmm/projects/compile-icons
+export PROJECT_DIR=/d/GitHub/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons
 
 #download adwaita icon theme
 cd $PROJECT_DIR

@@ -40,6 +40,9 @@ If you're rebuilding solution or building for new configuration make
 sure you rebuild install project because Visual Studio will skip it,
 therefore installed headers might be "incorrect".
 
+since build x86 test
+added linker /IGNORE:4197 to solution level, symbol specified more times for cairo.dll
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:

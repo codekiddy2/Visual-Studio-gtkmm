@@ -46,17 +46,17 @@ update contents of config files as needed.
 open VS cmd prompt (x64 or x86 Visual Studio Native cmd prompt depending on build type)
 
 for x64 cmd prompt copy-paste following and hit enter:
-D:\Github\Visual-Studio-gtkmm\projects\compile-icons\msvc-140\start-64
+D:\Github\Visual-Studio-gtkmm\projects\master\msvc-140\compile-icons\start-64
 
 for x86 cmd prompt copy-paste following and hit enter:
-D:\Github\Visual-Studio-gtkmm\projects\compile-icons\msvc-140\start-32
+D:\Github\Visual-Studio-gtkmm\projects\master\msvc-140\compile-icons\start-32
 
 copy-paste one of the following lines (depending on your build type) to MSYS2 shell and hit enter:
 
-/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/release-32.sh
-/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/release-64.sh
-/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/debug-32.sh
-/d/Github/Visual-Studio-gtkmm/projects/compile-icons/msvc-140/debug-64.sh
+/d/Github/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons/release-32.sh
+/d/Github/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons/release-64.sh
+/d/Github/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons/debug-32.sh
+/d/Github/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons/debug-64.sh
 
 
 
@@ -130,3 +130,7 @@ make better structure between user_*.props and other properties.
 user_*.props must inherit default properties and override not needed stuff.
 carefull with macros!
 user_base_stack.props can't inherit base_stack.props because of (TODO: edit needed)
+
+separate readme files
+set intermediate for templates and icon into INTERMEDIATE_DIR
+silent extract icons

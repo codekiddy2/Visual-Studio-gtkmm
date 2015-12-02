@@ -45,6 +45,9 @@ editline
 tiff
 xz
 glib
+pixman
+cairo
+
 
 added /safeseh flag to zlib's asm files, x86 builds must now all have /SAFESEH reenabled
 added command to base_dll.props to auto collect symbols and save them into $(SYMBOLS_DIR), also output will be used as a def file for all dll's.

@@ -154,8 +154,11 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -167,12 +170,15 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level2</WarningLevel>
@@ -180,12 +186,15 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level2</WarningLevel>
@@ -193,8 +202,11 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">
     <ClCompile>
@@ -208,10 +220,13 @@
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
     <BuildLog />
     <ResourceCompile />
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">
     <ClCompile>
@@ -226,32 +241,35 @@
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
     <BuildLog />
     <ResourceCompile />
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;INCLUDE_bmp;INCLUDE_gif;INCLUDE_ico;INCLUDE_jasper;INCLUDE_jpeg;INCLUDE_tiff;PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;INCLUDE_bmp;INCLUDE_gif;INCLUDE_ico;INCLUDE_jasper;INCLUDE_jpeg;INCLUDE_tiff;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
-      <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level2</WarningLevel>
     </ClCompile>
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
     <BuildLog />
     <ResourceCompile />
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;INCLUDE_bmp;INCLUDE_gif;INCLUDE_ico;INCLUDE_jasper;INCLUDE_jpeg;INCLUDE_tiff;PNG_DLL;PNG_USE_DLL;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JAS_WIN_MSVC_BUILD;INCLUDE_bmp;INCLUDE_gif;INCLUDE_ico;INCLUDE_jasper;INCLUDE_jpeg;INCLUDE_tiff;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <ForcedIncludeFiles>
@@ -268,10 +286,13 @@
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>$(DEF_DIR)gdk-pixbuf.def</ModuleDefinitionFile>
     </Link>
     <BuildLog />
     <ResourceCompile />
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\gdk-pixbuf\gdk-pixbuf.c" />
@@ -417,66 +438,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\..\config.h.win32">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying config.h from config.h.win32...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying config.h from config.h.win32...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Copying config.h from config.h.win32...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying config.h from config.h.win32...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GenConfigH)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenConfigH)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenConfigH)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenConfigH)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\config.h;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\config.h;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">Copying config.h from config.h.win32...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">Copying config.h from config.h.win32...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">Copying config.h from config.h.win32...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">Copying config.h from config.h.win32...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">$(GenConfigH)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">$(GenConfigH)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">$(GenConfigH)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">$(GenConfigH)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">..\..\..\config.h;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">..\..\..\config.h;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">..\..\..\config.h;%(Outputs)</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\gdk-pixbuf\gdk-pixbuf.symbols">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating gdk-pixbuf.def...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating gdk-pixbuf.def...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating gdk-pixbuf.def...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating gdk-pixbuf.def...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GenerateGdkPixbufDef)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenerateGdkPixbufDef)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenerateGdkPixbufDef)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenerateGdkPixbufDef)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)gdk-pixbuf.def;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)gdk-pixbuf.def;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)gdk-pixbuf.def;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)gdk-pixbuf.def;%(Outputs)</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">Generating gdk-pixbuf.def...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">Generating gdk-pixbuf.def...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">Generating gdk-pixbuf.def...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">Generating gdk-pixbuf.def...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">$(GenerateGdkPixbufDef)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">$(GenerateGdkPixbufDef)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">$(GenerateGdkPixbufDef)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">$(GenerateGdkPixbufDef)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">$(IntDir)gdk-pixbuf.def;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">$(IntDir)gdk-pixbuf.def;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">$(IntDir)gdk-pixbuf.def;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">$(IntDir)gdk-pixbuf.def;%(Outputs)</Outputs>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">true</ExcludedFromBuild>
-    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\gdk-pixbuf\gdk_pixbuf.rc" />

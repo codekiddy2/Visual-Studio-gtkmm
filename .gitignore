@@ -94,7 +94,7 @@ $RECYCLE.BIN/
 *.lib
 *.exe
 *.exp
-
+*.opendb
 
 # =====
 # tools
@@ -269,7 +269,6 @@ ipch/
 /projects/xz*/msvc-140/Tests/create_compress_files/compress_generated_random
 /projects/xz*/msvc-140/Tests/create_compress_files/compress_generated_text
 
-
 # =================
 # directory level 5
 # =================
@@ -289,6 +288,9 @@ ipch/
 /projects/*/contrib/vstudio/*
 !/projects/*/contrib/vstudio/msvc-140/
 
+#compile-icons
+/projects/master/msvc-140/compile-icons/adwaita*/
+/projects/master/msvc-140/compile-icons/hicolor*/
 
 # =================
 # directory level 6

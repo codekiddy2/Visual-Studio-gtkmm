@@ -47,6 +47,12 @@ linker > general > threat linker warning as error: NO
 
 now re-link and it should work.
 
+since x86 build test:
+removed macro: echo EXPORTS > $(INTERMEDIATE_DIR)gdk-pixbuf.def && cl /EP -DG_OS_WIN32 -DINCLUDE_VARIABLES -DALL_FILES -DG_GNUC_CONST= -DG_GNUC_NULL_TERMINATED= ..\..\..\gdk-pixbuf\gdk-pixbuf.symbols >> $(INTERMEDIATE_DIR)gdk-pixbuf.def
+gendef takes care now.
+removed ZLIB_WINAPI
+config.h generation moved to prebuild event for gtk-pixbuf
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -63,13 +69,9 @@ TESTINGS:
 1.1.1
 	Debug_NoGDIP x64 + Debug
 	Release_NoGDIP x64
+	Debug_NoGDIP x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
 build gdk-pixbuf loaders (edit ??)
-
-
-
-
-

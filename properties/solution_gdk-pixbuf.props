@@ -3,8 +3,6 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <SRC_DIR>$(PROJECTS_DIR)gdk-pixbuf-2.32.2\</SRC_DIR>
-    <GenerateGdkPixbufDef>echo EXPORTS &gt; $(INTERMEDIATE_DIR)gdk-pixbuf.def &amp;&amp; cl /EP -DG_OS_WIN32 -DINCLUDE_VARIABLES -DALL_FILES -DG_GNUC_CONST= -DG_GNUC_NULL_TERMINATED= ..\..\..\gdk-pixbuf\gdk-pixbuf.symbols &gt;&gt; $(INTERMEDIATE_DIR)gdk-pixbuf.def</GenerateGdkPixbufDef>
-    <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h</GenConfigH>
     <GdkPixbufBinaryVersion>2.32.2</GdkPixbufBinaryVersion>
     <GdkPixbufDummyPrefix>$(DUMMY_ROOT)</GdkPixbufDummyPrefix>
   </PropertyGroup>
@@ -13,6 +11,7 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)gdk-pixbuf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_COMPILATION;GDK_PIXBUF_RELOCATABLE;GDK_PIXBUF_ENABLE_BACKEND;DLL_EXPORT;GDK_PIXBUF_PREFIX="$(GdkPixbufDummyPrefix)";GDK_PIXBUF_BINARY_VERSION="$(GdkPixbufBinaryVersion)";INCLUDE_ani;INCLUDE_pcx;INCLUDE_tga;INCLUDE_xbm;INCLUDE_png;INCLUDE_qtif;INCLUDE_pnm;INCLUDE_icns;INCLUDE_ras;INCLUDE_wbmp;INCLUDE_xpm;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;glib.dll.lib;gthread.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -22,12 +21,6 @@
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="GenerateGdkPixbufDef">
-      <Value>$(GenerateGdkPixbufDef)</Value>
-    </BuildMacro>
-    <BuildMacro Include="GenConfigH">
-      <Value>$(GenConfigH)</Value>
     </BuildMacro>
     <BuildMacro Include="GdkPixbufBinaryVersion">
       <Value>$(GdkPixbufBinaryVersion)</Value>

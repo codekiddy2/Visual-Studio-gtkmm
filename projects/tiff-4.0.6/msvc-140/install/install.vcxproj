@@ -128,6 +128,30 @@ copy $(SRC_DIR)libtiff\tiffvers.h /Y
 copy $(MOD_DIR)tiffconf.h /Y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(INCLUDE_DIR)tiff mkdir $(INCLUDE_DIR)tiff
+cd $(INCLUDE_DIR)tiff
+copy $(SRC_DIR)libtiff\tiff.h /Y
+copy $(SRC_DIR)libtiff\tiffio.h /Y
+copy $(SRC_DIR)libtiff\tiffio.hxx /Y
+copy $(SRC_DIR)libtiff\tiffvers.h /Y
+copy $(MOD_DIR)tiffconf.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+if not exist $(INCLUDE_DIR)tiff mkdir $(INCLUDE_DIR)tiff
+cd $(INCLUDE_DIR)tiff
+copy $(SRC_DIR)libtiff\tiff.h /Y
+copy $(SRC_DIR)libtiff\tiffio.h /Y
+copy $(SRC_DIR)libtiff\tiffio.hxx /Y
+copy $(SRC_DIR)libtiff\tiffvers.h /Y
+copy $(MOD_DIR)tiffconf.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="D:\Github\Visual-Studio-gtkmm\projects\tiff-4.0.6\cmake-build\CMakeFiles\92b5aed3c3a6c20d54335751d425165a\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
