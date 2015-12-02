@@ -96,7 +96,6 @@
     </Midl>
     <Link>
       <AdditionalDependencies>zlib.dll.lib;jpeg.dll.lib;jbig.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(DEF_DIR)libtiff.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>
@@ -122,7 +121,6 @@
     </Midl>
     <Link>
       <AdditionalDependencies>zlib.dll.lib;jpeg.dll.lib;jbig.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(DEF_DIR)libtiff.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>
@@ -132,17 +130,13 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)libtiff;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <Link>
-      <ModuleDefinitionFile>$(DEF_DIR)libtiff.def</ModuleDefinitionFile>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)libtiff;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <Link>
-      <ModuleDefinitionFile>$(DEF_DIR)libtiff.def</ModuleDefinitionFile>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="D:\Github\Visual-Studio-gtkmm\projects\tiff-4.0.6\libtiff\tiff.h" />

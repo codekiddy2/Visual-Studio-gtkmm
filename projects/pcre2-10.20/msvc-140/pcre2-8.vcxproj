@@ -145,8 +145,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
     <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
       <PreprocessorDefinitions>PCRE2_CODE_UNIT_WIDTH=8;pcre2_8_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -169,8 +167,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
     <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
       <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -193,8 +189,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
     <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
       <PreprocessorDefinitions>PCRE2_CODE_UNIT_WIDTH=8;pcre2_8_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -217,8 +211,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
     <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
       <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -241,8 +233,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
     <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
       <PreprocessorDefinitions>PCRE2_CODE_UNIT_WIDTH=8;pcre2_8_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -265,8 +255,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
     <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
       <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -289,8 +277,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
     <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
       <PreprocessorDefinitions>PCRE2_CODE_UNIT_WIDTH=8;pcre2_8_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
@@ -313,8 +299,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
     <ClCompile>
-      <ExceptionHandling>
-      </ExceptionHandling>
       <PreprocessorDefinitions>PCRE2_STATIC;PCRE2_CODE_UNIT_WIDTH=8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>

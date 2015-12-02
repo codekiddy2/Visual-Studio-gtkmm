@@ -98,7 +98,6 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <ModuleDefinitionFile>$(SRC_DIR)lib\libexpat.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -121,7 +120,6 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <ModuleDefinitionFile>$(SRC_DIR)lib\libexpat.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,7 +144,6 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <ModuleDefinitionFile>$(SRC_DIR)lib\libexpat.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -171,7 +168,6 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <ModuleDefinitionFile>$(SRC_DIR)lib\libexpat.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

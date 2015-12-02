@@ -63,9 +63,6 @@
 
 **SELECTED TASKS**
 
-* remove def files from all projects, use gendef
-* check links in wiki and different branches, for consistency when someone takes a fork
-
 
 **DONE - need to check again**
 
@@ -90,7 +87,8 @@
 * some projects do not need configuration any more, check which one's and update readme files
 * some projects create output folders within solution, chech which ones. (edit: most probably while changing solution configuration)
 * fontconfig when built, gets involed into other projects, check includes.
-
+* remove def files from all projects, use gendef
+* check links in wiki and different branches, for consistency when someone takes a fork
 
 **SUSPENDED TASKS**
 

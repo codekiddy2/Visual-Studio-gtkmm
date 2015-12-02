@@ -99,7 +99,6 @@
     <Link>
       <DataExecutionPrevention />
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <ModuleDefinitionFile>$(DEF_DIR)intl.def</ModuleDefinitionFile>
       <AdditionalDependencies>iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -128,7 +127,6 @@
     <Link>
       <DataExecutionPrevention />
       <AdditionalDependencies>iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(DEF_DIR)intl.def</ModuleDefinitionFile>
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
     </Link>
     <PreBuildEvent>

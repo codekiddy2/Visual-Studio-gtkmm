@@ -177,7 +177,7 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <ModuleDefinitionFile>$(DEF_DIR)bzip2.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)$(TargetName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
@@ -222,7 +222,7 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <ModuleDefinitionFile>$(DEF_DIR)bzip2.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)$(TargetName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
@@ -267,7 +267,7 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <ModuleDefinitionFile>$(DEF_DIR)bzip2.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)$(TargetName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
@@ -312,7 +312,7 @@
     </Bscmake>
     <Link>
       <LinkDLL>true</LinkDLL>
-      <ModuleDefinitionFile>$(DEF_DIR)bzip2.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(DEF_DIR)$(TargetName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">

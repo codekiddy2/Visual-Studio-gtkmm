@@ -107,7 +107,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <ModuleDefinitionFile>$(SRC_DIR)src/libedit.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>
@@ -132,7 +131,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <ModuleDefinitionFile>$(SRC_DIR)src/libedit.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>
@@ -157,7 +155,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <ModuleDefinitionFile>$(SRC_DIR)src/libedit.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>
@@ -182,7 +179,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <ModuleDefinitionFile>$(SRC_DIR)src/libedit.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>

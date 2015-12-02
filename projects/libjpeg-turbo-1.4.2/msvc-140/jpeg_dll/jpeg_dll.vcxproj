@@ -108,7 +108,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <ModuleDefinitionFile>$(SRC_dir)win\jpeg62-memsrcdst.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>
@@ -134,7 +133,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <ModuleDefinitionFile>$(SRC_dir)win\jpeg62-memsrcdst.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>
@@ -163,7 +161,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <ModuleDefinitionFile>$(SRC_dir)win\jpeg62-memsrcdst.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>
@@ -191,7 +188,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <ModuleDefinitionFile>$(SRC_dir)win\jpeg62-memsrcdst.def</ModuleDefinitionFile>
       <Version>
       </Version>
     </Link>

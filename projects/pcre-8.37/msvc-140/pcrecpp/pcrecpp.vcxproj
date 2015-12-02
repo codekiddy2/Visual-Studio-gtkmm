@@ -152,6 +152,7 @@
       <Version>
       </Version>
       <AdditionalDependencies>pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -199,6 +200,7 @@
       <Version>
       </Version>
       <AdditionalDependencies>pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -246,6 +248,7 @@
       <Version>
       </Version>
       <AdditionalDependencies>pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -293,6 +296,7 @@
       <Version>
       </Version>
       <AdditionalDependencies>pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>

@@ -102,7 +102,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" Label="PropertySheets">
@@ -115,7 +114,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="PropertySheets">
@@ -128,7 +126,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" Label="PropertySheets">
@@ -141,7 +138,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -244,7 +240,6 @@ copy $(MOD_DIR)config.h /Y</Command>
     </PreBuildEvent>
     <PreLinkEvent />
     <Link>
-      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(ProjectName).def</ModuleDefinitionFile>
       <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;atkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -259,7 +254,6 @@ copy $(MOD_DIR)config.h /Y</Command>
     </PreBuildEvent>
     <Link>
       <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
@@ -272,7 +266,6 @@ copy $(MOD_DIR)config.h /Y</Command>
       <Message>coping configuration headers ...</Message>
     </PreBuildEvent>
     <Link>
-      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(ProjectName).def</ModuleDefinitionFile>
       <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -287,7 +280,6 @@ copy $(MOD_DIR)config.h /Y</Command>
     </PreBuildEvent>
     <Link>
       <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -409,11 +401,6 @@ copy $(MOD_DIR)config.h /Y</Command>
     <ClInclude Include="..\..\goocanvas\goocanvasmm\widget.h" />
     <ClInclude Include="..\..\goocanvas\goocanvasmm\wrap_init.h" />
     <ClInclude Include="..\src\goocanvasmmconfig.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\gendef\gendef.vcxproj">
-      <Project>{07324745-c9be-4d65-b08a-9c88188c0c28}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
