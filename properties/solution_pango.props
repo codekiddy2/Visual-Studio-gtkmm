@@ -4,7 +4,7 @@
     <VSVer>10</VSVer>
     <GlibEtcInstallRootFromBuildWin32>..\..\..\vs$(VSVer)\$(Platform)</GlibEtcInstallRootFromBuildWin32>
     <CopyDir>$(GlibEtcInstallRoot)</CopyDir>
-    <SRC_DIR>$(PROJECTS_DIR)pango-1.36.8\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)pango-1.38.1\</SRC_DIR>
     <PangoDummyPrefix>$(DUMMY_ROOT)</PangoDummyPrefix>
   </PropertyGroup>
   <PropertyGroup>
@@ -22,60 +22,7 @@
       <AdditionalDependencies>gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;glib.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>if exist ..\..\..\config.h goto DONE_CONFIG_H
-copy /Y ..\..\..\config.h.win32 ..\..\..\config.h
-:DONE_CONFIG_H
-
-if exist ..\..\..\pango\DONE_MODULE_DEFS_H goto DONE_MODULE_DEFS_H
-
-
-copy /Y ..\..\..\pango\module-defs.h.win32 ..\..\..\pango\module-defs.h
-
-
-copy /Y ..\..\..\pango\module-defs.h.win32 ..\..\..\pango\DONE_MODULE_DEFS_H
-
-
-:DONE_MODULE_DEFS_H
-
-
-
-if exist ..\..\..\pango\DONE_MODULE_DEFS_LANG_C goto DONE_MODULE_DEFS_LANG_C
-
-
-copy /Y ..\..\..\pango\module-defs-lang.c.win32 ..\..\..\pango\module-defs-lang.c
-
-
-copy /Y ..\..\..\pango\module-defs-lang.c.win32 ..\..\..\pango\DONE_MODULE_DEFS_LANG_C
-
-
-:DONE_MODULE_DEFS_LANG_C
-
-
-
-if exist ..\..\..\pango\DONE_MODULE_DEFS_FC_C goto DONE_MODULE_DEFS_FC_C
-
-
-copy /Y ..\..\..\pango\module-defs-fc.c.win32 ..\..\..\pango\module-defs-fc.c
-
-
-copy /Y ..\..\..\pango\module-defs-fc.c.win32 ..\..\..\pango\DONE_MODULE_DEFS_FC_C
-
-
-:DONE_MODULE_DEFS_FC_C
-
-
-
-if exist ..\..\..\pango\DONE_MODULE_DEFS_WIN32_C goto DONE_MODULE_DEFS_WIN32_C
-
-
-copy /Y ..\..\..\pango\module-defs-win32.c.win32 ..\..\..\pango\module-defs-win32.c
-
-
-copy /Y ..\..\..\pango\module-defs-win32.c.win32 ..\..\..\pango\DONE_MODULE_DEFS_WIN32_C
-
-
-:DONE_MODULE_DEFS_WIN32_C
-      </Command>
+      <Command>if not exist $(SRC_DIR)config.h copy /Y $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

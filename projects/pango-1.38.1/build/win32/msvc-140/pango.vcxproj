@@ -200,25 +200,17 @@
     <ResourceCompile Include="..\..\..\pango\pango.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\modules\arabic\arabic-lang.c">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">PANGO_MODULE_PREFIX=_pango_arabic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">PANGO_MODULE_PREFIX=_pango_arabic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PANGO_MODULE_PREFIX=_pango_arabic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PANGO_MODULE_PREFIX=_pango_arabic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">PANGO_MODULE_PREFIX=_pango_arabic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">PANGO_MODULE_PREFIX=_pango_arabic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PANGO_MODULE_PREFIX=_pango_arabic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PANGO_MODULE_PREFIX=_pango_arabic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <ClCompile Include="..\..\..\modules\indic\indic-lang.c">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">PANGO_MODULE_PREFIX=_pango_indic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">PANGO_MODULE_PREFIX=_pango_indic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PANGO_MODULE_PREFIX=_pango_indic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PANGO_MODULE_PREFIX=_pango_indic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">PANGO_MODULE_PREFIX=_pango_indic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">PANGO_MODULE_PREFIX=_pango_indic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PANGO_MODULE_PREFIX=_pango_indic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PANGO_MODULE_PREFIX=_pango_indic_lang;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    <ClCompile Include="..\..\..\pango\break-arabic.c" />
+    <ClCompile Include="..\..\..\pango\break-indic.c" />
+    <ClCompile Include="..\..\..\pango\break-thai.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\..\pango\break.c" />
     <ClCompile Include="..\..\..\pango\ellipsize.c" />
@@ -247,7 +239,6 @@
     <ClCompile Include="..\..\..\pango\reorder-items.c" />
     <ClCompile Include="..\..\..\pango\shape.c" />
     <ClCompile Include="..\..\..\pango\pango-enum-types.c" />
-    <ClCompile Include="..\..\..\pango\module-defs-lang.c" />
     <ClCompile Include="..\..\..\pango\mini-fribidi\fribidi.c" />
     <ClCompile Include="..\..\..\pango\mini-fribidi\fribidi_char_type.c" />
     <ClCompile Include="..\..\..\pango\mini-fribidi\fribidi_types.c" />
@@ -256,7 +247,6 @@
     <ClInclude Include="..\..\..\pango\mini-fribidi\fribidi.h" />
     <ClInclude Include="..\..\..\pango\mini-fribidi\fribidi_config.h" />
     <ClInclude Include="..\..\..\pango\mini-fribidi\fribidi_types.h" />
-    <ClInclude Include="..\..\..\pango\modules.h" />
     <ClInclude Include="..\..\..\pango\pango-attributes.h" />
     <ClInclude Include="..\..\..\pango\pango-bidi-type.h" />
     <ClInclude Include="..\..\..\pango\pango-break.h" />

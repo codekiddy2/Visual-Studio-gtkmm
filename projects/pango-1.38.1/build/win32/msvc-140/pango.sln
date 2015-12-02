@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pango", "pango.vcxproj", "{68CC80B9-7225-4FB5-B9AB-9C1DF50B6C72}"
 EndProject
@@ -16,10 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{70800A
 		..\..\..\..\..\readme\LICENSE.txt = ..\..\..\..\..\readme\LICENSE.txt
 		Readme\pango-1.34.1.txt = Readme\pango-1.34.1.txt
 		Readme\pango-1.36.8.txt = Readme\pango-1.36.8.txt
+		Readme\pango-1.38.1.txt = Readme\pango-1.38.1.txt
 		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pango-querymodules", "pango-querymodules\pango-querymodules.vcxproj", "{864B01E5-078E-40DF-93B5-5806A22577F1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pangoft2", "pangoft2.vcxproj", "{68CC80B9-7225-4FB5-B9AB-9C1DF50B6C73}"
 EndProject
@@ -126,22 +125,6 @@ Global
 		{FC5AADB5-95CD-4BF0-BA8B-0C16FE7073FB}.Release|Win32.Build.0 = Release|Win32
 		{FC5AADB5-95CD-4BF0-BA8B-0C16FE7073FB}.Release|x64.ActiveCfg = Release|x64
 		{FC5AADB5-95CD-4BF0-BA8B-0C16FE7073FB}.Release|x64.Build.0 = Release|x64
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Debug_FC|Win32.ActiveCfg = Debug|Win32
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Debug_FC|Win32.Build.0 = Debug|Win32
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Debug_FC|x64.ActiveCfg = Debug|x64
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Debug_FC|x64.Build.0 = Debug|x64
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Debug|Win32.ActiveCfg = Debug|Win32
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Debug|Win32.Build.0 = Debug|Win32
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Debug|x64.ActiveCfg = Debug|x64
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Debug|x64.Build.0 = Debug|x64
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Release_FC|Win32.ActiveCfg = Release|Win32
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Release_FC|Win32.Build.0 = Release|Win32
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Release_FC|x64.ActiveCfg = Release|x64
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Release_FC|x64.Build.0 = Release|x64
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Release|Win32.ActiveCfg = Release|Win32
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Release|Win32.Build.0 = Release|Win32
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Release|x64.ActiveCfg = Debug|x64
-		{864B01E5-078E-40DF-93B5-5806A22577F1}.Release|x64.Build.0 = Debug|x64
 		{68CC80B9-7225-4FB5-B9AB-9C1DF50B6C73}.Debug_FC|Win32.ActiveCfg = Debug_FC|Win32
 		{68CC80B9-7225-4FB5-B9AB-9C1DF50B6C73}.Debug_FC|Win32.Build.0 = Debug_FC|Win32
 		{68CC80B9-7225-4FB5-B9AB-9C1DF50B6C73}.Debug_FC|x64.ActiveCfg = Debug_FC|x64

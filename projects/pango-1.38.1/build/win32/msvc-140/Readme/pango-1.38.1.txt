@@ -1,0 +1,85 @@
+Copyright (C) 2015 codekiddy
+
+For Copyright notices see Licence.txt attached to solution.
+
+Please do not remove this file or it's contents from solution as it
+contains important usage information.
+
+solution obtained from official source package
+solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.2.1
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pango-1.38.8\build\win32\msvc-140
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://ftp.gnome.org/pub/gnome/sources/pango/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+cairo
+harfbuzz (optional)
+pango
+pangoft2 (optional)
+pangowin32
+gio
+gmodule
+gobject
+glib
+libintl
+fontconfig (optional)
+freetype (optional)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+set the SRC_DIR before building.
+Open "pango.sln" Visual Studio solution and build.
+the pango.sln will build pango without fontconfig and freetype support, this is
+recommended since official fontconfig does not work on windows.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+Latest version of fontconfig does compile, link and even passes tests
+found in solution, but it fails when used with pango, not tested with cairo
+since cairo solution does not have real world test project.
+
+msvc-140:
+For fresh build, prebuild event will expand headers in /pango directory ( only once ),
+and it will also create confirmation files.
+test-pango-cairo requires output file name ( png extension ), it will create an image.
+either set debugger option in project settings or run from command promt.
+
+removed pangowin32-fontmap.c from ./src and added original
+
+pangoft2 set to use mulibyte character set because fonconfig had problems with unicode,
+test needed.
+
+pangoquerymodules is dead, does not exist since v 1.37
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.0
+	Debug x64
+
+1.0.1
+	Debug x64
+
+1.1.0
+	Debug x64 + Debug
+
+1.1.1
+	Debug x64 + Debug
+	Release x64
+
+1.2.1
+	Debug x86
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+there are more test projects to add

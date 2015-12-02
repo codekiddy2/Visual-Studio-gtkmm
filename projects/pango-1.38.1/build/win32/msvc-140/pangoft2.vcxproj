@@ -83,7 +83,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SRC_DIR)pango\pangoft2.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">
@@ -95,7 +94,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SRC_DIR)pango\pangoft2.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
@@ -107,7 +105,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SRC_DIR)pango\pangoft2.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
@@ -119,24 +116,17 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>fontconfig.dll.lib;freetype.dll.lib;pango.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SRC_DIR)pango\pangoft2.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\pango\pangoft2.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\modules\basic\basic-fc.c">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_FC|Win32'">PANGO_MODULE_PREFIX=_pango_basic_fc;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">PANGO_MODULE_PREFIX=_pango_basic_fc;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_FC|Win32'">PANGO_MODULE_PREFIX=_pango_basic_fc;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">PANGO_MODULE_PREFIX=_pango_basic_fc;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
     <ClCompile Include="..\..\..\pango\pangofc-font.c" />
     <ClCompile Include="..\..\..\pango\pangofc-fontmap.c" />
     <ClCompile Include="..\..\..\pango\pangofc-decoder.c" />
+    <ClCompile Include="..\..\..\pango\pangofc-shape.c" />
     <ClCompile Include="..\..\..\pango\pangoft2.c" />
-    <ClCompile Include="..\..\..\pango\module-defs-fc.c" />
     <ClCompile Include="..\..\..\pango\pangoft2-fontmap.c" />
     <ClCompile Include="..\..\..\pango\pangoft2-render.c" />
     <ClCompile Include="..\..\..\pango\pango-ot-buffer.c" />

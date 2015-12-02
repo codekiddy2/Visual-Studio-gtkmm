@@ -20,12 +20,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\modules\basic\basic-win32.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\pango\module-defs-win32.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\pango\pangowin32-fontcache.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -33,6 +27,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\pango\pangowin32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\pango\pangowin32-shape.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
