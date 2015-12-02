@@ -49,7 +49,7 @@ pixman
 cairo
 goocanvas
 glibmm
-
+atkmm
 
 
 added /safeseh flag to zlib's asm files, x86 builds must now all have /SAFESEH reenabled

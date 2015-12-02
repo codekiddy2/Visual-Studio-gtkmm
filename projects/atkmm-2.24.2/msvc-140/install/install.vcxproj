@@ -99,25 +99,25 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include\atkmm mkdir include\atkmm
+$(CHK_DIR) include\atkmm mkdir include\atkmm
 cd include\atkmm
-echo installing headers ...
-xcopy $(SRC_DIR)atk\*.h /Y
-mkdir atkmm
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)atk\*.h $(COPY_CMD)
+$(CHK_DIR) atkmm mkdir atkmm
 cd atkmm
-xcopy $(SRC_DIR)atk\atkmm\*.h /Y
-mkdir private
+xcopy $(SRC_DIR)atk\atkmm\*.h $(COPY_CMD)
+$(CHK_DIR) private mkdir private
 cd private
-xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
+xcopy $(SRC_DIR)atk\atkmm\private\*.h $(COPY_CMD)
 cd $(LIB_DIR)
-if not exist atkmm\include mkdir atkmm\include
+$(CHK_DIR) atkmm\include mkdir atkmm\include
 cd atkmm\include
-xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-echo installing documentation ...
+xcopy $(SolutionDir)atkmm\atkmmconfig.h $(COPY_CMD)
+$(ECHO_DOC)
 cd $(REF_DIR)
-if not exist atkmm\html mkdir atkmm\html
+$(CHK_DIR) atkmm\html mkdir atkmm\html
 cd atkmm\html
-xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
+xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -132,25 +132,25 @@ xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include\atkmm mkdir include\atkmm
+$(CHK_DIR) include\atkmm mkdir include\atkmm
 cd include\atkmm
-echo installing headers ...
-xcopy $(SRC_DIR)atk\*.h /Y
-mkdir atkmm
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)atk\*.h $(COPY_CMD)
+$(CHK_DIR) atkmm mkdir atkmm
 cd atkmm
-xcopy $(SRC_DIR)atk\atkmm\*.h /Y
-mkdir private
+xcopy $(SRC_DIR)atk\atkmm\*.h $(COPY_CMD)
+$(CHK_DIR) private mkdir private
 cd private
-xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
+xcopy $(SRC_DIR)atk\atkmm\private\*.h $(COPY_CMD)
 cd $(LIB_DIR)
-if not exist atkmm\include mkdir atkmm\include
+$(CHK_DIR) atkmm\include mkdir atkmm\include
 cd atkmm\include
-xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-echo installing documentation ...
+xcopy $(SolutionDir)atkmm\atkmmconfig.h $(COPY_CMD)
+$(ECHO_DOC)
 cd $(REF_DIR)
-if not exist atkmm\html mkdir atkmm\html
+$(CHK_DIR) atkmm\html mkdir atkmm\html
 cd atkmm\html
-xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
+xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -169,25 +169,25 @@ xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include\atkmm mkdir include\atkmm
+$(CHK_DIR) include\atkmm mkdir include\atkmm
 cd include\atkmm
-echo installing headers ...
-xcopy $(SRC_DIR)atk\*.h /Y
-mkdir atkmm
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)atk\*.h $(COPY_CMD)
+$(CHK_DIR) atkmm mkdir atkmm
 cd atkmm
-xcopy $(SRC_DIR)atk\atkmm\*.h /Y
-mkdir private
+xcopy $(SRC_DIR)atk\atkmm\*.h $(COPY_CMD)
+$(CHK_DIR) private mkdir private
 cd private
-xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
+xcopy $(SRC_DIR)atk\atkmm\private\*.h $(COPY_CMD)
 cd $(LIB_DIR)
-if not exist atkmm\include mkdir atkmm\include
+$(CHK_DIR) atkmm\include mkdir atkmm\include
 cd atkmm\include
-xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-echo installing documentation ...
+xcopy $(SolutionDir)atkmm\atkmmconfig.h $(COPY_CMD)
+$(ECHO_DOC)
 cd $(REF_DIR)
-if not exist atkmm\html mkdir atkmm\html
+$(CHK_DIR) atkmm\html mkdir atkmm\html
 cd atkmm\html
-xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
+xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -206,25 +206,25 @@ xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(ROOT_DIR)
-if not exist include\atkmm mkdir include\atkmm
+$(CHK_DIR) include\atkmm mkdir include\atkmm
 cd include\atkmm
-echo installing headers ...
-xcopy $(SRC_DIR)atk\*.h /Y
-mkdir atkmm
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)atk\*.h $(COPY_CMD)
+$(CHK_DIR) atkmm mkdir atkmm
 cd atkmm
-xcopy $(SRC_DIR)atk\atkmm\*.h /Y
-mkdir private
+xcopy $(SRC_DIR)atk\atkmm\*.h $(COPY_CMD)
+$(CHK_DIR) private mkdir private
 cd private
-xcopy $(SRC_DIR)atk\atkmm\private\*.h /Y
+xcopy $(SRC_DIR)atk\atkmm\private\*.h $(COPY_CMD)
 cd $(LIB_DIR)
-if not exist atkmm\include mkdir atkmm\include
+$(CHK_DIR) atkmm\include mkdir atkmm\include
 cd atkmm\include
-xcopy $(SolutionDir)atkmm\atkmmconfig.h /Y
-echo installing documentation ...
+xcopy $(SolutionDir)atkmm\atkmmconfig.h $(COPY_CMD)
+$(ECHO_DOC)
 cd $(REF_DIR)
-if not exist atkmm\html mkdir atkmm\html
+$(CHK_DIR) atkmm\html mkdir atkmm\html
 cd atkmm\html
-xcopy $(SRC_DIR)doc\reference\html\*.* /Y</Command>
+xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

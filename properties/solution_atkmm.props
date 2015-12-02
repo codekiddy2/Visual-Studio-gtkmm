@@ -4,16 +4,14 @@
     <Import Project="stack_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\atkmm-2.24.1\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)atkmm-2.24.2\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <ClCompile>
-      <SDLCheck>false</SDLCheck>
-    </ClCompile>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
