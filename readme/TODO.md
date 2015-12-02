@@ -7,7 +7,7 @@
 * rename projects (in windows explorer) so that the name is the same as in solutions
 * separate each project into it's own folder in solution directory
 * move test/example projects into one directory "Tests" inside solution directory
-* rename gtk_stack.props into stack_gtk.props and update projects
+* rename gtk_stack.props into stack_gtk.props and update projects, and few others..
 * add missing projects to existing solutions (test projects, different versions...)
 * same intermediate root directory for asm and C/C++ projects
 * merge TODO's from readme files here
@@ -18,8 +18,7 @@
 
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build
-	* libffi CRT linkage in x86 build - obvious in gobject - temporary fix /NODEFAULTLIB:msvcrt.lib
-	* GTK+ release build x64, demo app missing system icons
+	* GTK+ release build x64, debug x32, demo app missing system icons
 	* gtkmm with atkmm support - fails in atk::~implementor - temp fix: no atkmm support
 	* boost debugging symbols
 	* fontconfig
@@ -87,7 +86,8 @@
 * use mainCRTStartup for base_windows.props and update dpendent projects (edit: test-freeglut will fail)
 * try to define macro fot path, for debugger and macro for windows version
 * only dll's generate a map file, check why (edit: can be set for all DLL's and exe's..., /MAP option can't be used for *.lib)
-
+* libffi CRT linkage in x86 build - obvious in gobject - temporary fix /NODEFAULTLIB:msvcrt.lib (edit: -MDd must be defined on ./configure)
+	
 **SUSPENDED TASKS**
 
 * DEFINE PREPROCESSOR FOR CMAKE ON CMAKE PROJECTS

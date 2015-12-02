@@ -99,21 +99,21 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist sigc++\sigc++ mkdir sigc++\sigc++
+$(CHK_DIR) sigc++\sigc++ mkdir sigc++\sigc++
 cd sigc++\sigc++
-echo installing headers ...
-xcopy $(SRC_DIR)sigc++\*.h /YS
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)sigc++\*.h /S $(COPY_CMD)
 cd
-xcopy sigc++.h ..\
+xcopy sigc++.h ..\ $(COPY_CMD)
 cd $(LIB_DIR)
-if not exist sigc++\include mkdir sigc++\include
+$(CHK_DIR) sigc++\include mkdir sigc++\include
 cd sigc++\include
 xcopy $(MOD_DIR)sigc++config.h /Y
-echo installing documentation ...
+$(ECHO_DOC)
 cd $(REF_DIR)
-if not exist sigc++\html mkdir sigc++\html
+$(CHK_DIR) sigc++\html mkdir sigc++\html
 cd sigc++\html
-xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
       <Message>Installing sigc++</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -129,21 +129,21 @@ xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist sigc++\sigc++ mkdir sigc++\sigc++
+$(CHK_DIR) sigc++\sigc++ mkdir sigc++\sigc++
 cd sigc++\sigc++
-echo installing headers ...
-xcopy $(SRC_DIR)sigc++\*.h /YS
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)sigc++\*.h /S $(COPY_CMD)
 cd
-xcopy sigc++.h ..\
+xcopy sigc++.h ..\ $(COPY_CMD)
 cd $(LIB_DIR)
-if not exist sigc++\include mkdir sigc++\include
+$(CHK_DIR) sigc++\include mkdir sigc++\include
 cd sigc++\include
 xcopy $(MOD_DIR)sigc++config.h /Y
-echo installing documentation ...
+$(ECHO_DOC)
 cd $(REF_DIR)
-if not exist sigc++\html mkdir sigc++\html
+$(CHK_DIR) sigc++\html mkdir sigc++\html
 cd sigc++\html
-xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
       <Message>Installing sigc++</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -163,21 +163,21 @@ xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist sigc++\sigc++ mkdir sigc++\sigc++
+$(CHK_DIR) sigc++\sigc++ mkdir sigc++\sigc++
 cd sigc++\sigc++
-echo installing headers ...
-xcopy $(SRC_DIR)sigc++\*.h /YS
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)sigc++\*.h /S $(COPY_CMD)
 cd
-xcopy sigc++.h ..\
+xcopy sigc++.h ..\ $(COPY_CMD)
 cd $(LIB_DIR)
-if not exist sigc++\include mkdir sigc++\include
+$(CHK_DIR) sigc++\include mkdir sigc++\include
 cd sigc++\include
 xcopy $(MOD_DIR)sigc++config.h /Y
-echo installing documentation ...
+$(ECHO_DOC)
 cd $(REF_DIR)
-if not exist sigc++\html mkdir sigc++\html
+$(CHK_DIR) sigc++\html mkdir sigc++\html
 cd sigc++\html
-xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
       <Message>Installing sigc++</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -197,21 +197,21 @@ xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist sigc++\sigc++ mkdir sigc++\sigc++
+$(CHK_DIR) sigc++\sigc++ mkdir sigc++\sigc++
 cd sigc++\sigc++
-echo installing headers ...
-xcopy $(SRC_DIR)sigc++\*.h /YS
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)sigc++\*.h /S $(COPY_CMD)
 cd
-xcopy sigc++.h ..\
+xcopy sigc++.h ..\ $(COPY_CMD)
 cd $(LIB_DIR)
-if not exist sigc++\include mkdir sigc++\include
+$(CHK_DIR) sigc++\include mkdir sigc++\include
 cd sigc++\include
 xcopy $(MOD_DIR)sigc++config.h /Y
-echo installing documentation ...
+$(ECHO_DOC)
 cd $(REF_DIR)
-if not exist sigc++\html mkdir sigc++\html
+$(CHK_DIR) sigc++\html mkdir sigc++\html
 cd sigc++\html
-xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
       <Message>Installing sigc++</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>

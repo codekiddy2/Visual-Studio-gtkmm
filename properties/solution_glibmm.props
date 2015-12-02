@@ -4,12 +4,11 @@
     <Import Project="stack_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)glibmm-2.46.1\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)glibmm-2.46.2\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>$(SRC_DIR)gio;$(SRC_DIR)glib;$(SolutionDir)giomm;$(SolutionDir)glibmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>

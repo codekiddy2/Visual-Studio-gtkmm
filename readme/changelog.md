@@ -47,6 +47,9 @@ xz
 glib
 pixman
 cairo
+goocanvas
+glibmm
+
 
 
 added /safeseh flag to zlib's asm files, x86 builds must now all have /SAFESEH reenabled
