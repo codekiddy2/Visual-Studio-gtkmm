@@ -111,6 +111,7 @@ stack_gtk+.props
 	_CRT_OBSOLETE_NO_WARNINGS	This function or variable has been superceded by newer library or operating system functionality. Consider using new_item instead
 	_CRT_SECURE_NO_DEPRECATE
 	_CRT_NONSTDC_NO_DEPRECATE
+	_WINSOCK_DEPRECATED_NO_WARNINGS
 	
 	https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(C4996)&rd=true
 	
@@ -118,10 +119,11 @@ stack_gtk+.props
 
 	4273	(level 1)	'function' : inconsistent DLL linkage
 	
->candidates for "ignore"
+>candidates for "ignore" (edit: see ignored in different projects and solutions)
 
 	4018	(level 3)	'expression' : signed/unsigned mismatch
 	4312	(level 1)	'operation' : conversion from 'type1' to 'type2' of greater size
+	4275	(level 2)	non – DLL-interface classkey 'identifier' used as base for DLL-interface classkey 'identifier'
 
 
 **NOTES**

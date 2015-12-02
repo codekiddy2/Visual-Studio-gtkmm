@@ -83,3 +83,4 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 there are more test projects to add
+check why pango FC link input doesn't require freetype and fontconfig

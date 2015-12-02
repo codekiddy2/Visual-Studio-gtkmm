@@ -47,16 +47,6 @@ You must "Install" before running the demo application!
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-undefined vsnprintf_l vsprintf_l _local_stdio_printf_options
-adding legacy_stdio_definitions.lib to linker input does not help
-
-gtkmm project uses modified version of def file with following symbols commented out:
-;_local_stdio_printf_options
-;vsnprintf_l
-;vsprintf_l
-
-If still no luck, link against custom def file, remove any unresolved symbols from def file.
-
 if re-building gtkmm following won't be auto done:
 
 in case of config.h modifications.
@@ -78,6 +68,17 @@ it is important to rebuild the "install" project if changing configurations such
 chaning config header (atk)! othervise unresolved stuff migh happen.
 also updating def file linker input.
 
+following is out of date: (does not appear any more, possible fix in the future: port.lib from libtiff )
+undefined vsnprintf_l vsprintf_l _local_stdio_printf_options
+adding legacy_stdio_definitions.lib to linker input does not help
+
+gtkmm project uses modified version of def file with following symbols commented out:
+;_local_stdio_printf_options
+;vsnprintf_l
+;vsprintf_l
+
+If still no luck, link against custom def file, remove any unresolved symbols from def file.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -93,6 +94,7 @@ TESTINGS:
 1.1.2
 	Debug x64 + Debug
 	Release x64 + Debug
+	Debug x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

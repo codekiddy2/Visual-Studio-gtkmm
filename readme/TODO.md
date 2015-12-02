@@ -15,6 +15,7 @@
 * some test projects with both static and release configurations might link against either dll or lib only, instead of by configuration type 
 * define against which libs projects link, dll.lib or lib, some test projects ie. link differently for each configuration. (harfbuzz most notably)
 * configuration should be done with MSYS2 only, avoid using mozilla-build
+* consider: smaller type check turn off for entry stack.
 
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build
@@ -48,8 +49,7 @@
 * compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include
 * searching projects folder, it turns out there are a lot of pdb files, check if any project is miscofingured about symobls
 * check pdb output names when building both lib and dll in same solution
-* fontconfig when built, gets involed into other projects, check includes.
-* make single threaded configurations and ARM configuration (hint: solution props inherit "threading" property sheet)
+* make static runtime/CRT link configurations and ARM configuration (hint: solution props inherit "threading" property sheet)
 * make use of export libraries.
 * check which projects output random files and update gitignore
 * properties for (exe's), samples..., same as for test and tools projects for separate directory (edit: these have problems locating dependent files in root directory)
@@ -63,11 +63,9 @@
 
 **SELECTED TASKS**
 
-* some projects create output folders within solution, chech which ones. (edit: most probably while changing solution configuration)
-* some projects do not need configuration any more, check which one's and update readme files
-* not all links point to direct download page (GNOME projects)
-* check which source files are missing and which are no longer needed in projects.
-* define location for *.def files in solution folder, and how to "install" them into SYMBOLS_DIR
+* remove def files from all projects, use gendef
+* check links in wiki and different branches, for consistency when someone takes a fork
+
 
 **DONE - need to check again**
 
@@ -87,7 +85,13 @@
 * try to define macro fot path, for debugger and macro for windows version
 * only dll's generate a map file, check why (edit: can be set for all DLL's and exe's..., /MAP option can't be used for *.lib)
 * libffi CRT linkage in x86 build - obvious in gobject - temporary fix /NODEFAULTLIB:msvcrt.lib (edit: -MDd must be defined on ./configure)
-	
+* not all links point to direct download page (GNOME projects)
+* check which source files are missing and which are no longer needed in projects.
+* some projects do not need configuration any more, check which one's and update readme files
+* some projects create output folders within solution, chech which ones. (edit: most probably while changing solution configuration)
+* fontconfig when built, gets involed into other projects, check includes.
+
+
 **SUSPENDED TASKS**
 
 * DEFINE PREPROCESSOR FOR CMAKE ON CMAKE PROJECTS
