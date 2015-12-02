@@ -17,7 +17,6 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <SDLCheck>false</SDLCheck>
       <TreatSpecificWarningsAsErrors>4002;4003;4013;4020;4021;4027;4029;4033;4035;4045;4047;4049;4053;4071;4150;4819;4530</TreatSpecificWarningsAsErrors>
       <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;ATK_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_DISABLE_SINGLE_INCLUDES;GTK_DISABLE_SINGLE_INCLUDES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -26,6 +25,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>cairo.dll.lib;cairo-gobject.dll.lib;pangocairo.dll.lib;pango.dll.lib;gdk-pixbuf.dll.lib;glib.dll.lib;gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -87,6 +87,9 @@ gtk3-icon-browswer is a utility to explore the icons in the current icon theme.
 It shows icons in various sizes, their symbolic variants where available,
 as well as a description of the icon and its context.
 
+since build test x86
+added linker /IGNORE:4197 to solution level, symbol specified more times for gdk.dll
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -124,3 +127,4 @@ TESTINGS:
 TODO:
 
 add more test projects.
+system icons not visible
