@@ -8,8 +8,9 @@
 				BoostBuild
 				CMake
 				mozilla-build
-				msys64
+				msys64 or msys32
 				nasm
+				Perl64 or Perl
 				Python27
 					x64
 					x86
@@ -24,40 +25,11 @@
 				Compressed
 				Extracted
 			D:\Github\Visual-Studio-gtkmm
+				config
 				output
-					v140
-						Debug
-							Win32
-								...
-							x64
-								bin
-									test
-										...
-									tools
-										...
-								etc
-								include
-									"package name"
-								intermediate
-									solution 1
-										project 1
-										project 2 ...
-									solution 2 ...
-								lib
-									"project name"
-									test
-									tools
-								share
-									...
-								symbols
-									...
-						Release
-							Win32
-								...
-							x64
-								...
 				projects
-					"package_name-version" ...
+					"package_name-version"
+						msvc-140
 				properties
 				readme
 					images
@@ -77,4 +49,41 @@
 		project 1
 		project 2
 		project 3 ...
-		
+
+	
+>Output directory tree
+
+		v120
+			Debug ...
+			Release ...
+		v140
+			Debug
+				Win32
+					...
+				x64
+					bin
+						test
+							...
+						tools
+							...
+					etc
+					include
+						"package name"
+					intermediate
+						solution 1
+							project 1
+							project 2 ...
+						solution 2 ...
+					lib
+						"project name"
+						test
+						tools
+					share
+						...
+					symbols
+						...
+			Release
+				Win32
+					...
+				x64
+					...

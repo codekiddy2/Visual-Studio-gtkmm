@@ -5,7 +5,7 @@
 * freeglut (cmake-gui) configuration is optional ?
 * gettext (mozilla-build) configuration is optional
 * pkg-config (mozilla-build) configuration is optional ?
-* harfbuzz (mozilla-build) configuration is optional
+* harfbuzz (msys2) configuration only when upgrading version (hb_gobject-enums)
 * readline ?
 * editline ?
 * adwaita icon theme (msys2)

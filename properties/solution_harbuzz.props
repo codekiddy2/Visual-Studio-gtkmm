@@ -2,18 +2,21 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(REPO_DIR)projects\harfbuzz-1.0.6\</SRC_DIR>
+    <SRC_DIR>$(REPO_DIR)projects\harfbuzz-1.1.2\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
       <WarningLevel>Level2</WarningLevel>
-      <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>HAVE_OT;HAVE_GLIB;HAVE_UNISCRIBE;HAVE_FREETYPE;HAVE_GOBJECT;HAVE_USP10_H;HAVE_WINDOWS_H;HAVE_CAIRO;HAVE_MEMORY_H;HAVE_ISATTY;HAVE_INTTYPES_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_SYS_STAT_H;HAVE_SYS_TYPES_H;STDC_HEADERS;HAVE_FALLBACK;HAVE_ATEXIT;PACKAGE_NAME="HarfBuzz";PACKAGE_STRING="HarfBuzz 1.0.6";PACKAGE_VERSION="1.0.6";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_OT;HAVE_GLIB;HAVE_UNISCRIBE;HAVE_FREETYPE;HAVE_GOBJECT;HAVE_USP10_H;HAVE_WINDOWS_H;HAVE_CAIRO;HAVE_MEMORY_H;HAVE_ISATTY;HAVE_INTTYPES_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_SYS_STAT_H;HAVE_SYS_TYPES_H;STDC_HEADERS;HAVE_FALLBACK;HAVE_ATEXIT;PACKAGE_NAME="HarfBuzz";PACKAGE_STRING="HarfBuzz 1.1.2";PACKAGE_VERSION="1.1.2";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>HAVE_CAIRO_FT;HAVE_UNISTD_H;HAVE_FONTCONFIG;HAVE_UCDN;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
       <SmallerTypeCheck>false</SmallerTypeCheck>
+      <AdditionalIncludeDirectories>$(SRC_DIR)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">

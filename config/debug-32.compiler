@@ -1,0 +1,68 @@
+-nologo
+-Zi
+-W1
+-WX-
+-Od
+-Ob0
+-GF-
+-Gm
+-sdl-
+-MDd
+-GS
+-GR
+-Gy-
+-Qpar-
+-EHsc
+-fp:precise
+-fp:except-
+-Zc:wchar_t
+-Zc:forScope
+-errorReport:prompt
+-D _MBCS
+-D WIN32
+-D _WIN32
+-D _WINDOWS
+-D _DEBUG
+-D DEBUG
+-D WINVER=0x0A00
+-D _WIN32_WINNT=0x0A00
+-D _SCL_SECURE_NO_WARNINGS
+-D _CRT_SECURE_NO_WARNINGS
+-D _CRT_NONSTDC_NO_WARNINGS
+-D _CRT_OBSOLETE_NO_WARNINGS
+-D _CRT_SECURE_NO_DEPRECATE
+-D _CRT_NONSTDC_NO_DEPRECATE
+-D _WINSOCK_DEPRECATED_NO_WARNINGS
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\editline
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\jbig
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\lzma
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\goocanvas
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\gettext\intl
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\gettext\libasprintf
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\iconv
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\gstreamer
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\gdk-pixbuf
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\atk
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\glib
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\dirent
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\harfbuzz
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\expat
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\libxml
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\zlib
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\jpeg-turbo
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\freetype
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\fontconfig
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\png
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\ffi
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\tiff
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\pixman
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\cairo
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\pango
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\pcre2
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\pcre
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\bzip2
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\gtk
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\icu
+-I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\lib\glib\include
+-link /NOLOGO /VERBOSE:SAFESEH /INCREMENTAL /MANIFEST:NO /DEBUG /OPT:NOREF /OPT:NOICF /WINMD:NO /DYNAMICBASE:NO /NXCOMPAT /SAFESEH /machine:X86 /LIBPATH:D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\lib

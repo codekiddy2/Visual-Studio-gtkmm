@@ -6,6 +6,9 @@
   <PropertyGroup Label="UserMacros">
     <COPY_CMD>/YQ</COPY_CMD>
     <ECHO_HEADERS>echo Installing headers...</ECHO_HEADERS>
+    <ECHO_DOC>echo Installing documentation...</ECHO_DOC>
+    <CHK_DIR>if not exist</CHK_DIR>
+    <MOVE>move /Y</MOVE>
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(ROOT_DIR)</OutDir>
@@ -25,6 +28,15 @@
     </BuildMacro>
     <BuildMacro Include="ECHO_HEADERS">
       <Value>$(ECHO_HEADERS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ECHO_DOC">
+      <Value>$(ECHO_DOC)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CHK_DIR">
+      <Value>$(CHK_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MOVE">
+      <Value>$(MOVE)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

@@ -74,76 +74,75 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GlibEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GlibEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GlibEtcInstallRoot)\</OutDir>
     <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ROOT_DIR)</OutDir>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-mkdir glib
+$(CHK_DIR) glib mkdir glib
 cd glib
-mkdir glib
-mkdir gio
-mkdir gobject
-mkdir ..\gio-win32
+$(CHK_DIR) glib mkdir glib
+$(CHK_DIR) gio mkdir gio
+$(CHK_DIR) gobject mkdir gobject
+$(CHK_DIR) ..\gio-win32 mkdir ..\gio-win32
 cd ..\gio-win32
-mkdir gio
+$(CHK_DIR) gio mkdir gio
 cd gio
-echo installing headers ...
-copy $(SRC_DIR)gio\gwin32inputstream.h /Y
-copy $(SRC_DIR)gio\gwin32outputstream.h /Y
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)gio\gwin32inputstream.h $(COPY_CMD)
+xcopy $(SRC_DIR)gio\gwin32outputstream.h $(COPY_CMD)
 cd ..\..\glib\glib
-copy $(SRC_DIR)glib\*.h /Y
-copy glib.h ..\ /Y
-copy glib-object.h ..\ /Y
-copy glib-unix.h ..\ /Y
-mkdir deprecated
+xcopy $(SRC_DIR)glib\*.h $(COPY_CMD)
+xcopy glib.h ..\ $(COPY_CMD)
+xcopy glib-object.h ..\ $(COPY_CMD)
+xcopy glib-unix.h ..\ $(COPY_CMD)
+$(CHK_DIR) deprecated mkdir deprecated
 cd deprecated
-copy $(SRC_DIR)glib\deprecated\*.h /Y
+xcopy $(SRC_DIR)glib\deprecated\*.h $(COPY_CMD)
 cd ..\..\gio
-copy $(SRC_DIR)gio\*.h /Y
+xcopy $(SRC_DIR)gio\*.h $(COPY_CMD)
 cd ..\gobject
-copy $(SRC_DIR)gobject\*.h /Y
-copy $(SRC_DIR)gobject\gobjectnotifyqueue.c /Y
+xcopy $(SRC_DIR)gobject\*.h $(COPY_CMD)
+xcopy $(SRC_DIR)gobject\gobjectnotifyqueue.c $(COPY_CMD)
 cd ..\
-copy $(SRC_DIR)gmodule\gmodule.h /Y
+xcopy $(SRC_DIR)gmodule\gmodule.h $(COPY_CMD)
 cd $(LIB_DIR)
-mkdir glib\include
+$(CHK_DIR) glib\include mkdir glib\include
 cd glib\include
-copy .\..\..\..\include\glib\glib\glibconfig.h /Y
-cd ..\..\..\share\
-mkdir glib-2.0
+$(MOVE) $(INCLUDE_DIR)glib\glib\glibconfig.h .\
+$(CHK_DIR) $(SHARE_DIR) mkdir $(SHARE_DIR)
+cd $(SHARE_DIR)
+$(CHK_DIR) glib-2.0 mkdir glib-2.0
 cd glib-2.0
-mkdir schemas
+$(CHK_DIR) schemas mkdir schemas
 cd schemas
 echo installing schemas ...
-copy $(SRC_DIR)gio\gschema.dtd /Y
-mkdir ..\codegen
+xcopy $(SRC_DIR)gio\gschema.dtd $(COPY_CMD)
+$(CHK_DIR) ..\codegen mkdir ..\codegen
 cd ..\codegen
-copy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py /Y
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py $(COPY_CMD)
 cd $(BIN_DIR)
-copy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen /Y
-copy $(SRC_DIR)gobject\glib-mkenums /Y
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen $(COPY_CMD)
+cd $(SRC_DIR)gobject
+echo #! $(PERL_DIR)perl &gt; $(BIN_DIR)glib-mkenums
+type $(SRC_DIR)gobject\glib-mkenums | find /V /I "@PERL_PATH@" &gt;&gt; $(BIN_DIR)glib-mkenums
+$(CHK_DIR) $(REF_DIR) mkdir $(REF_DIR)
 cd $(REF_DIR)
-echo installing documentation ...
+$(ECHO_DOC)
 if not exist glib\html mkdir glib\html
 if not exist gio\html mkdir gio\html
 if not exist gobject\html mkdir gobject\html
 cd glib\html
-xcopy $(SRC_DIR)docs\reference\glib\html /Y
+xcopy $(SRC_DIR)docs\reference\glib\html $(COPY_CMD)
 cd ..\..\gio\html
-xcopy $(SRC_DIR)docs\reference\gio\html /Y
+xcopy $(SRC_DIR)docs\reference\gio\html $(COPY_CMD)
 cd ..\..\gobject\html
-xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
+xcopy $(SRC_DIR)docs\reference\gobject\html $(COPY_CMD)</Command>
       <Message>Installing Build Results ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -152,61 +151,65 @@ xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-mkdir glib
+$(CHK_DIR) glib mkdir glib
 cd glib
-mkdir glib
-mkdir gio
-mkdir gobject
-mkdir ..\gio-win32
+$(CHK_DIR) glib mkdir glib
+$(CHK_DIR) gio mkdir gio
+$(CHK_DIR) gobject mkdir gobject
+$(CHK_DIR) ..\gio-win32 mkdir ..\gio-win32
 cd ..\gio-win32
-mkdir gio
+$(CHK_DIR) gio mkdir gio
 cd gio
-echo installing headers ...
-copy $(SRC_DIR)gio\gwin32inputstream.h /Y
-copy $(SRC_DIR)gio\gwin32outputstream.h /Y
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)gio\gwin32inputstream.h $(COPY_CMD)
+xcopy $(SRC_DIR)gio\gwin32outputstream.h $(COPY_CMD)
 cd ..\..\glib\glib
-copy $(SRC_DIR)glib\*.h /Y
-copy glib.h ..\ /Y
-copy glib-object.h ..\ /Y
-copy glib-unix.h ..\ /Y
-mkdir deprecated
+xcopy $(SRC_DIR)glib\*.h $(COPY_CMD)
+xcopy glib.h ..\ $(COPY_CMD)
+xcopy glib-object.h ..\ $(COPY_CMD)
+xcopy glib-unix.h ..\ $(COPY_CMD)
+$(CHK_DIR) deprecated mkdir deprecated
 cd deprecated
-copy $(SRC_DIR)glib\deprecated\*.h /Y
+xcopy $(SRC_DIR)glib\deprecated\*.h $(COPY_CMD)
 cd ..\..\gio
-copy $(SRC_DIR)gio\*.h /Y
+xcopy $(SRC_DIR)gio\*.h $(COPY_CMD)
 cd ..\gobject
-copy $(SRC_DIR)gobject\*.h /Y
-copy $(SRC_DIR)gobject\gobjectnotifyqueue.c /Y
+xcopy $(SRC_DIR)gobject\*.h $(COPY_CMD)
+xcopy $(SRC_DIR)gobject\gobjectnotifyqueue.c $(COPY_CMD)
 cd ..\
-copy $(SRC_DIR)gmodule\gmodule.h /Y
+xcopy $(SRC_DIR)gmodule\gmodule.h $(COPY_CMD)
 cd $(LIB_DIR)
-mkdir glib\include
+$(CHK_DIR) glib\include mkdir glib\include
 cd glib\include
-copy .\..\..\..\include\glib\glib\glibconfig.h /Y
-cd ..\..\..\share\
-mkdir glib-2.0
+$(MOVE) $(INCLUDE_DIR)glib\glib\glibconfig.h .\
+$(CHK_DIR) $(SHARE_DIR) mkdir $(SHARE_DIR)
+cd $(SHARE_DIR)
+$(CHK_DIR) glib-2.0 mkdir glib-2.0
 cd glib-2.0
-mkdir schemas
+$(CHK_DIR) schemas mkdir schemas
 cd schemas
 echo installing schemas ...
-copy $(SRC_DIR)gio\gschema.dtd /Y
-mkdir ..\codegen
+xcopy $(SRC_DIR)gio\gschema.dtd $(COPY_CMD)
+$(CHK_DIR) ..\codegen mkdir ..\codegen
 cd ..\codegen
-copy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py /Y
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py $(COPY_CMD)
 cd $(BIN_DIR)
-copy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen /Y
-copy $(SRC_DIR)gobject\glib-mkenums /Y
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen $(COPY_CMD)
+cd $(SRC_DIR)gobject
+echo #! $(PERL_DIR)perl &gt; $(BIN_DIR)glib-mkenums
+type $(SRC_DIR)gobject\glib-mkenums | find /V /I "@PERL_PATH@" &gt;&gt; $(BIN_DIR)glib-mkenums
+$(CHK_DIR) $(REF_DIR) mkdir $(REF_DIR)
 cd $(REF_DIR)
-echo installing documentation ...
+$(ECHO_DOC)
 if not exist glib\html mkdir glib\html
 if not exist gio\html mkdir gio\html
 if not exist gobject\html mkdir gobject\html
 cd glib\html
-xcopy $(SRC_DIR)docs\reference\glib\html /Y
+xcopy $(SRC_DIR)docs\reference\glib\html $(COPY_CMD)
 cd ..\..\gio\html
-xcopy $(SRC_DIR)docs\reference\gio\html /Y
+xcopy $(SRC_DIR)docs\reference\gio\html $(COPY_CMD)
 cd ..\..\gobject\html
-xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
+xcopy $(SRC_DIR)docs\reference\gobject\html $(COPY_CMD)</Command>
       <Message>Installing Build Results ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -214,61 +217,65 @@ xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-mkdir glib
+$(CHK_DIR) glib mkdir glib
 cd glib
-mkdir glib
-mkdir gio
-mkdir gobject
-mkdir ..\gio-win32
+$(CHK_DIR) glib mkdir glib
+$(CHK_DIR) gio mkdir gio
+$(CHK_DIR) gobject mkdir gobject
+$(CHK_DIR) ..\gio-win32 mkdir ..\gio-win32
 cd ..\gio-win32
-mkdir gio
+$(CHK_DIR) gio mkdir gio
 cd gio
-echo installing headers ...
-copy $(SRC_DIR)gio\gwin32inputstream.h /Y
-copy $(SRC_DIR)gio\gwin32outputstream.h /Y
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)gio\gwin32inputstream.h $(COPY_CMD)
+xcopy $(SRC_DIR)gio\gwin32outputstream.h $(COPY_CMD)
 cd ..\..\glib\glib
-copy $(SRC_DIR)glib\*.h /Y
-copy glib.h ..\ /Y
-copy glib-object.h ..\ /Y
-copy glib-unix.h ..\ /Y
-mkdir deprecated
+xcopy $(SRC_DIR)glib\*.h $(COPY_CMD)
+xcopy glib.h ..\ $(COPY_CMD)
+xcopy glib-object.h ..\ $(COPY_CMD)
+xcopy glib-unix.h ..\ $(COPY_CMD)
+$(CHK_DIR) deprecated mkdir deprecated
 cd deprecated
-copy $(SRC_DIR)glib\deprecated\*.h /Y
+xcopy $(SRC_DIR)glib\deprecated\*.h $(COPY_CMD)
 cd ..\..\gio
-copy $(SRC_DIR)gio\*.h /Y
+xcopy $(SRC_DIR)gio\*.h $(COPY_CMD)
 cd ..\gobject
-copy $(SRC_DIR)gobject\*.h /Y
-copy $(SRC_DIR)gobject\gobjectnotifyqueue.c /Y
+xcopy $(SRC_DIR)gobject\*.h $(COPY_CMD)
+xcopy $(SRC_DIR)gobject\gobjectnotifyqueue.c $(COPY_CMD)
 cd ..\
-copy $(SRC_DIR)gmodule\gmodule.h /Y
+xcopy $(SRC_DIR)gmodule\gmodule.h $(COPY_CMD)
 cd $(LIB_DIR)
-mkdir glib\include
+$(CHK_DIR) glib\include mkdir glib\include
 cd glib\include
-copy .\..\..\..\include\glib\glib\glibconfig.h /Y
-cd ..\..\..\share\
-mkdir glib-2.0
+$(MOVE) $(INCLUDE_DIR)glib\glib\glibconfig.h .\
+$(CHK_DIR) $(SHARE_DIR) mkdir $(SHARE_DIR)
+cd $(SHARE_DIR)
+$(CHK_DIR) glib-2.0 mkdir glib-2.0
 cd glib-2.0
-mkdir schemas
+$(CHK_DIR) schemas mkdir schemas
 cd schemas
 echo installing schemas ...
-copy $(SRC_DIR)gio\gschema.dtd /Y
-mkdir ..\codegen
+xcopy $(SRC_DIR)gio\gschema.dtd $(COPY_CMD)
+$(CHK_DIR) ..\codegen mkdir ..\codegen
 cd ..\codegen
-copy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py /Y
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py $(COPY_CMD)
 cd $(BIN_DIR)
-copy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen /Y
-copy $(SRC_DIR)gobject\glib-mkenums /Y
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen $(COPY_CMD)
+cd $(SRC_DIR)gobject
+echo #! $(PERL_DIR)perl &gt; $(BIN_DIR)glib-mkenums
+type $(SRC_DIR)gobject\glib-mkenums | find /V /I "@PERL_PATH@" &gt;&gt; $(BIN_DIR)glib-mkenums
+$(CHK_DIR) $(REF_DIR) mkdir $(REF_DIR)
 cd $(REF_DIR)
-echo installing documentation ...
+$(ECHO_DOC)
 if not exist glib\html mkdir glib\html
 if not exist gio\html mkdir gio\html
 if not exist gobject\html mkdir gobject\html
 cd glib\html
-xcopy $(SRC_DIR)docs\reference\glib\html /Y
+xcopy $(SRC_DIR)docs\reference\glib\html $(COPY_CMD)
 cd ..\..\gio\html
-xcopy $(SRC_DIR)docs\reference\gio\html /Y
+xcopy $(SRC_DIR)docs\reference\gio\html $(COPY_CMD)
 cd ..\..\gobject\html
-xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
+xcopy $(SRC_DIR)docs\reference\gobject\html $(COPY_CMD)</Command>
       <Message>Installing Build Results ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -276,61 +283,65 @@ xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-mkdir glib
+$(CHK_DIR) glib mkdir glib
 cd glib
-mkdir glib
-mkdir gio
-mkdir gobject
-mkdir ..\gio-win32
+$(CHK_DIR) glib mkdir glib
+$(CHK_DIR) gio mkdir gio
+$(CHK_DIR) gobject mkdir gobject
+$(CHK_DIR) ..\gio-win32 mkdir ..\gio-win32
 cd ..\gio-win32
-mkdir gio
+$(CHK_DIR) gio mkdir gio
 cd gio
-echo installing headers ...
-copy $(SRC_DIR)gio\gwin32inputstream.h /Y
-copy $(SRC_DIR)gio\gwin32outputstream.h /Y
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)gio\gwin32inputstream.h $(COPY_CMD)
+xcopy $(SRC_DIR)gio\gwin32outputstream.h $(COPY_CMD)
 cd ..\..\glib\glib
-copy $(SRC_DIR)glib\*.h /Y
-copy glib.h ..\ /Y
-copy glib-object.h ..\ /Y
-copy glib-unix.h ..\ /Y
-mkdir deprecated
+xcopy $(SRC_DIR)glib\*.h $(COPY_CMD)
+xcopy glib.h ..\ $(COPY_CMD)
+xcopy glib-object.h ..\ $(COPY_CMD)
+xcopy glib-unix.h ..\ $(COPY_CMD)
+$(CHK_DIR) deprecated mkdir deprecated
 cd deprecated
-copy $(SRC_DIR)glib\deprecated\*.h /Y
+xcopy $(SRC_DIR)glib\deprecated\*.h $(COPY_CMD)
 cd ..\..\gio
-copy $(SRC_DIR)gio\*.h /Y
+xcopy $(SRC_DIR)gio\*.h $(COPY_CMD)
 cd ..\gobject
-copy $(SRC_DIR)gobject\*.h /Y
-copy $(SRC_DIR)gobject\gobjectnotifyqueue.c /Y
+xcopy $(SRC_DIR)gobject\*.h $(COPY_CMD)
+xcopy $(SRC_DIR)gobject\gobjectnotifyqueue.c $(COPY_CMD)
 cd ..\
-copy $(SRC_DIR)gmodule\gmodule.h /Y
+xcopy $(SRC_DIR)gmodule\gmodule.h $(COPY_CMD)
 cd $(LIB_DIR)
-mkdir glib\include
+$(CHK_DIR) glib\include mkdir glib\include
 cd glib\include
-copy .\..\..\..\include\glib\glib\glibconfig.h /Y
-cd ..\..\..\share\
-mkdir glib-2.0
+$(MOVE) $(INCLUDE_DIR)glib\glib\glibconfig.h .\
+$(CHK_DIR) $(SHARE_DIR) mkdir $(SHARE_DIR)
+cd $(SHARE_DIR)
+$(CHK_DIR) glib-2.0 mkdir glib-2.0
 cd glib-2.0
-mkdir schemas
+$(CHK_DIR) schemas mkdir schemas
 cd schemas
 echo installing schemas ...
-copy $(SRC_DIR)gio\gschema.dtd /Y
-mkdir ..\codegen
+xcopy $(SRC_DIR)gio\gschema.dtd $(COPY_CMD)
+$(CHK_DIR) ..\codegen mkdir ..\codegen
 cd ..\codegen
-copy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py /Y
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py $(COPY_CMD)
 cd $(BIN_DIR)
-copy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen /Y
-copy $(SRC_DIR)gobject\glib-mkenums /Y
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen $(COPY_CMD)
+cd $(SRC_DIR)gobject
+echo #! $(PERL_DIR)perl &gt; $(BIN_DIR)glib-mkenums
+type $(SRC_DIR)gobject\glib-mkenums | find /V /I "@PERL_PATH@" &gt;&gt; $(BIN_DIR)glib-mkenums
+$(CHK_DIR) $(REF_DIR) mkdir $(REF_DIR)
 cd $(REF_DIR)
-echo installing documentation ...
+$(ECHO_DOC)
 if not exist glib\html mkdir glib\html
 if not exist gio\html mkdir gio\html
 if not exist gobject\html mkdir gobject\html
 cd glib\html
-xcopy $(SRC_DIR)docs\reference\glib\html /Y
+xcopy $(SRC_DIR)docs\reference\glib\html $(COPY_CMD)
 cd ..\..\gio\html
-xcopy $(SRC_DIR)docs\reference\gio\html /Y
+xcopy $(SRC_DIR)docs\reference\gio\html $(COPY_CMD)
 cd ..\..\gobject\html
-xcopy $(SRC_DIR)docs\reference\gobject\html /Y</Command>
+xcopy $(SRC_DIR)docs\reference\gobject\html $(COPY_CMD)</Command>
       <Message>Installing Build Results ...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
