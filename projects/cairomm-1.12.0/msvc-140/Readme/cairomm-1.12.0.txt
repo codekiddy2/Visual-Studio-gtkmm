@@ -30,6 +30,7 @@ copy enums.h from solution_dir/src to SRC_DIR/cairomm/ and replace
 this is a modified version to make it compile.
 
 to build cairomm with freetype support, define CAIRO_HAS_FT_FONT in preprocessor.
+^edit: new 'FT' configuration made..
 
 Open Solution select configuration and build
 Install by building the "Install" project
@@ -47,6 +48,7 @@ TESTINGS:
 1.1.0-1
 	Debug x64 + Debug
 	Release x64
+	Debug x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

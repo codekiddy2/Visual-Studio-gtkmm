@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_FT|Win32">
+      <Configuration>Debug_FT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_FT|x64">
+      <Configuration>Debug_FT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_FT|Win32">
+      <Configuration>Release_FT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_FT|x64">
+      <Configuration>Release_FT</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
@@ -40,7 +56,19 @@
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
@@ -52,7 +80,19 @@
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
@@ -67,7 +107,19 @@
     <Import Project="..\..\..\..\properties\base_utility.props" />
     <Import Project="..\..\..\..\properties\solution_cairomm.props" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_cairomm.props" />
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_cairomm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\properties\base_utility.props" />
@@ -79,7 +131,19 @@
     <Import Project="..\..\..\..\properties\base_utility.props" />
     <Import Project="..\..\..\..\properties\solution_cairomm.props" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_cairomm.props" />
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\properties\solution_cairomm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_utility.props" />
@@ -99,20 +163,48 @@
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairomm\cairomm mkdir cairomm\cairomm
+$(CHK_DIR) cairomm\cairomm mkdir cairomm\cairomm
 cd cairomm\cairomm
-echo installing headers ...
-xcopy $(SRC_DIR)cairomm\*.h /Y
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)cairomm\*.h $(COPY_CMD)
 copy cairomm.h ..\
 cd $(LIB_DIR)
-if not exist cairomm\include mkdir cairomm\include
+$(CHK_DIR) cairomm\include mkdir cairomm\include
 cd cairomm\include
-copy $(SolutionDir)cairomm\cairommconfig.h /Y
+xcopy $(SolutionDir)cairomm\cairommconfig.h $(COPY_CMD)
 cd $(REF_DIR)
-if not exist cairomm\html mkdir cairomm\html
+$(CHK_DIR) cairomm\html mkdir cairomm\html
 cd cairomm\html
-echo installing documentation ...
-xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+$(ECHO_DOC)
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+$(CHK_DIR) cairomm\cairomm mkdir cairomm\cairomm
+cd cairomm\cairomm
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)cairomm\*.h $(COPY_CMD)
+copy cairomm.h ..\
+cd $(LIB_DIR)
+$(CHK_DIR) cairomm\include mkdir cairomm\include
+cd cairomm\include
+xcopy $(SolutionDir)cairomm\cairommconfig.h $(COPY_CMD)
+cd $(REF_DIR)
+$(CHK_DIR) cairomm\html mkdir cairomm\html
+cd cairomm\html
+$(ECHO_DOC)
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -127,20 +219,48 @@ xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairomm\cairomm mkdir cairomm\cairomm
+$(CHK_DIR) cairomm\cairomm mkdir cairomm\cairomm
 cd cairomm\cairomm
-echo installing headers ...
-xcopy $(SRC_DIR)cairomm\*.h /Y
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)cairomm\*.h $(COPY_CMD)
 copy cairomm.h ..\
 cd $(LIB_DIR)
-if not exist cairomm\include mkdir cairomm\include
+$(CHK_DIR) cairomm\include mkdir cairomm\include
 cd cairomm\include
-copy $(SolutionDir)cairomm\cairommconfig.h /Y
+xcopy $(SolutionDir)cairomm\cairommconfig.h $(COPY_CMD)
 cd $(REF_DIR)
-if not exist cairomm\html mkdir cairomm\html
+$(CHK_DIR) cairomm\html mkdir cairomm\html
 cd cairomm\html
-echo installing documentation ...
-xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+$(ECHO_DOC)
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+$(CHK_DIR) cairomm\cairomm mkdir cairomm\cairomm
+cd cairomm\cairomm
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)cairomm\*.h $(COPY_CMD)
+copy cairomm.h ..\
+cd $(LIB_DIR)
+$(CHK_DIR) cairomm\include mkdir cairomm\include
+cd cairomm\include
+xcopy $(SolutionDir)cairomm\cairommconfig.h $(COPY_CMD)
+cd $(REF_DIR)
+$(CHK_DIR) cairomm\html mkdir cairomm\html
+cd cairomm\html
+$(ECHO_DOC)
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -159,20 +279,52 @@ xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairomm\cairomm mkdir cairomm\cairomm
+$(CHK_DIR) cairomm\cairomm mkdir cairomm\cairomm
 cd cairomm\cairomm
-echo installing headers ...
-xcopy $(SRC_DIR)cairomm\*.h /Y
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)cairomm\*.h $(COPY_CMD)
 copy cairomm.h ..\
 cd $(LIB_DIR)
-if not exist cairomm\include mkdir cairomm\include
+$(CHK_DIR) cairomm\include mkdir cairomm\include
 cd cairomm\include
-copy $(SolutionDir)cairomm\cairommconfig.h /Y
+xcopy $(SolutionDir)cairomm\cairommconfig.h $(COPY_CMD)
 cd $(REF_DIR)
-if not exist cairomm\html mkdir cairomm\html
+$(CHK_DIR) cairomm\html mkdir cairomm\html
 cd cairomm\html
-echo installing documentation ...
-xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+$(ECHO_DOC)
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+$(CHK_DIR) cairomm\cairomm mkdir cairomm\cairomm
+cd cairomm\cairomm
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)cairomm\*.h $(COPY_CMD)
+copy cairomm.h ..\
+cd $(LIB_DIR)
+$(CHK_DIR) cairomm\include mkdir cairomm\include
+cd cairomm\include
+xcopy $(SolutionDir)cairomm\cairommconfig.h $(COPY_CMD)
+cd $(REF_DIR)
+$(CHK_DIR) cairomm\html mkdir cairomm\html
+cd cairomm\html
+$(ECHO_DOC)
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -191,20 +343,52 @@ xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
     <PreBuildEvent>
       <Command>$(DRIVE):
 cd $(INCLUDE_DIR)
-if not exist cairomm\cairomm mkdir cairomm\cairomm
+$(CHK_DIR) cairomm\cairomm mkdir cairomm\cairomm
 cd cairomm\cairomm
-echo installing headers ...
-xcopy $(SRC_DIR)cairomm\*.h /Y
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)cairomm\*.h $(COPY_CMD)
 copy cairomm.h ..\
 cd $(LIB_DIR)
-if not exist cairomm\include mkdir cairomm\include
+$(CHK_DIR) cairomm\include mkdir cairomm\include
 cd cairomm\include
-copy $(SolutionDir)cairomm\cairommconfig.h /Y
+xcopy $(SolutionDir)cairomm\cairommconfig.h $(COPY_CMD)
 cd $(REF_DIR)
-if not exist cairomm\html mkdir cairomm\html
+$(CHK_DIR) cairomm\html mkdir cairomm\html
 cd cairomm\html
-echo installing documentation ...
-xcopy $(SRC_DIR)docs\reference\html\*.* /Y</Command>
+$(ECHO_DOC)
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+$(CHK_DIR) cairomm\cairomm mkdir cairomm\cairomm
+cd cairomm\cairomm
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)cairomm\*.h $(COPY_CMD)
+copy cairomm.h ..\
+cd $(LIB_DIR)
+$(CHK_DIR) cairomm\include mkdir cairomm\include
+cd cairomm\include
+xcopy $(SolutionDir)cairomm\cairommconfig.h $(COPY_CMD)
+cd $(REF_DIR)
+$(CHK_DIR) cairomm\html mkdir cairomm\html
+cd cairomm\html
+$(ECHO_DOC)
+xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

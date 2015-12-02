@@ -53,28 +53,24 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\properties\base_dll.props" />
-    <Import Project="..\..\..\..\properties\project_gendef.props" />
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -92,7 +88,6 @@
     <PreLinkEvent />
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;cairomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -108,7 +103,6 @@
     <PreLinkEvent />
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;cairomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -127,7 +121,6 @@
     <PreLinkEvent />
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;cairomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -146,7 +139,6 @@
     <PreLinkEvent />
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;glibmm.dll.lib;cairomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(SYMBOLS_DIR)def\$(TargetName).def</ModuleDefinitionFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
@@ -212,12 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="pangomm.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\gendef\gendef.vcxproj">
-      <Project>{07324745-c9be-4d65-b08a-9c88188c0c28}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
