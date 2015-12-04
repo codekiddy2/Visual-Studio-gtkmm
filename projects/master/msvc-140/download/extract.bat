@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-REM set status to filter output from 7zip, /b to match beginning of a line, /r to use "/c:" as regular exprssions
+REM set status to filter output from 7zip, /b to match beginning of a line, /r to use "/c:" as a regular exprssions
 REM /c:"what to search?" and thus output to output window...
 set STATUS=findstr /b /r /c:"Processing archive" /c:"Everything is Ok" /c:"Error" /c:"there is no such archive" /c:"Incorrect command line" /c:"cannot find archive" /c:"Sub items Errors"
 
@@ -13,12 +13,12 @@ cd %COMPRESSED%
 
 REM extract tar compressed files to tar subdirectory
 REM using "if exist" checks to avoid errors in output
+REM -o for output directory
 
 if exist *.gz %EXTRACT% -otar *.gz
 if exist *.xz %EXTRACT% -otar *.xz
 if exist *.bz2 %EXTRACT% -otar *.bz2
 
-REM -o for output directory
 if exist *.7z %EXTRACT% -o%EXTRACTED% *.7z
 
 REM we can't bulk extract zip files since some do not have root directory or package version

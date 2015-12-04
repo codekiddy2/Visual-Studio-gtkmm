@@ -12,11 +12,14 @@
     <CMAKE_DIR>$(INSTALL_DIR)CMake\bin\</CMAKE_DIR>
     <B2_DIR>$(INSTALL_DIR)BoostBuild\bin\</B2_DIR>
     <MSYS2_DIR>$(INSTALL_DIR)msys64\</MSYS2_DIR>
+    <ZIP_DIR>$(INSTALL_DIR)7-Zip\</ZIP_DIR>
     <BISON_DIR>$(MSYS2_DIR)usr\bin\</BISON_DIR>
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
     <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
-    <ZIP_DIR>"C:\Program Files\7-Zip\"</ZIP_DIR>
     <PACKAGES_DIR>$(REPO_DIR)Packages\</PACKAGES_DIR>
+    <DRIVE_M>/d</DRIVE_M>
+    <REPO_DIR_M>$(DRIVE_M)/GitHub/Visual-Studio-gtkmm</REPO_DIR_M>
+    <CL_VERSION_M>msvc-140</CL_VERSION_M>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -61,6 +64,9 @@
       <Value>$(MSYS2_DIR)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
+    <BuildMacro Include="ZIP_DIR">
+      <Value>$(ZIP_DIR)</Value>
+    </BuildMacro>
     <BuildMacro Include="BISON_DIR">
       <Value>$(BISON_DIR)</Value>
     </BuildMacro>
@@ -70,11 +76,20 @@
     <BuildMacro Include="PROPS_DIR">
       <Value>$(PROPS_DIR)</Value>
     </BuildMacro>
-    <BuildMacro Include="ZIP_DIR">
-      <Value>$(ZIP_DIR)</Value>
-    </BuildMacro>
     <BuildMacro Include="PACKAGES_DIR">
       <Value>$(PACKAGES_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DRIVE_M">
+      <Value>$(DRIVE_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="REPO_DIR_M">
+      <Value>$(REPO_DIR_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CL_VERSION_M">
+      <Value>$(CL_VERSION_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?> 
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
-  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="UserMacros">
+    <PROJECT_CMD>$(PROJECT_DIR_M)/debug-$(PlatformArchitecture).sh</PROJECT_CMD>
+  </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <BuildMacro Include="PROJECT_CMD">
+      <Value>$(PROJECT_CMD)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
 </Project>

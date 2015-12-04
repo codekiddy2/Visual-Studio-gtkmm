@@ -26,16 +26,18 @@
     <None Include="project.bat">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="exclude.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="download.bat">
+      <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="download.bat">
-      <Filter>Source Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="clean.bat">
       <Filter>Source Files</Filter>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="exclude.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

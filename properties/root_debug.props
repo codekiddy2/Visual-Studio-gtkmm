@@ -6,6 +6,7 @@
   <PropertyGroup Label="UserMacros">
     <ROOT_DIR>$(REPO_DIR)output\$(PlatformToolset)\Debug\$(Platform)\</ROOT_DIR>
     <VARIANT>debug</VARIANT>
+    <ROOT_DIR_M>$(REPO_DIR_M)/output/$(PlatformToolset)/Debug/$(Platform)</ROOT_DIR_M>
   </PropertyGroup>
   <PropertyGroup>
     <LinkIncremental>true</LinkIncremental>
@@ -101,6 +102,10 @@
     </BuildMacro>
     <BuildMacro Include="VARIANT">
       <Value>$(VARIANT)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ROOT_DIR_M">
+      <Value>$(ROOT_DIR_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

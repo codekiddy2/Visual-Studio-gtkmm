@@ -17,6 +17,7 @@
     <DEF_DIR>$(SolutionDir)def\</DEF_DIR>
     <MOD_DIR>$(SolutionDir)src\</MOD_DIR>
     <DEBUGGER>PATH=$(BIN_DIR);%PATH%</DEBUGGER>
+    <PROJECTS_DIR_M>$(REPO_DIR_M)/projects</PROJECTS_DIR_M>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -182,6 +183,10 @@
     </BuildMacro>
     <BuildMacro Include="DEBUGGER">
       <Value>$(DEBUGGER)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PROJECTS_DIR_M">
+      <Value>$(PROJECTS_DIR_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

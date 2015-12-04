@@ -17,16 +17,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gendef", "gendef\gendef.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unistd", "unistd\unistd.vcxproj", "{2CA948E0-1C7B-4940-AF22-47C1555D0FF3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "compile-icons", "compile-icons", "{C59BE0D3-34AC-4EC2-A863-555757BDA6B0}"
-	ProjectSection(SolutionItems) = preProject
-		compile-icons\debug-32.sh = compile-icons\debug-32.sh
-		compile-icons\debug-64.sh = compile-icons\debug-64.sh
-		compile-icons\release-32.sh = compile-icons\release-32.sh
-		compile-icons\release-64.sh = compile-icons\release-64.sh
-		compile-icons\start-32.bat = compile-icons\start-32.bat
-		compile-icons\start-64.bat = compile-icons\start-64.bat
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project-templates", "project-templates", "{F29AF169-1BA6-465D-A10E-51D884BD512E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boost", "project-templates\boost\boost.vcxproj", "{A2868D2B-0D76-41E9-A187-6DC3DA3CB914}"
@@ -42,6 +32,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dummy", "project-templates\dummy\dummy.vcxproj", "{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "download", "download\download.vcxproj", "{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icons", "icons\icons.vcxproj", "{A9094A58-39BA-498D-BE80-3AF3ADECA53A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,6 +137,16 @@ Global
 		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Release|Win32.Build.0 = Release|Win32
 		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Release|x64.ActiveCfg = Release|x64
 		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Release|x64.Build.0 = Release|x64
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Debug|Win32.Build.0 = Debug|Win32
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Debug|x64.ActiveCfg = Debug|x64
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Debug|x64.Build.0 = Debug|x64
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Release|Win32.ActiveCfg = Release|Win32
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Release|Win32.Build.0 = Release|Win32
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Release|x64.ActiveCfg = Release|x64
+		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
