@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "dependecy-graph", "dependecy-graph\dependecy-graph.modelproj", "{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}"
 EndProject
@@ -38,6 +38,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ultimate++", "project-templates\ultimate++\ultimate++.vcxproj", "{14B219F6-04BA-45FC-A881-B78FF455FCD1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "project-templates\install\install.vcxproj", "{F729CC26-0C06-4C13-945F-56BD5A66A4C9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dummy", "project-templates\dummy\dummy.vcxproj", "{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "download", "download\download.vcxproj", "{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +129,22 @@ Global
 		{F729CC26-0C06-4C13-945F-56BD5A66A4C9}.Release|Win32.Build.0 = Release|Win32
 		{F729CC26-0C06-4C13-945F-56BD5A66A4C9}.Release|x64.ActiveCfg = Release|x64
 		{F729CC26-0C06-4C13-945F-56BD5A66A4C9}.Release|x64.Build.0 = Release|x64
+		{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7}.Debug|x64.ActiveCfg = Debug|x64
+		{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7}.Release|Any CPU.ActiveCfg = Release|Win32
+		{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7}.Release|Win32.ActiveCfg = Release|Win32
+		{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7}.Release|x64.ActiveCfg = Release|x64
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Debug|Win32.Build.0 = Debug|Win32
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Debug|x64.ActiveCfg = Debug|x64
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Debug|x64.Build.0 = Debug|x64
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Release|Any CPU.ActiveCfg = Release|Win32
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Release|Win32.ActiveCfg = Release|Win32
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Release|Win32.Build.0 = Release|Win32
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Release|x64.ActiveCfg = Release|x64
+		{1D264396-51F0-41A3-A37E-5DBE7C26BCBA}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,5 +155,6 @@ Global
 		{7954DF58-9125-433B-9EAE-765C43DF8061} = {F29AF169-1BA6-465D-A10E-51D884BD512E}
 		{14B219F6-04BA-45FC-A881-B78FF455FCD1} = {F29AF169-1BA6-465D-A10E-51D884BD512E}
 		{F729CC26-0C06-4C13-945F-56BD5A66A4C9} = {F29AF169-1BA6-465D-A10E-51D884BD512E}
+		{8C4AFC21-751E-4580-9BCE-C61FC8ED33C7} = {F29AF169-1BA6-465D-A10E-51D884BD512E}
 	EndGlobalSection
 EndGlobal

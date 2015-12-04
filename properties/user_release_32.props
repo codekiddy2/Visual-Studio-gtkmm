@@ -14,6 +14,9 @@
     <ClCompile>
       <PreprocessorDefinitions>_WIN32;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

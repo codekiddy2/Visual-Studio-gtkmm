@@ -179,9 +179,11 @@ ipch/
 # directory level 1
 # =================
 /output/
+/packages/
 !/projects/
 !/properties/
 !/readme/
+!/config/
 
 
 # =================

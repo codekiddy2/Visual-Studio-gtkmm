@@ -1,0 +1,9 @@
+*.sln
+*.vcxproj
+*.filters
+*.props
+*.vcproj
+*.dsw
+*.dsp
+PaxHeaders*
+pax_global*

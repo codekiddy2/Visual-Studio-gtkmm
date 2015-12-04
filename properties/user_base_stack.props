@@ -11,9 +11,9 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>DW=__pragma(warning( disable: 4309 4505 4250 )) __pragma(warning( push, 0 ));EW=__pragma(warning( default: 4309 4505 )) __pragma(warning( pop ));WINVER=0x0A00;_WIN32_WINNT=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DW=__pragma(warning( disable: 4309 4505 4250 )) __pragma(warning( push, 0 ));EW=__pragma(warning( default: 4309 4505 )) __pragma(warning( pop ));%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <CompileAs>CompileAsCpp</CompileAs>
+      <CompileAs>Default</CompileAs>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <DisableSpecificWarnings />
       <TreatSpecificWarningsAsErrors />
@@ -24,6 +24,9 @@
     <Link>
       <ImportLibrary />
       <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <ShowProgress>LinkVerboseSAFESEH</ShowProgress>
+      <SubSystem>NotSet</SubSystem>
     </Link>
     <Lib />
     <ProjectReference />
@@ -33,6 +36,15 @@
     <BuildLog />
     <Bscmake />
     <Lib />
+    <Lib />
+    <Lib />
+    <Lib>
+      <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <Verbose>false</Verbose>
+      <ErrorReporting>PromptImmediately</ErrorReporting>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="INCLUDE_DIR">

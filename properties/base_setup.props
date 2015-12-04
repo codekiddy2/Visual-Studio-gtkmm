@@ -15,6 +15,8 @@
     <BISON_DIR>$(MSYS2_DIR)usr\bin\</BISON_DIR>
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
     <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
+    <ZIP_DIR>"C:\Program Files\7-Zip\"</ZIP_DIR>
+    <PACKAGES_DIR>$(REPO_DIR)Packages\</PACKAGES_DIR>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -67,6 +69,12 @@
     </BuildMacro>
     <BuildMacro Include="PROPS_DIR">
       <Value>$(PROPS_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ZIP_DIR">
+      <Value>$(ZIP_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PACKAGES_DIR">
+      <Value>$(PACKAGES_DIR)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
