@@ -4,6 +4,7 @@ REM set wget command, -q for quiet mode, --show-progress to override quiet mode 
 REM --no-clobber do not download if file exists.
 set WGET=%WGET_DIR% -q --show-progress --no-clobber
 
+
 cd %COMPRESSED%
 
 %WGET% http://downloads.sourceforge.net/project/freeglut/freeglut/3.0.0/freeglut-3.0.0.tar.gz
