@@ -62,7 +62,7 @@
 
 
 **SELECTED TASKS**
-
+* projects which depend on autotools should integrate MSYS2.
 
 **DONE - need to check again**
 
