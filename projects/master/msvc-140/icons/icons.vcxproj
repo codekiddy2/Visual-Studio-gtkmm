@@ -25,29 +25,27 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -85,8 +83,10 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <PreBuildEvent>
-      <Command>xcopy $(MOD_DIR)build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
+      <Command>setlocal
+set PROJECT_CMD=$(PROJECT_DIR_M)/compile-icons.sh
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat
+endlocal</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -96,8 +96,10 @@ call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <PreBuildEvent>
-      <Command>xcopy $(MOD_DIR)build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
+      <Command>setlocal
+set PROJECT_CMD=$(PROJECT_DIR_M)/compile-icons.sh
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat
+endlocal</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -113,8 +115,10 @@ call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PreBuildEvent>
-      <Command>xcopy $(MOD_DIR)build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
+      <Command>setlocal
+set PROJECT_CMD=$(PROJECT_DIR_M)/compile-icons.sh
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat
+endlocal</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,15 +134,14 @@ call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PreBuildEvent>
-      <Command>xcopy $(MOD_DIR)build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
+      <Command>setlocal
+set PROJECT_CMD=$(PROJECT_DIR_M)/compile-icons.sh
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat
+endlocal</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="debug-32.sh" />
-    <None Include="debug-64.sh" />
-    <None Include="release-32.sh" />
-    <None Include="release-64.sh" />
+    <None Include="compile-icons.sh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

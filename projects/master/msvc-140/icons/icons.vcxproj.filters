@@ -11,16 +11,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="debug-32.sh">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="debug-64.sh">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="release-32.sh">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="release-64.sh">
+    <None Include="compile-icons.sh">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
