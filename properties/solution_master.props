@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <PROJECT_CMD>$(PROJECT_DIR_M)/debug-$(PlatformArchitecture).sh</PROJECT_CMD>
+    <PROJECT_CMD>$(PROJECT_DIR_M)/$(VARIANT)-$(PlatformArchitecture).sh</PROJECT_CMD>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />

@@ -1,0 +1,1 @@
+**.sln* **.vcxproj* **.filters* **.props* **.vcproj* **.dsw* **.dsp*

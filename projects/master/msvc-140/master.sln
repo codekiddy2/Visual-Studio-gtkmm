@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "download", "download\downlo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icons", "icons\icons.vcxproj", "{A9094A58-39BA-498D-BE80-3AF3ADECA53A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prebuild", "prebuild\prebuild.vcxproj", "{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,16 @@ Global
 		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Release|Win32.Build.0 = Release|Win32
 		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Release|x64.ActiveCfg = Release|x64
 		{A9094A58-39BA-498D-BE80-3AF3ADECA53A}.Release|x64.Build.0 = Release|x64
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Debug|Win32.Build.0 = Debug|Win32
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Debug|x64.ActiveCfg = Debug|x64
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Debug|x64.Build.0 = Debug|x64
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Release|Any CPU.ActiveCfg = Release|Win32
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Release|Win32.ActiveCfg = Release|Win32
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Release|Win32.Build.0 = Release|Win32
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Release|x64.ActiveCfg = Release|x64
+		{FA9B19A1-764A-4E20-8B4B-D2AECED99DB4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
