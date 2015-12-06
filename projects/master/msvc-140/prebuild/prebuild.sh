@@ -16,18 +16,16 @@ then
 	echo destination directory not set
 	read temp
 	exit
-else
-	cd $COMPRESSED_DIR_M
 fi
 
+if [[ ! -d $COMPRESSED_DIR_M ]]
+then
+	mkdir --parents $COMPRESSED_DIR_M
+fi
+
+cd $COMPRESSED_DIR_M
 
 wget --quiet --show-progress --no-clobber -i $PROJECT_DIR_M/package-list.txt
-
-#extraction will fail if destination directory does not exist
-#if [[ ! -d $PROJECTS_DIR_M ]]
-#then
-#	mkdir $PROJECTS_DIR_M
-#fi
 
 if [[ -n `find ./*.xz` ]]
 then

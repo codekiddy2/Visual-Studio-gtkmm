@@ -61,9 +61,6 @@
 * see changelog about properties and consider addings back some flags to debug configurations only.
 
 
-**SELECTED TASKS**
-* projects which depend on autotools should integrate MSYS2.
-
 **DONE - need to check again**
 
 * define path for nasm and similar tools in properties, so that %PATH% won't be needed
@@ -89,6 +86,7 @@
 * fontconfig when built, gets involed into other projects, check includes.
 * remove def files from all projects, use gendef
 * check links in wiki and different branches, for consistency when someone takes a fork
+* projects which depend on autotools should integrate MSYS2.
 
 **SUSPENDED TASKS**
 
