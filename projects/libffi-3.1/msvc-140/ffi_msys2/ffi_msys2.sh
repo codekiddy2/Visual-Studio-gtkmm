@@ -1,7 +1,7 @@
 
 if [[ ! -d $INTERMEDIATE_DIR_M/ffi/ffi_msys2 ]]
 then
-	mkdir $INTERMEDIATE_DIR_M/ffi/ffi_msys2
+	mkdir --parents $INTERMEDIATE_DIR_M/ffi/ffi_msys2
 fi
 
 cd $INTERMEDIATE_DIR_M/ffi/ffi_msys2

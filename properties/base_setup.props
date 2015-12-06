@@ -20,7 +20,6 @@
     <DRIVE_M>/d</DRIVE_M>
     <REPO_DIR_M>$(DRIVE_M)/GitHub/Visual-Studio-gtkmm</REPO_DIR_M>
     <COMPRESSED_DIR_M>$(REPO_DIR_M)/packages/Compressed</COMPRESSED_DIR_M>
-    <EXTRACTED_DIR_M>$(REPO_DIR_M)/packages/Extracted</EXTRACTED_DIR_M>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -90,10 +89,6 @@
     </BuildMacro>
     <BuildMacro Include="COMPRESSED_DIR_M">
       <Value>$(COMPRESSED_DIR_M)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
-    </BuildMacro>
-    <BuildMacro Include="EXTRACTED_DIR_M">
-      <Value>$(EXTRACTED_DIR_M)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>

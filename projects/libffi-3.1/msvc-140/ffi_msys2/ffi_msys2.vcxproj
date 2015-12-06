@@ -93,6 +93,7 @@
     <PreBuildEvent>
       <Command>call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -104,6 +105,7 @@
     <PreBuildEvent>
       <Command>call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -121,6 +123,7 @@
     <PreBuildEvent>
       <Command>call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -138,6 +141,7 @@
     <PreBuildEvent>
       <Command>call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ffi_msys2.sh" />

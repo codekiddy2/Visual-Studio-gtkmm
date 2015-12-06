@@ -36,7 +36,7 @@ then
 fi
 
 #get hicolor full path name
-cd $PROJECTS_DIR_M/adwaita-icon-theme*
+cd $PROJECTS_DIR_M/hicolor-icon-theme*
 HICOLOR_DIR=$(pwd)
 
 cd $INTERMEDIATE_DIR_M/icons/hicolor-icon-theme
