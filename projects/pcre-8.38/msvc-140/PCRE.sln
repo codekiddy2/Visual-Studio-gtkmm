@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pcre32", "pcre32.vcxproj", "{72838198-48E5-494A-9EB7-4E94CBF962C1}"
 EndProject
@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{D36FE6
 		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
 		Readme\pcre-8.36.txt = Readme\pcre-8.36.txt
 		Readme\pcre-8.37.txt = Readme\pcre-8.37.txt
+		Readme\pcre-8.38.txt = Readme\pcre-8.38.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject

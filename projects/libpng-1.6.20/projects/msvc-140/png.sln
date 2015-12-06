@@ -40,6 +40,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{796C61
 		Readme\png-1.6.16.txt = Readme\png-1.6.16.txt
 		Readme\png-1.6.18.txt = Readme\png-1.6.18.txt
 		Readme\png-1.6.19.txt = Readme\png-1.6.19.txt
+		Readme\png-1.6.20.txt = Readme\png-1.6.20.txt
 		..\..\..\..\readme\troubleshooting.md = ..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
 EndProject
