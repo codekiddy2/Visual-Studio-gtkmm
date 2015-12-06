@@ -9,7 +9,6 @@
     <ECHO_DOC>echo Installing documentation...</ECHO_DOC>
     <CHK_DIR>if not exist</CHK_DIR>
     <MOVE>move /Y</MOVE>
-    <PROJECT_DIR_M>$(PROJECTS_DIR_M)/$(SolutionName)/$(CL_VERSION_M)/$(TargetName)</PROJECT_DIR_M>
     <CHK>if not exist</CHK>
   </PropertyGroup>
   <PropertyGroup>
@@ -39,10 +38,6 @@
     </BuildMacro>
     <BuildMacro Include="MOVE">
       <Value>$(MOVE)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PROJECT_DIR_M">
-      <Value>$(PROJECT_DIR_M)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="CHK">
       <Value>$(CHK)</Value>

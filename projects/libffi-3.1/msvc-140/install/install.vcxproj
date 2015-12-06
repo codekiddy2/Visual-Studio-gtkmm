@@ -89,10 +89,10 @@
       <Command>$(DRIVE):
 if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
 cd $(INCLUDE_DIR)ffi
-xcopy $(SRC_DIR)x86_64-w64-mingw32\include\*.h  /Y
-xcopy $(SRC_DIR)x86_64-w64-mingw32\fficonfig.h /Y
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(COPY_CMD)
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(COPY_CMD)
 cd $(LIB_DIR)
-copy $(SRC_DIR)x86_64-w64-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Command>
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -108,10 +108,10 @@ copy $(SRC_DIR)x86_64-w64-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Comma
       <Command>$(DRIVE):
 if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
 cd $(INCLUDE_DIR)ffi
-xcopy $(SRC_DIR)x86_64-w64-mingw32\include\*.h  /Y
-xcopy $(SRC_DIR)x86_64-w64-mingw32\fficonfig.h /Y
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(COPY_CMD)
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(COPY_CMD)
 cd $(LIB_DIR)
-copy $(SRC_DIR)x86_64-w64-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Command>
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -127,10 +127,10 @@ copy $(SRC_DIR)x86_64-w64-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Comma
       <Command>$(DRIVE):
 if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
 cd $(INCLUDE_DIR)ffi
-xcopy $(SRC_DIR)i686-pc-mingw32\include\*.h  /Y
-xcopy $(SRC_DIR)i686-pc-mingw32\fficonfig.h /Y
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(COPY_CMD)
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(COPY_CMD)
 cd $(LIB_DIR)
-copy $(SRC_DIR)i686-pc-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Command>
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,13 +146,18 @@ copy $(SRC_DIR)i686-pc-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Command>
       <Command>$(DRIVE):
 if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
 cd $(INCLUDE_DIR)ffi
-xcopy $(SRC_DIR)i686-pc-mingw32\include\*.h  /Y
-xcopy $(SRC_DIR)i686-pc-mingw32\fficonfig.h /Y
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(COPY_CMD)
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(COPY_CMD)
 cd $(LIB_DIR)
-copy $(SRC_DIR)i686-pc-mingw32\.libs\libffi_convenience.lib ffi.lib /Y</Command>
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ffi_msys2\ffi_msys2.vcxproj">
+      <Project>{cb56e0eb-0d3e-4365-a9ee-9dc69dafd8b0}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\libffi\libffi.vcxproj">
       <Project>{793f0abe-66e5-48c0-9690-3060ff08aff5}</Project>
       <Private>false</Private>

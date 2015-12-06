@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtkmm", "templates\gtkmm\gt
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "templates\install\install.vcxproj", "{F729CC26-0C06-4C13-945F-56BD5A66A4C9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffi_msys2", "..\..\libffi-3.1\msvc-140\ffi_msys2\ffi_msys2.vcxproj", "{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,16 @@ Global
 		{F729CC26-0C06-4C13-945F-56BD5A66A4C9}.Release|Win32.Build.0 = Release|Win32
 		{F729CC26-0C06-4C13-945F-56BD5A66A4C9}.Release|x64.ActiveCfg = Release|x64
 		{F729CC26-0C06-4C13-945F-56BD5A66A4C9}.Release|x64.Build.0 = Release|x64
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|Win32.Build.0 = Debug|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|x64.ActiveCfg = Debug|x64
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|x64.Build.0 = Debug|x64
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|Any CPU.ActiveCfg = Release|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|Win32.ActiveCfg = Release|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|Win32.Build.0 = Release|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|x64.ActiveCfg = Release|x64
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffi_static", "libffi\libffi.vcxproj", "{793F0ABE-66E5-48C0-9690-3060FF08AFF5}"
 EndProject
@@ -38,6 +38,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unwindtest", "unwindtest\unwindtest.vcxproj", "{2F952FEB-CC50-4EFC-8509-CAA32505908D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unwindtest_ffi_call", "unwindtest_ffi_call\unwindtest_ffi_call.vcxproj", "{852EE642-C850-4D5C-9F2E-05506BA30ACD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffi_msys2", "ffi_msys2\ffi_msys2.vcxproj", "{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,14 @@ Global
 		{852EE642-C850-4D5C-9F2E-05506BA30ACD}.Debug|x64.ActiveCfg = Debug|x64
 		{852EE642-C850-4D5C-9F2E-05506BA30ACD}.Release|Win32.ActiveCfg = Release|Win32
 		{852EE642-C850-4D5C-9F2E-05506BA30ACD}.Release|x64.ActiveCfg = Release|x64
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|Win32.Build.0 = Debug|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|x64.ActiveCfg = Debug|x64
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Debug|x64.Build.0 = Debug|x64
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|Win32.ActiveCfg = Release|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|Win32.Build.0 = Release|Win32
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|x64.ActiveCfg = Release|x64
+		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

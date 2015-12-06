@@ -9,6 +9,7 @@
 -sdl-
 -MDd
 -GS
+-GR
 -Gy-
 -Qpar-
 -EHsc
@@ -16,16 +17,20 @@
 -fp:except-
 -Zc:wchar_t
 -Zc:forScope
--GR
 -errorReport:prompt
+-Oy-
+-Gd
+-Oi-
+-analyze-
+-openmp-
+-Zc:inline
 -D _MBCS
 -D WIN32
 -D _WIN32
--D WIN64
--D _WIN64
--D _WINDOWS
 -D _DEBUG
 -D DEBUG
+-D WIN64
+-D _WIN64
 -D WINVER=0x0A00
 -D _WIN32_WINNT=0x0A00
 -D _SCL_SECURE_NO_WARNINGS

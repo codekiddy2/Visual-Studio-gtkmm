@@ -18,10 +18,15 @@
 -Zc:wchar_t
 -Zc:forScope
 -errorReport:prompt
+-Oy-
+-Gd
+-Oi-
+-analyze-
+-openmp-
+-Zc:inline
 -D _MBCS
 -D WIN32
 -D _WIN32
--D _WINDOWS
 -D _DEBUG
 -D DEBUG
 -D WINVER=0x0A00
@@ -65,4 +70,7 @@
 -I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\gtk
 -I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\include\icu
 -I D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\lib\glib\include
--link /NOLOGO /VERBOSE:SAFESEH /INCREMENTAL /MANIFEST:NO /DEBUG /OPT:NOREF /OPT:NOICF /WINMD:NO /DYNAMICBASE:NO /NXCOMPAT /SAFESEH /machine:X86 /LIBPATH:D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\lib
+-link /NOLOGO /WX /FIXED:NO /WINMDDELAYSIGN:NO /ERRORREPORT:PROMPT /VERBOSE:SAFESEH /VERBOSE:SAFESEH /INCREMENTAL /MANIFEST:NO /DEBUG /OPT:NOREF /OPT:NOICF /WINMD:NO /DYNAMICBASE /NXCOMPAT /SAFESEH /MACHINE:X86 /LIBPATH:D:\Github\Visual-Studio-gtkmm\output\v140\Debug\Win32\lib
+
+
+

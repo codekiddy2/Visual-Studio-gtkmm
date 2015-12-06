@@ -18,7 +18,6 @@
     <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
     <PACKAGES_DIR>$(REPO_DIR)Packages\</PACKAGES_DIR>
     <DRIVE_M>/d</DRIVE_M>
-    <CL_VERSION_M>msvc-140</CL_VERSION_M>
     <REPO_DIR_M>$(DRIVE_M)/GitHub/Visual-Studio-gtkmm</REPO_DIR_M>
     <COMPRESSED_DIR_M>$(REPO_DIR_M)/packages/Compressed</COMPRESSED_DIR_M>
     <EXTRACTED_DIR_M>$(REPO_DIR_M)/packages/Extracted</EXTRACTED_DIR_M>
@@ -83,10 +82,6 @@
     </BuildMacro>
     <BuildMacro Include="DRIVE_M">
       <Value>$(DRIVE_M)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
-    </BuildMacro>
-    <BuildMacro Include="CL_VERSION_M">
-      <Value>$(CL_VERSION_M)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="REPO_DIR_M">

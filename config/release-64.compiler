@@ -1,0 +1,41 @@
+-nologo
+-Zi
+-W3
+-WX-
+-O2
+-Ob2
+-GF
+-Gm-
+-sdl-
+-MD
+-GS
+-GR
+-Gy
+-Qpar
+-EHsc
+-fp:precise
+-fp:except-
+-Zc:wchar_t
+-Zc:forScope
+-errorReport:prompt
+-Oy
+-Gd
+-Oi
+-analyze-
+-openmp-
+-Zc:inline
+-D _MBCS
+-D _WIN32
+-D WIN32
+-D NDEBUG
+-D WIN64
+-D _WIN64
+-D WINVER=0x0A00
+-D _WIN32_WINNT=0x0A00
+-D _SCL_SECURE_NO_WARNINGS
+-D _CRT_SECURE_NO_WARNINGS
+-D _CRT_NONSTDC_NO_WARNINGS
+-D _CRT_OBSOLETE_NO_WARNINGS
+-D _CRT_SECURE_NO_DEPRECATE
+-D _CRT_NONSTDC_NO_DEPRECATE
+-D _WINSOCK_DEPRECATED_NO_WARNINGS

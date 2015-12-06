@@ -7,6 +7,12 @@
     <ROOT_DIR>$(REPO_DIR)output\$(PlatformToolset)\Debug\$(Platform)\</ROOT_DIR>
     <VARIANT>debug</VARIANT>
     <ROOT_DIR_M>$(REPO_DIR_M)/output/$(PlatformToolset)/Debug/$(Platform)</ROOT_DIR_M>
+    <CFLAGS_M>-nologo -Zi -W1 -WX- -Od -Ob0 -GF- -Gm -sdl- -MDd -GS -GR -Gy- -Qpar- -EHsc -fp:precise -fp:except- -Zc:wchar_t -Zc:forScope -errorReport:prompt -D _MBCS -D WIN32 -D _WIN32 -D _WINDOWS -D _DEBUG -D DEBUG -D WINVER=0x0A00 -D _WIN32_WINNT=0x0A00 -D _SCL_SECURE_NO_WARNINGS -D _CRT_SECURE_NO_WARNINGS -D _CRT_NONSTDC_NO_WARNINGS -D _CRT_OBSOLETE_NO_WARNINGS -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -D _WINSOCK_DEPRECATED_NO_WARNINGS</CFLAGS_M>
+    <CXXFLAGS_M>-nologo -Zi -W1 -WX- -Od -Ob0 -GF- -Gm -sdl- -MDd -GS -GR -Gy- -Qpar- -EHsc -fp:precise -fp:except- -Zc:wchar_t -Zc:forScope -errorReport:prompt -D _MBCS -D WIN32 -D _WIN32 -D _WINDOWS -D _DEBUG -D DEBUG -D WINVER=0x0A00 -D _WIN32_WINNT=0x0A00 -D _SCL_SECURE_NO_WARNINGS -D _CRT_SECURE_NO_WARNINGS -D _CRT_NONSTDC_NO_WARNINGS -D _CRT_OBSOLETE_NO_WARNINGS -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -D _WINSOCK_DEPRECATED_NO_WARNINGS</CXXFLAGS_M>
+    <CPPFLAGS_M>-nologo -Zi -W1 -WX- -Od -Ob0 -GF- -Gm -sdl- -MDd -GS -GR -Gy- -Qpar- -EHsc -fp:precise -fp:except- -Zc:wchar_t -Zc:forScope -errorReport:prompt -D _MBCS -D WIN32 -D _WIN32 -D _WINDOWS -D _DEBUG -D DEBUG -D WINVER=0x0A00 -D _WIN32_WINNT=0x0A00 -D _SCL_SECURE_NO_WARNINGS -D _CRT_SECURE_NO_WARNINGS -D _CRT_NONSTDC_NO_WARNINGS -D _CRT_OBSOLETE_NO_WARNINGS -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -D _WINSOCK_DEPRECATED_NO_WARNINGS</CPPFLAGS_M>
+    <CONFIGURE_M>--enable-debug --disable-builddir --enable-silent-rules --enable-shared --enable-static</CONFIGURE_M>
+    <LDFLAGS_M />
+    <LIBS_M />
   </PropertyGroup>
   <PropertyGroup>
     <LinkIncremental>true</LinkIncremental>
@@ -102,9 +108,34 @@
     </BuildMacro>
     <BuildMacro Include="VARIANT">
       <Value>$(VARIANT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="ROOT_DIR_M">
       <Value>$(ROOT_DIR_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CFLAGS_M">
+      <Value>$(CFLAGS_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CXXFLAGS_M">
+      <Value>$(CXXFLAGS_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CPPFLAGS_M">
+      <Value>$(CPPFLAGS_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CONFIGURE_M">
+      <Value>$(CONFIGURE_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="LDFLAGS_M">
+      <Value>$(LDFLAGS_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="LIBS_M">
+      <Value>$(LIBS_M)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>

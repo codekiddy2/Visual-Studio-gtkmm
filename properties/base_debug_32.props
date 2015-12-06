@@ -6,7 +6,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros">
     <BUILD_M>i686-pc-mingw32</BUILD_M>
-    <HOST_M>i686-pc-mingw32</HOST_M>
+    <HOST_M>$(BUILD_M)</HOST_M>
+    <TARGET_M>$(BUILD_M)</TARGET_M>
   </PropertyGroup>
   <PropertyGroup>
     <NMakePreprocessorDefinitions>_WIN32;WIN32;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -39,6 +40,10 @@
     </BuildMacro>
     <BuildMacro Include="HOST_M">
       <Value>$(HOST_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="TARGET_M">
+      <Value>$(TARGET_M)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>

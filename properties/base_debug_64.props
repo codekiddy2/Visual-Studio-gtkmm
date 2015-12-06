@@ -4,7 +4,12 @@
     <Import Project="root_debug.props" />
     <Import Project="base_stack.props" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="UserMacros">
+    <BUILD_M>x86_64-w64-mingw32</BUILD_M>
+    <HOST_M>$(BUILD_M)</HOST_M>
+    <TARGET_M>$(BUILD_M)</TARGET_M>
+    <X64_FLAGS>-D WIN64 -D _WIN64</X64_FLAGS>
+  </PropertyGroup>
   <PropertyGroup>
     <NMakePreprocessorDefinitions>_WIN32;_WIN64;WIN32;WIN64;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
@@ -32,5 +37,22 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
   </ItemDefinitionGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BuildMacro Include="BUILD_M">
+      <Value>$(BUILD_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="HOST_M">
+      <Value>$(HOST_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="TARGET_M">
+      <Value>$(TARGET_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="X64_FLAGS">
+      <Value>$(X64_FLAGS)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
 </Project>

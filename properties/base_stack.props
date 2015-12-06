@@ -5,7 +5,8 @@
     <BIN_DIR>$(ROOT_DIR)bin\</BIN_DIR>
     <LIB_DIR>$(ROOT_DIR)lib\</LIB_DIR>
     <INCLUDE_DIR>$(ROOT_DIR)include\</INCLUDE_DIR>
-    <INTERMEDIATE_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\$(ProjectName)\</INTERMEDIATE_DIR>
+    <INTERMEDIATE_ROOT_DIR>$(ROOT_DIR)intermediate\</INTERMEDIATE_ROOT_DIR>
+    <INTERMEDIATE_DIR>$(INTERMEDIATE_ROOT_DIR)$(SolutionName)\$(ProjectName)\</INTERMEDIATE_DIR>
     <SYMBOLS_DIR>$(ROOT_DIR)symbols\</SYMBOLS_DIR>
     <SHARE_DIR>$(ROOT_DIR)share\</SHARE_DIR>
     <REF_DIR>$(SHARE_DIR)doc\reference\</REF_DIR>
@@ -18,6 +19,13 @@
     <MOD_DIR>$(SolutionDir)src\</MOD_DIR>
     <DEBUGGER>PATH=$(BIN_DIR);%PATH%</DEBUGGER>
     <PROJECTS_DIR_M>$(REPO_DIR_M)/projects</PROJECTS_DIR_M>
+    <CC_M>cl</CC_M>
+    <CXX_M>cl</CXX_M>
+    <LD_M>link</LD_M>
+    <AR_M>lib</AR_M>
+    <CPP_M>cl -nologo -EP</CPP_M>
+    <CXXCPP_M>cl -E</CXXCPP_M>
+    <INTERMEDIATE_DIR_M>$(ROOT_DIR_M)/intermediate</INTERMEDIATE_DIR_M>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -147,6 +155,9 @@
     <BuildMacro Include="INCLUDE_DIR">
       <Value>$(INCLUDE_DIR)</Value>
     </BuildMacro>
+    <BuildMacro Include="INTERMEDIATE_ROOT_DIR">
+      <Value>$(INTERMEDIATE_ROOT_DIR)</Value>
+    </BuildMacro>
     <BuildMacro Include="INTERMEDIATE_DIR">
       <Value>$(INTERMEDIATE_DIR)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
@@ -186,6 +197,34 @@
     </BuildMacro>
     <BuildMacro Include="PROJECTS_DIR_M">
       <Value>$(PROJECTS_DIR_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CC_M">
+      <Value>$(CC_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CXX_M">
+      <Value>$(CXX_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="LD_M">
+      <Value>$(LD_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="AR_M">
+      <Value>$(AR_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CPP_M">
+      <Value>$(CPP_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CXXCPP_M">
+      <Value>$(CXXCPP_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="INTERMEDIATE_DIR_M">
+      <Value>$(INTERMEDIATE_DIR_M)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
