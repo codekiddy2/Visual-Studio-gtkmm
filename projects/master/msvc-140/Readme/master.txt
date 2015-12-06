@@ -10,7 +10,7 @@ Solution design by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 ********************************************************************************************
 ********************************************************************************************
 INFO:
-solution version = 1.0.1
+solution version = 1.0.2
 solution directory = D:\Github\Visual-Studio-gtkmm\projects\master\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
@@ -22,6 +22,10 @@ You will need Visual Studio 2015 Ultimate to open this type of project.
 
 gendef project is stackwide used to generate definitioin files
 unistd project is used to install unistd.h file
+icons project is used to build and install icons
+prebuild project is used to download and extract source code, as well as
+prepare MSYS2 environment.
+project under templates are used to install templates into Visual Studio.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -32,33 +36,14 @@ DEPENDENCIES:
 		boost
 		crypto++
 
+	all projects depend on 'prebuild' project
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
 
-compile-icons instructions:
-
-First make sure you've prepared MSYS2 environment
-by reading the "MSYS2-prepare.md" found in readme folder
-
-update contents of config files as needed.
-
-open VS cmd prompt (x64 or x86 Visual Studio Native cmd prompt depending on build type)
-
-for x64 cmd prompt copy-paste following and hit enter:
-D:\Github\Visual-Studio-gtkmm\projects\master\msvc-140\compile-icons\start-64
-
-for x86 cmd prompt copy-paste following and hit enter:
-D:\Github\Visual-Studio-gtkmm\projects\master\msvc-140\compile-icons\start-32
-
-copy-paste one of the following lines (depending on your build type) to MSYS2 shell and hit enter:
-
-/d/Github/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons/release-32.sh
-/d/Github/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons/release-64.sh
-/d/Github/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons/debug-32.sh
-/d/Github/Visual-Studio-gtkmm/projects/master/msvc-140/compile-icons/debug-64.sh
-
-
+hit "build solution" and wait, it will take a lot of time, be stand by to looks for
+possible errors since this master solution is experimental for now.
 
 project templates instructions:
 
@@ -98,10 +83,12 @@ commented out #include <goocanvasmm\goocanvasmm.h> in stdafx.h
 
 For some unknown reason project templates do not work in VS 2015, even if
 creating new ones.
+edit^ it works, templates are under Visual C++ Node.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
+project templates testings:
 1.0.1
 	Debug x86
 
@@ -116,11 +103,14 @@ project templates testings:
 	Debug x64 + Debug
 	Release x64 + test
 
+prebuild, icons, ffi_msys2, unistd and gendef testings:
+1.0.1
+	Debug x32
+
 ********************************************************************************************
 ********************************************************************************************
 TODO:
-make this solution a master solution, and separate them to "build stages".
-projects that need to be configured manualy are in between stages.
+make this solution a master solution to build everything.
 
 does cairomm depends on glibmm??
 does fontconfig depend on harfbuzz?
@@ -132,5 +122,7 @@ carefull with macros!
 user_base_stack.props can't inherit base_stack.props because of (TODO: edit needed)
 
 separate readme files
-set intermediate for templates and icon into INTERMEDIATE_DIR
-silent extract icons
+set intermediate for templates into INTERMEDIATE_DIR
+silent extract icons (edit ?)
+
+figure out how to pass LDFLAGS to MSYS2 projects

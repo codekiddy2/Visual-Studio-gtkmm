@@ -87,18 +87,12 @@
     </ClCompile>
     <PreBuildEvent>
       <Command>$(CHK) $(MSYS2_DIR)build$(PlatformArchitecture).bat xcopy build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
-setlocal
 set UPDATE_SYSTEM=true
-set PROJECT_CMD=$(PROJECT_DIR_M)/prebuild.sh
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat
-endlocal</Command>
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>setlocal
-set UPDATE_SYSTEM=false
-set PROJECT_CMD=$(PROJECT_DIR_M)/prebuild.sh
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat
-endlocal</Command>
+      <Command>set UPDATE_SYSTEM=false
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -109,18 +103,12 @@ endlocal</Command>
     </ClCompile>
     <PreBuildEvent>
       <Command>$(CHK) $(MSYS2_DIR)build$(PlatformArchitecture).bat xcopy build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
-setlocal
 set UPDATE_SYSTEM=true
-set PROJECT_CMD=$(PROJECT_DIR_M)/prebuild.sh
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat
-endlocal</Command>
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>setlocal
-set UPDATE_SYSTEM=false
-set PROJECT_CMD=$(PROJECT_DIR_M)/prebuild.sh
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat
-endlocal</Command>
+      <Command>set UPDATE_SYSTEM=false
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -137,18 +125,12 @@ endlocal</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(CHK) $(MSYS2_DIR)build$(PlatformArchitecture).bat xcopy build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
-setlocal
 set UPDATE_SYSTEM=true
-set PROJECT_CMD=$(PROJECT_DIR_M)/prebuild.sh
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat
-endlocal</Command>
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>setlocal
-set UPDATE_SYSTEM=false
-set PROJECT_CMD=$(PROJECT_DIR_M)/prebuild.sh
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat
-endlocal</Command>
+      <Command>set UPDATE_SYSTEM=false
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -165,18 +147,12 @@ endlocal</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(CHK) $(MSYS2_DIR)build$(PlatformArchitecture).bat xcopy build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
-setlocal
 set UPDATE_SYSTEM=true
-set PROJECT_CMD=$(PROJECT_DIR_M)/prebuild.sh
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat
-endlocal</Command>
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>setlocal
-set UPDATE_SYSTEM=false
-set PROJECT_CMD=$(PROJECT_DIR_M)/prebuild.sh
-call $(MSYS2_DIR)build$(PlatformArchitecture).bat
-endlocal</Command>
+      <Command>set UPDATE_SYSTEM=false
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

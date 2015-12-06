@@ -142,6 +142,13 @@
   <ItemGroup>
     <None Include="ffi_msys2.sh" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\master\msvc-140\prebuild\prebuild.vcxproj">
+      <Project>{fa9b19a1-764a-4e20-8b4b-d2aeced99db4}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

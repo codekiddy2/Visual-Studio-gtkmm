@@ -14,7 +14,8 @@ fi
 if [[ -z $COMPRESSED_DIR_M ]]
 then
 	echo destination directory not set
-	read x
+	read temp
+	exit
 else
 	cd $COMPRESSED_DIR_M
 fi
