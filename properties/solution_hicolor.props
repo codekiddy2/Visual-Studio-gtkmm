@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SRC_DIR_M>$(PROJECTS_DIR_M)/hicolor-icon-theme-0.15</SRC_DIR_M>
+    <SOLUTION_NAME>hicolor</SOLUTION_NAME>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="SRC_DIR_M">
+      <Value>$(SRC_DIR_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SOLUTION_NAME">
+      <Value>$(SOLUTION_NAME)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

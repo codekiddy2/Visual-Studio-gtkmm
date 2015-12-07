@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <PROJECT_CMD_M>$(SRC_DIR_M)/msvc-$(PlatformToolsetVersion)/$(ProjectName)/$(ProjectName).sh</PROJECT_CMD_M>
+    <INTERMEDIATE_DIR>$(INTERMEDIATE_ROOT_DIR)$(SOLUTION_NAME)\$(ProjectName)\</INTERMEDIATE_DIR>
+    <INTERMEDIATE_DIR_M>$(ROOT_DIR_M)/intermediate/$(SOLUTION_NAME)/$(ProjectName)</INTERMEDIATE_DIR_M>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(ROOT_DIR)</OutDir>
+    <NMakeBuildCommandLine>set MAKE_CMD=true
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set CLEAN_CMD=true
+set MAKE_CMD=true
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>set CLEAN_CMD=true
+call $(MSYS2_DIR)build$(PlatformArchitecture).bat</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <BuildLog />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="PROJECT_CMD_M">
+      <Value>$(PROJECT_CMD_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="INTERMEDIATE_DIR">
+      <Value>$(INTERMEDIATE_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="INTERMEDIATE_DIR_M">
+      <Value>$(INTERMEDIATE_DIR_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

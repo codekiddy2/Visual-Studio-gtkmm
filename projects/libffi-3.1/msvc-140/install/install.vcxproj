@@ -21,31 +21,32 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9198CEFB-E3D2-4A72-BF42-A880D78C2443}</ProjectGuid>
     <RootNamespace>install</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -87,12 +88,11 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
-cd $(INCLUDE_DIR)ffi
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(COPY_CMD)
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(COPY_CMD)
+$(CHK) $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(INCLUDE_DIR)ffi\ $(COPY_CMD)
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(INCLUDE_DIR)ffi\ $(COPY_CMD)
 cd $(LIB_DIR)
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib $(COPY_CMD)</Command>
+copy /Y $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -106,12 +106,11 @@ xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
-cd $(INCLUDE_DIR)ffi
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(COPY_CMD)
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(COPY_CMD)
+$(CHK) $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(INCLUDE_DIR)ffi\ $(COPY_CMD)
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(INCLUDE_DIR)ffi\ $(COPY_CMD)
 cd $(LIB_DIR)
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib $(COPY_CMD)</Command>
+copy /Y $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -125,12 +124,11 @@ xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
-cd $(INCLUDE_DIR)ffi
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(COPY_CMD)
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(COPY_CMD)
+$(CHK) $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(INCLUDE_DIR)ffi\ $(COPY_CMD)
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(INCLUDE_DIR)ffi\ $(COPY_CMD)
 cd $(LIB_DIR)
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib $(COPY_CMD)</Command>
+copy /Y $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -144,12 +142,11 @@ xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-if not exist $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
-cd $(INCLUDE_DIR)ffi
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(COPY_CMD)
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(COPY_CMD)
+$(CHK) $(INCLUDE_DIR)ffi mkdir $(INCLUDE_DIR)ffi
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\include\*.h $(INCLUDE_DIR)ffi\ $(COPY_CMD)
+xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\fficonfig.h $(INCLUDE_DIR)ffi\ $(COPY_CMD)
 cd $(LIB_DIR)
-xcopy $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib $(COPY_CMD)</Command>
+copy /Y $(INTERMEDIATE_ROOT_DIR)$(SolutionName)\ffi_msys2\.libs\libffi_convenience.lib ffi.lib</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

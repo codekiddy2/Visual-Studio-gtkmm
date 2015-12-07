@@ -87,6 +87,7 @@
     </ClCompile>
     <PreBuildEvent>
       <Command>$(CHK) $(MSYS2_DIR)build$(PlatformArchitecture).bat xcopy build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
+$(CHK) $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
 set UPDATE_SYSTEM=true
 call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
@@ -103,6 +104,7 @@ call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </ClCompile>
     <PreBuildEvent>
       <Command>$(CHK) $(MSYS2_DIR)build$(PlatformArchitecture).bat xcopy build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
+$(CHK) $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
 set UPDATE_SYSTEM=true
 call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
@@ -125,6 +127,7 @@ call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(CHK) $(MSYS2_DIR)build$(PlatformArchitecture).bat xcopy build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
+$(CHK) $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
 set UPDATE_SYSTEM=true
 call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>
@@ -147,6 +150,7 @@ call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(CHK) $(MSYS2_DIR)build$(PlatformArchitecture).bat xcopy build$(PlatformArchitecture).bat $(MSYS2_DIR) $(COPY_CMD)
+$(CHK) $(INCLUDE_DIR) mkdir $(INCLUDE_DIR)
 set UPDATE_SYSTEM=true
 call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PreBuildEvent>

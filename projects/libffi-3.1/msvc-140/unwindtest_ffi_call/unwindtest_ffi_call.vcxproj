@@ -90,7 +90,6 @@
     </Link>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <AdditionalIncludeDirectories>$(SRC_DIR)x86_64-w64-mingw32;$(SRC_DIR)x86_64-w64-mingw32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -101,7 +100,6 @@
     </Link>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <AdditionalIncludeDirectories>$(SRC_DIR)i686-pc-mingw32;$(SRC_DIR)i686-pc-mingw32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -112,7 +110,6 @@
     </Link>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <AdditionalIncludeDirectories>$(SRC_DIR)x86_64-w64-mingw32;$(SRC_DIR)x86_64-w64-mingw32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -123,7 +120,6 @@
     </Link>
     <ClCompile>
       <CompileAs>CompileAsCpp</CompileAs>
-      <AdditionalIncludeDirectories>$(SRC_DIR)i686-pc-mingw32;$(SRC_DIR)i686-pc-mingw32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>

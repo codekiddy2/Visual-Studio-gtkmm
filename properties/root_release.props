@@ -63,7 +63,6 @@
     </BuildMacro>
     <BuildMacro Include="VARIANT">
       <Value>$(VARIANT)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="ROOT_DIR_M">
       <Value>$(ROOT_DIR_M)</Value>

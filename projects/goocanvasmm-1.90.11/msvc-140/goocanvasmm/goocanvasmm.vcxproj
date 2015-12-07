@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug dll|Win32">
+      <Configuration>Debug dll</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug dll|x64">
+      <Configuration>Debug dll</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug static|Win32">
+      <Configuration>Debug static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug static|x64">
+      <Configuration>Debug static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release dll|Win32">
+      <Configuration>Release dll</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release dll|x64">
+      <Configuration>Release dll</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release static|Win32">
+      <Configuration>Release static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release static|x64">
+      <Configuration>Release static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E8D66CB-3F9F-4C34-AE05-807DBC341F8B}</ProjectGuid>
+    <RootNamespace>goocanvasmm</RootNamespace>
+    <ProjectName>goocanvasmm</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)goocanvas
+copy $(MOD_DIR)goocanvasmmconfig.h /Y
+cd $(SRC_DIR)build
+copy $(MOD_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)goocanvas
+copy $(MOD_DIR)goocanvasmmconfig.h /Y
+cd $(SRC_DIR)build
+copy $(MOD_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)goocanvas
+copy $(MOD_DIR)goocanvasmmconfig.h /Y
+cd $(SRC_DIR)build
+copy $(MOD_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)goocanvas
+copy $(MOD_DIR)goocanvasmmconfig.h /Y
+cd $(SRC_DIR)build
+copy $(MOD_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)goocanvas
+copy $(MOD_DIR)goocanvasmmconfig.h /Y
+cd $(SRC_DIR)build
+copy $(MOD_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)goocanvas
+copy $(MOD_DIR)goocanvasmmconfig.h /Y
+cd $(SRC_DIR)build
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)goocanvas
+copy $(MOD_DIR)goocanvasmmconfig.h /Y
+cd $(SRC_DIR)build
+copy $(MOD_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>cd $(SRC_DIR)goocanvas
+copy $(MOD_DIR)goocanvasmmconfig.h /Y
+cd $(SRC_DIR)build
+copy $(MOD_DIR)config.h /Y</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
+    <PreBuildEvent>
+      <Message>coping configuration headers ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
+    <PreBuildEvent>
+      <Message>coping configuration headers ...</Message>
+    </PreBuildEvent>
+    <PreLinkEvent />
+    <Link>
+      <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;atkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
+    <PreBuildEvent>
+      <Message>coping configuration headers ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <PreBuildEvent>
+      <Message>coping configuration headers ...</Message>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
+    <PreBuildEvent>
+      <Message>coping configuration headers ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
+    <PreBuildEvent>
+      <Message>coping configuration headers ...</Message>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
+    <PreBuildEvent>
+      <Message>coping configuration headers ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
+    <PreBuildEvent>
+      <Message>coping configuration headers ...</Message>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\bounds.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\canvas.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\ellipse.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\ellipsemodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\enums.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\grid.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\gridmodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\group.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\groupmodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\image.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\imagemodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\init.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\item.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\itemmodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\itemmodelsimple.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\itemsimple.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\linedash.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\path.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\pathmodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\points.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\polyline.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\polylinemodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\rect.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\rectmodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\style.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\table.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\tablemodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\text.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\textmodel.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\widget.cc" />
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\wrap_init.cc" />
+    <ClCompile Include="..\src\canvas.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\goocanvas\goocanvasmm.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\bounds.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\canvas.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\ellipse.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\ellipsemodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\enums.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\grid.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\gridmodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\group.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\groupmodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\image.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\imagemodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\init.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\item.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\itemmodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\itemmodelsimple.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\itemsimple.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\linedash.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\path.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\pathmodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\points.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\polyline.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\polylinemodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\bounds_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\canvas_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\ellipsemodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\ellipse_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\enums_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\gridmodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\grid_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\groupmodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\group_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\imagemodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\image_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\itemmodelsimple_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\itemmodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\itemsimple_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\item_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\linedash_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\pathmodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\path_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\points_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\polylinemodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\polyline_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\rectmodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\rect_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\style_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\tablemodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\table_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\textmodel_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\text_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\private\widget_p.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\rect.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\rectmodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\style.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\table.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\tablemodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\text.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\textmodel.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\types.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\widget.h" />
+    <ClInclude Include="..\..\goocanvas\goocanvasmm\wrap_init.h" />
+    <ClInclude Include="..\src\goocanvasmmconfig.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

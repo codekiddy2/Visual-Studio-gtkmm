@@ -24,6 +24,7 @@
 	* boost debugging symbols
 	* fontconfig
 	* readline - unresolved external symbols
+	* gstreamer(mm) build
 
 
 **LOW PRIORITY TASKS**
@@ -46,20 +47,23 @@
 * check references, all need to have "same" settings. ie. copy local etc...
 * check inclusion of headers.
 * not all projects have /Zi flag set (sellect them all to quickly see the "different options"
-* compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include
 * searching projects folder, it turns out there are a lot of pdb files, check if any project is miscofingured about symobls
 * check pdb output names when building both lib and dll in same solution
 * make static runtime/CRT link configurations and ARM configuration (hint: solution props inherit "threading" property sheet)
 * make use of export libraries.
 * check which projects output random files and update gitignore
 * properties for (exe's), samples..., same as for test and tools projects for separate directory (edit: these have problems locating dependent files in root directory)
-* projects that will download and extract sources.
 * make GtkSourceView solution, (proposed on gtkmm-list)
 * make *.pc files for all solutions, so that configuration (if any) goes smooth (edit: requires all other todos, hint: project_pkg-config.props for all projects that output libs/dlls).
 * describe properties into some readme, their function etc.
 * create "user" properties for end use, to avoid default properties used for compilation.
 * see changelog about properties and consider addings back some flags to debug configurations only.
 
+**SELECTED**
+
+* compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include
+* MSYS2 projects should be set to make projects, for clean, rebuild and make, not just build/make.
+* property for make projects, base_make.props.
 
 **DONE - need to check again**
 
@@ -87,6 +91,7 @@
 * remove def files from all projects, use gendef
 * check links in wiki and different branches, for consistency when someone takes a fork
 * projects which depend on autotools should integrate MSYS2.
+* projects that will download and extract sources.
 
 **SUSPENDED TASKS**
 

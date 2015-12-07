@@ -25,7 +25,6 @@
     <AR_M>lib</AR_M>
     <CPP_M>cl -nologo -EP</CPP_M>
     <CXXCPP_M>cl -E</CXXCPP_M>
-    <INTERMEDIATE_DIR_M>$(ROOT_DIR_M)/intermediate</INTERMEDIATE_DIR_M>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -160,7 +159,6 @@
     </BuildMacro>
     <BuildMacro Include="INTERMEDIATE_DIR">
       <Value>$(INTERMEDIATE_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="SYMBOLS_DIR">
       <Value>$(SYMBOLS_DIR)</Value>
@@ -221,10 +219,6 @@
     </BuildMacro>
     <BuildMacro Include="CXXCPP_M">
       <Value>$(CXXCPP_M)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
-    </BuildMacro>
-    <BuildMacro Include="INTERMEDIATE_DIR_M">
-      <Value>$(INTERMEDIATE_DIR_M)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>

@@ -6,17 +6,12 @@
     <REPO_DIR>$(DRIVE):\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
     <INSTALL_DIR>$(DRIVE):\Github\Install\</INSTALL_DIR>
     <PYTHON_DIR>$(INSTALL_DIR)Python35\$(PlatformTarget)\</PYTHON_DIR>
-    <PYTHON2_DIR>$(INSTALL_DIR)Python27\$(PlatformTarget)\</PYTHON2_DIR>
-    <PERL_DIR>$(INSTALL_DIR)Perl64\bin\</PERL_DIR>
     <NASM_DIR>$(INSTALL_DIR)nasm\</NASM_DIR>
-    <CMAKE_DIR>$(INSTALL_DIR)CMake\bin\</CMAKE_DIR>
-    <B2_DIR>$(INSTALL_DIR)BoostBuild\bin\</B2_DIR>
+    <PERL_DIR>$(INSTALL_DIR)Perl64\bin\</PERL_DIR>
     <MSYS2_DIR>$(INSTALL_DIR)msys64\</MSYS2_DIR>
-    <ZIP_DIR>$(INSTALL_DIR)7-Zip\</ZIP_DIR>
+    <B2_DIR>$(INSTALL_DIR)BoostBuild\bin\</B2_DIR>
     <BISON_DIR>$(MSYS2_DIR)usr\bin\</BISON_DIR>
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
-    <PROPS_DIR>$(REPO_DIR)properties\</PROPS_DIR>
-    <PACKAGES_DIR>$(REPO_DIR)Packages\</PACKAGES_DIR>
     <DRIVE_M>/d</DRIVE_M>
     <REPO_DIR_M>$(DRIVE_M)/GitHub/Visual-Studio-gtkmm</REPO_DIR_M>
     <COMPRESSED_DIR_M>$(REPO_DIR_M)/packages/Compressed</COMPRESSED_DIR_M>
@@ -39,45 +34,27 @@
     </BuildMacro>
     <BuildMacro Include="INSTALL_DIR">
       <Value>$(INSTALL_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="PYTHON_DIR">
       <Value>$(PYTHON_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
-    </BuildMacro>
-    <BuildMacro Include="PYTHON2_DIR">
-      <Value>$(PYTHON2_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PERL_DIR">
-      <Value>$(PERL_DIR)</Value>
     </BuildMacro>
     <BuildMacro Include="NASM_DIR">
       <Value>$(NASM_DIR)</Value>
     </BuildMacro>
-    <BuildMacro Include="CMAKE_DIR">
-      <Value>$(CMAKE_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="B2_DIR">
-      <Value>$(B2_DIR)</Value>
+    <BuildMacro Include="PERL_DIR">
+      <Value>$(PERL_DIR)</Value>
     </BuildMacro>
     <BuildMacro Include="MSYS2_DIR">
       <Value>$(MSYS2_DIR)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
-    <BuildMacro Include="ZIP_DIR">
-      <Value>$(ZIP_DIR)</Value>
+    <BuildMacro Include="B2_DIR">
+      <Value>$(B2_DIR)</Value>
     </BuildMacro>
     <BuildMacro Include="BISON_DIR">
       <Value>$(BISON_DIR)</Value>
     </BuildMacro>
     <BuildMacro Include="FLEX_DIR">
       <Value>$(FLEX_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PROPS_DIR">
-      <Value>$(PROPS_DIR)</Value>
-    </BuildMacro>
-    <BuildMacro Include="PACKAGES_DIR">
-      <Value>$(PACKAGES_DIR)</Value>
     </BuildMacro>
     <BuildMacro Include="DRIVE_M">
       <Value>$(DRIVE_M)</Value>

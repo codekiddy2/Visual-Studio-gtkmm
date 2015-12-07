@@ -87,10 +87,8 @@
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\unistd mkdir include\unistd
-cd include\unistd
-copy $(ProjectDir)unistd.h /Y</Command>
+$(CHK) $(INCLUDE_DIR)unistd mkdir $(INCLUDE_DIR)unistd
+xcopy $(ProjectDir)unistd.h $(INCLUDE_DIR)unistd $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -104,10 +102,8 @@ copy $(ProjectDir)unistd.h /Y</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\unistd mkdir include\unistd
-cd include\unistd
-copy $(ProjectDir)unistd.h /Y</Command>
+$(CHK) $(INCLUDE_DIR)unistd mkdir $(INCLUDE_DIR)unistd
+xcopy $(ProjectDir)unistd.h $(INCLUDE_DIR)unistd $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -121,10 +117,8 @@ copy $(ProjectDir)unistd.h /Y</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\unistd mkdir include\unistd
-cd include\unistd
-copy $(ProjectDir)unistd.h /Y</Command>
+$(CHK) $(INCLUDE_DIR)unistd mkdir $(INCLUDE_DIR)unistd
+xcopy $(ProjectDir)unistd.h $(INCLUDE_DIR)unistd $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -138,14 +132,19 @@ copy $(ProjectDir)unistd.h /Y</Command>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
-cd $(ROOT_DIR)
-if not exist include\unistd mkdir include\unistd
-cd include\unistd
-copy $(ProjectDir)unistd.h /Y</Command>
+$(CHK) $(INCLUDE_DIR)unistd mkdir $(INCLUDE_DIR)unistd
+xcopy $(ProjectDir)unistd.h $(INCLUDE_DIR)unistd $(COPY_CMD)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="unistd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\prebuild\prebuild.vcxproj">
+      <Project>{fa9b19a1-764a-4e20-8b4b-d2aeced99db4}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

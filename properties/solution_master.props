@@ -2,19 +2,17 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <PROJECT_DIR_M>$(PROJECTS_DIR_M)/$(SolutionName)/msvc-$(PlatformToolsetVersion)/$(TargetName)</PROJECT_DIR_M>
-    <PROJECT_CMD_M>$(PROJECT_DIR_M)/$(ProjectName).sh</PROJECT_CMD_M>
+    <SRC_DIR_M>$(PROJECTS_DIR_M)/master</SRC_DIR_M>
+    <SOLUTION_NAME>master</SOLUTION_NAME>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
   <ItemGroup>
-    <BuildMacro Include="PROJECT_DIR_M">
-      <Value>$(PROJECT_DIR_M)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
+    <BuildMacro Include="SRC_DIR_M">
+      <Value>$(SRC_DIR_M)</Value>
     </BuildMacro>
-    <BuildMacro Include="PROJECT_CMD_M">
-      <Value>$(PROJECT_CMD_M)</Value>
-      <EnvironmentVariable>true</EnvironmentVariable>
+    <BuildMacro Include="SOLUTION_NAME">
+      <Value>$(SOLUTION_NAME)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
