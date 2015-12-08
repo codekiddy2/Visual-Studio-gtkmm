@@ -103,7 +103,6 @@
     <Link>
       <BaseAddress>0x4a800000</BaseAddress>
       <AdditionalDependencies>icudt.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories />
     </Link>
     <CustomBuildStep>
       <Command>copy $(TargetPath) $(SRC_DIR)bin /Y</Command>

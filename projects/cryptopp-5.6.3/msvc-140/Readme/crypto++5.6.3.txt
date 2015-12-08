@@ -47,6 +47,7 @@ turn off SDL check on solution level.
 warning 4297 disabled on solution level.
 
 x86 DLL/test build does not work at all, X64 build seems OK ?
+edit^ x86 builds (release and static) will build static lib only, set in config. manager.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -69,3 +70,4 @@ TODO:
 project properties and their overridings needs to be checked. (edit: done)
 explain configuration types.
 fix DLL and test builds for x86 builds
+more test projects

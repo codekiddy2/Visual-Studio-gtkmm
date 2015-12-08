@@ -11,6 +11,9 @@
       <CompileAs>Default</CompileAs>
       <AdditionalIncludeDirectories />
     </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">

@@ -119,7 +119,6 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>icuuc.dll.lib;icutu.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

@@ -99,7 +99,6 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>icuin.dll.lib;icuuc.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

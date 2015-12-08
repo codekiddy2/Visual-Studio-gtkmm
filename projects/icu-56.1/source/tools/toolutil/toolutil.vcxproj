@@ -111,7 +111,6 @@
     <Link>
       <BaseAddress>0x4ac00000</BaseAddress>
       <AdditionalDependencies>icuin.dll.lib;icuuc.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories />
     </Link>
     <CustomBuildStep>
       <Command>copy $(TargetPath) $(SRC_DIR)bin /Y</Command>

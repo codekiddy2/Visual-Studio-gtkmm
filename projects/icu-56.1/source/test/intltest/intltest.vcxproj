@@ -134,7 +134,6 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>icutu.dll.lib;icuin.dll.lib;icutest.dll.lib;icuuc.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

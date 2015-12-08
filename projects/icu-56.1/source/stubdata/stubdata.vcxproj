@@ -111,12 +111,11 @@
       <Command>echo "File with stubdata build time, used as a dependency to trigger fresh data build, since stubdata dll will overwrite the real one." &gt; "$(ProjectDir)stubdatabuilt.txt"</Command>
     </PreLinkEvent>
     <Link>
-      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <NoEntryPoint>true</NoEntryPoint>
       <SetChecksum>true</SetChecksum>
       <BaseAddress>0x4ad00000</BaseAddress>
       <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
-      <AdditionalLibraryDirectories />
+      <ModuleDefinitionFile />
     </Link>
     <CustomBuildStep>
       <Command>copy $(TargetPath) $(SRC_DIR)bin /Y</Command>
@@ -149,6 +148,7 @@
     </PreLinkEvent>
     <Link>
       <BaseAddress>0x4ad00000</BaseAddress>
+      <ModuleDefinitionFile />
     </Link>
     <CustomBuildStep />
     <CustomBuildStep>
@@ -177,11 +177,11 @@
       <Command>echo "File with stubdata build time, used as a dependency to trigger fresh data build, since stubdata dll will overwrite the real one." &gt; "$(ProjectDir)stubdatabuilt.txt"</Command>
     </PreLinkEvent>
     <Link>
-      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <NoEntryPoint>true</NoEntryPoint>
       <SetChecksum>true</SetChecksum>
       <BaseAddress>0x4ad00000</BaseAddress>
       <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -205,6 +205,7 @@
     </PreLinkEvent>
     <Link>
       <BaseAddress>0x4ad00000</BaseAddress>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

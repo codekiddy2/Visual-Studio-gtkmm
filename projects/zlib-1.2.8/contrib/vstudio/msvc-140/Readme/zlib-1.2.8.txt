@@ -83,3 +83,4 @@ TODO:
 try building everything without ZLIB_WINAPI, up to gtkmm.
 see ..\README.txt and see NOTES
 if OK remove ZLIB_WINAPI from entry stack
+edit^ removed and tested with x86 builds (debug and release)
