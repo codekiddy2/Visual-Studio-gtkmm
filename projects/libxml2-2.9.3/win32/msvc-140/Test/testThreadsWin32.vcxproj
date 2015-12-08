@@ -195,7 +195,7 @@
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
@@ -203,7 +203,7 @@
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
@@ -211,7 +211,7 @@
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
@@ -219,7 +219,7 @@
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
