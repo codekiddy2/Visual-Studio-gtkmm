@@ -129,6 +129,7 @@
     <ProjectReference Include="gdk-pixbuf.vcxproj">
       <Project>{01ade22d-f6ec-4d09-8fe1-b9a97dec2ba3}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

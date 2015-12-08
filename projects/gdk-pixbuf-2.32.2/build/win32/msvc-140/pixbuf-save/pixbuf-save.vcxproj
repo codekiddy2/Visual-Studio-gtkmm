@@ -25,6 +25,13 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\..\tests\test-common.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gdk-pixbuf.vcxproj">
+      <Project>{01ade22d-f6ec-4d09-8fe1-b9a97dec2ba3}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2700053B-AD8F-4FF6-A02B-FB14B95F93C9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

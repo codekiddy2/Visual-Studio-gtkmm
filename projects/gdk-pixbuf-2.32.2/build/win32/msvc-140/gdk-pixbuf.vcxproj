@@ -48,20 +48,18 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -149,8 +147,6 @@
       <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level2</WarningLevel>
-      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -165,8 +161,6 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level2</WarningLevel>
-      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -181,8 +175,6 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level2</WarningLevel>
-      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -197,8 +189,6 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       <PreprocessorDefinitions>INCLUDE_gdiplus;PNG_DLL;PNG_USE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level2</WarningLevel>
-      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -214,8 +204,6 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       <PrecompiledHeader>
       </PrecompiledHeader>
       <ForcedIncludeFiles />
-      <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level2</WarningLevel>
     </ClCompile>
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -235,8 +223,6 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       </PrecompiledHeader>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
-      <SDLCheck>false</SDLCheck>
-      <WarningLevel>Level2</WarningLevel>
     </ClCompile>
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -274,14 +260,6 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       </PrecompiledHeader>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
-      <SDLCheck>false</SDLCheck>
-      <AssemblerListingLocation>$(CHROOT_REL)$(SET_INTERMEDIATE)</AssemblerListingLocation>
-      <ObjectFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)</ObjectFileName>
-      <ProgramDataBaseFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).pdb</ProgramDataBaseFileName>
-      <XMLDocumentationFileName>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).xml</XMLDocumentationFileName>
-      <BrowseInformationFile>$(CHROOT_REL)$(SET_INTERMEDIATE)</BrowseInformationFile>
-      <PrecompiledHeaderOutputFile>$(CHROOT_REL)$(SET_INTERMEDIATE)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <WarningLevel>Level2</WarningLevel>
     </ClCompile>
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
