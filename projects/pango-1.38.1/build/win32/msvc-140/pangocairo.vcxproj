@@ -159,7 +159,6 @@
       <PreprocessorDefinitions>PANGO_VISUALC_NO_FC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <Optimization>&lt;inherit from parent or project defaults&gt;</Optimization>
     </ClCompile>
     <Link>
       <AdditionalDependencies>cairo.dll.lib;pango.dll.lib;pangowin32.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

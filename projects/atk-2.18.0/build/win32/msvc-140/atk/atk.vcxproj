@@ -73,9 +73,7 @@
     <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -90,15 +88,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
-    <Link>
-      <OutputFile>$(OutDir)$(AtkDllPrefix)$(ProjectName)$(AtkDllSuffix).dll</OutputFile>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OptimizeReferences>true</OptimizeReferences>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <ImportLibrary>$(OutDir)$(ProjectName)-$(ApiVersion).lib</ImportLibrary>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
