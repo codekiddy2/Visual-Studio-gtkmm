@@ -100,7 +100,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>tiff.dll.lib;port.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>port.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
@@ -128,7 +128,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>tiff.dll.lib;port.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>port.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
     </Link>
@@ -140,7 +140,7 @@
       <PreprocessorDefinitions>HAVE_GETOPT;NEED_LIBPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>tiff.dll.lib;port.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>port.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,7 +149,7 @@
       <PreprocessorDefinitions>HAVE_GETOPT;NEED_LIBPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>tiff.dll.lib;port.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>port.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
