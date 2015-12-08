@@ -84,7 +84,6 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>getc_unlocked=_fgetc_nolock;HAVE_GETC_UNLOCKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -97,7 +96,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>getc_unlocked=_fgetc_nolock;HAVE_GETC_UNLOCKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -113,7 +111,6 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\;..\gtk;.\gtkmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>getc_unlocked=_fgetc_nolock;HAVE_GETC_UNLOCKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -129,7 +126,6 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>getc_unlocked=_fgetc_nolock;HAVE_GETC_UNLOCKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
@@ -179,10 +175,12 @@
     <ProjectReference Include="gdkmm.vcxproj">
       <Project>{976c8f9c-1a1d-4e23-b79e-ec9091bbea0e}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
     <ProjectReference Include="gtkmm.vcxproj">
       <Project>{907b8d15-7e12-4136-a7e6-b6ed5e055d39}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>false</Private>
     </ProjectReference>
     <ProjectReference Include="install.vcxproj">
       <Project>{2093d218-190e-4194-9421-3ba7cbf33b10}</Project>

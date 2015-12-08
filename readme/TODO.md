@@ -16,6 +16,7 @@
 * define against which libs projects link, dll.lib or lib, some test projects ie. link differently for each configuration. (harfbuzz most notably)
 * configuration should be done with MSYS2 only, avoid using mozilla-build
 * consider: smaller type check turn off for entry stack.
+* compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include, and update include dirs
 
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build
@@ -59,11 +60,6 @@
 * create "user" properties for end use, to avoid default properties used for compilation.
 * see changelog about properties and consider addings back some flags to debug configurations only.
 
-**SELECTED**
-
-* compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include
-* MSYS2 projects should be set to make projects, for clean, rebuild and make, not just build/make.
-* property for make projects, base_make.props.
 
 **DONE - need to check again**
 
@@ -92,6 +88,9 @@
 * check links in wiki and different branches, for consistency when someone takes a fork
 * projects which depend on autotools should integrate MSYS2.
 * projects that will download and extract sources.
+* MSYS2 projects should be set to make projects, for clean, rebuild and make, not just build/make.
+* property for make projects, base_make.props.
+
 
 **SUSPENDED TASKS**
 

@@ -12,7 +12,7 @@
       <AdditionalDependencies>gtk.dll.lib;gdk.dll.lib;gdk-pixbuf.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\;..\gdk;.\gdkmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SolutionDir)gdkmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4250;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>

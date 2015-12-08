@@ -74,15 +74,10 @@
     <Import Project="..\..\..\properties\solution_gtkmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)$(ReleaseDllSuffix)</TargetName>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -94,10 +89,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -111,10 +103,7 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\;..\gtk;.\gtkmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -128,21 +117,13 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
     </ClCompile>
     <PreLinkEvent />
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)$(ProjectName)$(ReleaseDllSuffix).dll</OutputFile>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OptimizeReferences>true</OptimizeReferences>
-      <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
