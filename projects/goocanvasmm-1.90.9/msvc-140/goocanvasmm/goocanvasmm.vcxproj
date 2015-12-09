@@ -282,16 +282,7 @@ copy $(MOD_DIR)config.h /Y</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\goocanvas\goocanvasmm\bounds.cc" />
-    <ClCompile Include="..\..\goocanvas\goocanvasmm\canvas.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">false</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">false</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\canvas.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\ellipse.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\ellipsemodel.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\enums.cc" />
@@ -309,16 +300,7 @@ copy $(MOD_DIR)config.h /Y</Command>
     <ClCompile Include="..\..\goocanvas\goocanvasmm\linedash.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\path.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\pathmodel.cc" />
-    <ClCompile Include="..\..\goocanvas\goocanvasmm\points.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">false</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">false</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\goocanvas\goocanvasmm\points.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\polyline.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\polylinemodel.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\rect.cc" />
@@ -330,14 +312,6 @@ copy $(MOD_DIR)config.h /Y</Command>
     <ClCompile Include="..\..\goocanvas\goocanvasmm\textmodel.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\widget.cc" />
     <ClCompile Include="..\..\goocanvas\goocanvasmm\wrap_init.cc" />
-    <ClCompile Include="..\src\canvas.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\src\points.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">true</ExcludedFromBuild>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\goocanvas\goocanvasmm.h" />

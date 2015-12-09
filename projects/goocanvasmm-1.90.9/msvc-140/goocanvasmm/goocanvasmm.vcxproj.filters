@@ -110,12 +110,6 @@
     <ClCompile Include="..\..\goocanvas\goocanvasmm\wrap_init.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\canvas.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\points.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\goocanvas\goocanvasmm\private\bounds_p.h">
