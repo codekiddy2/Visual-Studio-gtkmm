@@ -44,6 +44,9 @@ Open Solution select configuration and build
 Install by building the "Install" project
 You must "Install" before running the demo application!
 
+if there are unresolved externals in gtkmm x64 builds, you need to modify def files genereated by gendef.
+currently gtkmm linker input is modified, make sure to modify this to and relink only.
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
