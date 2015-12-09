@@ -13,6 +13,7 @@
       <AdditionalIncludeDirectories>$(SRC_DIR);$(SRC_DIR)gdk-pixbuf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_COMPILATION;GDK_PIXBUF_RELOCATABLE;GDK_PIXBUF_ENABLE_BACKEND;DLL_EXPORT;GDK_PIXBUF_PREFIX="$(GdkPixbufDummyPrefix)";GDK_PIXBUF_BINARY_VERSION="$(GdkPixbufBinaryVersion)";INCLUDE_ani;INCLUDE_pcx;INCLUDE_tga;INCLUDE_xbm;INCLUDE_png;INCLUDE_qtif;INCLUDE_pnm;INCLUDE_icns;INCLUDE_ras;INCLUDE_wbmp;INCLUDE_xpm;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level2</WarningLevel>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gio.dll.lib;gmodule.dll.lib;gobject.dll.lib;glib.dll.lib;gthread.dll.lib;intl.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
