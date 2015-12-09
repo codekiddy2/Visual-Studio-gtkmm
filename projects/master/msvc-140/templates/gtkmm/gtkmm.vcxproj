@@ -81,7 +81,6 @@
     <Link />
     <Link />
     <ClCompile>
-      <PreprocessorDefinitions>GTKMM_ATKMM_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
   </ItemDefinitionGroup>
