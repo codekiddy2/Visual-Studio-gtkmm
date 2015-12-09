@@ -418,5 +418,8 @@
     <ClInclude Include="src\config\ftconfig.h">
       <Filter>Header Files\Config</Filter>
     </ClInclude>
+    <ClInclude Include="src\config\ftoption.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

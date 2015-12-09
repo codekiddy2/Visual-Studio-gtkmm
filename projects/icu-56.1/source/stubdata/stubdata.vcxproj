@@ -185,6 +185,10 @@
       <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
       <ModuleDefinitionFile />
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) $(SRC_DIR)bin64 /Y</Command>
+      <Outputs>$(SRC_DIR)bin64\$(TargetFileName)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
@@ -209,6 +213,10 @@
       <BaseAddress>0x4ad00000</BaseAddress>
       <ModuleDefinitionFile />
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) $(SRC_DIR)bin64 /Y</Command>
+      <Outputs>$(SRC_DIR)bin64\$(TargetFileName)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="stubdata.c" />

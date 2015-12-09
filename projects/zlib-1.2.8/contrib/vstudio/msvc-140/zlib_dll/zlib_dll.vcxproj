@@ -242,9 +242,6 @@
     <ResourceCompile Include="..\src\zlib.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="zlibvc.def" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\..\..\deflate.h" />
     <ClInclude Include="..\..\..\..\infblock.h" />
     <ClInclude Include="..\..\..\..\infcodes.h" />
@@ -311,6 +308,9 @@
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\def\zlibvc.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

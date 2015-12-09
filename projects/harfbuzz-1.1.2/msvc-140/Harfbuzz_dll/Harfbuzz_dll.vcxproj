@@ -336,7 +336,7 @@
     <ClCompile Include="..\src\hb-gobject-enums.cc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="harfbuzz.def" />
+    <None Include="..\def\harfbuzz.def" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\hb-coretext.h">

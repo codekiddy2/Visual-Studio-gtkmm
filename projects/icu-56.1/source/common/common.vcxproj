@@ -154,6 +154,10 @@
       <AdditionalDependencies>icudt.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) $(SRC_DIR)bin64 /Y</Command>
+      <Outputs>$(SRC_DIR)bin64\$(TargetFileName)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
@@ -172,6 +176,10 @@
       <AdditionalDependencies>icudt.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) $(SRC_DIR)bin64 /Y</Command>
+      <Outputs>$(SRC_DIR)bin64\$(TargetFileName)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="filteredbrk.cpp" />

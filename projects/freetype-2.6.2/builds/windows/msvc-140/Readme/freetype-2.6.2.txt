@@ -42,6 +42,11 @@ test project assumes you have harfbuzz, modify linker input if not.
 NOTES:
 Version 2.6.1 does not work with pango, gtk-demo has no fonts, and console behind shows errors.
 
+ftoption in $(MOD_DIR) is used fot freetype.dll only.
+other macros are defined in solution property page to depend on libpng, zlib and bzip2
+
+local_printf and similar exports originate from freetype if gendef is used!
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:

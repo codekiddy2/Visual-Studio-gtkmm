@@ -159,12 +159,15 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>freetype</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_HB|Win32'">
     <TargetName>freetype</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>freetype</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>freetype</TargetName>
@@ -172,6 +175,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_HB|Win32'">
     <TargetName>freetype</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_HB|x64'">
     <TargetName>freetype</TargetName>
@@ -187,13 +191,14 @@
     <Lib />
     <ClCompile />
     <ClCompile />
-    <Link>
-      <AdditionalDependencies>zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
+    <Link />
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
+    <Link>
+      <ModuleDefinitionFile />
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_HB|Win32'">
     <ClCompile />
@@ -203,11 +208,12 @@
     </ResourceCompile>
     <Lib />
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>harfbuzz.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -221,11 +227,9 @@
     <ClCompile />
     <ClCompile />
     <Link>
-      <AdditionalDependencies>zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -237,11 +241,11 @@
     </ResourceCompile>
     <Lib />
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>harfbuzz.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
@@ -252,17 +256,18 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib />
-    <Link>
-      <AdditionalDependencies>zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
+    <Link />
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
+    <Link>
+      <ModuleDefinitionFile />
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_HB|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
@@ -271,7 +276,8 @@
     </ResourceCompile>
     <Lib />
     <Link>
-      <AdditionalDependencies>harfbuzz.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -282,17 +288,15 @@
     </ResourceCompile>
     <Lib />
     <Link>
-      <AdditionalDependencies>zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_HB|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
@@ -301,7 +305,7 @@
     </ResourceCompile>
     <Lib />
     <Link>
-      <AdditionalDependencies>harfbuzz.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
@@ -1075,7 +1079,16 @@
     </ClInclude>
     <ClInclude Include="..\..\..\include\freetype\config\ftheader.h" />
     <ClInclude Include="..\..\..\include\freetype\config\ftmodule.h" />
-    <ClInclude Include="..\..\..\include\freetype\config\ftoption.h" />
+    <ClInclude Include="..\..\..\include\freetype\config\ftoption.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_HB|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_HB|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_HB|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_HB|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="..\..\..\include\freetype\config\ftstdlib.h" />
     <ClInclude Include="..\..\..\include\freetype\freetype.h" />
     <ClInclude Include="..\..\..\include\freetype\ftadvanc.h" />
@@ -1161,6 +1174,7 @@
     <ClInclude Include="..\..\..\include\freetype\ttunpat.h" />
     <ClInclude Include="..\..\..\include\ft2build.h" />
     <ClInclude Include="src\config\ftconfig.h" />
+    <ClInclude Include="src\config\ftoption.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

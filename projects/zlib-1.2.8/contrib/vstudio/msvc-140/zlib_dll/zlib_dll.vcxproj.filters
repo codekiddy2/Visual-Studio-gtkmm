@@ -121,11 +121,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="zlibvc.def">
-      <Filter>Definition Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Object Include="..\..\..\..\..\..\output\v140\Debug\x64\intermediate\zlib\asm\gvmat64.obj">
       <Filter>Object Files\Debug64</Filter>
     </Object>
@@ -155,5 +150,10 @@
     <ResourceCompile Include="..\src\zlib.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\def\zlibvc.def">
+      <Filter>Definition Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

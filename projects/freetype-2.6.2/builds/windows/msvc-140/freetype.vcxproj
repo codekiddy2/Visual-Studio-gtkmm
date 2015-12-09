@@ -185,9 +185,7 @@
     <ClCompile />
     <ClCompile />
     <ClCompile />
-    <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_HB|Win32'">
     <ClCompile />
@@ -197,7 +195,7 @@
     </ResourceCompile>
     <Lib />
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -209,9 +207,7 @@
     <Lib />
     <ClCompile />
     <ClCompile />
-    <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_HB|x64'">
     <ClCompile />
@@ -221,7 +217,7 @@
     </ResourceCompile>
     <Lib />
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -231,13 +227,11 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib />
-    <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_HB|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;$(UserDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -252,13 +246,11 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Lib />
-    <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_HB|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>FT_CONFIG_OPTION_USE_HARFBUZZ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;$(UserDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>

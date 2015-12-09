@@ -163,6 +163,10 @@
       <AdditionalDependencies>icuuc.dll.lib;icuin.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) $(SRC_DIR)bin64 /Y</Command>
+      <Outputs>$(SRC_DIR)bin64\$(TargetFileName)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
@@ -184,6 +188,10 @@
       <AdditionalDependencies>icuuc.dll.lib;icuin.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) $(SRC_DIR)bin64 /Y</Command>
+      <Outputs>$(SRC_DIR)bin64\$(TargetFileName)</Outputs>
+    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="locbund.cpp" />

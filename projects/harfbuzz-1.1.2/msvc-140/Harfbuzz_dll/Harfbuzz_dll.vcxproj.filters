@@ -165,9 +165,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="harfbuzz.def">
-      <Filter>Definition Files</Filter>
-    </None>
     <None Include="..\..\src\hb-atomic-private.hh">
       <Filter>Header Files</Filter>
     </None>
@@ -269,6 +266,9 @@
     </None>
     <None Include="..\..\src\hb-ot-shape-complex-private.hh">
       <Filter>Header Files\Complex</Filter>
+    </None>
+    <None Include="..\def\harfbuzz.def">
+      <Filter>Definition Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
