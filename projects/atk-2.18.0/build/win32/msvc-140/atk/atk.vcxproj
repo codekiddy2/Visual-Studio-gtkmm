@@ -73,7 +73,12 @@
     <Import Project="..\..\..\..\..\..\properties\solution_atk.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>ATK_COMPILATION;DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -100,6 +105,9 @@
     <Link />
     <Link />
     <Link />
+    <Link>
+      <ModuleDefinitionFile />
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -108,6 +116,9 @@
       </PrecompiledHeader>
     </ClCompile>
     <Link />
+    <Link>
+      <ModuleDefinitionFile />
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\atk\atkaction.c" />

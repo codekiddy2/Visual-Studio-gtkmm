@@ -75,7 +75,18 @@
     <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gtk;$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -113,6 +124,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;atk.dll.lib;pangowin32.dll.lib;imm32.lib;winspool.lib;comctl32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
     <PreBuildEvent>
       <Command>cd ..\..\..\gtk
@@ -132,6 +144,7 @@ cd $(SolutionDir)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;atk.dll.lib;pangowin32.dll.lib;imm32.lib;winspool.lib;comctl32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

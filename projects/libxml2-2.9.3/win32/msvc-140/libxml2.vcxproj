@@ -158,8 +158,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" />
@@ -180,6 +184,7 @@
     <PreBuildEvent />
     <Link>
       <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
@@ -196,6 +201,7 @@
     <PreBuildEvent />
     <Link>
       <AdditionalDependencies>Ws2_32.lib;zlib.dll.lib;iconv.dll.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">

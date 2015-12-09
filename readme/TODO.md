@@ -3,6 +3,7 @@
 
 **HIGH PRIORITY TASKS**
 
+* convert install projects to make file projects, (for clean, build and rebuild, ex. to remove headers)
 * move all solutions into source's root directory
 * rename projects (in windows explorer) so that the name is the same as in solutions
 * separate each project into it's own folder in solution directory
@@ -26,6 +27,7 @@
 	* fontconfig
 	* readline - unresolved external symbols
 	* gstreamer(mm) build
+	* gendef does not work for C code on x64 configurations
 
 
 **LOW PRIORITY TASKS**

@@ -49,7 +49,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "child_widget_managed", "Tes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{B950A2E8-423E-4D0D-B89A-7534981EF6D0}"
 	ProjectSection(SolutionItems) = preProject
-		src\config.h = src\config.h
 		gdkmm\gdkmmconfig.h = gdkmm\gdkmmconfig.h
 		gtkmm\gtkmmconfig.h = gtkmm\gtkmmconfig.h
 	EndProjectSection

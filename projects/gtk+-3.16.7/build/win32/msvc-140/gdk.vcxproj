@@ -133,7 +133,18 @@
     <Import Project="..\..\..\..\..\properties\solution_gtk+.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -194,6 +205,7 @@
     <Link>
       <AdditionalDependencies>gdk-win32.lib;imm32.lib;winmm.lib;ws2_32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/EXPORT:gdk_win32_display_manager_get_type %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Broadway|x64'">
@@ -205,7 +217,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk-broadway.lib;gdk-win32.lib;imm32.lib;winmm.lib;ws2_32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalOptions>/EXPORT:gdk_win32_display_manager_get_type</AdditionalOptions>
+      <AdditionalOptions>/EXPORT:gdk_win32_display_manager_get_type %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -220,6 +233,7 @@
     <Link>
       <AdditionalDependencies>gdk-win32.lib;imm32.lib;winmm.lib;ws2_32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/EXPORT:gdk_win32_display_manager_get_type %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Broadway|x64'">
@@ -232,6 +246,7 @@
     <Link>
       <AdditionalDependencies>gdk-broadway.lib;gdk-win32.lib;imm32.lib;winmm.lib;ws2_32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/EXPORT:gdk_win32_display_manager_get_type %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

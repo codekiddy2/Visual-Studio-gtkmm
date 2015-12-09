@@ -84,9 +84,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>editline</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>editline</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -109,6 +111,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile>$(SRC_DIR)src/libedit.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -157,6 +160,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile>$(SRC_DIR)src/libedit.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>

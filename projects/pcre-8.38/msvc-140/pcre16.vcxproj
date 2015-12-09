@@ -132,11 +132,15 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'" />
@@ -160,6 +164,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -255,6 +260,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>

@@ -76,6 +76,12 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)libtiff;$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -98,6 +104,7 @@
       <AdditionalDependencies>zlib.dll.lib;jpeg.dll.lib;jbig.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
+      <ModuleDefinitionFile>$(DEF_DIR)libtiff.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -123,6 +130,7 @@
       <AdditionalDependencies>zlib.dll.lib;jpeg.dll.lib;jbig.lib;lzma.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Version>
       </Version>
+      <ModuleDefinitionFile>$(DEF_DIR)libtiff.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>

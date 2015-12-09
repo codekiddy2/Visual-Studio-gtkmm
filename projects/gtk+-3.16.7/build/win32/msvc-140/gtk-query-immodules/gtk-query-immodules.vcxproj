@@ -116,7 +116,8 @@ $(BIN_DIR)gtk-query-immodules-3.0</Command>
       <AdditionalDependencies>gtk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>if not exist $(BIN_DIR)gtk.dll exit
+      <Command>$(DEBUGGER)
+if not exist $(BIN_DIR)gtk.dll exit
 $(BIN_DIR)gtk-query-immodules-3.0 --update-cache
 $(BIN_DIR)gtk-query-immodules-3.0</Command>
     </PostBuildEvent>

@@ -78,12 +78,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>freeglut</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>freeglut</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>freeglut</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>freeglut</TargetName>
@@ -108,6 +110,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -154,6 +157,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>

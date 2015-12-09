@@ -140,6 +140,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
     <CustomBuildBeforeTargets />
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -155,6 +156,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
     <CustomBuildBeforeTargets />
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -188,6 +190,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.dll.lib</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
@@ -242,6 +245,7 @@
       <AdditionalDependencies>zlib.dll.lib</AdditionalDependencies>
       <Version>
       </Version>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">

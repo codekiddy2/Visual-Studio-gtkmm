@@ -82,6 +82,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>lzma</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>
@@ -91,6 +92,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental />
     <TargetName>lzma</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -111,6 +113,9 @@
     <ResourceCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src/liblzma/common;$(SRC_DIR)src/common;$(SRC_DIR)src/liblzma/api</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile />
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -131,6 +136,9 @@
     <ResourceCompile>
       <AdditionalIncludeDirectories>$(MOD_DIR);$(SRC_DIR)src/liblzma/common;$(SRC_DIR)src/common;$(SRC_DIR)src/liblzma/api</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile />
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\common\tuklib_cpucores.c" />

@@ -52,6 +52,9 @@ for gdbusgenerated to work codegen python files need to be installed into share/
 gdk-broadway, gdk, gailutil release has G_ENABLE_DEBUG preprocessor because all release projects produce debugging info,
 release builds do not declare this macro in original solution.
 
+gdk project has /EXPORT defined in comman line options.
+clean installation directory if rebuilding to broadway and vice versa.
+
 since msvc-140
 epoxy.dll.lib added to linker: gtk, gdk, gtk3-demo
 

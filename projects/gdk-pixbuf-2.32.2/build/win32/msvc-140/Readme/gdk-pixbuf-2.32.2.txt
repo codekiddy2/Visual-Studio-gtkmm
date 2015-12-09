@@ -46,6 +46,8 @@ relink and if there are linker warnings treaded as errors do following:
 linker > general > threat linker warning as error: NO
 
 now re-link and it should work.
+EDIT @ ABOVE! : x64 build ignores warning with /IGNORE:4197
+
 
 since x86 build test:
 removed macro: echo EXPORTS > $(INTERMEDIATE_DIR)gdk-pixbuf.def && cl /EP -DG_OS_WIN32 -DINCLUDE_VARIABLES -DALL_FILES -DG_GNUC_CONST= -DG_GNUC_NULL_TERMINATED= ..\..\..\gdk-pixbuf\gdk-pixbuf.symbols >> $(INTERMEDIATE_DIR)gdk-pixbuf.def

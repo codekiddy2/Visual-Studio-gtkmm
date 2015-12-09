@@ -151,9 +151,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>freetype</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_HB|x64'">
     <TargetName>freetype</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>freetype</TargetName>
@@ -166,12 +168,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>freetype</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_HB|Win32'">
     <TargetName>freetype</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_HB|x64'">
     <TargetName>freetype</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <Import Project="$(SolutionDir)\freetype.user.props" Condition="exists('$(SolutionDir)\freetype.user.props')" Label="UserProperties" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -218,6 +222,7 @@
     <ClCompile />
     <Link>
       <AdditionalDependencies>zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
     <ClCompile>
       <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -237,6 +242,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>harfbuzz.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -277,6 +283,7 @@
     <Lib />
     <Link>
       <AdditionalDependencies>zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
     <ClCompile>
       <PreprocessorDefinitions>FT_CONFIG_OPTION_SYSTEM_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -295,6 +302,7 @@
     <Lib />
     <Link>
       <AdditionalDependencies>harfbuzz.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -373,7 +373,42 @@
     <Import Project="..\..\..\..\properties\solution_cairo.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
       <Command>$(PreBuildCfgStdDbg)$(GenTmpFeaturesHeader)</Command>
@@ -529,6 +564,9 @@
     <Link />
     <Link />
     <Link />
+    <Link>
+      <ModuleDefinitionFile />
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
@@ -543,6 +581,9 @@ $(GenTmpFeaturesHeader)</Command>
       </PrecompiledHeader>
     </ClCompile>
     <Link />
+    <Link>
+      <ModuleDefinitionFile />
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT|x64'">
     <PreBuildEvent>
@@ -557,6 +598,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>freetype.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT|x64'">
@@ -572,6 +614,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>freetype.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC|x64'">
@@ -587,6 +630,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>fontconfig.lib;freetype.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC|x64'">
@@ -602,6 +646,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>fontconfig.lib;freetype.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GL|x64'">
@@ -617,6 +662,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GL|x64'">
@@ -632,6 +678,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FT_GL|x64'">
@@ -647,6 +694,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;freetype.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FT_GL|x64'">
@@ -662,6 +710,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;freetype.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_FC_GL|x64'">
@@ -677,6 +726,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;fontconfig.lib;freetype.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_FC_GL|x64'">
@@ -692,6 +742,7 @@ $(GenTmpFeaturesHeader)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew32.lib;OpenGL32.lib;fontconfig.lib;freetype.dll.lib;harfbuzz.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

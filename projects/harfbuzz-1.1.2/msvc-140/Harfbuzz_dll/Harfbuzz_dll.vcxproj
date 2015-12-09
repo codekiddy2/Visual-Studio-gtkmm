@@ -143,9 +143,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>harfbuzz</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_ICU|x64'">
     <TargetName>harfbuzz</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>harfbuzz</TargetName>
@@ -155,9 +157,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>harfbuzz</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_ICU|x64'">
     <TargetName>harfbuzz</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>harfbuzz</TargetName>
@@ -174,6 +178,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(DEF_DIR)harfbuzz.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_ICU|x64'">
@@ -185,6 +190,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.dll.lib;usp10.lib;Rpcrt4.lib;icuin.dll.lib;icuio.dll.lib;icule.dll.lib;iculx.dll.lib;icudt.dll.lib;icuuc.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(DEF_DIR)harfbuzz.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -218,6 +224,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.dll.lib;usp10.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(DEF_DIR)harfbuzz.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_ICU|x64'">
@@ -229,6 +236,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;freetype.dll.lib;usp10.lib;Rpcrt4.lib;icuin.dll.lib;icuio.dll.lib;icule.dll.lib;iculx.dll.lib;icudt.dll.lib;icuuc.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>$(DEF_DIR)harfbuzz.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

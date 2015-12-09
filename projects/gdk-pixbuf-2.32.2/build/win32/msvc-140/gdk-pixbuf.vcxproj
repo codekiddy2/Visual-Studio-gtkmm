@@ -150,11 +150,15 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
 if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>$(GenerateGdkPixbufDef)</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -164,11 +168,15 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
     </ClCompile>
     <Link>
       <AdditionalDependencies>Gdiplus.lib;png.dll.lib;zlib.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent>
       <Command>$(DRIVE):
 if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>$(GenerateGdkPixbufDef)</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -208,6 +216,7 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <BuildLog />
     <ResourceCompile />
@@ -215,6 +224,9 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       <Command>$(DRIVE):
 if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>$(GenerateGdkPixbufDef)</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NoGDIP|x64'">
     <ClCompile>
@@ -227,6 +239,7 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
     <Link>
       <AdditionalDependencies>png.dll.lib;zlib.dll.lib;jpeg.dll.lib;jasper.lib;tiff.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/IGNORE:4197 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <BuildLog />
     <ResourceCompile />
@@ -234,6 +247,9 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       <Command>$(DRIVE):
 if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
     </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>$(GenerateGdkPixbufDef)</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoGDIP|Win32'">
     <ClCompile>

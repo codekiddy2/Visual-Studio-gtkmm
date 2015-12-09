@@ -132,6 +132,12 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
     <ClCompile>
       <ExceptionHandling>
@@ -153,6 +159,7 @@
       <Version>
       </Version>
       <AdditionalDependencies>pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -202,6 +209,7 @@
       <Version>
       </Version>
       <AdditionalDependencies>pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>

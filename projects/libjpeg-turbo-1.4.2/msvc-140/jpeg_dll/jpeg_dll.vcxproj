@@ -78,12 +78,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>jpeg</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>jpeg</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>jpeg</TargetName>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>jpeg</TargetName>
@@ -110,6 +112,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile>$(SRC_DIR)win\jpeg62-memsrcdst.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -163,6 +166,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile>$(SRC_DIR)win\jpeg62-memsrcdst.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>

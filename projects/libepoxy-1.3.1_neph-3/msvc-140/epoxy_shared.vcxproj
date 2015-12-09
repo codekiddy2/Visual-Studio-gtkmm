@@ -140,6 +140,18 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">epoxy</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug_WGL|Win32'">epoxy</TargetName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_WGL|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_WGL|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PreprocessorDefinitions>EPOXY_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -161,6 +173,7 @@
       <Version>
       </Version>
       <LinkStatus />
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -186,6 +199,7 @@
       </Version>
       <LinkStatus>
       </LinkStatus>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -260,6 +274,7 @@
       </Version>
       <LinkStatus>
       </LinkStatus>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -284,6 +299,7 @@
       </Version>
       <LinkStatus>
       </LinkStatus>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
