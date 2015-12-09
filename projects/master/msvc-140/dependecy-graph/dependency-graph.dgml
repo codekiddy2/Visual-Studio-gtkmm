@@ -12,7 +12,7 @@
     <Node Id="Editline" Category="Category2" Bounds="92.6533333333332,0,59.1966666666667,25.96" Label="editline" />
     <Node Id="Epoxy" Category="Category2" Bounds="1384.62602324255,447.599241349931,51.6733333333332,25.96" Label="epoxy" UseManualLocation="True" />
     <Node Id="Expat" Category="Category2" Bounds="743.390630443852,1.12474611314209,50,25.96" Label="expat" UseManualLocation="True" />
-    <Node Id="Ffi" Category="Category2" Bounds="946.130715691284,323.902924302753,50,25.9599999999999" Label="ffi" UseManualLocation="True">
+    <Node Id="Ffi" Category="Category2" Bounds="966.130715691284,347.236257636086,50,25.9599999999999" Label="ffi" UseManualLocation="True">
       <Category Ref="Category1" />
     </Node>
     <Node Id="Fontconfig" Category="Category1" Bounds="5.61675672839,223.141916186248,74.7366666666667,25.96" Label="fontconfig" UseManualLocation="True" />
@@ -66,6 +66,7 @@
     <Link Source="Atkmm" Target="Gtkmm" Bounds="74.4448214894283,601.651570191388,350.384131910044,66.1469053034722" />
     <Link Source="Boost" Target="Cairomm" Bounds="147.600225058746,160.326594028302,410.075409654072,401.222171589659" />
     <Link Source="Bzip2" Target="Boost" Bounds="232.251666666667,22.216331315697,305.111456044352,112.724419849614" />
+    <Link Source="Bzip2" Target="Freetype" Bounds="214.642539289457,25.96,130.255444532762,228.757246447705" />
     <Link Source="Bzip2" Target="Pcre" Bounds="136.613564231208,25.96,59.3483704975978,68.2338476501316" />
     <Link Source="Cairo" Target="Cairomm" Bounds="169.611922796885,408.408248643067,495.127928604,159.018442934005" />
     <Link Source="Cairo" Target="Goocanvas" Bounds="694.746950430595,413.359089220453,83.2173223113879,215.725879834334" />
@@ -83,7 +84,7 @@
     <Link Source="Epoxy" Target="Gtk" Bounds="1282.21554792517,473.559241349931,111.595916926842,86.9914974263861" />
     <Link Source="Expat" Target="Fontconfig" Bounds="88.634646417175,21.7562306178011,654.755984026677,200.394210644515" />
     <Link Source="Expat" Target="Libintl" Bounds="779.288769961987,27.0847461131421,145.114876842463,172.836023825975" />
-    <Link Source="Ffi" Target="Glib" Bounds="747.905780036163,274.16069256466,198.224935655121,55.6976769371232" />
+    <Link Source="Ffi" Target="Glib" Bounds="747.74933696837,276.260372657794,218.381400336318,75.3319885340355" />
     <Link Source="Fontconfig" Target="Cairo" Bounds="80.3534233950567,245.612401856,575.66335750414,146.201993978708" />
     <Link Source="Fontconfig" Target="Pango" Bounds="79.8428521003478,247.776056180774,426.493008893829,134.853798967142" />
     <Link Source="Freeglut" Target="Jasper" Bounds="1401.97211293847,28.4715510528564,3.87460347677757,113.008490980321" Label="" LabelBounds="1407.90941536698,77.0643281745739,0,15.96" />
@@ -161,6 +162,7 @@
     <Link Source="Pixbuf" Target="Gtk" Bounds="1086.83248274824,449.324908864331,147.282644823558,111.331905781874" />
     <Link Source="Pixbuf" Target="Gtkmm" Bounds="500.151962784012,446.500454941699,530.532557458878,138.233145927813" />
     <Link Source="Pixman" Target="Cairo" Bounds="690.370182986545,422.355389459774,1.91845320636412,66.8862303862117" />
+    <Link Source="Png" Target="Freetype" Bounds="397.546830823803,279.313165724767,858.510279314177,79.8433065179239" />
     <Link Source="Png" Target="Pixbuf" Bounds="1114.66137949157,370.334976547808,141.395730646406,50.0736036178708" />
     <Link Source="Readline" Target="Libxml2" Bounds="60.0789833068848,25.9042530059814,1010.2812461853,168.59100151062" />
     <Link Source="Readline" Target="Pcre" Bounds="42.5840027499119,25.96,59.5819645176536,68.2448785279641" />

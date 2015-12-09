@@ -15,7 +15,7 @@
     <Node Id="Gtk_stack" Category="Category4" Bounds="-521.825227050781,-376.135358748372,77.0599999999999,25.96" Label="stack_gtk+" UseManualLocation="True" />
     <Node Id="Gtkmm_stack" Category="Category2" Bounds="-521.687569986979,-262.866901045736,89.5233333333333,25.9600000000001" Label="stack_gtkmm" UseManualLocation="True" />
     <Node Id="Project" Category="Category5" Bounds="-504.791912288613,-116.21852583432,57.05,25.96" Label="project" UseManualLocation="True" />
-    <Node Id="Project_gendef" Category="Category2" Bounds="-331.666922125627,-161.454749481229,99.2633333333333,25.96" Label="project_gendef" UseManualLocation="True" />
+    <Node Id="Project_gendef" Category="Category2" Bounds="-331.666922125627,-161.454749481229,90.7133333333333,25.96" Label="project_make" UseManualLocation="True" />
     <Node Id="Project_test" Category="Category2" Bounds="-374.335758463542,-265.852483166504,81.5333333333333,25.96" Label="project_test" UseManualLocation="True" />
     <Node Id="Project_tools" Category="Category2" Bounds="-257.954387566725,-231.640282059344,88.1566666666667,25.96" Label="project_tools" UseManualLocation="True" />
     <Node Id="Root_debug" Category="Category1" Bounds="-807.690808128412,-577.915522449866,83.7633333333333,25.96" Label="base_debug" UseManualLocation="True" />
@@ -44,14 +44,15 @@
     <Link Source="Gtk_stack" Target="Base_utility" Bounds="-444.765227050781,-361.25897064563,253.924826382802,12.4977944392185" />
     <Link Source="Gtk_stack" Target="Base_windows" Bounds="-483.499119133538,-350.175358748372,0.127148338734571,21.5051462213047" />
     <Link Source="Gtkmm_stack" Target="Solution_name" Bounds="-476.878958163601,-236.906901045736,0.0759519066846792,21.0001588627372" />
-    <Link Source="Project_gendef" Target="Solution_name" Bounds="-419.697684708056,-180.613511853102,88.4394304372378,20.6471312267904" />
+    <Link Source="Project_gendef" Target="Project" Bounds="-438.986744100259,-137.6991094459,107.427252712854,25.5826950768544" />
     <Link Source="Project_test" Target="Solution_name" Bounds="-436.878409074436,-239.892483166504,71.786323717096,29.5589465531135" />
-    <Link Source="Project_tools" Target="Solution_name" Bounds="-419.211426540339,-214.512585841465,161.257047979955,15.1740003418364" />
+    <Link Source="Project_tools" Target="Solution_name" Bounds="-419.211426554922,-214.512588811359,161.257038988197,15.1740023095554" />
     <Link Source="Root_debug" Target="Base_stack" Bounds="-724.820874456893,-552.819583542698,181.495634431907,53.649255735414" />
     <Link Source="Root_debug" Target="User_base_stack" Bounds="-723.927474795079,-561.256112246365,165.467872219376,14.5367705216003" />
     <Link Source="Root_release" Target="Base_stack" Bounds="-449.940224790292,-558.436449240845,244.058979932681,61.2521340529577" />
     <Link Source="Root_release" Target="User_base_stack" Bounds="-436.928504518949,-565.66843009415,230.921899444368,19.2275860473327" />
     <Link Source="Solution_name" Target="Project" Bounds="-476.658158877091,-180.946801045736,0.280581986003028,55.7283892812594" />
+    <Link Source="Solution_name" Target="Project_gendef" Bounds="-428.58062252056,-182.434990590319,88.2737421899285,21.0711311869582" />
     <Link Source="User_base_stack" Target="User_debug_32" Bounds="-832.956053037858,-529.667865380377,284.013258379116,64.9152339201898" />
     <Link Source="User_base_stack" Target="User_debug_64" Bounds="-894.635887507368,-537.519066033663,345.141753392784,25.7333592795355" />
     <Link Source="User_base_stack" Target="User_debug_641" Bounds="-445.897467447917,-541.668589292183,375.640681662302,0.252660803313802" />
