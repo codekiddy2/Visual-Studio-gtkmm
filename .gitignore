@@ -95,6 +95,9 @@ $RECYCLE.BIN/
 *.exe
 *.exp
 *.opendb
+*.iobj
+*.ipdb
+
 
 # =====
 # tools
