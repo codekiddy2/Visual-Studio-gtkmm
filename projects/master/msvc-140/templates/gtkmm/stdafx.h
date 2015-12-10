@@ -10,14 +10,9 @@ DW // disable warnings macro (to compile own code with W4 flag)
 #include <sigc++\sigc++.h>
 #include <glibmm\glibmm.h>
 #include <cairomm\cairomm.h>
-// #include <goocanvasmm\goocanvasmm.h>
+#include <goocanvasmm\goocanvasmm.h>
 
-// #include <atkmm\atkmm.h>
-// #include <pangomm\pangomm.h>
-
-// avoiding capitall letters for intellisense
-namespace gtk = Gtk;
-namespace glib = Glib;
-namespace cairo = Cairo;
+#include <atkmm\atkmm.h>
+#include <pangomm\pangomm.h>
 
 EW // enable warnings macro

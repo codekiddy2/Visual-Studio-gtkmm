@@ -11,17 +11,17 @@ m_btn_close("Close")
 	// MainWindow options
 	set_title("MainWindow");
 	set_size_request(450, 300);
-	set_position(gtk::WIN_POS_CENTER);
+	set_position(Gtk::WIN_POS_CENTER);
 	
 	// packing
 	add(m_hbox);
 	m_hbox.pack_end(m_vbox);
-	m_vbox.pack_end(m_btn_box, gtk::PACK_SHRINK);
-	m_btn_box.pack_end(m_btn_close, gtk::PACK_SHRINK);
+	m_vbox.pack_end(m_btn_box, Gtk::PACK_SHRINK);
+	m_btn_box.pack_end(m_btn_close, Gtk::PACK_SHRINK);
 
 	m_btn_box.set_spacing(5);
 	m_btn_box.set_border_width(5);
-	m_btn_box.set_layout(gtk::BUTTONBOX_END);
+	m_btn_box.set_layout(Gtk::BUTTONBOX_END);
 
 	show_all();
 

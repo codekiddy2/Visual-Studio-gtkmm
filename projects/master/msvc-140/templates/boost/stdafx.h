@@ -13,10 +13,4 @@ DW // disable warnings macro (to compile own code with W4 flag)
 #include <boost\smart_ptr.hpp>
 #include <boost\filesystem.hpp>
 
-// shortcuts for boost namespaces
-namespace asio = boost::asio;
-namespace ip = boost::asio::ip;
-namespace posix_time = boost::posix_time;
-namespace filesystem = boost::filesystem;
-
 EW // enable warnings macro

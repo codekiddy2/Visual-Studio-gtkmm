@@ -19,10 +19,10 @@ public:
 
 private:
 	// members
-	gtk::VBox m_vbox;
-	gtk::HBox m_hbox;
-	gtk::Button m_btn_close;
-	gtk::ButtonBox m_btn_box;
+	Gtk::VBox m_vbox;
+	Gtk::HBox m_hbox;
+	Gtk::Button m_btn_close;
+	Gtk::ButtonBox m_btn_box;
 
 	// methods
 	void on_button_close();

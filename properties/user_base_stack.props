@@ -8,7 +8,10 @@
     <BIN_DIR>$(ROOT_DIR)bin\</BIN_DIR>
     <DEBUGGER>path=$(BIN_DIR);%path%</DEBUGGER>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>

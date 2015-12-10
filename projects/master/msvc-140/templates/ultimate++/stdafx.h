@@ -12,13 +12,8 @@ DW // disable warnings macro (to compile own code with W4 flag)
 #include <cairomm\cairomm.h>
 #include <goocanvasmm\goocanvasmm.h>
 
-// #include <atkmm\atkmm.h>
-// #include <pangomm\pangomm.h>
-
-// avoiding capitall letters
-namespace gtk = Gtk;
-namespace glib = Glib;
-namespace cairo = Cairo;
+#include <atkmm\atkmm.h>
+#include <pangomm\pangomm.h>
 
 #include <boost\array.hpp>
 #include <boost\bind.hpp>
@@ -26,12 +21,6 @@ namespace cairo = Cairo;
 #include <boost\date_time.hpp>
 #include <boost\smart_ptr.hpp>
 #include <boost\filesystem.hpp>
-
-// shortcuts for boost namespaces
-namespace asio = boost::asio;
-namespace ip = boost::asio::ip;
-namespace posix_time = boost::posix_time;
-namespace filesystem = boost::filesystem;
 
 #include <cryptopp\hex.h>
 #include <cryptopp\aes.h>
@@ -42,8 +31,5 @@ namespace filesystem = boost::filesystem;
 #include <cryptopp\base64.h>
 #include <cryptopp\pubkey.h>
 #include <cryptopp\filters.h>
-
-// avoiding capitall letters
-namespace cryptopp = CryptoPP;
 
 EW // enable warnings macro

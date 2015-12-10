@@ -15,8 +15,4 @@ DW // disable warnings macro (to compile own code with W4 flag)
 #include <cryptopp\pubkey.h>
 #include <cryptopp\filters.h>
 
-
-// avoiding capitall letters
-namespace cryptopp = CryptoPP;
-
 EW // enable warnings macro

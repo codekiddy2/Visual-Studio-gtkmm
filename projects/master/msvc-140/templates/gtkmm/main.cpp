@@ -4,21 +4,13 @@
 #include "stdafx.h"
 #include "MainWindow.h"
 
-#include <memory>	// for unique_ptr
-#include <cstdlib> // for exit()
 
 int main(int argc, char* argv[])
 {
-	using std::exit;
-	using glib::RefPtr;
-	using std::unique_ptr;
-	using gtk::Window;
-	using std::make_unique;
-	using gtk::Application;
 
-	RefPtr<Application> app = Application::create( argc, argv, "gtkmm.exe" );
+	Glib::RefPtr<Gtk::Application> app = Gtk::Application::create( argc, argv, "gtkmm.exe" );
 
-	unique_ptr<MainWindow> p_window = make_unique<MainWindow>();
+	MainWindow* p_window = new MainWindow;
 
 	if ( p_window )
 	{
@@ -26,6 +18,6 @@ int main(int argc, char* argv[])
 	}
 	else
 	{
-		exit( EXIT_FAILURE );
+		return 1;
 	}
 }
