@@ -87,6 +87,8 @@
       <ImportLibrary>$(LIB_DIR)$(TargetName)$(TargetExt).lib</ImportLibrary>
       <FixedBaseAddress>false</FixedBaseAddress>
       <AdditionalLibraryDirectories>$(LIB_DIR);$(LIB_DIR)tools\;$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
     </Link>
     <Manifest>
       <SuppressStartupBanner>false</SuppressStartupBanner>

@@ -94,8 +94,6 @@
       <AdditionalIncludeDirectories>$(MOD_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <ProgramDatabaseFile>
-      </ProgramDatabaseFile>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>

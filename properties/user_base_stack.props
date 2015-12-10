@@ -28,6 +28,7 @@
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
       <ShowProgress>LinkVerboseSAFESEH</ShowProgress>
       <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
     </Link>
     <Lib />
     <ProjectReference />

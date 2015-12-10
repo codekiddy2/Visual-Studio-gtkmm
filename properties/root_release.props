@@ -48,7 +48,6 @@
     <Link>
       <LinkStatus>
       </LinkStatus>
-      <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
     </Link>
