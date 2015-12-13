@@ -106,7 +106,7 @@ stack_gtk+.props
 >group of warnings ignored with macros
 
 	_CRT_NONSTDC_NO_WARNINGS	The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name
-	_CRT_SECURE_NO_WARNINGS		This function or variable may be unsafe. Consider using safe_version instead
+	_CRT_SECURE_NO_WARNINGS		C4996 This function or variable may be unsafe. Consider using safe_version instead
 	_SCL_SECURE_NO_WARNINGS		Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct.
 	_CRT_OBSOLETE_NO_WARNINGS	This function or variable has been superceded by newer library or operating system functionality. Consider using new_item instead
 	_CRT_SECURE_NO_DEPRECATE

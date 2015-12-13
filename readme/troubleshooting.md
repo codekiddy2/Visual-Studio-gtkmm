@@ -59,8 +59,9 @@
 	7. if project depends on definition file, check their contents (possibly comment out symbol in *.def file)
 	8. check if definition file is missing
 	9. clean solution, then rebuild (GTK+ solution is an example for this issue with broadway libs)
-	9. check macros in source files to see macro conditions.
-	10. copy paste unresolved symbol into google.
+	10. try linking without gendef, or/and additionally provide def file or no def file.
+	11. check macros in source files to see macro conditions.
+	12. copy paste unresolved symbol into google.
 
 
 **4. error: linker can't open input file (ex. somelib.lib)**

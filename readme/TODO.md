@@ -63,6 +63,7 @@
 * describe properties into some readme, their function etc.
 * create "user" properties for end use, to avoid default properties used for compilation.
 * see changelog about properties and consider addings back some flags to debug configurations only.
+* more template projects (ex. GTK+, ICU ..., C++ templates might have unresolved externals if using C libraries because they do not link against C libs.)
 
 
 **DONE - need to check again**
