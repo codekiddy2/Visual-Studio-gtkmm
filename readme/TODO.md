@@ -30,7 +30,7 @@
 	* gstreamer(mm) build
 	* gendef does not work for C code on x64 configurations - temporary fix: x64 configuration either have their own def file or no def file. denef is not used.
 	* gtkmm gendef does not work as expected, def files need to be modified ( possible cause, bad control over def files and gendef)
-	
+	* boost threading does not work.
 
 **LOW PRIORITY TASKS**
 
