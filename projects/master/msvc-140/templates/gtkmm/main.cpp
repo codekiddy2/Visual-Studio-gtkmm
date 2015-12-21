@@ -14,10 +14,8 @@ int main(int argc, char* argv[])
 
 	if ( p_window )
 	{
-		return app->run( *p_window );
+		app->run( *p_window );
+		delete p_window;
 	}
-	else
-	{
-		return 1;
-	}
+	else return 1;
 }

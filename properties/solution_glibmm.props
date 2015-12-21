@@ -11,7 +11,7 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gio;$(SRC_DIR)glib;$(SolutionDir)giomm;$(SolutionDir)glibmm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>SIGCXX_DISABLE_DEPRECATED=1;GLIBMM_DEBUG_REFCOUNTING=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SIGCXX_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>sigc++.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
