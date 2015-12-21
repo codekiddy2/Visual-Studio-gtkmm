@@ -25,6 +25,8 @@
     <AR_M>lib</AR_M>
     <CPP_M>cl -nologo -EP</CPP_M>
     <CXXCPP_M>cl -E</CXXCPP_M>
+    <SOLUTION_DIR>$(SolutionDir)</SOLUTION_DIR>
+    <PROJECT_DIR>$(ProjectDir)</PROJECT_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(INTERMEDIATE_DIR)</IntDir>
@@ -152,9 +154,11 @@
     </BuildMacro>
     <BuildMacro Include="LIB_DIR">
       <Value>$(LIB_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="INCLUDE_DIR">
       <Value>$(INCLUDE_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="INTERMEDIATE_ROOT_DIR">
       <Value>$(INTERMEDIATE_ROOT_DIR)</Value>
@@ -170,6 +174,7 @@
     </BuildMacro>
     <BuildMacro Include="REF_DIR">
       <Value>$(REF_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="PKG_CONFIG_PATH">
       <Value>$(PKG_CONFIG_PATH)</Value>
@@ -191,6 +196,7 @@
     </BuildMacro>
     <BuildMacro Include="MOD_DIR">
       <Value>$(MOD_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="DEBUGGER">
       <Value>$(DEBUGGER)</Value>
@@ -221,6 +227,14 @@
     </BuildMacro>
     <BuildMacro Include="CXXCPP_M">
       <Value>$(CXXCPP_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SOLUTION_DIR">
+      <Value>$(SOLUTION_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="PROJECT_DIR">
+      <Value>$(PROJECT_DIR)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>

@@ -28,6 +28,7 @@
   <ItemGroup>
     <BuildMacro Include="DRIVE">
       <Value>$(DRIVE)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="REPO_DIR">
       <Value>$(REPO_DIR)</Value>

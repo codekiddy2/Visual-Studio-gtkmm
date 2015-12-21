@@ -8,6 +8,8 @@
     <CHK_DIR>if not exist</CHK_DIR>
     <MOVE>move /Y</MOVE>
     <CHK>if not exist</CHK>
+    <RM_H>echo removing headers</RM_H>
+    <RM_LIB>echo removing config header</RM_LIB>
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(ROOT_DIR)</OutDir>
@@ -24,21 +26,33 @@
   <ItemGroup>
     <BuildMacro Include="COPY_CMD">
       <Value>$(COPY_CMD)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="ECHO_HEADERS">
       <Value>$(ECHO_HEADERS)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="ECHO_DOC">
       <Value>$(ECHO_DOC)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="CHK_DIR">
       <Value>$(CHK_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="MOVE">
       <Value>$(MOVE)</Value>
     </BuildMacro>
     <BuildMacro Include="CHK">
       <Value>$(CHK)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RM_H">
+      <Value>$(RM_H)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="RM_LIB">
+      <Value>$(RM_LIB)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

@@ -4,6 +4,8 @@
 #ifndef ATKMMCONFIG_H_INCLUDED
 #define ATKMMCONFIG_H_INCLUDED
 
+//#define ATKMM_DISABLE_DEPRECATED 1
+
 #include <glibmmconfig.h>
 
 /* Major version number of atkmm. */

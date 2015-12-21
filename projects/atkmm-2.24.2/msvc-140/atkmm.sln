@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{04D801
 		atkmm\atkmmconfig.h = atkmm\atkmmconfig.h
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{3E08439C-0B65-4915-A113-BCAA97B5E9EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-atkmm", "test\test-atkmm\test-atkmm.vcxproj", "{F987DF65-5037-4833-96A6-4A856215F221}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -45,8 +49,19 @@ Global
 		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|Win32.Build.0 = Release|Win32
 		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x64.ActiveCfg = Release|x64
 		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x64.Build.0 = Release|x64
+		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|Win32.Build.0 = Debug|Win32
+		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|x64.ActiveCfg = Debug|x64
+		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|x64.Build.0 = Debug|x64
+		{F987DF65-5037-4833-96A6-4A856215F221}.Release|Win32.ActiveCfg = Release|Win32
+		{F987DF65-5037-4833-96A6-4A856215F221}.Release|Win32.Build.0 = Release|Win32
+		{F987DF65-5037-4833-96A6-4A856215F221}.Release|x64.ActiveCfg = Release|x64
+		{F987DF65-5037-4833-96A6-4A856215F221}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F987DF65-5037-4833-96A6-4A856215F221} = {3E08439C-0B65-4915-A113-BCAA97B5E9EA}
 	EndGlobalSection
 EndGlobal

@@ -8,8 +8,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtkmm", "gtkmm.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtkmm3-demo", "gtkmm3-demo.vcxproj", "{5A8BBE25-E8D8-487B-AD2D-690438F09FA1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install.vcxproj", "{2093D218-190E-4194-9421-3BA7CBF33B10}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{67B26596-803C-4F70-A570-1CB1BE5585A0}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
@@ -53,6 +51,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{B950A2
 		gtkmm\gtkmmconfig.h = gtkmm\gtkmmconfig.h
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{2093D218-190E-4194-9421-3BA7CBF33B10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -85,14 +85,6 @@ Global
 		{5A8BBE25-E8D8-487B-AD2D-690438F09FA1}.Release|Win32.Build.0 = Release|Win32
 		{5A8BBE25-E8D8-487B-AD2D-690438F09FA1}.Release|x64.ActiveCfg = Release|x64
 		{5A8BBE25-E8D8-487B-AD2D-690438F09FA1}.Release|x64.Build.0 = Release|x64
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|Win32.ActiveCfg = Debug|Win32
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|Win32.Build.0 = Debug|Win32
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x64.ActiveCfg = Debug|x64
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x64.Build.0 = Debug|x64
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|Win32.ActiveCfg = Release|Win32
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|Win32.Build.0 = Release|Win32
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x64.ActiveCfg = Release|x64
-		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x64.Build.0 = Release|x64
 		{B07AE972-E813-47A6-A8CF-1126629661EC}.Debug|Win32.ActiveCfg = Debug|Win32
 		{B07AE972-E813-47A6-A8CF-1126629661EC}.Debug|Win32.Build.0 = Debug|Win32
 		{B07AE972-E813-47A6-A8CF-1126629661EC}.Debug|x64.ActiveCfg = Debug|x64
@@ -197,6 +189,14 @@ Global
 		{D7C15610-9F97-4C4A-B081-1114AE6DD8B0}.Release|Win32.Build.0 = Release|Win32
 		{D7C15610-9F97-4C4A-B081-1114AE6DD8B0}.Release|x64.ActiveCfg = Release|x64
 		{D7C15610-9F97-4C4A-B081-1114AE6DD8B0}.Release|x64.Build.0 = Release|x64
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|Win32.Build.0 = Debug|Win32
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x64.ActiveCfg = Debug|x64
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Debug|x64.Build.0 = Debug|x64
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|Win32.ActiveCfg = Release|Win32
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|Win32.Build.0 = Release|Win32
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x64.ActiveCfg = Release|x64
+		{2093D218-190E-4194-9421-3BA7CBF33B10}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

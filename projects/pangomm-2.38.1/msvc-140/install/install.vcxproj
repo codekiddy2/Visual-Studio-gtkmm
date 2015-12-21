@@ -28,6 +28,10 @@
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="install.bat" />
+    <None Include="uninstall.bat" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{78916D71-54AB-4C74-9525-2301898FD91D}</ProjectGuid>
     <RootNamespace>install</RootNamespace>
@@ -35,25 +39,25 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
@@ -86,7 +90,34 @@
     <Import Project="..\..\..\..\properties\solution_pangomm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>call install.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>call uninstall.bat
+cd $(ProjectDir)
+call install.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>call uninstall.bat</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>call install.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>call uninstall.bat
+cd $(ProjectDir)
+call install.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>call uninstall.bat</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeBuildCommandLine>call install.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>call uninstall.bat
+cd $(ProjectDir)
+call install.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>call uninstall.bat</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeBuildCommandLine>call install.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>call uninstall.bat
+cd $(ProjectDir)
+call install.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>call uninstall.bat</NMakeCleanCommandLine>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -96,30 +127,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-$(CHK_DIR) pangomm mkdir pangomm
-cd pangomm
-$(ECHO_HEADERS)
-xcopy $(SRC_DIR)pango\*.h $(COPY_CMD)
-$(CHK_DIR) pangomm mkdir pangomm
-cd pangomm
-xcopy $(SRC_DIR)pango\pangomm\*.h$(COPY_CMD)
-$(CHK_DIR) private mkdir private
-cd private
-xcopy $(SRC_DIR)pango\pangomm\private\*.h $(COPY_CMD)
-cd $(LIB_DIR)
-$(CHK_DIR) pangomm\include mkdir pangomm\include
-cd pangomm\include
-xcopy $(SolutionDir)pangomm\pangommconfig.h $(COPY_CMD)
-$(ECHO_DOC)
-cd $(REF_DIR)
-if not exist pangomm\html mkdir pangomm\html
-cd pangomm\html
-xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
-      <Message>Installing pangomm ..</Message>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -130,30 +138,7 @@ xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-$(CHK_DIR) pangomm mkdir pangomm
-cd pangomm
-$(ECHO_HEADERS)
-xcopy $(SRC_DIR)pango\*.h $(COPY_CMD)
-$(CHK_DIR) pangomm mkdir pangomm
-cd pangomm
-xcopy $(SRC_DIR)pango\pangomm\*.h$(COPY_CMD)
-$(CHK_DIR) private mkdir private
-cd private
-xcopy $(SRC_DIR)pango\pangomm\private\*.h $(COPY_CMD)
-cd $(LIB_DIR)
-$(CHK_DIR) pangomm\include mkdir pangomm\include
-cd pangomm\include
-xcopy $(SolutionDir)pangomm\pangommconfig.h $(COPY_CMD)
-$(ECHO_DOC)
-cd $(REF_DIR)
-if not exist pangomm\html mkdir pangomm\html
-cd pangomm\html
-xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
-      <Message>Installing pangomm ..</Message>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -168,30 +153,7 @@ xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-$(CHK_DIR) pangomm mkdir pangomm
-cd pangomm
-$(ECHO_HEADERS)
-xcopy $(SRC_DIR)pango\*.h $(COPY_CMD)
-$(CHK_DIR) pangomm mkdir pangomm
-cd pangomm
-xcopy $(SRC_DIR)pango\pangomm\*.h$(COPY_CMD)
-$(CHK_DIR) private mkdir private
-cd private
-xcopy $(SRC_DIR)pango\pangomm\private\*.h $(COPY_CMD)
-cd $(LIB_DIR)
-$(CHK_DIR) pangomm\include mkdir pangomm\include
-cd pangomm\include
-xcopy $(SolutionDir)pangomm\pangommconfig.h $(COPY_CMD)
-$(ECHO_DOC)
-cd $(REF_DIR)
-if not exist pangomm\html mkdir pangomm\html
-cd pangomm\html
-xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
-      <Message>Installing pangomm ..</Message>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -206,30 +168,7 @@ xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-$(CHK_DIR) pangomm mkdir pangomm
-cd pangomm
-$(ECHO_HEADERS)
-xcopy $(SRC_DIR)pango\*.h $(COPY_CMD)
-$(CHK_DIR) pangomm mkdir pangomm
-cd pangomm
-xcopy $(SRC_DIR)pango\pangomm\*.h$(COPY_CMD)
-$(CHK_DIR) private mkdir private
-cd private
-xcopy $(SRC_DIR)pango\pangomm\private\*.h $(COPY_CMD)
-cd $(LIB_DIR)
-$(CHK_DIR) pangomm\include mkdir pangomm\include
-cd pangomm\include
-xcopy $(SolutionDir)pangomm\pangommconfig.h $(COPY_CMD)
-$(ECHO_DOC)
-cd $(REF_DIR)
-if not exist pangomm\html mkdir pangomm\html
-cd pangomm\html
-xcopy $(SRC_DIR)docs\reference\html\*.* $(COPY_CMD)</Command>
-      <Message>Installing pangomm ..</Message>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

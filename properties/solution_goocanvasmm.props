@@ -12,6 +12,7 @@
       <AdditionalIncludeDirectories>$(SRC_DIR)goocanvas;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4250;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <SmallerTypeCheck>false</SmallerTypeCheck>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
     <Link>
@@ -21,6 +22,7 @@
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
 </Project>

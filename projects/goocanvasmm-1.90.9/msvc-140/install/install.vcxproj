@@ -21,28 +21,29 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9BDE2215-8362-478F-A2F9-2061463DFFAC}</ProjectGuid>
     <RootNamespace>install</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
@@ -75,7 +76,34 @@
     <Import Project="..\..\..\..\properties\solution_goocanvasmm.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>call install.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>call uninstall.bat
+cd $(ProjectDir)
+call install.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>call uninstall.bat</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>call install.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>call uninstall.bat
+cd $(ProjectDir)
+call install.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>call uninstall.bat</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeBuildCommandLine>call install.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>call uninstall.bat
+cd $(ProjectDir)
+call install.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>call uninstall.bat</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeBuildCommandLine>call install.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>call uninstall.bat
+cd $(ProjectDir)
+call install.bat</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>call uninstall.bat</NMakeCleanCommandLine>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -85,30 +113,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-$(CHK_DIR) goocanvasmm\goocanvasmm\private mkdir goocanvasmm\goocanvasmm\private
-cd goocanvasmm\goocanvasmm\private
-$(ECHO_HEADERS)
-xcopy $(SRC_DIR)goocanvas\goocanvasmm\private\*.h $(COPY_CMD)
-cd ..
-xcopy $(SRC_DIR)goocanvas\goocanvasmm\*.h $(COPY_CMD)
-cd ..
-xcopy $(SRC_DIR)goocanvas\goocanvasmm.h $(COPY_CMD)
-cd $(LIB_DIR)
-if not exist goocanvasmm\include mkdir goocanvasmm\include
-cd goocanvasmm\include
-copy $(SRC_DIR)goocanvas\goocanvasmmconfig.h
-cd $(PKG_CONFIG_PATH)
-echo installing pkg-config files ...
-xcopy $(SolutionDir)install\goocanvasmm-$(Configuration)-$(Platform).pc goocanvasmm-2.0.pc $(COPY_CMD)
-cd $(REF_DIR)
-if not exist goocanvasmm\html mkdir goocanvasmm\html
-cd goocanvasmm\html
-echo installing documentation ...
-xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -119,30 +124,7 @@ xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-$(CHK_DIR) goocanvasmm\goocanvasmm\private mkdir goocanvasmm\goocanvasmm\private
-cd goocanvasmm\goocanvasmm\private
-$(ECHO_HEADERS)
-xcopy $(SRC_DIR)goocanvas\goocanvasmm\private\*.h $(COPY_CMD)
-cd ..
-xcopy $(SRC_DIR)goocanvas\goocanvasmm\*.h $(COPY_CMD)
-cd ..
-xcopy $(SRC_DIR)goocanvas\goocanvasmm.h $(COPY_CMD)
-cd $(LIB_DIR)
-if not exist goocanvasmm\include mkdir goocanvasmm\include
-cd goocanvasmm\include
-copy $(SRC_DIR)goocanvas\goocanvasmmconfig.h
-cd $(PKG_CONFIG_PATH)
-echo installing pkg-config files ...
-xcopy $(SolutionDir)install\goocanvasmm-$(Configuration)-$(Platform).pc goocanvasmm-2.0.pc $(COPY_CMD)
-cd $(REF_DIR)
-if not exist goocanvasmm\html mkdir goocanvasmm\html
-cd goocanvasmm\html
-echo installing documentation ...
-xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -153,30 +135,7 @@ xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-$(CHK_DIR) goocanvasmm\goocanvasmm\private mkdir goocanvasmm\goocanvasmm\private
-cd goocanvasmm\goocanvasmm\private
-$(ECHO_HEADERS)
-xcopy $(SRC_DIR)goocanvas\goocanvasmm\private\*.h $(COPY_CMD)
-cd ..
-xcopy $(SRC_DIR)goocanvas\goocanvasmm\*.h $(COPY_CMD)
-cd ..
-xcopy $(SRC_DIR)goocanvas\goocanvasmm.h $(COPY_CMD)
-cd $(LIB_DIR)
-if not exist goocanvasmm\include mkdir goocanvasmm\include
-cd goocanvasmm\include
-copy $(SRC_DIR)goocanvas\goocanvasmmconfig.h
-cd $(PKG_CONFIG_PATH)
-echo installing pkg-config files ...
-xcopy $(SolutionDir)install\goocanvasmm-$(Configuration)-$(Platform).pc goocanvasmm-2.0.pc $(COPY_CMD)
-cd $(REF_DIR)
-if not exist goocanvasmm\html mkdir goocanvasmm\html
-cd goocanvasmm\html
-echo installing documentation ...
-xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -187,30 +146,7 @@ xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PreBuildEvent>
-      <Command>$(DRIVE):
-cd $(INCLUDE_DIR)
-$(CHK_DIR) goocanvasmm\goocanvasmm\private mkdir goocanvasmm\goocanvasmm\private
-cd goocanvasmm\goocanvasmm\private
-$(ECHO_HEADERS)
-xcopy $(SRC_DIR)goocanvas\goocanvasmm\private\*.h $(COPY_CMD)
-cd ..
-xcopy $(SRC_DIR)goocanvas\goocanvasmm\*.h $(COPY_CMD)
-cd ..
-xcopy $(SRC_DIR)goocanvas\goocanvasmm.h $(COPY_CMD)
-cd $(LIB_DIR)
-if not exist goocanvasmm\include mkdir goocanvasmm\include
-cd goocanvasmm\include
-copy $(SRC_DIR)goocanvas\goocanvasmmconfig.h
-cd $(PKG_CONFIG_PATH)
-echo installing pkg-config files ...
-xcopy $(SolutionDir)install\goocanvasmm-$(Configuration)-$(Platform).pc goocanvasmm-2.0.pc $(COPY_CMD)
-cd $(REF_DIR)
-if not exist goocanvasmm\html mkdir goocanvasmm\html
-cd goocanvasmm\html
-echo installing documentation ...
-xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectReference Include="..\goocanvasmm\goocanvasmm.vcxproj">
@@ -223,10 +159,8 @@ xcopy $(SRC_DIR)doc\reference\html\*.* $(COPY_CMD)</Command>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="goocanvasmm-Debug-Win32.pc" />
-    <None Include="goocanvasmm-Debug-x64.pc" />
-    <None Include="goocanvasmm-Release-Win32.pc" />
-    <None Include="goocanvasmm-Release-x64.pc" />
+    <None Include="install.bat" />
+    <None Include="uninstall.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

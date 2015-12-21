@@ -32,9 +32,6 @@
     <ProjectReference Include="..\..\gtkmm.vcxproj">
       <Project>{907b8d15-7e12-4136-a7e6-b6ed5e055d39}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\install.vcxproj">
-      <Project>{2093d218-190e-4194-9421-3ba7cbf33b10}</Project>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectName>child_widget</ProjectName>

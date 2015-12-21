@@ -2,6 +2,8 @@
 #ifndef _GLIBMM_CONFIG_H
 #define _GLIBMM_CONFIG_H
 
+//#define GLIBMM_DISABLE_DEPRECATED 1
+
 #ifdef _WIN32
   /* Win32 compilers have a lot of varation */
 # if defined(_MSC_VER)

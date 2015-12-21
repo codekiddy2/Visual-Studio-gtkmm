@@ -9,6 +9,8 @@
     <ClCompile>
       <AssemblerListingLocation>$(SYMBOLS_DIR)test\asm\$(TargetName).asm</AssemblerListingLocation>
       <XMLDocumentationFileName>$(SYMBOLS_DIR)test\xml\$(TargetName).xml</XMLDocumentationFileName>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <ProgramDatabaseFile>$(SYMBOLS_DIR)test\$(TargetName).pdb</ProgramDatabaseFile>

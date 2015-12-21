@@ -7,16 +7,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="goocanvasmm-Debug-Win32.pc">
+    <None Include="install.bat">
       <Filter>pkg-config Files</Filter>
     </None>
-    <None Include="goocanvasmm-Debug-x64.pc">
-      <Filter>pkg-config Files</Filter>
-    </None>
-    <None Include="goocanvasmm-Release-Win32.pc">
-      <Filter>pkg-config Files</Filter>
-    </None>
-    <None Include="goocanvasmm-Release-x64.pc">
+    <None Include="uninstall.bat">
       <Filter>pkg-config Files</Filter>
     </None>
   </ItemGroup>

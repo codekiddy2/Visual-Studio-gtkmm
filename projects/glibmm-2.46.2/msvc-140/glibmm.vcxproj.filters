@@ -443,6 +443,9 @@
     <ClInclude Include="..\glib\glibmm\wrap_init.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\glib\glibmm\weakref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include=".\glibmm\glibmm.rc">

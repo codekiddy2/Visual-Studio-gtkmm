@@ -2,10 +2,10 @@
 #ifndef _GIOMM_CONFIG_H
 #define _GIOMM_CONFIG_H
 
-#include <glibmmconfig.h>
+//#include <glibmmconfig.h>
 
 /* Define to omit deprecated API from the library. */
-/* #undef GIOMM_DISABLE_DEPRECATED */
+#define GIOMM_DISABLE_DEPRECATED 1
 
 /* Major version number of giomm. */
 #define GIOMM_MAJOR_VERSION 2

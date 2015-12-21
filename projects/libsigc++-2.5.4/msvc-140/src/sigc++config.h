@@ -1,7 +1,7 @@
 /* sigc++config.h.  Generated from sigc++config.h.in by configure.  */
 
 /* Define to omit deprecated API from the library. */
-/* #undef SIGCXX_DISABLE_DEPRECATED */
+//#define SIGCXX_DISABLE_DEPRECATED 1
 
 /* Major version number of sigc++. */
 #define SIGCXX_MAJOR_VERSION 2

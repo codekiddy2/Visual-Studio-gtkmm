@@ -20,6 +20,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{EE7C31
 		pangomm\pangommconfig.h = pangomm\pangommconfig.h
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{5A073E5B-607C-4806-9D38-3405792FCFA1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-layout", "test\test-layout\test-layout.vcxproj", "{F987DF65-5037-4833-96A6-4A856215F221}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -44,8 +48,15 @@ Global
 		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|Win32.Build.0 = Release|Win32
 		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x64.ActiveCfg = Release|x64
 		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x64.Build.0 = Release|x64
+		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|x64.ActiveCfg = Debug|x64
+		{F987DF65-5037-4833-96A6-4A856215F221}.Release|Win32.ActiveCfg = Release|Win32
+		{F987DF65-5037-4833-96A6-4A856215F221}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F987DF65-5037-4833-96A6-4A856215F221} = {5A073E5B-607C-4806-9D38-3405792FCFA1}
 	EndGlobalSection
 EndGlobal

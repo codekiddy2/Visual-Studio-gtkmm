@@ -77,7 +77,7 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;GIOMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PreLinkEvent />
@@ -91,7 +91,7 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;GIOMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PreLinkEvent />
@@ -102,7 +102,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;GIOMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PreLinkEvent />
@@ -117,7 +117,7 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SIZEOF_WCHAR_T=2;GLIBMM_BUILD;GIOMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PreLinkEvent />
@@ -271,6 +271,7 @@
     <ClInclude Include="..\glib\glibmm\varianttype.h" />
     <ClInclude Include="..\glib\glibmm\variant_basictypes.h" />
     <ClInclude Include="..\glib\glibmm\vectorutils.h" />
+    <ClInclude Include="..\glib\glibmm\weakref.h" />
     <ClInclude Include="..\glib\glibmm\wrap.h" />
     <ClInclude Include="..\glib\glibmm\wrap_init.h" />
   </ItemGroup>
