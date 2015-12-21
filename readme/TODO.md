@@ -31,9 +31,12 @@
 	* gendef does not work for C code on x64 configurations - temporary fix: x64 configuration either have their own def file or no def file. denef is not used.
 	* gtkmm gendef does not work as expected, def files need to be modified ( possible cause, bad control over def files and gendef)
 	* boost threading does not work.
+    * Pango::Layout::~Layout() access violation reading location when created with Gtk::Widget::create_pango_layout
 
 **LOW PRIORITY TASKS**
 
+* some test projects depend on depracated API (goocanvasmm) gtkmm should be built with deprecated API's and the manualy define DEPRECATED API's for other projects
+* test project probably do not need DISABLE_DEPRECATED macros, since project level property sheet defines that( edit: removed)
 * configure remaining install projects to install documentation
 * clean cmd line entries
 * create master solution

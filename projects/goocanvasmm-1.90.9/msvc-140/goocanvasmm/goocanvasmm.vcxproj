@@ -231,6 +231,9 @@ copy $(MOD_DIR)config.h /Y</Command>
     <PreBuildEvent>
       <Message>coping configuration headers ...</Message>
     </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|x64'">
     <PreBuildEvent>
@@ -240,11 +243,17 @@ copy $(MOD_DIR)config.h /Y</Command>
     <Link>
       <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;atkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|x64'">
     <PreBuildEvent>
       <Message>coping configuration headers ...</Message>
     </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|x64'">
     <PreBuildEvent>
@@ -253,11 +262,17 @@ copy $(MOD_DIR)config.h /Y</Command>
     <Link>
       <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|Win32'">
     <PreBuildEvent>
       <Message>coping configuration headers ...</Message>
     </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug dll|Win32'">
     <PreBuildEvent>
@@ -266,11 +281,17 @@ copy $(MOD_DIR)config.h /Y</Command>
     <Link>
       <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release static|Win32'">
     <PreBuildEvent>
       <Message>coping configuration headers ...</Message>
     </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
     <PreBuildEvent>
@@ -279,6 +300,9 @@ copy $(MOD_DIR)config.h /Y</Command>
     <Link>
       <AdditionalDependencies>glibmm.dll.lib;gtkmm.dll.lib;goocanvas.lib;gdk-pixbuf.dll.lib;gdkmm.dll.lib;sigc++.dll.lib;cairomm.dll.lib;pangomm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>GIOMM_DISABLE_DEPRECATED=1;GLIBMM_DISABLE_DEPRECATED=1;SIGCXX_DISABLE_DEPRECATED=1;ATKMM_DISABLE_DEPRECATED=1;CAIROMM_DISABLE_DEPRECATED=1;PANGOMM_DISABLE_DEPRECATED=1;GDKMM_DISABLE_DEPRECATED=1;GTKMM_DISABLE_DEPRECATED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\goocanvas\goocanvasmm\bounds.cc" />
