@@ -79,7 +79,6 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>$(ProjectDir);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>PANGOMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
@@ -94,7 +93,6 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>$(ProjectDir);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>PANGOMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
@@ -112,7 +110,6 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>$(ProjectDir);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>PANGOMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
@@ -130,7 +127,6 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>$(ProjectDir);$(SRC_DIR)pango;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>PANGOMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>

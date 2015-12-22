@@ -1,5 +1,5 @@
 
-#include <atkmm.h>
+#include <atkmm/atkmm.h>
 
 class TestClass :
 	public Atk::Implementor

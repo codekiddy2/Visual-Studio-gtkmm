@@ -23,7 +23,6 @@
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build
 	* GTK+ release build x64, debug x32, demo app missing system icons
-	* gtkmm with atkmm support - fails in atk::~implementor - temp fix: no atkmm support
 	* boost debugging symbols
 	* fontconfig
 	* readline - unresolved external symbols
@@ -31,7 +30,13 @@
 	* gendef does not work for C code on x64 configurations - temporary fix: x64 configuration either have their own def file or no def file. denef is not used.
 	* gtkmm gendef does not work as expected, def files need to be modified ( possible cause, bad control over def files and gendef)
 	* boost threading does not work.
+    
+    * SOLVED:
+	* gtkmm with atkmm support - fails in atk::~implementor - temp fix: no atkmm support
     * Pango::Layout::~Layout() access violation reading location when created with Gtk::Widget::create_pango_layout
+    * test compile entry gtkmm stack with /vd2 flag, test dynamic_cast operator afterwards, see: 
+    https://mail.gnome.org/archives/gtkmm-list/2014-September/msg00025.html
+    http://stackoverflow.com/questions/8447799/how-can-i-workaround-this-visual-studio-compiler-bug
 
 **LOW PRIORITY TASKS**
 

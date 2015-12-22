@@ -22,8 +22,8 @@ int main(int argc, char* argv[])
 {
 	Glib::RefPtr<Gtk::Application> app = Gtk::Application::create(argc, argv, "gtkmm.exe");
 
-	TestClass instance;
-	Glib::RefPtr<Pango::Layout> layout2 = instance.layout;
-
-	return app->run(instance);
+	TestClass* instance = new TestClass;
+	app->run(*instance);
+	delete instance;
+	return 0;
 }

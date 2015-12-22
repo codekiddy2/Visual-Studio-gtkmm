@@ -124,7 +124,6 @@
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ModuleDefinitionFile>$(DEF_DIR)gtkmm_release64.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -39,6 +39,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adwaita-icon-theme", "..\..
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hicolor-icon-theme", "..\..\hicolor-icon-theme-0.15\msvc-140\hicolor-icon-theme\hicolor-icon-theme.vcxproj", "{17A81AA1-6CC5-46EA-BE36-2F8FB44C823B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{614B75C5-8FDD-4459-BF1E-11F5FB058D13}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_dynamic_cast", "Test\test_dynamic_cast\test_dynamic_cast.vcxproj", "{49AE2660-D877-43B9-AF8F-393AA38BF36C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +155,16 @@ Global
 		{17A81AA1-6CC5-46EA-BE36-2F8FB44C823B}.Release|Win32.Build.0 = Release|Win32
 		{17A81AA1-6CC5-46EA-BE36-2F8FB44C823B}.Release|x64.ActiveCfg = Release|x64
 		{17A81AA1-6CC5-46EA-BE36-2F8FB44C823B}.Release|x64.Build.0 = Release|x64
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Debug|Win32.Build.0 = Debug|Win32
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Debug|x64.ActiveCfg = Debug|x64
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Debug|x64.Build.0 = Debug|x64
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Release|Any CPU.ActiveCfg = Release|Win32
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Release|Win32.ActiveCfg = Release|Win32
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Release|Win32.Build.0 = Release|Win32
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Release|x64.ActiveCfg = Release|x64
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,5 +176,6 @@ Global
 		{14B219F6-04BA-45FC-A881-B78FF455FCD1} = {F29AF169-1BA6-465D-A10E-51D884BD512E}
 		{7954DF58-9125-433B-9EAE-765C43DF8061} = {F29AF169-1BA6-465D-A10E-51D884BD512E}
 		{F729CC26-0C06-4C13-945F-56BD5A66A4C9} = {F29AF169-1BA6-465D-A10E-51D884BD512E}
+		{49AE2660-D877-43B9-AF8F-393AA38BF36C} = {614B75C5-8FDD-4459-BF1E-11F5FB058D13}
 	EndGlobalSection
 EndGlobal
