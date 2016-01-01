@@ -24,6 +24,9 @@
       <SDLCheck>true</SDLCheck>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <AdditionalOptions>/Zc:strictStrings /Zc:trigraphs %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderFile>pch.hh</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <ImportLibrary />

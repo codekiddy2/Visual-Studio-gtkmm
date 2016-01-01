@@ -27,9 +27,11 @@ struct Derived : public Base
 	int i;
 };
 
-int main()
+int main(int argc, char* argv[])
 {
-	Derived d;
+	Glib::RefPtr<Gtk::Application> app = Gtk::Application::create(argc, argv, "test_dynamic_cast.exe");
+	Derived* d = new Derived;
+	delete d;
 	std::cout << " end arrived: ";
 	std::stringstream* ss = new std::stringstream;
 	delete ss;

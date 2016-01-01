@@ -1,15 +1,15 @@
-// MainWindow.cpp
-// MainWindow class definition
+// Window.cpp
+// Window class definition
 
-#include "stdafx.h"
-#include "MainWindow.h"
+#include "pch.hh"
+#include "Window.hh"
 
 
-MainWindow::MainWindow() :
+Window::Window() :
 m_btn_close("Close")
 {
-	// MainWindow options
-	set_title("MainWindow");
+	// Window options
+	set_title("Window");
 	set_size_request(450, 300);
 	set_position(Gtk::WIN_POS_CENTER);
 	
@@ -26,10 +26,10 @@ m_btn_close("Close")
 	show_all();
 
 	// signals
-	m_btn_close.signal_clicked().connect(sigc::mem_fun(*this, &MainWindow::on_button_close));
+	m_btn_close.signal_clicked().connect(sigc::mem_fun(*this, &Window::on_button_close));
 }
 
-void MainWindow::on_button_close()
+void Window::on_button_close()
 {
 	close();
 }

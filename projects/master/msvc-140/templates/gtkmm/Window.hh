@@ -1,6 +1,6 @@
 #pragma once
-// MainWindow.h
-// MainWindow class interface
+// Window.h
+// Window class interface
 
 #include <gtkmm\hvbox.h>
 #include <gtkmm\window.h>
@@ -8,14 +8,12 @@
 #include <gtkmm\buttonbox.h>
 
 
-class MainWindow final :
+class Window final :
 	public Gtk::Window
 {
 public:
 	// constructors
-	MainWindow();
-	MainWindow(const MainWindow&) = delete;
-	MainWindow& operator=(const MainWindow&) = delete;
+	Window();
 
 private:
 	// members
@@ -26,5 +24,11 @@ private:
 
 	// methods
 	void on_button_close();
+
+	// deleted
+	Window(Window&&) = delete;
+	Window(const Window&) = delete;
+	Window& operator=(Window&&) = delete;
+	Window& operator=(const Window&) = delete;
 };
 

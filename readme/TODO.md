@@ -3,6 +3,7 @@
 
 **HIGH PRIORITY TASKS**
 
+* compile entry stack with /Za /Zc:strictStrings /Zc:trigraphs /Zc:rvalueCast (enable type conversion rules)
 * convert install projects to make file projects, (for clean, build and rebuild, ex. to remove headers)
 * move all solutions into source's root directory
 * rename projects (in windows explorer) so that the name is the same as in solutions
@@ -29,7 +30,6 @@
 	* gstreamer(mm) build
 	* gendef does not work for C code on x64 configurations - temporary fix: x64 configuration either have their own def file or no def file. denef is not used.
 	* gtkmm gendef does not work as expected, def files need to be modified ( possible cause, bad control over def files and gendef)
-	* boost threading does not work.
     
     * SOLVED:
 	* gtkmm with atkmm support - fails in atk::~implementor - temp fix: no atkmm support
@@ -37,6 +37,8 @@
     * test compile entry gtkmm stack with /vd2 flag, test dynamic_cast operator afterwards, see: 
     https://mail.gnome.org/archives/gtkmm-list/2014-September/msg00025.html
     http://stackoverflow.com/questions/8447799/how-can-i-workaround-this-visual-studio-compiler-bug
+    * boost threading does not work. (/Za compiler option must be turned off) see:
+    https://svn.boost.org/trac/boost/ticket/10793
 
 **LOW PRIORITY TASKS**
 
