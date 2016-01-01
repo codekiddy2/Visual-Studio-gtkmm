@@ -8,6 +8,7 @@
       <CompileAs>CompileAsCpp</CompileAs>
       <AdditionalIncludeDirectories>$(INCLUDE_DIR)gtkmm;$(INCLUDE_DIR)sigc++;$(INCLUDE_DIR)goocanvasmm;$(INCLUDE_DIR)glibmm;$(INCLUDE_DIR)pangomm;$(INCLUDE_DIR)cairomm;$(INCLUDE_DIR)atkmm;$(LIB_DIR)sigc++\include;$(LIB_DIR)glibmm\include;$(LIB_DIR)pangomm\include;$(LIB_DIR)giomm\include;$(LIB_DIR)cairomm\include;$(LIB_DIR)atkmm\include;$(LIB_DIR)gdkmm\include;$(LIB_DIR)gtkmm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/vd2 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glib.dll.lib;gobject.dll.lib;gmodule.dll.lib;gio.dll.lib;atk.dll.lib;cairo.dll.lib;pango.dll.lib;pangocairo.dll.lib;gtk.dll.lib;gdk.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>

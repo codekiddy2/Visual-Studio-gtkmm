@@ -3,7 +3,7 @@
 
 **HIGH PRIORITY TASKS**
 
-* compile entry stack with /Za /Zc:strictStrings /Zc:trigraphs /Zc:rvalueCast (enable type conversion rules)
+* compile entry stack with /Zc:strictStrings /Zc:trigraphs /Zc:rvalueCast (enable type conversion rules) (not using /Za, it's buggy, see below 'boost' link)
 * convert install projects to make file projects, (for clean, build and rebuild, ex. to remove headers)
 * move all solutions into source's root directory
 * rename projects (in windows explorer) so that the name is the same as in solutions

@@ -84,6 +84,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
     </Link>
+    <ClCompile />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile />
@@ -110,7 +111,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="pch.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

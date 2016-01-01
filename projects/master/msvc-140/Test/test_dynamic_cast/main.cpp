@@ -1,7 +1,7 @@
 // main.cpp
 // defines application entry point
 
-#include "stdafx.h"
+#include "pch.hh"
 #include <iostream>
 #include <sstream>
 
