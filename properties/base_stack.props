@@ -68,7 +68,7 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalOptions>/Zc:strictStrings /Zc:trigraphs %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:strictStrings %(AdditionalOptions)</AdditionalOptions>
       <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
     </ClCompile>
     <Link>

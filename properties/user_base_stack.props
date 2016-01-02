@@ -21,11 +21,11 @@
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <DisableSpecificWarnings />
       <TreatSpecificWarningsAsErrors />
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <AdditionalOptions>/Zc:strictStrings /Zc:trigraphs %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:strictStrings %(AdditionalOptions)</AdditionalOptions>
       <PrecompiledHeaderFile>pch.hh</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
