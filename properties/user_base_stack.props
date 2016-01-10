@@ -29,12 +29,12 @@
       <PrecompiledHeaderFile>pch.hh</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <ImportLibrary />
       <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
       <ShowProgress>LinkVerboseSAFESEH</ShowProgress>
       <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)$(TargetName)$(TargetExt).lib</ImportLibrary>
     </Link>
     <Lib />
     <ProjectReference />
