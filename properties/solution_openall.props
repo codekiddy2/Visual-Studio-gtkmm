@@ -2,15 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)SDL2-2.0.4\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)openal-soft-openal-soft-1.17.1\</SRC_DIR>
   </PropertyGroup>
   <PropertyGroup>
     <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SRC_DIR)include</AdditionalIncludeDirectories>
-      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>$(SRC_DIR)include;$(MOD_DIR)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LARGEFILE_SOURCE;_LARGE_FILES;restrict=;strcasecmp=_stricmp;strncasecmp=_strnicmp;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4098;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <ModuleDefinitionFile />
