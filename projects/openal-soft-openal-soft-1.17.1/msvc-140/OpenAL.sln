@@ -1,0 +1,79 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenAL32", "OpenAL32.vcxproj", "{BABC362E-CA6A-4E45-9DC5-71217C79CC8E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{90D57FEE-D548-442D-92BC-516F5C19175B} = {90D57FEE-D548-442D-92BC-516F5C19175B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "altonegen", "altonegen.vcxproj", "{BC744A24-A2FE-4886-AF09-8ED3410072ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BABC362E-CA6A-4E45-9DC5-71217C79CC8E} = {BABC362E-CA6A-4E45-9DC5-71217C79CC8E}
+		{90D57FEE-D548-442D-92BC-516F5C19175B} = {90D57FEE-D548-442D-92BC-516F5C19175B}
+		{80AF04C3-B01C-43D7-846D-78266709A49D} = {80AF04C3-B01C-43D7-846D-78266709A49D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bsincgen", "bsincgen.vcxproj", "{2249FBEB-20E4-4C3B-AC42-831F6AA7D45B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common.vcxproj", "{90D57FEE-D548-442D-92BC-516F5C19175B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "makehrtf", "makehrtf.vcxproj", "{1B0A28F0-D3B8-4D98-B0B7-FA830DBCF308}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openal-info", "openal-info.vcxproj", "{116D82F7-1A4C-4D84-9929-AD123B33D36B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BABC362E-CA6A-4E45-9DC5-71217C79CC8E} = {BABC362E-CA6A-4E45-9DC5-71217C79CC8E}
+		{90D57FEE-D548-442D-92BC-516F5C19175B} = {90D57FEE-D548-442D-92BC-516F5C19175B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-common", "test-common.vcxproj", "{80AF04C3-B01C-43D7-846D-78266709A49D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{F1F5AD2B-EBF1-470F-8F5A-60E4998FB3A0}"
+	ProjectSection(SolutionItems) = preProject
+		src\config.h = src\config.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{2298BA1C-42A7-4D00-A30D-88CBF5133E88}"
+	ProjectSection(SolutionItems) = preProject
+		Readme\openAL-1.17.1.txt = Readme\openAL-1.17.1.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BABC362E-CA6A-4E45-9DC5-71217C79CC8E}.Debug|x64.ActiveCfg = Debug|x64
+		{BABC362E-CA6A-4E45-9DC5-71217C79CC8E}.Debug|x64.Build.0 = Debug|x64
+		{BABC362E-CA6A-4E45-9DC5-71217C79CC8E}.Release|x64.ActiveCfg = Release|x64
+		{BABC362E-CA6A-4E45-9DC5-71217C79CC8E}.Release|x64.Build.0 = Release|x64
+		{BC744A24-A2FE-4886-AF09-8ED3410072ED}.Debug|x64.ActiveCfg = Debug|x64
+		{BC744A24-A2FE-4886-AF09-8ED3410072ED}.Debug|x64.Build.0 = Debug|x64
+		{BC744A24-A2FE-4886-AF09-8ED3410072ED}.Release|x64.ActiveCfg = Release|x64
+		{BC744A24-A2FE-4886-AF09-8ED3410072ED}.Release|x64.Build.0 = Release|x64
+		{2249FBEB-20E4-4C3B-AC42-831F6AA7D45B}.Debug|x64.ActiveCfg = Debug|x64
+		{2249FBEB-20E4-4C3B-AC42-831F6AA7D45B}.Debug|x64.Build.0 = Debug|x64
+		{2249FBEB-20E4-4C3B-AC42-831F6AA7D45B}.Release|x64.ActiveCfg = Release|x64
+		{2249FBEB-20E4-4C3B-AC42-831F6AA7D45B}.Release|x64.Build.0 = Release|x64
+		{90D57FEE-D548-442D-92BC-516F5C19175B}.Debug|x64.ActiveCfg = Debug|x64
+		{90D57FEE-D548-442D-92BC-516F5C19175B}.Debug|x64.Build.0 = Debug|x64
+		{90D57FEE-D548-442D-92BC-516F5C19175B}.Release|x64.ActiveCfg = Release|x64
+		{90D57FEE-D548-442D-92BC-516F5C19175B}.Release|x64.Build.0 = Release|x64
+		{1B0A28F0-D3B8-4D98-B0B7-FA830DBCF308}.Debug|x64.ActiveCfg = Debug|x64
+		{1B0A28F0-D3B8-4D98-B0B7-FA830DBCF308}.Debug|x64.Build.0 = Debug|x64
+		{1B0A28F0-D3B8-4D98-B0B7-FA830DBCF308}.Release|x64.ActiveCfg = Release|x64
+		{1B0A28F0-D3B8-4D98-B0B7-FA830DBCF308}.Release|x64.Build.0 = Release|x64
+		{116D82F7-1A4C-4D84-9929-AD123B33D36B}.Debug|x64.ActiveCfg = Debug|x64
+		{116D82F7-1A4C-4D84-9929-AD123B33D36B}.Debug|x64.Build.0 = Debug|x64
+		{116D82F7-1A4C-4D84-9929-AD123B33D36B}.Release|x64.ActiveCfg = Release|x64
+		{116D82F7-1A4C-4D84-9929-AD123B33D36B}.Release|x64.Build.0 = Release|x64
+		{80AF04C3-B01C-43D7-846D-78266709A49D}.Debug|x64.ActiveCfg = Debug|x64
+		{80AF04C3-B01C-43D7-846D-78266709A49D}.Debug|x64.Build.0 = Debug|x64
+		{80AF04C3-B01C-43D7-846D-78266709A49D}.Release|x64.ActiveCfg = Release|x64
+		{80AF04C3-B01C-43D7-846D-78266709A49D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

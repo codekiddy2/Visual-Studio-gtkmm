@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\utils\openal-info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{33CC74D9-EC45-49FD-936F-BFCBB1B165FB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

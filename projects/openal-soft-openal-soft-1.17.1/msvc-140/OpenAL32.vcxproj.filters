@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alAuxEffectSlot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alBuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alEffect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alError.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alExtension.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alFilter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alListener.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alSource.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\alThunk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\OpenAL32\sample_cvt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\ALc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\ALu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\alcConfig.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\alcRing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\bs2b.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\autowah.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\chorus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\compressor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\dedicated.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\distortion.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\echo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\equalizer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\flanger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\modulator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\null.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\effects\reverb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\helpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\bsinc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\hrtf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\panning.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\mixer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\mixer_c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\mixer_sse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\mixer_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\mixer_sse3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\mixer_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\backends\base.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\backends\loopback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\backends\null.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\backends\winmm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\backends\dsound.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\backends\mmdevapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\Alc\backends\wave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{33CC74D9-EC45-49FD-936F-BFCBB1B165FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f28dd625-29f7-47e3-abc5-aef7687dd6d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AL">
+      <UniqueIdentifier>{ffc31d72-74be-4b22-96ca-4f2de4627dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Alc">
+      <UniqueIdentifier>{51c625ef-81d5-4951-a1af-8bb280031879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Alc\backends">
+      <UniqueIdentifier>{33c7420f-7b84-485a-88b6-ae0ec95f6707}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\align.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\bool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\math_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rwlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\static_assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\threads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uintmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AL\al.h">
+      <Filter>Header Files\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AL\alc.h">
+      <Filter>Header Files\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AL\alext.h">
+      <Filter>Header Files\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AL\efx.h">
+      <Filter>Header Files\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AL\efx-creative.h">
+      <Filter>Header Files\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AL\efx-presets.h">
+      <Filter>Header Files\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Alc\backends\base.h">
+      <Filter>Header Files\Alc\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Alc\alstring.h">
+      <Filter>Header Files\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Alc\compat.h">
+      <Filter>Header Files\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Alc\hrtf.h">
+      <Filter>Header Files\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Alc\mixer_defs.h">
+      <Filter>Header Files\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Alc\vector.h">
+      <Filter>Header Files\Alc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
