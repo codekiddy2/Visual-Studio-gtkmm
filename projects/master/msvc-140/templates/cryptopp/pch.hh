@@ -1,9 +1,10 @@
-#pragma once
+#ifndef PCH_HH
+#define PCH_HH
 
 // PCH includes
 // TODO: modify or add more includes here for faster compilation and intellisense according to your needs
 
-DW // disable warnings macro (to compile own code with W4 flag)
+#include <pragma_begin.hh> // disable warnings (to compile own code with W4 flag)
 
 #include <cryptopp\hex.h>
 #include <cryptopp\aes.h>
@@ -15,4 +16,6 @@ DW // disable warnings macro (to compile own code with W4 flag)
 #include <cryptopp\pubkey.h>
 #include <cryptopp\filters.h>
 
-EW // enable warnings macro
+#include <pragma_end.hh> // enable warnings
+
+#endif // !PCH_HH

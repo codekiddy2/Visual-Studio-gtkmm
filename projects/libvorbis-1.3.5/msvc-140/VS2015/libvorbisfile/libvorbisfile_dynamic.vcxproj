@@ -125,6 +125,7 @@
     <Link />
     <Link>
       <AdditionalDependencies>libogg.dll.lib;libvorbis.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>..\..\vorbisfile.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

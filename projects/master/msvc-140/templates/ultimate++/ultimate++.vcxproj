@@ -92,6 +92,8 @@
     <Link />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\config\pragma_begin.hh" />
+    <ClInclude Include="..\..\..\..\..\config\pragma_end.hh" />
     <ClInclude Include="Window.hh" />
     <ClInclude Include="pch.hh" />
   </ItemGroup>
