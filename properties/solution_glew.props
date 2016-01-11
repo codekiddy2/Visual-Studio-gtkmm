@@ -13,6 +13,7 @@
     </ClCompile>
     <Link>
       <ModuleDefinitionFile />
+      <AdditionalOptions />
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
