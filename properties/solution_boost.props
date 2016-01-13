@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)boost_1_59_0\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)boost_1_60_0\</SRC_DIR>
     <STAGE_DIR>$(SRC_DIR)stage\</STAGE_DIR>
     <LAYOUT>system</LAYOUT>
     <THREADING>multi</THREADING>
@@ -30,12 +30,12 @@ SET BZIP2_LIBPATH=$(LIB_DIR)
 SET ZLIB_BINARY=zlib.dll
 SET ZLIB_LIBPATH=$(LIB_DIR)
 SET ZLIB_INCLUDE=$(INCLUDE_DIR)zlib
-SET PATH=$(PYTHON_DIR);$(PYTHON_DIR)Scripts;%PATH%
+SET PATH=$(PYTHON2_DIR);$(PYTHON2_DIR)Scripts;%PATH%
 SET ICU_LINK="icudt.dll.lib icuin.dll.lib icuio.dll.lib icule.dll.lib iculx.dll.lib icuuc.dll.lib"
-$(B2_DIR)b2 --without-mpi debug-symbols=on cflags="/I$(INCLUDE_DIR)iconv /I$(INCLUDE_DIR)icu" linkflags="/DEBUG /PDB:$(SYMBOLS_DIR) /LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
+$(B2_DIR)b2 --without-mpi --debug-symbols=on cflags="/I$(INCLUDE_DIR)iconv /I$(INCLUDE_DIR)icu /D_CRT_SECURE_NO_WARNINGS /wd4348 /wd4251" linkflags="/DEBUG /PDB:$(SYMBOLS_DIR) /LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
-move /Y *.lib $(LIB_DIR)
-move /Y *.dll $(BIN_DIR)
+if exist *.lib move /Y *.lib $(LIB_DIR)
+if exist *.dll move /Y *.dll $(BIN_DIR)
 cd $(SRC_DIR)boost
 if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
 echo Installing headers, please wait...

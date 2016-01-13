@@ -54,6 +54,9 @@
     <Filter Include="Header Files\GG">
       <UniqueIdentifier>{7e48aed2-0a7f-45a6-8c82-c1d7a143dfa7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{f5d331cb-3b40-464d-a64f-74fc4bb324a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\AI\AIInterface.h">
@@ -227,6 +230,9 @@
     <ClInclude Include="..\..\universe\EffectAccounting.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
+    <ClInclude Include="pch.hh">
+      <Filter>PCH</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\client\ClientApp.cpp">
@@ -261,6 +267,9 @@
     </ClCompile>
     <ClCompile Include="..\..\AI\AIInterface.cpp">
       <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>PCH</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

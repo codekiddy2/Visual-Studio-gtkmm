@@ -15,6 +15,9 @@
     <Filter Include="Header Files\parse">
       <UniqueIdentifier>{89466642-7734-480c-ab15-5146bdcc8962}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{3b826ed3-ecd3-4a15-b7ac-db45514d9cee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\parse\AlignmentsParser.cpp">
@@ -164,6 +167,9 @@
     <ClCompile Include="..\..\parse\EffectParser5.cpp">
       <Filter>Source Files\parse</Filter>
     </ClCompile>
+    <ClCompile Include="..\PCH\pch.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\parse\ConditionParser.h">
@@ -213,6 +219,9 @@
     </ClInclude>
     <ClInclude Include="..\..\parse\Tokens.h">
       <Filter>Header Files\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PCH\pch.hh">
+      <Filter>PCH</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

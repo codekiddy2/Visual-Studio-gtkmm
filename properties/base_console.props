@@ -16,6 +16,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
     </Link>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

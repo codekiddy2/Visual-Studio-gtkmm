@@ -30,6 +30,7 @@ select configuration and build.
 NOTES:
 compiler fails building debug configuration, updating pdb files.
 compile Common and Parsers with BOOST_LOG_DYN_LINK to resolve symbols.
+compile Common with NOMINMAX, defined in Windows.h (case std::max -> std:: -> syntax error)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

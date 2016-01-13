@@ -91,6 +91,7 @@
     <ClInclude Include="..\..\GG\GG\Wnd.h" />
     <ClInclude Include="..\..\GG\GG\WndEvent.h" />
     <ClInclude Include="..\..\GG\GG\ZList.h" />
+    <ClInclude Include="pch.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\GG\src\AlignmentFlags.cpp" />
@@ -134,6 +135,9 @@
     <ClCompile Include="..\..\GG\src\Wnd.cpp" />
     <ClCompile Include="..\..\GG\src\WndEvent.cpp" />
     <ClCompile Include="..\..\GG\src\ZList.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2CEC3AB3-36A0-4037-AEC2-DA0435A4DADB}</ProjectGuid>
@@ -279,10 +283,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>GiGi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeaderFile>
-      </PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>
-      </PrecompiledHeaderOutputFile>
       <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>

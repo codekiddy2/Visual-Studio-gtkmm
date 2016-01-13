@@ -54,6 +54,9 @@
     <Filter Include="Header Files\python\server">
       <UniqueIdentifier>{14c6a328-5856-4286-977d-0b6dc165fe97}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{2e5672ce-d1ef-49b2-b0e5-1ac1fb15e223}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\combat\CombatSystem.h">
@@ -224,6 +227,9 @@
     <ClInclude Include="..\..\python\server\PythonServerFramework.h">
       <Filter>Header Files\python\server</Filter>
     </ClInclude>
+    <ClInclude Include="pch.hh">
+      <Filter>PCH</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\network\ServerNetworking.cpp">
@@ -267,6 +273,9 @@
     </ClCompile>
     <ClCompile Include="..\..\python\server\PythonServerFramework.cpp">
       <Filter>Source Files\python\server</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>PCH</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

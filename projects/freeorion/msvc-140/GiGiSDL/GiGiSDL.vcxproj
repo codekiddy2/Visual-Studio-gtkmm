@@ -133,10 +133,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>GiGiSDL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PrecompiledHeaderFile>
-      </PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>
-      </PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <AdditionalDependencies>GiGi.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -251,9 +247,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\GG\GG\SDL\SDLGUI.h" />
+    <ClInclude Include="pch.hh" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\GG\src\SDL\SDLGUI.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GiGi\GiGi.vcxproj">

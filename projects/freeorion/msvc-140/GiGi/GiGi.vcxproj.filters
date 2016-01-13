@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
@@ -23,6 +23,9 @@
     </Filter>
     <Filter Include="Header Files\RichText">
       <UniqueIdentifier>{d4c017e8-2997-4a5c-90e9-83bb0aea86be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{019908e5-9d3d-4477-b544-102d46c999cc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +221,9 @@
     <ClInclude Include="..\..\GG\GG\RichText\RichText.h">
       <Filter>Header Files\RichText</Filter>
     </ClInclude>
+    <ClInclude Include="pch.hh">
+      <Filter>PCH</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\GG\src\dialogs\FileDlg.cpp">
@@ -324,7 +330,7 @@
     </ClCompile>
     <ClCompile Include="..\..\GG\src\GLClientAndServerBuffer.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>  
+    </ClCompile>
     <ClCompile Include="..\..\GG\src\RichText\BlockControl.cpp">
       <Filter>Source Files\RichText</Filter>
     </ClCompile>
@@ -342,6 +348,9 @@
     </ClCompile>
     <ClCompile Include="..\..\GG\src\ScrollPanel.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>PCH</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -55,6 +55,9 @@
     <Filter Include="Header Files\UI\CombatReport">
       <UniqueIdentifier>{039411a6-01bf-4e77-b491-f746f5f7fc1d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{5d51a23d-e41c-4845-97c9-34f34fb5096e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\client\ClientApp.h">
@@ -396,6 +399,9 @@
     <ClInclude Include="..\..\UI\CUILinkTextBlock.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
+    <ClInclude Include="pch.hh">
+      <Filter>PCH</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\FreeOrion.ico">
@@ -597,6 +603,9 @@
     </ClCompile>
     <ClCompile Include="..\..\UI\CUILinkTextBlock.cpp">
       <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>PCH</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
