@@ -1,6 +1,9 @@
 **About Visual-Studio-gtkmm:**
 
-Visual Studio 2015 projects to compile GTK+, GTKMM, ICU, Crypto++, Boost and all it's dependencies.
+Visual Studio 2015 projects to compile GTK+, GTKMM, ICU, Crypto++, Boost, SDL, GLEW, Free Orion and all it's dependencies.
+
+Initial purpose of this repo was to build gtkmm, but now it's used to build much more, in addition to above mentioned
+libraries you will find others too.
 
 More information such as dependency graphs and how to use these projects
 can be found on here on [wiki](https://github.com/codekiddy2/Visual-Studio-gtkmm/wiki)
