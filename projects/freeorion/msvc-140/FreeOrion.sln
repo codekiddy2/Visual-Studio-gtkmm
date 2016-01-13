@@ -41,6 +41,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{3896DF
 		Readme\freeorion.txt = Readme\freeorion.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pragmas", "Pragmas", "{365C2D1D-ED9E-4E99-984C-60214149F713}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Visual-Studio-gtkmm\config\pragma_begin.hh = ..\..\Visual-Studio-gtkmm\config\pragma_begin.hh
+		..\..\Visual-Studio-gtkmm\config\pragma_end.hh = ..\..\Visual-Studio-gtkmm\config\pragma_end.hh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32

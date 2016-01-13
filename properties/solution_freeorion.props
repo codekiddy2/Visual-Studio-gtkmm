@@ -13,19 +13,22 @@
       <AdditionalDependencies>libogg.dll.lib;libvorbisfile.dll.lib;SDL2.dll.lib;openGL32.lib;glew32.dll.lib;glu32.lib;png.dll.lib;zlib.dll.lib;OpenAL32.dll.lib;freetype.dll.lib;boost_atomic.lib;boost_chrono.lib;boost_container.lib;boost_context.lib;boost_coroutine.lib;boost_date_time.lib;boost_filesystem.lib;boost_graph.lib;boost_iostreams.lib;boost_locale.lib;boost_log.lib;boost_log_setup.lib;boost_math_c99.lib;boost_math_c99f.lib;boost_math_c99l.lib;boost_math_tr1.lib;boost_math_tr1f.lib;boost_math_tr1l.lib;boost_prg_exec_monitor.lib;boost_program_options.lib;boost_python.lib;boost_random.lib;boost_regex.lib;boost_serialization.lib;boost_signals.lib;boost_system.lib;boost_thread.lib;boost_timer.lib;boost_unit_test_framework.lib;boost_wave.lib;boost_wserialization.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
       <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(PYTHON2_DIR)libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
     <ClCompile>
       <PreprocessorDefinitions>BOOST_ALL_NO_LIB;BOOST_ALL_DYN_LINK;BOOST_LOG_DYN_LINK;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SRC_DIR)GG;$(INCLUDE_DIR);$(INCLUDE_DIR)freetype;$(INCLUDE_DIR)zlib;$(INCLUDE_DIR)png;$(PYTHON2_DIR)include;$(INCLUDE_DIR)OpenAL;$(REPO_DIR)config</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4275;4251;4244;4267;4348;4503</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4275;4251;4244;4267;4348;4265;4503</DisableSpecificWarnings>
       <WarningLevel>Level3</WarningLevel>
       <TreatSpecificWarningsAsErrors />
       <UndefinePreprocessorDefinitions>DEBUG</UndefinePreprocessorDefinitions>
-      <ForcedIncludeFiles>pch.hh;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles>$(ProjectDir)pch.hh;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile>$(ProjectDir)pch.hh</PrecompiledHeaderFile>
     </ClCompile>
     <Lib>
       <AdditionalOptions />
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>

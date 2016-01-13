@@ -4,6 +4,9 @@
 #ifdef _MSC_VER
 // restore warnings for /W4
 #pragma warning(pop)
+// boost specific
+#pragma warning(default: 4172) // lvl1 returning address of local variable or temporary
+//#pragma warning(default: 4503) // lvl1 'identifier' : decorated name length exceeded, name was truncated
 // re-enable warnings for /W4
 #pragma warning(default: 4996) // lvl3 The compiler encountered a deprecated declaration.
 // re-enable warnings for /Wall

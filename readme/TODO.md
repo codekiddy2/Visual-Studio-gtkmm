@@ -20,7 +20,6 @@
 * consider: smaller type check turn off for entry stack.
 * compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include, and update include dirs
 
-
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build
 	* GTK+ release build x64, debug x32, demo app missing system icons

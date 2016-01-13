@@ -13,6 +13,9 @@
 // disable warnings for /W4
 #pragma warning(disable: 4250) // lvl2 'class1' : inherits 'class2::member' via dominance
 #pragma warning(disable: 4996) // lvl3 The compiler encountered a deprecated declaration.
+// boost specific
+#pragma warning(disable: 4172) // lvl1 returning address of local variable or temporary
+//#pragma warning(disable: 4503) // lvl1 'identifier' : decorated name length exceeded, name was truncated
 // save warnings for /W4
 #pragma warning(push, 0)
 #endif // _MSC_VER

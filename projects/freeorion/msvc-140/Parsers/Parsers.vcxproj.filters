@@ -167,7 +167,7 @@
     <ClCompile Include="..\..\parse\EffectParser5.cpp">
       <Filter>Source Files\parse</Filter>
     </ClCompile>
-    <ClCompile Include="..\PCH\pch.cpp">
+    <ClCompile Include="pch.cpp">
       <Filter>PCH</Filter>
     </ClCompile>
   </ItemGroup>
@@ -220,7 +220,7 @@
     <ClInclude Include="..\..\parse\Tokens.h">
       <Filter>Header Files\parse</Filter>
     </ClInclude>
-    <ClInclude Include="..\PCH\pch.hh">
+    <ClInclude Include="pch.hh">
       <Filter>PCH</Filter>
     </ClInclude>
   </ItemGroup>

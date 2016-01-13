@@ -4,7 +4,6 @@
 // PCH includes
 // TODO: modify or add more includes here for faster compilation and intellisense according to your needs
 
-
 #include <pragma_begin.hh> // disable warnings (to compile own code with W4 flag)
 
 // std headers
@@ -36,7 +35,6 @@
 #include <boost/shared_ptr.hpp>
 #include <boost/utility/enable_if.hpp>
 #include <boost/filesystem/path.hpp>
-#include <boost/cstdint.hpp>
 #include <boost/lexical_cast.hpp>
 #include <boost/mpl/assert.hpp>
 #include <boost/algorithm/string/trim.hpp>

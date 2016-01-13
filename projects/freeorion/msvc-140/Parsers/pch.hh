@@ -28,8 +28,14 @@
 #include <iomanip>
 #include <cctype>
 #include <cassert>
+#include <climits>
+#include <iosfwd>
+#include <iterator>
 
 // boost includes
+#define PHOENIX_LIMIT 11 // it will be defined so in sources
+#define BOOST_RESULT_OF_NUM_ARGS PHOENIX_LIMIT
+
 #include <boost/version.hpp>
 #if BOOST_VERSION == 105600
 #include <boost/serialization/singleton.hpp> // This
@@ -61,6 +67,7 @@
 #include <boost/regex.hpp>
 #include <boost/cast.hpp>
 #include <boost/timer.hpp>
+#include <boost/cstdint.hpp>
 
 #include <boost/shared_ptr.hpp>
 #include <boost/scoped_ptr.hpp>
@@ -77,6 +84,7 @@
 #include <boost/assign/list_of.hpp>
 #include <boost/xpressive/xpressive.hpp>
 #include <boost/graph/graph_concepts.hpp>
+#include <boost/utility/enable_if.hpp>
 
 #include <boost/algorithm/string.hpp>
 #include <boost/algorithm/string/case_conv.hpp>
@@ -144,12 +152,13 @@
 #include <boost/serialization/map.hpp>
 #include <boost/serialization/set.hpp>
 #include <boost/serialization/vector.hpp>
+#include <boost/serialization/binary_object.hpp>
 
 #include <boost/spirit/include/qi.hpp>
 #include <boost/spirit/include/phoenix.hpp>
 #include <boost/spirit/include/lex_lexertl.hpp>
 #include <boost/spirit/include/lex_lexertl_position_token.hpp>
-// ERROR: phoenix redefinition
+// EROR: phoenix redefinition
 //#include <boost/spirit/include/classic.hpp>
 
 #include <boost/statechart/custom_reaction.hpp>
@@ -172,6 +181,10 @@
 #include <boost/type_traits/is_same.hpp>
 #include <boost/type_traits/remove_const.hpp>
 #include <boost/type_traits/remove_pointer.hpp>
+
+// will be defined in sources again
+#undef PHOENIX_LIMIT
+#undef BOOST_RESULT_OF_NUM_ARGS PHOENIX_LIMIT
 
 // GG includes
 #include <GG/Clr.h>
@@ -217,12 +230,26 @@
 #include <GG/ScrollPanel.h>
 #include <GG/utf8/core.h>
 
-// dependencies includes
-#include <GL/gl.h>
-#include <GL/glu.h>
+// OpenAL includes
 #include <AL/al.h>
 #include <AL/alc.h>
+
+// other includes
 #include <vorbis/vorbisfile.h>
+#include <png.h>
+#include <zlib.h>
+#include <ft2build.h>
+#include <python2.7/patchlevel.h>
+
+// GL headers
+#include <GL/glew.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
+
+// SDL2 includes
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_keyboard.h>
+#include <SDL2/SDL_version.h>
 
 #undef WIN32_LEAN_AND_MEAN
 
