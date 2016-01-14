@@ -15,6 +15,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />

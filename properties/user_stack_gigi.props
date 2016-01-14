@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="user_stack_boost.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <SRC_DIR>D:\Github\freeorion\</SRC_DIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>GiGi.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SRC_DIR)msvc-$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SRC_DIR)GG;$(REPO_DIR)config;$(INCLUDE_DIR)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <TreatSpecificWarningsAsErrors />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

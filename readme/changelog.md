@@ -55,6 +55,7 @@ atkmm
 added /safeseh flag to zlib's asm files, x86 builds must now all have /SAFESEH reenabled
 added command to base_dll.props to auto collect symbols and save them into $(SYMBOLS_DIR), also output will be used as a def file for all dll's.
 added /IGNORE:4221 to librarian in base_lib.props (this object does not defeine any previously blah symbols) safe to ignore for all libs.
+added mainCRTStartup to base_windows this could cause problems if WinMain is used instead of main.
 
 **Compiler warnings**
 

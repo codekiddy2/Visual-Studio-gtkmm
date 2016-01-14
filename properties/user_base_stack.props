@@ -36,6 +36,7 @@
       <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)$(TargetName)$(TargetExt).lib</ImportLibrary>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
     <Lib />
     <ProjectReference />
@@ -53,6 +54,7 @@
       <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
       <Verbose>false</Verbose>
       <ErrorReporting>PromptImmediately</ErrorReporting>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
