@@ -21,6 +21,7 @@
 * compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include, and update include dirs
 * define intdir and output dir for user_stack properties, it should be $(Configuration)\$(Platform) instead of $(Platform)\$(Configuration)
 * user base stack set entry point to "not set" ?
+* user properties: disable common language run-time support
 
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build

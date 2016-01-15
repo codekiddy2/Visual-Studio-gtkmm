@@ -80,15 +80,9 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\user_debug_64.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\base_lib.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\user_release_32.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\base_lib.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -279,76 +273,76 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\parse\AlignmentsParser.cpp" />
-    <ClCompile Include="..\..\parse\BuildingsParser.cpp" />
-    <ClCompile Include="..\..\parse\ConditionParser.cpp" />
-    <ClCompile Include="..\..\parse\ConditionParser1.cpp" />
-    <ClCompile Include="..\..\parse\ConditionParser2.cpp" />
-    <ClCompile Include="..\..\parse\ConditionParser3.cpp" />
-    <ClCompile Include="..\..\parse\ConditionParser4.cpp" />
-    <ClCompile Include="..\..\parse\ConditionParser5.cpp" />
-    <ClCompile Include="..\..\parse\ConditionParser6.cpp" />
-    <ClCompile Include="..\..\parse\ConditionParser7.cpp" />
-    <ClCompile Include="..\..\parse\Double.cpp" />
-    <ClCompile Include="..\..\parse\DoubleComplexValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\DoubleValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\EffectParser.cpp" />
-    <ClCompile Include="..\..\parse\EffectParser1.cpp" />
-    <ClCompile Include="..\..\parse\EffectParser2.cpp" />
-    <ClCompile Include="..\..\parse\EffectParser3.cpp" />
-    <ClCompile Include="..\..\parse\EffectParser4.cpp" />
-    <ClCompile Include="..\..\parse\EffectParser5.cpp" />
-    <ClCompile Include="..\..\parse\EmpireStatsParser.cpp" />
-    <ClCompile Include="..\..\parse\EncyclopediaParser.cpp" />
-    <ClCompile Include="..\..\parse\EnumParser.cpp" />
-    <ClCompile Include="..\..\parse\FieldsParser.cpp" />
-    <ClCompile Include="..\..\parse\FleetPlansParser.cpp" />
-    <ClCompile Include="..\..\parse\Int.cpp" />
-    <ClCompile Include="..\..\parse\IntComplexValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\IntValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\ItemsParser.cpp" />
-    <ClCompile Include="..\..\parse\KeymapParser.cpp" />
-    <ClCompile Include="..\..\parse\Label.cpp" />
-    <ClCompile Include="..\..\parse\Lexer.cpp" />
-    <ClCompile Include="..\..\parse\MonsterFleetPlansParser.cpp" />
-    <ClCompile Include="..\..\parse\Parse.cpp" />
-    <ClCompile Include="..\..\parse\PlanetEnvironmentValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\PlanetSizeValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\PlanetTypeValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\ReportParseError.cpp" />
-    <ClCompile Include="..\..\parse\ShipDesignsParser.cpp" />
-    <ClCompile Include="..\..\parse\ShipHullsParser.cpp" />
-    <ClCompile Include="..\..\parse\ShipPartsParser.cpp" />
-    <ClCompile Include="..\..\parse\SpecialsParser.cpp" />
-    <ClCompile Include="..\..\parse\SpeciesParser.cpp" />
-    <ClCompile Include="..\..\parse\StarTypeValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\StringComplexValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\StringValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\TechsParser.cpp" />
-    <ClCompile Include="..\..\parse\Tokens.cpp" />
-    <ClCompile Include="..\..\parse\UniverseObjectTypeValueRefParser.cpp" />
-    <ClCompile Include="..\..\parse\ValueRefParserImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\AlignmentsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\BuildingsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ConditionParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ConditionParser1.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ConditionParser2.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ConditionParser3.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ConditionParser4.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ConditionParser5.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ConditionParser6.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ConditionParser7.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\Double.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\DoubleComplexValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\DoubleValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EffectParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EffectParser1.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EffectParser2.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EffectParser3.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EffectParser4.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EffectParser5.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EmpireStatsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EncyclopediaParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\EnumParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\FieldsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\FleetPlansParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\Int.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\IntComplexValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\IntValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ItemsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\KeymapParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\Label.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\Lexer.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\MonsterFleetPlansParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\Parse.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\PlanetEnvironmentValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\PlanetSizeValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\PlanetTypeValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ReportParseError.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ShipDesignsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ShipHullsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ShipPartsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\SpecialsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\SpeciesParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\StarTypeValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\StringComplexValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\StringValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\TechsParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\Tokens.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\UniverseObjectTypeValueRefParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\parse\ValueRefParserImpl.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\parse\ConditionParser.h" />
-    <ClInclude Include="..\..\parse\ConditionParserImpl.h" />
-    <ClInclude Include="..\..\parse\Double.h" />
-    <ClInclude Include="..\..\parse\EffectParser.h" />
-    <ClInclude Include="..\..\parse\EffectParserImpl.h" />
-    <ClInclude Include="..\..\parse\EnumParser.h" />
-    <ClInclude Include="..\..\parse\Int.h" />
-    <ClInclude Include="..\..\parse\Label.h" />
-    <ClInclude Include="..\..\parse\Lexer.h" />
-    <ClInclude Include="..\..\parse\Parse.h" />
-    <ClInclude Include="..\..\parse\ParseImpl.h" />
-    <ClInclude Include="..\..\parse\ReportParseError.h" />
-    <ClInclude Include="..\..\parse\ShipPartStatsParser.h" />
-    <ClInclude Include="..\..\parse\Tokens.h" />
-    <ClInclude Include="..\..\parse\ValueRefParser.h" />
-    <ClInclude Include="..\..\parse\ValueRefParserImpl.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\ConditionParser.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\ConditionParserImpl.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\Double.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\EffectParser.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\EffectParserImpl.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\EnumParser.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\Int.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\Label.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\Lexer.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\Parse.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\ParseImpl.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\ReportParseError.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\ShipPartStatsParser.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\Tokens.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\ValueRefParser.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\parse\ValueRefParserImpl.h" />
     <ClInclude Include="pch.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

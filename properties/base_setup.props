@@ -3,8 +3,9 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <DRIVE>d</DRIVE>
-    <REPO_DIR>$(DRIVE):\GitHub\Visual-Studio-gtkmm\</REPO_DIR>
-    <INSTALL_DIR>$(DRIVE):\Github\Install\</INSTALL_DIR>
+    <GITHUB_DIR>$(DRIVE):\GitHub\</GITHUB_DIR>
+    <REPO_DIR>$(GITHUB_DIR)Visual-Studio-gtkmm\</REPO_DIR>
+    <INSTALL_DIR>$(GITHUB_DIR)Install\</INSTALL_DIR>
     <PYTHON_DIR>$(INSTALL_DIR)Python35\$(PlatformTarget)\</PYTHON_DIR>
     <PYTHON2_DIR>$(INSTALL_DIR)Python27\$(PlatformTarget)\</PYTHON2_DIR>
     <NASM_DIR>$(INSTALL_DIR)nasm\</NASM_DIR>
@@ -14,7 +15,8 @@
     <BISON_DIR>$(MSYS2_DIR)usr\bin\</BISON_DIR>
     <FLEX_DIR>$(MSYS2_DIR)usr\bin\</FLEX_DIR>
     <DRIVE_M>/d</DRIVE_M>
-    <REPO_DIR_M>$(DRIVE_M)/GitHub/Visual-Studio-gtkmm</REPO_DIR_M>
+    <GITHUB_DIR_M>$(DRIVE_M)/GitHub</GITHUB_DIR_M>
+    <REPO_DIR_M>$(GITHUB_DIR_M)/Visual-Studio-gtkmm</REPO_DIR_M>
     <COMPRESSED_DIR_M>$(REPO_DIR_M)/packages/Compressed</COMPRESSED_DIR_M>
   </PropertyGroup>
   <PropertyGroup />
@@ -30,6 +32,9 @@
     <BuildMacro Include="DRIVE">
       <Value>$(DRIVE)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="GITHUB_DIR">
+      <Value>$(GITHUB_DIR)</Value>
     </BuildMacro>
     <BuildMacro Include="REPO_DIR">
       <Value>$(REPO_DIR)</Value>
@@ -63,6 +68,10 @@
     </BuildMacro>
     <BuildMacro Include="DRIVE_M">
       <Value>$(DRIVE_M)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="GITHUB_DIR_M">
+      <Value>$(GITHUB_DIR_M)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="REPO_DIR_M">

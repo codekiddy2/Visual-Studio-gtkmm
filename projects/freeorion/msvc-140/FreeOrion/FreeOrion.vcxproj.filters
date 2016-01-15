@@ -60,343 +60,343 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\client\ClientApp.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\client\ClientApp.h">
       <Filter>Header Files\client</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\client\ClientFSMEvents.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\client\ClientFSMEvents.h">
       <Filter>Header Files\client</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\client\human\HumanClientFSM.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\client\human\HumanClientFSM.h">
       <Filter>Header Files\client\human</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\client\human\chmain.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\client\human\chmain.h">
       <Filter>Header Files\client\human</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\client\human\HumanClientApp.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\client\human\HumanClientApp.h">
       <Filter>Header Files\client\human</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\EmpireManager.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\EmpireManager.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\ResourcePool.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\ResourcePool.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\Empire.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\Empire.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\Networking.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Networking.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\ClientNetworking.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\ClientNetworking.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\Message.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Message.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\MessageQueue.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\MessageQueue.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\About.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\About.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\AccordionPanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\AccordionPanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\BuildDesignatorWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\BuildDesignatorWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\BuildingsPanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\BuildingsPanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CensusBrowseWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CensusBrowseWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ChatWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ChatWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ClientUI.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ClientUI.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CUIControls.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUIControls.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CUIDrawUtil.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUIDrawUtil.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CUISpin.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUISpin.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CUIStyle.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUIStyle.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CUIWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUIWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\DesignWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\DesignWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\EncyclopediaDetailPanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\EncyclopediaDetailPanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\FleetButton.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\FleetButton.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\FleetWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\FleetWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\GalaxySetupWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\GalaxySetupWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\IconTextBrowseWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\IconTextBrowseWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\InGameMenu.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\InGameMenu.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\IntroScreen.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\IntroScreen.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\LinkText.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\LinkText.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\MapWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MapWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\MarkupBox.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MarkupBox.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\MeterBrowseWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MeterBrowseWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\MilitaryPanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MilitaryPanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\MultiIconValueIndicator.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MultiIconValueIndicator.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\MultiMeterStatusBar.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MultiMeterStatusBar.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\MultiplayerLobbyWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MultiplayerLobbyWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\i18n.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\i18n.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Logger.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Logger.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\OptionsWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\OptionsWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\PopulationPanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\PopulationPanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ProductionWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ProductionWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\QueueListBox.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\QueueListBox.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ResearchWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ResearchWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ResourcePanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ResourcePanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ServerConnectWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ServerConnectWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ShaderProgram.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ShaderProgram.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ShipDesignPanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ShipDesignPanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\SidePanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SidePanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\SitRepPanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SitRepPanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\Sound.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\Sound.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\SpecialsPanel.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SpecialsPanel.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\SystemIcon.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SystemIcon.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\SystemResourceSummaryBrowseWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SystemResourceSummaryBrowseWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\TechTreeWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\TechTreeWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\TextBrowseWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\TextBrowseWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Math.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Math.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\MultiplayerCommon.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\MultiplayerCommon.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OptionsDB.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionsDB.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OptionValidators.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionValidators.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Order.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Order.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OrderSet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OrderSet.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Process.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Process.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Random.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Random.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Serialize.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Serialize.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\SitRepEntry.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\SitRepEntry.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\VarText.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\VarText.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Version.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Version.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\XMLDoc.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\XMLDoc.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\AppInterface.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\AppInterface.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\binreloc.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\binreloc.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Directories.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Directories.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\UniverseObject.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\UniverseObject.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ValueRef.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRef.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Building.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Building.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Condition.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Condition.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Effect.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Effect.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\EffectAccounting.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\EffectAccounting.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Enums.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Enums.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Fleet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Fleet.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\blocking_combiner.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\blocking_combiner.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Meter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Meter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Planet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Planet.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\PopCenter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\PopCenter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Predicates.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Predicates.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ResourceCenter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ResourceCenter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Ship.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Ship.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ShipDesign.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ShipDesign.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Special.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Special.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Species.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Species.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\System.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\System.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Tech.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Tech.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Universe.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Universe.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\PlayerListWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\PlayerListWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ValueRefFwd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRefFwd.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\TechTreeLayout.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\TechTreeLayout.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CUISlider.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUISlider.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ObjectMap.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ObjectMap.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ObjectListWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ObjectListWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\FieldIcon.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\FieldIcon.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Field.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Field.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\ModeratorActionsWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ModeratorActionsWnd.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\GraphControl.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\GraphControl.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\Hotkeys.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\Hotkeys.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\TechTreeArcs.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\TechTreeArcs.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CombatReport\CombatLogWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatLogWnd.h">
       <Filter>Header Files\UI\CombatReport</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CombatReport\CombatReportData.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatReportData.h">
       <Filter>Header Files\UI\CombatReport</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CombatReport\CombatReportWnd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatReportWnd.h">
       <Filter>Header Files\UI\CombatReport</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CombatReport\GraphicalSummary.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CombatReport\GraphicalSummary.h">
       <Filter>Header Files\UI\CombatReport</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\UI\CUILinkTextBlock.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUILinkTextBlock.h">
       <Filter>Header Files\UI</Filter>
     </ClInclude>
     <ClInclude Include="pch.hh">
@@ -404,204 +404,204 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\FreeOrion.ico">
+    <None Include="..\..\..\..\..\freeorion\FreeOrion.ico">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\client\ClientFSMEvents.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\ClientFSMEvents.cpp">
       <Filter>Source Files\client</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\client\ClientApp.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\ClientApp.cpp">
       <Filter>Source Files\client</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\client\human\HumanClientApp.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\human\HumanClientApp.cpp">
       <Filter>Source Files\client\human</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\client\human\chmain.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\human\chmain.cpp">
       <Filter>Source Files\client\human</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\client\human\HumanClientFSM.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\human\HumanClientFSM.cpp">
       <Filter>Source Files\client\human</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\network\ClientNetworking.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\network\ClientNetworking.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ShaderProgram.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ShaderProgram.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\SidePanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SidePanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\SitRepPanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SitRepPanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\Sound.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\Sound.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\SystemIcon.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SystemIcon.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\TechTreeWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\TechTreeWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\About.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\About.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\AccordionPanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\AccordionPanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\BuildDesignatorWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\BuildDesignatorWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\BuildingsPanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\BuildingsPanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CensusBrowseWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CensusBrowseWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ChatWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ChatWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ClientUI.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ClientUI.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CUIControls.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUIControls.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CUIDrawUtil.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUIDrawUtil.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CUIStyle.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUIStyle.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CUIWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUIWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\DesignWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\DesignWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\EncyclopediaDetailPanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\EncyclopediaDetailPanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\FleetButton.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\FleetButton.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\FleetWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\FleetWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\GalaxySetupWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\GalaxySetupWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\IconTextBrowseWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\IconTextBrowseWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\InGameMenu.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\InGameMenu.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\IntroScreen.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\IntroScreen.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\LinkText.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\LinkText.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\MapWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MapWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\MarkupBox.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MarkupBox.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\MeterBrowseWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MeterBrowseWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\MilitaryPanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MilitaryPanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\MultiIconValueIndicator.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MultiIconValueIndicator.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\MultiMeterStatusBar.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MultiMeterStatusBar.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\MultiplayerLobbyWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MultiplayerLobbyWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\OptionsWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\OptionsWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\PopulationPanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\PopulationPanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ProductionWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ProductionWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\QueueListBox.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\QueueListBox.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ResearchWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ResearchWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ResourcePanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ResourcePanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ServerConnectWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ServerConnectWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ShipDesignPanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ShipDesignPanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\SpecialsPanel.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SpecialsPanel.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\SystemResourceSummaryBrowseWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SystemResourceSummaryBrowseWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\PlayerListWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\PlayerListWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\TechTreeLayout.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\TechTreeLayout.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\TextBrowseWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\TextBrowseWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\Process.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Process.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ObjectListWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ObjectListWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\FieldIcon.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\FieldIcon.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\ModeratorActionsWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ModeratorActionsWnd.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\GraphControl.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\GraphControl.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\Hotkeys.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\Hotkeys.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\SaveFileDialog.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SaveFileDialog.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\TechTreeArcs.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\TechTreeArcs.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CombatReport\CombatLogWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatLogWnd.cpp">
       <Filter>Source Files\UI\CombatReport</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CombatReport\CombatReportData.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatReportData.cpp">
       <Filter>Source Files\UI\CombatReport</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CombatReport\CombatReportWnd.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatReportWnd.cpp">
       <Filter>Source Files\UI\CombatReport</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CombatReport\GraphicalSummary.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CombatReport\GraphicalSummary.cpp">
       <Filter>Source Files\UI\CombatReport</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\UI\CUILinkTextBlock.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUILinkTextBlock.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -609,7 +609,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="FreeOrion.rc">
+    <ResourceCompile Include="..\..\..\..\..\freeorion\msvc2013\FreeOrion\freeorion.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

@@ -47,189 +47,189 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\util\Serialize.ipp">
+    <None Include="..\..\..\..\..\freeorion\util\Serialize.ipp">
       <Filter>Source Files\util</Filter>
     </None>
-    <None Include="..\..\cmake\make_versioncpp.py">
+    <None Include="..\..\..\..\..\freeorion\cmake\make_versioncpp.py">
       <Filter>Source Files\cmake</Filter>
     </None>
-    <None Include="..\..\cmake\make_ogre_plugins.py">
+    <None Include="..\..\..\..\..\freeorion\cmake\make_ogre_plugins.py">
       <Filter>Source Files\cmake</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\network\Message.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Message.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\MessageQueue.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\MessageQueue.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\Networking.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Networking.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\Empire.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\Empire.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\EmpireManager.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\EmpireManager.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\ResourcePool.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\ResourcePool.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Building.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Building.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Condition.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Condition.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Effect.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Effect.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\EffectAccounting.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\EffectAccounting.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Encyclopedia.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Encyclopedia.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Enums.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Enums.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Fleet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Fleet.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\blocking_combiner.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\blocking_combiner.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Meter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Meter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ObjectMap.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ObjectMap.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Planet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Planet.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\PopCenter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\PopCenter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Predicates.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Predicates.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ResourceCenter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ResourceCenter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Ship.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Ship.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ShipDesign.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ShipDesign.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Special.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Special.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Species.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Species.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\System.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\System.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Tech.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Tech.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Universe.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Universe.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\UniverseObject.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\UniverseObject.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ValueRef.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRef.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ValueRefFwd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRefFwd.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\AppInterface.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\AppInterface.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Directories.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Directories.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Math.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Math.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\MultiplayerCommon.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\MultiplayerCommon.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\i18n.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\i18n.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Logger.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Logger.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OptionsDB.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionsDB.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OptionValidators.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionValidators.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Order.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Order.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OrderSet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OrderSet.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Process.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Process.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Random.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Random.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Serialize.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Serialize.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\SitRepEntry.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\SitRepEntry.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\VarText.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\VarText.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Version.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Version.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\XMLDoc.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\XMLDoc.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\Diplomacy.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\Diplomacy.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\StringTable.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\StringTable.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Field.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Field.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\ModeratorAction.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\ModeratorAction.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\combat\CombatSystem.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatSystem.h">
       <Filter>Header Files\combat</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\ScopedTimer.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\ScopedTimer.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\TemporaryPtr.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\TemporaryPtr.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\EnableTemporaryFromThis.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\EnableTemporaryFromThis.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\combat\CombatEvent.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatEvent.h">
       <Filter>Header Files\combat</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\combat\CombatEvents.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatEvents.h">
       <Filter>Header Files\combat</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\combat\CombatLogManager.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatLogManager.h">
       <Filter>Header Files\combat</Filter>
     </ClInclude>
     <ClInclude Include="pch.hh">
@@ -237,178 +237,178 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\network\MessageQueue.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\network\MessageQueue.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\network\Networking.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\network\Networking.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\Directories.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Directories.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\Math.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Math.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\MultiplayerCommon.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\MultiplayerCommon.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\i18n.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\i18n.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\Logger.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Logger.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\OptionsDB.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\OptionsDB.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\Order.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Order.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\OrderSet.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\OrderSet.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\Random.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Random.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\SerializeEmpire.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeEmpire.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\SerializeMultiplayerCommon.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeMultiplayerCommon.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\SerializeOrderSet.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeOrderSet.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\SerializeUniverse.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeUniverse.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\AppInterface.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\AppInterface.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\SitRepEntry.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SitRepEntry.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\VarText.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\VarText.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\XMLDoc.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\XMLDoc.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Empire\Empire.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\Empire\Empire.cpp">
       <Filter>Source Files\Empire</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Empire\EmpireManager.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\Empire\EmpireManager.cpp">
       <Filter>Source Files\Empire</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Empire\ResourcePool.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\Empire\ResourcePool.cpp">
       <Filter>Source Files\Empire</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Building.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Building.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\ValueRef.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\ValueRef.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Condition.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Condition.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Effect.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Effect.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\EffectAccounting.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\EffectAccounting.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Encyclopedia.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Encyclopedia.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Enums.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Enums.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Fleet.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Fleet.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Meter.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Meter.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\ObjectMap.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\ObjectMap.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Planet.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Planet.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\PopCenter.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\PopCenter.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Predicates.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Predicates.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\ResourceCenter.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\ResourceCenter.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Ship.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Ship.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\ShipDesign.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\ShipDesign.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Special.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Special.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Species.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Species.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\System.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\System.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Tech.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Tech.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Universe.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Universe.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\UniverseObject.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\UniverseObject.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\StringTable.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\StringTable.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Empire\Diplomacy.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\Empire\Diplomacy.cpp">
       <Filter>Source Files\Empire</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\universe\Field.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Field.cpp">
       <Filter>Source Files\universe</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\ModeratorAction.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\ModeratorAction.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\SerializeModeratorAction.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeModeratorAction.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\combat\CombatLogManager.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\combat\CombatLogManager.cpp">
       <Filter>Source Files\combat</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\Version.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Version.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\ScopedTimer.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\ScopedTimer.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\network\Message.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\network\Message.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\EnumText.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\EnumText.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\SaveGamePreviewUtils.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SaveGamePreviewUtils.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\combat\CombatEvents.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\combat\CombatEvents.cpp">
       <Filter>Source Files\combat</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\combat\CombatEvent.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\combat\CombatEvent.cpp">
       <Filter>Source Files\combat</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\util\DependencyVersions.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\util\DependencyVersions.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -416,7 +416,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\util\Version.cpp.in">
+    <CustomBuild Include="..\..\..\..\..\freeorion\util\Version.cpp.in">
       <Filter>Source Files\util</Filter>
     </CustomBuild>
   </ItemGroup>

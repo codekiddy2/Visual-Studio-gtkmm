@@ -36,7 +36,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -54,8 +54,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'" Label="Configuration">
@@ -77,21 +76,27 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\user_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\user_debug_64.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\base_console.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\solution_freeorion.props" />
+    <Import Project="..\..\..\..\properties\user_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\user_release_32.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\base_console.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\solution_freeorion.props" />
+    <Import Project="..\..\..\..\properties\user_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\user_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_console.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -100,14 +105,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../</OutDir>
@@ -119,73 +120,50 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0501;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>FREEORION_BUILD_HUMAN;FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link />
     <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+      <AdditionalDependencies>Common.lib;Parsers1.lib;Parsers2.lib;Parsers3.lib;GiGi.dll.lib;GiGiSDL.dll.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <PreprocessorDefinitions>FREEORION_BUILD_HUMAN;FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>FREEORION_BUILD_HUMAN;FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
-    <Link>
-      <AdditionalDependencies>Common.lib;GiGi.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
     <Link />
+    <Link />
+    <Link>
+      <AdditionalDependencies>Common.lib;Parsers1.lib;Parsers2.lib;Parsers3.lib;GiGi.dll.lib;GiGiSDL.dll.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>FREEORION_BUILD_HUMAN;FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Common.lib;Parsers.lib;GiGi.dll.lib;GiGiSDL.dll.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Common.lib;Parsers1.lib;Parsers2.lib;Parsers3.lib;GiGi.dll.lib;GiGiSDL.dll.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <LinkStatus>
       </LinkStatus>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <Optimization>Full</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;FREEORION_BUILD_HUMAN;FREEORION_WIN32;_WIN32_WINNT=0x0501;BOOST_ALL_DYN_LINK;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;LOG4CPP_STLPORT_AND_BOOST_BUILD</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../../include/;../../../Boost/include/;../../GG/;../include/;../../../include/AL/</AdditionalIncludeDirectories>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <DisableSpecificWarnings>4396;4251;4275;4099;4800;4091;4146;4244;4351;4503</DisableSpecificWarnings>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <CompileAsManaged>false</CompileAsManaged>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>FREEORION_BUILD_HUMAN;FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>../../../lib/;../../../lib/bullet/;../../../Boost/lib/;../../</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Common.lib;Parsers.lib;GiGi.lib;GiGiSDL.lib;SDL2.lib;opengl32.lib;glu32.lib;libpng16.lib;glew32.lib;OpenAL32.lib;libvorbisfile.lib;Psapi.lib;User32.lib</AdditionalDependencies>
-      <OutputFile>../../FreeOrion.exe</OutputFile>
       <LinkStatus>
       </LinkStatus>
-      <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
-      <IgnoreSpecificDefaultLibraries>LIBCMT; LIBCPMT</IgnoreSpecificDefaultLibraries>
-      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalDependencies>Common.lib;Parsers1.lib;Parsers2.lib;Parsers3.lib;GiGi.dll.lib;GiGiSDL.dll.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">
@@ -261,201 +239,193 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\client\ClientApp.h" />
-    <ClInclude Include="..\..\client\ClientFSMEvents.h" />
-    <ClInclude Include="..\..\client\human\chmain.h" />
-    <ClInclude Include="..\..\client\human\HumanClientApp.h" />
-    <ClInclude Include="..\..\client\human\HumanClientFSM.h" />
-    <ClInclude Include="..\..\Empire\Empire.h" />
-    <ClInclude Include="..\..\Empire\EmpireManager.h" />
-    <ClInclude Include="..\..\Empire\ResourcePool.h" />
-    <ClInclude Include="..\..\network\ClientNetworking.h" />
-    <ClInclude Include="..\..\network\Message.h" />
-    <ClInclude Include="..\..\network\MessageQueue.h" />
-    <ClInclude Include="..\..\network\Networking.h" />
-    <ClInclude Include="..\..\UI\About.h" />
-    <ClInclude Include="..\..\UI\BuildDesignatorWnd.h" />
-    <ClInclude Include="..\..\UI\AccordionPanel.h" />
-    <ClInclude Include="..\..\UI\BuildingsPanel.h" />
-    <ClInclude Include="..\..\UI\CensusBrowseWnd.h" />
-    <ClInclude Include="..\..\UI\ChatWnd.h" />
-    <ClInclude Include="..\..\UI\ClientUI.h" />
-    <ClInclude Include="..\..\UI\CombatReport\CombatLogWnd.h" />
-    <ClInclude Include="..\..\UI\CombatReport\CombatReportData.h" />
-    <ClInclude Include="..\..\UI\CombatReport\CombatReportWnd.h" />
-    <ClInclude Include="..\..\UI\CombatReport\GraphicalSummary.h" />
-    <ClInclude Include="..\..\UI\CUIControls.h" />
-    <ClInclude Include="..\..\UI\CUIDrawUtil.h" />
-    <ClInclude Include="..\..\UI\CUISlider.h" />
-    <ClInclude Include="..\..\UI\CUISpin.h" />
-    <ClInclude Include="..\..\UI\CUIStyle.h" />
-    <ClInclude Include="..\..\UI\CUIWnd.h" />
-    <ClInclude Include="..\..\UI\DesignWnd.h" />
-    <ClInclude Include="..\..\UI\EncyclopediaDetailPanel.h" />
-    <ClInclude Include="..\..\UI\FieldIcon.h" />
-    <ClInclude Include="..\..\UI\FleetButton.h" />
-    <ClInclude Include="..\..\UI\FleetWnd.h" />
-    <ClInclude Include="..\..\UI\GalaxySetupWnd.h" />
-    <ClInclude Include="..\..\UI\GraphControl.h" />
-    <ClInclude Include="..\..\UI\Hotkeys.h" />
-    <ClInclude Include="..\..\UI\IconTextBrowseWnd.h" />
-    <ClInclude Include="..\..\UI\InGameMenu.h" />
-    <ClInclude Include="..\..\UI\IntroScreen.h" />
-    <ClInclude Include="..\..\UI\LinkText.h" />
-    <ClInclude Include="..\..\UI\MapWnd.h" />
-    <ClInclude Include="..\..\UI\MarkupBox.h" />
-    <ClInclude Include="..\..\UI\MeterBrowseWnd.h" />
-    <ClInclude Include="..\..\UI\MilitaryPanel.h" />
-    <ClInclude Include="..\..\UI\ModeratorActionsWnd.h" />
-    <ClInclude Include="..\..\UI\MultiIconValueIndicator.h" />
-    <ClInclude Include="..\..\UI\MultiMeterStatusBar.h" />
-    <ClInclude Include="..\..\UI\MultiplayerLobbyWnd.h" />
-    <ClInclude Include="..\..\UI\ObjectListWnd.h" />
-    <ClInclude Include="..\..\UI\OptionsWnd.h" />
-    <ClInclude Include="..\..\UI\PlayerListWnd.h" />
-    <ClInclude Include="..\..\UI\PopulationPanel.h" />
-    <ClInclude Include="..\..\UI\ProductionWnd.h" />
-    <ClInclude Include="..\..\UI\QueueListBox.h" />
-    <ClInclude Include="..\..\UI\ResearchWnd.h" />
-    <ClInclude Include="..\..\UI\ResourcePanel.h" />
-    <ClInclude Include="..\..\UI\ServerConnectWnd.h" />
-    <ClInclude Include="..\..\UI\ShaderProgram.h" />
-    <ClInclude Include="..\..\UI\ShipDesignPanel.h" />
-    <ClInclude Include="..\..\UI\SidePanel.h" />
-    <ClInclude Include="..\..\UI\SitRepPanel.h" />
-    <ClInclude Include="..\..\UI\Sound.h" />
-    <ClInclude Include="..\..\UI\SpecialsPanel.h" />
-    <ClInclude Include="..\..\UI\SystemIcon.h" />
-    <ClInclude Include="..\..\UI\SystemResourceSummaryBrowseWnd.h" />
-    <ClInclude Include="..\..\UI\TechTreeArcs.h" />
-    <ClInclude Include="..\..\UI\TechTreeLayout.h" />
-    <ClInclude Include="..\..\UI\TechTreeWnd.h" />
-    <ClInclude Include="..\..\UI\TextBrowseWnd.h" />
-    <ClInclude Include="..\..\universe\Building.h" />
-    <ClInclude Include="..\..\universe\Condition.h" />
-    <ClInclude Include="..\..\universe\Effect.h" />
-    <ClInclude Include="..\..\universe\EffectAccounting.h" />
-    <ClInclude Include="..\..\universe\Enums.h" />
-    <ClInclude Include="..\..\universe\Field.h" />
-    <ClInclude Include="..\..\universe\Fleet.h" />
-    <ClInclude Include="..\..\util\blocking_combiner.h" />
-    <ClInclude Include="..\..\universe\Meter.h" />
-    <ClInclude Include="..\..\universe\ObjectMap.h" />
-    <ClInclude Include="..\..\universe\Planet.h" />
-    <ClInclude Include="..\..\universe\PopCenter.h" />
-    <ClInclude Include="..\..\universe\Predicates.h" />
-    <ClInclude Include="..\..\universe\ResourceCenter.h" />
-    <ClInclude Include="..\..\universe\Ship.h" />
-    <ClInclude Include="..\..\universe\ShipDesign.h" />
-    <ClInclude Include="..\..\universe\Special.h" />
-    <ClInclude Include="..\..\universe\Species.h" />
-    <ClInclude Include="..\..\universe\System.h" />
-    <ClInclude Include="..\..\universe\Tech.h" />
-    <ClInclude Include="..\..\universe\Universe.h" />
-    <ClInclude Include="..\..\universe\UniverseObject.h" />
-    <ClInclude Include="..\..\universe\ValueRef.h" />
-    <ClInclude Include="..\..\universe\ValueRefFwd.h" />
-    <ClInclude Include="..\..\util\AppInterface.h" />
-    <ClInclude Include="..\..\util\binreloc.h" />
-    <ClInclude Include="..\..\util\Directories.h" />
-    <ClInclude Include="..\..\util\Math.h" />
-    <ClInclude Include="..\..\util\MultiplayerCommon.h" />
-    <ClInclude Include="..\..\util\i18n.h" />
-    <ClInclude Include="..\..\util\Logger.h" />
-    <ClInclude Include="..\..\util\OptionsDB.h" />
-    <ClInclude Include="..\..\util\OptionValidators.h" />
-    <ClInclude Include="..\..\util\Order.h" />
-    <ClInclude Include="..\..\util\OrderSet.h" />
-    <ClInclude Include="..\..\util\Process.h" />
-    <ClInclude Include="..\..\util\Random.h" />
-    <ClInclude Include="..\..\util\Serialize.h" />
-    <ClInclude Include="..\..\util\SitRepEntry.h" />
-    <ClInclude Include="..\..\util\VarText.h" />
-    <ClInclude Include="..\..\util\Version.h" />
-    <ClInclude Include="..\..\util\XMLDoc.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\client\ClientApp.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\client\ClientFSMEvents.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\client\human\chmain.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\client\human\HumanClientApp.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\client\human\HumanClientFSM.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\Empire.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\EmpireManager.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\ResourcePool.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\network\ClientNetworking.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Message.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\network\MessageQueue.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Networking.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\About.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\BuildDesignatorWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\AccordionPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\BuildingsPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CensusBrowseWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ChatWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ClientUI.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatLogWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatReportData.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatReportWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CombatReport\GraphicalSummary.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUIControls.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUIDrawUtil.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUISlider.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUISpin.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUIStyle.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUIWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\DesignWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\EncyclopediaDetailPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\FieldIcon.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\FleetButton.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\FleetWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\GalaxySetupWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\GraphControl.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\Hotkeys.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\IconTextBrowseWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\InGameMenu.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\IntroScreen.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\LinkText.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MapWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MarkupBox.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MeterBrowseWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MilitaryPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ModeratorActionsWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MultiIconValueIndicator.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MultiMeterStatusBar.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\MultiplayerLobbyWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ObjectListWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\OptionsWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\PlayerListWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\PopulationPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ProductionWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\QueueListBox.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ResearchWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ResourcePanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ServerConnectWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ShaderProgram.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\ShipDesignPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SidePanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SitRepPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\Sound.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SpecialsPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SystemIcon.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\SystemResourceSummaryBrowseWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\TechTreeArcs.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\TechTreeLayout.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\TechTreeWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\TextBrowseWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Building.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Condition.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Effect.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\EffectAccounting.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Enums.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Field.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Fleet.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\blocking_combiner.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Meter.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ObjectMap.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Planet.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\PopCenter.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Predicates.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ResourceCenter.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Ship.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ShipDesign.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Special.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Species.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\System.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Tech.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Universe.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\UniverseObject.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRef.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRefFwd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\AppInterface.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\binreloc.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Directories.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Math.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\MultiplayerCommon.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\i18n.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Logger.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionsDB.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionValidators.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Order.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OrderSet.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Process.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Random.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Serialize.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\SitRepEntry.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\VarText.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Version.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\XMLDoc.h" />
     <ClInclude Include="pch.hh" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\FreeOrion.ico" />
+    <None Include="..\..\..\..\..\freeorion\FreeOrion.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\client\ClientApp.cpp" />
-    <ClCompile Include="..\..\client\ClientFSMEvents.cpp" />
-    <ClCompile Include="..\..\client\human\chmain.cpp" />
-    <ClCompile Include="..\..\client\human\HumanClientApp.cpp" />
-    <ClCompile Include="..\..\client\human\HumanClientFSM.cpp" />
-    <ClCompile Include="..\..\network\ClientNetworking.cpp" />
-    <ClCompile Include="..\..\UI\About.cpp" />
-    <ClCompile Include="..\..\UI\AccordionPanel.cpp" />
-    <ClCompile Include="..\..\UI\BuildDesignatorWnd.cpp" />
-    <ClCompile Include="..\..\UI\BuildingsPanel.cpp" />
-    <ClCompile Include="..\..\UI\CensusBrowseWnd.cpp" />
-    <ClCompile Include="..\..\UI\ChatWnd.cpp" />
-    <ClCompile Include="..\..\UI\ClientUI.cpp" />
-    <ClCompile Include="..\..\UI\CombatReport\CombatLogWnd.cpp" />
-    <ClCompile Include="..\..\UI\CombatReport\CombatReportData.cpp" />
-    <ClCompile Include="..\..\UI\CombatReport\CombatReportWnd.cpp" />
-    <ClCompile Include="..\..\UI\CombatReport\GraphicalSummary.cpp" />
-    <ClCompile Include="..\..\UI\CUIControls.cpp" />
-    <ClCompile Include="..\..\UI\CUIDrawUtil.cpp" />
-    <ClCompile Include="..\..\UI\CUILinkTextBlock.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\client\ClientApp.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\client\ClientFSMEvents.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\client\human\chmain.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\client\human\HumanClientApp.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\client\human\HumanClientFSM.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\network\ClientNetworking.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\About.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\AccordionPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\BuildDesignatorWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\BuildingsPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CensusBrowseWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ChatWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ClientUI.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatLogWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatReportData.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CombatReport\CombatReportWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CombatReport\GraphicalSummary.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUIControls.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUIDrawUtil.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUILinkTextBlock.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClInclude Include="..\..\UI\CUILinkTextBlock.h" />
-    <ClCompile Include="..\..\UI\CUIStyle.cpp" />
-    <ClCompile Include="..\..\UI\CUIWnd.cpp" />
-    <ClCompile Include="..\..\UI\DesignWnd.cpp" />
-    <ClCompile Include="..\..\UI\EncyclopediaDetailPanel.cpp" />
-    <ClCompile Include="..\..\UI\FieldIcon.cpp" />
-    <ClCompile Include="..\..\UI\FleetButton.cpp" />
-    <ClCompile Include="..\..\UI\FleetWnd.cpp" />
-    <ClCompile Include="..\..\UI\GalaxySetupWnd.cpp" />
-    <ClCompile Include="..\..\UI\GraphControl.cpp" />
-    <ClCompile Include="..\..\UI\Hotkeys.cpp" />
-    <ClCompile Include="..\..\UI\IconTextBrowseWnd.cpp" />
-    <ClCompile Include="..\..\UI\InGameMenu.cpp" />
-    <ClCompile Include="..\..\UI\IntroScreen.cpp" />
-    <ClCompile Include="..\..\UI\LinkText.cpp" />
-    <ClCompile Include="..\..\UI\MapWnd.cpp" />
-    <ClCompile Include="..\..\UI\MarkupBox.cpp" />
-    <ClCompile Include="..\..\UI\MeterBrowseWnd.cpp" />
-    <ClCompile Include="..\..\UI\MilitaryPanel.cpp" />
-    <ClCompile Include="..\..\UI\ModeratorActionsWnd.cpp" />
-    <ClCompile Include="..\..\UI\MultiIconValueIndicator.cpp" />
-    <ClCompile Include="..\..\UI\MultiMeterStatusBar.cpp" />
-    <ClCompile Include="..\..\UI\MultiplayerLobbyWnd.cpp" />
-    <ClCompile Include="..\..\UI\ObjectListWnd.cpp" />
-    <ClCompile Include="..\..\UI\OptionsWnd.cpp" />
-    <ClCompile Include="..\..\UI\PlayerListWnd.cpp" />
-    <ClCompile Include="..\..\UI\PopulationPanel.cpp" />
-    <ClCompile Include="..\..\UI\ProductionWnd.cpp" />
-    <ClCompile Include="..\..\UI\QueueListBox.cpp" />
-    <ClCompile Include="..\..\UI\ResearchWnd.cpp" />
-    <ClCompile Include="..\..\UI\ResourcePanel.cpp" />
-    <ClCompile Include="..\..\UI\SaveFileDialog.cpp" />
-    <ClCompile Include="..\..\UI\ServerConnectWnd.cpp" />
-    <ClCompile Include="..\..\UI\ShaderProgram.cpp" />
-    <ClCompile Include="..\..\UI\ShipDesignPanel.cpp" />
-    <ClCompile Include="..\..\UI\SidePanel.cpp" />
-    <ClCompile Include="..\..\UI\SitRepPanel.cpp" />
-    <ClCompile Include="..\..\UI\Sound.cpp" />
-    <ClCompile Include="..\..\UI\SpecialsPanel.cpp" />
-    <ClCompile Include="..\..\UI\SystemIcon.cpp" />
-    <ClCompile Include="..\..\UI\SystemResourceSummaryBrowseWnd.cpp" />
-    <ClCompile Include="..\..\UI\TechTreeArcs.cpp" />
-    <ClCompile Include="..\..\UI\TechTreeLayout.cpp" />
-    <ClCompile Include="..\..\UI\TechTreeWnd.cpp" />
-    <ClCompile Include="..\..\UI\TextBrowseWnd.cpp" />
-    <ClCompile Include="..\..\util\Process.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="FreeOrion.rc">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">IDI_ICON1=101</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IDI_ICON1=101</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">IDI_ICON1=101</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">IDI_ICON1=101</PreprocessorDefinitions>
-    </ResourceCompile>
+    <ClInclude Include="..\..\..\..\..\freeorion\UI\CUILinkTextBlock.h" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUIStyle.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\CUIWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\DesignWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\EncyclopediaDetailPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\FieldIcon.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\FleetButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\FleetWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\GalaxySetupWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\GraphControl.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\Hotkeys.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\IconTextBrowseWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\InGameMenu.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\IntroScreen.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\LinkText.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MapWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MarkupBox.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MeterBrowseWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MilitaryPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ModeratorActionsWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MultiIconValueIndicator.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MultiMeterStatusBar.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\MultiplayerLobbyWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ObjectListWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\OptionsWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\PlayerListWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\PopulationPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ProductionWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\QueueListBox.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ResearchWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ResourcePanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SaveFileDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ServerConnectWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ShaderProgram.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\ShipDesignPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SidePanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SitRepPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\Sound.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SpecialsPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SystemIcon.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\SystemResourceSummaryBrowseWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\TechTreeArcs.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\TechTreeLayout.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\TechTreeWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\UI\TextBrowseWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Process.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">
@@ -476,12 +446,27 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\Parsers\Parsers.vcxproj">
-      <Project>{9925f25c-a72e-42ae-b2e3-6657255bf293}</Project>
+    <ProjectReference Include="..\Parsers1\Parsers1.vcxproj">
+      <Project>{a5908438-f0d1-4c9c-be30-958dcfcdbf9f}</Project>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
+    <ProjectReference Include="..\Parsers2\Parsers2.vcxproj">
+      <Project>{747bb7b6-dc1f-4e63-bb7e-7b2160c485ed}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\Parsers3\Parsers3.vcxproj">
+      <Project>{988c8d64-4e5a-4613-84c0-5b4d73e4582c}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\freeorion\msvc2013\FreeOrion\freeorion.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

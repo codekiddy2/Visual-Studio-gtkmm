@@ -59,175 +59,175 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\AI\AIInterface.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\AI\AIInterface.h">
       <Filter>Header Files\AI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\AI\PythonAI.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\AI\PythonAI.h">
       <Filter>Header Files\AI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\client\ClientApp.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\client\ClientApp.h">
       <Filter>Header Files\client</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\client\ClientFSMEvents.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\client\ClientFSMEvents.h">
       <Filter>Header Files\client</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\client\AI\AIClientApp.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\client\AI\AIClientApp.h">
       <Filter>Header Files\client\AI</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\Empire.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\Empire.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\EmpireManager.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\EmpireManager.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Empire\ResourcePool.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\ResourcePool.h">
       <Filter>Header Files\Empire</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\ClientNetworking.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\ClientNetworking.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\Networking.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Networking.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\Message.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Message.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\network\MessageQueue.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\network\MessageQueue.h">
       <Filter>Header Files\network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Version.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Version.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\XMLDoc.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\XMLDoc.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\AppInterface.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\AppInterface.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\binreloc.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\binreloc.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Directories.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Directories.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Math.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Math.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\MultiplayerCommon.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\MultiplayerCommon.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\i18n.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\i18n.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Logger.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Logger.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OptionsDB.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionsDB.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OptionValidators.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionValidators.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Order.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Order.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\OrderSet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OrderSet.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Process.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Process.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Random.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Random.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\Serialize.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Serialize.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\SitRepEntry.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\SitRepEntry.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\VarText.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\VarText.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\util\blocking_combiner.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\util\blocking_combiner.h">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Fleet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Fleet.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Enums.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Enums.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Effect.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Effect.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Condition.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Condition.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Building.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Building.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ValueRef.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRef.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\UniverseObject.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\UniverseObject.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Universe.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Universe.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Tech.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Tech.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\System.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\System.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Species.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Species.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Special.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Special.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ShipDesign.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ShipDesign.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Ship.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Ship.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ResourceCenter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ResourceCenter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Predicates.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Predicates.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\PopCenter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\PopCenter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Planet.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Planet.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\Meter.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Meter.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\python\PythonSetWrapper.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\python\PythonSetWrapper.h">
       <Filter>Header Files\python</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\python\PythonWrappers.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\python\PythonWrappers.h">
       <Filter>Header Files\python</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\GG\GG\Exception.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Exception.h">
       <Filter>Header Files\GG</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\GG\GG\Clr.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Clr.h">
       <Filter>Header Files\GG</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ValueRefFwd.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRefFwd.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\ObjectMap.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ObjectMap.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\universe\EffectAccounting.h">
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\EffectAccounting.h">
       <Filter>Header Files\universe</Filter>
     </ClInclude>
     <ClInclude Include="pch.hh">
@@ -235,37 +235,37 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\client\ClientApp.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\ClientApp.cpp">
       <Filter>Source Files\client</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\client\ClientFSMEvents.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\ClientFSMEvents.cpp">
       <Filter>Source Files\client</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\network\ClientNetworking.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\network\ClientNetworking.cpp">
       <Filter>Source Files\network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\python\PythonEnumWrapper.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\python\PythonEnumWrapper.cpp">
       <Filter>Source Files\python</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\python\PythonLoggingWrapper.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\python\PythonLoggingWrapper.cpp">
       <Filter>Source Files\python</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\python\PythonUniverseWrapper.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\python\PythonUniverseWrapper.cpp">
       <Filter>Source Files\python</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\python\PythonEmpireWrapper.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\python\PythonEmpireWrapper.cpp">
       <Filter>Source Files\python</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\client\AI\camain.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\AI\camain.cpp">
       <Filter>Source Files\client\AI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\client\AI\AIClientApp.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\client\AI\AIClientApp.cpp">
       <Filter>Source Files\client\AI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\AI\PythonAI.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\AI\PythonAI.cpp">
       <Filter>Source Files\AI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\AI\AIInterface.cpp">
+    <ClCompile Include="..\..\..\..\..\freeorion\AI\AIInterface.cpp">
       <Filter>Source Files\AI</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">

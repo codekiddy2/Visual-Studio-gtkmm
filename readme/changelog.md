@@ -143,3 +143,21 @@ Debugger: Working Directory (relative paths in sources are according to "Working
 Specifies the working directory of the program being debugged,
 relative to the project directory where your EXE is located.
 If you leave this blank, the working directory is the project directory.
+
+Multi process compilation
+
+The compiler calculates the number of processes that it will use to compile the source files.
+That value is the lesser of the number of source files that you specify on the command line,
+and the number of processes that you explicitly or implicitly specify with the /MP option.
+You can explicitly set the maximum number of processes if you provide the processMax argument of the /MP option.
+Or you can use the default, which is equal to the number of effective processors in a computer,
+if you omit the processMax argument.
+
+In addition to above under:
+Tools > Options > Project and solutions > Build and run > maximum number of paralel project builds
+
+Build performance does not increase when you set the Maximum number of parallel project builds property
+to a value greater than the number of CPUs on your computer.
+
+When combining these 2 options, number of CPU's needs to be taken into account.
+ex: paralel build = 1 MP = 4 is optimal for dual core processor (4 logical processors).

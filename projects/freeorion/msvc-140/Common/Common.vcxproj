@@ -54,7 +54,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
@@ -77,21 +76,27 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\user_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\user_debug_64.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\base_lib.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\solution_freeorion.props" />
+    <Import Project="..\..\..\..\properties\user_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\user_release_32.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\base_lib.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\solution_freeorion.props" />
+    <Import Project="..\..\..\..\properties\user_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\user_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_lib.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -125,9 +130,9 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -164,9 +169,9 @@
     </CustomBuildStep>
     <ClCompile />
     <ClCompile>
-      <PreprocessorDefinitions>FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -174,7 +179,7 @@
       <PreprocessorDefinitions>FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalDependencies>
       </AdditionalDependencies>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -197,23 +202,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <Optimization>Full</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FREEORION_WIN32;_DLL;BOOST_ALL_DYN_LINK;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../../include/;../../../Boost/include/;../../GG/;../../;../../../include/freetype/;../../../include/zlib/;../../../include/png/</AdditionalIncludeDirectories>
-      <CompileAsManaged>false</CompileAsManaged>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <WholeProgramOptimization>false</WholeProgramOptimization>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <DisableSpecificWarnings>4275;4244;4251;4351</DisableSpecificWarnings>
       <AdditionalDependencies>
       </AdditionalDependencies>
+      <AdditionalIncludeDirectories>$(SRC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -310,7 +306,7 @@
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="..\..\cmake\make_ogre_plugins.py">
+    <None Include="..\..\..\..\..\freeorion\cmake\make_ogre_plugins.py">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">true</ExcludedFromBuild>
@@ -318,7 +314,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </None>
-    <None Include="..\..\cmake\make_versioncpp.py">
+    <None Include="..\..\..\..\..\freeorion\cmake\make_versioncpp.py">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">true</ExcludedFromBuild>
@@ -326,20 +322,20 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </None>
-    <None Include="..\..\util\Serialize.ipp">
+    <None Include="..\..\..\..\..\freeorion\util\Serialize.ipp">
       <FileType>Document</FileType>
     </None>
-    <CustomBuild Include="..\..\util\Version.cpp.in">
+    <CustomBuild Include="..\..\..\..\..\freeorion\util\Version.cpp.in">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(PYTHON2_DIR)python.exe" "$(SolutionDir)..\cmake\make_versioncpp.py" "$(SolutionDir).." "MSVC 2015 $(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(SolutionDir)..\python.exe" "$(SolutionDir)..\cmake\make_versioncpp.py" "$(SolutionDir).." "MSVC 2013"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">"$(SolutionDir)..\python.exe" "$(SolutionDir)..\cmake\make_versioncpp.py" "$(SolutionDir).." "MSVC 2013"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">"$(SolutionDir)..\python.exe" "$(SolutionDir)..\cmake\make_versioncpp.py" "$(SolutionDir).." "MSVC 2013"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\util\Version.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)util\Version.cpp;%(Outputs)</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\util\Version.cpp;%(Outputs)</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">$(SolutionDir)..\util\Version.cpp;%(Outputs)</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">$(SolutionDir)..\util\Version.cpp;%(Outputs)</Outputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\.git;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR).git;%(AdditionalInputs)</AdditionalInputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\.git;%(AdditionalInputs)</AdditionalInputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">$(SolutionDir)..\.git;%(AdditionalInputs)</AdditionalInputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">$(SolutionDir)..\.git;%(AdditionalInputs)</AdditionalInputs>
@@ -358,125 +354,125 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\combat\CombatEvent.h" />
-    <ClInclude Include="..\..\combat\CombatEvents.h" />
-    <ClInclude Include="..\..\combat\CombatLogManager.h" />
-    <ClInclude Include="..\..\combat\CombatSystem.h" />
-    <ClInclude Include="..\..\Empire\Diplomacy.h" />
-    <ClInclude Include="..\..\Empire\Empire.h" />
-    <ClInclude Include="..\..\Empire\EmpireManager.h" />
-    <ClInclude Include="..\..\Empire\ResourcePool.h" />
-    <ClInclude Include="..\..\network\Message.h" />
-    <ClInclude Include="..\..\network\MessageQueue.h" />
-    <ClInclude Include="..\..\network\Networking.h" />
-    <ClInclude Include="..\..\universe\Building.h" />
-    <ClInclude Include="..\..\universe\Condition.h" />
-    <ClInclude Include="..\..\universe\Effect.h" />
-    <ClInclude Include="..\..\universe\EffectAccounting.h" />
-    <ClInclude Include="..\..\universe\EnableTemporaryFromThis.h" />
-    <ClInclude Include="..\..\universe\Encyclopedia.h" />
-    <ClInclude Include="..\..\universe\Enums.h" />
-    <ClInclude Include="..\..\universe\Field.h" />
-    <ClInclude Include="..\..\universe\Fleet.h" />
-    <ClInclude Include="..\..\util\blocking_combiner.h" />
-    <ClInclude Include="..\..\universe\Meter.h" />
-    <ClInclude Include="..\..\universe\ObjectMap.h" />
-    <ClInclude Include="..\..\universe\Planet.h" />
-    <ClInclude Include="..\..\universe\PopCenter.h" />
-    <ClInclude Include="..\..\universe\Predicates.h" />
-    <ClInclude Include="..\..\universe\ResourceCenter.h" />
-    <ClInclude Include="..\..\universe\Ship.h" />
-    <ClInclude Include="..\..\universe\ShipDesign.h" />
-    <ClInclude Include="..\..\universe\Special.h" />
-    <ClInclude Include="..\..\universe\Species.h" />
-    <ClInclude Include="..\..\universe\System.h" />
-    <ClInclude Include="..\..\universe\Tech.h" />
-    <ClInclude Include="..\..\universe\Universe.h" />
-    <ClInclude Include="..\..\universe\UniverseObject.h" />
-    <ClInclude Include="..\..\universe\TemporaryPtr.h" />
-    <ClInclude Include="..\..\universe\ValueRef.h" />
-    <ClInclude Include="..\..\universe\ValueRefFwd.h" />
-    <ClInclude Include="..\..\util\AppInterface.h" />
-    <ClInclude Include="..\..\util\Directories.h" />
-    <ClInclude Include="..\..\util\Math.h" />
-    <ClInclude Include="..\..\util\ModeratorAction.h" />
-    <ClInclude Include="..\..\util\MultiplayerCommon.h" />
-    <ClInclude Include="..\..\util\i18n.h" />
-    <ClInclude Include="..\..\util\Logger.h" />
-    <ClInclude Include="..\..\util\OptionsDB.h" />
-    <ClInclude Include="..\..\util\OptionValidators.h" />
-    <ClInclude Include="..\..\util\Order.h" />
-    <ClInclude Include="..\..\util\OrderSet.h" />
-    <ClInclude Include="..\..\util\Process.h" />
-    <ClInclude Include="..\..\util\Random.h" />
-    <ClInclude Include="..\..\util\ScopedTimer.h" />
-    <ClInclude Include="..\..\util\Serialize.h" />
-    <ClInclude Include="..\..\util\SitRepEntry.h" />
-    <ClInclude Include="..\..\util\StringTable.h" />
-    <ClInclude Include="..\..\util\VarText.h" />
-    <ClInclude Include="..\..\util\Version.h" />
-    <ClInclude Include="..\..\util\XMLDoc.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatEvent.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatEvents.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatLogManager.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatSystem.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\Diplomacy.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\Empire.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\EmpireManager.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\Empire\ResourcePool.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Message.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\network\MessageQueue.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\network\Networking.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Building.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Condition.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Effect.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\EffectAccounting.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\EnableTemporaryFromThis.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Encyclopedia.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Enums.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Field.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Fleet.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\blocking_combiner.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Meter.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ObjectMap.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Planet.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\PopCenter.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Predicates.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ResourceCenter.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Ship.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ShipDesign.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Special.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Species.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\System.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Tech.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\Universe.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\UniverseObject.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\TemporaryPtr.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRef.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\universe\ValueRefFwd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\AppInterface.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Directories.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Math.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\ModeratorAction.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\MultiplayerCommon.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\i18n.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Logger.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionsDB.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OptionValidators.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Order.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\OrderSet.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Process.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Random.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\ScopedTimer.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Serialize.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\SitRepEntry.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\StringTable.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\VarText.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\Version.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\util\XMLDoc.h" />
     <ClInclude Include="pch.hh" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\combat\CombatEvent.cpp" />
-    <ClCompile Include="..\..\combat\CombatEvents.cpp" />
-    <ClCompile Include="..\..\combat\CombatLogManager.cpp" />
-    <ClCompile Include="..\..\Empire\Diplomacy.cpp" />
-    <ClCompile Include="..\..\Empire\Empire.cpp" />
-    <ClCompile Include="..\..\Empire\EmpireManager.cpp" />
-    <ClCompile Include="..\..\Empire\ResourcePool.cpp" />
-    <ClCompile Include="..\..\network\Message.cpp" />
-    <ClCompile Include="..\..\network\MessageQueue.cpp" />
-    <ClCompile Include="..\..\network\Networking.cpp" />
-    <ClCompile Include="..\..\util\DependencyVersions.cpp" />
-    <ClCompile Include="..\..\util\EnumText.cpp" />
-    <ClCompile Include="..\..\util\SaveGamePreviewUtils.cpp" />
-    <ClCompile Include="..\..\util\ScopedTimer.cpp" />
-    <ClCompile Include="..\..\util\StringTable.cpp" />
-    <ClCompile Include="..\..\universe\Building.cpp" />
-    <ClCompile Include="..\..\universe\Condition.cpp" />
-    <ClCompile Include="..\..\universe\Effect.cpp" />
-    <ClCompile Include="..\..\universe\EffectAccounting.cpp" />
-    <ClCompile Include="..\..\universe\Encyclopedia.cpp" />
-    <ClCompile Include="..\..\universe\Enums.cpp" />
-    <ClCompile Include="..\..\universe\Field.cpp" />
-    <ClCompile Include="..\..\universe\Fleet.cpp" />
-    <ClCompile Include="..\..\universe\Meter.cpp" />
-    <ClCompile Include="..\..\universe\ObjectMap.cpp" />
-    <ClCompile Include="..\..\universe\Planet.cpp" />
-    <ClCompile Include="..\..\universe\PopCenter.cpp" />
-    <ClCompile Include="..\..\universe\Predicates.cpp" />
-    <ClCompile Include="..\..\universe\ResourceCenter.cpp" />
-    <ClCompile Include="..\..\universe\Ship.cpp" />
-    <ClCompile Include="..\..\universe\ShipDesign.cpp" />
-    <ClCompile Include="..\..\universe\Special.cpp" />
-    <ClCompile Include="..\..\universe\Species.cpp" />
-    <ClCompile Include="..\..\universe\System.cpp" />
-    <ClCompile Include="..\..\universe\Tech.cpp" />
-    <ClCompile Include="..\..\universe\Universe.cpp" />
-    <ClCompile Include="..\..\universe\UniverseObject.cpp" />
-    <ClCompile Include="..\..\universe\ValueRef.cpp" />
-    <ClCompile Include="..\..\util\AppInterface.cpp" />
-    <ClCompile Include="..\..\util\Directories.cpp" />
-    <ClCompile Include="..\..\util\Math.cpp" />
-    <ClCompile Include="..\..\util\ModeratorAction.cpp" />
-    <ClCompile Include="..\..\util\MultiplayerCommon.cpp" />
-    <ClCompile Include="..\..\util\i18n.cpp" />
-    <ClCompile Include="..\..\util\Logger.cpp" />
-    <ClCompile Include="..\..\util\OptionsDB.cpp" />
-    <ClCompile Include="..\..\util\Order.cpp" />
-    <ClCompile Include="..\..\util\OrderSet.cpp" />
-    <ClCompile Include="..\..\util\Random.cpp" />
-    <ClCompile Include="..\..\util\SerializeEmpire.cpp" />
-    <ClCompile Include="..\..\util\SerializeModeratorAction.cpp" />
-    <ClCompile Include="..\..\util\SerializeMultiplayerCommon.cpp" />
-    <ClCompile Include="..\..\util\SerializeOrderSet.cpp" />
-    <ClCompile Include="..\..\util\SerializeUniverse.cpp" />
-    <ClCompile Include="..\..\util\SitRepEntry.cpp" />
-    <ClCompile Include="..\..\util\XMLDoc.cpp" />
-    <ClCompile Include="..\..\util\VarText.cpp" />
-    <ClCompile Include="..\..\util\Version.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\combat\CombatEvent.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\combat\CombatEvents.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\combat\CombatLogManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\Empire\Diplomacy.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\Empire\Empire.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\Empire\EmpireManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\Empire\ResourcePool.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\network\Message.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\network\MessageQueue.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\network\Networking.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\DependencyVersions.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\EnumText.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SaveGamePreviewUtils.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\ScopedTimer.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\StringTable.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Building.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Condition.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Effect.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\EffectAccounting.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Encyclopedia.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Enums.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Field.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Fleet.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Meter.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\ObjectMap.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Planet.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\PopCenter.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Predicates.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\ResourceCenter.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Ship.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\ShipDesign.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Special.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Species.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\System.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Tech.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\Universe.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\UniverseObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\universe\ValueRef.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\AppInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Directories.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Math.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\ModeratorAction.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\MultiplayerCommon.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\i18n.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Logger.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\OptionsDB.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Order.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\OrderSet.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Random.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeEmpire.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeModeratorAction.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeMultiplayerCommon.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeOrderSet.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SerializeUniverse.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\SitRepEntry.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\XMLDoc.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\VarText.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\util\Version.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>

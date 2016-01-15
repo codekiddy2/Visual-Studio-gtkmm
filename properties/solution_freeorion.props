@@ -2,7 +2,8 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>D:\Github\freeorion\</SRC_DIR>
+    <SRC_DIR>$(GITHUB_DIR)freeorion\</SRC_DIR>
+    <SRC_DIR_FOR_PYTHON>$(GITHUB_DIR)freeorion</SRC_DIR_FOR_PYTHON>
   </PropertyGroup>
   <PropertyGroup>
     <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
@@ -34,6 +35,10 @@
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
       <Value>$(SRC_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="SRC_DIR_FOR_PYTHON">
+      <Value>$(SRC_DIR_FOR_PYTHON)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

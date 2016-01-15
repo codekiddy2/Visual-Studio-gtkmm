@@ -1,6 +1,6 @@
 INFO:
-solution version = 1.0.0
-solution directory = D:\Github\freeorion\msvc-140
+solution version = 1.0.1
+solution directory = D:\Github\Visual-Studio-gtkmm\projects\freeorion\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: https://github.com/freeorion/freeorion
 
@@ -22,19 +22,27 @@ glu
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-copy msvc-140 folder to "solution directory".
-add git to system PATH
+needed for Common project:
+add git.exe to system PATH
+
 select configuration and build.
+
+FreeOrionD post build event does this:
 copy $(PYTHON2_DIR)Lib to $(OutDir)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-compiler fails building debug configuration, updating pdb files.
+compiler fails building debug configuration for Parsers, updating pdb files, temporary
+fix is to split Parsers into 3 separate projects.
 compile Common and Parsers with BOOST_LOG_DYN_LINK to resolve symbols.
 compile Common with NOMINMAX, defined in Windows.h (case std::max -> std:: -> syntax error)
 solution level warnings:
-4503 must
+4503, 4244 is must
+For parsers projects /MP can be set to 2 to save memory,
+for other projects /MP equals to number of effective CPU
+cores on the machine.
+In addition set number of paralel builds to 1 to save memory.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -46,3 +54,5 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 add git to path in properties.
+make common PCH
+add test projects

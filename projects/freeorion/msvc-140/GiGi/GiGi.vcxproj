@@ -27,114 +27,114 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\GG\GG\AlignmentFlags.h" />
-    <ClInclude Include="..\..\GG\GG\Base.h" />
-    <ClInclude Include="..\..\GG\GG\BrowseInfoWnd.h" />
-    <ClInclude Include="..\..\GG\GG\Button.h" />
-    <ClInclude Include="..\..\GG\GG\Clr.h" />
-    <ClInclude Include="..\..\GG\GG\ClrConstants.h" />
-    <ClInclude Include="..\..\GG\GG\Control.h" />
-    <ClInclude Include="..\..\GG\GG\Cursor.h" />
-    <ClInclude Include="..\..\GG\GG\dialogs\ColorDlg.h" />
-    <ClInclude Include="..\..\GG\GG\dialogs\FileDlg.h" />
-    <ClInclude Include="..\..\GG\GG\dialogs\ThreeButtonDlg.h" />
-    <ClInclude Include="..\..\GG\GG\DrawUtil.h" />
-    <ClInclude Include="..\..\GG\GG\DropDownList.h" />
-    <ClInclude Include="..\..\GG\GG\DynamicGraphic.h" />
-    <ClInclude Include="..\..\GG\GG\Edit.h" />
-    <ClInclude Include="..\..\GG\GG\Enum.h" />
-    <ClInclude Include="..\..\GG\GG\EventPump.h" />
-    <ClInclude Include="..\..\GG\GG\Exception.h" />
-    <ClInclude Include="..\..\GG\GG\Export.h" />
-    <ClInclude Include="..\..\GG\GG\Flags.h" />
-    <ClInclude Include="..\..\GG\GG\Font.h" />
-    <ClInclude Include="..\..\GG\GG\FontFwd.h" />
-    <ClInclude Include="..\..\GG\GG\GLClientAndServerBuffer.h" />
-    <ClInclude Include="..\..\GG\GG\glext.h" />
-    <ClInclude Include="..\..\GG\GG\GroupBox.h" />
-    <ClInclude Include="..\..\GG\GG\GUI.h" />
-    <ClInclude Include="..\..\GG\GG\Layout.h" />
-    <ClInclude Include="..\..\GG\GG\ListBox.h" />
-    <ClInclude Include="..\..\GG\GG\Menu.h" />
-    <ClInclude Include="..\..\GG\GG\MultiEdit.h" />
-    <ClInclude Include="..\..\GG\GG\MultiEditFwd.h" />
-    <ClInclude Include="..\..\GG\GG\PtRect.h" />
-    <ClInclude Include="..\..\GG\GG\RichText\BlockControl.h" />
-    <ClInclude Include="..\..\GG\GG\RichText\ImageBlock.h" />
-    <ClInclude Include="..\..\GG\GG\RichText\RichText.h" />
-    <ClInclude Include="..\..\GG\GG\Scroll.h" />
-    <ClInclude Include="..\..\GG\GG\ScrollPanel.h" />
-    <ClInclude Include="..\..\GG\GG\Signal0.h" />
-    <ClInclude Include="..\..\GG\GG\Signal1.h" />
-    <ClInclude Include="..\..\GG\GG\Signal2.h" />
-    <ClInclude Include="..\..\GG\GG\Signal3.h" />
-    <ClInclude Include="..\..\GG\GG\Signal4.h" />
-    <ClInclude Include="..\..\GG\GG\Signal5.h" />
-    <ClInclude Include="..\..\GG\GG\Signal6.h" />
-    <ClInclude Include="..\..\GG\GG\Signal7.h" />
-    <ClInclude Include="..\..\GG\GG\Signal8.h" />
-    <ClInclude Include="..\..\GG\GG\SignalsAndSlots.h" />
-    <ClInclude Include="..\..\GG\GG\SignalTemplate.h" />
-    <ClInclude Include="..\..\GG\GG\Slider.h" />
-    <ClInclude Include="..\..\GG\GG\Spin.h" />
-    <ClInclude Include="..\..\GG\GG\StaticGraphic.h" />
-    <ClInclude Include="..\..\GG\GG\StrongTypedef.h" />
-    <ClInclude Include="..\..\GG\GG\StyleFactory.h" />
-    <ClInclude Include="..\..\GG\GG\TabWnd.h" />
-    <ClInclude Include="..\..\GG\GG\TextControl.h" />
-    <ClInclude Include="..\..\GG\GG\Texture.h" />
-    <ClInclude Include="..\..\GG\GG\Timer.h" />
-    <ClInclude Include="..\..\GG\GG\UnicodeCharsets.h" />
-    <ClInclude Include="..\..\GG\GG\utf8\checked.h" />
-    <ClInclude Include="..\..\GG\GG\utf8\core.h" />
-    <ClInclude Include="..\..\GG\GG\utf8\unchecked.h" />
-    <ClInclude Include="..\..\GG\GG\Wnd.h" />
-    <ClInclude Include="..\..\GG\GG\WndEvent.h" />
-    <ClInclude Include="..\..\GG\GG\ZList.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\AlignmentFlags.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Base.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\BrowseInfoWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Button.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Clr.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\ClrConstants.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Control.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Cursor.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\dialogs\ColorDlg.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\dialogs\FileDlg.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\dialogs\ThreeButtonDlg.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\DrawUtil.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\DropDownList.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\DynamicGraphic.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Edit.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Enum.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\EventPump.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Exception.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Export.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Flags.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Font.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\FontFwd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\GLClientAndServerBuffer.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\glext.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\GroupBox.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\GUI.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Layout.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\ListBox.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Menu.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\MultiEdit.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\MultiEditFwd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\PtRect.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\RichText\BlockControl.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\RichText\ImageBlock.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\RichText\RichText.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Scroll.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\ScrollPanel.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal0.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal1.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal2.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal3.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal4.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal5.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal6.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal7.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Signal8.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\SignalsAndSlots.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\SignalTemplate.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Slider.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Spin.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\StaticGraphic.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\StrongTypedef.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\StyleFactory.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\TabWnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\TextControl.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Texture.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Timer.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\UnicodeCharsets.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\utf8\checked.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\utf8\core.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\utf8\unchecked.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\Wnd.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\WndEvent.h" />
+    <ClInclude Include="..\..\..\..\..\freeorion\GG\GG\ZList.h" />
     <ClInclude Include="pch.hh" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\GG\src\AlignmentFlags.cpp" />
-    <ClCompile Include="..\..\GG\src\Base.cpp" />
-    <ClCompile Include="..\..\GG\src\BrowseInfoWnd.cpp" />
-    <ClCompile Include="..\..\GG\src\Button.cpp" />
-    <ClCompile Include="..\..\GG\src\ClrConstants.cpp" />
-    <ClCompile Include="..\..\GG\src\Control.cpp" />
-    <ClCompile Include="..\..\GG\src\Cursor.cpp" />
-    <ClCompile Include="..\..\GG\src\dialogs\ColorDlg.cpp" />
-    <ClCompile Include="..\..\GG\src\dialogs\FileDlg.cpp" />
-    <ClCompile Include="..\..\GG\src\dialogs\ThreeButtonDlg.cpp" />
-    <ClCompile Include="..\..\GG\src\DrawUtil.cpp" />
-    <ClCompile Include="..\..\GG\src\DropDownList.cpp" />
-    <ClCompile Include="..\..\GG\src\DynamicGraphic.cpp" />
-    <ClCompile Include="..\..\GG\src\Edit.cpp" />
-    <ClCompile Include="..\..\GG\src\EventPump.cpp" />
-    <ClCompile Include="..\..\GG\src\Font.cpp" />
-    <ClCompile Include="..\..\GG\src\GLClientAndServerBuffer.cpp" />
-    <ClCompile Include="..\..\GG\src\GroupBox.cpp" />
-    <ClCompile Include="..\..\GG\src\GUI.cpp" />
-    <ClCompile Include="..\..\GG\src\Layout.cpp" />
-    <ClCompile Include="..\..\GG\src\ListBox.cpp" />
-    <ClCompile Include="..\..\GG\src\Menu.cpp" />
-    <ClCompile Include="..\..\GG\src\MultiEdit.cpp" />
-    <ClCompile Include="..\..\GG\src\PtRect.cpp" />
-    <ClCompile Include="..\..\GG\src\RichText\BlockControl.cpp" />
-    <ClCompile Include="..\..\GG\src\RichText\ImageBlock.cpp" />
-    <ClCompile Include="..\..\GG\src\RichText\RichText.cpp" />
-    <ClCompile Include="..\..\GG\src\RichText\TagParser.cpp" />
-    <ClCompile Include="..\..\GG\src\RichText\TextBlock.cpp" />
-    <ClCompile Include="..\..\GG\src\Scroll.cpp" />
-    <ClCompile Include="..\..\GG\src\ScrollPanel.cpp" />
-    <ClCompile Include="..\..\GG\src\StaticGraphic.cpp" />
-    <ClCompile Include="..\..\GG\src\StyleFactory.cpp" />
-    <ClCompile Include="..\..\GG\src\TabWnd.cpp" />
-    <ClCompile Include="..\..\GG\src\TextControl.cpp" />
-    <ClCompile Include="..\..\GG\src\Texture.cpp" />
-    <ClCompile Include="..\..\GG\src\Timer.cpp" />
-    <ClCompile Include="..\..\GG\src\UnicodeCharsets.cpp" />
-    <ClCompile Include="..\..\GG\src\Wnd.cpp" />
-    <ClCompile Include="..\..\GG\src\WndEvent.cpp" />
-    <ClCompile Include="..\..\GG\src\ZList.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\AlignmentFlags.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Base.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\BrowseInfoWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Button.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\ClrConstants.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Control.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Cursor.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\dialogs\ColorDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\dialogs\FileDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\dialogs\ThreeButtonDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\DrawUtil.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\DropDownList.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\DynamicGraphic.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Edit.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\EventPump.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Font.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\GLClientAndServerBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\GroupBox.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\GUI.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Layout.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\ListBox.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Menu.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\MultiEdit.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\PtRect.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\RichText\BlockControl.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\RichText\ImageBlock.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\RichText\RichText.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\RichText\TagParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\RichText\TextBlock.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Scroll.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\ScrollPanel.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\StaticGraphic.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\StyleFactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\TabWnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\TextControl.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Texture.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Timer.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\UnicodeCharsets.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\Wnd.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\WndEvent.cpp" />
+    <ClCompile Include="..\..\..\..\..\freeorion\GG\src\ZList.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
@@ -167,7 +167,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
@@ -190,21 +189,27 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\user_debug_32.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\user_debug_64.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\base_dll.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\solution_freeorion.props" />
+    <Import Project="..\..\..\..\properties\user_debug_64.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\user_release_32.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\base_dll.props" />
-    <Import Project="..\..\..\Visual-Studio-gtkmm\properties\solution_freeorion.props" />
+    <Import Project="..\..\..\..\properties\user_release_32.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\properties\user_release_64.props" />
+    <Import Project="..\..\..\..\properties\base_dll.props" />
+    <Import Project="..\..\..\..\properties\solution_freeorion.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -213,19 +218,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-    <OutDir>../../</OutDir>
-    <TargetName>GiGi.dll</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TargetName>GiGi.dll</TargetName>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <TargetName>$(ProjectName)</TargetName>
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>../../</OutDir>
@@ -237,46 +233,25 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Full</Optimization>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GIGI_EXPORTS;BOOST_ALL_DYN_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../include/GG;../../../include/;../../../include/GG;../../../include/freetype;../../../Boost/include/</AdditionalIncludeDirectories>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <StringPooling>false</StringPooling>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <FunctionLevelLinking>false</FunctionLevelLinking>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
-      <CreateHotpatchableImage>false</CreateHotpatchableImage>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <OpenMPSupport>false</OpenMPSupport>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GiGi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>../../GiGi.dll</OutputFile>
-      <AdditionalLibraryDirectories>../../../lib;../../../Boost/lib/</AdditionalLibraryDirectories>
-      <LinkStatus>false</LinkStatus>
-      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
-    </Link>
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>GiGi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
-      <CreateHotpatchableImage>false</CreateHotpatchableImage>
-      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GiGi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
   </ItemDefinitionGroup>
@@ -294,40 +269,18 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <Optimization>Full</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_DLL;GiGi_EXPORTS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;BOOST_ALL_DYN_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../include/;../../../include;../../../include/png/;../../GG/;../../../Boost/include/;../../../include/freetype/</AdditionalIncludeDirectories>
-      <CompileAsManaged>false</CompileAsManaged>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4251; 4244; 4099; 4275</DisableSpecificWarnings>
-      <WholeProgramOptimization>false</WholeProgramOptimization>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GiGi_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <OutputFile>../../GiGi.dll</OutputFile>
-      <AdditionalLibraryDirectories>../../../lib/;../../../Boost/lib/</AdditionalLibraryDirectories>
       <LinkStatus>
       </LinkStatus>
       <TreatLinkerWarningAsErrors>
       </TreatLinkerWarningAsErrors>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;freetype255MT.lib;libpng16.lib;User32.lib</AdditionalDependencies>
-      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
-      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">
