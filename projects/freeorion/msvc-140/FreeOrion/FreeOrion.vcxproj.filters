@@ -609,7 +609,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\..\..\..\freeorion\msvc2013\FreeOrion\freeorion.rc">
+    <ResourceCompile Include="freeorion.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
