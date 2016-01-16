@@ -164,10 +164,12 @@
 #include <SDL2/SDL_version.h>
 #include <python2.7/patchlevel.h>
 
- // GG includes
+#ifdef PRECOMPILE_GG_HEADERS // git might modify timestamps and cause rebuild all
+// GG includes
 #include <GG/Clr.h>
 #include <GG/Enum.h>
 #include <GG/utf8/checked.h>
+#endif // PRECOMPILE_GG_HEADERS
 
 #include <pragma_end.hh> // enable warnings
 

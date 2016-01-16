@@ -173,6 +173,7 @@
 #include <boost/type_traits/remove_const.hpp>
 #include <boost/type_traits/remove_pointer.hpp>
 
+#if 0 // causes rebuild all
 // GG includes
 #include <GG/Clr.h>
 #include <GG/Enum.h>
@@ -216,6 +217,7 @@
 #include <GG/dialogs/ColorDlg.h>
 #include <GG/ScrollPanel.h>
 #include <GG/utf8/core.h>
+#endif // PRECOMPILE_GG_HEADERS
 
 // dependencies includes
 #include <GL/gl.h>

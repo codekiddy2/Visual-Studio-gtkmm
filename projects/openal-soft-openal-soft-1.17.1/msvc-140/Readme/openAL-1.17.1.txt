@@ -10,7 +10,7 @@ solution design by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.0.0
+solution version = 1.0.1
 solution directory = D:\Github\Visual-Studio-gtkmm\projects\openal-soft-openal-soft-1.17.1\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 sources: https://github.com/kcat/openal-soft
@@ -38,4 +38,4 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-inherit properties for all projects and add test projects, add 32bit projects
+add test projects, add 32bit projects

@@ -132,12 +132,14 @@
 #include <boost/type_traits/remove_const.hpp>
 #include <boost/type_traits/remove_pointer.hpp>
 
+#ifdef PRECOMPILE_GG_HEADERS // git might modify timestamps and cause rebuild all
 // GG includes
 #include <GG/Clr.h>
 #include <GG/Enum.h>
 #include <GG/SignalsAndSlots.h>
 #include <GG/utf8/checked.h>
 #include <GG/SignalsAndSlots.h>
+#endif // PRECOMPILE_GG_HEADERS
 
 #include <pragma_end.hh> // enable warnings
 

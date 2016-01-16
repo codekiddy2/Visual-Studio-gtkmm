@@ -11,7 +11,7 @@ solution design by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.0.0
+solution version = 1.0.1
 solution directory = D:\Github\Visual-Studio-gtkmm\projects\SDL2-2.0.4\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: http://www.libsdl.org/index.php
@@ -35,8 +35,9 @@ this version compiles for Windows 0x501 UNICODE (otherwise errors)
 TESTINGS:
 1.0.0
 	Debug x64
+	Release x64
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-compile all project for all configurations and inherit properties
+test project default to base_windows. check if there is some console based.

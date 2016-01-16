@@ -186,6 +186,7 @@
 #undef PHOENIX_LIMIT
 #undef BOOST_RESULT_OF_NUM_ARGS PHOENIX_LIMIT
 
+#ifdef PRECOMPILE_GG_HEADERS // git might modify timestamps and cause rebuild all
 // GG includes
 #include <GG/Clr.h>
 #include <GG/Enum.h>
@@ -229,6 +230,7 @@
 #include <GG/dialogs/ColorDlg.h>
 #include <GG/ScrollPanel.h>
 #include <GG/utf8/core.h>
+#endif // PRECOMPILE_GG_HEADERS
 
 // OpenAL includes
 #include <AL/al.h>

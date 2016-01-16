@@ -17,6 +17,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_keyboard.h>
 
+#ifdef PRECOMPILE_GG_HEADERS // git might modify timestamps and cause rebuild all
 // GG includes
 #include <GG/GUI.h>
 #include <GG/SDL/SDLGUI.h>
@@ -24,6 +25,7 @@
 #include <GG/WndEvent.h>
 #include <GG/utf8/checked.h>
 #include <GG/DrawUtil.h>
+#endif // PRECOMPILE_GG_HEADERS
 
 #include <pragma_end.hh> // enable warnings
 

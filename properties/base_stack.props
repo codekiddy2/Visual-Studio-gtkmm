@@ -70,6 +70,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalOptions>/Zc:strictStrings %(AdditionalOptions)</AdditionalOptions>
       <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
     <Link>
       <ShowProgress>LinkVerboseSAFESEH</ShowProgress>
@@ -93,6 +94,7 @@
       <AdditionalLibraryDirectories>$(LIB_DIR);$(LIB_DIR)tools\;$(LIB_DIR)test\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>DebugFastLink</GenerateDebugInformation>
       <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+      <PreventDllBinding>true</PreventDllBinding>
     </Link>
     <Manifest>
       <SuppressStartupBanner>false</SuppressStartupBanner>
