@@ -100,7 +100,7 @@ TESTINGS:
 TODO:
 Add test projects
 separeate "install" project
-enable deubgging symbols
 build mpi
 fix post build event error
 make libs *.dll.lib, currently it's *.lib
+make clean/rebuild possible
