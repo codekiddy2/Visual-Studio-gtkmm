@@ -321,10 +321,10 @@
     </None>
     <CustomBuild Include="..\..\..\..\..\freeorion\util\Version.cpp.in">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration)"</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration)"</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration)"</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration) $(Platform)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration) $(Platform)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration) $(Platform)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration) $(Platform)"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SRC_DIR)util\Version.cpp;%(Outputs)</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR)util\Version.cpp;%(Outputs)</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">$(SRC_DIR)util\Version.cpp;%(Outputs)</Outputs>
@@ -333,8 +333,8 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SRC_DIR).git;%(AdditionalInputs)</AdditionalInputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">$(SRC_DIR).git;%(AdditionalInputs)</AdditionalInputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">$(SRC_DIR).git;%(AdditionalInputs)</AdditionalInputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration)"</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration) $(Platform)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(PYTHON2_DIR)python.exe" "$(SRC_DIR)cmake\make_versioncpp.py" "$(SRC_DIR_FOR_PYTHON)" "MSVC 2015 $(Configuration) $(Platform)"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR)util\Version.cpp;%(Outputs)</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SRC_DIR)util\Version.cpp;%(Outputs)</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SRC_DIR).git;%(AdditionalInputs)</AdditionalInputs>
