@@ -102,7 +102,7 @@
     <Lib />
     <Lib />
     <ResourceCompile>
-      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
       <ResourceOutputFileName>$(INTERMEDIATE_DIR)%(Filename).res</ResourceOutputFileName>
       <ShowProgress>false</ShowProgress>
       <Culture>0x0409</Culture>
