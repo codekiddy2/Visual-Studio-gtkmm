@@ -173,7 +173,7 @@
 #include <boost/type_traits/remove_const.hpp>
 #include <boost/type_traits/remove_pointer.hpp>
 
-#if 0 // causes rebuild all
+#ifdef PRECOMPILE_GG_HEADERS // git might modify timestamps and cause rebuild all
 // GG includes
 #include <GG/Clr.h>
 #include <GG/Enum.h>

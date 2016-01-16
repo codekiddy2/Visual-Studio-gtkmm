@@ -30,6 +30,9 @@ select configuration and build.
 FreeOrionD post build event does this:
 make folder junction in $(OutDir) to $(PYTHON2_DIR)Lib
 
+solution level prebuild event checks for Python2.7 include:
+cd $(PYTHON2_DIR)include and mklink /J Python2.7 .
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:

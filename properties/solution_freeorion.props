@@ -31,6 +31,12 @@
       <AdditionalOptions />
       <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
     </Lib>
+    <PreBuildEvent>
+      <Command>if not exist $(PYTHON2_DIR)include\Python2.7 mklink /J $(PYTHON2_DIR)include\Python2.7 $(PYTHON2_DIR)include</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Making link for python include...</Message>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">
