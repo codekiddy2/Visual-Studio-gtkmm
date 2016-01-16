@@ -124,7 +124,6 @@
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>..\..\vorbisfile.def</ModuleDefinitionFile>
-      <ImportLibrary>$(OutDir)libvorbisfile.lib</ImportLibrary>
       <AdditionalDependencies>libogg.dll.lib;libvorbis.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

@@ -118,25 +118,29 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <PreprocessorDefinitions>FREEORION_BUILD_SERVER;FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
     <Link>
       <AdditionalDependencies>Common.lib;Parsers1.lib;Parsers2.lib;Parsers3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(OutDir)Lib mklink /J $(OutDir)Lib $(PYTHON2_DIR)Lib</Command>
+      <Message>Copying Python Libs...</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <PreprocessorDefinitions>FREEORION_BUILD_SERVER;FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
     <Link>
       <AdditionalDependencies>Common.lib;Parsers1.lib;Parsers2.lib;Parsers3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(OutDir)Lib mklink /J $(OutDir)Lib $(PYTHON2_DIR)Lib</Command>
+      <Message>Copying Python Libs...</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -152,16 +156,16 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeaderFile>
-      </PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>
-      </PrecompiledHeaderOutputFile>
       <PreprocessorDefinitions>FREEORION_BUILD_SERVER;FREEORION_WIN32;LOG4CPP_STLPORT_AND_BOOST_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link />
     <Link>
       <AdditionalDependencies>Common.lib;Parsers1.lib;Parsers2.lib;Parsers3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(OutDir)Lib mklink /J $(OutDir)Lib $(PYTHON2_DIR)Lib</Command>
+      <Message>Copying Python Libs...</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">
     <ClCompile>
@@ -195,6 +199,10 @@
       <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(OutDir)Lib mklink /J $(OutDir)Lib $(PYTHON2_DIR)Lib</Command>
+      <Message>Copying Python Libs...</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">
     <ClCompile>
@@ -228,6 +236,10 @@
       <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
+    <PostBuildEvent>
+      <Command>if not exist $(OutDir)Lib mklink /J $(OutDir)Lib $(PYTHON2_DIR)Lib</Command>
+      <Message>Copying Python Libs...</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\freeorion\combat\CombatSystem.h" />

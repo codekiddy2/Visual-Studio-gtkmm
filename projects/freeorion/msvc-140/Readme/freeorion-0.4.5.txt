@@ -52,6 +52,20 @@ In addition set number of paralel builds to 1 to save memory.
 TESTINGS:
 1.0.0
 	Release x86 + debug
+	Release x64 + debug
+
+Compile time: (pch, pentium 2 cores @2.16, 4GB ram, relase x64)
+PCH: 1 min * 5 = 5 min
+Common: 9 min
+GiGi: 5 min
+GiGiSDL: 25 sec
+Parsers1: 16 min
+Parsers2: 57 min
+Parsers3: 18 min
+FreeOrionCA: 3 min
+FreeOrionD: 4 min
+FreeOrion: 33 min
+Total: 2 hours + 5 min for PCH (46,9 MB)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************

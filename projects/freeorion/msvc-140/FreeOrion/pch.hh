@@ -220,6 +220,7 @@
 #endif // PRECOMPILE_GG_HEADERS
 
 // dependencies includes
+#include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <AL/al.h>
