@@ -97,6 +97,7 @@ $RECYCLE.BIN/
 *.opendb
 *.iobj
 *.ipdb
+*.VC.db
 
 
 # =====
