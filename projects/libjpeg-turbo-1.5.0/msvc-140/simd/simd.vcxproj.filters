@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assembler Files x86">
+      <UniqueIdentifier>{82d056ca-10cf-42ed-89bd-228209f80029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembler Files x64">
+      <UniqueIdentifier>{7c0bd07a-696d-4ea0-b1d7-e20e51a90494}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\simd\jccolor-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jcgray-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jcsample-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdcolor-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdmerge-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdsample-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctflt-sse-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctfst-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctint-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctflt-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctfst-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctint-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctred-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jquantf-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jquanti-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jccolor-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jsimdcpu.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jquant-sse.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jquant-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jquanti-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jquantf-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jquant-3dn.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctred-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctred-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctint-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctint-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctfst-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctfst-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctflt-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctflt-sse.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jidctflt-3dn.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctint-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctint-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctfst-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctfst-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctflt-sse.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jfdctflt-3dn.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdsample-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdsample-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdmerge-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdmerge-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdcolor-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jdcolor-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jcsample-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jcsample-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jcgray-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jcgray-mmx.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jccolor-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jchuff-sse2.asm">
+      <Filter>Assembler Files x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\simd\jchuff-sse2-64.asm">
+      <Filter>Assembler Files x64</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -58,6 +58,9 @@ added /IGNORE:4221 to librarian in base_lib.props (this object does not defeine 
 added mainCRTStartup to base_windows this could cause problems if WinMain is used instead of main.
 added /nologo to resource compiler
 
+turned off RTCc flag for debug builds in base_debug.props due to:
+https://blogs.msdn.microsoft.com/vcblog/2016/04/14/stl-fixes-in-vs-2015-update-2/
+
 **Compiler warnings**
 
 added ignore warning 4311, 4133 to stack_gtk+.props (apearing mostly in gtk+ ?)

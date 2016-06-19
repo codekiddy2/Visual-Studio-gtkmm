@@ -85,7 +85,7 @@
       <PreprocessorDefinitions>DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>false</StringPooling>
       <MinimalRebuild>true</MinimalRebuild>
-      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FunctionLevelLinking>false</FunctionLevelLinking>
