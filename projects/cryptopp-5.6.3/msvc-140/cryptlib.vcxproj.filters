@@ -386,6 +386,9 @@
     <ClCompile Include="..\zlib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\rdrand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\GNUmakefile">
@@ -393,6 +396,9 @@
     </None>
     <None Include="..\Doxyfile">
       <Filter>Miscellaneous</Filter>
+    </None>
+    <None Include="..\rdrand.asm">
+      <Filter>Assembler Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

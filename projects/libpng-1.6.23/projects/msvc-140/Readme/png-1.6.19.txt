@@ -5,75 +5,59 @@ For Copyright notices see Licence.txt attached to solution.
 Please do not remove this file or it's contents from solution as it
 contains important usage information.
 
-Solution obtained from official source package.
+solution obtained from official source package
 solution redesign by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.2.0
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\cryptopp-5.6.2\msvc-140
+solution version = 1.2.1
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\libpng-1.6.19\projects\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://www.cryptopp.com/
+official sources: http://www.libpng.org/pub/png/libpng.html
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-zlib (integrated)
+zlib
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-See Readme.txt in SRC_DIR for instructions on which configuration to build.
-
-Open Solution select configuration and build
-Install by building the "Install" project
-Read offical readme about usage.
-
-Set Working directory for test-cryptopp in debugger to SRC_DIR.
-^old prebuild event is still there but disabled.
+Open Visual Studio solution and build.
+Tests are performed automatically during a build.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-cmd line entry /ZM is there for precompiled header
-dll.h modified to reflect modified lib name
-fipstest.cpp modified to target current Windows
-FIPS dll does not work, use static library.
+leave precompiled headers alone
+x86 configuration must define ZLIB_WINAPI while linking to zlib
 
-since msvc-140
-added to ignore lib warnings as errors in solution level props.
-turn off SDL check on solution level.
-warning 4297 disabled on solution level. (edit: removed??)
-
-x86 DLL/test build does not work at all, X64 build seems OK ?
-edit^ x86 builds (release and static) will build static lib only, set in config. manager.
-
-since redesign (msvc-140) branch:
-added rdrand.cpp and rdrand.asm to project, set ml flags according to asm file description,
-works for x64 builds.
-disable 4221 librarian warning for static build
+pngtest and pngunknown fail in Release DLL buils, so they have PNG_DEBUG=2 defined
+for easier debugging.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
+1.0.3
+	Debug x64
+	Release x64
+	Debug library x64
+	Release library x64
 
-1.0.0
-	Debug x64 + Debug
+1.0.4
+	Debug x64
+	Debug Library x64
 
 1.1.0-1
 	Debug x64 + Debug
-	Release x64 + test
+	Release x64
 	Debug x86
 
-1.2.0
+1.2.1
 	Debug x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-project properties and their overridings needs to be checked. (edit: done)
-explain configuration types.
-fix DLL and test builds for x86 builds
-more test projects
-rdrand output filename set according to asm file description
+

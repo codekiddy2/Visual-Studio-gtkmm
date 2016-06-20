@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)gettext-0.19.6\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)gettext-0.19.8\</SRC_DIR>
     <LIBDIR>"$(DRIVE):\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\$(Configuration)\\$(Platform)\\lib"</LIBDIR>
     <LOCALE_ALIAS_PATH>"$(DRIVE):\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\$(Configuration)\\$(Platform)\\share\\locale"</LOCALE_ALIAS_PATH>
     <LOCALEDIR>"$(DRIVE):\\\\GitHub\\Visual-Studio-gtkmm\\output\\v140\\$(Configuration)\\$(Platform)\\share\\locale"</LOCALEDIR>

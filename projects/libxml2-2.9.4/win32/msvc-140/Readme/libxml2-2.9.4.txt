@@ -5,75 +5,70 @@ For Copyright notices see Licence.txt attached to solution.
 Please do not remove this file or it's contents from solution as it
 contains important usage information.
 
-Solution obtained from official source package.
+solution obtained from official package
 solution redesign by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.2.0
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\cryptopp-5.6.2\msvc-140
+solution version = 1.1.2
+solution directory = D:\Github\Visual-Studio-gtkmm\projects\libxml2-2.9.4\win32\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://www.cryptopp.com/
+official sources: http://xmlsoft.org/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-zlib (integrated)
+iconv (optional)
+icu (optional)
+zlib (optional)
+lzma (optional)
+readline (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-See Readme.txt in SRC_DIR for instructions on which configuration to build.
-
-Open Solution select configuration and build
-Install by building the "Install" project
-Read offical readme about usage.
-
-Set Working directory for test-cryptopp in debugger to SRC_DIR.
-^old prebuild event is still there but disabled.
+check config.h and updade as necesary...
+Open Visual Studio solution select configuration and build.
+Once done install headers by running the "Install" project.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-cmd line entry /ZM is there for precompiled header
-dll.h modified to reflect modified lib name
-fipstest.cpp modified to target current Windows
-FIPS dll does not work, use static library.
+there are linker and compiler warnings disabled
 
-since msvc-140
-added to ignore lib warnings as errors in solution level props.
-turn off SDL check on solution level.
-warning 4297 disabled on solution level. (edit: removed??)
+since msvc-140:
+snprintf can be included in config.h, possible linking with libasprintf.lib from gettext ?
+snprintf removed from preprocessor
 
-x86 DLL/test build does not work at all, X64 build seems OK ?
-edit^ x86 builds (release and static) will build static lib only, set in config. manager.
+removed LIBXML_ICONV_ENABLED because it's already declared in xmlversion.h
+possible macros:
+LIBXML_ICU_ENABLED
+WITH_TRIO
 
-since redesign (msvc-140) branch:
-added rdrand.cpp and rdrand.asm to project, set ml flags according to asm file description,
-works for x64 builds.
-disable 4221 librarian warning for static build
+macros already defined in xmlversion.h
+LIBXML_ZLIB_ENABLED
+LIBXML_LZMA_ENABLED
+LIBXML_MODULE_EXTENSION ".so"  ??
+LIBXML_ZLIB_ENABLED
+LIBXML_LZMA_ENABLED
+
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
+List of tests:
 
-1.0.0
-	Debug x64 + Debug
+1.1.0
+	Debug dll/static x64
 
-1.1.0-1
-	Debug x64 + Debug
+1.1.1
 	Release x64 + test
 	Debug x86
-
-1.2.0
-	Debug x86
+	Release x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-project properties and their overridings needs to be checked. (edit: done)
-explain configuration types.
-fix DLL and test builds for x86 builds
-more test projects
-rdrand output filename set according to asm file description
+make ICU configuration for libxml2, and readline
+make more test projects
