@@ -11,40 +11,87 @@ solution created by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 **************************************************************************************************************************************************************************
 INFO:
 solution version = 1.1.2
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\freeglut-3.0.0\msvc-140
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\pcre-8.37\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://freeglut.sourceforge.net/
+official sources: http://www.pcre.org/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
+zlib (optional)
+libz2 (optional)
+libeditline (optional)
+libreadline (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
-INSTRUCTION:
-Select configuration and build.
-
-folowing is (probably out of date): -> (edit: needed to generate *.rc files, moved to src)
-start cmake-gui from appropriate VS command promt (x86 or x64 depending against which target you compile),
-then set the source and destination to the root directory of freeglut,
-click on configure, review settings and reconfigure if needed (do *not* click on generate)
-then select Visual Studio generator with which you will compile.
-when cmake is done close it and open solution, select configuration and build.
+INSTRUCTIONS:
+Open solution select configuration and build.
+Install with "Install" project
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-to use static library define: FREEGLUT_STATIC
-override default libs by "undefing" them, their original names are in freeglut_std.h
+to link staticaly to pcre define PCRE_STATIC in your projects
+static configuration will link staticaly to every dependency.
+
+PCRE configuration summary:
+
+  Install prefix .................. : D:/GitHub/Visual-Studio-gtkmm/projects/pcre-8.36/cmake-output
+  C compiler ...................... : D:/gtkmm/install/visualstudio/VC/bin/x86_amd64/cl.exe
+  C++ compiler .................... : D:/gtkmm/install/visualstudio/VC/bin/x86_amd64/cl.exe
+  C compiler flags ................ :  /DWIN32 /D_WINDOWS /W3 
+  C++ compiler flags .............. :  /DWIN32 /D_WINDOWS /W3 /GR /EHsc 
+
+  Build 8 bit PCRE library ........ : ON
+  Build 16 bit PCRE library ....... : ON
+  Build 32 bit PCRE library ....... : ON
+  Build C++ library ............... : ON
+  Enable JIT compiling support .... : OFF
+  Enable UTF support .............. : ON
+  Unicode properties .............. : ON
+  Newline char/sequence ........... : ANY
+  \R matches only ANYCRLF ......... : OFF
+  EBCDIC coding ................... : OFF
+  EBCDIC coding with NL=0x25 ...... : OFF
+  Rebuild char tables ............. : OFF
+  No stack recursion .............. : OFF
+  POSIX mem threshold ............. : 10
+  Internal link size .............. : 2
+  Parentheses nest limit .......... : 250
+  Match limit ..................... : 10000000
+  Match limit recursion ........... : MATCH_LIMIT
+  Build shared libs ............... : ON
+  Build static libs ............... : OFF
+  Build pcregrep .................. : ON
+  Enable JIT in pcregrep .......... : OFF
+  Buffer size for pcregrep ........ : 20480
+  Build tests (implies pcretest  .. : ON
+               and pcregrep)
+  Link pcregrep with libz ......... : ON
+  Link pcregrep with libbz2 ....... : ON
+  Link pcretest with libeditline .. : Library not found
+  Link pcretest with libreadline .. : Library not found
+  Support Valgrind .................: OFF
+  Support coverage .................: 
+  Install MSVC .pdb files ..........: ON
+
+added /IGNORE:4197 to pcrcpp for dll builds.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
 1.0.2
 	Debug x64
-	Release x86
+	Debug x86
 
-1.1.0-2
+1.1.0
+	Debug x64
+
+1.1.1
+	Debug dll, Debug static x64 + Debug
+
+1.1.2
 	Debug x64
 	Release x64
 	Release x86
@@ -52,6 +99,3 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-
-check if freeglut does not need configuration prior to build.
-fix test-freeglut const char error

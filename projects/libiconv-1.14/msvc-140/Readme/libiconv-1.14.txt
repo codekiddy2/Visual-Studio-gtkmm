@@ -32,6 +32,10 @@ NOTES:
 Define USING_STATIC_LIBICONV before including iconv.h if you wish to link static version in your projects.
 See test-iconv_static project settings to learn how to do that.
 
+test-iconv and test-iconv static in debug mode compiles with RTCc turned off due to
+error C2338
+edit^ changes reverted..
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:

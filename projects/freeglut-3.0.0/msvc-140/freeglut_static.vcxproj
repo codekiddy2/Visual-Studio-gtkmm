@@ -214,8 +214,10 @@
     <ClCompile Include="..\src\mswin\fg_state_mswin.c" />
     <ClCompile Include="..\src\mswin\fg_structure_mswin.c" />
     <ClCompile Include="..\src\mswin\fg_window_mswin.c" />
-    <ResourceCompile Include="..\freeglut.rc" />
     <ClCompile Include="..\src\util\xparsegeometry_repl.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\freeglut.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
