@@ -1,0 +1,109 @@
+Copyright (C) 2015 codekiddy
+
+For Copyright notices see Licence.txt attached to solution.
+
+Please do not remove this file or it's contents from solution as it
+contains important usage information.
+
+solution obtained from github.com/blinkseb/harfbuzz
+solution redesign by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INFO:
+solution version = 1.1.2
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\harfbuzz-1.0.6\msvc-140
+properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
+official sources: http://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+DEPENDENCIES:
+freetype
+glib (optional)
+gobject (optional)
+ucdn (optional)
+icu (optional)
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+INSTRUCTIONS:
+update for this version: hb-gobject-enums.cpp/h made in version 1.1.2
+
+to generate them for new version use config files from REPO_DIR\config and append:
+--with-gobject=yes --with-glib=yes to sh file (configure input)
+glib.dll.lib gobject.dll.lib to compiler file (linker input)
+export PKG_CONFIG_PATH in sh file
+set PATH in bat file
+glib-mkenums must work, see glib-mkenums-ps1 in glib solution to set up perl path
+glib-2.0.pc and gobject-2.0.pc must exist in PKG_CONFIG_PATH
+glib-2.0.pc must define following variables:
+
+glib_genmarshal=glib-genmarshal
+gobject_query=gobject-query
+glib_mkenums=glib-mkenums
+
+MSYS2 shell must not have mingw folder (tools, gcc compiler) and no pkg-config installed.
+
+--end of generate
+
+Open solution, select configuration and build
+in case of errors check macros defined in preprocessor.
+
+Once done you need to rebuild Freetype with FT_CONFIG_OPTION_USE_HARFBUZZ macro in order
+for Freetype to use harfbuzz features.
+
+Some preprocessor definitions are undefined, once you build cairo with font-config
+support, UCDN and ICU you can define these macros and rebuild (optional).
+
+Test projects do not take ICU into account, only core harfbuzz features.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+NOTES:
+Some test projects are set to test either the dll or lib, if you want to perform all the tests
+on dll only set them to input dll import library to the linker, the same apply for static lib.
+test.
+Make sure you pass command line arguments to test projects trough debugger settings,
+otherwiste testings will be false positive ^^
+
+Debug x64 configuration tests only the dll's by default.
+if you test static version make sure you link against usp10.lib and Rpcrt4.lib (Windows SDK)
+
+since msvc-140:
+added hb-ot-shape-complex-use,use-table and fallback
+disabled hb-ot-shape-complex-sea
+thread link warning as error disabled for harbuzz_static LNK4221
+
+config.h is there to harvest macros, it's not used in build process.
+
+Config folder in solution are leftover for later recall on how to configure, no usage of these now.
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TESTINGS:
+1.0.0
+	All 4
+
+1.0.2
+	Debug x64
+
+1.0.3
+	All 4 (no debug)
+
+1.1.0
+	Debug x64
+
+1.1.1
+	Debug x64 + debug
+	Release x64
+
+1.1.2
+	Debug x86
+	Release x86
+
+**************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************
+TODO:
+Check if configuration is needed before compiling.
+^edit: NO 
