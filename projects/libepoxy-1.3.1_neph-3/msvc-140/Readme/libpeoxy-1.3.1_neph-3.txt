@@ -35,6 +35,8 @@ crash, see: https://github.com/anholt/libepoxy/issues/77#issuecomment-158662650
 
 depended projects which link to DLL version of epoxy must define EPOXY_DLL
  
+added reference to epoxy shared and static to epoxy generated to avoid permission denied error
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:

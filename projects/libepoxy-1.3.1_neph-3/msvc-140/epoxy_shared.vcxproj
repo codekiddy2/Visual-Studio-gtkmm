@@ -599,6 +599,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="epoxy_generated.vcxproj">
+      <Project>{b51e3679-efd8-409d-8b41-e172ab6cf7c9}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
