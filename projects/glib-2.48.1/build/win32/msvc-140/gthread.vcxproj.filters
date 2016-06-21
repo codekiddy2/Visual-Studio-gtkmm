@@ -7,33 +7,21 @@
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="prebuild.sh">
+    <ClCompile Include="..\..\..\gthread\gthread-impl.c">
       <Filter>Source Files</Filter>
-    </None>
-    <None Include="build32.cmd">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="build64.cmd">
-      <Filter>Resource Files</Filter>
-    </None>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="package-list.txt">
-      <Filter>Header Files</Filter>
-    </Text>
-    <Text Include="unzip-exclude-list.txt">
-      <Filter>Header Files</Filter>
-    </Text>
-    <Text Include="tar-exclude-list.txt">
-      <Filter>Header Files</Filter>
-    </Text>
+    <ResourceCompile Include="..\..\..\gthread\gthread.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

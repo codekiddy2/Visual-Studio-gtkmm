@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2093D218-190E-4194-9421-3BA7CBF33B10}</ProjectGuid>
+    <RootNamespace>install</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_release_32.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_glib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_glib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_release_64.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_glib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
+    <Import Project="..\..\..\..\..\properties\base_utility.props" />
+    <Import Project="..\..\..\..\..\properties\solution_glib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+$(CHK_DIR) glib mkdir glib
+cd glib
+$(CHK_DIR) glib mkdir glib
+$(CHK_DIR) gio mkdir gio
+$(CHK_DIR) gobject mkdir gobject
+$(CHK_DIR) ..\gio-win32 mkdir ..\gio-win32
+cd ..\gio-win32
+$(CHK_DIR) gio mkdir gio
+cd gio
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)gio\gwin32inputstream.h $(COPY_CMD)
+xcopy $(SRC_DIR)gio\gwin32outputstream.h $(COPY_CMD)
+cd ..\..\glib\glib
+xcopy $(SRC_DIR)glib\*.h $(COPY_CMD)
+xcopy glib.h ..\ $(COPY_CMD)
+xcopy glib-object.h ..\ $(COPY_CMD)
+xcopy glib-unix.h ..\ $(COPY_CMD)
+$(CHK_DIR) deprecated mkdir deprecated
+cd deprecated
+xcopy $(SRC_DIR)glib\deprecated\*.h $(COPY_CMD)
+cd ..\..\gio
+xcopy $(SRC_DIR)gio\*.h $(COPY_CMD)
+cd ..\gobject
+xcopy $(SRC_DIR)gobject\*.h $(COPY_CMD)
+xcopy $(SRC_DIR)gobject\gobjectnotifyqueue.c $(COPY_CMD)
+cd ..\
+xcopy $(SRC_DIR)gmodule\gmodule.h $(COPY_CMD)
+cd $(LIB_DIR)
+$(CHK_DIR) glib\include mkdir glib\include
+cd glib\include
+$(MOVE) $(INCLUDE_DIR)glib\glib\glibconfig.h .\
+$(CHK_DIR) $(SHARE_DIR) mkdir $(SHARE_DIR)
+cd $(SHARE_DIR)
+$(CHK_DIR) glib-2.0 mkdir glib-2.0
+cd glib-2.0
+$(CHK_DIR) schemas mkdir schemas
+cd schemas
+echo installing schemas ...
+xcopy $(SRC_DIR)gio\gschema.dtd $(COPY_CMD)
+$(CHK_DIR) ..\codegen mkdir ..\codegen
+cd ..\codegen
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py $(COPY_CMD)
+cd $(BIN_DIR)
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen $(COPY_CMD)
+cd $(SRC_DIR)gobject
+echo #! $(PERL_DIR)perl &gt; $(BIN_DIR)glib-mkenums
+type $(SRC_DIR)gobject\glib-mkenums | find /V /I "@PERL_PATH@" &gt;&gt; $(BIN_DIR)glib-mkenums
+$(CHK_DIR) $(REF_DIR) mkdir $(REF_DIR)
+cd $(REF_DIR)
+$(ECHO_DOC)
+if not exist glib\html mkdir glib\html
+if not exist gio\html mkdir gio\html
+if not exist gobject\html mkdir gobject\html
+cd glib\html
+xcopy $(SRC_DIR)docs\reference\glib\html $(COPY_CMD)
+cd ..\..\gio\html
+xcopy $(SRC_DIR)docs\reference\gio\html $(COPY_CMD)
+cd ..\..\gobject\html
+xcopy $(SRC_DIR)docs\reference\gobject\html $(COPY_CMD)</Command>
+      <Message>Installing Build Results ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CustomBuild />
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+$(CHK_DIR) glib mkdir glib
+cd glib
+$(CHK_DIR) glib mkdir glib
+$(CHK_DIR) gio mkdir gio
+$(CHK_DIR) gobject mkdir gobject
+$(CHK_DIR) ..\gio-win32 mkdir ..\gio-win32
+cd ..\gio-win32
+$(CHK_DIR) gio mkdir gio
+cd gio
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)gio\gwin32inputstream.h $(COPY_CMD)
+xcopy $(SRC_DIR)gio\gwin32outputstream.h $(COPY_CMD)
+cd ..\..\glib\glib
+xcopy $(SRC_DIR)glib\*.h $(COPY_CMD)
+xcopy glib.h ..\ $(COPY_CMD)
+xcopy glib-object.h ..\ $(COPY_CMD)
+xcopy glib-unix.h ..\ $(COPY_CMD)
+$(CHK_DIR) deprecated mkdir deprecated
+cd deprecated
+xcopy $(SRC_DIR)glib\deprecated\*.h $(COPY_CMD)
+cd ..\..\gio
+xcopy $(SRC_DIR)gio\*.h $(COPY_CMD)
+cd ..\gobject
+xcopy $(SRC_DIR)gobject\*.h $(COPY_CMD)
+xcopy $(SRC_DIR)gobject\gobjectnotifyqueue.c $(COPY_CMD)
+cd ..\
+xcopy $(SRC_DIR)gmodule\gmodule.h $(COPY_CMD)
+cd $(LIB_DIR)
+$(CHK_DIR) glib\include mkdir glib\include
+cd glib\include
+$(MOVE) $(INCLUDE_DIR)glib\glib\glibconfig.h .\
+$(CHK_DIR) $(SHARE_DIR) mkdir $(SHARE_DIR)
+cd $(SHARE_DIR)
+$(CHK_DIR) glib-2.0 mkdir glib-2.0
+cd glib-2.0
+$(CHK_DIR) schemas mkdir schemas
+cd schemas
+echo installing schemas ...
+xcopy $(SRC_DIR)gio\gschema.dtd $(COPY_CMD)
+$(CHK_DIR) ..\codegen mkdir ..\codegen
+cd ..\codegen
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py $(COPY_CMD)
+cd $(BIN_DIR)
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen $(COPY_CMD)
+cd $(SRC_DIR)gobject
+echo #! $(PERL_DIR)perl &gt; $(BIN_DIR)glib-mkenums
+type $(SRC_DIR)gobject\glib-mkenums | find /V /I "@PERL_PATH@" &gt;&gt; $(BIN_DIR)glib-mkenums
+$(CHK_DIR) $(REF_DIR) mkdir $(REF_DIR)
+cd $(REF_DIR)
+$(ECHO_DOC)
+if not exist glib\html mkdir glib\html
+if not exist gio\html mkdir gio\html
+if not exist gobject\html mkdir gobject\html
+cd glib\html
+xcopy $(SRC_DIR)docs\reference\glib\html $(COPY_CMD)
+cd ..\..\gio\html
+xcopy $(SRC_DIR)docs\reference\gio\html $(COPY_CMD)
+cd ..\..\gobject\html
+xcopy $(SRC_DIR)docs\reference\gobject\html $(COPY_CMD)</Command>
+      <Message>Installing Build Results ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+$(CHK_DIR) glib mkdir glib
+cd glib
+$(CHK_DIR) glib mkdir glib
+$(CHK_DIR) gio mkdir gio
+$(CHK_DIR) gobject mkdir gobject
+$(CHK_DIR) ..\gio-win32 mkdir ..\gio-win32
+cd ..\gio-win32
+$(CHK_DIR) gio mkdir gio
+cd gio
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)gio\gwin32inputstream.h $(COPY_CMD)
+xcopy $(SRC_DIR)gio\gwin32outputstream.h $(COPY_CMD)
+cd ..\..\glib\glib
+xcopy $(SRC_DIR)glib\*.h $(COPY_CMD)
+xcopy glib.h ..\ $(COPY_CMD)
+xcopy glib-object.h ..\ $(COPY_CMD)
+xcopy glib-unix.h ..\ $(COPY_CMD)
+$(CHK_DIR) deprecated mkdir deprecated
+cd deprecated
+xcopy $(SRC_DIR)glib\deprecated\*.h $(COPY_CMD)
+cd ..\..\gio
+xcopy $(SRC_DIR)gio\*.h $(COPY_CMD)
+cd ..\gobject
+xcopy $(SRC_DIR)gobject\*.h $(COPY_CMD)
+xcopy $(SRC_DIR)gobject\gobjectnotifyqueue.c $(COPY_CMD)
+cd ..\
+xcopy $(SRC_DIR)gmodule\gmodule.h $(COPY_CMD)
+cd $(LIB_DIR)
+$(CHK_DIR) glib\include mkdir glib\include
+cd glib\include
+$(MOVE) $(INCLUDE_DIR)glib\glib\glibconfig.h .\
+$(CHK_DIR) $(SHARE_DIR) mkdir $(SHARE_DIR)
+cd $(SHARE_DIR)
+$(CHK_DIR) glib-2.0 mkdir glib-2.0
+cd glib-2.0
+$(CHK_DIR) schemas mkdir schemas
+cd schemas
+echo installing schemas ...
+xcopy $(SRC_DIR)gio\gschema.dtd $(COPY_CMD)
+$(CHK_DIR) ..\codegen mkdir ..\codegen
+cd ..\codegen
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py $(COPY_CMD)
+cd $(BIN_DIR)
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen $(COPY_CMD)
+cd $(SRC_DIR)gobject
+echo #! $(PERL_DIR)perl &gt; $(BIN_DIR)glib-mkenums
+type $(SRC_DIR)gobject\glib-mkenums | find /V /I "@PERL_PATH@" &gt;&gt; $(BIN_DIR)glib-mkenums
+$(CHK_DIR) $(REF_DIR) mkdir $(REF_DIR)
+cd $(REF_DIR)
+$(ECHO_DOC)
+if not exist glib\html mkdir glib\html
+if not exist gio\html mkdir gio\html
+if not exist gobject\html mkdir gobject\html
+cd glib\html
+xcopy $(SRC_DIR)docs\reference\glib\html $(COPY_CMD)
+cd ..\..\gio\html
+xcopy $(SRC_DIR)docs\reference\gio\html $(COPY_CMD)
+cd ..\..\gobject\html
+xcopy $(SRC_DIR)docs\reference\gobject\html $(COPY_CMD)</Command>
+      <Message>Installing Build Results ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Command>$(DRIVE):
+cd $(INCLUDE_DIR)
+$(CHK_DIR) glib mkdir glib
+cd glib
+$(CHK_DIR) glib mkdir glib
+$(CHK_DIR) gio mkdir gio
+$(CHK_DIR) gobject mkdir gobject
+$(CHK_DIR) ..\gio-win32 mkdir ..\gio-win32
+cd ..\gio-win32
+$(CHK_DIR) gio mkdir gio
+cd gio
+$(ECHO_HEADERS)
+xcopy $(SRC_DIR)gio\gwin32inputstream.h $(COPY_CMD)
+xcopy $(SRC_DIR)gio\gwin32outputstream.h $(COPY_CMD)
+cd ..\..\glib\glib
+xcopy $(SRC_DIR)glib\*.h $(COPY_CMD)
+xcopy glib.h ..\ $(COPY_CMD)
+xcopy glib-object.h ..\ $(COPY_CMD)
+xcopy glib-unix.h ..\ $(COPY_CMD)
+$(CHK_DIR) deprecated mkdir deprecated
+cd deprecated
+xcopy $(SRC_DIR)glib\deprecated\*.h $(COPY_CMD)
+cd ..\..\gio
+xcopy $(SRC_DIR)gio\*.h $(COPY_CMD)
+cd ..\gobject
+xcopy $(SRC_DIR)gobject\*.h $(COPY_CMD)
+xcopy $(SRC_DIR)gobject\gobjectnotifyqueue.c $(COPY_CMD)
+cd ..\
+xcopy $(SRC_DIR)gmodule\gmodule.h $(COPY_CMD)
+cd $(LIB_DIR)
+$(CHK_DIR) glib\include mkdir glib\include
+cd glib\include
+$(MOVE) $(INCLUDE_DIR)glib\glib\glibconfig.h .\
+$(CHK_DIR) $(SHARE_DIR) mkdir $(SHARE_DIR)
+cd $(SHARE_DIR)
+$(CHK_DIR) glib-2.0 mkdir glib-2.0
+cd glib-2.0
+$(CHK_DIR) schemas mkdir schemas
+cd schemas
+echo installing schemas ...
+xcopy $(SRC_DIR)gio\gschema.dtd $(COPY_CMD)
+$(CHK_DIR) ..\codegen mkdir ..\codegen
+cd ..\codegen
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\*.py $(COPY_CMD)
+cd $(BIN_DIR)
+xcopy $(SRC_DIR)gio\gdbus-2.0\codegen\gdbus-codegen.in gdbus-codegen $(COPY_CMD)
+cd $(SRC_DIR)gobject
+echo #! $(PERL_DIR)perl &gt; $(BIN_DIR)glib-mkenums
+type $(SRC_DIR)gobject\glib-mkenums | find /V /I "@PERL_PATH@" &gt;&gt; $(BIN_DIR)glib-mkenums
+$(CHK_DIR) $(REF_DIR) mkdir $(REF_DIR)
+cd $(REF_DIR)
+$(ECHO_DOC)
+if not exist glib\html mkdir glib\html
+if not exist gio\html mkdir gio\html
+if not exist gobject\html mkdir gobject\html
+cd glib\html
+xcopy $(SRC_DIR)docs\reference\glib\html $(COPY_CMD)
+cd ..\..\gio\html
+xcopy $(SRC_DIR)docs\reference\gio\html $(COPY_CMD)
+cd ..\..\gobject\html
+xcopy $(SRC_DIR)docs\reference\gobject\html $(COPY_CMD)</Command>
+      <Message>Installing Build Results ...</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="gio.vcxproj">
+      <Project>{f3d1583c-5613-4809-bd98-7cc1c1276f92}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="glib-genmarshal.vcxproj">
+      <Project>{bd12e835-5c52-4e5d-8234-1c579f33e27a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="glib.vcxproj">
+      <Project>{12bca020-eabf-429e-876a-a476bc9c10c0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gmodule.vcxproj">
+      <Project>{4214047c-f5c1-40b3-8369-5dced8c32770}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gobject.vcxproj">
+      <Project>{f172effc-e30f-4593-809e-db2024b1e753}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gspawn-win32-helper-console.vcxproj">
+      <Project>{e40e8a7e-7cae-4659-9b8b-bc38898e3074}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gspawn-win32-helper.vcxproj">
+      <Project>{289240e7-e167-47ce-a20c-58d852e520ba}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gthread.vcxproj">
+      <Project>{c8afb8c3-fffd-460f-bc13-9ac25d7b117c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="glib-compile-schemas.vcxproj">
+      <Project>{015d69d0-8b42-438a-adae-052ac036e065}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gsettings.vcxproj">
+      <Project>{05041c63-f1c5-49ba-a7de-61ebb5307eaa}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="glib-compile-resources.vcxproj">
+      <Project>{b0cdec7f-dce1-4f7e-b8a4-a3009c18fb2a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gresource.vcxproj">
+      <Project>{95a1571f-61be-4c51-be53-2f2dab280685}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gio-querymodules.vcxproj">
+      <Project>{95a1571f-61be-4c51-be53-2f2dab280686}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="gdbus.vcxproj">
+      <Project>{95a1571f-61be-4c51-be53-2f2dab280687}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

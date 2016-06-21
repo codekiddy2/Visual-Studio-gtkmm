@@ -5,88 +5,83 @@ For Copyright notices see Licence.txt attached to solution.
 Please do not remove this file or it's contents from solution as it
 contains important usage information.
 
-solution obtained from https://github.com/winlibs/libffi
-solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+Solution obtained from official source package.
+solution redesign by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.2
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\libffi-3.1\msvc-140
+solution version = 1.1.5
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\glib-2.46.2\build\win32\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: https://sourceware.org/libffi/
+official sources: http://ftp.acc.umu.se/pub/GNOME/sources/glib/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
+intl
+zlib
+ffi
+pcre (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-You can also use Nuget package manager in dependent projects (questionable if that would work)
+Open Solution select configuration and build
+Install by building the "Install" project
+Make sure all the test projects pass by running them!
 
-copy 2 files for your build type from "configuration" folder into libffi's root directory..
-Open apropriate VS command promt (x86 or x64 depending on which target you compile)
-execute the *.bat file, again cd into libffi root and configure by using the *.sh file.
-You may need to modify these files in case of errors or different build type.
-
-Do not used ffi_dll or ffi_static projects ffi must be compiled by wrapper provided in
-source tree. (that costed me 4 days of painful debugging!)
-
-once configuration is done, build solution which is currently configured to build test-ffi_static
-test-closure and install project.
-
-test-ffi_static and test-closure must pass.
-ffi_dll, test-ffi_dll and ffi_static are excluded from build in configuration manager.
+since 1.15: (removed)
+gobject and test gobject use nuget package manager to get libffi
+Get-Project <project name> | Install-package libffi
+treat linker warning as error set to on solution level.
+linker input for ffi.lib removed for gobject debug x64 only
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-x64 configuration does not work with libffi-3.2 (probably bug in 64 assembly code)
-While running test projects you might see the "First time exception" output, which is OK?? since
-that's what these test projects do, look for output in console, not sure.
+glib (extern pcre) will link to pcre8.dll.lib
 
-edit: since msvc-140:
-there is no exception when testing static lib!
+codegen python files need to be installed into glib-2.0/share/codegen, to avoid
+gdbus generated error.
 
-FFI_BUILDING must be defined for static libs, ffi dll must not define that macro.
-not sure if dependent project need to define that too.
+test-gio has runtime check reduced in debug mode due to runtime error.
 
-install project is supposed to do following:
-copy libffi_convenience.lib file into lib directory and rename into ffi.lib
-copy ffitarget.h and ffi.h into include_dir/ffi
+ZLIB_WINAPI must be defined for x86 builds, also zlib.dll x86 must define that macro
+on building.
+edit: that macro is being removed in entry stack.
 
-libffi 3.2.1 does not work due to missing complex support.
+libffi must be built by msvc wraper.
 
-in case of errors related to Windows SDK "ucrt.lib" can't be found (compiler can't create executables)
-reinstallation of sdk solved the issue (reinstallation of VS to D not tested)
+gnulib, libcharset and pcre source files have their macros defined in source file properties.
+these are defined in solution level property page.
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
+1.0.0
+	Debug x64
+
+1.0.1
+	All 4 (NO debugging)
+
 1.0.2
 	Debug x64
 
 1.0.3
-	DLL: Debug/Release x64
-
-1.0.4
-	All 4
-
-1.1.0
-	Debug x64 + Debug
-
-1.1.1
+	Added test projects...
 	Debug x64
 
-1.1.2
+1.1.0-5
 	Debug x64 + Debug
-	Release x64 + test
-	Debug x86 + debug
+	
+1.1.0.5
+	Release x64
+	Debug x86
+	Release x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-add object files or asm files from config folder to dll project to create a valid dll.
-add more test projects
-linker warning are disabled, see why, fix and re-enable
+make configuration for glib to link to gettext's version of localcharset and gnulib.
+also consider ENABLE_RELOCATABLE in gettext.
