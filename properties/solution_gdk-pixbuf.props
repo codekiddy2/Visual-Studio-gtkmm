@@ -2,8 +2,8 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)gdk-pixbuf-2.32.2\</SRC_DIR>
-    <GdkPixbufBinaryVersion>2.32.2</GdkPixbufBinaryVersion>
+    <SRC_DIR>$(PROJECTS_DIR)gdk-pixbuf-2.34.0\</SRC_DIR>
+    <GdkPixbufBinaryVersion>2.34.0</GdkPixbufBinaryVersion>
     <GdkPixbufDummyPrefix>$(DUMMY_ROOT)</GdkPixbufDummyPrefix>
     <GenerateGdkPixbufDef>echo EXPORTS &gt; $(SYMBOLS_DIR)def\gdk-pixbuf.def &amp;&amp; cl /EP -DG_OS_WIN32 -DINCLUDE_VARIABLES -DALL_FILES -DG_GNUC_CONST= -DG_GNUC_NULL_TERMINATED= ..\..\..\gdk-pixbuf\gdk-pixbuf.symbols &gt;&gt; $(SYMBOLS_DIR)def\gdk-pixbuf.def</GenerateGdkPixbufDef>
   </PropertyGroup>
