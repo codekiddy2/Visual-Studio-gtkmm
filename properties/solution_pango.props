@@ -4,7 +4,7 @@
     <VSVer>10</VSVer>
     <GlibEtcInstallRootFromBuildWin32>..\..\..\vs$(VSVer)\$(Platform)</GlibEtcInstallRootFromBuildWin32>
     <CopyDir>$(GlibEtcInstallRoot)</CopyDir>
-    <SRC_DIR>$(PROJECTS_DIR)pango-1.38.1\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)pango-1.40.1\</SRC_DIR>
     <PangoDummyPrefix>$(DUMMY_ROOT)</PangoDummyPrefix>
   </PropertyGroup>
   <PropertyGroup>
