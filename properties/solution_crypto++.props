@@ -27,6 +27,9 @@ xcopy $(MOD_DIR)fipstest.cpp $(SRC_DIR) /Y
     <Link />
     <Link />
     <Link />
+    <Link>
+      <AdditionalOptions>/IGNORE:4217 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="SRC_DIR">

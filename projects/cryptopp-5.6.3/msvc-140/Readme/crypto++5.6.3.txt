@@ -45,6 +45,7 @@ since msvc-140
 added to ignore lib warnings as errors in solution level props.
 turn off SDL check on solution level.
 warning 4297 disabled on solution level. (edit: removed??)
+-> 4217 added
 
 x86 DLL/test build does not work at all, X64 build seems OK ?
 edit^ x86 builds (release and static) will build static lib only, set in config. manager.
