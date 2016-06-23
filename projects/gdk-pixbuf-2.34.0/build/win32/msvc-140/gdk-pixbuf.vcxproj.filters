@@ -19,6 +19,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Source Files\old">
+      <UniqueIdentifier>{8896b0e5-c8a5-4b88-b05c-562d567eed5c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\gdk-pixbuf\gdk-pixbuf.c">
@@ -66,9 +69,6 @@
     <ClCompile Include="..\..\..\gdk-pixbuf\io-icns.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\gdk-pixbuf\io-pcx.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\gdk-pixbuf\io-pixdata.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -81,13 +81,7 @@
     <ClCompile Include="..\..\..\gdk-pixbuf\io-qtif.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\gdk-pixbuf\io-ras.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\gdk-pixbuf\io-tga.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gdk-pixbuf\io-wbmp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\gdk-pixbuf\io-xbm.c">
@@ -146,6 +140,15 @@
     </ClCompile>
     <ClCompile Include="..\..\..\gdk-pixbuf\gdk-pixbuf-buffer-queue.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gdk-pixbuf\io-wbmp.c">
+      <Filter>Source Files\old</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gdk-pixbuf\io-ras.c">
+      <Filter>Source Files\old</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gdk-pixbuf\io-pcx.c">
+      <Filter>Source Files\old</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

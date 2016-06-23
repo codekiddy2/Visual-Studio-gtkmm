@@ -2,15 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)gtk+-3.16.7\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)gtk+-3.20.6\</SRC_DIR>
     <GtkBinaryVersion>3.0.0</GtkBinaryVersion>
-    <GtkVersion>3.16.7</GtkVersion>
+    <GtkVersion>3.20.6</GtkVersion>
     <GtkDummyPrefix>$(DUMMY_ROOT)</GtkDummyPrefix>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h /Y</GenConfigH>
     <GenGdkConfigHWin32>copy ..\..\..\gdk\gdkconfig.h.win32 ..\..\..\gdk\gdkconfig.h /Y</GenGdkConfigHWin32>
     <GenGdkConfigHBroadway>copy ..\..\..\gdk\gdkconfig.h.win32_broadway ..\..\..\gdk\gdkconfig.h /Y</GenGdkConfigHBroadway>
-    <GenerateGtkWin32RC>$(PYTHON_DIR)python $(SRC_DIR)build\win32\process-in-win32.py --gtkwin32rc --gtk3manifest</GenerateGtkWin32RC>
+    <GenerateGtkWin32RC>copy ..\..\..\gtk\gtk-win32.rc.body ..\..\..\gtk\gtk-win32.rc /Y</GenerateGtkWin32RC>
     <GenerateGtkDbusBuiltSources>cd $(SRC_DIR)gtk $(PYTHON_DIR)python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml cd $(SolutionDir)</GenerateGtkDbusBuiltSources>
+    <GenerateGtkWin32Manifest>$(PYTHON_DIR)python ..\replace.py --action=replace-var --input=..\..\..\gtk\libgtk3.manifest.in --output=..\..\..\gtk\libgtk3.manifest --var=EXE_MANIFEST_ARCHITECTURE --outstring=*</GenerateGtkWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_gtk+</_PropertySheetDisplayName>
@@ -55,6 +56,9 @@
     </BuildMacro>
     <BuildMacro Include="GenerateGtkDbusBuiltSources">
       <Value>$(GenerateGtkDbusBuiltSources)</Value>
+    </BuildMacro>
+    <BuildMacro Include="GenerateGtkWin32Manifest">
+      <Value>$(GenerateGtkWin32Manifest)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)cairo-1.14.6\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)cairo-1.15.2\</SRC_DIR>
     <FEATURES_DIR>$(ROOT_DIR)intermediate\$(SolutionName)\install\</FEATURES_DIR>
     <PreBuildCfgStd>
 if not exist $(FEATURES_DIR) mkdir $(FEATURES_DIR)
