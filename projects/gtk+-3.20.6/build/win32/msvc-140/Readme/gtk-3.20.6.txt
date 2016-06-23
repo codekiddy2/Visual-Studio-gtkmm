@@ -80,6 +80,8 @@ need to wait for new cairo version, it's a cairo's problem.
 
 update icon cache prebuild event fails.
 edit: it works if compilation of icons was fine.
+edit: it won't work when install project builds for first time because xml schema files
+are not copied to correct location (that is if they are missing) check first time install procedure
 
 Warning 4129 set to treat as error, "unrecognized character escape sequence", this needs to
 be correct, this sets directories.
@@ -135,3 +137,5 @@ TODO:
 
 add more test projects.
 system icons not visible
+check install procedure for gsetings xml schema files to make update-icon-cache work
+testfontchooerdialog doesn't work cos it asks for fontconfig (check and fix)

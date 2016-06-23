@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR_M>$(PROJECTS_DIR_M)/adwaita-icon-theme-3.18.0</SRC_DIR_M>
+    <SRC_DIR_M>$(PROJECTS_DIR_M)/adwaita-icon-theme-3.20</SRC_DIR_M>
     <SOLUTION_NAME>adwaita</SOLUTION_NAME>
   </PropertyGroup>
   <PropertyGroup />

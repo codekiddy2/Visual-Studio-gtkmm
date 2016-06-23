@@ -12,6 +12,7 @@
     <GenerateGtkWin32RC>copy ..\..\..\gtk\gtk-win32.rc.body ..\..\..\gtk\gtk-win32.rc /Y</GenerateGtkWin32RC>
     <GenerateGtkDbusBuiltSources>cd $(SRC_DIR)gtk $(PYTHON_DIR)python $(ROOT_DIR)bin\gdbus-codegen --interface-prefix org.Gtk --c-namespace _Gtk --generate-c-code gtkdbusgenerated ./gtkdbusinterfaces.xml cd $(SolutionDir)</GenerateGtkDbusBuiltSources>
     <GenerateGtkWin32Manifest>$(PYTHON_DIR)python ..\replace.py --action=replace-var --input=..\..\..\gtk\libgtk3.manifest.in --output=..\..\..\gtk\libgtk3.manifest --var=EXE_MANIFEST_ARCHITECTURE --outstring=*</GenerateGtkWin32Manifest>
+    <CopyDemosH>copy ..\..\..\demos\gtk-demo\demos.h.win32 ..\..\..\demos\gtk-demo\demos.h</CopyDemosH>
   </PropertyGroup>
   <PropertyGroup>
     <_PropertySheetDisplayName>solution_gtk+</_PropertySheetDisplayName>
@@ -59,6 +60,9 @@
     </BuildMacro>
     <BuildMacro Include="GenerateGtkWin32Manifest">
       <Value>$(GenerateGtkWin32Manifest)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CopyDemosH">
+      <Value>$(CopyDemosH)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
