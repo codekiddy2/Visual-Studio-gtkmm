@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)boost_1_60_0\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)boost_1_61_0\</SRC_DIR>
     <STAGE_DIR>$(SRC_DIR)stage\</STAGE_DIR>
     <LAYOUT>system</LAYOUT>
     <THREADING>multi</THREADING>
