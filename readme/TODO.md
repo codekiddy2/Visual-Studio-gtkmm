@@ -22,6 +22,7 @@
 * define intdir and output dir for user_stack properties, it should be $(Configuration)\$(Platform) instead of $(Platform)\$(Configuration)
 * user base stack set entry point to "not set" ?
 * user properties: disable common language run-time support
+* check for config header of each solution for consistency such as targeted widnows, package version and defines.
 
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build
@@ -83,7 +84,6 @@
 * define path for nasm and similar tools in properties, so that %PATH% won't be needed
 * create ICU project to optionally link with harbuzz, libxml and others?? (what with expat then?)
 * RETURN "TEST CALLER APP" BACK TO FFI! test with older versions!
-* check for config header of each solution for consistency such as targeted widnows.
 * create a new branch for most recent "unstable" builds.
 * remove VC-upgrade macros and properties, and then test projects.
 * create editline and readline projects
