@@ -23,6 +23,7 @@
 * user base stack set entry point to "not set" ?
 * user properties: disable common language run-time support
 * check for config header of each solution for consistency such as targeted widnows, package version and defines.
+* check and remove old (non existent source files) from solutions (or move them to 'old' filter), also do other similar cleanup
 
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build

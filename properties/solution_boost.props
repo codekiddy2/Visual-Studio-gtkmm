@@ -30,8 +30,7 @@ SET BZIP2_LIBPATH=$(LIB_DIR)
 SET ZLIB_BINARY=zlib.dll
 SET ZLIB_LIBPATH=$(LIB_DIR)
 SET ZLIB_INCLUDE=$(INCLUDE_DIR)zlib
-SET PATH=$(PYTHON2_DIR);$(PYTHON2_DIR)Scripts;%PATH%
-SET ICU_LINK="icudt.dll.lib icuin.dll.lib icuio.dll.lib icule.dll.lib iculx.dll.lib icuuc.dll.lib"
+SET PATH=$(PYTHON_DIR);$(PYTHON_DIR)Scripts;%PATH%
 $(B2_DIR)b2 --without-mpi --debug-symbols=on cflags="/I$(INCLUDE_DIR)iconv /I$(INCLUDE_DIR)icu /D_CRT_SECURE_NO_WARNINGS /W2 /wd4348 /wd4251" linkflags="/DEBUG /PDB:$(SYMBOLS_DIR) /LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
 cd $(STAGE_DIR)lib
 if exist *.lib move /Y *.lib $(LIB_DIR)

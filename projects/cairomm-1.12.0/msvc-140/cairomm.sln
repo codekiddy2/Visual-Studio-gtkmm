@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cairomm", "cairomm\cairomm.vcxproj", "{58B2B53C-C4FF-47FD-817B-095E45B7F7D4}"
 EndProject
@@ -48,6 +48,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{DB031D66-6160-4072-A089-64A33A33B852}"
 	ProjectSection(SolutionItems) = preProject
 		cairomm\cairommconfig.h = cairomm\cairommconfig.h
+		src\enums.h = src\enums.h
 	EndProjectSection
 EndProject
 Global

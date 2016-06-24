@@ -115,6 +115,13 @@
   <ItemGroup>
     <ClCompile Include="main.cc" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\atkmm\atkmm.vcxproj">
+      <Project>{9fe0d5a6-458c-45c7-b954-2c3c1e6196c2}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

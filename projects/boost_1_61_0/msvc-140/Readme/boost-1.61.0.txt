@@ -28,6 +28,9 @@ icu (optional)
 INSTRUCTIONS:
 this solution will build boost with zlib, bzip2, icu and iconv support.
 using python2 (freeorion compatibility), change to python3 in solution level property page to compile for python3.
+edit^ set to python3 and removed ICU (to rebuild python only delete python build from intermediate dir)
+
+Perform build as Admin (open VS as administrator) to make test mklink success. (not tested, clean build needed to see output)
 Open Solution select configuration and build.
 errors related to post-build-event can be ignored, to be sure boost was built correctly,
 search for "The Boost C++ Libraries were successfully built!" in the output window.
@@ -86,6 +89,9 @@ cxxflags="/I$(INCLUDE_DIR)icu"
 if python is not in path use following before invoking b2:
 SET PATH=$(INSTALL_DIR)Python35;$(INSTALL_DIR)Python35\Scripts;%PATH%
 
+since v1.61.0
+removed ICU_LINK and set to use python3
+
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
@@ -100,9 +106,31 @@ TESTINGS:
 TODO:
 Add test projects
 separeate "install" project
-build mpi
-fix post build event error
+build mpi ( Graph library does not contain MPI-based parallel components )
+fix post build event error (the cause is: single error during build process, tells it's post-build event error which is not)
 make libs *.dll.lib, currently it's *.lib
 make clean/rebuild possible
 
 make non icu build configuration
+
+TEMP:
+original configuration for postbuild event:
+
+$(DRIVE):
+cd $(SRC_DIR)
+SET BZIP2_BINARY=bzip2.dll
+SET BZIP2_INCLUDE=$(INCLUDE_DIR)bzip2
+SET BZIP2_LIBPATH=$(LIB_DIR)
+SET ZLIB_BINARY=zlib.dll
+SET ZLIB_LIBPATH=$(LIB_DIR)
+SET ZLIB_INCLUDE=$(INCLUDE_DIR)zlib
+SET PATH=$(PYTHON2_DIR);$(PYTHON2_DIR)Scripts;%PATH%
+SET ICU_LINK="icudt.dll.lib icuin.dll.lib icuio.dll.lib icule.dll.lib iculx.dll.lib icuuc.dll.lib"
+$(B2_DIR)b2 --without-mpi --debug-symbols=on cflags="/I$(INCLUDE_DIR)iconv /I$(INCLUDE_DIR)icu /D_CRT_SECURE_NO_WARNINGS /W2 /wd4348 /wd4251" linkflags="/DEBUG /PDB:$(SYMBOLS_DIR) /LIBPATH:$(LIB_DIR) iconv.dll.lib" --layout=$(LAYOUT) link=$(LINK) threading=$(THREADING) variant=$(VARIANT) toolset=msvc-$(MSBuildToolsVersion) address-model=$(PlatformArchitecture) runtime-link=$(RUNTIME) --build-dir=$(ROOT_DIR)intermediate
+cd $(STAGE_DIR)lib
+if exist *.lib move /Y *.lib $(LIB_DIR)
+if exist *.dll move /Y *.dll $(BIN_DIR)
+cd $(SRC_DIR)boost
+if not exist $(INCLUDE_DIR)boost mkdir $(INCLUDE_DIR)boost
+echo Installing headers, please wait...
+xcopy .\* $(INCLUDE_DIR)boost /EFQY

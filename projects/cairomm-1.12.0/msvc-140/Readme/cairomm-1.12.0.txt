@@ -55,3 +55,4 @@ TESTINGS:
 TODO:
 define calling program for test-xx projects.
 check why FT configuration doesn't ask for freetype library eventhough macro is defined
+make prebuild event to copy enums.h prior to build
