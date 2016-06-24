@@ -5,50 +5,56 @@ For Copyright notices see Licence.txt attached to solution.
 Please do not remove this file or it's contents from solution as it
 contains important usage information.
 
-solution design by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
+Solution obtained from official source package.
+solution redesign by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INFO:
-solution version = 1.1.0
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\goocanvas-2.0.2\msvc-140
+solution version = 1.1.2
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\libsigc++-2.8.0\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
-official sources: http://ftp.gnome.org/pub/GNOME/sources/goocanvas/
+official sources: http://ftp.gnome.org/pub/GNOME/sources/libsigc++/
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 DEPENDENCIES:
-glib
-gdk-pixbuf
-cairo
-pango
-atk
-gtk
-gobject-introspection (optinal)
-intl (optional)
-unistd (optional)
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
-Open Visual Studio solution select configuration and build.
+Open Solution select configuration and build
+Install by building the "Install" project
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 NOTES:
-test project should not show any errors/warning in console output, if it does, make sure
-gdk-pixbuf-query-loaders did it's job in "Install" project during gdk-pixbuf compilation.
+
+since msvc-140:
+lambda.cc excluded from build process
+removed "upgrade" property sheets
+
+since 2.8.0
+test_mem_fun project doesn't work, it's excluded from build
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TESTINGS:
-1.1.0
+1.0.0
 	Debug x64
-	Release x64 + test
-	Debug x86
+
+1.1.0-1
+	Debug x64 + Debug
+
+1.1.1
+	Release 64
+	Deubg x86
 	Release x86
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
 TODO:
-dll version
+Inherit properties for all projects
+edit: checked for compiler and linker
+
+some project setting are blank( do not inherit )
