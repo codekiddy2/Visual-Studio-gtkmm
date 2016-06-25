@@ -112,3 +112,4 @@ find which library imports 3 unresolved externals
 compile gdkmm and gtkmm with deprecated API, set test project to not use deprecated API
 currently it's set to undefine in preprocessor setting, make default defines for test
 projects only.
+it's possible entry *mm stack needs to be compiled with deprecated API support?

@@ -80,7 +80,6 @@
       <PreprocessorDefinitions>GDKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <UndefinePreprocessorDefinitions>GDKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -95,7 +94,6 @@
       <PreprocessorDefinitions>GDKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <UndefinePreprocessorDefinitions>GDKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -112,7 +110,6 @@
       <PreprocessorDefinitions>GDKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <UndefinePreprocessorDefinitions>GDKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -129,7 +126,6 @@
       <PreprocessorDefinitions>GDKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <UndefinePreprocessorDefinitions>GDKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>

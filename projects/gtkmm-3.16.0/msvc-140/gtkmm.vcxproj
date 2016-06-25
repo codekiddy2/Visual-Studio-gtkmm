@@ -78,7 +78,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <UndefinePreprocessorDefinitions>GTKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -90,7 +89,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <UndefinePreprocessorDefinitions>GTKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -105,14 +103,13 @@
     </Midl>
     <ClCompile>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <UndefinePreprocessorDefinitions>GTKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
       <AdditionalDependencies>atkmm.dll.lib;pangomm.dll.lib;giomm.dll.lib;glibmm.dll.lib;cairomm.dll.lib;sigc++.dll.lib;gdkmm.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ModuleDefinitionFile>$(ProjectDir)def\gtkmm.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ProjectDir)def\$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -121,7 +118,6 @@
     </Midl>
     <ClCompile>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <UndefinePreprocessorDefinitions>GTKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
