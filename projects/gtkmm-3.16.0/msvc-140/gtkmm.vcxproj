@@ -78,6 +78,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>GTKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -89,6 +90,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>GTKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -103,6 +105,7 @@
     </Midl>
     <ClCompile>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>GTKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>
@@ -118,6 +121,7 @@
     </Midl>
     <ClCompile>
       <PreprocessorDefinitions>GTKMM_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>GTKMM_DISABLE_DEPRECATED</UndefinePreprocessorDefinitions>
     </ClCompile>
     <PreLinkEvent />
     <Link>

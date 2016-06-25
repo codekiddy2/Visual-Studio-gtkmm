@@ -24,6 +24,8 @@
 * user properties: disable common language run-time support
 * check for config header of each solution for consistency such as targeted widnows, package version and defines.
 * check and remove old (non existent source files) from solutions (or move them to 'old' filter), also do other similar cleanup
+* not all *mm projects need deprecated API turned off in preprocessor for dependent libs, (ex: pangomm, cairomm and atkmm) check which, remove macros and recompile, then check for usage of deprecated API
+* compile gtkmm solution with deprecated API support. (to make goocanvasmm test projects work)
 
 * TOP TROUBLES:
 	* crypto++ x86 build - linker errors - temporary fix: only static build
