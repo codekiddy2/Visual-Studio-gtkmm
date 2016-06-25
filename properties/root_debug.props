@@ -104,6 +104,7 @@
   <ItemGroup>
     <BuildMacro Include="ROOT_DIR">
       <Value>$(ROOT_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
     <BuildMacro Include="VARIANT">
       <Value>$(VARIANT)</Value>

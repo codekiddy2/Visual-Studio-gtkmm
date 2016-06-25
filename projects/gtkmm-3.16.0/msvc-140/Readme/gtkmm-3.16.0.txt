@@ -38,6 +38,7 @@ Before building open the gtkmmconfig.h found ./msvc-1xx/gtkmm and comment out
 the #define GTKMM_ATKMM_ENABLED 1
 edit (msvc-140 gtkmm-3.16.0): the above is still problem since msvc 120 gtkmm-3.14.0:
 access violation reading location, in atkmm implementor destructor.
+edit ^ vd2 flag needed for all *mm projects
 
 Once you do that save the gtkmmconfig.h header...
 Open Solution select configuration and build
@@ -46,6 +47,8 @@ You must "Install" before running the demo application!
 
 if there are unresolved externals in gtkmm x64 builds, you need to modify def files genereated by gendef.
 currently gtkmm linker input is modified, make sure to modify this to and relink only.
+
+for gtkmm3-demo (gtkmm 3.16.0) copy custom demo-common.cc to demo dir to make it compile
 
 **************************************************************************************************************************************************************************
 **************************************************************************************************************************************************************************
@@ -104,3 +107,4 @@ TESTINGS:
 **************************************************************************************************************************************************************************
 TODO:
 some settings are blank (not inherited)
+find which library imports 3 unresolved externals

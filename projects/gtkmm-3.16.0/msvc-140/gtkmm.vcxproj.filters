@@ -1421,10 +1421,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="gtkmm\gtkmm.def">
-      <Filter>Definition files</Filter>
-    </None>
-    <None Include="gtkmm\gtkmm_no_atk.def">
+    <None Include="def\gtkmm.def">
       <Filter>Definition files</Filter>
     </None>
   </ItemGroup>

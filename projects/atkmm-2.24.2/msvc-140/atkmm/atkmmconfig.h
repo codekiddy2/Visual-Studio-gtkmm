@@ -15,7 +15,7 @@
 #define ATKMM_MINOR_VERSION 24
 
 /* Micro version number of atkmm. */
-#define ATKMM_MICRO_VERSION 1
+#define ATKMM_MICRO_VERSION 2
 
 /* Define when building atkmm as a static library. */
 /* #undef ATKMM_STATIC_LIB */
