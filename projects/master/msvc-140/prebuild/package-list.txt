@@ -18,7 +18,7 @@ http://downloads.sourceforge.net/project/freeglut/freeglut/3.0.0/freeglut-3.0.0.
 https://sourceforge.net/projects/libjpeg-turbo/files/1.5.0/libjpeg-turbo-1.5.0.tar.gz
 http://ftp.gnu.org/gnu/libiconv/libiconv-1.14.tar.gz
 http://zlib.net/zlib-1.2.8.tar.gz
-https://sourceforge.net/projects/expat/files/expat/2.1.1/expat-2.1.1.tar.bz2
+https://sourceforge.net/projects/expat/files/expat/2.2.0/expat-2.2.0.tar.bz2
 http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.6.tar.gz
 ftp://xmlsoft.org/libxml2/libxml2-2.9.4.tar.gz
