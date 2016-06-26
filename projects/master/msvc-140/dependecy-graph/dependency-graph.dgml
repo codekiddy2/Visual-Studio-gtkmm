@@ -35,7 +35,7 @@
     <Node Id="Harfbuzz" Category="Category2" Bounds="353.639047995016,196.279450833077,65.5233333333335,25.96" Label="harfbuzz" UseManualLocation="True" />
     <Node Id="Hicolor-icon-theme" Category="Category2" Bounds="1320.14941080729,637.026011962891,126.65,25.96" Label="adwaita-icon-theme" UseManualLocation="True" />
     <Node Id="Hicolor-icon-theme1" Category="Category2" Bounds="1164.89187457541,642.590316480554,121.996666666667,25.96" Label="hicolor-icon-theme" UseManualLocation="True" />
-    <Node Id="Icu" Category="Category2" Bounds="496.439015499996,-2.01574488742746,50,25.96" Label="icu" UseManualLocation="True" />
+    <Node Id="Icu" Category="Category5" Bounds="496.439015499996,-2.01574488742746,50,25.96" Label="icu" UseManualLocation="True" />
     <Node Id="Jasper" Category="Category2" Bounds="1375.41368896484,150.47475682373,51.6100000000001,25.96" Label="jasper" UseManualLocation="True" />
     <Node Id="Jbig-kit" Category="Category2" Bounds="1375.89924231488,347.166642980368,57.6700000000001,25.96" Label="jbig-kit" UseManualLocation="True" />
     <Node Id="Jpeg" Category="Category2" Bounds="1251.07917701801,2.57484331793477,50,25.9599999999999" Label="jpeg" UseManualLocation="True" />
@@ -84,14 +84,14 @@
     <Link Source="Epoxy" Target="Gtk" Bounds="1282.21554792517,473.559241349931,111.595916926842,86.9914974263861" />
     <Link Source="Expat" Target="Fontconfig" Bounds="88.634646417175,21.7562306178011,654.755984026677,200.394210644515" />
     <Link Source="Expat" Target="Libintl" Bounds="779.288769961987,27.0847461131421,145.114876842463,172.836023825975" />
-    <Link Source="Ffi" Target="Glib" Bounds="747.74933696837,276.260372657794,218.381400336318,75.3319885340355" />
+    <Link Source="Ffi" Target="Glib" Bounds="747.749336946826,276.260372925599,218.381378744458,75.3319828795837" />
     <Link Source="Fontconfig" Target="Cairo" Bounds="80.3534233950567,245.612401856,575.66335750414,146.201993978708" />
     <Link Source="Fontconfig" Target="Pango" Bounds="79.8428521003478,247.776056180774,426.493008893829,134.853798967142" />
     <Link Source="Freeglut" Target="Jasper" Bounds="1401.97211293847,28.4715510528564,3.87460347677757,113.008490980321" Label="" LabelBounds="1407.90941536698,77.0643281745739,0,15.96" />
     <Link Source="Freeglut" Target="Tiff" Bounds="1285.40627021062,28.4715510528564,111.069551561415,146.871801896313" />
     <Link Source="Freetype" Target="Cairo" Bounds="388.022900164852,287.247270343688,268.289878104486,100.598000118468" />
     <Link Source="Freetype" Target="Fontconfig" Bounds="89.283303972877,241.935265891726,235.615531803741,29.5846290106508" />
-    <Link Source="Freetype" Target="Harfbuzz" Bounds="359.183776855469,230.434356689453,14.2966003417969,32.1038818359375" />
+    <Link Source="Freetype" Target="Harfbuzz" Bounds="365.740539550781,230.432571411133,14.327392578125,32.1056671142578" />
     <Link Source="Freetype" Target="Pango" Bounds="377.050386231609,288.498244229847,136.998474476982,87.5625953799197" />
     <Link Source="Glib" Target="Atk" Bounds="722.20556182447,277.681577965079,59.3770928669085,96.7718457483977" />
     <Link Source="Glib" Target="Cairo" Bounds="693.683262631522,277.681577965079,18.2140475200506,100.86076773258" />
@@ -118,13 +118,13 @@
     <Link Source="Gtk" Target="Gtkmm" Bounds="500.441041002313,579.549683913478,733.025116786577,14.2431971090002" />
     <Link Source="Gtkmm" Target="Goocanvasmm" Bounds="338.91583400948,607.508980397489,98.9054045613458,51.898696363943" />
     <Link Source="Harfbuzz" Target="Fontconfig" Bounds="89.3039016723633,210.800109863281,264.335136413574,20.4427947998047" />
-    <Link Source="Harfbuzz" Target="Freetype" Bounds="369.373138427734,222.239456176758,14.4194030761719,32.064453125" />
+    <Link Source="Harfbuzz" Target="Freetype" Bounds="362.813690185547,222.239456176758,14.3873596191406,32.0632629394531" />
     <Link Source="Hicolor-icon-theme" Target="Gtk" Bounds="1289.01200674663,596.398664030808,71.590129046034,40.6273479320829" />
     <Link Source="Hicolor-icon-theme1" Target="Gtk" Bounds="1231.41701126046,600.324526450166,17.9965107860517,42.2657900303877" />
     <Link Source="Icu" Target="Boost" Bounds="526.150397899293,23.9442551125725,37.0095405487072,101.962395664152" />
     <Link Source="Icu" Target="Harfbuzz" Bounds="400.305904171491,23.9442551125725,112.293778945728,164.896305240836" />
-    <Link Source="Icu" Target="Libxml2" Index="1" Bounds="546.439025878906,12.7837810516357,524.335388183594,176.676530838013" />
-    <Link Source="Icu" Target="Libxml2" Bounds="546.439025878906,19.0695190429688,524.339416503906,176.765808105469" />
+    <Link Source="Icu" Target="Libxml2" Index="1" Bounds="546.439025878906,19.0695190429688,524.339416503906,176.765808105469" />
+    <Link Source="Icu" Target="Libxml2" Bounds="546.439025878906,12.7837810516357,524.335388183594,176.676530838013" />
     <Link Source="Jasper" Target="Pixbuf" Bounds="1092.38055113966,176.43475682373,293.067622957339,241.210751701224" />
     <Link Source="Jbig-kit" Target="Tiff" Bounds="1286.46661838001,215.450268037833,107.658417178418,131.716374942535" />
     <Link Source="Jpeg" Target="Jasper" Bounds="1287.06167745745,28.5348433179347,97.3612087235779,115.069286470887" />
@@ -162,7 +162,7 @@
     <Link Source="Pixbuf" Target="Gtk" Bounds="1086.83248274824,449.324908864331,147.282644823558,111.331905781874" />
     <Link Source="Pixbuf" Target="Gtkmm" Bounds="500.151962784012,446.500454941699,530.532557458878,138.233145927813" />
     <Link Source="Pixman" Target="Cairo" Bounds="690.370182986545,422.355389459774,1.91845320636412,66.8862303862117" />
-    <Link Source="Png" Target="Freetype" Bounds="397.546830823803,279.313165724767,858.510279314177,79.8433065179239" />
+    <Link Source="Png" Target="Freetype" Bounds="397.546830823803,279.313165724767,858.510279314178,79.8433065179239" />
     <Link Source="Png" Target="Pixbuf" Bounds="1114.66137949157,370.334976547808,141.395730646406,50.0736036178708" />
     <Link Source="Readline" Target="Libxml2" Bounds="60.0789833068848,25.9042530059814,1010.2812461853,168.59100151062" />
     <Link Source="Readline" Target="Pcre" Bounds="42.5840027499119,25.96,59.5819645176536,68.2448785279641" />
