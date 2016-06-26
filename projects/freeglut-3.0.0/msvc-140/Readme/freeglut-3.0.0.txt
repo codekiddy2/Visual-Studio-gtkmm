@@ -54,4 +54,4 @@ TESTINGS:
 TODO:
 
 check if freeglut does not need configuration prior to build.
-fix test-freeglut const char error
+fix test-freeglut const char error (edit: fixed)

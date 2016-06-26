@@ -58,10 +58,10 @@ int WINAPI WinMain(_In_  HINSTANCE hInstance,
 	_In_  int nCmdShow)
 
 {
-	char *argv[] = { "foo", "bar" };
+	const char *argv[] = { "foo", "bar" };
 	int argc = 2;
 
-	glutInit(&argc, argv);
+	glutInit(&argc, const_cast<char**>(argv));
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(250, 250);
 	glutInitWindowPosition(100, 100);
