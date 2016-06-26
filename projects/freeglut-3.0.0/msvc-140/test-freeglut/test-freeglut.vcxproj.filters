@@ -15,25 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="prebuild.sh">
+    <ClCompile Include="sample.cpp">
       <Filter>Source Files</Filter>
-    </None>
-    <None Include="build64.bat">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="build32.bat">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="package-list.txt">
-      <Filter>Header Files</Filter>
-    </Text>
-    <Text Include="unzip-exclude-list.txt">
-      <Filter>Header Files</Filter>
-    </Text>
-    <Text Include="tar-exclude-list.txt">
-      <Filter>Header Files</Filter>
-    </Text>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "dependecy-graph", "dependecy-graph\dependecy-graph.modelproj", "{99EE5066-9687-41D5-8B8C-DEA9EC10B5F8}"
 EndProject
@@ -35,13 +35,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "templates\instal
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffi_msys2", "..\..\libffi-3.1\msvc-140\ffi_msys2\ffi_msys2.vcxproj", "{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adwaita-icon-theme", "..\..\adwaita-icon-theme-3.18.0\msvc-140\adwaita-icon-theme\adwaita-icon-theme.vcxproj", "{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hicolor-icon-theme", "..\..\hicolor-icon-theme-0.15\msvc-140\hicolor-icon-theme\hicolor-icon-theme.vcxproj", "{17A81AA1-6CC5-46EA-BE36-2F8FB44C823B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{614B75C5-8FDD-4459-BF1E-11F5FB058D13}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_dynamic_cast", "Test\test_dynamic_cast\test_dynamic_cast.vcxproj", "{49AE2660-D877-43B9-AF8F-393AA38BF36C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adwaita-icon-theme", "..\..\adwaita-icon-theme-3.20\msvc-140\adwaita-icon-theme\adwaita-icon-theme.vcxproj", "{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,16 +135,6 @@ Global
 		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|Win32.Build.0 = Release|Win32
 		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|x64.ActiveCfg = Release|x64
 		{CB56E0EB-0D3E-4365-A9EE-9DC69DAFD8B0}.Release|x64.Build.0 = Release|x64
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|Win32.ActiveCfg = Debug|Win32
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|Win32.Build.0 = Debug|Win32
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|x64.ActiveCfg = Debug|x64
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|x64.Build.0 = Debug|x64
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|Any CPU.ActiveCfg = Release|Win32
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|Win32.ActiveCfg = Release|Win32
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|Win32.Build.0 = Release|Win32
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|x64.ActiveCfg = Release|x64
-		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|x64.Build.0 = Release|x64
 		{17A81AA1-6CC5-46EA-BE36-2F8FB44C823B}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{17A81AA1-6CC5-46EA-BE36-2F8FB44C823B}.Debug|Win32.ActiveCfg = Debug|Win32
 		{17A81AA1-6CC5-46EA-BE36-2F8FB44C823B}.Debug|Win32.Build.0 = Debug|Win32
@@ -165,6 +155,16 @@ Global
 		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Release|Win32.Build.0 = Release|Win32
 		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Release|x64.ActiveCfg = Release|x64
 		{49AE2660-D877-43B9-AF8F-393AA38BF36C}.Release|x64.Build.0 = Release|x64
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|Win32.Build.0 = Debug|Win32
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|x64.ActiveCfg = Debug|x64
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Debug|x64.Build.0 = Debug|x64
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|Any CPU.ActiveCfg = Release|Win32
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|Win32.ActiveCfg = Release|Win32
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|Win32.Build.0 = Release|Win32
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|x64.ActiveCfg = Release|x64
+		{E9E70F9D-59FE-4D9A-9507-B34A979EEA27}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

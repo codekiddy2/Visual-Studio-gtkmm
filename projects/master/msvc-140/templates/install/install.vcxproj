@@ -52,18 +52,22 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_debug_64.props" />
     <Import Project="..\..\..\..\..\properties\base_utility.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_release_64.props" />
     <Import Project="..\..\..\..\..\properties\base_utility.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_debug_32.props" />
     <Import Project="..\..\..\..\..\properties\base_utility.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\properties\base_release_32.props" />
     <Import Project="..\..\..\..\..\properties\base_utility.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -79,6 +83,7 @@
     </Link>
     <PreBuildEvent>
       <Command>$(SystemDrive)
+$(CHK_DIR) "$(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates" mkdir "$(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates"
 cd $(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates
 xcopy $(ProjectDir)*.zip /Y
 </Command>
@@ -95,6 +100,7 @@ xcopy $(ProjectDir)*.zip /Y
     </Link>
     <PreBuildEvent>
       <Command>$(SystemDrive)
+$(CHK_DIR) "$(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates" mkdir "$(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates"
 cd $(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates
 xcopy $(ProjectDir)*.zip /Y
 </Command>
@@ -111,6 +117,7 @@ xcopy $(ProjectDir)*.zip /Y
     </Link>
     <PreBuildEvent>
       <Command>$(SystemDrive)
+$(CHK_DIR) "$(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates" mkdir "$(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates"
 cd $(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates
 xcopy $(ProjectDir)*.zip /Y
 </Command>
@@ -127,6 +134,7 @@ xcopy $(ProjectDir)*.zip /Y
     </Link>
     <PreBuildEvent>
       <Command>$(SystemDrive)
+$(CHK_DIR) "$(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates" mkdir "$(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates"
 cd $(USERPROFILE)\Documents\Visual Studio 2015\My Exported Templates
 xcopy $(ProjectDir)*.zip /Y
 </Command>

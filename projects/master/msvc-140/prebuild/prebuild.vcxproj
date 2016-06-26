@@ -160,8 +160,8 @@ call $(MSYS2_DIR)build$(PlatformArchitecture).bat</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="build32.cmd" />
-    <None Include="build64.cmd" />
+    <None Include="build32.bat" />
+    <None Include="build64.bat" />
     <None Include="prebuild.sh" />
   </ItemGroup>
   <ItemGroup>

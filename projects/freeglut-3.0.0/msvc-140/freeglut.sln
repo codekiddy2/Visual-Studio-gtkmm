@@ -1,0 +1,76 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freeglut_dll", "freeglut.vcxproj", "{FA997F1D-A470-4764-946C-6F12DFFA72D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freeglut_static", "freeglut_static.vcxproj", "{2D041D89-DE7B-44A1-8149-4016F9B77F00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{F4CED4A9-F1D7-4BF1-9E67-A60277D059EA}"
+	ProjectSection(SolutionItems) = preProject
+		Readme\freeglut-3.0.0-rc2.txt = Readme\freeglut-3.0.0-rc2.txt
+		Readme\freeglut-3.0.0.txt = Readme\freeglut-3.0.0.txt
+		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
+		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
+		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "install", "install\install.vcxproj", "{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-freeglut", "test-freeglut\test-freeglut.vcxproj", "{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0A995460-13EA-4290-888C-35F54CAD2F78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{A386B451-A58C-49C8-976B-6FE8976FCD35}"
+	ProjectSection(SolutionItems) = preProject
+		src\config.h = src\config.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA997F1D-A470-4764-946C-6F12DFFA72D0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA997F1D-A470-4764-946C-6F12DFFA72D0}.Debug|Win32.Build.0 = Debug|Win32
+		{FA997F1D-A470-4764-946C-6F12DFFA72D0}.Debug|x64.ActiveCfg = Debug|x64
+		{FA997F1D-A470-4764-946C-6F12DFFA72D0}.Debug|x64.Build.0 = Debug|x64
+		{FA997F1D-A470-4764-946C-6F12DFFA72D0}.Release|Win32.ActiveCfg = Release|Win32
+		{FA997F1D-A470-4764-946C-6F12DFFA72D0}.Release|Win32.Build.0 = Release|Win32
+		{FA997F1D-A470-4764-946C-6F12DFFA72D0}.Release|x64.ActiveCfg = Release|x64
+		{FA997F1D-A470-4764-946C-6F12DFFA72D0}.Release|x64.Build.0 = Release|x64
+		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Debug|Win32.Build.0 = Debug|Win32
+		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Debug|x64.ActiveCfg = Debug|x64
+		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Debug|x64.Build.0 = Debug|x64
+		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Release|Win32.ActiveCfg = Release|Win32
+		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Release|Win32.Build.0 = Release|Win32
+		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Release|x64.ActiveCfg = Release|x64
+		{2D041D89-DE7B-44A1-8149-4016F9B77F00}.Release|x64.Build.0 = Release|x64
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Debug|Win32.Build.0 = Debug|Win32
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Debug|x64.ActiveCfg = Debug|x64
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Debug|x64.Build.0 = Debug|x64
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Release|Win32.ActiveCfg = Release|Win32
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Release|Win32.Build.0 = Release|Win32
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Release|x64.ActiveCfg = Release|x64
+		{5E38D8B4-8B29-49D7-9477-68CDEE3C655F}.Release|x64.Build.0 = Release|x64
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Debug|Win32.Build.0 = Debug|Win32
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Debug|x64.ActiveCfg = Debug|x64
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Debug|x64.Build.0 = Debug|x64
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Release|Win32.ActiveCfg = Release|Win32
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Release|Win32.Build.0 = Release|Win32
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Release|x64.ActiveCfg = Release|x64
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1BD3C64-E411-4C8B-A34C-32D1E4E716B4} = {0A995460-13EA-4290-888C-35F54CAD2F78}
+	EndGlobalSection
+EndGlobal

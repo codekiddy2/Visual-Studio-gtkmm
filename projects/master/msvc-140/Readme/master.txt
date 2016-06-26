@@ -10,7 +10,7 @@ Solution design by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 ********************************************************************************************
 ********************************************************************************************
 INFO:
-solution version = 1.0.2
+solution version = 1.0.3
 solution directory = D:\Github\Visual-Studio-gtkmm\projects\master\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 
