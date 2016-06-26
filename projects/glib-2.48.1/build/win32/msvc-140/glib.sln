@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glib", "glib.vcxproj", "{12BCA020-EABF-429E-876A-A476BC9C10C0}"
 EndProject
@@ -37,6 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{9B1ACF
 		..\..\..\..\..\readme\fundamental.md = ..\..\..\..\..\readme\fundamental.md
 		Readme\glib-2.42.1.txt = Readme\glib-2.42.1.txt
 		Readme\glib-2.46.2.txt = Readme\glib-2.46.2.txt
+		Readme\glib-2.48.1.txt = Readme\glib-2.48.1.txt
 		..\..\..\..\..\readme\LICENSE.txt = ..\..\..\..\..\readme\LICENSE.txt
 		..\..\..\..\..\readme\troubleshooting.md = ..\..\..\..\..\readme\troubleshooting.md
 	EndProjectSection
@@ -60,6 +61,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{8B51814C-5440-4E96-8006-DF90267545B0}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\config.h = ..\..\..\config.h
+		..\..\..\glib\glibconfig.h = ..\..\..\glib\glibconfig.h
 	EndProjectSection
 EndProject
 Global

@@ -510,9 +510,6 @@
     <ClInclude Include="..\..\..\glib\glib-autocleanups.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\glib\glibconfig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\glib\glib-init.h">
       <Filter>Header Files</Filter>
     </ClInclude>

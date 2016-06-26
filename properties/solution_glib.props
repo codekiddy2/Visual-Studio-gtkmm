@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <SRC_DIR>$(PROJECTS_DIR)glib-2.46.2\</SRC_DIR>
+    <SRC_DIR>$(PROJECTS_DIR)glib-2.48.1\</SRC_DIR>
     <GenConfigH>copy ..\..\..\config.h.win32 ..\..\..\config.h /Y</GenConfigH>
     <GenGLibConfigH>copy ..\..\..\glib\glibconfig.h.win32 ..\..\..\glib\glibconfig.h</GenGLibConfigH>
     <GenGNetworkingH>copy ..\..\..\gio\gnetworking.h.win32 ..\..\..\gio\gnetworking.h</GenGNetworkingH>

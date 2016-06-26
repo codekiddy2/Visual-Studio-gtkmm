@@ -684,7 +684,6 @@
     <ClInclude Include="..\..\..\glib\glib-private.h" />
     <ClInclude Include="..\..\..\glib\glib-unix.h" />
     <ClInclude Include="..\..\..\glib\glib.h" />
-    <ClInclude Include="..\..\..\glib\glibconfig.h" />
     <ClInclude Include="..\..\..\glib\glibintl.h" />
     <ClInclude Include="..\..\..\glib\glib_trace.h" />
     <ClInclude Include="..\..\..\glib\glist.h" />

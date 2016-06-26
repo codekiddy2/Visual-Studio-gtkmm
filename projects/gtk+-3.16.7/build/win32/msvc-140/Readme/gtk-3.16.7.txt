@@ -99,6 +99,7 @@ https://github.com/codekiddy2/Visual-Studio-gtkmm/issues/7
 
 icons still problem: gtk+ uses symbolic icons instead of "normal" ones, see gtk3.ion-browser on run time
 -> top window only fails to load icons.
+-> test projects don't find share/icons??
 
 since build test x86
 added linker /IGNORE:4197 to solution level, symbol specified more times for gdk.dll
