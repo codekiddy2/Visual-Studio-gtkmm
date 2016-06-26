@@ -13,15 +13,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source Files\old">
-      <UniqueIdentifier>{175f6f67-c184-406e-aca4-e5b08b693144}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\new">
-      <UniqueIdentifier>{3d86f5b2-24f2-4618-812d-0ee610d4b96a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\inspector">
-      <UniqueIdentifier>{0c63e520-0a09-40e9-aced-eb76c7bfbdb0}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\gtk\gtk-win32.rc">
@@ -30,6 +21,9 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\gtk\gtkdbusinterfaces.xml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\gtk\gtk-win32.rc.in">
       <Filter>Resource Files</Filter>
     </CustomBuild>
   </ItemGroup>
@@ -412,6 +406,9 @@
     <ClCompile Include="..\..\..\gtk\gtkborder.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\gtk\gtkborderimage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\gtk\gtkbox.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -539,6 +536,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\gtk\gtkcsscolorvalue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gtk\gtkcsscomputedvalues.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\gtk\gtkcsscornervalue.c">
@@ -1081,6 +1081,9 @@
     <ClCompile Include="..\..\..\gtk\gtkstylecontext.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\gtk\gtkstyleproperties.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\gtk\gtkstyleproperty.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -1145,6 +1148,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\gtk\gtktextview.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gtk\gtkthemingbackground.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\gtk\gtktogglebutton.c">
@@ -1396,6 +1402,9 @@
     <ClCompile Include="..\..\..\gtk\inspector\statistics.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\gtk\inspector\style-prop-list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\gtk\inspector\treewalk.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -1423,156 +1432,13 @@
     <ClCompile Include="..\..\..\gtk\inspector\action-editor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\gtk\inspector\style-prop-list.c">
-      <Filter>Source Files\old</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\gtk\inspector\classes-list.c">
-      <Filter>Source Files\old</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkborderimage.c">
-      <Filter>Source Files\old</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcsscomputedvalues.c">
-      <Filter>Source Files\old</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkstyleproperties.c">
-      <Filter>Source Files\old</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkthemingbackground.c">
-      <Filter>Source Files\old</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkdragsource.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkimagedefinition.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssnode.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkboxgadget.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssnodestylecache.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssgadget.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssstylechange.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcsscustomgadget.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcsswidgetnode.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtksearchenginemodel.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkshortcutsshortcut.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkshortcutlabel.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkshortcutsgroup.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkshortcutssection.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkshortcutswindow.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkbuiltinicon.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkwin32draw.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssimagefallback.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssimageradial.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssimagerecolor.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcsspalettevalue.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssdimensionvalue.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcsscalcvalue.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcsswin32sizevalue.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtknativedialog.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkplacesview.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcomposetable.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtksidebarrow.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcsspathnode.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkfilechoosernative.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkfilechoosernativewin32.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkplacesviewrow.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcsstransientnode.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtktooltipwindow.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\inspector\strv-editor.c">
-      <Filter>Source Files\inspector</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\inspector\css-node-tree.c">
-      <Filter>Source Files\inspector</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gdkpixbufutils.c">
-      <Filter>Source Files\new</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\inspector\gtktreemodelcssnode.c">
-      <Filter>Source Files\inspector</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\inspector\gtkstackcombo.c">
-      <Filter>Source Files\inspector</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkicon.c">
-      <Filter>Source Files\new</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="..\..\..\gtk\libgtk3.manifest">
       <Filter>Resource Files</Filter>
     </Manifest>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\gtk\gtk-win32.rc.body">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="..\..\..\gtk\libgtk3.manifest.in">
-      <Filter>Resource Files</Filter>
-    </None>
   </ItemGroup>
 </Project>

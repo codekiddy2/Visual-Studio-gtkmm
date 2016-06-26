@@ -12,7 +12,7 @@ solution redesigned by codekiddy https://github.com/codekiddy2/Visual-Studio-gtk
 **************************************************************************************************************************************************************************
 INFO:
 solution version = 1.1.1
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gtk+-3.18.3\build\win32\msvc-140
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\gtk+-3.16.7\build\win32\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: http://ftp.gnome.org/pub/GNOME/sources/gtk+/
 
@@ -74,6 +74,8 @@ build cairo and pango without freetype. (of course fontconfig is out of question
 gtk-demo runs but has missing icons, possible cause:
 icons must be installed in /share/icons
 make sure gtk-update-icon-cache-3.0 works and that build process of icons works as it should.
+check evaluation of DUMMY_ROOT in gtk project preprocessor macro (missing / ), will compile with
+incorrect paths (icons and other paths)
 
 gtk v 3.18.4-5 does not work, it calls for cairo function that does not exist in cairo.
 need to wait for new cairo version, it's a cairo's problem.
@@ -90,6 +92,13 @@ to non-broadway. clean solution then rebuild.
 gtk3-icon-browswer is a utility to explore the icons in the current icon theme.
 It shows icons in various sizes, their symbolic variants where available,
 as well as a description of the icon and its context.
+
+/RTC (Run-Time Error Checks), RTCu turned off for debug build of gtk project (set to default)
+it makes icon-browser fail and type of run time error match with github issue:
+https://github.com/codekiddy2/Visual-Studio-gtkmm/issues/7
+
+icons still problem: gtk+ uses symbolic icons instead of "normal" ones, see gtk3.ion-browser on run time
+-> top window only fails to load icons.
 
 since build test x86
 added linker /IGNORE:4197 to solution level, symbol specified more times for gdk.dll

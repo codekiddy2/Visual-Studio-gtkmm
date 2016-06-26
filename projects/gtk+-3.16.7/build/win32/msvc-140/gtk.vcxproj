@@ -90,10 +90,11 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gtk;$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>EPOXY_DLL;G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="i686-pc-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)lib";GTK_DATADIR="$(GtkDummyPrefix)share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>EPOXY_DLL;G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="i686-pc-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)/share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <TreatSpecificWarningsAsErrors>4129;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <AdditionalDependencies>gdk.dll.lib;atk.dll.lib;pangowin32.dll.lib;imm32.lib;winspool.lib;comctl32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -102,7 +103,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gtk;$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>EPOXY_DLL;G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="i686-pc-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)lib";GTK_DATADIR="$(GtkDummyPrefix)share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>EPOXY_DLL;G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="i686-pc-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)/share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <TreatSpecificWarningsAsErrors>4129;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
@@ -116,14 +117,15 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gtk;$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>EPOXY_DLL;G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="x86_64-w64-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>EPOXY_DLL;G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="x86_64-w64-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)/share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <DisableSpecificWarnings>4098;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors>4129;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gdk.dll.lib;atk.dll.lib;pangowin32.dll.lib;imm32.lib;winspool.lib;comctl32.lib;epoxy.dll.lib;gdk-pixbuf.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gdk.dll.lib;atk.dll.lib;pangowin32.dll.lib;imm32.lib;winspool.lib;comctl32.lib;epoxy.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile />
     </Link>
     <PreBuildEvent>
@@ -135,7 +137,7 @@ cd $(SolutionDir)</Command>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SRC_DIR)gtk;$(SRC_DIR)gdk;$(SRC_DIR)gdk\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>EPOXY_DLL;G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="x86_64-w64-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>EPOXY_DLL;G_ENABLE_DEBUG;GTK_COMPILATION;G_LOG_DOMAIN="Gtk";GTK_HOST="x86_64-w64-vs$(VSVer)";GTK_PRINT_BACKENDS="file";GTK_PRINT_PREVIEW_COMMAND="undefined-gtk-print-preview-command";GTK_LIBDIR="$(GtkDummyPrefix)/lib";GTK_DATADIR="$(GtkDummyPrefix)/share";GTK_DATA_PREFIX="$(GtkDummyPrefix)";GTK_SYSCONFDIR="$(GtkDummyPrefix)/etc";MULTIPRESS_CONFDIR="$(GtkDummyPrefix)/etc/gtk";MULTIPRESS_LOCALEDIR="$(GtkDummyPrefix)/share/locale";GTK_VERSION="$(GtkVersion)/etc";GTK_BINARY_VERSION="$(GtkBinaryVersion)/etc";GDK_DISABLE_DEPRECATED;ISOLATION_AWARE_ENABLED;INCLUDE_IM_am_et;INCLUDE_IM_cedilla;INCLUDE_IM_cyrillic_translit;INCLUDE_IM_ime;INCLUDE_IM_inuktitut;INCLUDE_IM_ipa;INCLUDE_IM_multipress;INCLUDE_IM_thai;INCLUDE_IM_ti_er;INCLUDE_IM_ti_et;INCLUDE_IM_viqr;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <TreatSpecificWarningsAsErrors>4129;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
@@ -165,6 +167,20 @@ cd $(SolutionDir)</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\gtk\gtk-win32.rc.in">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating GTK+ Win32 Version Resource...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenerateGtkWin32RC)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\gtk\gtk-win32.rc;..\..\..\gtk\libgtk3.manifest;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating GTK+ Win32 Version Resource...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GenerateGtkWin32RC)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\gtk\gtk-win32.rc;..\..\..\gtk\libgtk3.manifest;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating GTK+ Win32 Version Resource...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenerateGtkWin32RC)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\gtk\gtk-win32.rc;..\..\..\gtk\libgtk3.manifest;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating GTK+ Win32 Version Resource...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenerateGtkWin32RC)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\gtk\gtk-win32.rc;..\..\..\gtk\libgtk3.manifest;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -265,49 +281,17 @@ cd $(SolutionDir)</Command>
     <ClCompile Include="..\..\..\gtk\deprecated\gtkvscrollbar.c" />
     <ClCompile Include="..\..\..\gtk\deprecated\gtkvseparator.c" />
     <ClCompile Include="..\..\..\gtk\deprecated\gtkvpaned.c" />
-    <ClCompile Include="..\..\..\gtk\gdkpixbufutils.c" />
     <ClCompile Include="..\..\..\gtk\gtkactionmuxer.c" />
     <ClCompile Include="..\..\..\gtk\gtkactionobserver.c" />
     <ClCompile Include="..\..\..\gtk\gtkactionobservable.c" />
     <ClCompile Include="..\..\..\gtk\gtkactionable.c" />
-    <ClCompile Include="..\..\..\gtk\gtkboxgadget.c" />
-    <ClCompile Include="..\..\..\gtk\gtkbuiltinicon.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcomposetable.c" />
     <ClCompile Include="..\..\..\gtk\gtkcssanimatedstyle.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcsscalcvalue.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcsscustomgadget.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcssdimensionvalue.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcssgadget.c" />
     <ClCompile Include="..\..\..\gtk\gtkcssiconthemevalue.c" />
     <ClCompile Include="..\..\..\gtk\gtkcssimagebuiltin.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcssimagefallback.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcssimageradial.c">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <ClCompile Include="..\..\..\gtk\gtkcssimagerecolor.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcssnode.c" />
     <ClCompile Include="..\..\..\gtk\gtkcssnodedeclaration.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcssnodestylecache.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcsspalettevalue.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcsspathnode.c" />
     <ClCompile Include="..\..\..\gtk\gtkcssstaticstyle.c" />
     <ClCompile Include="..\..\..\gtk\gtkcssstyle.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcssstylechange.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcsstransientnode.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcsswidgetnode.c" />
-    <ClCompile Include="..\..\..\gtk\gtkcsswin32sizevalue.c" />
-    <ClCompile Include="..\..\..\gtk\gtkdragsource.c" />
-    <ClCompile Include="..\..\..\gtk\gtkfilechoosernative.c" />
-    <ClCompile Include="..\..\..\gtk\gtkfilechoosernativewin32.c" />
     <ClCompile Include="..\..\..\gtk\gtkglarea.c" />
-    <ClCompile Include="..\..\..\gtk\gtkicon.c" />
-    <ClCompile Include="..\..\..\gtk\gtkimagedefinition.c" />
-    <ClCompile Include="..\..\..\gtk\gtknativedialog.c" />
-    <ClCompile Include="..\..\..\gtk\gtkplacesview.c" />
-    <ClCompile Include="..\..\..\gtk\gtkplacesviewrow.c" />
     <ClCompile Include="..\..\..\gtk\gtkpopovermenu.c" />
     <ClCompile Include="..\..\..\gtk\gtkquery.c" />
     <ClCompile Include="..\..\..\gtk\gtkrender.c" />
@@ -315,7 +299,6 @@ cd $(SolutionDir)</Command>
     <ClCompile Include="..\..\..\gtk\gtkrenderborder.c" />
     <ClCompile Include="..\..\..\gtk\gtkrendericon.c" />
     <ClCompile Include="..\..\..\gtk\gtksearchbar.c" />
-    <ClCompile Include="..\..\..\gtk\gtksearchenginemodel.c" />
     <ClCompile Include="..\..\..\gtk\gtksearchentry.c" />
     <ClCompile Include="..\..\..\gtk\gtksearchengine.c" />
     <ClCompile Include="..\..\..\gtk\gtksearchenginesimple.c" />
@@ -566,12 +549,6 @@ cd $(SolutionDir)</Command>
     <ClCompile Include="..\..\..\gtk\gtkseparatormenuitem.c" />
     <ClCompile Include="..\..\..\gtk\gtkseparatortoolitem.c" />
     <ClCompile Include="..\..\..\gtk\gtksettings.c" />
-    <ClCompile Include="..\..\..\gtk\gtkshortcutlabel.c" />
-    <ClCompile Include="..\..\..\gtk\gtkshortcutsgroup.c" />
-    <ClCompile Include="..\..\..\gtk\gtkshortcutssection.c" />
-    <ClCompile Include="..\..\..\gtk\gtkshortcutsshortcut.c" />
-    <ClCompile Include="..\..\..\gtk\gtkshortcutswindow.c" />
-    <ClCompile Include="..\..\..\gtk\gtksidebarrow.c" />
     <ClCompile Include="..\..\..\gtk\gtksizegroup.c" />
     <ClCompile Include="..\..\..\gtk\gtksizerequest.c" />
     <ClCompile Include="..\..\..\gtk\gtksizerequestcache.c" />
@@ -628,7 +605,6 @@ cd $(SolutionDir)</Command>
     <ClCompile Include="..\..\..\gtk\gtktoolpalette.c" />
     <ClCompile Include="..\..\..\gtk\gtktoolshell.c" />
     <ClCompile Include="..\..\..\gtk\gtktooltip.c" />
-    <ClCompile Include="..\..\..\gtk\gtktooltipwindow.c" />
     <ClCompile Include="..\..\..\gtk\gtktrashmonitor.c" />
     <ClCompile Include="..\..\..\gtk\gtktreedatalist.c" />
     <ClCompile Include="..\..\..\gtk\gtktreednd.c" />
@@ -646,7 +622,6 @@ cd $(SolutionDir)</Command>
     <ClCompile Include="..\..\..\gtk\gtkviewport.c" />
     <ClCompile Include="..\..\..\gtk\gtkwidget.c" />
     <ClCompile Include="..\..\..\gtk\gtkwidgetpath.c" />
-    <ClCompile Include="..\..\..\gtk\gtkwin32draw.c" />
     <ClCompile Include="..\..\..\gtk\gtkwindow.c" />
     <ClCompile Include="..\..\..\gtk\gtkwindowgroup.c" />
     <ClCompile Include="..\..\..\gtk\gtkwin32theme.c" />
@@ -662,20 +637,12 @@ cd $(SolutionDir)</Command>
     <ClCompile Include="..\..\..\gtk\inspector\action-editor.c" />
     <ClCompile Include="..\..\..\gtk\inspector\actions.c" />
     <ClCompile Include="..\..\..\gtk\inspector\cellrenderergraph.c" />
-    <ClCompile Include="..\..\..\gtk\inspector\classes-list.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\..\gtk\inspector\classes-list.c" />
     <ClCompile Include="..\..\..\gtk\inspector\css-editor.c" />
-    <ClCompile Include="..\..\..\gtk\inspector\css-node-tree.c" />
     <ClCompile Include="..\..\..\gtk\inspector\data-list.c" />
     <ClCompile Include="..\..\..\gtk\inspector\general.c" />
     <ClCompile Include="..\..\..\gtk\inspector\gestures.c" />
     <ClCompile Include="..\..\..\gtk\inspector\graphdata.c" />
-    <ClCompile Include="..\..\..\gtk\inspector\gtkstackcombo.c" />
-    <ClCompile Include="..\..\..\gtk\inspector\gtktreemodelcssnode.c" />
     <ClCompile Include="..\..\..\gtk\inspector\init.c" />
     <ClCompile Include="..\..\..\gtk\inspector\inspect-button.c" />
     <ClCompile Include="..\..\..\gtk\inspector\magnifier.c" />
@@ -690,13 +657,7 @@ cd $(SolutionDir)</Command>
     <ClCompile Include="..\..\..\gtk\inspector\signals-list.c" />
     <ClCompile Include="..\..\..\gtk\inspector\size-groups.c" />
     <ClCompile Include="..\..\..\gtk\inspector\statistics.c" />
-    <ClCompile Include="..\..\..\gtk\inspector\strv-editor.c" />
-    <ClCompile Include="..\..\..\gtk\inspector\style-prop-list.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\..\gtk\inspector\style-prop-list.c" />
     <ClCompile Include="..\..\..\gtk\inspector\treewalk.c" />
     <ClCompile Include="..\..\..\gtk\inspector\visual.c" />
     <ClCompile Include="..\..\..\gtk\inspector\window.c" />
@@ -725,38 +686,6 @@ cd $(SolutionDir)</Command>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\..\gtk\gtk-win32.rc.body">
-      <FileType>Document</FileType>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Copying GTK+ Win32 Version Resource...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying GTK+ Win32 Version Resource...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying GTK+ Win32 Version Resource...</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying GTK+ Win32 Version Resource...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\gtk\gtk-win32.rc;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\gtk\gtk-win32.rc;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\gtk\gtk-win32.rc;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\gtk\gtk-win32.rc;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenerateGtkWin32RC)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenerateGtkWin32RC)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GenerateGtkWin32RC)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenerateGtkWin32RC)</Command>
-    </CustomBuild>
-    <CustomBuild Include="..\..\..\gtk\libgtk3.manifest.in">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GenerateGtkWin32Manifest)</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating GTK+ Win32 Manifest...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GenerateGtkWin32Manifest)</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating GTK+ Win32 Manifest...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(GenerateGtkWin32Manifest)</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating GTK+ Win32 Manifest...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(GenerateGtkWin32Manifest)</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating GTK+ Win32 Manifest...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\gtk\libgtk3.manifest;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\gtk\libgtk3.manifest;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\gtk\libgtk3.manifest;%(Outputs)</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\gtk\libgtk3.manifest;%(Outputs)</Outputs>
-    </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

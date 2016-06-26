@@ -93,10 +93,10 @@
     <Link />
     <ClCompile />
     <PostBuildEvent>
-      <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
-$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
+      <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
+$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -104,10 +104,10 @@ $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
     <Link />
     <ClCompile />
     <PostBuildEvent>
-      <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
-$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
+      <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
+$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\</Command>
     </PostBuildEvent>
     <ClCompile />
     <ClCompile />
@@ -125,10 +125,10 @@ $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
     <Link />
     <ClCompile />
     <PostBuildEvent>
-      <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
-$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
+      <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
+$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -136,10 +136,10 @@ $(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
     <Link />
     <ClCompile />
     <PostBuildEvent>
-      <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
-$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\
-$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\</Command>
+      <Command>$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\Adwaita\
+$(BIN_DIR)gtk-update-icon-cache-3.0 $(SHARE_DIR)icons\hicolor\
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\Adwaita\
+$(BIN_DIR)gtk-update-icon-cache-3.0 -v $(SHARE_DIR)icons\hicolor\</Command>
     </PostBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>

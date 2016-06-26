@@ -224,6 +224,7 @@ if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h
       <Command>$(DRIVE):
 if not exist $(SRC_DIR)config.h copy $(SRC_DIR)config.h.win32 $(SRC_DIR)config.h</Command>
     </PreBuildEvent>
+    <PreLinkEvent />
     <PreLinkEvent>
       <Command>$(GenerateGdkPixbufDef)</Command>
     </PreLinkEvent>

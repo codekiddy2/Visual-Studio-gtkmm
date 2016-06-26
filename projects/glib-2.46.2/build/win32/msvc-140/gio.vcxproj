@@ -160,7 +160,6 @@
     <ClCompile Include="..\..\..\gio\gconverterinputstream.c" />
     <ClCompile Include="..\..\..\gio\gconverteroutputstream.c" />
     <ClCompile Include="..\..\..\gio\gcredentials.c" />
-    <ClCompile Include="..\..\..\gio\gdatagrambased.c" />
     <ClCompile Include="..\..\..\gio\gdatainputstream.c" />
     <ClCompile Include="..\..\..\gio\gdataoutputstream.c" />
     <ClCompile Include="..\..\..\gio\gdbusactiongroup.c" />
@@ -195,9 +194,6 @@
     <ClCompile Include="..\..\..\gio\gdbusutils.c" />
     <ClCompile Include="..\..\..\gio\gdelayedsettingsbackend.c" />
     <ClCompile Include="..\..\..\gio\gdrive.c" />
-    <ClCompile Include="..\..\..\gio\gdtlsclientconnection.c" />
-    <ClCompile Include="..\..\..\gio\gdtlsconnection.c" />
-    <ClCompile Include="..\..\..\gio\gdtlsserverconnection.c" />
     <ClCompile Include="..\..\..\gio\gdummyfile.c" />
     <ClCompile Include="..\..\..\gio\gdummyproxyresolver.c" />
     <ClCompile Include="..\..\..\gio\gdummytlsbackend.c" />
