@@ -16,7 +16,6 @@
 * make all test projects have their cmd line needed stuff located in output directory (png's, files...)
 * some test projects with both static and release configurations might link against either dll or lib only, instead of by configuration type 
 * define against which libs projects link, dll.lib or lib, some test projects ie. link differently for each configuration. (harfbuzz most notably)
-* configuration should be done with MSYS2 only, avoid using mozilla-build
 * consider: smaller type check turn off for entry stack.
 * compile with $(INCLUDE_DIR) removed from stack_gtk.props, it's redundant and opens 2 folders on #include, and update include dirs
 * define intdir and output dir for user_stack properties, it should be $(Configuration)\$(Platform) instead of $(Platform)\$(Configuration)
@@ -26,13 +25,13 @@
 * check and remove old (non existent source files) from solutions (or move them to 'old' filter), also do other similar cleanup
 * not all *mm projects need deprecated API turned off in preprocessor for dependent libs, (ex: pangomm, cairomm and atkmm) check which, remove macros and recompile, then check for usage of deprecated API
 * compile gtkmm solution with deprecated API support. (to make goocanvasmm test projects work)
+* check and remove /IGNORE from librarian and linker, apply fix instead
 
 * TOP TROUBLES:
-	* crypto++ x86 build - linker errors - temporary fix: only static build
-	* GTK+ release build x64, debug x32, demo app missing system icons
+	* GTK+ release build x64, debug x32, demo app missing system icons (edit, move demo app to BIN_DIR from TEST_DIR)
 	* boost debugging symbols
 	* fontconfig
-	* readline - unresolved external symbols
+	* readline - unresolved external symbols (solution on stackoverlfow)
 	* gstreamer(mm) build
 	* gendef does not work for C code on x64 configurations - temporary fix: x64 configuration either have their own def file or no def file. denef is not used.
 	* gtkmm gendef does not work as expected, def files need to be modified ( possible cause, bad control over def files and gendef)
@@ -45,6 +44,8 @@
     http://stackoverflow.com/questions/8447799/how-can-i-workaround-this-visual-studio-compiler-bug
     * boost threading does not work. (/Za compiler option must be turned off) see:
     https://svn.boost.org/trac/boost/ticket/10793
+	* configuration should be done with MSYS2 only, avoid using mozilla-build
+	* crypto++ x86 build - linker errors - temporary fix: only static build
 
 **LOW PRIORITY TASKS**
 
@@ -110,7 +111,6 @@
 * projects that will download and extract sources.
 * MSYS2 projects should be set to make projects, for clean, rebuild and make, not just build/make.
 * property for make projects, base_make.props.
-
 
 **SUSPENDED TASKS**
 
