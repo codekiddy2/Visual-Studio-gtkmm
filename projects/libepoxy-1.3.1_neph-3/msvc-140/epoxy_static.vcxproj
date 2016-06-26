@@ -553,6 +553,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Private>false</Private>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="epoxy_shared.vcxproj">
+      <Project>{4d2b9cad-da01-4f1d-8777-e0a2e7f79469}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

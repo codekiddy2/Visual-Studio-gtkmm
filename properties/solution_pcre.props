@@ -4,7 +4,9 @@
   <PropertyGroup Label="UserMacros">
     <SRC_DIR>$(REPO_DIR)projects\pcre-8.39\</SRC_DIR>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>

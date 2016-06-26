@@ -35,6 +35,9 @@ NOTES:
 to link staticaly to pcre define PCRE_STATIC in your projects
 static configuration will link staticaly to every dependency.
 
+since 8.39:
+removed prelink event to make def file, to make x86 build work, set to not use in build.
+
 PCRE configuration summary:
 
   Install prefix .................. : D:/GitHub/Visual-Studio-gtkmm/projects/pcre-8.36/cmake-output

@@ -8,10 +8,10 @@ http://downloads.sourceforge.net/project/mingweditline/wineditline-2.101.tar.bz2
 https://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.2.7.tar.bz2
 
 http://download.savannah.gnu.org/releases/freetype/freetype-2.6.3.tar.gz
-http://pkgconfig.freedesktop.org/releases/pkg-config-0.29.tar.gz
+https://pkg-config.freedesktop.org/releases/pkg-config-0.29.1.tar.gz
 http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.94.tar.gz
 http://cairographics.org/releases/cairomm-1.12.0.tar.gz
-ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre2-10.10.tar.gz
+ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre2-10.21.tar.gz
 ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz
 https://sourceforge.net/projects/boost/files/boost/1.61.0/boost_1_61_0.tar.gz
 http://downloads.sourceforge.net/project/freeglut/freeglut/3.0.0/freeglut-3.0.0.tar.gz

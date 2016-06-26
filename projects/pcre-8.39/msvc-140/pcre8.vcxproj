@@ -212,6 +212,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -314,6 +315,7 @@
     <Link>
       <Version>
       </Version>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>

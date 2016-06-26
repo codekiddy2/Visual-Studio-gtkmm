@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pkg-config", "pkg-config\pkg-config.vcxproj", "{6129DE55-62EE-4445-8084-84C4B8FBEB38}"
 EndProject
@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{4D9C19
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
 		Readme\pkg-config-0.28.txt = Readme\pkg-config-0.28.txt
+		Readme\pkg-config-0.29.1.txt = Readme\pkg-config-0.29.1.txt
 		Readme\pkg-config-0.29.txt = Readme\pkg-config-0.29.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection

@@ -259,6 +259,7 @@
       <Version>
       </Version>
       <AdditionalDependencies>pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
@@ -308,6 +309,7 @@
       <Version>
       </Version>
       <AdditionalDependencies>pcre8.dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile />
     </Link>
     <ProjectReference />
   </ItemDefinitionGroup>
