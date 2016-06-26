@@ -397,9 +397,6 @@
     <None Include="..\Doxyfile">
       <Filter>Miscellaneous</Filter>
     </None>
-    <None Include="..\rdrand.asm">
-      <Filter>Assembler Files</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\zlib.h">
@@ -807,6 +804,9 @@
     </CustomBuild>
     <CustomBuild Include="..\adhoc.cpp.proto">
       <Filter>Other Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\rdrand.asm">
+      <Filter>Assembler Files</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

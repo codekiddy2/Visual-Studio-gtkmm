@@ -38,17 +38,18 @@ Set Working directory for test-cryptopp in debugger to SRC_DIR.
 NOTES:
 cmd line entry /ZM is there for precompiled header
 dll.h modified to reflect modified lib name
-fipstest.cpp modified to target current Windows
-FIPS dll does not work, use static library.
+fipstest.cpp modified to target current Windows and fix x86 build
+FIPS dll does not work, use static library. (edit: fixed)
 
 since msvc-140
 added to ignore lib warnings as errors in solution level props.
 turn off SDL check on solution level.
 warning 4297 disabled on solution level. (edit: removed??)
--> 4217 added
+-> 4217,4197 added
 
 x86 DLL/test build does not work at all, X64 build seems OK ?
 edit^ x86 builds (release and static) will build static lib only, set in config. manager.
+edit^ fixed
 
 since redesign (msvc-140) branch:
 added rdrand.cpp and rdrand.asm to project, set ml flags according to asm file description,

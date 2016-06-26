@@ -93,7 +93,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <CustomBuildStep>
-      <Command>$(BIN_DIR)test-cryptopp mac_dll "$(TargetPath)"
+      <Command>$(TEST_DIR)test-cryptopp mac_dll "$(TargetPath)"
 echo mac done &gt; "$(OutDir)"\cryptopp.mac.done
 </Command>
       <Outputs>$(OutDir)cryptopp.mac.done;%(Outputs)</Outputs>
@@ -123,7 +123,7 @@ echo mac done &gt; "$(OutDir)"\cryptopp.mac.done
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <CustomBuildStep>
-      <Command>$(BIN_DIR)test-cryptopp mac_dll "$(TargetPath)"
+      <Command>$(TEST_DIR)test-cryptopp mac_dll "$(TargetPath)"
 echo mac done &gt; "$(OutDir)"\cryptopp.mac.done
 </Command>
       <Outputs>$(OutDir)cryptopp.mac.done;%(Outputs)</Outputs>
@@ -153,7 +153,7 @@ echo mac done &gt; "$(OutDir)"\cryptopp.mac.done
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <CustomBuildStep>
-      <Command>$(BIN_DIR)test-cryptopp mac_dll "$(TargetPath)"
+      <Command>$(TEST_DIR)test-cryptopp mac_dll "$(TargetPath)"
 echo mac done &gt; "$(OutDir)"\cryptopp.mac.done
 </Command>
       <Outputs>$(OutDir)cryptopp.mac.done;%(Outputs)</Outputs>
@@ -184,7 +184,7 @@ echo mac done &gt; "$(OutDir)"\cryptopp.mac.done
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <CustomBuildStep>
-      <Command>$(BIN_DIR)test-cryptopp mac_dll "$(TargetPath)"
+      <Command>$(TEST_DIR)test-cryptopp mac_dll "$(TargetPath)"
 echo mac done &gt; "$(OutDir)"\cryptopp.mac.done
 </Command>
       <Outputs>$(OutDir)cryptopp.mac.done;%(Outputs)</Outputs>

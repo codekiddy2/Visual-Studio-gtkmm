@@ -48,7 +48,7 @@
 #endif
 #endif
 
-//link manually:
+//codekiddy comment out to link manually:
 //#pragma comment(lib, "cryptopp.dll.lib")
 
 #endif		// #ifdef CRYPTOPP_IMPORTS

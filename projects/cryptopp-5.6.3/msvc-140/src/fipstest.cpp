@@ -8,6 +8,7 @@
 #include "dll.h"
 
 #ifdef CRYPTOPP_WIN32_AVAILABLE
+// codekiddy comment out:
 //#define _WIN32_WINNT 0x0400
 #include <windows.h>
 
@@ -17,7 +18,9 @@
 #else
 #define _CRT_DEBUGGER_HOOK __crt_debugger_hook
 #endif
-extern "C" {_CRTIMP void __cdecl _CRT_DEBUGGER_HOOK(int);}
+// codekiddy comment out:
+/* http://stackoverflow.com/questions/35734683/crt-debugger-hook-defined-in-both-ucrtd-lib-and-msvcrtd-lib */
+extern "C" {/*_CRTIMP*/ void __cdecl _CRT_DEBUGGER_HOOK(int);}
 #endif
 #endif
 

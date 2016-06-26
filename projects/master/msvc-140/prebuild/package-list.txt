@@ -34,7 +34,7 @@ http://ftp.acc.umu.se/pub/GNOME/sources/gstreamermm/1.4/gstreamermm-1.4.3.tar.xz
 http://ftp.acc.umu.se/pub/GNOME/sources/glib/2.48/glib-2.48.1.tar.xz
 http://ftp.gnome.org/pub/GNOME/sources/atk/2.20/atk-2.20.0.tar.xz
 http://ftp.acc.umu.se/pub/GNOME/sources/pango/1.40/pango-1.40.1.tar.xz
-http://ftp.acc.umu.se/pub/GNOME/sources/gtk+/3.20/gtk+-3.20.6.tar.xz
+http://ftp.acc.umu.se/pub/GNOME/sources/gtk+/3.16/gtk+-3.16.7.tar.xz
 http://cairographics.org/snapshots/cairo-1.15.2.tar.xz
 http://ftp.acc.umu.se/pub/GNOME/sources/gdk-pixbuf/2.34/gdk-pixbuf-2.34.0.tar.xz
 http://ftp.acc.umu.se/pub/GNOME/sources/adwaita-icon-theme/3.20/adwaita-icon-theme-3.20.tar.xz
