@@ -143,3 +143,4 @@ TODO:
 
 add more test projects.
 system icons not visible
+x86 build ask for admin password for update-icon-cache
