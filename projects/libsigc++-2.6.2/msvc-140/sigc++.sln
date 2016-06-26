@@ -48,7 +48,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{301AE3
 		..\..\..\readme\fundamental.md = ..\..\..\readme\fundamental.md
 		Readme\libsigc++2.4.0.txt = Readme\libsigc++2.4.0.txt
 		Readme\libsigc++2.5.4.txt = Readme\libsigc++2.5.4.txt
-		Readme\libsigc++2.8.0.txt = Readme\libsigc++2.8.0.txt
+		Readme\libsigc++2.6.2.txt = Readme\libsigc++2.6.2.txt
 		..\..\..\readme\LICENSE.txt = ..\..\..\readme\LICENSE.txt
 		..\..\..\readme\troubleshooting.md = ..\..\..\readme\troubleshooting.md
 	EndProjectSection
@@ -135,9 +135,13 @@ Global
 		{64BDAD0B-0D0B-42D0-940E-3BCDA783C880}.Release|x64.ActiveCfg = Release|x64
 		{64BDAD0B-0D0B-42D0-940E-3BCDA783C880}.Release|x64.Build.0 = Release|x64
 		{66CED940-0111-4196-B921-27B146643F44}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66CED940-0111-4196-B921-27B146643F44}.Debug|Win32.Build.0 = Debug|Win32
 		{66CED940-0111-4196-B921-27B146643F44}.Debug|x64.ActiveCfg = Debug|x64
+		{66CED940-0111-4196-B921-27B146643F44}.Debug|x64.Build.0 = Debug|x64
 		{66CED940-0111-4196-B921-27B146643F44}.Release|Win32.ActiveCfg = Release|Win32
+		{66CED940-0111-4196-B921-27B146643F44}.Release|Win32.Build.0 = Release|Win32
 		{66CED940-0111-4196-B921-27B146643F44}.Release|x64.ActiveCfg = Release|x64
+		{66CED940-0111-4196-B921-27B146643F44}.Release|x64.Build.0 = Release|x64
 		{8B6734FD-DCB8-43E3-B507-A2B9127DD055}.Debug|Win32.ActiveCfg = Debug|Win32
 		{8B6734FD-DCB8-43E3-B507-A2B9127DD055}.Debug|Win32.Build.0 = Debug|Win32
 		{8B6734FD-DCB8-43E3-B507-A2B9127DD055}.Debug|x64.ActiveCfg = Debug|x64

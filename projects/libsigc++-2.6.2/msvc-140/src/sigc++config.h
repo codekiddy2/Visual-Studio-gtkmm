@@ -7,10 +7,10 @@
 #define SIGCXX_MAJOR_VERSION 2
 
 /* Micro version number of sigc++. */
-#define SIGCXX_MICRO_VERSION 4
+#define SIGCXX_MICRO_VERSION 2
 
 /* Minor version number of sigc++. */
-#define SIGCXX_MINOR_VERSION 5
+#define SIGCXX_MINOR_VERSION 6
 
 /* Detect Win32 platform */
 #ifdef _WIN32

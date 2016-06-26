@@ -42,13 +42,14 @@ DEPENDENCIES:
 **************************************************************************************************************************************************************************
 INSTRUCTIONS:
 
-hit "build solution" and wait, it will take a lot of time, be stand by to looks for
+hit "build solution" and wait, it will take a lot of time, be stand by to look for
 possible errors since this master solution is experimental for now.
 
 project templates instructions:
 
 These template projects can be installed by building the install project which will copy preconfigured templates into
 Visual Studio templates directory.
+edit ^ templates need to imported by using VS as described below:
 
 Alternatively you can modify these projects for your needs and export them as templates into:
 %USERPROFILE%\Documents\Visual Studio 2015\My Exported Templates

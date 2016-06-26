@@ -12,7 +12,7 @@ solution redesign by codekiddy https://github.com/codekiddy2/Visual-Studio-gtkmm
 **************************************************************************************************************************************************************************
 INFO:
 solution version = 1.1.2
-solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\libsigc++-2.8.0\msvc-140
+solution directory = D:\GitHub\Visual-Studio-gtkmm\projects\libsigc++-2.6.2\msvc-140
 properties directory = D:\GitHub\Visual-Studio-gtkmm\properties
 official sources: http://ftp.gnome.org/pub/GNOME/sources/libsigc++/
 
@@ -34,7 +34,7 @@ since msvc-140:
 lambda.cc excluded from build process
 removed "upgrade" property sheets
 
-since 2.8.0
+note about 2.8.0 (doesn't work)
 test_mem_fun project doesn't work, it's excluded from build
 
 **************************************************************************************************************************************************************************
