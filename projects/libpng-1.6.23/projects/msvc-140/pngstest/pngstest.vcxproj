@@ -152,7 +152,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug static|x64'">
     <CustomBuildAfterTargets />
-    <OutDir>$(BIN_DIR)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release dll|Win32'">
     <CustomBuildAfterTargets />

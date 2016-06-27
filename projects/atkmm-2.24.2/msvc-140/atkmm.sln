@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "atkmm", "atkmm\atkmm.vcxproj", "{9FE0D5A6-458C-45C7-B954-2C3C1E6196C2}"
 EndProject
@@ -50,7 +50,6 @@ Global
 		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x64.ActiveCfg = Release|x64
 		{78916D71-54AB-4C74-9525-2301898FD91D}.Release|x64.Build.0 = Release|x64
 		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|Win32.ActiveCfg = Debug|Win32
-		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|Win32.Build.0 = Debug|Win32
 		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|x64.ActiveCfg = Debug|x64
 		{F987DF65-5037-4833-96A6-4A856215F221}.Debug|x64.Build.0 = Debug|x64
 		{F987DF65-5037-4833-96A6-4A856215F221}.Release|Win32.ActiveCfg = Release|Win32
